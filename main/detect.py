@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 # Created at 2015/7/20
-# Recently Modified at 2015/09/01
+# Recently Modified at 2015/09/02
 # Current Version 1.1.0
 
 __author__ = 'Zachary Marv - 马子昂'
@@ -24,7 +24,7 @@ class TimeRecord:
     Made for Time Recording.
     用来计时。
     """
-    def __init__(self, task_tag = ""):
+    def __init__(self, task_tag=""):
         self.init_time = time.time()
         self.if_start = False
         self.start_time = 0
@@ -242,6 +242,12 @@ def all_over(apk_path, path):
 
 
 def main_func(path):
+    """
+    Detect 3rd-party libraries in app.
+    The detection result is printed.
+    :param path: The path of target app.
+    :return: None.
+    """
     decoded_path = get_smali(path)
     get_hash(decoded_path)
 
