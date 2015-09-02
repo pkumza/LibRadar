@@ -93,7 +93,7 @@ def get_hash(apk_path):
     # - Loading Data
 
     time_compare.start()
-    dep_address = project_path + "/" + "../data/tagged_dep2.dat"
+    dep_address = project_path + "/" + "../data/st4.dat"
     dict_address = project_path + "/" + "../data/new_dict.dat"
     dep_file = open(dep_address, 'r')
     dict_file = open(dict_address, 'r')
@@ -129,15 +129,16 @@ def get_hash(apk_path):
     cur_app_libs = []
     cur_app_routes = []
     for p in packages_feature:
+        print p[3]
         for l in libs_feature:
             if l[2] < 5:
                 continue
             if p[0] == l[0] and p[1] == l[1] and p[2] == l[2]:
-                if l[4] != "":
+                if l[4] != "" and l[4] != "Nope":
                     tmp = l[4]
                     if tmp not in cur_app_libs:
                         cur_app_libs.append(tmp)
-                else:
+                elif l[4] == "":
                     tmp = l[3]
                     if tmp not in cur_app_routes:
                         cur_app_routes.append(tmp)
