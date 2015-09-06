@@ -33,32 +33,28 @@ class TimeRecord:
     def start(self):
         self.start_time = time.time()
         self.if_start = True
-        print('*' * 60)
-        print('Task: '+self.tag+' Starts.')
 
     def end(self):
         end_time = time.time()
         if self.if_start:
             task_interval = end_time - self.start_time
-            print('Task: '+sys.argv[0]+' Ends.')
-            m = int(task_interval) / 60
-            s = task_interval - m
-            if m <= 1:
-                mi = 'minute'
-            else:
-                mi = 'minutes'
+            s = task_interval
             if s <= 1:
                 se = 'second'
             else:
                 se = 'seconds'
-            print(self.tag + ' Consuming '+str(m)+' '+mi+' and '+str(s)+' '+se+'.')
-            print('*' * 60)
+            self.to_string = self.tag + '\tConsumed ' + str(s)[:7]+' '+se+'.'
         self.if_start = False
 
+    def tostring(self):
+        print self.to_string
 
 # Init Two Time Recorder.
-time_decode = TimeRecord('Decoding')
-time_compare = TimeRecord('Searching')
+time_decode     = TimeRecord('Target App Decoding')
+time_load       = TimeRecord('Lib Data Loading')
+time_extract    = TimeRecord('Feature Extracting')
+time_compare    = TimeRecord('Library Searching')
+
 
 # For decoding Bug.
 reload(sys)
@@ -77,6 +73,7 @@ def get_smali(path):
     :param path:
     :return:
     """
+    print "--Decoding--"
     time_decode.start()
     cmd = project_path + "/" + "../tool/apktool decode %s -o " % path + project_path + "/" + "../decoded/%s" % os.path.basename(path)
     subprocess.call(cmd, shell=True)
@@ -92,7 +89,7 @@ def get_hash(apk_path):
     """
     # - Loading Data
 
-    time_compare.start()
+    time_load.start()
     dep_address = project_path + "/" + "../data/tgst5.dat"
     dict_address = project_path + "/" + "../data/new_dict.dat"
     dep_file = open(dep_address, 'r')
@@ -112,6 +109,9 @@ def get_hash(apk_path):
         # s_path = '/'.join(u['path_parts'])
         libs_feature.append((u['b_hash'],  u['b_total_num'], u['b_total_call'], u['s_path'], u['lib']))
 
+    time_load.end()
+    time_extract.start()
+
     # - All Over
     # print apk_path+'/smali'
     if os.path.exists(apk_path+'/smali'):
@@ -128,20 +128,53 @@ def get_hash(apk_path):
     '''
     cur_app_libs = []
     cur_app_routes = []
+
+    number_of_tagged_libs = len(libs_feature)
+    time_extract.end()
+    time_compare.start()
+
+    def compare_d(a, b):
+        if a[1] < b[1]:
+            return -1
+        elif a[1] > b[1]:
+            return 1
+        else:
+            if a[2] < b[2]:
+                return -2
+            elif a[2] > b[2]:
+                return 2
+            else:
+                if a[0] < b[0]:
+                    return -3
+                elif a[0] > b[0]:
+                    return 3
+                else:
+                    return 0
+
+    def find_feature(package, start, end):
+        if start >= end:
+            return None
+        mid = (start + end) / 2
+        if compare_d(package, libs_feature[mid]) == 0:
+            if libs_feature[mid][4] != "" and libs_feature[mid][4] != "Nope":
+                if libs_feature[mid][4] not in cur_app_libs:
+                    cur_app_libs.append(libs_feature[mid][4])
+            elif libs_feature[mid][4] == "":
+                if libs_feature[mid][3] not in cur_app_routes:
+                    cur_app_routes.append(libs_feature[mid][3])
+        elif compare_d(package, libs_feature[mid]) < 0:
+            return find_feature(package, mid + 1, end)
+        else:
+            return find_feature(package, start, mid)
+
+    print "--Packages--"
+    def find_features(package):
+        if package[3] != "":
+            print package[3]
+        find_feature(package, 0, number_of_tagged_libs)
+
     for p in packages_feature:
-        print p[3]
-        for l in libs_feature:
-            if l[2] < 5:
-                continue
-            if p[0] == l[0] and p[1] == l[1] and p[2] == l[2]:
-                if l[4] != "" and l[4] != "Nope":
-                    tmp = l[4]
-                    if tmp not in cur_app_libs:
-                        cur_app_libs.append(tmp)
-                elif l[4] == "":
-                    tmp = l[3]
-                    if tmp not in cur_app_routes:
-                        cur_app_routes.append(tmp)
+        find_features(p)
     print "--Splitter--"
     for i in cur_app_libs:
         print i + ','
@@ -150,6 +183,14 @@ def get_hash(apk_path):
         print i + ','
     print "--Splitter--"
     time_compare.end()
+
+    # To String
+    print "Task Complete."
+    print "--Time-Consuming--"
+    time_decode.tostring()
+    time_load.tostring()
+    time_extract.tostring()
+    time_compare.tostring()
     cmd = 'rm -rf %s' % apk_path
     subprocess.call(cmd, shell=True)
     return "Get Function Ends."

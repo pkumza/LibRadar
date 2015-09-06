@@ -39,7 +39,29 @@ If you want an online trial, just click [http://radar.pkuos.org/](http://radar.p
 * Node.js : v0.10.37
 
 ##Update History
-__version 1.1.0 (current version)__
+__version 1.1.3 (current version)__
+
+1. Modified Tagged Library Data and Sorted it.
+1. Remove print('*' * 60) and print('Task: '+self.tag+' Starts.')
+1. Remove 'minutes' tag because it is useless.
+1. Add specific time consuming tag.
+ 1. time_decode     = TimeRecord('Target App Decoding')
+ - time_load       = TimeRecord('Lib Data Loading')
+ - time_extract    = TimeRecord('Feature Extracting')
+ - time_compare    = TimeRecord('Library Searching')
+1. New algorithm.
+ 1. Sort library data.
+ 1. Use binary search to find the library.
+
+__version 1.1.2__
+
+Update and modify library data set.
+
+__version 1.1.1__
+
+Replace 320,000 apps data with 1,000,000 apps data.
+
+__version 1.1.0__
 
 A new version with optimized code, detailed comments and simplified data.
 
