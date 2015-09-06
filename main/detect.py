@@ -93,7 +93,7 @@ def get_hash(apk_path):
     # - Loading Data
 
     time_compare.start()
-    dep_address = project_path + "/" + "../data/st4.dat"
+    dep_address = project_path + "/" + "../data/tgst5.dat"
     dict_address = project_path + "/" + "../data/new_dict.dat"
     dep_file = open(dep_address, 'r')
     dict_file = open(dict_address, 'r')
