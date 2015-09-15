@@ -91,7 +91,7 @@ def get_hash(apk_path):
 
     time_load.start()
     dep_address = project_path + "/" + "../data/tgst5.dat"
-    dict_address = project_path + "/" + "../data/new_dict.dat"
+    dict_address = project_path + "/" + "../permission/tagged_dict.txt"
     dep_file = open(dep_address, 'r')
     dict_file = open(dict_address, 'r')
 
@@ -99,7 +99,10 @@ def get_hash(apk_path):
     for line in dict_file:
         # print line
         u = json.loads(line)
-        api_dict[u['key']] = u['value']
+        if 'p' in u:
+            api_dict[u['k']] = {'v': u['v'], 'p': u['p']}
+        else:
+            api_dict[u['k']] = {'v': u['v'], 'p': []}
 
     # -- Loading Hashed Libs
 
@@ -170,11 +173,14 @@ def get_hash(apk_path):
     print "--Packages--"
     def find_features(package):
         if package[3] != "":
-            print package[3]
+            if len(package[4]) == 0:
+                print package[3]
+            else:
+                print package[3]+' -- Permission: '+str(package[4])
         find_feature(package, 0, number_of_tagged_libs)
 
-    for p in packages_feature:
-        find_features(p)
+    for pack in packages_feature:
+        find_features(pack)
     print "--Splitter--"
     for i in cur_app_libs:
         print i + ','
@@ -205,7 +211,19 @@ def get_number(string):
     """
     if string not in api_dict:
         return -1
-    return str(api_dict[string])
+    return str(api_dict[string]['v'])
+
+
+def get_permission(string):
+    """
+    Get Permission From API Dictionary.
+    获得API的权限
+    :param string: API Name
+    :return: Permission List
+    """
+    if string not in api_dict:
+        return -1
+    return api_dict[string]['p']
 
 
 def all_over(apk_path, path):
@@ -223,6 +241,7 @@ def all_over(apk_path, path):
                    r'?\-?>*?\(|Lorg/w3c/.*?;?\-?>*?\(|Lorg/xml/.*?;?\-?>*?\(|Lorg/xmlpull/.*?;?\-?>*?\(|'
                    r'Lcom/android/internal/util.*?;?\-?>*?\(')
     all_thing = glob.glob('*')
+    this_permission = []
     this_call_num = 0
     this_dir_num = 0
     this_file_num = 0
@@ -242,6 +261,10 @@ def all_over(apk_path, path):
                 direct_dir_num += 1
                 this_file_num += child[2]
                 this_call_num += child[3]
+                if child[4] != []:
+                    for per in child[4]:
+                        if per not in this_permission:
+                            this_permission.append(per)
             os.chdir(path)
         # If the 'thing' is a file
         # 如果 thing 是一个文件
@@ -261,6 +284,15 @@ def all_over(apk_path, path):
                             continue
                         this_call_num += 1
                         call_num = get_number(system_call)
+                        permissions = get_permission(system_call)
+                        if permissions == -1:
+                            continue
+                        # print permissions
+                        if len(permissions) != 0:
+                            for per in permissions:
+                                if per not in this_permission:
+                                    this_permission.append(per)
+                        
                         if call_num == -1:
                             continue
                         if call_num in this_dict:
@@ -279,8 +311,8 @@ def all_over(apk_path, path):
     b_hash = 0
     for a in this_dict:
         b_hash = (b_hash + int(a) * this_dict[a]) % 999983          # 99983 is A Big Prime
-    packages_feature.append((b_hash, len(this_dict), this_call_num, '/'.join(parts)))
-    return this_dict, this_dir_num, this_file_num, this_call_num
+    packages_feature.append((b_hash, len(this_dict), this_call_num, '/'.join(parts), this_permission))
+    return this_dict, this_dir_num, this_file_num, this_call_num, this_permission
 
 
 def main_func(path):

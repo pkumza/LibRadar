@@ -71,7 +71,6 @@
 {"b_total_call": 7017, "b_hash": 461131, "s_path": "android/support/v4", "lib": "Android Support v4", "b_total_num": 3236}
 {"b_total_call": 6867, "b_hash": 442595, "s_path": "android/support/v4", "lib": "Android Support v4", "b_total_num": 3236}
 {"lib": "", "b_total_call": 6959, "s_path": "com", "b_total_num": 3230, "dep_num": 1838, "b_hash": 419399}
-{"lib": "", "b_total_call": 5979, "s_path": "android", "b_total_num": 3210, "dep_num": 151, "b_hash": 981747}
 {"lib": "", "b_total_call": 5888, "s_path": "android/support", "b_total_num": 3206, "dep_num": 492, "b_hash": 901972}
 {"lib": "", "b_total_call": 5831, "s_path": "android/support", "b_total_num": 3188, "dep_num": 122, "b_hash": 405562}
 {"lib": "", "b_total_call": 5821, "s_path": "android/support", "b_total_num": 3180, "dep_num": 816, "b_hash": 342354}
@@ -83,13 +82,11 @@
 {"b_total_call": 6829, "b_hash": 937319, "s_path": "android/support/v4", "lib": "Android Support v4", "b_total_num": 3141}
 {"b_total_call": 6679, "b_hash": 918783, "s_path": "android/support/v4", "lib": "Android Support v4", "b_total_num": 3141}
 {"lib": "", "b_total_call": 5974, "s_path": "android/support", "b_total_num": 3141, "dep_num": 148, "b_hash": 429920}
-{"lib": "", "b_total_call": 6805, "s_path": "android", "b_total_num": 3138, "dep_num": 142, "b_hash": 540868}
 {"b_total_call": 6847, "b_hash": 552218, "s_path": "android/support/v4", "lib": "Android Support v4", "b_total_num": 3134}
 {"b_total_call": 6812, "b_hash": 676062, "s_path": "android/support/v4", "lib": "Android Support v4", "b_total_num": 3134}
 {"b_total_call": 6812, "b_hash": 551308, "s_path": "android/support/v4", "lib": "Android Support v4", "b_total_num": 3134}
 {"b_total_call": 6812, "b_hash": 550889, "s_path": "android/support/v4", "lib": "Android Support v4", "b_total_num": 3134}
 {"lib": "", "b_total_call": 8126, "s_path": "com", "b_total_num": 3133, "dep_num": 859, "b_hash": 184799}
-{"lib": "", "b_total_call": 6793, "s_path": "android", "b_total_num": 3127, "dep_num": 139, "b_hash": 492047}
 {"b_total_call": 6792, "b_hash": 482547, "s_path": "android/support/v4", "lib": "Android Support v4", "b_total_num": 3126}
 {"b_total_call": 6792, "b_hash": 482128, "s_path": "android/support/v4", "lib": "Android Support v4", "b_total_num": 3126}
 {"b_total_call": 6765, "b_hash": 407250, "s_path": "android/support/v4", "lib": "Android Support v4", "b_total_num": 3117}
@@ -3055,7 +3052,7 @@
 {"lib": "", "b_total_call": 3635, "s_path": "com/cifndurmx/hdbplswus102319", "b_total_num": 519, "dep_num": 382, "b_hash": 422162}
 {"lib": "", "b_total_call": 3106, "s_path": "com/appsbar/GicleetryckSE204799", "b_total_num": 519, "dep_num": 217, "b_hash": 956961}
 {"lib": "", "b_total_call": 3031, "s_path": "com/lowagie/text", "b_total_num": 519, "dep_num": 275, "b_hash": 258140}
-{"lib": "", "b_total_call": 2718, "s_path": "com/baidu/android/pushservice", "b_total_num": 519, "dep_num": 117, "b_hash": 957396}
+{"lib": "baidu pushservice", "b_total_call": 2718, "s_path": "com/baidu/android/pushservice", "b_total_num": 519, "dep_num": 117, "b_hash": 957396}
 {"b_total_call": 2122, "b_hash": 100214, "s_path": "com/appbrain/a", "lib": "appbrain", "b_total_num": 519}
 {"b_total_call": 1943, "b_hash": 519752, "s_path": "com/amazon/device/ads", "lib": "Amazon", "b_total_num": 519}
 {"lib": "", "b_total_call": 1759, "s_path": "com", "b_total_num": 519, "dep_num": 134, "b_hash": 732356}
