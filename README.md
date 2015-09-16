@@ -39,7 +39,12 @@ If you want an online trial, just click [http://radar.pkuos.org/](http://radar.p
 * Node.js : v0.10.37
 
 ##Update History
-__version 1.1.3 (current version)__
+
+__version 1.1.5 (current version)__
+
+Add Permission Detection of packages.
+
+__version 1.1.3__
 
 1. Modified Tagged Library Data and Sorted it.
 1. Remove print('*' * 60) and print('Task: '+self.tag+' Starts.')
