@@ -17,6 +17,8 @@ import subprocess
 import sys
 import time
 
+DEBUG_ON = False
+
 
 class TimeRecord:
     """
@@ -73,7 +75,6 @@ def get_smali(path):
     :param path:
     :return:
     """
-    print "--Decoding--"
     time_decode.start()
     cmd = project_path + "/" + "../tool/apktool decode %s -o " % path + project_path + "/" + "../decoded/%s" % os.path.basename(path)
     subprocess.call(cmd, shell=True)
@@ -129,7 +130,7 @@ def get_hash(apk_path):
         for p in packages_feature:
             print p
     '''
-    cur_app_libs = []
+    cur_app_libs = {}
     cur_app_routes = []
 
     number_of_tagged_libs = len(libs_feature)
@@ -154,36 +155,39 @@ def get_hash(apk_path):
                 else:
                     return 0
 
-    def find_feature(package, start, end):
+    def find_feature(package, start, end, permission_list):
         if start >= end:
             return None
         mid = (start + end) / 2
         if compare_d(package, libs_feature[mid]) == 0:
             if libs_feature[mid][4] != "" and libs_feature[mid][4] != "Nope":
                 if libs_feature[mid][4] not in cur_app_libs:
-                    cur_app_libs.append(libs_feature[mid][4])
+                    cur_app_libs[libs_feature[mid][4]] = permission_list
+                else:
+                    cur_app_libs[libs_feature[mid][4]] = list(set(cur_app_libs[libs_feature[mid][4]] + permission_list))
             elif libs_feature[mid][4] == "":
                 if libs_feature[mid][3] not in cur_app_routes:
                     cur_app_routes.append(libs_feature[mid][3])
         elif compare_d(package, libs_feature[mid]) < 0:
-            return find_feature(package, mid + 1, end)
+            return find_feature(package, mid + 1, end, permission_list)
         else:
-            return find_feature(package, start, mid)
+            return find_feature(package, start, mid, permission_list)
 
     print "--Packages--"
+
     def find_features(package):
         if package[3] != "":
             if len(package[4]) == 0:
                 print package[3]
             else:
                 print package[3]+' -- Permission: '+str(package[4])
-        find_feature(package, 0, number_of_tagged_libs)
+        find_feature(package, 0, number_of_tagged_libs, package[4])
 
     for pack in packages_feature:
         find_features(pack)
     print "--Splitter--"
     for i in cur_app_libs:
-        print i + ','
+        print i + ' , P :' + str(cur_app_libs[i]) + ' \n'
     print "--Splitter--"
     for i in cur_app_routes:
         print i + ','
@@ -303,7 +307,8 @@ def all_over(apk_path, path):
                 this_file_num += 1
                 direct_file_num += 1
             except Exception as ex:
-                print('Can not Open ' + thing + ' Wrong with:' + str(ex))
+                if DEBUG_ON:
+                    print('Can not Open ' + thing + ' Wrong with:' + str(ex))
     # If there is no API call in this package, just ignore it.
     if len(this_dict) == 0:
         return
@@ -322,6 +327,7 @@ def main_func(path):
     :param path: The path of target app.
     :return: None.
     """
+    print "--Decoding--"
     decoded_path = get_smali(path)
     get_hash(decoded_path)
 
