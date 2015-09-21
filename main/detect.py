@@ -130,7 +130,7 @@ def get_hash(apk_path):
         for p in packages_feature:
             print p
     '''
-    cur_app_libs = {}
+    cur_app_libs = []
     cur_app_routes = []
 
     number_of_tagged_libs = len(libs_feature)
@@ -155,23 +155,21 @@ def get_hash(apk_path):
                 else:
                     return 0
 
-    def find_feature(package, start, end, permission_list):
+    def find_feature(package, start, end):
         if start >= end:
             return None
         mid = (start + end) / 2
         if compare_d(package, libs_feature[mid]) == 0:
             if libs_feature[mid][4] != "" and libs_feature[mid][4] != "Nope":
                 if libs_feature[mid][4] not in cur_app_libs:
-                    cur_app_libs[libs_feature[mid][4]] = permission_list
-                else:
-                    cur_app_libs[libs_feature[mid][4]] = list(set(cur_app_libs[libs_feature[mid][4]] + permission_list))
+                    cur_app_libs.append(libs_feature[mid][4])
             elif libs_feature[mid][4] == "":
                 if libs_feature[mid][3] not in cur_app_routes:
                     cur_app_routes.append(libs_feature[mid][3])
         elif compare_d(package, libs_feature[mid]) < 0:
-            return find_feature(package, mid + 1, end, permission_list)
+            return find_feature(package, mid + 1, end)
         else:
-            return find_feature(package, start, mid, permission_list)
+            return find_feature(package, start, mid)
 
     print "--Packages--"
 
@@ -181,13 +179,13 @@ def get_hash(apk_path):
                 print package[3]
             else:
                 print package[3]+' -- Permission: '+str(package[4])
-        find_feature(package, 0, number_of_tagged_libs, package[4])
+        find_feature(package, 0, number_of_tagged_libs)
 
     for pack in packages_feature:
         find_features(pack)
     print "--Splitter--"
     for i in cur_app_libs:
-        print i + ' , P :' + str(cur_app_libs[i]) + ' \n'
+        print i + ','
     print "--Splitter--"
     for i in cur_app_routes:
         print i + ','
