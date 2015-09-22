@@ -110,8 +110,24 @@ def get_hash(apk_path):
     for line in dep_file:
         # print line
         u = json.loads(line)
-        # s_path = '/'.join(u['path_parts'])
-        libs_feature.append((u['b_hash'],  u['b_total_num'], u['b_total_call'], u['s_path'], u['lib']))
+        """
+        {"dn": 311,                         Repetitions
+         "lib": "pollfish",                 Library
+          "sp": "com/pollfish/f/a",         Simplified Path
+           "bh": 32370,                     B_Hash
+            "btc": 40,                      B_Total_Call
+             "btn": 12,                     B_Total_Number
+              "pn": "com/pollfish"}         Package Name
+        """
+        if "pn" in u:
+            if ';' in u['lib']:
+                english_lib = u['lib'].split(';')[0]
+                ch_des = u['lib'].split(';')[1]         # Chinese Description
+                libs_feature.append((u['bh'],  u['btn'], u['btc'], u['sp'], english_lib, u['pn'], u['dn'], ch_des))
+            else:
+                libs_feature.append((u['bh'],  u['btn'], u['btc'], u['sp'], u['lib'], u['pn'], u['dn'], ""))
+        else:
+            libs_feature.append((u['bh'],  u['btn'], u['btc'], u['sp'], u['lib'], "", u['dn'], ""))
 
     time_load.end()
     time_extract.start()
@@ -131,7 +147,8 @@ def get_hash(apk_path):
             print p
     '''
     cur_app_libs = []
-    cur_app_routes = []
+    cur_app_routes = {}
+    path_and_permission = {}
 
     number_of_tagged_libs = len(libs_feature)
     time_extract.end()
@@ -159,13 +176,29 @@ def get_hash(apk_path):
         if start >= end:
             return None
         mid = (start + end) / 2
+        """
+            packages_feature.append((bh, len(this_dict), this_call_num, '/'.join(parts), this_permission))
+        """
         if compare_d(package, libs_feature[mid]) == 0:
             if libs_feature[mid][4] != "" and libs_feature[mid][4] != "Nope":
-                if libs_feature[mid][4] not in cur_app_libs:
-                    cur_app_libs.append(libs_feature[mid][4])
+                cur_app_libs.append({
+                    "bh": libs_feature[mid][0],
+                    "btn": libs_feature[mid][1],
+                    "btc": libs_feature[mid][2],
+                    "sp": libs_feature[mid][3],
+                    "lib": libs_feature[mid][4],
+                    "pn": libs_feature[mid][5],
+                    "dn": libs_feature[mid][6],
+                    "ch": libs_feature[mid][7],         # Chinese Description
+                    "csp": package[3],                  # Current S_path
+                })
             elif libs_feature[mid][4] == "":
-                if libs_feature[mid][3] not in cur_app_routes:
-                    cur_app_routes.append(libs_feature[mid][3])
+                cur_app_routes[libs_feature[mid][3]] = {
+                    "sp": libs_feature[mid][3],
+                    "csp": package[3],
+                    "cp": package[4],
+                    "dn": libs_feature[mid][6]
+                }
         elif compare_d(package, libs_feature[mid]) < 0:
             return find_feature(package, mid + 1, end)
         else:
@@ -176,24 +209,47 @@ def get_hash(apk_path):
     def find_features(package):
         if package[3] != "":
             if len(package[4]) == 0:
-                print package[3]
+                if DEBUG_ON:
+                    print package[3]
+                path_and_permission[package[3]] = []
             else:
-                print package[3]+' -- Permission: '+str(package[4])
+                if DEBUG_ON:
+                    print package[3]+' -- Permission: '+str(package[4])
+                path_and_permission[package[3]] = package[4]
         find_feature(package, 0, number_of_tagged_libs)
 
     for pack in packages_feature:
         find_features(pack)
+    print "PATH and Permission:"
+    for k in path_and_permission:
+        print k + str(path_and_permission[k])
     print "--Splitter--"
+    final_libs_dict = {}
     for i in cur_app_libs:
-        print i + ','
+        # 先找PN
+        # 然后切分sp。找到对应的path
+        # 然后把对应的Permission找出来加进来
+        if i['pn'] in final_libs_dict:
+            continue
+        pn_number = len(i['pn'].split('/'))
+        cpn = '/'.join(i['csp'].split('/')[0:pn_number])
+        i['cpn'] = cpn
+        i['p'] = path_and_permission[cpn]
+        final_libs_dict[i['pn']] = i
+        #print str(i) + ','
+    final_libs_list = []
+    for i in final_libs_dict:
+        final_libs_list.append(final_libs_dict[i])
+    print json.dumps(final_libs_list)
     print "--Splitter--"
+    final_routes_list = []
     for i in cur_app_routes:
-        print i + ','
+        final_routes_list.append(cur_app_routes[i])
+    print json.dumps(final_routes_list)
     print "--Splitter--"
     time_compare.end()
 
     # To String
-    print "Task Complete."
     print "--Time-Consuming--"
     time_decode.tostring()
     time_load.tostring()
@@ -311,10 +367,10 @@ def all_over(apk_path, path):
     if len(this_dict) == 0:
         return
     parts = path[len(apk_path)+7:].split("/")
-    b_hash = 0
+    bh = 0
     for a in this_dict:
-        b_hash = (b_hash + int(a) * this_dict[a]) % 999983          # 99983 is A Big Prime
-    packages_feature.append((b_hash, len(this_dict), this_call_num, '/'.join(parts), this_permission))
+        bh = (bh + int(a) * this_dict[a]) % 999983          # 99983 is A Big Prime
+    packages_feature.append((bh, len(this_dict), this_call_num, '/'.join(parts), this_permission))
     return this_dict, this_dir_num, this_file_num, this_call_num, this_permission
 
 
@@ -333,7 +389,7 @@ def main_func(path):
 if __name__ == '__main__':
     if len(sys.argv) <= 1:
         print "No Apk File Name.\nTry to detect 'Yo.apk' for test."
-        main_func("~/Downloads/Yo.apk")
+        main_func("~/Downloads/org.itishka.pointim_23.apk")
     else:
         print os.path.basename(sys.argv[1])
         main_func(sys.argv[1])

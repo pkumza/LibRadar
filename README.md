@@ -40,7 +40,20 @@ If you want an online trial, just click [http://radar.pkuos.org/](http://radar.p
 
 ##Update History
 
-__version 1.1.5 (current version)__
+__version 1.1.7 (current version)__
+
+1. Update library fingerprint data for better recognition.
+2. Put plenty data into final output.
+ -        "dn": 311 -                          Repetitions
+ -        "lib": "pollfish" -                  Library
+ -         "sp": "com/pollfish/f/a" -          Simplified Path
+ -          "bh": 32370 -                      B_Hash
+ -           "btc": 40 -                       B_Total_Call
+ -            "btn": 12 -                      B_Total_Number
+ -             "pn": "com/pollfish" -          Package Name
+3. Permission detection.
+
+__version 1.1.5__
 
 Add Permission Detection of packages.
 
