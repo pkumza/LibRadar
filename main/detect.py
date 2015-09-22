@@ -250,7 +250,7 @@ def get_hash(apk_path):
     time_compare.end()
 
     # To String
-    print "--Time-Consuming--"
+    # print "--Time-Consuming--"
     time_decode.tostring()
     time_load.tostring()
     time_extract.tostring()
