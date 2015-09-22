@@ -68,6 +68,18 @@ packages_feature = []
 libs_feature = []
 project_path = os.path.dirname(sys.argv[0])
 
+library_type = {
+    "da": "Development Aid",
+    "sn": "Social Network",
+    "ad": "Advertisement",
+    "am": "App Market",
+    "ma": "Mobile Analytics",
+    "pa": "Payment",
+    "ui": "UI Component",
+    "ge": "Game Engine",
+    "ut": "Utility",
+    "mp": "Map"
+}
 
 def get_smali(path):
     """
@@ -120,14 +132,26 @@ def get_hash(apk_path):
               "pn": "com/pollfish"}         Package Name
         """
         if "pn" in u:
-            if ';' in u['lib']:
-                english_lib = u['lib'].split(';')[0]
-                ch_des = u['lib'].split(';')[1]         # Chinese Description
-                libs_feature.append((u['bh'],  u['btn'], u['btc'], u['sp'], english_lib, u['pn'], u['dn'], ch_des))
+            components = u['lib'].split(';')
+            if len(components) == 3:
+                lib_type = components[0]
+                if lib_type in library_type:
+                    lib_type = library_type[lib_type]
+                eng_lib = components[1]        # English Library
+                ch_des = components[2]         # Chinese Description
+                libs_feature.append(
+                    (u['bh'], u['btn'], u['btc'], u['sp'], eng_lib, u['pn'], u['dn'], ch_des, lib_type)
+                )
             else:
-                libs_feature.append((u['bh'],  u['btn'], u['btc'], u['sp'], u['lib'], u['pn'], u['dn'], ""))
+                lib_type = components[0]
+                if lib_type in library_type:
+                    lib_type = library_type[lib_type]
+                eng_lib = components[1]        # English Library
+                libs_feature.append(
+                    (u['bh'],  u['btn'], u['btc'], u['sp'], eng_lib, u['pn'], u['dn'], "", lib_type)
+                )
         else:
-            libs_feature.append((u['bh'],  u['btn'], u['btc'], u['sp'], u['lib'], "", u['dn'], ""))
+            libs_feature.append((u['bh'],  u['btn'], u['btc'], u['sp'], u['lib'], "", u['dn'], "", ""))
 
     time_load.end()
     time_extract.start()
@@ -190,6 +214,7 @@ def get_hash(apk_path):
                     "pn": libs_feature[mid][5],
                     "dn": libs_feature[mid][6],
                     "ch": libs_feature[mid][7],         # Chinese Description
+                    "tp": libs_feature[mid][8],
                     "csp": package[3],                  # Current S_path
                 })
             elif libs_feature[mid][4] == "":
@@ -204,7 +229,9 @@ def get_hash(apk_path):
         else:
             return find_feature(package, start, mid)
 
-    print "--Packages--"
+
+    if DEBUG_ON:
+        print "--Packages--"
 
     def find_features(package):
         if package[3] != "":
@@ -220,9 +247,10 @@ def get_hash(apk_path):
 
     for pack in packages_feature:
         find_features(pack)
-    print "PATH and Permission:"
-    for k in path_and_permission:
-        print k + str(path_and_permission[k])
+    if DEBUG_ON:
+        print "PATH and Permission:"
+        for k in path_and_permission:
+            print k + str(path_and_permission[k])
     print "--Splitter--"
     final_libs_dict = {}
     for i in cur_app_libs:
@@ -389,7 +417,7 @@ def main_func(path):
 if __name__ == '__main__':
     if len(sys.argv) <= 1:
         print "No Apk File Name.\nTry to detect 'Yo.apk' for test."
-        main_func("~/Downloads/org.itishka.pointim_23.apk")
+        main_func("~/Downloads/Yo.apk")
     else:
         print os.path.basename(sys.argv[1])
         main_func(sys.argv[1])
