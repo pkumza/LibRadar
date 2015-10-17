@@ -40,7 +40,11 @@ If you want an online trial, just click [http://radar.pkuos.org/](http://radar.p
 
 ##Update History
 
-__version 1.2.0 (current version)__
+__version 1.2.1 (current version)__
+
+Remove lib code in smali files and zip them into a new file.
+
+__version 1.2.0__
 
 Modularity
 
