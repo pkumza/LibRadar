@@ -40,7 +40,11 @@ If you want an online trial, just click [http://radar.pkuos.org/](http://radar.p
 
 ##Update History
 
-__version 1.1.9 (current version)__
+__version 1.2.0 (current version)__
+
+Modularity
+
+__version 1.1.9__
 
 1. Update Output Format.
 2. Add library type.

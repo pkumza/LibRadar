@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # Created at 2015/7/20
 # Recently Modified at 2015/10/17
-# Current Version 1.1.1
+# Current Version 1.2.0
 
 __author__ = 'Zachary Marv - 马子昂'
 
