@@ -56,6 +56,8 @@ class Detector:
         self.libs_feature = []
         self.project_path = os.path.dirname(sys.argv[0])
 
+        self.load_data()
+
     def get_smali(self, path):
         """
         Convert APK into Smali file.
@@ -69,12 +71,7 @@ class Detector:
         self.time_decode.end()
         return self.project_path + '/../decoded/%s' % os.path.basename(path)
 
-    def get_hash(self, apk_path):
-        """
-        Convert APK into Smali file.
-        :param path:
-        :return: The path of apk with libs removed.
-        """
+    def load_data(self):
         # - Loading Data
 
         self.time_load.start()
@@ -129,6 +126,14 @@ class Detector:
                 self.libs_feature.append((u['bh'],  u['btn'], u['btc'], u['sp'], u['lib'], "", u['dn'], "", ""))
 
         self.time_load.end()
+
+    def get_hash(self, apk_path):
+        """
+        Convert APK into Smali file.
+        :param path:
+        :return: The path of apk with libs removed.
+        """
+
         self.time_extract.start()
 
         # - All Over
@@ -203,7 +208,6 @@ class Detector:
                 return find_feature(package, mid + 1, end)
             else:
                 return find_feature(package, start, mid)
-
 
         if DEBUG_ON:
             print "--Packages--"
