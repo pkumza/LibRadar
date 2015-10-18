@@ -18,7 +18,7 @@ import sys
 import zipfile
 from time_recorder import TimeRecord
 
-
+RM_ON = False
 DEBUG_ON = False
 
 
@@ -268,15 +268,16 @@ class Detector:
         for i in final_libs_dict:
             if 'cpn' in final_libs_dict[i]:
                 lib_dir_list.append(apk_path + '/smali/' + final_libs_dict[i]['cpn'])
-
-        self.rm_lib_files(lib_dir_list)
+        if RM_ON:
+            self.rm_lib_files(lib_dir_list)
 
         zip_file_name = self.project_path + '/../clean_app/' + os.path.basename(apk_path)[:-3] + 'zip'
         smali_path = apk_path + '/smali'
         self.zip_apk(smali_path, zip_file_name)
 
-        cmd = 'rm -rf %s' % apk_path
-        subprocess.call(cmd, shell=True)
+        if RM_ON:
+            cmd = 'rm -rf %s' % apk_path
+            subprocess.call(cmd, shell=True)
 
         return zip_file_name
 
