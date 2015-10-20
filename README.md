@@ -20,7 +20,7 @@ Use __detect.py__ under the  main directory.
 Input the first parameters as the path of the target apk.
 
 ```bash
-$ python main/detect.py ~/apks/sample.apk
+$ python main/main.py ~/apks/sample.apk
 ```
 Or modify the code in the main function.
 
