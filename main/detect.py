@@ -18,7 +18,14 @@ import sys
 import zipfile
 from time_recorder import TimeRecord
 
-RM_ON = False
+"""
+RM_STATUS : {
+    0 Remove Nothing
+    1 Remove all
+    2 Remove Lib Code
+}
+"""
+RM_STATUS = 0
 DEBUG_ON = False
 
 
@@ -268,18 +275,22 @@ class Detector:
         for i in final_libs_dict:
             if 'cpn' in final_libs_dict[i]:
                 lib_dir_list.append(apk_path + '/smali/' + final_libs_dict[i]['cpn'])
-        if RM_ON:
+        if RM_STATUS > 0:
             self.rm_lib_files(lib_dir_list)
 
         zip_file_name = self.project_path + '/../clean_app/' + os.path.basename(apk_path)[:-3] + 'zip'
         smali_path = apk_path + '/smali'
         self.zip_apk(smali_path, zip_file_name)
 
-        if RM_ON:
+        if RM_STATUS == 1:
             cmd = 'rm -rf %s' % apk_path
             subprocess.call(cmd, shell=True)
-
-        return zip_file_name
+        elif RM_STATUS == 2:
+            zip_file_name = self.project_path + '/../clean_app/' + os.path.basename(apk_path)[:-3] + 'zip'
+            smali_path = apk_path + '/smali'
+            self.zip_apk(smali_path, zip_file_name)
+            return zip_file_name
+        return "No Zip File Here."
 
     @staticmethod
     def rm_lib_files(lib_list):
@@ -291,7 +302,6 @@ class Detector:
     def zip_apk(source, target):
         if not os.path.exists(os.path.dirname(target)):
             os.mkdir(os.path.dirname(target))
-        # z = zipfile.ZipFile(target, 'w')
         file_list = []
         if os.path.isdir(source):
             for root, dirs, files in os.walk(source):
