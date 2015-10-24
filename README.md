@@ -40,7 +40,14 @@ If you want an online trial, just click [http://radar.pkuos.org/](http://radar.p
 
 ##Update History
 
-__version 1.2.1 (current version)__
+__version 1.2.3 (current version)__
+
+1. Add 'LData' Branch for Jingyue's research.
+2. Add var RM_STATUS for smali code deleting control.
+3. Modify path in function *all_over* so that there's no need to input the full path of this python script any more.
+4. Replace chinese description with web address.
+
+__version 1.2.1__
 
 Remove lib code in smali files and zip them into a new file.
 
