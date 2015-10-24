@@ -389,17 +389,20 @@ class Detector:
                     final_libs_dict[i['pn']]['dn'] = i['dn']
             pn_number = len(i['pn'].split('/'))
             cpn = '/'.join(i['csp'].split('/')[0:pn_number])
-            cpn += '/'
+            if cpn[-1:] != '/':
+                cpn += '/'
             i['cpn'] = cpn
             i['p'] = path_and_permission[cpn]
             final_libs_dict[i['pn']] = i
             #print str(i) + ','
         final_libs_list = []
         for i in final_libs_dict:
+            final_libs_dict[i]['pn'] += '/'
             final_libs_list.append(final_libs_dict[i])
         # print json.dumps(final_libs_list)
         final_routes_list = []
         for i in cur_app_routes:
+            cur_app_routes[i]['pn'] += '/'
             final_libs_list.append(cur_app_routes[i])
         print json.dumps(final_libs_list)
         print "--Splitter--"
