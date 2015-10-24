@@ -27,6 +27,7 @@ RM_STATUS : {
 """
 RM_STATUS = 0
 DEBUG_ON = False
+DEBUG_PATH = False
 
 
 class Detector:
@@ -147,8 +148,8 @@ class Detector:
         # print apk_path+'/smali'
         if os.path.exists(apk_path+'/smali'):
             os.chdir(apk_path+'/smali')
-            self.all_over(apk_path, apk_path+'/smali')
-            os.chdir(apk_path)
+            self.all_over(apk_path, '')
+            # os.chdir(apk_path)
 
         # Print Res
         # print packages_feature
@@ -232,6 +233,8 @@ class Detector:
             find_feature(package, 0, number_of_tagged_libs)
 
         for pack in self.packages_feature:
+            if DEBUG_PATH:
+                print ('PACK' + str(pack))
             find_features(pack)
         if DEBUG_ON:
             print "PATH and Permission:"
@@ -247,6 +250,7 @@ class Detector:
                 continue
             pn_number = len(i['pn'].split('/'))
             cpn = '/'.join(i['csp'].split('/')[0:pn_number])
+            cpn += '/'
             i['cpn'] = cpn
             i['p'] = path_and_permission[cpn]
             final_libs_dict[i['pn']] = i
@@ -345,7 +349,8 @@ class Detector:
         :param path: Packages Path
         :return: API Dict of this package, Directory Number in this Package, File Number, Total API Call.
         """
-
+        if DEBUG_PATH:
+            print ('PATH : ' + path)
         find_file = re.compile(r'.smali$')
         p = re.compile(r'Landroid/.*?;?\-?>*?\(|Ljava/.*?;?\-?>*?\(|Ljavax/.*?;?\-?>*?\(|Lunit/runner/.*?;?\-?>*?\('
                        r'|Lunit/framework/.*?;?\-?>*?\('
@@ -363,10 +368,14 @@ class Detector:
         for thing in all_thing:
             # If the thing is a directory.
             if os.path.isdir(thing):
-                os.chdir(path+'/'+thing)
+                if DEBUG_PATH:
+                    print ('Path and Current Work Directory.')
+                    print thing
+                    print os.getcwd()
+                os.chdir(thing + '/')
                 # Merge Dictionary
                 # 合并字典
-                child = self.all_over(apk_path, path+'/'+thing)
+                child = self.all_over(apk_path, path + thing + '/')
                 if child is not None:
                     this_dict.update(child[0])
                     this_dir_num += child[1] + 1
@@ -377,7 +386,7 @@ class Detector:
                         for per in child[4]:
                             if per not in this_permission:
                                 this_permission.append(per)
-                os.chdir(path)
+                os.chdir('..')
             # If the 'thing' is a file
             # 如果 thing 是一个文件
             else:
@@ -420,9 +429,10 @@ class Detector:
         # If there is no API call in this package, just ignore it.
         if len(this_dict) == 0:
             return
-        parts = path[len(apk_path)+7:].split("/")
+        if DEBUG_PATH:
+            print ('APK_PATH' + apk_path)
         bh = 0
         for a in this_dict:
             bh = (bh + int(a) * this_dict[a]) % 999983          # 99983 is A Big Prime
-        self.packages_feature.append((bh, len(this_dict), this_call_num, '/'.join(parts), this_permission))
+        self.packages_feature.append((bh, len(this_dict), this_call_num, path, this_permission))
         return this_dict, this_dir_num, this_file_num, this_call_num, this_permission
