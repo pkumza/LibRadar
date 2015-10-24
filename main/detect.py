@@ -113,23 +113,15 @@ class Detector:
             """
             if "pn" in u:
                 components = u['lib'].split(';')
-                if len(components) == 3:
-                    lib_type = components[0]
-                    if lib_type in self.library_type:
-                        lib_type = self.library_type[lib_type]
-                    eng_lib = components[1]        # English Library
-                    ch_des = components[2]         # Chinese Description
-                    self.libs_feature.append(
-                        (u['bh'], u['btn'], u['btc'], u['sp'], eng_lib, u['pn'], u['dn'], ch_des, lib_type)
-                    )
-                else:
-                    lib_type = components[0]
-                    if lib_type in self.library_type:
-                        lib_type = self.library_type[lib_type]
-                    eng_lib = components[1]        # English Library
-                    self.libs_feature.append(
-                        (u['bh'],  u['btn'], u['btc'], u['sp'], eng_lib, u['pn'], u['dn'], "", lib_type)
-                    )
+                assert len(components) == 3
+                lib_type = components[0]
+                if lib_type in self.library_type:
+                    lib_type = self.library_type[lib_type]
+                eng_lib = components[1]        # English Library
+                ch_des = components[2]         # Web Link
+                self.libs_feature.append(
+                    (u['bh'], u['btn'], u['btc'], u['sp'], eng_lib, u['pn'], u['dn'], ch_des, lib_type)
+                )
             else:
                 self.libs_feature.append((u['bh'],  u['btn'], u['btc'], u['sp'], u['lib'], "", u['dn'], "", ""))
 
@@ -201,7 +193,7 @@ class Detector:
                         "lib": self.libs_feature[mid][4],
                         "pn": self.libs_feature[mid][5],
                         "dn": self.libs_feature[mid][6],
-                        "ch": self.libs_feature[mid][7],         # Chinese Description
+                        "ch": self.libs_feature[mid][7],         # Web Link
                         "tp": self.libs_feature[mid][8],
                         "csp": package[3],                  # Current S_path
                     })
@@ -247,7 +239,11 @@ class Detector:
             # 然后切分sp。找到对应的path
             # 然后把对应的Permission找出来加进来
             if i['pn'] in final_libs_dict:
-                continue
+                # 找到同样package name的小包中，重复次数最多的，作为总的重复次数
+                # 本来想找到大包的重复次数作为重复次数，但是大包的重复次数甚至很容易直接是0
+                # 并不适合。
+                if final_libs_dict[i['pn']]['dn'] < i['dn']:
+                    final_libs_dict[i['pn']]['dn'] = i['dn']
             pn_number = len(i['pn'].split('/'))
             cpn = '/'.join(i['csp'].split('/')[0:pn_number])
             cpn += '/'
