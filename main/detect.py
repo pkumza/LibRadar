@@ -404,7 +404,8 @@ class Detector:
         for i in cur_app_routes:
             cur_app_routes[i]['pn'] += '/'
             final_libs_list.append(cur_app_routes[i])
-        print json.dumps(final_libs_list)
+        sorted_libs = sorted(final_libs_list, key=lambda lib: lib['dn'], reverse=True)
+        print json.dumps(sorted_libs)
         print "--Splitter--"
         print "--Splitter--"
         self.time_compare.end()
