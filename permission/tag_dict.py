@@ -31,7 +31,7 @@ for line in p_scout:
         parts = line[1:line.index('(')].split(' ')
         api = 'L'+parts[0][:-1].replace('.', '/') + ';->' + parts[2] + '('
         if api in api_dict:
-            api_dict[api]['p'].append(cur_p[19:-1])
+            api_dict[api]['p'].append(cur_p[:-1])
 
 for k in api_dict:
     if len(api_dict[k]['p']) == 0:
