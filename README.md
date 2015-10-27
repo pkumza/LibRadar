@@ -40,7 +40,16 @@ If you want an online trial, just click [http://radar.pkuos.org/](http://radar.p
 
 ##Update History
 
-__version 1.2.3 (current version)__
+__version 1.2.5 (current version)__
+
+1. Assert 3 parts.
+2. Repair the problem "three ';' in 'tgst5.dat'".
+3. Update repetition counting.
+4. Merge the results of marked libs and unmarked libs.
+5. Fix '/' bug.
+6. Sort the result.
+
+__version 1.2.3__
 
 1. Add 'LData' Branch for Jingyue's research.
 2. Add var RM_STATUS for smali code deleting control.
