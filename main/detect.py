@@ -25,7 +25,7 @@ RM_STATUS : {
     2 Remove Lib Code
 }
 """
-RM_STATUS = 0
+RM_STATUS = 1
 DEBUG_ON = False
 DEBUG_PATH = False
 

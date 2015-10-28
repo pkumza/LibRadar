@@ -39,8 +39,11 @@ If you want an online trial, just click [http://radar.pkuos.org/](http://radar.p
 * Node.js : v0.10.37
 
 ##Update History
+__version 1.3.0 (current version)__
 
-__version 1.2.5 (current version)__
+1. Ajax support.
+
+__version 1.2.5__
 
 1. Assert 3 parts.
 2. Repair the problem "three ';' in 'tgst5.dat'".
