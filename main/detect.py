@@ -15,14 +15,12 @@ import glob
 import re
 import subprocess
 import sys
-import zipfile
 from time_recorder import TimeRecord
 
 """
 RM_STATUS : {
     0 Remove Nothing
     1 Remove all
-    2 Remove Lib Code
 }
 """
 RM_STATUS = 1
@@ -63,7 +61,8 @@ class Detector:
         self.packages_feature = []
         self.libs_feature = []
         self.project_path = os.path.dirname(sys.argv[0])
-
+        if self.project_path == "":
+            self.project_path = "."
         self.load_data()
 
 
@@ -72,24 +71,6 @@ class Detector:
         for lib_dir_name in lib_list:
             cmd = 'rm -rf %s' % lib_dir_name
             subprocess.call(cmd, shell=True)
-
-    @staticmethod
-    def zip_apk(source, target):
-        if not os.path.exists(os.path.dirname(target)):
-            os.mkdir(os.path.dirname(target))
-        file_list = []
-        if os.path.isdir(source):
-            for root, dirs, files in os.walk(source):
-                for name in files:
-                    file_list.append(os.path.join(root, name))
-        else:
-            # print '%s is not a directory.' % source
-            file_list.append(source)
-        zf = zipfile.ZipFile(target, 'w', zipfile.zlib.DEFLATED)
-        for tar in file_list:
-            arcname = tar[len(source):]
-            zf.write(tar, arcname)
-        zf.close()
 
     def get_number(self, string):
         """
@@ -425,16 +406,6 @@ class Detector:
         if RM_STATUS > 0:
             self.rm_lib_files(lib_dir_list)
 
-        zip_file_name = self.project_path + '/../clean_app/' + os.path.basename(apk_path)[:-3] + 'zip'
-        smali_path = apk_path + '/smali'
-        self.zip_apk(smali_path, zip_file_name)
-
         if RM_STATUS == 1:
             cmd = 'rm -rf %s' % apk_path
             subprocess.call(cmd, shell=True)
-        elif RM_STATUS == 2:
-            zip_file_name = self.project_path + '/../clean_app/' + os.path.basename(apk_path)[:-3] + 'zip'
-            smali_path = apk_path + '/smali'
-            self.zip_apk(smali_path, zip_file_name)
-            return zip_file_name
-        return "No Zip File Here."

@@ -20,9 +20,7 @@ def main_func(path):
     print "--Decoding--"
     detector = Detector()
     decoded_path = detector.get_smali(path)
-    clean_app_path = detector.get_hash(decoded_path)
-    print "--Splitter--"
-    print('clean app path : %s' % clean_app_path)
+    detector.get_hash(decoded_path)
 
 
 if __name__ == '__main__':
