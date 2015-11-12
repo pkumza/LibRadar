@@ -47,9 +47,7 @@ class Detector:
 
     def __init__(self):
         # Init Two Time Recorder.
-        self.time_decode = TimeRecord('Target App Decoding')
-        self.time_load = TimeRecord('Lib Data Loading')
-        self.time_extract = TimeRecord('Feature Extracting')
+        self.time_load_and_extract = TimeRecord('Decoding & Data Loading')
         self.time_compare = TimeRecord('Library Searching')
 
         # For decoding bug.
@@ -196,17 +194,14 @@ class Detector:
         :param path:
         :return: decoded files' path
         """
-        self.time_decode.start()
+        self.time_load_and_extract.start()
         cmd = self.project_path + "/" + "../tool/apktool decode %s -o " % path + self.project_path + "/" + \
             "../decoded/%s" % os.path.basename(path)
         subprocess.call(cmd, shell=True)
-        self.time_decode.end()
         return self.project_path + '/../decoded/%s' % os.path.basename(path)
 
     def load_data(self):
         # - Loading Data
-
-        self.time_load.start()
         dep_address = self.project_path + "/" + "../data/tgst5.dat"
         dict_address = self.project_path + "/" + "../permission/tagged_dict.txt"
         dep_file = open(dep_address, 'r')
@@ -249,7 +244,6 @@ class Detector:
             else:
                 self.libs_feature.append((u['bh'],  u['btn'], u['btc'], u['sp'], u['lib'], "", u['dn'], "", ""))
 
-        self.time_load.end()
 
     def get_hash(self, apk_path):
         """
@@ -258,7 +252,6 @@ class Detector:
         :return: The path of apk with libs removed.
         """
 
-        self.time_extract.start()
 
         # - All Over
         # print apk_path+'/smali'
@@ -279,7 +272,7 @@ class Detector:
         path_and_permission = {}
 
         number_of_tagged_libs = len(self.libs_feature)
-        self.time_extract.end()
+        self.time_load_and_extract.end()
         self.time_compare.start()
 
         def compare_d(a, b):
@@ -393,9 +386,7 @@ class Detector:
 
         # To String
         # print "--Time-Consuming--"
-        self.time_decode.tostring()
-        self.time_load.tostring()
-        self.time_extract.tostring()
+        self.time_load_and_extract.tostring()
         self.time_compare.tostring()
 
         # Remove Lib Files.
