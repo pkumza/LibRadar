@@ -13,20 +13,66 @@ LibRadar is trained with more than 1 million apps from Google Play, so it can id
 Many Android apps are obfuscated with tools such as ProGuard, which makes it difficult to recognize a library by its package names or class names.
 LibRadar is obfuscation-resilient since we use features that cannot be obfuscated, such as statistics on Android APIs.
 
-##Usage
+## Usage
 
 Use __detect.py__ under the  main directory.
 
 Input the first parameters as the path of the target apk.
 
 ```bash
-$ python main/main.py ~/apks/sample.apk
+$ python main/main.py _YOUR\_APK\_FILE_
 ```
 Or modify the code in the main function.
 
 If you want an online trial, just click [http://radar.pkuos.org/](http://radar.pkuos.org/).
 
-##Dev Environment
+## Description for output
+
+[LibRadar](https://github.com/pkumza/LibRadar) put a json format result to stdout.
+That's a list braced by [] and every item stands for a library that LibRadar found.
+
+There should be two situation for a library detected:
+
+If the library is tagged in my database, the output may have these items as follows:
+
+|Symbol|Stands for|Description|
+|---|---|---|
+|dn|Repetitions|The number of the library (of just the **same version**!)|
+|ch|Link| Link for the official SDK developer guide website. I forget why I used 'ch' at the very beginning.|
+|bh|B\_Hash|The hash value of the package.|
+|btc|B\_Total\_Count|The total count of API.|
+|btn|B\_Total\_Number|The total types of API.|
+|lib|Library|Library Name|
+|cpn|Current Package Name|The package name from **your given APK** that seems match this library. 'Current' means what you just uploaded.|
+|csp|Current Specified Package Name|The sub-package (a part of the whole package) from your given APK that finally, exactly matched with what in the database.|
+|pn|Package Name|The package name from the database that seems matched.|
+|sp|Specified Package Name|The sub-package(a part of the whole package) that exactly matched with that in your APK.|
+|tp|Type|The type that the library belongs to.|
+|p|Permission|The permissions that the library used. It is specified by the API it used.|
+
+If the library is not popular enough that I didn't tagged, the output will have only four items:
+dn, p, pn, cpn. The meaning of them is just the same. The library is not tagged, so I cannot give you its name, but you can guess by yourself via the package name, which is not gonna be difficult if the package name is not obfuscated.
+
+I used a A\_HASH before and it failed, so I use B\_HASH to replace that one.
+cpn, csp, pn, sp can be difficult to understand. If you are confused, just use pn for the package name.
+I divided the libraries into ten types:
+
+```python
+library_type = {
+    "da": "Development Aid",
+    "sn": "Social Network",
+    "ad": "Advertisement",
+    "am": "App Market",
+    "ma": "Mobile Analytics",
+    "pa": "Payment",
+    "ui": "UI Component",
+    "ge": "Game Engine",
+    "ut": "Utility",
+    "mp": "Map"
+}
+```
+
+## Dev Environment
 * JDK Version : Java 1.8.0_25
 
 * IDE : PyCharm 4.0.3
