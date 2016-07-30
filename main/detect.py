@@ -316,6 +316,9 @@ class Detector:
                     })
                 elif self.libs_feature[mid][4] == "":
                     cur_app_routes[self.libs_feature[mid][3]] = {
+                        "bh": self.libs_feature[mid][0],
+                        "btn": self.libs_feature[mid][1],
+                        "btc": self.libs_feature[mid][2],
                         "pn": self.libs_feature[mid][3],
                         "cpn": package[3],
                         "p": package[4],
