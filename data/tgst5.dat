@@ -24868,7 +24868,7 @@
 {"dn": 145, "lib": "", "sp": "org/jboss/netty/handler/codec/replay", "bh": 50681, "btc": 40, "btn": 18}
 {"dn": 22864, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/request", "bh": 36226, "btc": 40, "btn": 18, "pn": "com/google/android/gms"}
 {"dn": 535, "lib": "da;SLF4J;www.slf4j.org/", "sp": "org/slf4j/impl", "bh": 122445, "btc": 39, "btn": 18, "pn": "org/slf4j"}
-{"dn": 319, "lib": "", "sp": "org/kde/necessitas/ministro", "bh": 112154, "btc": 39, "btn": 18}
+{"dn": 319, "lib": "da;Ministro Qt shared libraries;http://community.kde.org/Necessitas", "sp": "org/kde/necessitas/ministro", "bh": 112154, "btc": 39, "btn": 18, "pn": "org/kde/necessitas/ministro/"}
 {"dn": 146, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxinglib/datamatrix/detector", "bh": 96352, "btc": 39, "btn": 18, "pn": "com/google/zxing"}
 {"dn": 125, "lib": "", "sp": "com/nd/android/pandareader/common/d", "bh": 67035, "btc": 39, "btn": 18}
 {"dn": 113, "lib": "da;Codehaus;www.codehaus.org/", "sp": "org/codehaus/jackson/type", "bh": 44887, "btc": 39, "btn": 18, "pn": "org/codehaus"}
