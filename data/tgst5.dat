@@ -14411,7 +14411,7 @@
 {"dn": 111, "lib": "", "sp": "io/presage/services/c", "bh": 284058, "btc": 165, "btn": 67}
 {"dn": 676, "lib": "ad;Adtech;www.adtech.com/", "sp": "com/adtech/mobilesdk/controller", "bh": 243791, "btc": 164, "btn": 67, "pn": "com/adtech"}
 {"dn": 586, "lib": "da;Corona;https://docs.coronalabs.com/native/android/html/com/ansca/corona/package-summary.html", "sp": "com/ansca/corona/purchasing", "bh": 304776, "btc": 159, "btn": 67, "pn": "com/ansca/corona"}
-{"dn": 101, "lib": "", "sp": "com/uservoice/uservoicesdk/activity", "bh": 528499, "btc": 158, "btn": 67}
+{"dn": 101, "lib": "sn;UserVoice Android SDK;https://github.com/uservoice/uservoice-android-sdk", "sp": "com/uservoice/uservoicesdk/activity", "bh": 528499, "btc": 158, "btn": 67, "pn": "com/uservoice/uservoicesdk"}
 {"dn": 190, "lib": "ge;Andengine Game Engine;www.andengine.org/", "sp": "org/andengine/opengl/texture/atlas", "bh": 421446, "btc": 155, "btn": 67, "pn": "org/andengine"}
 {"dn": 180, "lib": "", "sp": "com/dropbox/client2/session", "bh": 446349, "btc": 151, "btn": 67}
 {"dn": 850, "lib": "", "sp": "com/smartadserver/android/library/http", "bh": 366932, "btc": 151, "btn": 67}
@@ -24390,7 +24390,7 @@
 {"dn": 120, "lib": "da;Github;https://github.com/", "sp": "com/github/droidfu/widgets", "bh": 144886, "btc": 30, "btn": 20, "pn": "com/github"}
 {"dn": 219, "lib": "", "sp": "biz/app/android/ui/layouts", "bh": 97573, "btc": 30, "btn": 20}
 {"dn": 408, "lib": "ge;Fmod;www.fmod.org/", "sp": "org/fmod", "bh": 82885, "btc": 30, "btn": 20, "pn": "org/fmod"}
-{"dn": 148, "lib": "", "sp": "com/uservoice/uservoicesdk/image", "bh": 71316, "btc": 30, "btn": 20}
+{"dn": 148, "lib": "sn;UserVoice Android SDK;https://github.com/uservoice/uservoice-android-sdk", "sp": "com/uservoice/uservoicesdk/image", "bh": 71316, "btc": 30, "btn": 20, "pn": "com/uservoice/uservoicesdk"}
 {"dn": 963, "lib": "ge;cocos2D;www.cocos2d-x.org/", "sp": "org/cocos2d/actions/interval", "bh": 65432, "btc": 30, "btn": 20, "pn": "org/cocos2d"}
 {"dn": 391, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app161145/album", "bh": 53286, "btc": 30, "btn": 20, "pn": "com/appmakr"}
 {"dn": 726, "lib": "ge;OpenFeint;", "sp": "com/openfeint/api/ui", "bh": 43605, "btc": 30, "btn": 20, "pn": "com/openfeint"}
@@ -25380,7 +25380,7 @@
 {"dn": 331, "lib": "da;Apache Harmony;https://harmony.apache.org/", "sp": "org/apache/harmony/awt/a", "bh": 112490, "btc": 75, "btn": 16, "pn": "org/apache/harmony"}
 {"dn": 497, "lib": "", "sp": "com/coremedia/iso/boxes/h264", "bh": 106406, "btc": 75, "btn": 16}
 {"dn": 851, "lib": "", "sp": "org/jivesoftware/smackx/bytestreams/socks5/packet", "bh": 28588, "btc": 75, "btn": 16}
-{"dn": 114, "lib": "", "sp": "com/uservoice/uservoicesdk/deflection", "bh": 91693, "btc": 74, "btn": 16}
+{"dn": 114, "lib": "sn;UserVoice Android SDK;https://github.com/uservoice/uservoice-android-sdk", "sp": "com/uservoice/uservoicesdk/deflection", "bh": 91693, "btc": 74, "btn": 16, "pn": "com/uservoice/uservoicesdk"}
 {"dn": 198, "lib": "", "sp": "com/aetrion/flickr/activity", "bh": 259763, "btc": 73, "btn": 16}
 {"dn": 128, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/internal/api", "bh": 47433, "btc": 72, "btn": 16, "pn": "com/google/android/gms"}
 {"dn": 200, "lib": "", "sp": "com/am/ammob/ads/interstitial", "bh": 27287, "btc": 72, "btn": 16}
@@ -27405,7 +27405,7 @@
 {"dn": 202, "lib": "", "sp": "com/ryanwebb/androidscreenshot", "bh": 22132, "btc": 12, "btn": 11}
 {"dn": 744, "lib": "", "sp": "eu/alebianco/air/extensions/utils", "bh": 20821, "btc": 12, "btn": 11}
 {"dn": 238, "lib": "ad;PlayHaven Mobile Ads;www.playhaven.com/", "sp": "main/java/com/playhaven", "bh": 20067, "btc": 12, "btn": 11, "pn": "com/playhaven"}
-{"dn": 193, "lib": "", "sp": "com/uservoice/uservoicesdk/compatibility", "bh": 16664, "btc": 12, "btn": 11}
+{"dn": 193, "lib": "sn;UserVoice Android SDK;https://github.com/uservoice/uservoice-android-sdk", "sp": "com/uservoice/uservoicesdk/compatibility", "bh": 16664, "btc": 12, "btn": 11, "pn": "com/uservoice/uservoicesdk"}
 {"dn": 3628, "lib": "da;Conduit App;apps.conduit.com/", "sp": "com/conduit/app/pages/callus", "bh": 14573, "btc": 12, "btn": 11, "pn": "com/conduit/app"}
 {"dn": 898, "lib": "", "sp": "com/searchboxsdk/android/a", "bh": 12235, "btc": 12, "btn": 11}
 {"dn": 252, "lib": "ui;goodbarber;www.goodbarber.com/", "sp": "com/goodbarber/v2/fragments/categories", "bh": 37851, "btc": 11, "btn": 11, "pn": "com/goodbarber"}
