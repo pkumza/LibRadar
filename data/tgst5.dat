@@ -4882,7 +4882,7 @@
 {"dn": 213, "lib": "", "sp": "org/zywx/wbpalmstar/plugin/uexzxing/client/android", "bh": 933801, "btc": 600, "btn": 257}
 {"dn": 147, "lib": "", "sp": "com/purplebrain/adbuddiz/sdk", "bh": 777557, "btc": 571, "btn": 257}
 {"dn": 143, "lib": "", "sp": "com/qualcomm", "bh": 654869, "btc": 478, "btn": 257}
-{"dn": 115, "lib": "", "sp": "org/joda/time", "bh": 204440, "btc": 1128, "btn": 256}
+{"dn": 115, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time", "bh": 204440, "btc": 1128, "btn": 256, "pn": "org/joda/time"}
 {"dn": 141, "lib": "", "sp": "net", "bh": 521468, "btc": 1035, "btn": 256}
 {"dn": 118, "lib": "", "sp": "com/wooboo/adlib_android", "bh": 862993, "btc": 938, "btn": 256}
 {"dn": 162, "lib": "", "sp": "com/vividsolutions", "bh": 884751, "btc": 926, "btn": 256}
@@ -4980,8 +4980,8 @@
 {"dn": 121, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/analytics", "bh": 674743, "btc": 1138, "btn": 252, "pn": "com/google/android/gms"}
 {"dn": 159, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/analytics", "bh": 666913, "btc": 1138, "btn": 252, "pn": "com/google/android/gms"}
 {"dn": 131, "lib": "ad;adsmogo;www.adsmogo.com/", "sp": "com/adsmogo/util", "bh": 795459, "btc": 1068, "btn": 252, "pn": "com/adsmogo"}
-{"dn": 2125, "lib": "", "sp": "org/joda/time", "bh": 804353, "btc": 1007, "btn": 252}
-{"dn": 127, "lib": "", "sp": "org/joda/time", "bh": 804267, "btc": 1007, "btn": 252}
+{"dn": 2125, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time", "bh": 804353, "btc": 1007, "btn": 252, "pn": "org/joda/time"}
+{"dn": 127, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time", "bh": 804267, "btc": 1007, "btn": 252, "pn": "org/joda/time"}
 {"dn": 233, "lib": "", "sp": "com/oxmk/oxmk_02_26", "bh": 895550, "btc": 985, "btn": 252}
 {"dn": 453, "lib": "", "sp": "com/tsland/tsland_01_29_n", "bh": 878463, "btc": 977, "btn": 252}
 {"dn": 9082, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics/tracking/android", "bh": 466558, "btc": 899, "btn": 252, "pn": "com/google/analytics"}
@@ -5045,7 +5045,7 @@
 {"dn": 1042, "lib": "ge;badlogic;www.badlogicgames.com/", "sp": "com/badlogic/gdx/backends/android/surfaceview", "bh": 607600, "btc": 1136, "btn": 248, "pn": "com/badlogic"}
 {"dn": 1289, "lib": "da;Umeng Common;http://dev.umeng.com/", "sp": "com/umeng/common/b", "bh": 109459, "btc": 1116, "btn": 248, "pn": "com/umeng/common"}
 {"dn": 138, "lib": "da;Umeng Common;http://dev.umeng.com/", "sp": "com/umeng/common/net", "bh": 109329, "btc": 1111, "btn": 248, "pn": "com/umeng/common"}
-{"dn": 1016, "lib": "", "sp": "org/joda/time", "bh": 776676, "btc": 1002, "btn": 248}
+{"dn": 1016, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time", "bh": 776676, "btc": 1002, "btn": 248, "pn": "org/joda/time"}
 {"dn": 12965, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics", "bh": 491842, "btc": 948, "btn": 248, "pn": "com/google/analytics"}
 {"dn": 129, "lib": "ut;Amazon AWS;mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/services/s3", "bh": 639780, "btc": 914, "btn": 248, "pn": "com/amazonaws"}
 {"dn": 141, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics/tracking/android", "bh": 489252, "btc": 909, "btn": 248, "pn": "com/google/analytics"}
@@ -5158,7 +5158,7 @@
 {"dn": 115, "lib": "", "sp": "com/umeng/socom/net", "bh": 815808, "btc": 1049, "btn": 243}
 {"dn": 277, "lib": "ge;badlogic;www.badlogicgames.com/", "sp": "com/badlogic/gdx/backends/android/surfaceview", "bh": 289410, "btc": 1018, "btn": 243, "pn": "com/badlogic"}
 {"dn": 366, "lib": "ge;badlogic;www.badlogicgames.com/", "sp": "com/badlogic/gdx/backends/android/surfaceview", "bh": 264441, "btc": 1005, "btn": 243, "pn": "com/badlogic"}
-{"dn": 345, "lib": "", "sp": "org/joda/time", "bh": 761689, "btc": 993, "btn": 243}
+{"dn": 345, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time", "bh": 761689, "btc": 993, "btn": 243, "pn": "org/joda/time"}
 {"dn": 635, "lib": "ut;Amazon AWS;mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/services/s3", "bh": 330818, "btc": 867, "btn": 243, "pn": "com/amazonaws"}
 {"dn": 189, "lib": "", "sp": "com/tapfortap", "bh": 423314, "btc": 842, "btn": 243}
 {"dn": 2222, "lib": "da;Loopj;https://github.com/loopj/android-async-http", "sp": "com/loopj/android/http", "bh": 952141, "btc": 678, "btn": 243, "pn": "com/loopj"}
@@ -5178,7 +5178,7 @@
 {"dn": 1627, "lib": "ge;badlogic;www.badlogicgames.com/", "sp": "com/badlogic/gdx/backends/android/surfaceview", "bh": 568772, "btc": 1127, "btn": 242, "pn": "com/badlogic"}
 {"dn": 335, "lib": "", "sp": "com/airkast/tunekast3/controllers", "bh": 705257, "btc": 1111, "btn": 242}
 {"dn": 164, "lib": "ge;badlogic;www.badlogicgames.com/", "sp": "com/badlogic/gdx/backends/android/surfaceview", "bh": 568278, "btc": 1108, "btn": 242, "pn": "com/badlogic"}
-{"dn": 1461, "lib": "", "sp": "org/joda/time", "bh": 790712, "btc": 994, "btn": 242}
+{"dn": 1461, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time", "bh": 790712, "btc": 994, "btn": 242, "pn": "org/joda/time"}
 {"dn": 102, "lib": "ut;Amazon AWS;mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/services/s3", "bh": 474341, "btc": 838, "btn": 242, "pn": "com/amazonaws"}
 {"dn": 272, "lib": "ut;Amazon AWS;mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/services/s3", "bh": 441184, "btc": 837, "btn": 242, "pn": "com/amazonaws"}
 {"dn": 422, "lib": "", "sp": "net/mz/callflakessdk/core", "bh": 987419, "btc": 835, "btn": 242}
@@ -5754,9 +5754,9 @@
 {"dn": 317, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/activities", "bh": 497796, "btc": 952, "btn": 222, "pn": "com/biznessapps"}
 {"dn": 262, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/activities", "bh": 424626, "btc": 946, "btn": 222, "pn": "com/biznessapps"}
 {"dn": 160, "lib": "", "sp": "com/sensedk", "bh": 564132, "btc": 912, "btn": 222}
-{"dn": 155, "lib": "", "sp": "org/joda/time", "bh": 730555, "btc": 906, "btn": 222}
+{"dn": 155, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time", "bh": 730555, "btc": 906, "btn": 222, "pn": "org/joda/time"}
 {"dn": 142, "lib": "", "sp": "com/amoad/amoadsdk", "bh": 492247, "btc": 904, "btn": 222}
-{"dn": 143, "lib": "", "sp": "org/joda/time", "bh": 711400, "btc": 903, "btn": 222}
+{"dn": 143, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time", "bh": 711400, "btc": 903, "btn": 222, "pn": "org/joda/time"}
 {"dn": 199, "lib": "ad;adsmogo;www.adsmogo.com/", "sp": "com/adsmogo/controller", "bh": 634336, "btc": 888, "btn": 222, "pn": "com/adsmogo"}
 {"dn": 130, "lib": "", "sp": "com/kenai/jbosh", "bh": 979132, "btc": 860, "btn": 222}
 {"dn": 316, "lib": "am;Google Play;https://play.google.com", "sp": "com/google/android/vending/expansion/downloader/impl", "bh": 396593, "btc": 709, "btn": 222, "pn": "com/google/android/vending"}
@@ -8871,7 +8871,7 @@
 {"dn": 870, "lib": "da;Fasterxml;fasterxml.com/", "sp": "com/fasterxml/jackson/databind/introspect", "bh": 251117, "btc": 806, "btn": 130, "pn": "com/fasterxml"}
 {"dn": 383, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/lang3/time", "bh": 125760, "btc": 721, "btn": 130, "pn": "org/apache/commons"}
 {"dn": 208, "lib": "", "sp": "org/zywx/wbpalmstar/widgetone", "bh": 166104, "btc": 714, "btn": 130}
-{"dn": 345, "lib": "", "sp": "org/joda/time/tz", "bh": 529802, "btc": 603, "btn": 130}
+{"dn": 345, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/tz", "bh": 529802, "btc": 603, "btn": 130, "pn": "org/joda/time"}
 {"dn": 649, "lib": "ad;Adtech;www.adtech.com/", "sp": "com/adtech/mobilesdk/view", "bh": 946771, "btc": 592, "btn": 130, "pn": "com/adtech"}
 {"dn": 716, "lib": "", "sp": "com/yoyogames/runner", "bh": 939616, "btc": 592, "btn": 130}
 {"dn": 101, "lib": "", "sp": "com/umeng/socialize/controller", "bh": 33003, "btc": 577, "btn": 130}
@@ -8934,7 +8934,7 @@
 {"dn": 101, "lib": "", "sp": "com/wsi/android/framework/map/overlay/rasterlayer", "bh": 663282, "btc": 661, "btn": 129}
 {"dn": 113, "lib": "", "sp": "org/apache/poi/ss/format", "bh": 289652, "btc": 643, "btn": 129}
 {"dn": 125, "lib": "", "sp": "com/igivings/wolfforthumc/openintents/calendarpicker/view", "bh": 874856, "btc": 608, "btn": 129}
-{"dn": 1466, "lib": "", "sp": "org/joda/time/tz", "bh": 556956, "btc": 604, "btn": 129}
+{"dn": 1466, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/tz", "bh": 556956, "btc": 604, "btn": 129, "pn": "org/joda/time"}
 {"dn": 891, "lib": "ge;cocos2D;www.cocos2d-x.org/", "sp": "org/cocos2d/nodes", "bh": 589117, "btc": 573, "btn": 129, "pn": "org/cocos2d"}
 {"dn": 354, "lib": "ge;cocos2D;www.cocos2d-x.org/", "sp": "org/cocos2d/nodes", "bh": 588287, "btc": 572, "btn": 129, "pn": "org/cocos2d"}
 {"dn": 148, "lib": "", "sp": "com/sec/android/ad/container", "bh": 473582, "btc": 557, "btn": 129}
@@ -9104,9 +9104,9 @@
 {"dn": 181, "lib": "", "sp": "org/mapsforge/android/maps/mapgenerator", "bh": 131542, "btc": 672, "btn": 126}
 {"dn": 169, "lib": "", "sp": "com/wsi/android/framework/map/overlay/rasterlayer", "bh": 652725, "btc": 649, "btn": 126}
 {"dn": 212, "lib": "", "sp": "com/qq", "bh": 921193, "btc": 622, "btn": 126}
-{"dn": 1020, "lib": "", "sp": "org/joda/time/tz", "bh": 544527, "btc": 605, "btn": 126}
-{"dn": 2131, "lib": "", "sp": "org/joda/time/tz", "bh": 541096, "btc": 604, "btn": 126}
-{"dn": 130, "lib": "", "sp": "org/joda/time/tz", "bh": 541054, "btc": 604, "btn": 126}
+{"dn": 1020, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/tz", "bh": 544527, "btc": 605, "btn": 126, "pn": "org/joda/time"}
+{"dn": 2131, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/tz", "bh": 541096, "btc": 604, "btn": 126, "pn": "org/joda/time"}
+{"dn": 130, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/tz", "bh": 541054, "btc": 604, "btn": 126, "pn": "org/joda/time"}
 {"dn": 190, "lib": "", "sp": "jp/basicinc/gamefeat/android/sdk/controller", "bh": 944819, "btc": 578, "btn": 126}
 {"dn": 106, "lib": "", "sp": "com/doomonafireball/betterpickers/recurrencepicker", "bh": 671232, "btc": 572, "btn": 126}
 {"dn": 128, "lib": "", "sp": "jp/basicinc/gamefeat/android/sdk/controller", "bh": 923914, "btc": 567, "btn": 126}
@@ -9240,7 +9240,7 @@
 {"dn": 214, "lib": "", "sp": "com/prime31", "bh": 674352, "btc": 671, "btn": 124}
 {"dn": 141, "lib": "", "sp": "com/magazinecloner/magclonerreader/g", "bh": 160627, "btc": 628, "btn": 124}
 {"dn": 169, "lib": "", "sp": "com/awt/gugong/download", "bh": 67437, "btc": 621, "btn": 124}
-{"dn": 168, "lib": "", "sp": "org/joda/time/tz", "bh": 500903, "btc": 602, "btn": 124}
+{"dn": 168, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/tz", "bh": 500903, "btc": 602, "btn": 124, "pn": "org/joda/time"}
 {"dn": 118, "lib": "", "sp": "com/adbox/behavior", "bh": 933440, "btc": 582, "btn": 124}
 {"dn": 101, "lib": "", "sp": "com/c", "bh": 894570, "btc": 543, "btn": 124}
 {"dn": 125, "lib": "", "sp": "com/smartadserver/android/library/controller", "bh": 440827, "btc": 466, "btn": 124}
@@ -9424,8 +9424,8 @@
 {"dn": 631, "lib": "", "sp": "com/shopgate/android/controller/a", "bh": 766293, "btc": 639, "btn": 121}
 {"dn": 857, "lib": "", "sp": "fi/iki/elonen", "bh": 933605, "btc": 620, "btn": 121}
 {"dn": 109, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/pqc", "bh": 465072, "btc": 611, "btn": 121, "pn": "org/bouncycastle"}
-{"dn": 156, "lib": "", "sp": "org/joda/time/tz", "bh": 959753, "btc": 593, "btn": 121}
-{"dn": 155, "lib": "", "sp": "org/joda/time/tz", "bh": 959063, "btc": 592, "btn": 121}
+{"dn": 156, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/tz", "bh": 959753, "btc": 593, "btn": 121, "pn": "org/joda/time"}
+{"dn": 155, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/tz", "bh": 959063, "btc": 592, "btn": 121, "pn": "org/joda/time"}
 {"dn": 268, "lib": "da;ACRA;", "sp": "org/acra/b", "bh": 51306, "btc": 588, "btn": 121, "pn": "org/acra"}
 {"dn": 481, "lib": "da;Codehaus;www.codehaus.org/", "sp": "org/codehaus/jackson/map/deser", "bh": 862398, "btc": 580, "btn": 121, "pn": "org/codehaus"}
 {"dn": 1485, "lib": "da;Codehaus;www.codehaus.org/", "sp": "org/codehaus/jackson/map/deser", "bh": 853247, "btc": 576, "btn": 121, "pn": "org/codehaus"}
@@ -11254,7 +11254,7 @@
 {"dn": 144, "lib": "", "sp": "com/tecnavia/paywall", "bh": 855225, "btc": 1226, "btn": 96}
 {"dn": 149, "lib": "sn;Twitter;twitter4j.org/", "sp": "twitter4j/internal/json", "bh": 437104, "btc": 1156, "btn": 96, "pn": "twitter4j"}
 {"dn": 489, "lib": "ge;Scoreloop Game;", "sp": "com/scoreloop/client/android/core/controller", "bh": 369472, "btc": 865, "btn": 96, "pn": "com/scoreloop"}
-{"dn": 114, "lib": "", "sp": "org/joda/time/format", "bh": 519182, "btc": 708, "btn": 96}
+{"dn": 114, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/format", "bh": 519182, "btc": 708, "btn": 96, "pn": "org/joda/time"}
 {"dn": 586, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/asn1", "bh": 838095, "btc": 628, "btn": 96, "pn": "org/bouncycastle"}
 {"dn": 371, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/fitness", "bh": 76914, "btc": 628, "btn": 96, "pn": "com/google/android/gms"}
 {"dn": 758, "lib": "", "sp": "com/crittercism/app", "bh": 966537, "btc": 595, "btn": 96}
@@ -12093,8 +12093,8 @@
 {"dn": 167, "lib": "", "sp": "android/runtime", "bh": 447368, "btc": 121, "btn": 88}
 {"dn": 409, "lib": "da;ActionBarSherlock;actionbarsherlock.com/", "sp": "com/actionbarsherlock/app", "bh": 841419, "btc": 107, "btn": 88, "pn": "com/actionbarsherlock"}
 {"dn": 181, "lib": "", "sp": "org/a", "bh": 813215, "btc": 2418, "btn": 87}
-{"dn": 2185, "lib": "", "sp": "org/joda/time/format", "bh": 437757, "btc": 724, "btn": 87}
-{"dn": 130, "lib": "", "sp": "org/joda/time/format", "bh": 437754, "btc": 724, "btn": 87}
+{"dn": 2185, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/format", "bh": 437757, "btc": 724, "btn": 87, "pn": "org/joda/time"}
+{"dn": 130, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/format", "bh": 437754, "btc": 724, "btn": 87, "pn": "org/joda/time"}
 {"dn": 277, "lib": "", "sp": "com/nd/android/pandareader/h/a", "bh": 44182, "btc": 624, "btn": 87}
 {"dn": 140, "lib": "", "sp": "org/osmdroid/location", "bh": 215521, "btc": 567, "btn": 87}
 {"dn": 153, "lib": "", "sp": "com/renren/api/connect/android/photos", "bh": 790506, "btc": 532, "btn": 87}
@@ -12190,7 +12190,7 @@
 {"dn": 114, "lib": "", "sp": "com/smartadserver/android/library/util", "bh": 314446, "btc": 122, "btn": 87}
 {"dn": 125, "lib": "", "sp": "com/Tobit/android/database/manager", "bh": 816609, "btc": 1491, "btn": 86}
 {"dn": 156, "lib": "", "sp": "org/shaded/apache/commons/codec/language", "bh": 122988, "btc": 784, "btn": 86}
-{"dn": 1019, "lib": "", "sp": "org/joda/time/format", "bh": 436583, "btc": 721, "btn": 86}
+{"dn": 1019, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/format", "bh": 436583, "btc": 721, "btn": 86, "pn": "org/joda/time"}
 {"dn": 276, "lib": "", "sp": "com/texterity/android/HorseIllustrated/ecommerce", "bh": 500533, "btc": 578, "btn": 86}
 {"dn": 335, "lib": "ad;domob;www.domob.cn/", "sp": "cn/domob/android/a", "bh": 831943, "btc": 531, "btn": 86, "pn": "cn/domob"}
 {"dn": 420, "lib": "", "sp": "com/google/code/rome/android/repackaged/com/sun/syndication/feed", "bh": 133429, "btc": 519, "btn": 86}
@@ -12603,8 +12603,8 @@
 {"dn": 729, "lib": "", "sp": "jxl/write", "bh": 264619, "btc": 1182, "btn": 82}
 {"dn": 533, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/android", "bh": 773620, "btc": 877, "btn": 82, "pn": "ti/modules/titanium"}
 {"dn": 166, "lib": "", "sp": "org/apache/sanselan/util", "bh": 444083, "btc": 856, "btn": 82}
-{"dn": 1466, "lib": "", "sp": "org/joda/time/format", "bh": 432473, "btc": 717, "btn": 82}
-{"dn": 345, "lib": "", "sp": "org/joda/time/format", "bh": 431209, "btc": 715, "btn": 82}
+{"dn": 1466, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/format", "bh": 432473, "btc": 717, "btn": 82, "pn": "org/joda/time"}
+{"dn": 345, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/format", "bh": 431209, "btc": 715, "btn": 82, "pn": "org/joda/time"}
 {"dn": 175, "lib": "", "sp": "com/fitnessmobileapps/fma/server/api/xml", "bh": 474635, "btc": 658, "btn": 82}
 {"dn": 232, "lib": "", "sp": "com/androidnative/billing", "bh": 401705, "btc": 508, "btn": 82}
 {"dn": 7060, "lib": "", "sp": "com/google/code/linkedinapi/client/impl", "bh": 135199, "btc": 501, "btn": 82}
@@ -14213,7 +14213,7 @@
 {"dn": 168, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/ssl/asn1", "bh": 797303, "btc": 720, "btn": 68, "pn": "org/apache/commons"}
 {"dn": 325, "lib": "ut;Amazon;", "sp": "com/amazon/ags/storage", "bh": 511477, "btc": 684, "btn": 68, "pn": "com/amazon"}
 {"dn": 537, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/plus", "bh": 854807, "btc": 642, "btn": 68, "pn": "com/google/android/gms"}
-{"dn": 340, "lib": "", "sp": "org/joda/time/format", "bh": 341093, "btc": 641, "btn": 68}
+{"dn": 340, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/format", "bh": 341093, "btc": 641, "btn": 68, "pn": "org/joda/time"}
 {"dn": 113, "lib": "", "sp": "com/airkast/tunekast3/parsers", "bh": 703404, "btc": 632, "btn": 68}
 {"dn": 350, "lib": "sn;Twitter;twitter4j.org/", "sp": "twitter4j/examples", "bh": 650145, "btc": 623, "btn": 68, "pn": "twitter4j"}
 {"dn": 992, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/oned", "bh": 722883, "btc": 572, "btn": 68, "pn": "com/google/zxing"}
@@ -15929,14 +15929,14 @@
 {"dn": 285, "lib": "", "sp": "com/quoord/tapatalkpro/sqlhelper", "bh": 671296, "btc": 277, "btn": 56}
 {"dn": 1454, "lib": "ge;badlogic;www.badlogicgames.com/", "sp": "com/badlogic/gdx/graphics/g3d/loaders/g3d", "bh": 443746, "btc": 275, "btn": 56, "pn": "com/badlogic"}
 {"dn": 126, "lib": "", "sp": "com/vungle/publisher/net/http", "bh": 395148, "btc": 272, "btn": 56}
-{"dn": 1810, "lib": "", "sp": "org/joda/time/chrono", "bh": 406937, "btc": 271, "btn": 56}
-{"dn": 125, "lib": "", "sp": "org/joda/time/chrono", "bh": 406926, "btc": 271, "btn": 56}
+{"dn": 1810, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/chrono", "bh": 406937, "btc": 271, "btn": 56, "pn": "org/joda/time"}
+{"dn": 125, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/chrono", "bh": 406926, "btc": 271, "btn": 56, "pn": "org/joda/time"}
 {"dn": 567, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/collections/bidimap", "bh": 711477, "btc": 270, "btn": 56, "pn": "org/apache/commons"}
 {"dn": 165, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/collections/bidimap", "bh": 701165, "btc": 266, "btn": 56, "pn": "org/apache/commons"}
-{"dn": 1019, "lib": "", "sp": "org/joda/time/chrono", "bh": 387537, "btc": 260, "btn": 56}
+{"dn": 1019, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/chrono", "bh": 387537, "btc": 260, "btn": 56, "pn": "org/joda/time"}
 {"dn": 119, "lib": "", "sp": "com/automotiontv/webservice", "bh": 410602, "btc": 258, "btn": 56}
-{"dn": 2131, "lib": "", "sp": "org/joda/time/chrono", "bh": 380319, "btc": 258, "btn": 56}
-{"dn": 129, "lib": "", "sp": "org/joda/time/chrono", "bh": 380308, "btc": 258, "btn": 56}
+{"dn": 2131, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/chrono", "bh": 380319, "btc": 258, "btn": 56, "pn": "org/joda/time"}
+{"dn": 129, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/chrono", "bh": 380308, "btc": 258, "btn": 56, "pn": "org/joda/time"}
 {"dn": 10040, "lib": "", "sp": "com/qbiki/modules/rateandreview", "bh": 367481, "btc": 258, "btn": 56}
 {"dn": 590, "lib": "", "sp": "com/qbiki/modules/rateandreview", "bh": 367472, "btc": 258, "btn": 56}
 {"dn": 458, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/openssl", "bh": 778479, "btc": 256, "btn": 56, "pn": "org/bouncycastle"}
@@ -16236,7 +16236,7 @@
 {"dn": 271, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/database", "bh": 389202, "btc": 318, "btn": 54, "pn": "ti/modules/titanium"}
 {"dn": 117, "lib": "", "sp": "purchasing", "bh": 341076, "btc": 314, "btn": 54}
 {"dn": 160, "lib": "da;doapps;www.doapps.com/", "sp": "com/doapps/android/mln/ads/adapters", "bh": 232139, "btc": 289, "btn": 54, "pn": "com/doapps"}
-{"dn": 300, "lib": "", "sp": "org/joda/time/chrono", "bh": 678051, "btc": 272, "btn": 54}
+{"dn": 300, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/chrono", "bh": 678051, "btc": 272, "btn": 54, "pn": "org/joda/time"}
 {"dn": 290, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/library/a", "bh": 437044, "btc": 270, "btn": 54, "pn": "com/aviary"}
 {"dn": 140, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/library/providers", "bh": 436966, "btc": 267, "btn": 54, "pn": "com/aviary"}
 {"dn": 2027, "lib": "ut;Amazon;", "sp": "com/amazon/identity/auth/device/dataobject", "bh": 450330, "btc": 265, "btn": 54, "pn": "com/amazon"}
@@ -16999,7 +16999,7 @@
 {"dn": 286, "lib": "ge;badlogic;www.badlogicgames.com/", "sp": "com/badlogic/gdx/scenes/scene2d", "bh": 395349, "btc": 271, "btn": 50, "pn": "com/badlogic"}
 {"dn": 283, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http_android/util", "bh": 250902, "btc": 268, "btn": 50, "pn": "org/apache/http"}
 {"dn": 553, "lib": "ut;Amazon;", "sp": "com/amazon/insights/event", "bh": 438685, "btc": 267, "btn": 50, "pn": "com/amazon"}
-{"dn": 314, "lib": "", "sp": "org/joda/time/chrono", "bh": 504447, "btc": 257, "btn": 50}
+{"dn": 314, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/chrono", "bh": 504447, "btc": 257, "btn": 50, "pn": "org/joda/time"}
 {"dn": 141, "lib": "", "sp": "org/apache/poi/hssf/dev", "bh": 498885, "btc": 255, "btn": 50}
 {"dn": 131, "lib": "", "sp": "org/jivesoftware/smack/debugger", "bh": 320478, "btc": 254, "btn": 50}
 {"dn": 497, "lib": "", "sp": "ch/qos/logback/core/joran/util", "bh": 197296, "btc": 252, "btn": 50}
@@ -21264,7 +21264,7 @@
 {"dn": 311, "lib": "", "sp": "com/nd/android/pandareader/common/b", "bh": 292000, "btc": 226, "btn": 31}
 {"dn": 128, "lib": "", "sp": "com/nd/android/pandareader/common/a", "bh": 281225, "btc": 225, "btn": 31}
 {"dn": 377, "lib": "da;Apache James Mail Enterprise Serve;http://james.apache.org", "sp": "org/apache/james/mime4j/field/contenttype/parser", "bh": 508622, "btc": 213, "btn": 31, "pn": "org/apache/james"}
-{"dn": 351, "lib": "", "sp": "org/joda/time/convert", "bh": 669368, "btc": 205, "btn": 31}
+{"dn": 351, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/convert", "bh": 669368, "btc": 205, "btn": 31, "pn": "org/joda/time"}
 {"dn": 121, "lib": "da;Apache James Mail Enterprise Serve;http://james.apache.org", "sp": "org/apache/james/mime4j/c/a", "bh": 267219, "btc": 196, "btn": 31, "pn": "org/apache/james"}
 {"dn": 356, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/maps", "bh": 261696, "btc": 194, "btn": 31, "pn": "com/google/android/gms"}
 {"dn": 115, "lib": "", "sp": "ch/qos/logback/core/pattern/parser", "bh": 197990, "btc": 190, "btn": 31}
@@ -21527,8 +21527,8 @@
 {"dn": 133, "lib": "", "sp": "com/xtify/asmack/com/a", "bh": 272174, "btc": 181, "btn": 30}
 {"dn": 3327, "lib": "ma;Flurry;flurry.com", "sp": "com/flurry/org/apache/avro/io/parsing", "bh": 153388, "btc": 181, "btn": 30, "pn": "com/flurry"}
 {"dn": 153, "lib": "mp;Baidu Map;lbsyun.baidu.com/", "sp": "com/baidu/mapapi/cloud", "bh": 197502, "btc": 180, "btn": 30, "pn": "com/baidu/mapapi/"}
-{"dn": 1821, "lib": "", "sp": "org/joda/time/convert", "bh": 310055, "btc": 177, "btn": 30}
-{"dn": 125, "lib": "", "sp": "org/joda/time/convert", "bh": 310049, "btc": 177, "btn": 30}
+{"dn": 1821, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/convert", "bh": 310055, "btc": 177, "btn": 30, "pn": "org/joda/time"}
+{"dn": 125, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/convert", "bh": 310049, "btc": 177, "btn": 30, "pn": "org/joda/time"}
 {"dn": 224, "lib": "", "sp": "com/vividsolutions/jts/triangulate/quadedge", "bh": 250404, "btc": 176, "btn": 30}
 {"dn": 114, "lib": "ge;badlogic;www.badlogicgames.com/", "sp": "com/badlogic/gdx/assets", "bh": 172623, "btc": 176, "btn": 30, "pn": "com/badlogic"}
 {"dn": 223, "lib": "", "sp": "com/googlecode/flickrjandroid/tags", "bh": 327575, "btc": 174, "btn": 30}
@@ -22272,8 +22272,8 @@
 {"dn": 173, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/codec_1_9/net", "bh": 313381, "btc": 190, "btn": 27, "pn": "org/apache/commons"}
 {"dn": 111, "lib": "", "sp": "RunLoop", "bh": 202979, "btc": 189, "btn": 27}
 {"dn": 883, "lib": "ge;cocos2D;www.cocos2d-x.org/", "sp": "org/cocos2d/types", "bh": 79652, "btc": 183, "btn": 27, "pn": "org/cocos2d"}
-{"dn": 3527, "lib": "", "sp": "org/joda/time/convert", "bh": 291424, "btc": 180, "btn": 27}
-{"dn": 247, "lib": "", "sp": "org/joda/time/convert", "bh": 291418, "btc": 180, "btn": 27}
+{"dn": 3527, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/convert", "bh": 291424, "btc": 180, "btn": 27, "pn": "org/joda/time"}
+{"dn": 247, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/convert", "bh": 291418, "btc": 180, "btn": 27, "pn": "org/joda/time"}
 {"dn": 144, "lib": "", "sp": "com/cutix/wallcp/api", "bh": 191392, "btc": 180, "btn": 27}
 {"dn": 2027, "lib": "ge;cocos2D;www.cocos2d-x.org/", "sp": "org/cocos2d/types", "bh": 67103, "btc": 177, "btn": 27, "pn": "org/cocos2d"}
 {"dn": 198, "lib": "", "sp": "net/sf/antcontrib/antclipse", "bh": 754806, "btc": 166, "btn": 27}
@@ -23086,8 +23086,8 @@
 {"dn": 4343, "lib": "da;ACRA;", "sp": "org/acra/sender", "bh": 96664, "btc": 118, "btn": 24, "pn": "org/acra"}
 {"dn": 166, "lib": "", "sp": "com/nexage/android/sdkmanager", "bh": 117542, "btc": 116, "btn": 24}
 {"dn": 561, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games", "bh": 120205, "btc": 115, "btn": 24, "pn": "com/google/android/gms"}
-{"dn": 5354, "lib": "", "sp": "org/joda/time/base", "bh": 109048, "btc": 115, "btn": 24}
-{"dn": 373, "lib": "", "sp": "org/joda/time/base", "bh": 109046, "btc": 115, "btn": 24}
+{"dn": 5354, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/base", "bh": 109048, "btc": 115, "btn": 24, "pn": "org/joda/time"}
+{"dn": 373, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/base", "bh": 109046, "btc": 115, "btn": 24, "pn": "org/joda/time"}
 {"dn": 106, "lib": "", "sp": "com/musicg/math", "bh": 216882, "btc": 114, "btn": 24}
 {"dn": 118, "lib": "", "sp": "org/krysalis/barcode4j/output/svg", "bh": 939325, "btc": 112, "btn": 24}
 {"dn": 440, "lib": "da;ACRA;", "sp": "org/acra/c", "bh": 93194, "btc": 112, "btn": 24, "pn": "org/acra"}
@@ -23096,7 +23096,7 @@
 {"dn": 1343, "lib": "", "sp": "org/achartengine/model", "bh": 241470, "btc": 108, "btn": 24}
 {"dn": 116, "lib": "", "sp": "org/achartengine/model", "bh": 241466, "btc": 108, "btn": 24}
 {"dn": 190, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/net/util", "bh": 115425, "btc": 108, "btn": 24, "pn": "org/apache/commons"}
-{"dn": 124, "lib": "", "sp": "org/joda/time/base", "bh": 108866, "btc": 108, "btn": 24}
+{"dn": 124, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/base", "bh": 108866, "btc": 108, "btn": 24, "pn": "org/joda/time"}
 {"dn": 125, "lib": "ge;cocos2D;www.cocos2d-x.org/", "sp": "org/cocos2d/events", "bh": 105282, "btc": 106, "btn": 24, "pn": "org/cocos2d"}
 {"dn": 111, "lib": "", "sp": "repack/org/bouncycastle/x509/examples", "bh": 351630, "btc": 105, "btn": 24}
 {"dn": 1367, "lib": "", "sp": "com/drew/metadata/xmp", "bh": 104651, "btc": 105, "btn": 24}
@@ -24482,7 +24482,7 @@
 {"dn": 251, "lib": "da;Spongy Castle;http://rtyley.github.io/spongycastle/", "sp": "org/spongycastle/tsp/cms", "bh": 77726, "btc": 113, "btn": 19, "pn": "org/spongycastle"}
 {"dn": 123, "lib": "da;ActiveAndroid;https://github.com/pardom/ActiveAndroid", "sp": "com/activeandroid/query", "bh": 42476, "btc": 113, "btn": 19, "pn": "com/activeandroid"}
 {"dn": 565, "lib": "", "sp": "com/tmoney/aidl", "bh": 309996, "btc": 112, "btn": 19}
-{"dn": 378, "lib": "", "sp": "org/joda/time/base", "bh": 179711, "btc": 108, "btn": 19}
+{"dn": 378, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/base", "bh": 179711, "btc": 108, "btn": 19, "pn": "org/joda/time"}
 {"dn": 1065, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics/midtier/proto/containertag", "bh": 216738, "btc": 106, "btn": 19, "pn": "com/google/analytics"}
 {"dn": 156, "lib": "pa;Alipay;https://dev.alipay.com/", "sp": "com/alipay/android/app", "bh": 336197, "btc": 104, "btn": 19, "pn": "com/alipay"}
 {"dn": 246, "lib": "", "sp": "rajawali/math", "bh": 183322, "btc": 103, "btn": 19}
@@ -24729,15 +24729,15 @@
 {"dn": 1073, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing1/oned/rss/expanded/decoders", "bh": 133849, "btc": 268, "btn": 18, "pn": "com/google/zxing"}
 {"dn": 11726, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/fitness/c", "bh": 231655, "btc": 190, "btn": 18, "pn": "com/google/android/gms"}
 {"dn": 491, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/fitness/result", "bh": 231473, "btc": 183, "btn": 18, "pn": "com/google/android/gms"}
-{"dn": 376, "lib": "", "sp": "org/joda/time/field", "bh": 164270, "btc": 178, "btn": 18}
+{"dn": 376, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/field", "bh": 164270, "btc": 178, "btn": 18, "pn": "org/joda/time"}
 {"dn": 109, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/stmt/mapped", "bh": 254312, "btc": 171, "btn": 18, "pn": "com/j256"}
-{"dn": 3156, "lib": "", "sp": "org/joda/time/field", "bh": 153162, "btc": 170, "btn": 18}
-{"dn": 216, "lib": "", "sp": "org/joda/time/field", "bh": 153153, "btc": 170, "btn": 18}
+{"dn": 3156, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/field", "bh": 153162, "btc": 170, "btn": 18, "pn": "org/joda/time"}
+{"dn": 216, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/field", "bh": 153153, "btc": 170, "btn": 18, "pn": "org/joda/time"}
 {"dn": 838, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/stmt/mapped", "bh": 252783, "btc": 168, "btn": 18, "pn": "com/j256"}
 {"dn": 217, "lib": "sn;Tencent Login;wiki.open.qq.com/wiki/mobile/Android_SDK", "sp": "com/tencent/tauth/http/RequestListenerImpl", "bh": 435917, "btc": 166, "btn": 18, "pn": "com/tencent/tauth"}
-{"dn": 1812, "lib": "", "sp": "org/joda/time/field", "bh": 142260, "btc": 163, "btn": 18}
-{"dn": 125, "lib": "", "sp": "org/joda/time/field", "bh": 142252, "btc": 163, "btn": 18}
-{"dn": 352, "lib": "", "sp": "org/joda/time/field", "bh": 376086, "btc": 160, "btn": 18}
+{"dn": 1812, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/field", "bh": 142260, "btc": 163, "btn": 18, "pn": "org/joda/time"}
+{"dn": 125, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/field", "bh": 142252, "btc": 163, "btn": 18, "pn": "org/joda/time"}
+{"dn": 352, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/field", "bh": 376086, "btc": 160, "btn": 18, "pn": "org/joda/time"}
 {"dn": 131, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/stmt/mapped", "bh": 251895, "btc": 156, "btn": 18, "pn": "com/j256"}
 {"dn": 151, "lib": "", "sp": "com/firebase/client/realtime", "bh": 104202, "btc": 153, "btn": 18}
 {"dn": 142, "lib": "ut;Amazon AWS;mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/javax/xml/stream/a", "bh": 353704, "btc": 152, "btn": 18, "pn": "com/amazonaws"}
