@@ -29280,4 +29280,3 @@
 {"dn": 136, "lib": "", "sp": "org/osmdroid/mtp/adt", "bh": 1717, "btc": 10, "btn": 5}
 {"dn": 806, "lib": "ut;Amazon AWS;mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/services/s3/metrics", "bh": 1104, "btc": 10, "btn": 5, "pn": "com/amazonaws"}
 {"dn": 895, "lib": "ge;Andengine Game Engine;www.andengine.org/", "sp": "org/andengine/input/sensor/a", "bh": 900, "btc": 10, "btn": 5, "pn": "org/andengine"}
-{"dn": 226, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp":"org/bouncycastle/eac/jcajce/", "bh": 527503, "btc":54 ,"btn":25, "pn": "org/bouncycastle"}
