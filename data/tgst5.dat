@@ -1415,7 +1415,7 @@
 {"dn": 162, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/internal", "bh": 408394, "btc": 8522, "btn": 685, "pn": "com/google/android/gms"}
 {"dn": 101, "lib": "", "sp": "com/samsung/sdraw", "bh": 445592, "btc": 7295, "btn": 685}
 {"dn": 272, "lib": "", "sp": "com/google/devtools/simple/runtime/components", "bh": 33687, "btc": 3538, "btn": 685}
-{"dn": 248, "lib": "", "sp": "org/osmdroid", "bh": 691498, "btc": 1487, "btn": 685}
+{"dn": 248, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid", "bh": 691498, "btc": 1487, "btn": 685, "pn": "org/osmdroid"}
 {"dn": 131, "lib": "ad;domob;www.domob.cn/", "sp": "cn/domob/android", "bh": 486413, "btc": 1548, "btn": 684, "pn": "cn/domob"}
 {"dn": 147, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/internal", "bh": 634604, "btc": 10951, "btn": 683, "pn": "com/google/android/gms"}
 {"dn": 119, "lib": "", "sp": "com/tapjoy", "bh": 294412, "btc": 2915, "btn": 683}
@@ -1495,7 +1495,7 @@
 {"dn": 130, "lib": "", "sp": "com/medialets", "bh": 757722, "btc": 2841, "btn": 666}
 {"dn": 176, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook", "bh": 65401, "btc": 2077, "btn": 666, "pn": "com/facebook"}
 {"dn": 143, "lib": "", "sp": "com/nexage", "bh": 516981, "btc": 1552, "btn": 666}
-{"dn": 345, "lib": "", "sp": "org/osmdroid", "bh": 463607, "btc": 1452, "btn": 666}
+{"dn": 345, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid", "bh": 463607, "btc": 1452, "btn": 666, "pn": "org/osmdroid"}
 {"dn": 121, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/ui/widget", "bh": 790323, "btc": 1409, "btn": 666, "pn": "ti/modules/titanium"}
 {"dn": 8995, "lib": "da;ActionBarSherlock;actionbarsherlock.com/", "sp": "com/actionbarsherlock/internal", "bh": 808010, "btc": 1284, "btn": 666, "pn": "com/actionbarsherlock"}
 {"dn": 534, "lib": "da;ActionBarSherlock;actionbarsherlock.com/", "sp": "com/actionbarsherlock/internal", "bh": 808001, "btc": 1284, "btn": 666, "pn": "com/actionbarsherlock"}
@@ -1913,7 +1913,7 @@
 {"dn": 342, "lib": "ad;AdSDK;", "sp": "com/adsdk/sdk", "bh": 193129, "btc": 1940, "btn": 568, "pn": "com/adsdk"}
 {"dn": 323, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/impl/client/cache", "bh": 289728, "btc": 1688, "btn": 568, "pn": "org/apache/http"}
 {"dn": 127, "lib": "ma;Parse.com;https://parse.com/docs/cn/android/guide", "sp": "com/parse", "bh": 857695, "btc": 1563, "btn": 568, "pn": "com/parse"}
-{"dn": 163, "lib": "", "sp": "org/osmdroid", "bh": 342565, "btc": 1205, "btn": 568}
+{"dn": 163, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid", "bh": 342565, "btc": 1205, "btn": 568, "pn": "org/osmdroid"}
 {"dn": 291, "lib": "da;Conduit App;apps.conduit.com/", "sp": "com/conduit/app/pages", "bh": 627880, "btc": 1010, "btn": 568, "pn": "com/conduit/app"}
 {"dn": 862, "lib": "ad;AdSDK;", "sp": "com/adsdk/sdk", "bh": 250816, "btc": 1939, "btn": 567, "pn": "com/adsdk"}
 {"dn": 223, "lib": "", "sp": "com/appbuilder", "bh": 147196, "btc": 1919, "btn": 567}
@@ -2149,7 +2149,7 @@
 {"dn": 1138, "lib": "", "sp": "com/orjzmzockwo", "bh": 635923, "btc": 3284, "btn": 530}
 {"dn": 159, "lib": "", "sp": "com/jcqvflvdglzskuldsyzj", "bh": 635888, "btc": 3284, "btn": 530}
 {"dn": 304, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms", "bh": 388691, "btc": 3229, "btn": 530, "pn": "com/google/android/gms"}
-{"dn": 261, "lib": "", "sp": "org/osmdroid", "bh": 563244, "btc": 1125, "btn": 530}
+{"dn": 261, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid", "bh": 563244, "btc": 1125, "btn": 530, "pn": "org/osmdroid"}
 {"dn": 349, "lib": "da;Android Support v7;https://developer.android.com/reference/android/support/v7/app/package-summary.html", "sp": "android/support/v7/internal/view/menu", "bh": 785711, "btc": 1002, "btn": 530, "pn": "android/support/v7"}
 {"dn": 272, "lib": "ge;badlogic;www.badlogicgames.com/", "sp": "com/badlogic/gdx/backends/android", "bh": 141412, "btc": 2019, "btn": 529, "pn": "com/badlogic"}
 {"dn": 386, "lib": "ut;Amazon;", "sp": "com/amazon/device/ads", "bh": 581597, "btc": 1990, "btn": 529, "pn": "com/amazon"}
@@ -2683,8 +2683,8 @@
 {"dn": 416, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads", "bh": 673669, "btc": 1331, "btn": 456, "pn": "com/google/ads"}
 {"dn": 133, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads", "bh": 664944, "btc": 1329, "btn": 456, "pn": "com/google/ads"}
 {"dn": 1762, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/view", "bh": 977152, "btc": 1110, "btn": 456, "pn": "android/support/v4"}
-{"dn": 1427, "lib": "", "sp": "org/osmdroid", "bh": 390999, "btc": 1045, "btn": 456}
-{"dn": 298, "lib": "", "sp": "org/osmdroid", "bh": 398085, "btc": 1042, "btn": 456}
+{"dn": 1427, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid", "bh": 390999, "btc": 1045, "btn": 456, "pn": "org/osmdroid"}
+{"dn": 298, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid", "bh": 398085, "btc": 1042, "btn": 456, "pn": "org/osmdroid"}
 {"dn": 413, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/commons", "bh": 562050, "btc": 999, "btn": 456, "pn": "com/inmobi"}
 {"dn": 158, "lib": "", "sp": "com/qbiki/seattleclouds", "bh": 165884, "btc": 2741, "btn": 455}
 {"dn": 182, "lib": "", "sp": "com/qbiki/seattleclouds", "bh": 160802, "btc": 2739, "btn": 455}
@@ -2779,7 +2779,7 @@
 {"dn": 279, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads", "bh": 583845, "btc": 1243, "btn": 446, "pn": "com/google/ads"}
 {"dn": 1055, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/view", "bh": 620299, "btc": 1078, "btn": 446, "pn": "android/support/v4"}
 {"dn": 154, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/view", "bh": 620141, "btc": 1078, "btn": 446, "pn": "android/support/v4"}
-{"dn": 128, "lib": "", "sp": "org/osmdroid", "bh": 500888, "btc": 1072, "btn": 446}
+{"dn": 128, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid", "bh": 500888, "btc": 1072, "btn": 446, "pn": "org/osmdroid"}
 {"dn": 433, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/client/android", "bh": 302309, "btc": 910, "btn": 446, "pn": "com/google/zxing"}
 {"dn": 131, "lib": "da;newrelic;newrelic.com/", "sp": "com/newrelic/agent/android", "bh": 877699, "btc": 807, "btn": 446, "pn": "com/newrelic"}
 {"dn": 552, "lib": "", "sp": "com/qbiki/seattleclouds", "bh": 895115, "btc": 2633, "btn": 445}
@@ -3667,8 +3667,8 @@
 {"dn": 113, "lib": "", "sp": "com/qbiki/util", "bh": 476292, "btc": 981, "btn": 339}
 {"dn": 518, "lib": "da;Apache Log4j;http://logging.apache.org/log4j/2.x/", "sp": "org/apache/log4j/lf5/viewer", "bh": 717645, "btc": 914, "btn": 339, "pn": "org/apache/log4j"}
 {"dn": 111, "lib": "da;Codehaus;www.codehaus.org/", "sp": "org/codehaus/jackson/map", "bh": 402406, "btc": 877, "btn": 339, "pn": "org/codehaus"}
-{"dn": 255, "lib": "", "sp": "org/osmdroid/views", "bh": 288074, "btc": 741, "btn": 339}
-{"dn": 345, "lib": "", "sp": "org/osmdroid/views", "bh": 175477, "btc": 737, "btn": 339}
+{"dn": 255, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views", "bh": 288074, "btc": 741, "btn": 339, "pn": "org/osmdroid"}
+{"dn": 345, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views", "bh": 175477, "btc": 737, "btn": 339, "pn": "org/osmdroid"}
 {"dn": 101, "lib": "", "sp": "com/mobimento/caponate/util", "bh": 311455, "btc": 656, "btn": 339}
 {"dn": 6129, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/i", "bh": 738587, "btc": 2025, "btn": 338, "pn": "com/google/android/gms"}
 {"dn": 861, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/tagmanager", "bh": 738586, "btc": 2025, "btn": 338, "pn": "com/google/android/gms"}
@@ -3681,7 +3681,7 @@
 {"dn": 374, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/socialsharing/twitter", "bh": 888565, "btc": 1092, "btn": 338, "pn": "com/nostra13"}
 {"dn": 135, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/socialsharing/twitter", "bh": 890945, "btc": 1084, "btn": 338, "pn": "com/nostra13"}
 {"dn": 471, "lib": "ad;Tencent MobWin;", "sp": "com/tencent/mobwin/core", "bh": 778103, "btc": 945, "btn": 338, "pn": "com/tencent/mobwin"}
-{"dn": 352, "lib": "", "sp": "org/osmdroid/views", "bh": 194616, "btc": 739, "btn": 338}
+{"dn": 352, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views", "bh": 194616, "btc": 739, "btn": 338, "pn": "org/osmdroid"}
 {"dn": 201, "lib": "ut;Amazon;", "sp": "com/amazon/device/associates", "bh": 406773, "btc": 2270, "btn": 337, "pn": "com/amazon"}
 {"dn": 889, "lib": "da;OkHttp;https://github.com/square/okhttp", "sp": "com/squareup/okhttp", "bh": 785437, "btc": 1330, "btn": 337, "pn": "com/squareup/okhttp"}
 {"dn": 104, "lib": "", "sp": "net/hockeyapp/android", "bh": 65651, "btc": 1142, "btn": 337}
@@ -3891,13 +3891,13 @@
 {"dn": 401, "lib": "da;Apache Log4j;http://logging.apache.org/log4j/2.x/", "sp": "org/apache/log4j/lf5/viewer", "bh": 379345, "btc": 830, "btn": 319, "pn": "org/apache/log4j"}
 {"dn": 110, "lib": "", "sp": "com/analitics", "bh": 751287, "btc": 707, "btn": 319}
 {"dn": 230, "lib": "ad;apperhand;", "sp": "com/apperhand", "bh": 931824, "btc": 702, "btn": 319, "pn": "com/apperhand"}
-{"dn": 160, "lib": "", "sp": "org/osmdroid/views", "bh": 640908, "btc": 691, "btn": 319}
+{"dn": 160, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views", "bh": 640908, "btc": 691, "btn": 319, "pn": "org/osmdroid"}
 {"dn": 123, "lib": "", "sp": "com/nd/android/pandareader/h", "bh": 120585, "btc": 1855, "btn": 318}
 {"dn": 226, "lib": "", "sp": "com/appnext/appnextsdk", "bh": 399192, "btc": 1539, "btn": 318}
 {"dn": 113, "lib": "", "sp": "com/airkast/tunekast3/utils", "bh": 91562, "btc": 1072, "btn": 318}
 {"dn": 196, "lib": "", "sp": "net/daum/adam/publisher", "bh": 560251, "btc": 1035, "btn": 318}
 {"dn": 230, "lib": "ad;apperhand;", "sp": "com/apperhand/device", "bh": 929212, "btc": 701, "btn": 318, "pn": "com/apperhand"}
-{"dn": 322, "lib": "", "sp": "org/osmdroid/views", "bh": 640186, "btc": 689, "btn": 318}
+{"dn": 322, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views", "bh": 640186, "btc": 689, "btn": 318, "pn": "org/osmdroid"}
 {"dn": 133, "lib": "", "sp": "u/aly", "bh": 810449, "btc": 3388, "btn": 317}
 {"dn": 448, "lib": "", "sp": "u/aly", "bh": 825461, "btc": 3306, "btn": 317}
 {"dn": 342, "lib": "ad;AdSDK;", "sp": "com/adsdk/sdk/video", "bh": 909532, "btc": 1474, "btn": 317, "pn": "com/adsdk"}
@@ -5670,7 +5670,7 @@
 {"dn": 392, "lib": "da;Appcelerator;www.appcelerator.org/", "sp": "org/appcelerator/titanium/view", "bh": 604210, "btc": 699, "btn": 225, "pn": "org/appcelerator"}
 {"dn": 160, "lib": "", "sp": "org/apache/sanselan", "bh": 467440, "btc": 694, "btn": 225}
 {"dn": 110, "lib": "da;Google Gson;https://github.com/google/gson", "sp": "com/google/gson", "bh": 96567, "btc": 636, "btn": 225, "pn": "com/google/gson"}
-{"dn": 1614, "lib": "", "sp": "org/osmdroid/views", "bh": 912454, "btc": 601, "btn": 225}
+{"dn": 1614, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views", "bh": 912454, "btc": 601, "btn": 225, "pn": "org/osmdroid"}
 {"dn": 108, "lib": "", "sp": "aaa/aaa/aaa", "bh": 598468, "btc": 597, "btn": 225}
 {"dn": 141, "lib": "", "sp": "com/purplebrain/adbuddiz/sdk/util", "bh": 470305, "btc": 500, "btn": 225}
 {"dn": 163, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/client", "bh": 303152, "btc": 484, "btn": 225, "pn": "org/apache/http"}
@@ -5694,7 +5694,7 @@
 {"dn": 255, "lib": "", "sp": "com/fsn/cauly/blackdragoncore/controls", "bh": 526457, "btc": 607, "btn": 224}
 {"dn": 155, "lib": "", "sp": "mediba/ad/sdk/android/openx", "bh": 147144, "btc": 605, "btn": 224}
 {"dn": 178, "lib": "ad;Google Admob;https://www.google.com/admob/", "sp": "com/admob/android/ads", "bh": 249885, "btc": 601, "btn": 224, "pn": "com/admob"}
-{"dn": 299, "lib": "", "sp": "org/osmdroid/views", "bh": 882648, "btc": 580, "btn": 224}
+{"dn": 299, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views", "bh": 882648, "btc": 580, "btn": 224, "pn": "org/osmdroid"}
 {"dn": 133, "lib": "", "sp": "com/mraid/view", "bh": 366058, "btc": 574, "btn": 224}
 {"dn": 319, "lib": "", "sp": "com/google/api/client/util", "bh": 696649, "btc": 552, "btn": 224}
 {"dn": 188, "lib": "", "sp": "com/xtify/sdk", "bh": 190386, "btc": 513, "btn": 224}
@@ -5728,7 +5728,7 @@
 {"dn": 146, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/internal", "bh": 69173, "btc": 614, "btn": 223, "pn": "com/facebook"}
 {"dn": 144, "lib": "", "sp": "mediba/ad/sdk/android/openx", "bh": 139637, "btc": 599, "btn": 223}
 {"dn": 112, "lib": "", "sp": "com/google/api/client/http", "bh": 463515, "btc": 597, "btn": 223}
-{"dn": 178, "lib": "", "sp": "org/osmdroid/views", "bh": 867000, "btc": 570, "btn": 223}
+{"dn": 178, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views", "bh": 867000, "btc": 570, "btn": 223, "pn": "org/osmdroid"}
 {"dn": 148, "lib": "", "sp": "com/mraid/view", "bh": 330812, "btc": 563, "btn": 223}
 {"dn": 235, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/headless", "bh": 544048, "btc": 548, "btn": 223, "pn": "com/aviary"}
 {"dn": 116, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/headless", "bh": 540999, "btc": 547, "btn": 223, "pn": "com/aviary"}
@@ -6432,7 +6432,7 @@
 {"dn": 189, "lib": "da;retrofit RESTful Library;square.github.io/retrofit/", "sp": "retrofit", "bh": 113352, "btc": 584, "btn": 197, "pn": "retrofit"}
 {"dn": 7812, "lib": "sn;Twitter;twitter4j.org/", "sp": "twitter4j/internal", "bh": 554981, "btc": 540, "btn": 197, "pn": "twitter4j"}
 {"dn": 148, "lib": "sn;Twitter;twitter4j.org/", "sp": "twitter4j/internal", "bh": 554960, "btc": 540, "btn": 197, "pn": "twitter4j"}
-{"dn": 440, "lib": "", "sp": "org/osmdroid/views/overlay", "bh": 691449, "btc": 518, "btn": 197}
+{"dn": 440, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay", "bh": 691449, "btc": 518, "btn": 197, "pn": "org/osmdroid"}
 {"dn": 200, "lib": "", "sp": "com/smaato/soma/internal", "bh": 656271, "btc": 516, "btn": 197}
 {"dn": 314, "lib": "da;Appcelerator;www.appcelerator.org/", "sp": "org/appcelerator/kroll", "bh": 341619, "btc": 495, "btn": 197, "pn": "org/appcelerator"}
 {"dn": 1129, "lib": "da;Appcelerator;www.appcelerator.org/", "sp": "org/appcelerator/kroll", "bh": 331394, "btc": 491, "btn": 197, "pn": "org/appcelerator"}
@@ -6465,9 +6465,9 @@
 {"dn": 275, "lib": "", "sp": "com/ibuildapp/romanblack/TwitterPlugin", "bh": 604870, "btc": 570, "btn": 196}
 {"dn": 254, "lib": "", "sp": "com/wMediaNetPlayer/Utils", "bh": 257697, "btc": 558, "btn": 196}
 {"dn": 101, "lib": "", "sp": "com/liquidair/spodtronic", "bh": 102355, "btc": 534, "btn": 196}
-{"dn": 278, "lib": "", "sp": "org/osmdroid/views/overlay", "bh": 691088, "btc": 517, "btn": 196}
-{"dn": 351, "lib": "", "sp": "org/osmdroid/views/overlay", "bh": 687131, "btc": 514, "btn": 196}
-{"dn": 178, "lib": "", "sp": "org/osmdroid/views/overlay", "bh": 643070, "btc": 510, "btn": 196}
+{"dn": 278, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay", "bh": 691088, "btc": 517, "btn": 196, "pn": "org/osmdroid"}
+{"dn": 351, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay", "bh": 687131, "btc": 514, "btn": 196, "pn": "org/osmdroid"}
+{"dn": 178, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay", "bh": 643070, "btc": 510, "btn": 196, "pn": "org/osmdroid"}
 {"dn": 103, "lib": "ma;Umeng feedback;dev.umeng.com/feedback", "sp": "com/umeng/fb", "bh": 436239, "btc": 507, "btn": 196, "pn": "com/umeng/fb"}
 {"dn": 221, "lib": "ma;Umeng Analytics;https://www.umeng.com/analytics", "sp": "com/umeng/analytics", "bh": 166045, "btc": 496, "btn": 196, "pn": "com/umeng/analytics"}
 {"dn": 115, "lib": "", "sp": "com/celltick/lockscreen/theme/Roket", "bh": 960756, "btc": 465, "btn": 196}
@@ -6502,7 +6502,7 @@
 {"dn": 135, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/robolectric/tester/org/apache/http", "bh": 799789, "btc": 520, "btn": 195, "pn": "org/apache/http"}
 {"dn": 132, "lib": "ut;Nine Old Androids;https://github.com/JakeWharton/NineOldAndroids", "sp": "com/nineoldandroids", "bh": 799201, "btc": 519, "btn": 195, "pn": "com/nineoldandroids"}
 {"dn": 332, "lib": "ad;StartApp;www.startapp.com/", "sp": "com/startapp/android/publish/e", "bh": 82304, "btc": 519, "btn": 195, "pn": "com/startapp"}
-{"dn": 341, "lib": "", "sp": "org/osmdroid/views/overlay", "bh": 642709, "btc": 509, "btn": 195}
+{"dn": 341, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay", "bh": 642709, "btc": 509, "btn": 195, "pn": "org/osmdroid"}
 {"dn": 435, "lib": "ma;Umeng Analytics;https://www.umeng.com/analytics", "sp": "com/umeng/analytics", "bh": 163360, "btc": 496, "btn": 195, "pn": "com/umeng/analytics"}
 {"dn": 438, "lib": "", "sp": "com/qualcomm/ar/pl", "bh": 431231, "btc": 481, "btn": 195}
 {"dn": 256, "lib": "", "sp": "com/qualcomm/ar/pl", "bh": 419541, "btc": 479, "btn": 195}
@@ -6601,7 +6601,7 @@
 {"dn": 124, "lib": "da;baidu push service;developer.baidu.com", "sp": "com/baidu/android/pushservice/richmedia", "bh": 919736, "btc": 497, "btn": 192, "pn": "com/baidu/android/pushservice"}
 {"dn": 235, "lib": "da;Apache James Mail Enterprise Serve;http://james.apache.org", "sp": "org/apache/james/mime4j", "bh": 317683, "btc": 453, "btn": 192, "pn": "org/apache/james"}
 {"dn": 3727, "lib": "ui;pulltorefresh;https://github.com/chrisbanes/Android-PullToRefresh", "sp": "com/handmark/pulltorefresh/library", "bh": 560687, "btc": 414, "btn": 192, "pn": "com/handmark/pulltorefresh"}
-{"dn": 141, "lib": "", "sp": "org/osmdroid/tileprovider", "bh": 204921, "btc": 379, "btn": 192}
+{"dn": 141, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider", "bh": 204921, "btc": 379, "btn": 192, "pn": "org/osmdroid"}
 {"dn": 137, "lib": "ge;Andengine Game Engine;www.andengine.org/", "sp": "org/anddev/andengine/util", "bh": 16192, "btc": 374, "btn": 192, "pn": "org/anddev/andengine"}
 {"dn": 185, "lib": "", "sp": "com/google/protobuf", "bh": 519232, "btc": 2955, "btn": 191}
 {"dn": 103, "lib": "da;Vercoop;www.vercoop.com/", "sp": "com/vercoop/app/navi", "bh": 105265, "btc": 1710, "btn": 191, "pn": "com/vercoop"}
@@ -7039,7 +7039,7 @@
 {"dn": 134, "lib": "da;Loopj;https://github.com/loopj/android-async-http", "sp": "com/loopj/android/http", "bh": 234411, "btc": 417, "btn": 178, "pn": "com/loopj"}
 {"dn": 190, "lib": "", "sp": "com/aetrion/flickr", "bh": 831109, "btc": 386, "btn": 178}
 {"dn": 239, "lib": "", "sp": "net/simonvt/numberpicker", "bh": 130198, "btc": 371, "btn": 178}
-{"dn": 240, "lib": "", "sp": "org/osmdroid/tileprovider", "bh": 820658, "btc": 352, "btn": 178}
+{"dn": 240, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider", "bh": 820658, "btc": 352, "btn": 178, "pn": "org/osmdroid"}
 {"dn": 169, "lib": "", "sp": "com/awt/beijingu/utils", "bh": 562715, "btc": 1621, "btn": 177}
 {"dn": 547, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/socialsharing/twitter/extpack/winterwell/jtwitter", "bh": 844404, "btc": 986, "btn": 177, "pn": "com/nostra13"}
 {"dn": 101, "lib": "", "sp": "com/everyplay/Everyplay/c", "bh": 564468, "btc": 941, "btn": 177}
@@ -7054,7 +7054,7 @@
 {"dn": 649, "lib": "ad;millennialmedia;www.millennialmedia.com/", "sp": "com/millennialmedia/android", "bh": 400620, "btc": 749, "btn": 177, "pn": "com/millennialmedia"}
 {"dn": 116, "lib": "ma;Flurry;flurry.com", "sp": "com/flurry/org/apache/avro", "bh": 44806, "btc": 625, "btn": 177, "pn": "com/flurry"}
 {"dn": 314, "lib": "da;javax;", "sp": "javax/jmdns/impl/tasks", "bh": 747185, "btc": 592, "btn": 177, "pn": "javax"}
-{"dn": 116, "lib": "", "sp": "org/osmdroid/views/overlay", "bh": 790615, "btc": 591, "btn": 177}
+{"dn": 116, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay", "bh": 790615, "btc": 591, "btn": 177, "pn": "org/osmdroid"}
 {"dn": 232, "lib": "", "sp": "org/aspectj", "bh": 236517, "btc": 591, "btn": 177}
 {"dn": 208, "lib": "", "sp": "org/zywx/wbpalmstar/plugin/uexmultiHttp", "bh": 592630, "btc": 564, "btn": 177}
 {"dn": 122, "lib": "da;Appcelerator;www.appcelerator.org/", "sp": "org/appcelerator/titanium/view", "bh": 62532, "btc": 546, "btn": 177, "pn": "org/appcelerator"}
@@ -7091,7 +7091,7 @@
 {"dn": 157, "lib": "da;Fasterxml;fasterxml.com/", "sp": "com/fasterxml/jackson/core", "bh": 145488, "btc": 663, "btn": 176, "pn": "com/fasterxml"}
 {"dn": 149, "lib": "", "sp": "com/aurasma/aurasma/application", "bh": 609748, "btc": 660, "btn": 176}
 {"dn": 220, "lib": "da;Google Gson;https://github.com/google/gson", "sp": "com/google/gson/b", "bh": 973174, "btc": 649, "btn": 176, "pn": "com/google/gson"}
-{"dn": 1619, "lib": "", "sp": "org/osmdroid/views/overlay", "bh": 790254, "btc": 590, "btn": 176}
+{"dn": 1619, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay", "bh": 790254, "btc": 590, "btn": 176, "pn": "org/osmdroid"}
 {"dn": 118, "lib": "", "sp": "org/jboss/netty/util", "bh": 296567, "btc": 590, "btn": 176}
 {"dn": 396, "lib": "da;Appcelerator;www.appcelerator.org/", "sp": "org/appcelerator/titanium/proxy", "bh": 229394, "btc": 578, "btn": 176, "pn": "org/appcelerator"}
 {"dn": 141, "lib": "da;Google Gson;https://github.com/google/gson", "sp": "shared/com/google/gson/internal", "bh": 929769, "btc": 555, "btn": 176, "pn": "com/google/gson"}
@@ -7128,7 +7128,7 @@
 {"dn": 908, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/commons/internal", "bh": 76659, "btc": 594, "btn": 175, "pn": "com/inmobi"}
 {"dn": 113, "lib": "", "sp": "com/jiubang/goscreenlock/theme/SUNFLOWER", "bh": 132261, "btc": 589, "btn": 175}
 {"dn": 508, "lib": "pa;Bump pay;", "sp": "com/bumptech/bumpapi", "bh": 603105, "btc": 565, "btn": 175, "pn": "com/bump"}
-{"dn": 217, "lib": "", "sp": "org/osmdroid/views/overlay", "bh": 706816, "btc": 554, "btn": 175}
+{"dn": 217, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay", "bh": 706816, "btc": 554, "btn": 175, "pn": "org/osmdroid"}
 {"dn": 148, "lib": "", "sp": "u/upd", "bh": 770281, "btc": 506, "btn": 175}
 {"dn": 527, "lib": "", "sp": "com/sonicnotify/sdk/core/internal/helpers", "bh": 99408, "btc": 506, "btn": 175}
 {"dn": 323, "lib": "da;Jsoup;http://jsoup.org/", "sp": "org/jsoup", "bh": 163550, "btc": 505, "btn": 175, "pn": "org/jsoup"}
@@ -7164,7 +7164,7 @@
 {"dn": 134, "lib": "da;Vercoop;www.vercoop.com/", "sp": "com/vercoop/app/more", "bh": 362024, "btc": 627, "btn": 174, "pn": "com/vercoop"}
 {"dn": 136, "lib": "da;Vercoop;www.vercoop.com/", "sp": "com/vercoop/app/more", "bh": 363218, "btc": 618, "btn": 174, "pn": "com/vercoop"}
 {"dn": 199, "lib": "", "sp": "com/googlecode/mp4parser", "bh": 982006, "btc": 577, "btn": 174}
-{"dn": 299, "lib": "", "sp": "org/osmdroid/views/overlay", "bh": 705136, "btc": 554, "btn": 174}
+{"dn": 299, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay", "bh": 705136, "btc": 554, "btn": 174, "pn": "org/osmdroid"}
 {"dn": 22809, "lib": "da;Google Gson;https://github.com/google/gson", "sp": "com/google/gsonhtcmod/internal", "bh": 914958, "btc": 544, "btn": 174, "pn": "com/google/gson"}
 {"dn": 1197, "lib": "da;Google Gson;https://github.com/google/gson", "sp": "com/google/gsonlinxo/internal", "bh": 914957, "btc": 544, "btn": 174, "pn": "com/google/gson"}
 {"dn": 613, "lib": "da;Google Gson;https://github.com/google/gson", "sp": "com/google/gson/internal", "bh": 914412, "btc": 523, "btn": 174, "pn": "com/google/gson"}
@@ -7179,7 +7179,7 @@
 {"dn": 988, "lib": "ui;SlidingMenu;https://github.com/jfeinstein10/SlidingMenu", "sp": "com/slidingmenu/lib", "bh": 578819, "btc": 342, "btn": 174, "pn": "com/slidingmenu"}
 {"dn": 1772, "lib": "ui;SlidingMenu;https://github.com/jfeinstein10/SlidingMenu", "sp": "com/slidingmenu/lib", "bh": 578793, "btc": 341, "btn": 174, "pn": "com/slidingmenu"}
 {"dn": 112, "lib": "ui;SlidingMenu;https://github.com/jfeinstein10/SlidingMenu", "sp": "com/slidingmenu/lib", "bh": 578780, "btc": 341, "btn": 174, "pn": "com/slidingmenu"}
-{"dn": 430, "lib": "", "sp": "org/osmdroid/tileprovider", "bh": 777169, "btc": 330, "btn": 174}
+{"dn": 430, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider", "bh": 777169, "btc": 330, "btn": 174, "pn": "org/osmdroid"}
 {"dn": 147, "lib": "", "sp": "org/droidparts/net/http", "bh": 210072, "btc": 281, "btn": 174}
 {"dn": 188, "lib": "", "sp": "com/feelingk/iap/gui/parser", "bh": 865233, "btc": 2717, "btn": 173}
 {"dn": 143, "lib": "ut;Nuance Speech Kit Library;nuance.com/", "sp": "com/nuance", "bh": 500739, "btc": 1206, "btn": 173, "pn": "com/nuance"}
@@ -7320,8 +7320,8 @@
 {"dn": 158, "lib": "ad;StartApp;www.startapp.com/", "sp": "com/startapp/android/publish/d", "bh": 794321, "btc": 356, "btn": 170, "pn": "com/startapp"}
 {"dn": 123, "lib": "", "sp": "com/udemy/android/util", "bh": 649931, "btc": 353, "btn": 170}
 {"dn": 2009, "lib": "da;Adobe Air;www.adobe.com/cn/devnet/air/air_for_android.html", "sp": "com/adobe/air/wand", "bh": 194187, "btc": 348, "btn": 170, "pn": "com/adobe/air"}
-{"dn": 344, "lib": "", "sp": "org/osmdroid/tileprovider", "bh": 751332, "btc": 328, "btn": 170}
-{"dn": 1463, "lib": "", "sp": "org/osmdroid/tileprovider", "bh": 53130, "btc": 328, "btn": 170}
+{"dn": 344, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider", "bh": 751332, "btc": 328, "btn": 170, "pn": "org/osmdroid"}
+{"dn": 1463, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider", "bh": 53130, "btc": 328, "btn": 170, "pn": "org/osmdroid"}
 {"dn": 144, "lib": "ge;Andengine Game Engine;www.andengine.org/", "sp": "org/anddev/andengine/opengl", "bh": 232453, "btc": 325, "btn": 170, "pn": "org/anddev/andengine"}
 {"dn": 847, "lib": "", "sp": "com/google/protobuf", "bh": 769998, "btc": 2439, "btn": 169}
 {"dn": 196, "lib": "", "sp": "com/google/common/base", "bh": 296599, "btc": 1150, "btn": 169}
@@ -7362,7 +7362,7 @@
 {"dn": 116, "lib": "ui;SlidingMenu;https://github.com/jfeinstein10/SlidingMenu", "sp": "com/slidingmenu/lib", "bh": 645464, "btc": 345, "btn": 169, "pn": "com/slidingmenu"}
 {"dn": 101, "lib": "", "sp": "com/jeremyfeinstein/slidingmenu/lib", "bh": 576463, "btc": 336, "btn": 169}
 {"dn": 152, "lib": "", "sp": "com/gamesalad/common", "bh": 18885, "btc": 333, "btn": 169}
-{"dn": 307, "lib": "", "sp": "org/osmdroid/tileprovider", "bh": 51304, "btc": 325, "btn": 169}
+{"dn": 307, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider", "bh": 51304, "btc": 325, "btn": 169, "pn": "org/osmdroid"}
 {"dn": 117, "lib": "", "sp": "com/androidquery/util", "bh": 69136, "btc": 262, "btn": 169}
 {"dn": 106, "lib": "", "sp": "repack/org/bouncycastle/cms", "bh": 200916, "btc": 1057, "btn": 168}
 {"dn": 345, "lib": "", "sp": "com/google/common/base", "bh": 922952, "btc": 971, "btn": 168}
@@ -7602,7 +7602,7 @@
 {"dn": 2364, "lib": "", "sp": "com/qbiki/widget", "bh": 54087, "btc": 330, "btn": 161}
 {"dn": 322, "lib": "", "sp": "com/qbiki/widget", "bh": 54057, "btc": 330, "btn": 161}
 {"dn": 555, "lib": "", "sp": "net/manageapps/app_39028/polls", "bh": 11398, "btc": 328, "btn": 161}
-{"dn": 157, "lib": "", "sp": "org/osmdroid/tileprovider", "bh": 643323, "btc": 298, "btn": 161}
+{"dn": 157, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider", "bh": 643323, "btc": 298, "btn": 161, "pn": "org/osmdroid"}
 {"dn": 645, "lib": "ad;Revmob;https://www.revmobmobileadnetwork.com/", "sp": "com/revmob", "bh": 733734, "btc": 287, "btn": 161, "pn": "com/revmob"}
 {"dn": 820, "lib": "", "sp": "net/daum/adam/publisher/repackaged/mf", "bh": 668113, "btc": 279, "btn": 161}
 {"dn": 104, "lib": "", "sp": "org/droidparts/net/http", "bh": 999273, "btc": 273, "btn": 161}
@@ -7610,7 +7610,7 @@
 {"dn": 380, "lib": "da;Codehaus;www.codehaus.org/", "sp": "org/codehaus/jackson", "bh": 40992, "btc": 839, "btn": 160, "pn": "org/codehaus"}
 {"dn": 135, "lib": "da;Codehaus;www.codehaus.org/", "sp": "org/codehaus/jackson", "bh": 12310, "btc": 792, "btn": 160, "pn": "org/codehaus"}
 {"dn": 334, "lib": "da;Codehaus;www.codehaus.org/", "sp": "org/codehaus/jackson", "bh": 986848, "btc": 782, "btn": 160, "pn": "org/codehaus"}
-{"dn": 140, "lib": "", "sp": "org/osmdroid", "bh": 645642, "btc": 782, "btn": 160}
+{"dn": 140, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid", "bh": 645642, "btc": 782, "btn": 160, "pn": "org/osmdroid"}
 {"dn": 105, "lib": "", "sp": "com/appbuilder/u137392p286224/embedded/ECommercePlugin", "bh": 500034, "btc": 756, "btn": 160}
 {"dn": 184, "lib": "", "sp": "com/ning/http/client/providers/netty", "bh": 779827, "btc": 640, "btn": 160}
 {"dn": 443, "lib": "da;Fasterxml;fasterxml.com/", "sp": "com/fasterxml/jackson/core", "bh": 965447, "btc": 580, "btn": 160, "pn": "com/fasterxml"}
@@ -7626,7 +7626,7 @@
 {"dn": 311, "lib": "", "sp": "com/nd/android/pandareader/share/sina", "bh": 746919, "btc": 396, "btn": 160}
 {"dn": 131, "lib": "", "sp": "net/zucks/zucksAdnet", "bh": 124671, "btc": 395, "btn": 160}
 {"dn": 305, "lib": "da;Qoppa Software;https://www.qoppa.com/", "sp": "com/qoppa/viewer/d", "bh": 323400, "btc": 343, "btn": 160, "pn": "com/qoppa"}
-{"dn": 326, "lib": "", "sp": "org/osmdroid/tileprovider", "bh": 638225, "btc": 301, "btn": 160}
+{"dn": 326, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider", "bh": 638225, "btc": 301, "btn": 160, "pn": "org/osmdroid"}
 {"dn": 125, "lib": "", "sp": "com/sponsorpay/utils", "bh": 886258, "btc": 295, "btn": 160}
 {"dn": 159, "lib": "ui;SlidingMenu;https://github.com/jfeinstein10/SlidingMenu", "sp": "com/slidingmenu/lib", "bh": 589571, "btc": 294, "btn": 160, "pn": "com/slidingmenu"}
 {"dn": 189, "lib": "", "sp": "com/larvalabs/svgandroid", "bh": 868568, "btc": 1109, "btn": 159}
@@ -7993,7 +7993,7 @@
 {"dn": 126, "lib": "sn;Tencent Login;wiki.open.qq.com/wiki/mobile/Android_SDK", "sp": "com/tencent/tauth", "bh": 761594, "btc": 343, "btn": 150, "pn": "com/tencent/tauth"}
 {"dn": 134, "lib": "", "sp": "uk/co/senab/a", "bh": 198396, "btc": 291, "btn": 150}
 {"dn": 176, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/view/a", "bh": 105153, "btc": 286, "btn": 150, "pn": "android/support/v4"}
-{"dn": 168, "lib": "", "sp": "org/osmdroid/tileprovider", "bh": 994685, "btc": 283, "btn": 150}
+{"dn": 168, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider", "bh": 994685, "btc": 283, "btn": 150, "pn": "org/osmdroid"}
 {"dn": 203, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/widgets", "bh": 79828, "btc": 266, "btn": 150, "pn": "com/biznessapps"}
 {"dn": 224, "lib": "da;subsplash;www.subsplash.com/", "sp": "com/subsplash/widgets", "bh": 376257, "btc": 259, "btn": 150, "pn": "com/subsplash"}
 {"dn": 275, "lib": "da;subsplash;www.subsplash.com/", "sp": "com/subsplash/widgets", "bh": 360846, "btc": 258, "btn": 150, "pn": "com/subsplash"}
@@ -10401,11 +10401,11 @@
 {"dn": 161, "lib": "ui;butterknife UI Framework;https://github.com/JakeWharton/butterknife", "sp": "butterknife/internal", "bh": 441263, "btc": 585, "btn": 107, "pn": "butterknife"}
 {"dn": 110, "lib": "ut;Amazon AWS;mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/services/sqs", "bh": 435925, "btc": 585, "btn": 107, "pn": "com/amazonaws"}
 {"dn": 144, "lib": "", "sp": "pl/magot/vetch/ancal/views", "bh": 554112, "btc": 567, "btn": 107}
-{"dn": 115, "lib": "", "sp": "org/osmdroid/util", "bh": 503454, "btc": 564, "btn": 107}
+{"dn": 115, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/util", "bh": 503454, "btc": 564, "btn": 107, "pn": "org/osmdroid"}
 {"dn": 199, "lib": "", "sp": "com/coremedia/iso", "bh": 349270, "btc": 562, "btn": 107}
-{"dn": 105, "lib": "", "sp": "org/osmdroid/util", "bh": 509034, "btc": 559, "btn": 107}
+{"dn": 105, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/util", "bh": 509034, "btc": 559, "btn": 107, "pn": "org/osmdroid"}
 {"dn": 342, "lib": "", "sp": "com/texterity/android/HorseIllustrated/adapters", "bh": 83226, "btc": 559, "btn": 107}
-{"dn": 345, "lib": "", "sp": "org/osmdroid/util", "bh": 506456, "btc": 558, "btn": 107}
+{"dn": 345, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/util", "bh": 506456, "btc": 558, "btn": 107, "pn": "org/osmdroid"}
 {"dn": 243, "lib": "", "sp": "pl/mateuszmackowiak/nativeANE", "bh": 112557, "btc": 557, "btn": 107}
 {"dn": 25893, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/e", "bh": 845215, "btc": 461, "btn": 107, "pn": "com/google/android/gms"}
 {"dn": 1313, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/cast", "bh": 844955, "btc": 451, "btn": 107, "pn": "com/google/android/gms"}
@@ -10477,7 +10477,7 @@
 {"dn": 1378, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/reservation", "bh": 61379, "btc": 670, "btn": 106, "pn": "com/biznessapps"}
 {"dn": 101, "lib": "", "sp": "com/pubnub/api", "bh": 60318, "btc": 609, "btn": 106}
 {"dn": 140, "lib": "da;doapps;www.doapps.com/", "sp": "com/doapps/android/mln/video/impl", "bh": 279735, "btc": 571, "btn": 106, "pn": "com/doapps"}
-{"dn": 613, "lib": "", "sp": "org/osmdroid/util", "bh": 498786, "btc": 563, "btn": 106}
+{"dn": 613, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/util", "bh": 498786, "btc": 563, "btn": 106, "pn": "org/osmdroid"}
 {"dn": 2088, "lib": "", "sp": "com/google/android/apps/analytics", "bh": 921716, "btc": 558, "btn": 106}
 {"dn": 226, "lib": "", "sp": "com/google/android/apps/analytics", "bh": 921715, "btc": 558, "btn": 106}
 {"dn": 4215, "lib": "", "sp": "com/qbiki/modules/goaltracker", "bh": 150111, "btc": 508, "btn": 106}
@@ -11076,7 +11076,7 @@
 {"dn": 153, "lib": "sn;Twitter;twitter4j.org/", "sp": "twitter4j/internal/org/json", "bh": 856051, "btc": 774, "btn": 98, "pn": "twitter4j"}
 {"dn": 520, "lib": "", "sp": "ch/boye/httpclientandroidlib/impl/conn", "bh": 282699, "btc": 770, "btn": 98}
 {"dn": 1456, "lib": "ge;badlogic;www.badlogicgames.com/", "sp": "com/badlogic/gdx/graphics/g2d", "bh": 843234, "btc": 719, "btn": 98, "pn": "com/badlogic"}
-{"dn": 108, "lib": "", "sp": "org/osmdroid/util", "bh": 488593, "btc": 527, "btn": 98}
+{"dn": 108, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/util", "bh": 488593, "btc": 527, "btn": 98, "pn": "org/osmdroid"}
 {"dn": 3078, "lib": "", "sp": "com/qbiki/seattleclouds/asynctasks", "bh": 752330, "btc": 497, "btn": 98}
 {"dn": 385, "lib": "", "sp": "com/qbiki/seattleclouds/asynctasks", "bh": 752325, "btc": 497, "btn": 98}
 {"dn": 179, "lib": "", "sp": "com/shaded/fasterxml/jackson/databind/deser/std", "bh": 695048, "btc": 496, "btn": 98}
@@ -11161,7 +11161,7 @@
 {"dn": 203, "lib": "ut;skplanet;www.skplanet.com", "sp": "com/skplanet/tad/mraid/view", "bh": 861998, "btc": 621, "btn": 97, "pn": "com/skplanet"}
 {"dn": 1540, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "com/amazonaws/org/apache/http/impl/client", "bh": 156514, "btc": 601, "btn": 97, "pn": "org/apache/http"}
 {"dn": 105, "lib": "am;Google Play;https://play.google.com", "sp": "com/android/vending/billing", "bh": 635264, "btc": 549, "btn": 97, "pn": "com/android/vending"}
-{"dn": 362, "lib": "", "sp": "org/osmdroid/util", "bh": 483469, "btc": 529, "btn": 97}
+{"dn": 362, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/util", "bh": 483469, "btc": 529, "btn": 97, "pn": "org/osmdroid"}
 {"dn": 106, "lib": "ut;Amazon AWS;mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/auth", "bh": 719201, "btc": 527, "btn": 97, "pn": "com/amazonaws"}
 {"dn": 345, "lib": "", "sp": "com/google/common/primitives", "bh": 917732, "btc": 513, "btn": 97}
 {"dn": 112, "lib": "", "sp": "com/ideateca/core/framework", "bh": 724583, "btc": 503, "btn": 97}
@@ -11628,7 +11628,7 @@
 {"dn": 206, "lib": "", "sp": "com/wsi/android/framework/map/overlay/geodata/model", "bh": 249138, "btc": 915, "btn": 92}
 {"dn": 175, "lib": "", "sp": "com/fitnessmobileapps/fma/server/api", "bh": 977823, "btc": 812, "btn": 92}
 {"dn": 108, "lib": "", "sp": "com/thoughtworks/xstream/converters/reflection", "bh": 961148, "btc": 571, "btn": 92}
-{"dn": 202, "lib": "", "sp": "org/osmdroid/util", "bh": 461218, "btc": 512, "btn": 92}
+{"dn": 202, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/util", "bh": 461218, "btc": 512, "btn": 92, "pn": "org/osmdroid"}
 {"dn": 307, "lib": "da;BugSense;https://github.com/wrapp/bugsense-android", "sp": "com/bugsense/trace/models", "bh": 729365, "btc": 501, "btn": 92, "pn": "com/bugsense"}
 {"dn": 137, "lib": "", "sp": "org/holoeverywhere/util", "bh": 373871, "btc": 471, "btn": 92}
 {"dn": 703, "lib": "", "sp": "com/prime31/util", "bh": 453415, "btc": 447, "btn": 92}
@@ -11722,7 +11722,7 @@
 {"dn": 198, "lib": "", "sp": "com/thoughtworks/xstream/mapper", "bh": 159207, "btc": 525, "btn": 91}
 {"dn": 274, "lib": "", "sp": "com/talex/tb3/service", "bh": 470639, "btc": 522, "btn": 91}
 {"dn": 2608, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/adapters", "bh": 915833, "btc": 519, "btn": 91, "pn": "com/biznessapps"}
-{"dn": 1949, "lib": "", "sp": "org/osmdroid/util", "bh": 456094, "btc": 514, "btn": 91}
+{"dn": 1949, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/util", "bh": 456094, "btc": 514, "btn": 91, "pn": "org/osmdroid"}
 {"dn": 365, "lib": "", "sp": "org/osmdroid/bonuspack/location", "bh": 210726, "btc": 502, "btn": 91}
 {"dn": 255, "lib": "ut;Amazon AWS;mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/auth", "bh": 683788, "btc": 493, "btn": 91, "pn": "com/amazonaws"}
 {"dn": 17515, "lib": "", "sp": "com/qbiki/modules/rsspro", "bh": 33142, "btc": 477, "btn": 91}
@@ -11901,7 +11901,7 @@
 {"dn": 1137, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/lang/time", "bh": 653351, "btc": 558, "btn": 89, "pn": "org/apache/commons"}
 {"dn": 206, "lib": "", "sp": "com/appfireworks/android/track", "bh": 779998, "btc": 522, "btn": 89}
 {"dn": 442, "lib": "", "sp": "com/appfireworks/android/track", "bh": 779920, "btc": 519, "btn": 89}
-{"dn": 263, "lib": "", "sp": "org/osmdroid/util", "bh": 447350, "btc": 510, "btn": 89}
+{"dn": 263, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/util", "bh": 447350, "btc": 510, "btn": 89, "pn": "org/osmdroid"}
 {"dn": 311, "lib": "sn;Tencent Login;wiki.open.qq.com/wiki/mobile/Android_SDK", "sp": "com/tencent/tauth", "bh": 923269, "btc": 495, "btn": 89, "pn": "com/tencent/tauth"}
 {"dn": 140, "lib": "", "sp": "com/crittercism/app", "bh": 864580, "btc": 488, "btn": 89}
 {"dn": 358, "lib": "", "sp": "ch/qos/logback/core/rolling", "bh": 514511, "btc": 486, "btn": 89}
@@ -15463,7 +15463,7 @@
 {"dn": 236, "lib": "ad;StartApp;www.startapp.com/", "sp": "com/startapp/android/publish/b", "bh": 229795, "btc": 102, "btn": 60, "pn": "com/startapp"}
 {"dn": 167, "lib": "", "sp": "com/ibuildapp/romanblack/FanWallPlugin/Twitter", "bh": 257502, "btc": 100, "btn": 60}
 {"dn": 745, "lib": "", "sp": "www/conduit/app/pgplugins/maps", "bh": 216708, "btc": 100, "btn": 60}
-{"dn": 101, "lib": "", "sp": "org/osmdroid/views/overlay/mylocation", "bh": 320434, "btc": 95, "btn": 60}
+{"dn": 101, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay/mylocation", "bh": 320434, "btc": 95, "btn": 60, "pn": "org/osmdroid"}
 {"dn": 131, "lib": "", "sp": "com/casee/apptrack", "bh": 308408, "btc": 95, "btn": 60}
 {"dn": 146, "lib": "", "sp": "jp/co/nobot/libAdMaker", "bh": 200096, "btc": 92, "btn": 60}
 {"dn": 118, "lib": "", "sp": "com/twitter/android", "bh": 276331, "btc": 88, "btn": 60}
@@ -15677,7 +15677,7 @@
 {"dn": 146, "lib": "", "sp": "com/crittercism/app", "bh": 265877, "btc": 165, "btn": 58}
 {"dn": 199, "lib": "", "sp": "com/googlecode/mp4parser/util", "bh": 306798, "btc": 164, "btn": 58}
 {"dn": 272, "lib": "ge;Scoreloop Game;", "sp": "com/scoreloop/client/android/core/d", "bh": 322901, "btc": 163, "btn": 58, "pn": "com/scoreloop"}
-{"dn": 175, "lib": "", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 250664, "btc": 162, "btn": 58}
+{"dn": 175, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 250664, "btc": 162, "btn": 58, "pn": "org/osmdroid"}
 {"dn": 156, "lib": "", "sp": "com/google/common/collect", "bh": 433470, "btc": 161, "btn": 58}
 {"dn": 175, "lib": "", "sp": "com/logicimmo/core/model/announces/values", "bh": 287927, "btc": 161, "btn": 58}
 {"dn": 240, "lib": "ge;Scoreloop Game;", "sp": "com/scoreloop/client/android/core/persistence", "bh": 322823, "btc": 160, "btn": 58, "pn": "com/scoreloop"}
@@ -16589,7 +16589,7 @@
 {"dn": 2540, "lib": "da;OpenUDID Salama Generator;https://github.com/vieux/OpenUDID", "sp": "org/openudid", "bh": 169799, "btc": 89, "btn": 53, "pn": "org/openudid"}
 {"dn": 217, "lib": "da;OpenUDID Salama Generator;https://github.com/vieux/OpenUDID", "sp": "org/openudid", "bh": 169798, "btc": 89, "btn": 53, "pn": "org/openudid"}
 {"dn": 311, "lib": "", "sp": "com/nd/android/pandareader/setting/a", "bh": 233849, "btc": 88, "btn": 53}
-{"dn": 541, "lib": "", "sp": "org/osmdroid/views/overlay/mylocation", "bh": 302975, "btc": 86, "btn": 53}
+{"dn": 541, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay/mylocation", "bh": 302975, "btc": 86, "btn": 53, "pn": "org/osmdroid"}
 {"dn": 152, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/utils", "bh": 198695, "btc": 86, "btn": 53, "pn": "com/aviary"}
 {"dn": 889, "lib": "", "sp": "org/java_websocket/client", "bh": 601609, "btc": 85, "btn": 53}
 {"dn": 136, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/utils", "bh": 192729, "btc": 84, "btn": 53, "pn": "com/aviary"}
@@ -17541,9 +17541,9 @@
 {"dn": 102, "lib": "da;Loopj;https://github.com/loopj/android-async-http", "sp": "com/loopj/android/image", "bh": 224760, "btc": 80, "btn": 48, "pn": "com/loopj"}
 {"dn": 610, "lib": "", "sp": "net/rbgrn/opengl", "bh": 345960, "btc": 79, "btn": 48}
 {"dn": 135, "lib": "eg;myappengine;https://appengine.google.com/", "sp": "com/myappengine/westminster/mygarage/customview", "bh": 171847, "btc": 79, "btn": 48, "pn": "com/myappengine"}
-{"dn": 1104, "lib": "", "sp": "org/osmdroid/views/overlay/mylocation", "bh": 256793, "btc": 78, "btn": 48}
+{"dn": 1104, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay/mylocation", "bh": 256793, "btc": 78, "btn": 48, "pn": "org/osmdroid"}
 {"dn": 119, "lib": "", "sp": "com/socialize/auth/facebook", "bh": 168138, "btc": 78, "btn": 48}
-{"dn": 140, "lib": "", "sp": "org/osmdroid/utils", "bh": 161809, "btc": 78, "btn": 48}
+{"dn": 140, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/utils", "bh": 161809, "btc": 78, "btn": 48, "pn": "org/osmdroid"}
 {"dn": 253, "lib": "", "sp": "com/gau/go/gostaticsdk/connect", "bh": 228763, "btc": 77, "btn": 48}
 {"dn": 202, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/common/activities", "bh": 172970, "btc": 77, "btn": 48, "pn": "com/biznessapps"}
 {"dn": 708, "lib": "", "sp": "com/jm/co/shallwead/sdk/n", "bh": 644325, "btc": 76, "btn": 48}
@@ -17891,7 +17891,7 @@
 {"dn": 185, "lib": "ma;Parse.com;https://parse.com/docs/cn/android/guide", "sp": "com/parse/c/a", "bh": 159960, "btc": 105, "btn": 46, "pn": "com/parse"}
 {"dn": 109, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/logger", "bh": 116863, "btc": 104, "btn": 46, "pn": "com/j256"}
 {"dn": 459, "lib": "da;Codehaus;www.codehaus.org/", "sp": "org/codehaus/jackson", "bh": 111417, "btc": 104, "btn": 46, "pn": "org/codehaus"}
-{"dn": 112, "lib": "", "sp": "org/osmdroid/views/overlay/compass", "bh": 348884, "btc": 103, "btn": 46}
+{"dn": 112, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay/compass", "bh": 348884, "btc": 103, "btn": 46, "pn": "org/osmdroid"}
 {"dn": 792, "lib": "ui;urbanairship;https://www.urbanairship.com/", "sp": "com/urbanairship/b", "bh": 243355, "btc": 103, "btn": 46, "pn": "com/urbanairship"}
 {"dn": 747, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/logger", "bh": 116862, "btc": 103, "btn": 46, "pn": "com/j256"}
 {"dn": 112, "lib": "ge;Andengine Game Engine;www.andengine.org/", "sp": "org/anddev/andengine/f/d", "bh": 407687, "btc": 102, "btn": 46, "pn": "org/anddev/andengine"}
@@ -18103,7 +18103,7 @@
 {"dn": 129, "lib": "", "sp": "com/smartadserver/android/library/http", "bh": 220820, "btc": 98, "btn": 45}
 {"dn": 211, "lib": "da;Scribe Java Lib;https://github.com/scribejava/scribejava", "sp": "org/scribe/utils", "bh": 140987, "btc": 95, "btn": 45, "pn": "org/scribe"}
 {"dn": 217, "lib": "", "sp": "rajawali/renderer/plugins", "bh": 771462, "btc": 93, "btn": 45}
-{"dn": 1651, "lib": "", "sp": "org/osmdroid/views/overlay/compass", "bh": 406804, "btc": 93, "btn": 45}
+{"dn": 1651, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay/compass", "bh": 406804, "btc": 93, "btn": 45, "pn": "org/osmdroid"}
 {"dn": 300, "lib": "da;Neoline;www.neoline.biz/", "sp": "biz/neoline/app_core/core/filesystem", "bh": 146997, "btc": 92, "btn": 45, "pn": "biz/neoline"}
 {"dn": 303, "lib": "", "sp": "org/msgpack/util", "bh": 383071, "btc": 91, "btn": 45}
 {"dn": 196, "lib": "", "sp": "net/zucks/zucksAdnet/e", "bh": 175349, "btc": 89, "btn": 45}
@@ -20167,14 +20167,14 @@
 {"dn": 805, "lib": "", "sp": "com/qbiki/modules/slideshow", "bh": 233454, "btc": 54, "btn": 36}
 {"dn": 135, "lib": "", "sp": "com/androidnative/gcm", "bh": 221248, "btc": 53, "btn": 36}
 {"dn": 556, "lib": "ad;Applovin;https://www.applovin.com/", "sp": "com/applovin/adview", "bh": 116681, "btc": 53, "btn": 36, "pn": "com/applovin"}
-{"dn": 398, "lib": "", "sp": "org/osmdroid/tileprovider/util", "bh": 87481, "btc": 53, "btn": 36}
+{"dn": 398, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/util", "bh": 87481, "btc": 53, "btn": 36, "pn": "org/osmdroid"}
 {"dn": 308, "lib": "da;Qoppa Software;https://www.qoppa.com/", "sp": "com/qoppa/notes/utils/b", "bh": 521634, "btc": 52, "btn": 36, "pn": "com/qoppa"}
-{"dn": 386, "lib": "", "sp": "org/osmdroid/tileprovider/util", "bh": 87480, "btc": 52, "btn": 36}
+{"dn": 386, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/util", "bh": 87480, "btc": 52, "btn": 36, "pn": "org/osmdroid"}
 {"dn": 356, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common", "bh": 126619, "btc": 51, "btn": 36, "pn": "com/google/android/gms"}
 {"dn": 192, "lib": "", "sp": "com/mobileroadie/app_980/topusers", "bh": 122013, "btc": 51, "btn": 36}
 {"dn": 181, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/client/android/c/a", "bh": 110781, "btc": 51, "btn": 36, "pn": "com/google/zxing"}
 {"dn": 123, "lib": "", "sp": "fr/pcsoft/wdjava/framework/ihm/laf", "bh": 205934, "btc": 50, "btn": 36}
-{"dn": 495, "lib": "", "sp": "org/osmdroid/tileprovider/util", "bh": 87428, "btc": 50, "btn": 36}
+{"dn": 495, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/util", "bh": 87428, "btc": 50, "btn": 36, "pn": "org/osmdroid"}
 {"dn": 2023, "lib": "ad;Applovin;https://www.applovin.com/", "sp": "com/applovin/adview", "bh": 116062, "btc": 49, "btn": 36, "pn": "com/applovin"}
 {"dn": 182, "lib": "ad;Applovin;https://www.applovin.com/", "sp": "com/applovin/adview", "bh": 116061, "btc": 49, "btn": 36, "pn": "com/applovin"}
 {"dn": 132, "lib": "", "sp": "com/quickmobile/conference/video", "bh": 105027, "btc": 49, "btn": 36}
@@ -20420,13 +20420,13 @@
 {"dn": 154, "lib": "", "sp": "it/mobimentum/phonegapspinnerplugin", "bh": 103811, "btc": 53, "btn": 35}
 {"dn": 108, "lib": "", "sp": "com/socialize/networks/facebook/v2", "bh": 101262, "btc": 52, "btn": 35}
 {"dn": 863, "lib": "ut;Papaya;en.papayamobile.com/", "sp": "com/papaya/utils", "bh": 116617, "btc": 51, "btn": 35, "pn": "com/papaya"}
-{"dn": 2726, "lib": "", "sp": "org/osmdroid/tileprovider/util", "bh": 83014, "btc": 51, "btn": 35}
+{"dn": 2726, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/util", "bh": 83014, "btc": 51, "btn": 35, "pn": "org/osmdroid"}
 {"dn": 151, "lib": "da;Github;https://github.com/", "sp": "com/github/imkira/unitysysfont", "bh": 246044, "btc": 50, "btn": 35, "pn": "com/github"}
 {"dn": 862, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/search", "bh": 105281, "btc": 50, "btn": 35, "pn": "com/biznessapps"}
 {"dn": 131, "lib": "", "sp": "com/amobee/richmedia/controller/util", "bh": 90999, "btc": 50, "btn": 35}
 {"dn": 555, "lib": "", "sp": "net/manageapps/session", "bh": 181372, "btc": 49, "btn": 35}
 {"dn": 109, "lib": "ad;Revmob;https://www.revmobmobileadnetwork.com/", "sp": "com/revmob/ads/notification", "bh": 104944, "btc": 49, "btn": 35, "pn": "com/revmob"}
-{"dn": 483, "lib": "", "sp": "org/osmdroid/tileprovider/util", "bh": 82962, "btc": 49, "btn": 35}
+{"dn": 483, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/util", "bh": 82962, "btc": 49, "btn": 35, "pn": "org/osmdroid"}
 {"dn": 148, "lib": "da;newrelic;newrelic.com/", "sp": "com/newrelic/agent/android/sample", "bh": 154019, "btc": 48, "btn": 35, "pn": "com/newrelic"}
 {"dn": 970, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app108991/media/audio", "bh": 128411, "btc": 48, "btn": 35, "pn": "com/appmakr"}
 {"dn": 104, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app319169/media/audio", "bh": 128410, "btc": 48, "btn": 35, "pn": "com/appmakr"}
@@ -22056,11 +22056,11 @@
 {"dn": 388, "lib": "", "sp": "net/zucks/zucksAdnet/c", "bh": 254318, "btc": 119, "btn": 28}
 {"dn": 103, "lib": "mp;Alibaba Amap;lbs.amap.com/", "sp": "com/amap/mapapi/poisearch", "bh": 118679, "btc": 116, "btn": 28, "pn": "com/amap"}
 {"dn": 591, "lib": "", "sp": "com/iflytek/b", "bh": 112415, "btc": 116, "btn": 28}
-{"dn": 260, "lib": "", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 84545, "btc": 114, "btn": 28}
+{"dn": 260, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 84545, "btc": 114, "btn": 28, "pn": "org/osmdroid"}
 {"dn": 1552, "lib": "", "sp": "org/jivesoftware/smackx/bookmark", "bh": 199356, "btc": 112, "btn": 28}
 {"dn": 6474, "lib": "da;Authorize.NET;www.authorize.net/", "sp": "net/authorize/data", "bh": 270417, "btc": 111, "btn": 28, "pn": "net/authorize"}
 {"dn": 134, "lib": "ut;Amazon;", "sp": "com/amazon/device/iap/internal/util", "bh": 118251, "btc": 111, "btn": 28, "pn": "com/amazon"}
-{"dn": 107, "lib": "", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 81850, "btc": 109, "btn": 28}
+{"dn": 107, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 81850, "btc": 109, "btn": 28, "pn": "org/osmdroid"}
 {"dn": 2553, "lib": "", "sp": "com/google/youngandroid", "bh": 214105, "btc": 108, "btn": 28}
 {"dn": 803, "lib": "ge;Andengine Game Engine;www.andengine.org/", "sp": "org/andengine/util/texturepack", "bh": 126198, "btc": 108, "btn": 28, "pn": "org/andengine"}
 {"dn": 366, "lib": "", "sp": "com/lowagie/text/pdf/events", "bh": 135142, "btc": 107, "btn": 28}
@@ -22581,7 +22581,7 @@
 {"dn": 275, "lib": "", "sp": "com/feelingk/iap/gui/view", "bh": 631287, "btc": 98, "btn": 26}
 {"dn": 131, "lib": "", "sp": "com/vungle/publisher/reporting", "bh": 96349, "btc": 98, "btn": 26}
 {"dn": 216, "lib": "da;Signpost Oauth;https://code.google.com/p/oauth-signpost/", "sp": "com/Aquevix/Library/Twitter/Predefined/oauth/signpost/signature", "bh": 85512, "btc": 98, "btn": 26, "pn": "oauth/signpost"}
-{"dn": 443, "lib": "", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 66373, "btc": 98, "btn": 26}
+{"dn": 443, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 66373, "btc": 98, "btn": 26, "pn": "org/osmdroid"}
 {"dn": 338, "lib": "", "sp": "org/mockito/cglib/transform/impl", "bh": 110765, "btc": 97, "btn": 26}
 {"dn": 306, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/compress/archivers/ar", "bh": 183951, "btc": 95, "btn": 26, "pn": "org/apache/commons"}
 {"dn": 726, "lib": "", "sp": "com/vungle/publisher/reporting", "bh": 96271, "btc": 95, "btn": 26}
@@ -22841,15 +22841,15 @@
 {"dn": 931, "lib": "", "sp": "com/microeyes/admob", "bh": 252869, "btc": 109, "btn": 25}
 {"dn": 144, "lib": "da;Google GData;code.google.com/p/google-gdata/", "sp": "com/google/gdata/client/spreadsheet", "bh": 138738, "btc": 105, "btn": 25, "pn": "com/google/gdata"}
 {"dn": 120, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/math3/ml", "bh": 165460, "btc": 104, "btn": 25, "pn": "org/apache/commons"}
-{"dn": 177, "lib": "", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 58901, "btc": 104, "btn": 25}
-{"dn": 373, "lib": "", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 58765, "btc": 104, "btn": 25}
+{"dn": 177, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 58901, "btc": 104, "btn": 25, "pn": "org/osmdroid"}
+{"dn": 373, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 58765, "btc": 104, "btn": 25, "pn": "org/osmdroid"}
 {"dn": 769, "lib": "ut;Amazon AWS;mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/internal/config", "bh": 82945, "btc": 100, "btn": 25, "pn": "com/amazonaws"}
 {"dn": 23424, "lib": "da;Signpost Oauth;https://code.google.com/p/oauth-signpost/", "sp": "oauth/signpost/signature", "bh": 77707, "btc": 99, "btn": 25, "pn": "oauth/signpost"}
 {"dn": 147, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/math3/analysis/polynomials", "bh": 113944, "btc": 98, "btn": 25, "pn": "org/apache/commons"}
 {"dn": 621, "lib": "da;Signpost Oauth;https://code.google.com/p/oauth-signpost/", "sp": "com/nostra13/socialsharing/twitter/extpack/oauth/signpost/signature", "bh": 75160, "btc": 98, "btn": 25, "pn": "oauth/signpost"}
 {"dn": 1546, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "si/mobitel/org/apache/http/auth", "bh": 97580, "btc": 96, "btn": 25, "pn": "org/apache/http"}
 {"dn": 370, "lib": "ad;Revmob;https://www.revmobmobileadnetwork.com/", "sp": "com/revmob/client", "bh": 93989, "btc": 96, "btn": 25, "pn": "com/revmob"}
-{"dn": 344, "lib": "", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 60403, "btc": 96, "btn": 25}
+{"dn": 344, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 60403, "btc": 96, "btn": 25, "pn": "org/osmdroid"}
 {"dn": 834, "lib": "da;Signpost Oauth;https://code.google.com/p/oauth-signpost/", "sp": "oauth/signpost/signature", "bh": 77551, "btc": 93, "btn": 25, "pn": "oauth/signpost"}
 {"dn": 13840, "lib": "ad;Revmob;https://www.revmobmobileadnetwork.com/", "sp": "com/revmob/b", "bh": 95251, "btc": 91, "btn": 25, "pn": "com/revmob"}
 {"dn": 143, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "com/amazonaws/org/apache/http/protocol", "bh": 82370, "btc": 91, "btn": 25, "pn": "org/apache/http"}
@@ -23101,8 +23101,8 @@
 {"dn": 111, "lib": "", "sp": "repack/org/bouncycastle/x509/examples", "bh": 351630, "btc": 105, "btn": 24}
 {"dn": 1367, "lib": "", "sp": "com/drew/metadata/xmp", "bh": 104651, "btc": 105, "btn": 24}
 {"dn": 105, "lib": "", "sp": "com/drew/metadata/xmp", "bh": 103362, "btc": 103, "btn": 24}
-{"dn": 309, "lib": "", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 53334, "btc": 103, "btn": 24}
-{"dn": 1885, "lib": "", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 52795, "btc": 102, "btn": 24}
+{"dn": 309, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 53334, "btc": 103, "btn": 24, "pn": "org/osmdroid"}
+{"dn": 1885, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 52795, "btc": 102, "btn": 24, "pn": "org/osmdroid"}
 {"dn": 195, "lib": "da;ACRA;", "sp": "org/acra/c", "bh": 92908, "btc": 101, "btn": 24, "pn": "org/acra"}
 {"dn": 153, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/location", "bh": 81418, "btc": 101, "btn": 24, "pn": "com/google/android/gms"}
 {"dn": 159, "lib": "", "sp": "com/wsi/android/framework/app/gamification", "bh": 75272, "btc": 99, "btn": 24}
@@ -24692,8 +24692,8 @@
 {"dn": 205, "lib": "", "sp": "com/mobisystems/msdict/viewer/b", "bh": 50428, "btc": 25, "btn": 19}
 {"dn": 200, "lib": "", "sp": "com/tripomatic/ui/detail/map", "bh": 50370, "btc": 25, "btn": 19}
 {"dn": 1288, "lib": "da;Corona;https://docs.coronalabs.com/native/android/html/com/ansca/corona/package-summary.html", "sp": "com/ansca/corona/events", "bh": 37527, "btc": 25, "btn": 19, "pn": "com/ansca/corona"}
-{"dn": 4320, "lib": "", "sp": "org/osmdroid/views/util", "bh": 98116, "btc": 24, "btn": 19}
-{"dn": 196, "lib": "", "sp": "org/osmdroid/views/util", "bh": 98111, "btc": 24, "btn": 19}
+{"dn": 4320, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/util", "bh": 98116, "btc": 24, "btn": 19, "pn": "org/osmdroid"}
+{"dn": 196, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/util", "bh": 98111, "btc": 24, "btn": 19, "pn": "org/osmdroid"}
 {"dn": 279, "lib": "da;crowdcompass;www.crowdcompass.com/", "sp": "com/crowdcompass/appeaUjo6e8XP/client/eventdirectory/view", "bh": 58479, "btc": 24, "btn": 19, "pn": "com/crowdcompass"}
 {"dn": 182, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/integration/android", "bh": 46637, "btc": 24, "btn": 19, "pn": "com/google/zxing"}
 {"dn": 39897, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/k/c/d", "bh": 43784, "btc": 24, "btn": 19, "pn": "com/google/android/gms"}
@@ -28589,7 +28589,7 @@
 {"dn": 110, "lib": "", "sp": "com/WazaBe/HoloEverywhere/sherlock", "bh": 13656, "btc": 28, "btn": 7}
 {"dn": 156, "lib": "ad;adsmogo;www.adsmogo.com/", "sp": "com/adsmogo/model", "bh": 7550, "btc": 28, "btn": 7, "pn": "com/adsmogo"}
 {"dn": 166, "lib": "", "sp": "com/sec/android/ad/state", "bh": 6491, "btc": 28, "btn": 7}
-{"dn": 3500, "lib": "", "sp": "org/osmdroid/events", "bh": 4192, "btc": 28, "btn": 7}
+{"dn": 3500, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/events", "bh": 4192, "btc": 28, "btn": 7, "pn": "org/osmdroid"}
 {"dn": 167, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation/customevent", "bh": 1986, "btc": 28, "btn": 7, "pn": "com/google/ads"}
 {"dn": 133, "lib": "", "sp": "com/milkmangames/extensions/android/googlegames", "bh": 55625, "btc": 27, "btn": 7}
 {"dn": 280, "lib": "", "sp": "com/googlecode/flickrjandroid/prefs", "bh": 52067, "btc": 27, "btn": 7}
@@ -28603,7 +28603,7 @@
 {"dn": 471, "lib": "ad;Revmob;https://www.revmobmobileadnetwork.com/", "sp": "com/revmob/air", "bh": 27685, "btc": 25, "btn": 7, "pn": "com/revmob"}
 {"dn": 1565, "lib": "", "sp": "mono/android/app", "bh": 15989, "btc": 25, "btn": 7}
 {"dn": 1807, "lib": "da;Pollfish;https://www.pollfish.com/", "sp": "com/pollfish/main", "bh": 5711, "btc": 25, "btn": 7, "pn": "com/pollfish"}
-{"dn": 1033, "lib": "", "sp": "org/osmdroid/events", "bh": 4114, "btc": 25, "btn": 7}
+{"dn": 1033, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/events", "bh": 4114, "btc": 25, "btn": 7, "pn": "org/osmdroid"}
 {"dn": 179, "lib": "", "sp": "com/vividsolutions/jts/linearref", "bh": 2753, "btc": 25, "btn": 7}
 {"dn": 230, "lib": "ge;Andengine Game Engine;www.andengine.org/", "sp": "org/andengine/opengl/c/d", "bh": 2593, "btc": 25, "btn": 7, "pn": "org/andengine"}
 {"dn": 255, "lib": "da;Xamarin;https://xamarin.com/", "sp": "xamarin/social", "bh": 45908, "btc": 24, "btn": 7, "pn": "xamarin"}
@@ -28783,7 +28783,7 @@
 {"dn": 317, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/ui/clipboard", "bh": 69832, "btc": 10, "btn": 7, "pn": "ti/modules/titanium"}
 {"dn": 3919, "lib": "ut;anywheresoftware;", "sp": "anywheresoftware/b4a/keywords/constants", "bh": 45463, "btc": 10, "btn": 7, "pn": "anywheresoftware"}
 {"dn": 326, "lib": "ut;anywheresoftware;", "sp": "anywheresoftware/b4a/keywords/constants", "bh": 45462, "btc": 10, "btn": 7, "pn": "anywheresoftware"}
-{"dn": 119, "lib": "", "sp": "org/osmdroid/views/drawing", "bh": 38225, "btc": 10, "btn": 7}
+{"dn": 119, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/drawing", "bh": 38225, "btc": 10, "btn": 7, "pn": "org/osmdroid"}
 {"dn": 125, "lib": "", "sp": "de/l3s/boilerpipe/util", "bh": 28291, "btc": 10, "btn": 7}
 {"dn": 104, "lib": "", "sp": "com/km/common", "bh": 27851, "btc": 10, "btn": 7}
 {"dn": 105, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/collections4/trie/analyzer", "bh": 25857, "btc": 10, "btn": 7, "pn": "org/apache/commons"}
