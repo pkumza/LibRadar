@@ -28103,7 +28103,7 @@
 {"dn": 322, "lib": "", "sp": "org/zywx/wbpalmstar/plugin/uexzxing/client/android/result", "bh": 19880, "btc": 11, "btn": 9}
 {"dn": 513, "lib": "", "sp": "com/wFantyiIgradlyavzroslyihdlyaNovogogodainetolko/h", "bh": 19156, "btc": 11, "btn": 9}
 {"dn": 133, "lib": "", "sp": "com/atlatl/smalc/app/storage", "bh": 17954, "btc": 11, "btn": 9}
-{"dn": 1233, "lib": "da;CommonsWare SackOfViewsAdapter;https://github.com/commonsguy/cwac-sacklist", "sp": "com/commonsware/cwac/sacklist", "bh": 14472, "btc": 11, "btn": 9, "pn": "com/commonsware/cwac/sacklist/"}
+{"dn": 1233, "lib": "da;CommonsWare SackOfViewsAdapter;https://github.com/commonsguy/cwac-sacklist", "sp": "com/commonsware/cwac/sacklist", "bh": 14472, "btc": 11, "btn": 9, "pn": "com/commonsware/cwac/sacklist"}
 {"dn": 516, "lib": "", "sp": "com/nd/android/pandareader/d/b", "bh": 14437, "btc": 11, "btn": 9}
 {"dn": 199, "lib": "", "sp": "net/daum/mf/map/task", "bh": 11428, "btc": 11, "btn": 9}
 {"dn": 134, "lib": "", "sp": "com/qozix/tileview/geom", "bh": 8303, "btc": 11, "btn": 9}
@@ -28483,8 +28483,8 @@
 {"dn": 256, "lib": "", "sp": "gdg/youtube", "bh": 16379, "btc": 10, "btn": 8}
 {"dn": 223, "lib": "", "sp": "com/tme/ads/net", "bh": 15853, "btc": 10, "btn": 8}
 {"dn": 208, "lib": "", "sp": "org/osmdroid/google/overlay", "bh": 15718, "btc": 10, "btn": 8}
-{"dn": 119, "lib": "da;CommonsWare SackOfViewsAdapter;https://github.com/commonsguy/cwac-sacklist", "sp": "com/commonsware/cwac/sacklist", "bh": 14471, "btc": 10, "btn": 8, "pn": "com/commonsware/cwac/sacklist/"}
-{"dn": 292, "lib": "da;CommonsWare SackOfViewsAdapter;https://github.com/commonsguy/cwac-sacklist", "sp": "com/commonsware/cwac/sacklist", "bh": 14286, "btc": 10, "btn": 8, "pn": "com/commonsware/cwac/sacklist/"}
+{"dn": 119, "lib": "da;CommonsWare SackOfViewsAdapter;https://github.com/commonsguy/cwac-sacklist", "sp": "com/commonsware/cwac/sacklist", "bh": 14471, "btc": 10, "btn": 8, "pn": "com/commonsware/cwac/sacklist"}
+{"dn": 292, "lib": "da;CommonsWare SackOfViewsAdapter;https://github.com/commonsguy/cwac-sacklist", "sp": "com/commonsware/cwac/sacklist", "bh": 14286, "btc": 10, "btn": 8, "pn": "com/commonsware/cwac/sacklist"}
 {"dn": 28502, "lib": "ad;Revmob;https://www.revmobmobileadnetwork.com/", "sp": "com/revmob/ads/c", "bh": 12323, "btc": 10, "btn": 8, "pn": "com/revmob"}
 {"dn": 333, "lib": "da;Roboguice;https://github.com/roboguice/roboguice", "sp": "roboguice/application", "bh": 11090, "btc": 10, "btn": 8, "pn": "roboguice"}
 {"dn": 393, "lib": "da;crowdcompass;www.crowdcompass.com/", "sp": "com/crowdcompass/appbriMEsLHiQ/client/global/model/map", "bh": 9936, "btc": 10, "btn": 8, "pn": "com/crowdcompass"}
