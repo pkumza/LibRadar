@@ -22598,9 +22598,9 @@
 {"dn": 1283, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/model", "bh": 85597, "btc": 93, "btn": 26, "pn": "com/biznessapps"}
 {"dn": 160, "lib": "", "sp": "org/jdom2/filter", "bh": 84846, "btc": 91, "btn": 26}
 {"dn": 2093, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fragments/menuitems", "bh": 139478, "btc": 90, "btn": 26, "pn": "com/biznessapps"}
-{"dn": 114, "lib": "", "sp": "com/commonsware/cwac/merge", "bh": 317977, "btc": 89, "btn": 26}
+{"dn": 114, "lib": "da;CommonsWare MergeAdapter;https://github.com/commonsguy/cwac-merge", "sp": "com/commonsware/cwac/merge", "bh": 317977, "btc": 89, "btn": 26, "pn": "com/commonsware/cwac/merge/"}
 {"dn": 914, "lib": "", "sp": "com/purplebrain/adbuddiz/sdk/model", "bh": 242177, "btc": 89, "btn": 26}
-{"dn": 184, "lib": "", "sp": "com/commonsware/cwac/merge", "bh": 317976, "btc": 88, "btn": 26}
+{"dn": 184, "lib": "da;CommonsWare MergeAdapter;https://github.com/commonsguy/cwac-merge", "sp": "com/commonsware/cwac/merge", "bh": 317976, "btc": 88, "btn": 26, "pn": "com/commonsware/cwac/merge/"}
 {"dn": 360, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/network/socket", "bh": 217091, "btc": 88, "btn": 26, "pn": "ti/modules/titanium"}
 {"dn": 122, "lib": "ma;Parse.com;https://parse.com/docs/cn/android/guide", "sp": "com/parse/codec/binary", "bh": 125280, "btc": 88, "btn": 26, "pn": "com/parse"}
 {"dn": 140, "lib": "", "sp": "com/wsi/android/weather/ui/adapter/weatherbar", "bh": 75578, "btc": 87, "btn": 26}
@@ -22862,7 +22862,7 @@
 {"dn": 337, "lib": "", "sp": "org/afree/chart/util", "bh": 665379, "btc": 88, "btn": 25}
 {"dn": 142, "lib": "", "sp": "c", "bh": 326117, "btc": 88, "btn": 25}
 {"dn": 122, "lib": "", "sp": "org/apache/tools/ant/taskdefs/optional/ccm", "bh": 227159, "btc": 88, "btn": 25}
-{"dn": 314, "lib": "", "sp": "com/commonsware/cwac/merge", "bh": 312042, "btc": 87, "btn": 25}
+{"dn": 314, "lib": "da;CommonsWare MergeAdapter;https://github.com/commonsguy/cwac-merge", "sp": "com/commonsware/cwac/merge", "bh": 312042, "btc": 87, "btn": 25, "pn": "com/commonsware/cwac/merge/"}
 {"dn": 8494, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/network/socket", "bh": 210646, "btc": 87, "btn": 25, "pn": "ti/modules/titanium"}
 {"dn": 301, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/network/socket", "bh": 210643, "btc": 87, "btn": 25, "pn": "ti/modules/titanium"}
 {"dn": 191, "lib": "", "sp": "com/aetrion/flickr/auth", "bh": 196223, "btc": 87, "btn": 25}
@@ -23125,7 +23125,7 @@
 {"dn": 208, "lib": "da;KObjects;http://kobjects.org", "sp": "org/kobjects", "bh": 219941, "btc": 77, "btn": 24, "pn": "org/kobjects"}
 {"dn": 304, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/plus/internal", "bh": 176191, "btc": 77, "btn": 24, "pn": "com/google/android/gms"}
 {"dn": 815, "lib": "", "sp": "com/integralblue/httpresponsecache/compat/java", "bh": 493321, "btc": 76, "btn": 24}
-{"dn": 124, "lib": "", "sp": "com/commonsware/cwac/merge", "bh": 293972, "btc": 76, "btn": 24}
+{"dn": 124, "lib": "da;CommonsWare MergeAdapter;https://github.com/commonsguy/cwac-merge", "sp": "com/commonsware/cwac/merge", "bh": 293972, "btc": 76, "btn": 24, "pn": "com/commonsware/cwac/merge/"}
 {"dn": 154, "lib": "ad;Revmob;https://www.revmobmobileadnetwork.com/", "sp": "com/revmob/client", "bh": 98837, "btc": 76, "btn": 24, "pn": "com/revmob"}
 {"dn": 109, "lib": "", "sp": "org/osmdroid/c/c", "bh": 41452, "btc": 75, "btn": 24}
 {"dn": 347, "lib": "", "sp": "org/java_websocket/framing", "bh": 328346, "btc": 73, "btn": 24}
@@ -23379,7 +23379,7 @@
 {"dn": 209, "lib": "", "sp": "it/sauronsoftware/base64", "bh": 171842, "btc": 82, "btn": 23}
 {"dn": 169, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/io/filefilter", "bh": 119115, "btc": 81, "btn": 23, "pn": "org/apache/commons"}
 {"dn": 167, "lib": "", "sp": "org/shaded/apache/http/auth", "bh": 79313, "btc": 80, "btn": 23}
-{"dn": 708, "lib": "", "sp": "com/commonsware/cwac/merge", "bh": 289115, "btc": 79, "btn": 23}
+{"dn": 708, "lib": "da;CommonsWare MergeAdapter;https://github.com/commonsguy/cwac-merge", "sp": "com/commonsware/cwac/merge", "bh": 289115, "btc": 79, "btn": 23, "pn": "com/commonsware/cwac/merge/"}
 {"dn": 304, "lib": "", "sp": "org/jboss/netty/logging", "bh": 218964, "btc": 78, "btn": 23}
 {"dn": 127, "lib": "da;Apache James Mail Enterprise Serve;http://james.apache.org", "sp": "org/apache/james/mime4j/io", "bh": 212273, "btc": 78, "btn": 23, "pn": "org/apache/james"}
 {"dn": 152, "lib": "da;crowdcompass;www.crowdcompass.com/", "sp": "com/crowdcompass/apphkgQo6EvDQ/net/httpclient", "bh": 206960, "btc": 78, "btn": 23, "pn": "com/crowdcompass"}
@@ -23388,7 +23388,7 @@
 {"dn": 1845, "lib": "", "sp": "com/google/inject/util", "bh": 107921, "btc": 77, "btn": 23}
 {"dn": 102, "lib": "", "sp": "com/google/inject/util", "bh": 107919, "btc": 77, "btn": 23}
 {"dn": 1350, "lib": "", "sp": "org/msgpack/unpacker", "bh": 196614, "btc": 76, "btn": 23}
-{"dn": 303, "lib": "", "sp": "com/commonsware/cwac/merge", "bh": 293971, "btc": 75, "btn": 23}
+{"dn": 303, "lib": "da;CommonsWare MergeAdapter;https://github.com/commonsguy/cwac-merge", "sp": "com/commonsware/cwac/merge", "bh": 293971, "btc": 75, "btn": 23, "pn": "com/commonsware/cwac/merge/"}
 {"dn": 410, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/plus/internal", "bh": 169113, "btc": 75, "btn": 23, "pn": "com/google/android/gms"}
 {"dn": 630, "lib": "", "sp": "com/chute/android/photopickerplus/c/a", "bh": 120036, "btc": 74, "btn": 23}
 {"dn": 359, "lib": "da;Apache James Mail Enterprise Serve;http://james.apache.org", "sp": "org/apache/james/mime4j/descriptor", "bh": 175548, "btc": 73, "btn": 23, "pn": "org/apache/james"}
@@ -23972,7 +23972,7 @@
 {"dn": 665, "lib": "da;Kawa for Android;https://www.gnu.org/software/kawa/Building-for-Android.html", "sp": "kawa/lib/kawa", "bh": 248440, "btc": 68, "btn": 21, "pn": "kawa"}
 {"dn": 169, "lib": "", "sp": "org/apache/poi/hssf/eventusermodel", "bh": 85232, "btc": 68, "btn": 21}
 {"dn": 5484, "lib": "da;Google GMS;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/snapshot", "bh": 108358, "btc": 67, "btn": 21, "pn": "com/google/android/gms"}
-{"dn": 170, "lib": "", "sp": "com/commonsware/cwac/merge", "bh": 271613, "btc": 66, "btn": 21}
+{"dn": 170, "lib": "da;CommonsWare MergeAdapter;https://github.com/commonsguy/cwac-merge", "sp": "com/commonsware/cwac/merge", "bh": 271613, "btc": 66, "btn": 21, "pn": "com/commonsware/cwac/merge/"}
 {"dn": 126, "lib": "", "sp": "com/vungle/publisher/async", "bh": 37816, "btc": 66, "btn": 21}
 {"dn": 219, "lib": "", "sp": "biz/app/common/modules/textcard", "bh": 93893, "btc": 65, "btn": 21}
 {"dn": 687, "lib": "", "sp": "com/vungle/publisher/async", "bh": 36971, "btc": 65, "btn": 21}
@@ -28103,7 +28103,7 @@
 {"dn": 322, "lib": "", "sp": "org/zywx/wbpalmstar/plugin/uexzxing/client/android/result", "bh": 19880, "btc": 11, "btn": 9}
 {"dn": 513, "lib": "", "sp": "com/wFantyiIgradlyavzroslyihdlyaNovogogodainetolko/h", "bh": 19156, "btc": 11, "btn": 9}
 {"dn": 133, "lib": "", "sp": "com/atlatl/smalc/app/storage", "bh": 17954, "btc": 11, "btn": 9}
-{"dn": 1233, "lib": "", "sp": "com/commonsware/cwac/sacklist", "bh": 14472, "btc": 11, "btn": 9}
+{"dn": 1233, "lib": "da;CommonsWare SackOfViewsAdapter;https://github.com/commonsguy/cwac-sacklist", "sp": "com/commonsware/cwac/sacklist", "bh": 14472, "btc": 11, "btn": 9, "pn": "com/commonsware/cwac/sacklist/"}
 {"dn": 516, "lib": "", "sp": "com/nd/android/pandareader/d/b", "bh": 14437, "btc": 11, "btn": 9}
 {"dn": 199, "lib": "", "sp": "net/daum/mf/map/task", "bh": 11428, "btc": 11, "btn": 9}
 {"dn": 134, "lib": "", "sp": "com/qozix/tileview/geom", "bh": 8303, "btc": 11, "btn": 9}
@@ -28483,8 +28483,8 @@
 {"dn": 256, "lib": "", "sp": "gdg/youtube", "bh": 16379, "btc": 10, "btn": 8}
 {"dn": 223, "lib": "", "sp": "com/tme/ads/net", "bh": 15853, "btc": 10, "btn": 8}
 {"dn": 208, "lib": "", "sp": "org/osmdroid/google/overlay", "bh": 15718, "btc": 10, "btn": 8}
-{"dn": 119, "lib": "", "sp": "com/commonsware/cwac/sacklist", "bh": 14471, "btc": 10, "btn": 8}
-{"dn": 292, "lib": "", "sp": "com/commonsware/cwac/sacklist", "bh": 14286, "btc": 10, "btn": 8}
+{"dn": 119, "lib": "da;CommonsWare SackOfViewsAdapter;https://github.com/commonsguy/cwac-sacklist", "sp": "com/commonsware/cwac/sacklist", "bh": 14471, "btc": 10, "btn": 8, "pn": "com/commonsware/cwac/sacklist/"}
+{"dn": 292, "lib": "da;CommonsWare SackOfViewsAdapter;https://github.com/commonsguy/cwac-sacklist", "sp": "com/commonsware/cwac/sacklist", "bh": 14286, "btc": 10, "btn": 8, "pn": "com/commonsware/cwac/sacklist/"}
 {"dn": 28502, "lib": "ad;Revmob;https://www.revmobmobileadnetwork.com/", "sp": "com/revmob/ads/c", "bh": 12323, "btc": 10, "btn": 8, "pn": "com/revmob"}
 {"dn": 333, "lib": "da;Roboguice;https://github.com/roboguice/roboguice", "sp": "roboguice/application", "bh": 11090, "btc": 10, "btn": 8, "pn": "roboguice"}
 {"dn": 393, "lib": "da;crowdcompass;www.crowdcompass.com/", "sp": "com/crowdcompass/appbriMEsLHiQ/client/global/model/map", "bh": 9936, "btc": 10, "btn": 8, "pn": "com/crowdcompass"}
