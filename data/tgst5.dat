@@ -6703,7 +6703,7 @@
 {"dn": 104, "lib": "", "sp": "com/fancypush/pushnotifications", "bh": 275809, "btc": 450, "btn": 189}
 {"dn": 7408, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader", "bh": 370464, "btc": 437, "btn": 189, "pn": "com/nostra13"}
 {"dn": 176, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader", "bh": 370460, "btc": 437, "btn": 189, "pn": "com/nostra13"}
-{"dn": 136, "lib": "", "sp": "org/androidannotations", "bh": 710277, "btc": 435, "btn": 189}
+{"dn": 136, "lib": "da;AndroidAnnotations API;https://github.com/excilys/androidannotations", "sp": "org/androidannotations", "bh": 710277, "btc": 435, "btn": 189, "pn": "org/androidannotations/"}
 {"dn": 146, "lib": "da;Loopj;https://github.com/loopj/android-async-http", "sp": "com/loopj/android/http", "bh": 357600, "btc": 433, "btn": 189, "pn": "com/loopj"}
 {"dn": 308, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/ads/internal", "bh": 958618, "btc": 426, "btn": 189, "pn": "com/facebook"}
 {"dn": 994, "lib": "ge;cocos2DX;http://www.cocos2d-x.org/", "sp": "org/cocos2dx/lib", "bh": 75375, "btc": 418, "btn": 189, "pn": "org/cocos2dx"}
@@ -6773,7 +6773,7 @@
 {"dn": 102, "lib": "", "sp": "com/smaato/SOMA", "bh": 444836, "btc": 477, "btn": 187}
 {"dn": 111, "lib": "", "sp": "com/fancypush/pushnotifications", "bh": 268756, "btc": 447, "btn": 187}
 {"dn": 15296, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common", "bh": 825795, "btc": 436, "btn": 187, "pn": "com/google/android/gms"}
-{"dn": 140, "lib": "", "sp": "org/androidannotations/api", "bh": 708614, "btc": 433, "btn": 187}
+{"dn": 140, "lib": "da;AndroidAnnotations API;https://github.com/excilys/androidannotations", "sp": "org/androidannotations/api", "bh": 708614, "btc": 433, "btn": 187, "pn": "org/androidannotations/"}
 {"dn": 127, "lib": "", "sp": "org/geometerplus/fbreader/network", "bh": 556194, "btc": 424, "btn": 187}
 {"dn": 156, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common", "bh": 825327, "btc": 418, "btn": 187, "pn": "com/google/android/gms"}
 {"dn": 722, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader/core", "bh": 458934, "btc": 410, "btn": 187, "pn": "com/nostra13"}
@@ -9738,7 +9738,7 @@
 {"dn": 117, "lib": "", "sp": "com/mobileroadie/app_980/onboarding", "bh": 26923, "btc": 330, "btn": 117}
 {"dn": 168, "lib": "", "sp": "com/rank_plat/util", "bh": 784271, "btc": 329, "btn": 117}
 {"dn": 106, "lib": "", "sp": "com/kakao/http", "bh": 953831, "btc": 324, "btn": 117}
-{"dn": 346, "lib": "", "sp": "org/androidannotations", "bh": 282421, "btc": 319, "btn": 117}
+{"dn": 346, "lib": "da;AndroidAnnotations API;https://github.com/excilys/androidannotations", "sp": "org/androidannotations", "bh": 282421, "btc": 319, "btn": 117, "pn": "org/androidannotations/"}
 {"dn": 331, "lib": "da;ACRA;", "sp": "org/acra/util", "bh": 560626, "btc": 318, "btn": 117, "pn": "org/acra"}
 {"dn": 124, "lib": "", "sp": "net/hockeyapp/android/tasks", "bh": 635643, "btc": 316, "btn": 117}
 {"dn": 126, "lib": "da;Bolts Base Library;https://github.com/BoltsFramework/Bolts-Android", "sp": "bolts", "bh": 629685, "btc": 316, "btn": 117, "pn": "bolts"}
@@ -9872,7 +9872,7 @@
 {"dn": 235, "lib": "", "sp": "com/xinxuetang/plugins/init", "bh": 599767, "btc": 339, "btn": 115}
 {"dn": 488, "lib": "", "sp": "com/new5tv/zc0000266", "bh": 496982, "btc": 336, "btn": 115}
 {"dn": 126, "lib": "", "sp": "net/manageapps/app_39028/onboarding", "bh": 995983, "btc": 324, "btn": 115}
-{"dn": 384, "lib": "", "sp": "org/androidannotations/api", "bh": 280759, "btc": 318, "btn": 115}
+{"dn": 384, "lib": "da;AndroidAnnotations API;https://github.com/excilys/androidannotations", "sp": "org/androidannotations/api", "bh": 280759, "btc": 318, "btn": 115, "pn": "org/androidannotations/"}
 {"dn": 144, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 585447, "btc": 305, "btn": 115, "pn": "com/facebook"}
 {"dn": 112, "lib": "", "sp": "ch/boye/httpclientandroidlib/conn", "bh": 173732, "btc": 295, "btn": 115}
 {"dn": 235, "lib": "da;Android Support v7;https://developer.android.com/reference/android/support/v7/app/package-summary.html", "sp": "android/support/v7/graphics", "bh": 754856, "btc": 287, "btn": 115, "pn": "android/support/v7"}
@@ -17925,7 +17925,7 @@
 {"dn": 161, "lib": "ui;castorfle Smooth Progress Bar;https://github.com/castorflex/SmoothProgressBar", "sp": "fr/castorflex/android/smoothprogressbar", "bh": 203650, "btc": 85, "btn": 46, "pn": "fr/castorfle"}
 {"dn": 951, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app477335/login", "bh": 199704, "btc": 85, "btn": 46, "pn": "com/appmakr"}
 {"dn": 171, "lib": "", "sp": "com/heyzap/mediation/mediator", "bh": 184188, "btc": 85, "btn": 46}
-{"dn": 163, "lib": "", "sp": "org/androidannotations/api/sharedpreferences", "bh": 240302, "btc": 84, "btn": 46}
+{"dn": 163, "lib": "da;AndroidAnnotations API;https://github.com/excilys/androidannotations", "sp": "org/androidannotations/api/sharedpreferences", "bh": 240302, "btc": 84, "btn": 46, "pn": "org/androidannotations/"}
 {"dn": 160, "lib": "", "sp": "com/magzter/zipdownload", "bh": 169098, "btc": 83, "btn": 46}
 {"dn": 102, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation", "bh": 133678, "btc": 83, "btn": 46, "pn": "com/google/ads"}
 {"dn": 169, "lib": "", "sp": "com/google/api/client/googleapis/auth", "bh": 191055, "btc": 80, "btn": 46}
@@ -18811,7 +18811,7 @@
 {"dn": 330, "lib": "", "sp": "com/heyzap/house/impl", "bh": 181581, "btc": 67, "btn": 42}
 {"dn": 108, "lib": "ui;SlidingMenu;https://github.com/jfeinstein10/SlidingMenu", "sp": "com/slidingmenu/lib/app", "bh": 201170, "btc": 66, "btn": 42, "pn": "com/slidingmenu"}
 {"dn": 2772, "lib": "da;Appyet;http://www.appyet.com/", "sp": "com/appyet/context", "bh": 164628, "btc": 66, "btn": 42, "pn": "com/appyet"}
-{"dn": 175, "lib": "", "sp": "org/androidannotations/api/builder", "bh": 228249, "btc": 65, "btn": 42}
+{"dn": 175, "lib": "da;AndroidAnnotations API;https://github.com/excilys/androidannotations", "sp": "org/androidannotations/api/builder", "bh": 228249, "btc": 65, "btn": 42, "pn": "org/androidannotations/"}
 {"dn": 107, "lib": "", "sp": "tv/freewheel/utils/http", "bh": 306689, "btc": 63, "btn": 42}
 {"dn": 113, "lib": "ui;SlidingMenu;https://github.com/jfeinstein10/SlidingMenu", "sp": "com/slidingmenu/lib/app", "bh": 197730, "btc": 62, "btn": 42, "pn": "com/slidingmenu"}
 {"dn": 1376, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/impl/pool", "bh": 156307, "btc": 62, "btn": 42, "pn": "org/apache/http"}
@@ -24915,7 +24915,7 @@
 {"dn": 126, "lib": "", "sp": "com/jackhenry/android/logging", "bh": 28596, "btc": 32, "btn": 18}
 {"dn": 245, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/a", "bh": 22547, "btc": 32, "btn": 18, "pn": "android/support/v4"}
 {"dn": 837, "lib": "ma;Parse.com;https://parse.com/docs/cn/android/guide", "sp": "com/parse/twitter", "bh": 92775, "btc": 31, "btn": 18, "pn": "com/parse"}
-{"dn": 533, "lib": "", "sp": "org/androidannotations/api/sharedpreferences", "bh": 74721, "btc": 31, "btn": 18}
+{"dn": 533, "lib": "da;AndroidAnnotations API;https://github.com/excilys/androidannotations", "sp": "org/androidannotations/api/sharedpreferences", "bh": 74721, "btc": 31, "btn": 18, "pn": "org/androidannotations/"}
 {"dn": 165, "lib": "", "sp": "com/smilecube/smiletv147", "bh": 65834, "btc": 31, "btn": 18}
 {"dn": 443, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/util/level", "bh": 58791, "btc": 31, "btn": 18, "pn": "org/andengine"}
 {"dn": 348, "lib": "", "sp": "www/conduit/app/pgplugins/social", "bh": 51636, "btc": 31, "btn": 18}
