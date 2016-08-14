@@ -7208,7 +7208,7 @@
 {"dn": 207, "lib": "", "sp": "com/soomla", "bh": 270846, "btc": 504, "btn": 173}
 {"dn": 579, "lib": "da;Google Gson;https://github.com/google/gson", "sp": "com/google/gson", "bh": 775464, "btc": 500, "btn": 173, "pn": "com/google/gson"}
 {"dn": 132, "lib": "", "sp": "com/ormma/view", "bh": 984524, "btc": 477, "btn": 173}
-{"dn": 195, "lib": "", "sp": "net/simonvt/menudrawer", "bh": 863498, "btc": 462, "btn": 173}
+{"dn": 195, "lib": "da;MenuDrawer;https://github.com/SimonVT/android-menudrawer", "sp": "net/simonvt/menudrawer", "bh": 863498, "btc": 462, "btn": 173, "pn": "net/simonvt/menudrawer"}
 {"dn": 143, "lib": "", "sp": "com/appsflyer", "bh": 201603, "btc": 454, "btn": 173}
 {"dn": 457, "lib": "ut;anywheresoftware;", "sp": "anywheresoftware/b4a/keywords", "bh": 248974, "btc": 419, "btn": 173, "pn": "anywheresoftware"}
 {"dn": 122, "lib": "ut;anywheresoftware;", "sp": "anywheresoftware/b4a/keywords", "bh": 238949, "btc": 416, "btn": 173, "pn": "anywheresoftware"}
@@ -7346,7 +7346,7 @@
 {"dn": 250, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/util", "bh": 846323, "btc": 518, "btn": 169, "pn": "android/support/v4"}
 {"dn": 220, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/util", "bh": 846219, "btc": 514, "btn": 169, "pn": "android/support/v4"}
 {"dn": 156, "lib": "", "sp": "com/nbpcorp/mobilead/sdk", "bh": 49230, "btc": 508, "btn": 169}
-{"dn": 114, "lib": "", "sp": "net/simonvt/menudrawer", "bh": 926386, "btc": 497, "btn": 169}
+{"dn": 114, "lib": "da;MenuDrawer;https://github.com/SimonVT/android-menudrawer", "sp": "net/simonvt/menudrawer", "bh": 926386, "btc": 497, "btn": 169, "pn": "net/simonvt/menudrawer"}
 {"dn": 10555, "lib": "da;Jaxen;http://jaxen.org/", "sp": "org/jaxen", "bh": 788133, "btc": 470, "btn": 169, "pn": "org/jaxen"}
 {"dn": 397, "lib": "da;Jaxen;http://jaxen.org/", "sp": "org/jaxen", "bh": 788068, "btc": 470, "btn": 169, "pn": "org/jaxen"}
 {"dn": 119, "lib": "mp;Google Maps Utils;https://github.com/googlemaps/android-maps-utils", "sp": "com/google/maps/android", "bh": 294195, "btc": 455, "btn": 169, "pn": "com/google/maps/android"}
@@ -7488,7 +7488,7 @@
 {"dn": 239, "lib": "", "sp": "com/wWarcraftTheBestMMORPG/Utils", "bh": 88674, "btc": 477, "btn": 165}
 {"dn": 116, "lib": "", "sp": "com/wkoearmovie/Utils", "bh": 86106, "btc": 475, "btn": 165}
 {"dn": 319, "lib": "ad;AdSDK;", "sp": "com/adsdk/sdk/mraid", "bh": 579661, "btc": 457, "btn": 165, "pn": "com/adsdk"}
-{"dn": 2594, "lib": "", "sp": "net/simonvt/menudrawer", "bh": 805755, "btc": 453, "btn": 165}
+{"dn": 2594, "lib": "da;MenuDrawer;https://github.com/SimonVT/android-menudrawer", "sp": "net/simonvt/menudrawer", "bh": 805755, "btc": 453, "btn": 165, "pn": "net/simonvt/menudrawer"}
 {"dn": 111, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/util", "bh": 626070, "btc": 413, "btn": 165, "pn": "com/google/ads"}
 {"dn": 1046, "lib": "ad;ChartBoost;http://www.chartboost.com/ ", "sp": "com/chartboost/sdk", "bh": 755418, "btc": 408, "btn": 165, "pn": "com/chartboost/sdk"}
 {"dn": 131, "lib": "ad;ChartBoost;http://www.chartboost.com/ ", "sp": "com/chartboost/sdk", "bh": 755413, "btc": 408, "btn": 165, "pn": "com/chartboost/sdk"}
@@ -9931,7 +9931,7 @@
 {"dn": 512, "lib": "", "sp": "com/nd/android/pandareader/bookread/ndb/d/a", "bh": 803745, "btc": 469, "btn": 114}
 {"dn": 241, "lib": "ut;skplanet;http://www.skplanet.com", "sp": "com/skplanet/tad/common", "bh": 258211, "btc": 456, "btn": 114, "pn": "com/skplanet"}
 {"dn": 294, "lib": "", "sp": "com/gpsmycity/android/u271/web", "bh": 93774, "btc": 452, "btn": 114}
-{"dn": 101, "lib": "", "sp": "net/simonvt/menudrawer", "bh": 917853, "btc": 405, "btn": 114}
+{"dn": 101, "lib": "da;MenuDrawer;https://github.com/SimonVT/android-menudrawer", "sp": "net/simonvt/menudrawer", "bh": 917853, "btc": 405, "btn": 114, "pn": "net/simonvt/menudrawer"}
 {"dn": 112, "lib": "", "sp": "com/sec/android/iap", "bh": 998222, "btc": 394, "btn": 114}
 {"dn": 316, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/home_screen", "bh": 25042, "btc": 388, "btn": 114, "pn": "com/biznessapps"}
 {"dn": 102, "lib": "da;Vercoop;http://www.vercoop.com/", "sp": "com/vercoop/net", "bh": 736375, "btc": 379, "btn": 114, "pn": "com/vercoop"}
@@ -10858,7 +10858,7 @@
 {"dn": 2444, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/map", "bh": 860409, "btc": 401, "btn": 101, "pn": "com/conduit/app"}
 {"dn": 616, "lib": "", "sp": "com/ibm/mqtt", "bh": 80218, "btc": 398, "btn": 101}
 {"dn": 216, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/http", "bh": 514635, "btc": 394, "btn": 101, "pn": "twitter4j"}
-{"dn": 108, "lib": "", "sp": "net/simonvt/menudrawer", "bh": 862777, "btc": 391, "btn": 101}
+{"dn": 108, "lib": "da;MenuDrawer;https://github.com/SimonVT/android-menudrawer", "sp": "net/simonvt/menudrawer", "bh": 862777, "btc": 391, "btn": 101, "pn": "net/simonvt/menudrawer"}
 {"dn": 140, "lib": "sn;Youmi Ads;http://www.youmi.net/", "sp": "net/youmi/android/d", "bh": 712285, "btc": 377, "btn": 101, "pn": "net/youmi"}
 {"dn": 1864, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/databind/node", "bh": 815449, "btc": 369, "btn": 101, "pn": "com/fasterxml"}
 {"dn": 103, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/jdbc", "bh": 444745, "btc": 363, "btn": 101, "pn": "com/j256"}
@@ -22943,7 +22943,7 @@
 {"dn": 161, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/multiplayer/realtime", "bh": 67884, "btc": 57, "btn": 25, "pn": "com/google/android/gms"}
 {"dn": 253, "lib": "", "sp": "com/google/api/client/auth/oauth", "bh": 50243, "btc": 57, "btn": 25}
 {"dn": 554, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/entity/mime/content", "bh": 195728, "btc": 56, "btn": 25, "pn": "org/apache/http"}
-{"dn": 395, "lib": "", "sp": "net/simonvt/menudrawer/compat", "bh": 103106, "btc": 56, "btn": 25}
+{"dn": 395, "lib": "da;MenuDrawer;https://github.com/SimonVT/android-menudrawer", "sp": "net/simonvt/menudrawer/compat", "bh": 103106, "btc": 56, "btn": 25, "pn": "net/simonvt/menudrawer"}
 {"dn": 1048, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common/data", "bh": 76632, "btc": 56, "btn": 25, "pn": "com/google/android/gms"}
 {"dn": 16297, "lib": "", "sp": "com/qbiki/modules/appshare", "bh": 60198, "btc": 56, "btn": 25}
 {"dn": 105, "lib": "", "sp": "org/zywx/wbpalmstar/platform/b", "bh": 137358, "btc": 55, "btn": 25}
@@ -22968,7 +22968,7 @@
 {"dn": 1132, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/components", "bh": 134492, "btc": 49, "btn": 25, "pn": "com/biznessapps"}
 {"dn": 576, "lib": "", "sp": "net/manageapps/app_39028/qrcodes", "bh": 112527, "btc": 49, "btn": 25}
 {"dn": 160, "lib": "", "sp": "com/distriqt/extension/applicationrater", "bh": 90517, "btc": 49, "btn": 25}
-{"dn": 169, "lib": "", "sp": "net/simonvt/menudrawer/compat", "bh": 86919, "btc": 49, "btn": 25}
+{"dn": 169, "lib": "da;MenuDrawer;https://github.com/SimonVT/android-menudrawer", "sp": "net/simonvt/menudrawer/compat", "bh": 86919, "btc": 49, "btn": 25, "pn": "net/simonvt/menudrawer"}
 {"dn": 102, "lib": "am;Google Play;https://play.google.com", "sp": "com/android/vending", "bh": 85231, "btc": 49, "btn": 25, "pn": "com/android/vending"}
 {"dn": 315, "lib": "", "sp": "tv/ouya/console/internal/util", "bh": 72963, "btc": 49, "btn": 25}
 {"dn": 907, "lib": "ad;apperhand;", "sp": "com/apperhand/device/android/b", "bh": 58891, "btc": 49, "btn": 25, "pn": "com/apperhand"}
@@ -23465,7 +23465,7 @@
 {"dn": 1304, "lib": "", "sp": "com/readystatesoftware/mapviewballoons", "bh": 52270, "btc": 50, "btn": 23}
 {"dn": 138, "lib": "", "sp": "com/vkpart/dialog", "bh": 52134, "btc": 50, "btn": 23}
 {"dn": 125, "lib": "", "sp": "com/blackboard/android/core/h", "bh": 114758, "btc": 49, "btn": 23}
-{"dn": 2888, "lib": "", "sp": "net/simonvt/menudrawer/a", "bh": 84954, "btc": 49, "btn": 23}
+{"dn": 2888, "lib": "da;MenuDrawer;https://github.com/SimonVT/android-menudrawer", "sp": "net/simonvt/menudrawer/a", "bh": 84954, "btc": 49, "btn": 23, "pn": "net/simonvt/menudrawer"}
 {"dn": 6473, "lib": "da;Authorize.NET;http://www.authorize.net/", "sp": "net/authorize/aim/cardpresent", "bh": 64000, "btc": 49, "btn": 23, "pn": "net/authorize"}
 {"dn": 2428, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/anddev/andengine/h/f", "bh": 49272, "btc": 49, "btn": 23, "pn": "org/anddev/andengine"}
 {"dn": 125, "lib": "", "sp": "com/google/sample/castcompanionlibrary/cast/dialog/video", "bh": 318727, "btc": 48, "btn": 23}
