@@ -27520,7 +27520,7 @@
 {"dn": 166, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation/customevent", "bh": 7827, "btc": 39, "btn": 10, "pn": "com/google/ads"}
 {"dn": 165, "lib": "", "sp": "com/heyzap/sdk/mediation/testactivity", "bh": 598277, "btc": 38, "btn": 10}
 {"dn": 314, "lib": "", "sp": "com/automotiontv/anim", "bh": 169806, "btc": 38, "btn": 10}
-{"dn": 114, "lib": "", "sp": "com/jcraft/jsch/jcraft", "bh": 82215, "btc": 38, "btn": 10}
+{"dn": 114, "lib": "da;Java Secure Channel;http://www.jcraft.com/jsch/", "sp": "com/jcraft/jsch/jcraft", "bh": 82215, "btc": 38, "btn": 10, "pn": "com/jcraft/jsch"}
 {"dn": 126, "lib": "", "sp": "repack/org/bouncycastle/jce/spec", "bh": 61496, "btc": 38, "btn": 10}
 {"dn": 280, "lib": "", "sp": "com/googlecode/flickrjandroid/blogs", "bh": 71318, "btc": 37, "btn": 10}
 {"dn": 241, "lib": "ad;PlayHaven Mobile Ads;http://www.playhaven.com/", "sp": "v2/com/playhaven/interstitial/requestbridge/bridges", "bh": 35688, "btc": 37, "btn": 10, "pn": "v2/com/playhaven"}
@@ -28110,7 +28110,7 @@
 {"dn": 381, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing1/aztec/decoder", "bh": 7826, "btc": 11, "btn": 9, "pn": "com/google/zxing"}
 {"dn": 1250, "lib": "", "sp": "com/smartadserver/android/library/model", "bh": 6251, "btc": 11, "btn": 9}
 {"dn": 427, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/clientsd/android/clipboard", "bh": 149562, "btc": 10, "btn": 9, "pn": "com/google/zxing"}
-{"dn": 138, "lib": "", "sp": "com/jcraft/jsch/jgss", "bh": 73623, "btc": 10, "btn": 9}
+{"dn": 138, "lib": "da;Java Secure Channel;http://www.jcraft.com/jsch/", "sp": "com/jcraft/jsch/jgss", "bh": 73623, "btc": 10, "btn": 9, "pn": "com/jcraft/jsch"}
 {"dn": 430, "lib": "", "sp": "com/banking/model/datacontainer/i", "bh": 32419, "btc": 10, "btn": 9}
 {"dn": 189, "lib": "", "sp": "tv/freewheel/test/stubs", "bh": 27338, "btc": 10, "btn": 9}
 {"dn": 462, "lib": "", "sp": "jp/basicinc/gamefeat/android/sdk/util", "bh": 26624, "btc": 10, "btn": 9}
