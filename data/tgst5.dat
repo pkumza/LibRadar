@@ -24068,7 +24068,7 @@
 {"dn": 217, "lib": "", "sp": "com/mobileroadie/dialogs", "bh": 92623, "btc": 40, "btn": 21}
 {"dn": 687, "lib": "ad;Adtech;http://www.adtech.com/", "sp": "com/adtech/mobilesdk/controller/animation", "bh": 88028, "btc": 40, "btn": 21, "pn": "com/adtech"}
 {"dn": 1130, "lib": "", "sp": "org/apache/qpid/management/common/sasl", "bh": 65749, "btc": 40, "btn": 21}
-{"dn": 160, "lib": "", "sp": "android/content/pm", "bh": 216102, "btc": 39, "btn": 21}
+{"dn": 160, "lib": "da;Android Package management;https://developer.android.com/reference/android/content/pm/package-summary.html", "sp": "android/content/pm", "bh": 216102, "btc": 39, "btn": 21, "pn": "android/content/pm"}
 {"dn": 148, "lib": "", "sp": "com/deepnote/database", "bh": 111778, "btc": 39, "btn": 21}
 {"dn": 261, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/integration/android", "bh": 104864, "btc": 39, "btn": 21, "pn": "com/google/zxing"}
 {"dn": 698, "lib": "", "sp": "com/octo/android/robospice/request/simple", "bh": 102091, "btc": 39, "btn": 21}
@@ -24617,7 +24617,7 @@
 {"dn": 350, "lib": "", "sp": "com/twitterapime/parser", "bh": 55537, "btc": 37, "btn": 19}
 {"dn": 5754, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/request", "bh": 39637, "btc": 37, "btn": 19, "pn": "com/google/android/gms"}
 {"dn": 1489, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/request", "bh": 35625, "btc": 37, "btn": 19, "pn": "com/google/android/gms"}
-{"dn": 295, "lib": "", "sp": "android/content/pm", "bh": 437375, "btc": 36, "btn": 19}
+{"dn": 295, "lib": "da;Android Package management;https://developer.android.com/reference/android/content/pm/package-summary.html", "sp": "android/content/pm", "bh": 437375, "btc": 36, "btn": 19, "pn": "android/content/pm"}
 {"dn": 104, "lib": "", "sp": "net/arnx/jsonic/web/extension", "bh": 154046, "btc": 36, "btn": 19}
 {"dn": 1123, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader/core/c", "bh": 120953, "btc": 36, "btn": 19, "pn": "com/nostra13"}
 {"dn": 414, "lib": "ge;cocos2D;http://www.cocos2d-x.org/", "sp": "org/cocos2d/sound", "bh": 98919, "btc": 36, "btn": 19, "pn": "org/cocos2d"}
@@ -25307,7 +25307,7 @@
 {"dn": 499, "lib": "da;subsplash;http://www.subsplash.com/", "sp": "com/subsplash/thechurchapp/widgets", "bh": 141420, "btc": 21, "btn": 17, "pn": "com/subsplash"}
 {"dn": 155, "lib": "", "sp": "com/sileria/android/anim", "bh": 107663, "btc": 21, "btn": 17}
 {"dn": 169, "lib": "", "sp": "air/com/academmedia", "bh": 101938, "btc": 21, "btn": 17}
-{"dn": 3165, "lib": "", "sp": "android/content/pm", "bh": 62720, "btc": 21, "btn": 17}
+{"dn": 3165, "lib": "da;Android Package management;https://developer.android.com/reference/android/content/pm/package-summary.html", "sp": "android/content/pm", "bh": 62720, "btc": 21, "btn": 17, "pn": "android/content/pm"}
 {"dn": 223, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app108991/i", "bh": 56989, "btc": 21, "btn": 17, "pn": "com/appmakr"}
 {"dn": 300, "lib": "", "sp": "com/onevcat/unirate", "bh": 49648, "btc": 21, "btn": 17}
 {"dn": 127, "lib": "", "sp": "com/blundell/tut", "bh": 104365, "btc": 20, "btn": 17}
