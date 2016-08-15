@@ -8586,7 +8586,7 @@
 {"dn": 340, "lib": "ma;Umeng Analytics;https://www.umeng.com/analytics", "sp": "com/umeng/analytics", "bh": 685918, "btc": 328, "btn": 137, "pn": "com/umeng/analytics"}
 {"dn": 524, "lib": "", "sp": "com/iflytek/msc", "bh": 736555, "btc": 327, "btn": 137}
 {"dn": 297, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/internal", "bh": 516567, "btc": 326, "btn": 137, "pn": "com/facebook"}
-{"dn": 863, "lib": "", "sp": "net/lingala/zip4j", "bh": 59846, "btc": 318, "btn": 137}
+{"dn": 863, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j", "bh": 59846, "btc": 318, "btn": 137, "pn": "net/lingala/zip4j"}
 {"dn": 104, "lib": "ui;android widget;", "sp": "android/widget", "bh": 806916, "btc": 315, "btn": 137, "pn": "android/widget"}
 {"dn": 2608, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/entity", "bh": 622682, "btc": 314, "btn": 137, "pn": "org/apache/http"}
 {"dn": 694, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/reports", "bh": 753414, "btc": 312, "btn": 137, "pn": "com/conduit/app"}
@@ -8684,7 +8684,7 @@
 {"dn": 311, "lib": "sn;Tencent Login;http://wiki.open.qq.com/wiki/mobile/Android_SDK", "sp": "com/tencent/plus", "bh": 939576, "btc": 330, "btn": 135, "pn": "com/tencent/plus"}
 {"dn": 319, "lib": "sn;Tencent Weibo;http://t.qq.com", "sp": "com/tencent/weibo/sdk/android/api", "bh": 701582, "btc": 326, "btn": 135, "pn": "com/tencent/weibo"}
 {"dn": 169, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/content", "bh": 83230, "btc": 313, "btn": 135, "pn": "android/support/v4"}
-{"dn": 160, "lib": "", "sp": "net/lingala/zip4j", "bh": 33894, "btc": 311, "btn": 135}
+{"dn": 160, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j", "bh": 33894, "btc": 311, "btn": 135, "pn": "net/lingala/zip4j"}
 {"dn": 114, "lib": "", "sp": "org/osmdroid/mtp", "bh": 845233, "btc": 310, "btn": 135}
 {"dn": 209, "lib": "ut;Amazon;", "sp": "com/amazon/ags/client", "bh": 808317, "btc": 241, "btn": 135, "pn": "com/amazon"}
 {"dn": 137, "lib": "", "sp": "org/chromium/content/browser/accessibility", "bh": 333440, "btc": 221, "btn": 135}
@@ -12982,7 +12982,7 @@
 {"dn": 1847, "lib": "", "sp": "com/qbiki/modules/product/order", "bh": 800362, "btc": 367, "btn": 79}
 {"dn": 2360, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/ui/widget/picker", "bh": 84288, "btc": 367, "btn": 79, "pn": "ti/modules/titanium"}
 {"dn": 109, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/ui/widget/picker", "bh": 84270, "btc": 367, "btn": 79, "pn": "ti/modules/titanium"}
-{"dn": 832, "lib": "", "sp": "net/lingala/zip4j/util", "bh": 772079, "btc": 363, "btn": 79}
+{"dn": 832, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/util", "bh": 772079, "btc": 363, "btn": 79, "pn": "net/lingala/zip4j"}
 {"dn": 301, "lib": "ma;Umeng Analytics;https://www.umeng.com/analytics", "sp": "com/umeng/analytics/social", "bh": 346687, "btc": 360, "btn": 79, "pn": "com/umeng/analytics"}
 {"dn": 193, "lib": "", "sp": "net/sf/antcontrib/property", "bh": 316913, "btc": 360, "btn": 79}
 {"dn": 161, "lib": "", "sp": "org/apache/sanselan/formats/tiff", "bh": 98172, "btc": 357, "btn": 79}
@@ -13223,7 +13223,7 @@
 {"dn": 1134, "lib": "ge;cocos2DX;http://www.cocos2d-x.org/", "sp": "org/cocos2dx/cpp", "bh": 324708, "btc": 346, "btn": 77, "pn": "org/cocos2dx"}
 {"dn": 146, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/events", "bh": 805075, "btc": 345, "btn": 77, "pn": "com/biznessapps"}
 {"dn": 219, "lib": "ma;Umeng Analytics;https://www.umeng.com/analytics", "sp": "com/umeng/analytics/a", "bh": 760076, "btc": 345, "btn": 77, "pn": "com/umeng/analytics"}
-{"dn": 152, "lib": "", "sp": "net/lingala/zip4j/util", "bh": 684571, "btc": 331, "btn": 77}
+{"dn": 152, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/util", "bh": 684571, "btc": 331, "btn": 77, "pn": "net/lingala/zip4j"}
 {"dn": 209, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader/cache/disc/impl", "bh": 327009, "btc": 324, "btn": 77, "pn": "com/nostra13"}
 {"dn": 171, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fan_wall", "bh": 882282, "btc": 323, "btn": 77, "pn": "com/biznessapps"}
 {"dn": 539, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fan_wall", "bh": 879950, "btc": 323, "btn": 77, "pn": "com/biznessapps"}
@@ -15286,8 +15286,8 @@
 {"dn": 102, "lib": "", "sp": "com/mosync/nativeui/util", "bh": 419889, "btc": 140, "btn": 61}
 {"dn": 5485, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/metadata/internal", "bh": 216551, "btc": 139, "btn": 61, "pn": "com/google/android/gms"}
 {"dn": 290, "lib": "", "sp": "com/me/bingo", "bh": 213618, "btc": 139, "btn": 61}
-{"dn": 161, "lib": "", "sp": "net/lingala/zip4j/io", "bh": 451562, "btc": 137, "btn": 61}
-{"dn": 873, "lib": "", "sp": "net/lingala/zip4j/io", "bh": 448982, "btc": 136, "btn": 61}
+{"dn": 161, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/io", "bh": 451562, "btc": 137, "btn": 61, "pn": "net/lingala/zip4j"}
+{"dn": 873, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/io", "bh": 448982, "btc": 136, "btn": 61, "pn": "net/lingala/zip4j"}
 {"dn": 109, "lib": "", "sp": "com/sappsuma/salonapps/charliebrownshairstudio/utilities", "bh": 318273, "btc": 134, "btn": 61}
 {"dn": 112, "lib": "", "sp": "ch/qos/logback/classic/net", "bh": 385444, "btc": 133, "btn": 61}
 {"dn": 118, "lib": "", "sp": "com/sappsuma/salonapps/beautyatthemanor/utilities", "bh": 323546, "btc": 133, "btn": 61}
@@ -19348,7 +19348,7 @@
 {"dn": 320, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fragments/lists", "bh": 356852, "btc": 183, "btn": 39, "pn": "com/biznessapps"}
 {"dn": 118, "lib": "", "sp": "com/sromku/simple/fb/entities", "bh": 331545, "btc": 180, "btn": 39}
 {"dn": 124, "lib": "", "sp": "pm/ui/activities", "bh": 551838, "btc": 178, "btn": 39}
-{"dn": 1036, "lib": "", "sp": "net/lingala/zip4j/core", "bh": 319234, "btc": 176, "btn": 39}
+{"dn": 1036, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/core", "bh": 319234, "btc": 176, "btn": 39, "pn": "net/lingala/zip4j"}
 {"dn": 4382, "lib": "da;Pollfish;https://www.pollfish.com/", "sp": "com/pollfish/g", "bh": 402254, "btc": 174, "btn": 39, "pn": "com/pollfish"}
 {"dn": 133, "lib": "", "sp": "com/twitter", "bh": 428267, "btc": 165, "btn": 39}
 {"dn": 271, "lib": "", "sp": "com/wiyun/common/codec", "bh": 232829, "btc": 164, "btn": 39}
@@ -19583,7 +19583,7 @@
 {"dn": 377, "lib": "", "sp": "org/jasypt/intf/cli", "bh": 586674, "btc": 171, "btn": 38}
 {"dn": 658, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/auth/policy", "bh": 287807, "btc": 171, "btn": 38, "pn": "com/amazonaws"}
 {"dn": 297, "lib": "", "sp": "com/vervewireless/advert/internal/c", "bh": 236809, "btc": 171, "btn": 38}
-{"dn": 109, "lib": "", "sp": "net/lingala/zip4j/core", "bh": 198732, "btc": 171, "btn": 38}
+{"dn": 109, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/core", "bh": 198732, "btc": 171, "btn": 38, "pn": "net/lingala/zip4j"}
 {"dn": 356, "lib": "", "sp": "com/am/ammob/services", "bh": 238617, "btc": 170, "btn": 38}
 {"dn": 111, "lib": "", "sp": "com/vervewireless/advert/internal/c", "bh": 238749, "btc": 169, "btn": 38}
 {"dn": 259, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/auth/policy", "bh": 283396, "btc": 166, "btn": 38, "pn": "com/amazonaws"}
@@ -19802,8 +19802,8 @@
 {"dn": 159, "lib": "", "sp": "com/magazinecloner/magclonerreader/downloaders/h", "bh": 183911, "btc": 146, "btn": 37}
 {"dn": 285, "lib": "", "sp": "com/google/api/client/testing/json", "bh": 344033, "btc": 139, "btn": 37}
 {"dn": 100, "lib": "mp;Baidu Map;http://lbsyun.baidu.com/", "sp": "com/baidu/mapapi/b", "bh": 194829, "btc": 139, "btn": 37, "pn": "com/baidu/mapapi/"}
-{"dn": 1083, "lib": "", "sp": "net/lingala/zip4j/unzip", "bh": 328640, "btc": 135, "btn": 37}
-{"dn": 105, "lib": "", "sp": "net/lingala/zip4j/unzip", "bh": 201040, "btc": 135, "btn": 37}
+{"dn": 1083, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/unzip", "bh": 328640, "btc": 135, "btn": 37, "pn": "net/lingala/zip4j"}
+{"dn": 105, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/unzip", "bh": 201040, "btc": 135, "btn": 37, "pn": "net/lingala/zip4j"}
 {"dn": 1171, "lib": "da;mongoDB;http://mongodb.github.io/mongo-java-driver/2.13/getting-started/quick-tour/", "sp": "com/mongodb/tools", "bh": 641199, "btc": 134, "btn": 37, "pn": "com/mongodb"}
 {"dn": 130, "lib": "da;mongoDB;http://mongodb.github.io/mongo-java-driver/2.13/getting-started/quick-tour/", "sp": "com/mongodb/tools", "bh": 641186, "btc": 134, "btn": 37, "pn": "com/mongodb"}
 {"dn": 155, "lib": "", "sp": "com/cvent/pollingsdk/biz", "bh": 265328, "btc": 134, "btn": 37}
@@ -21617,7 +21617,7 @@
 {"dn": 722, "lib": "ad;Adtech;http://www.adtech.com/", "sp": "com/adtech/mobilesdk/view/video", "bh": 254234, "btc": 84, "btn": 30, "pn": "com/adtech"}
 {"dn": 154, "lib": "", "sp": "org/xeustechnologies/jtar", "bh": 179160, "btc": 84, "btn": 30}
 {"dn": 121, "lib": "", "sp": "com/automotiontv/util", "bh": 120476, "btc": 84, "btn": 30}
-{"dn": 117, "lib": "", "sp": "net/lingala/zip4j/crypto", "bh": 204846, "btc": 83, "btn": 30}
+{"dn": 117, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/crypto", "bh": 204846, "btc": 83, "btn": 30, "pn": "net/lingala/zip4j"}
 {"dn": 116, "lib": "", "sp": "com/pmx/pmx_client/views/hotzone", "bh": 194253, "btc": 82, "btn": 30}
 {"dn": 110, "lib": "", "sp": "com/mobariosdk/a", "bh": 169985, "btc": 82, "btn": 30}
 {"dn": 163, "lib": "", "sp": "com/google/android/c2dm", "bh": 136341, "btc": 82, "btn": 30}
@@ -22616,13 +22616,13 @@
 {"dn": 105, "lib": "", "sp": "com/socialize/provider", "bh": 133622, "btc": 81, "btn": 26}
 {"dn": 885, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/misc", "bh": 187898, "btc": 80, "btn": 26, "pn": "com/j256"}
 {"dn": 3004, "lib": "ge;OpenFeint;", "sp": "com/openfeint/internal/request/multipart", "bh": 153553, "btc": 79, "btn": 26, "pn": "com/openfeint"}
-{"dn": 177, "lib": "", "sp": "net/lingala/zip4j/zip", "bh": 152686, "btc": 79, "btn": 26}
+{"dn": 177, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/zip", "bh": 152686, "btc": 79, "btn": 26, "pn": "net/lingala/zip4j"}
 {"dn": 125, "lib": "da;Signpost Oauth;https://code.google.com/p/oauth-signpost/", "sp": "com/netmera/oauth/signpost/signature", "bh": 92804, "btc": 78, "btn": 26, "pn": "oauth/signpost"}
 {"dn": 153, "lib": "", "sp": "com/tripomatic/ui/newTrip/dates", "bh": 392611, "btc": 77, "btn": 26}
 {"dn": 242, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/net/bsd", "bh": 293129, "btc": 77, "btn": 26, "pn": "org/apache/commons"}
 {"dn": 147, "lib": "", "sp": "com/handpet/common/utils/concurrent", "bh": 605599, "btc": 74, "btn": 26}
 {"dn": 326, "lib": "da;Qoppa Software;https://www.qoppa.com/", "sp": "com/qoppa/android/pdf/c", "bh": 145114, "btc": 74, "btn": 26, "pn": "com/qoppa"}
-{"dn": 908, "lib": "", "sp": "net/lingala/zip4j/zip", "bh": 141151, "btc": 74, "btn": 26}
+{"dn": 908, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/zip", "bh": 141151, "btc": 74, "btn": 26, "pn": "net/lingala/zip4j"}
 {"dn": 1252, "lib": "ad;adsmogo;http://www.adsmogo.com/", "sp": "com/adsmogo/controller/b", "bh": 110501, "btc": 74, "btn": 26, "pn": "com/adsmogo"}
 {"dn": 1419, "lib": "da;Apache Harmony;https://harmony.apache.org/", "sp": "org/apache/harmony/beans", "bh": 88528, "btc": 73, "btn": 26, "pn": "org/apache/harmony"}
 {"dn": 145, "lib": "", "sp": "com/commonsware/cwac", "bh": 282692, "btc": 72, "btn": 26}
@@ -23159,7 +23159,7 @@
 {"dn": 2300, "lib": "sn;Tencent Wechat;https://open.weixin.qq.com/", "sp": "com/tencent/mm/sdk/a", "bh": 73036, "btc": 63, "btn": 24, "pn": "com/tencent/mm"}
 {"dn": 275, "lib": "da;jUnit Java Unit Test;http://junit.org/", "sp": "org/junit/rules", "bh": 63968, "btc": 63, "btn": 24, "pn": "org/junit"}
 {"dn": 129, "lib": "", "sp": "com/google/a", "bh": 50919, "btc": 63, "btn": 24}
-{"dn": 1025, "lib": "", "sp": "net/lingala/zip4j/crypto", "bh": 212375, "btc": 62, "btn": 24}
+{"dn": 1025, "lib": "a;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/crypto", "bh": 212375, "btc": 62, "btn": 24, "pn": "net/lingala/zip4j"}
 {"dn": 846, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/e/c", "bh": 93979, "btc": 62, "btn": 24, "pn": "org/andengine"}
 {"dn": 154, "lib": "da;Signpost Oauth;https://code.google.com/p/oauth-signpost/", "sp": "oauth/signpost/signature", "bh": 73198, "btc": 62, "btn": 24, "pn": "oauth/signpost"}
 {"dn": 2681, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads", "bh": 50918, "btc": 62, "btn": 24, "pn": "com/google/ads"}
@@ -24537,8 +24537,8 @@
 {"dn": 620, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/twitter/data", "bh": 143616, "btc": 60, "btn": 19, "pn": "com/conduit/app"}
 {"dn": 116, "lib": "", "sp": "com/apportable/objcproxy", "bh": 59005, "btc": 60, "btn": 19}
 {"dn": 7737, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/multiplayer/turnbased", "bh": 52389, "btc": 60, "btn": 19, "pn": "com/google/android/gms"}
-{"dn": 1028, "lib": "", "sp": "net/lingala/zip4j/crypto/PBKDF2", "bh": 193650, "btc": 59, "btn": 19}
-{"dn": 122, "lib": "", "sp": "net/lingala/zip4j/crypto/PBKDF2", "bh": 180859, "btc": 59, "btn": 19}
+{"dn": 1028, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/crypto/PBKDF2", "bh": 193650, "btc": 59, "btn": 19, "pn": "net/lingala/zip4j"}
+{"dn": 122, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/crypto/PBKDF2", "bh": 180859, "btc": 59, "btn": 19, "pn": "net/lingala/zip4j"}
 {"dn": 191, "lib": "", "sp": "org/apache/sanselan/common/mylzw", "bh": 136404, "btc": 59, "btn": 19}
 {"dn": 103, "lib": "", "sp": "org/jbox2d/util/blob", "bh": 50681, "btc": 59, "btn": 19}
 {"dn": 448, "lib": "", "sp": "com/deezer/sdk/b", "bh": 51538, "btc": 58, "btn": 19}
@@ -27580,7 +27580,7 @@
 {"dn": 620, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/reports/data", "bh": 59176, "btc": 27, "btn": 10, "pn": "com/conduit/app"}
 {"dn": 413, "lib": "", "sp": "com/twitterapime/xauth/encoders", "bh": 38453, "btc": 27, "btn": 10}
 {"dn": 396, "lib": "", "sp": "com/prime31/GPlayUtils", "bh": 25749, "btc": 27, "btn": 10}
-{"dn": 1092, "lib": "", "sp": "net/lingala/zip4j/model", "bh": 22277, "btc": 27, "btn": 10}
+{"dn": 1092, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/model", "bh": 22277, "btc": 27, "btn": 10, "pn": "net/lingala/zip4j"}
 {"dn": 5199, "lib": "da;Kawa for Android;https://www.gnu.org/software/kawa/Building-for-Android.html", "sp": "com/wBabiesKawaiisnowball/push", "bh": 19911, "btc": 27, "btn": 10, "pn": "kawa"}
 {"dn": 349, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/util/common/util", "bh": 15155, "btc": 27, "btn": 10, "pn": "com/google/gdata"}
 {"dn": 2205, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/anddev/andengine/d/g", "bh": 12935, "btc": 27, "btn": 10, "pn": "org/anddev/andengine"}
@@ -27918,7 +27918,7 @@
 {"dn": 1765, "lib": "", "sp": "com/testflightapp/lib/endpoints", "bh": 37062, "btc": 26, "btn": 9}
 {"dn": 1949, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/plus/internal", "bh": 36623, "btc": 26, "btn": 9, "pn": "com/google/android/gms"}
 {"dn": 231, "lib": "", "sp": "com/db4o/internal/encoding", "bh": 32536, "btc": 26, "btn": 9}
-{"dn": 125, "lib": "", "sp": "net/lingala/zip4j/model", "bh": 18928, "btc": 26, "btn": 9}
+{"dn": 125, "lib": "da;Zip4j;http://www.lingala.net/zip4j/", "sp": "net/lingala/zip4j/model", "bh": 18928, "btc": 26, "btn": 9, "pn": "net/lingala/zip4j"}
 {"dn": 125, "lib": "ut;Verizon;https://www.verizon.com/", "sp": "com/verizon/ui/customView/GenericViewPagerFragment/viewPagerAnimation", "bh": 171103, "btc": 25, "btn": 9, "pn": "com/verizon"}
 {"dn": 132, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/extension/multiplayer/protocol/client/connector", "bh": 139453, "btc": 25, "btn": 9, "pn": "org/andengine"}
 {"dn": 408, "lib": "", "sp": "com/integralblue/httpresponsecache/compat/java/net", "bh": 126636, "btc": 25, "btn": 9}
