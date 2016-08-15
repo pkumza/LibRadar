@@ -28691,7 +28691,7 @@
 {"dn": 214, "lib": "", "sp": "org/jboss/netty/handler/logging", "bh": 3218, "btc": 16, "btn": 7}
 {"dn": 26323, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "com/widflurry/org/codehaus/jackson/annotate", "bh": 49090, "btc": 15, "btn": 7, "pn": "org/codehaus"}
 {"dn": 123, "lib": "", "sp": "org/holoeverywhere/graphics", "bh": 45541, "btc": 15, "btn": 7}
-{"dn": 106, "lib": "", "sp": "org/tukaani/xz/common", "bh": 45468, "btc": 15, "btn": 7}
+{"dn": 106, "lib": "da;XZ For Java;http://tukaani.org/xz/java.html", "sp": "org/tukaani/xz/common", "bh": 45468, "btc": 15, "btn": 7, "pn": "org/tukaani/xz"}
 {"dn": 241, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/wireformats/input/media", "bh": 30152, "btc": 15, "btn": 7, "pn": "com/google/gdata"}
 {"dn": 1205, "lib": "da;Kawa for Android;https://www.gnu.org/software/kawa/Building-for-Android.html", "sp": "kawa/lib/rnrs", "bh": 29331, "btc": 15, "btn": 7, "pn": "kawa"}
 {"dn": 382, "lib": "", "sp": "com/appMobi/appMobiLib/util", "bh": 24312, "btc": 15, "btn": 7}
