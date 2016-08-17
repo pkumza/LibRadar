@@ -14930,7 +14930,7 @@
 {"dn": 255, "lib": "", "sp": "com/google/checkout/sdk", "bh": 297931, "btc": 203, "btn": 63}
 {"dn": 169, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/info_items", "bh": 462600, "btc": 202, "btn": 63, "pn": "com/biznessapps"}
 {"dn": 123, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/utils/reflect", "bh": 388728, "btc": 197, "btn": 63, "pn": "com/badlogic"}
-{"dn": 153, "lib": "", "sp": "com/google/android/apps/dashclock/api", "bh": 533859, "btc": 191, "btn": 63}
+{"dn": 153, "lib": "da;DashClock API;http://api.dashclock.com/reference/com/google/android/apps/dashclock/api/package-summary.html", "sp": "com/google/android/apps/dashclock/api", "bh": 533859, "btc": 191, "btn": 63, "pn": "com/google/android/apps/dashclock/api"}
 {"dn": 110, "lib": "", "sp": "com/estimote/sdk/connection", "bh": 972358, "btc": 188, "btn": 63}
 {"dn": 106, "lib": "", "sp": "com/payeco/android/plugin/http/parse", "bh": 656600, "btc": 187, "btn": 63}
 {"dn": 279, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/appeaUjo6e8XP/client/global/helper", "bh": 296793, "btc": 183, "btn": 63, "pn": "com/crowdcompass"}
@@ -16307,7 +16307,7 @@
 {"dn": 377, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/javax/xml/transform", "bh": 332507, "btc": 144, "btn": 54, "pn": "com/amazonaws"}
 {"dn": 197, "lib": "", "sp": "afzkl/development/colorpickerview/view", "bh": 460246, "btc": 143, "btn": 54}
 {"dn": 540, "lib": "", "sp": "com/adobe/adms/audiencemanager", "bh": 188804, "btc": 142, "btn": 54}
-{"dn": 130, "lib": "", "sp": "com/google/android/apps/dashclock/api", "bh": 354644, "btc": 141, "btn": 54}
+{"dn": 130, "lib": "da;DashClock API;http://api.dashclock.com/reference/com/google/android/apps/dashclock/api/package-summary.html", "sp": "com/google/android/apps/dashclock/api", "bh": 354644, "btc": 141, "btn": 54, "pn": "com/google/android/apps/dashclock/api"}
 {"dn": 128, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/entity", "bh": 449976, "btc": 140, "btn": 54, "pn": "org/andengine"}
 {"dn": 121, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/commons/uid", "bh": 234069, "btc": 140, "btn": 54, "pn": "com/inmobi"}
 {"dn": 203, "lib": "", "sp": "com/adobe/adms/audiencemanager", "bh": 187523, "btc": 139, "btn": 54}
@@ -25096,7 +25096,7 @@
 {"dn": 113, "lib": "", "sp": "com/apptentive/android/sdk/a", "bh": 71846, "btc": 62, "btn": 17}
 {"dn": 131, "lib": "", "sp": "repack/org/bouncycastle/crypto/agreement", "bh": 557010, "btc": 61, "btn": 17}
 {"dn": 238, "lib": "", "sp": "com/saubcy/util/date", "bh": 78498, "btc": 61, "btn": 17}
-{"dn": 173, "lib": "", "sp": "com/google/android/apps/dashclock/api/internal", "bh": 182924, "btc": 60, "btn": 17}
+{"dn": 173, "lib": "da;DashClock API;http://api.dashclock.com/reference/com/google/android/apps/dashclock/api/package-summary.html", "sp": "com/google/android/apps/dashclock/api/internal", "bh": 182924, "btc": 60, "btn": 17, "pn": "com/google/android/apps/dashclock/api"}
 {"dn": 138, "lib": "", "sp": "com/smartadserver/android/library/json", "bh": 97553, "btc": 60, "btn": 17}
 {"dn": 214, "lib": "", "sp": "org/joda/time/c", "bh": 64052, "btc": 60, "btn": 17}
 {"dn": 110, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/internal", "bh": 56119, "btc": 60, "btn": 17, "pn": "com/google/android/gms"}
@@ -25117,7 +25117,7 @@
 {"dn": 124, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/compress/compressors/gzip", "bh": 104833, "btc": 55, "btn": 17, "pn": "org/apache/commons"}
 {"dn": 295, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "org/codehaus/jackson/type", "bh": 49069, "btc": 55, "btn": 17, "pn": "org/codehaus"}
 {"dn": 281, "lib": "", "sp": "org/jivesoftware/smackx/pubsub/provider", "bh": 183233, "btc": 54, "btn": 17}
-{"dn": 156, "lib": "", "sp": "com/google/android/apps/dashclock/api/internal", "bh": 159984, "btc": 54, "btn": 17}
+{"dn": 156, "lib": "da;DashClock API;http://api.dashclock.com/reference/com/google/android/apps/dashclock/api/package-summary.html", "sp": "com/google/android/apps/dashclock/api/internal", "bh": 159984, "btc": 54, "btn": 17, "pn": "com/google/android/apps/dashclock/api"}
 {"dn": 198, "lib": "", "sp": "com/google/api/client/googleapis/json", "bh": 14342, "btc": 54, "btn": 17}
 {"dn": 136, "lib": "", "sp": "com/smartadserver/android/library/json", "bh": 78299, "btc": 53, "btn": 17}
 {"dn": 148, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/math3/stat/ranking", "bh": 74777, "btc": 53, "btn": 17, "pn": "org/apache/commons"}
