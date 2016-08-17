@@ -25870,7 +25870,7 @@
 {"dn": 775, "lib": "", "sp": "com/google/unity", "bh": 39897, "btc": 26, "btn": 15}
 {"dn": 167, "lib": "", "sp": "com/friends/email", "bh": 494635, "btc": 25, "btn": 15}
 {"dn": 149, "lib": "", "sp": "com/mosteknoloji/radiostreams/core/parsers", "bh": 79442, "btc": 25, "btn": 15}
-{"dn": 1219, "lib": "", "sp": "com/google/thirdparty/publicsuffix", "bh": 73291, "btc": 25, "btn": 15}
+{"dn": 1219, "lib": "da;Google Core Libraries (3rd Party);https://github.com/google/guava", "sp": "com/google/thirdparty/publicsuffix", "bh": 73291, "btc": 25, "btn": 15, "pn": "com/google/thirdparty"}
 {"dn": 1998, "lib": "am;Google Play;https://play.google.com", "sp": "com/android/vending/billing", "bh": 63818, "btc": 25, "btn": 15, "pn": "com/android/vending"}
 {"dn": 138, "lib": "da;Appbrain;http://www.appbrain.com/", "sp": "com/appbrain/f", "bh": 60551, "btc": 25, "btn": 15, "pn": "com/appbrain"}
 {"dn": 146, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova/plugins/deviceorientation", "bh": 57084, "btc": 25, "btn": 15, "pn": "org/apache/cordova"}
