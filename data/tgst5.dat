@@ -28307,7 +28307,7 @@
 {"dn": 426, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/nearby/connection", "bh": 22061, "btc": 20, "btn": 8, "pn": "com/google/android/gms"}
 {"dn": 207, "lib": "", "sp": "com/db4o/internal/fileheader", "bh": 20711, "btc": 20, "btn": 8}
 {"dn": 246, "lib": "", "sp": "com/db4o/internal/mapping", "bh": 19483, "btc": 20, "btn": 8}
-{"dn": 109, "lib": "", "sp": "com/daimajia/androidanimations/library/sliders", "bh": 19064, "btc": 20, "btn": 8}
+{"dn": 109, "lib": "da;AndroidAnimations Library;https://github.com/daimajia/AndroidViewAnimations", "sp": "com/daimajia/androidanimations/library/sliders", "bh": 19064, "btc": 20, "btn": 8, "pn": "com/daimajia/androidanimations"}
 {"dn": 172, "lib": "", "sp": "Conditions", "bh": 18931, "btc": 20, "btn": 8}
 {"dn": 149, "lib": "", "sp": "com/octo/android/robospice/c/c/a", "bh": 13335, "btc": 20, "btn": 8}
 {"dn": 1179, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/opengl/e/a", "bh": 9721, "btc": 20, "btn": 8, "pn": "org/andengine"}
@@ -29173,7 +29173,7 @@
 {"dn": 817, "lib": "ut;Pdftron PDF Widget;https://www.pdftron.com/", "sp": "mono/pdftroncustomizations", "bh": 5100, "btc": 15, "btn": 5, "pn": "pdftron"}
 {"dn": 167, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/query/internal", "bh": 4716, "btc": 15, "btn": 5, "pn": "com/google/android/gms"}
 {"dn": 2803, "lib": "da;Appyet;http://www.appyet.com/", "sp": "com/appyet/a", "bh": 4081, "btc": 15, "btn": 5, "pn": "com/appyet"}
-{"dn": 290, "lib": "", "sp": "com/daimajia/androidanimations/library/rotating_entrances", "bh": 52128, "btc": 14, "btn": 5}
+{"dn": 290, "lib": "da;AndroidAnimations Library;https://github.com/daimajia/AndroidViewAnimations", "sp": "com/daimajia/androidanimations/library/rotating_entrances", "bh": 52128, "btc": 14, "btn": 5, "pn": "com/daimajia/androidanimations"}
 {"dn": 496, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/a", "bh": 32989, "btc": 14, "btn": 5, "pn": "com/aviary"}
 {"dn": 126, "lib": "", "sp": "com/gau/go/gostaticsdk/a", "bh": 27215, "btc": 14, "btn": 5}
 {"dn": 471, "lib": "ge;Scoreloop Game;", "sp": "com/scoreloop/client/android/ui/component/entry", "bh": 23528, "btc": 14, "btn": 5, "pn": "com/scoreloop"}
@@ -29185,7 +29185,7 @@
 {"dn": 157, "lib": "", "sp": "com/mdotm/android/admobadapter", "bh": 2902, "btc": 14, "btn": 5}
 {"dn": 208, "lib": "", "sp": "com/db4o/internal/transactionlog", "bh": 2164, "btc": 14, "btn": 5}
 {"dn": 999, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/assets/loaders/resolvers", "bh": 394, "btc": 14, "btn": 5, "pn": "com/badlogic"}
-{"dn": 139, "lib": "", "sp": "com/daimajia/androidanimations/library/attention", "bh": 51878, "btc": 13, "btn": 5}
+{"dn": 139, "lib": "da;AndroidAnimations Library;https://github.com/daimajia/AndroidViewAnimations", "sp": "com/daimajia/androidanimations/library/attention", "bh": 51878, "btc": 13, "btn": 5, "pn": "com/daimajia/androidanimations"}
 {"dn": 213, "lib": "", "sp": "net/sf/antcontrib/logic/condition", "bh": 42305, "btc": 13, "btn": 5}
 {"dn": 343, "lib": "", "sp": "org/afree/data/statistics", "bh": 37205, "btc": 13, "btn": 5}
 {"dn": 137, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/anddev/andengine/extension/multiplayer/protocol/adt/message/server/connection", "bh": 30194, "btc": 13, "btn": 5, "pn": "org/anddev/andengine"}
