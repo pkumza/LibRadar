@@ -3550,8 +3550,8 @@
 {"dn": 290, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons", "bh": 210023, "btc": 1550, "btn": 349, "pn": "org/apache/commons"}
 {"dn": 170, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/util", "bh": 769779, "btc": 1310, "btn": 349, "pn": "com/google/gdata"}
 {"dn": 114, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/util", "bh": 762918, "btc": 1309, "btn": 349, "pn": "com/google/gdata"}
-{"dn": 3979, "lib": "da;ACRA;", "sp": "org/acra", "bh": 651386, "btc": 1283, "btn": 349, "pn": "org/acra"}
-{"dn": 176, "lib": "da;ACRA;", "sp": "org/acra", "bh": 651365, "btc": 1283, "btn": 349, "pn": "org/acra"}
+{"dn": 3979, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 651386, "btc": 1283, "btn": 349, "pn": "org/acra"}
+{"dn": 176, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 651365, "btc": 1283, "btn": 349, "pn": "org/acra"}
 {"dn": 1324, "lib": "", "sp": "com/testflightapp/acra", "bh": 646424, "btc": 1278, "btn": 349}
 {"dn": 143, "lib": "", "sp": "pl/magot/vetch", "bh": 170059, "btc": 1193, "btn": 349}
 {"dn": 173, "lib": "", "sp": "net/hockeyapp/android", "bh": 182389, "btc": 1147, "btn": 349}
@@ -3620,7 +3620,7 @@
 {"dn": 381, "lib": "", "sp": "com/mopub/mobileads", "bh": 186478, "btc": 1476, "btn": 342}
 {"dn": 132, "lib": "", "sp": "com/vungle/sdk", "bh": 840903, "btc": 1467, "btn": 342}
 {"dn": 124, "lib": "", "sp": "com/ylTop/LAkeSL", "bh": 811515, "btc": 1116, "btn": 342}
-{"dn": 141, "lib": "da;ACRA;", "sp": "org/acra", "bh": 576315, "btc": 986, "btn": 342, "pn": "org/acra"}
+{"dn": 141, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 576315, "btc": 986, "btn": 342, "pn": "org/acra"}
 {"dn": 182, "lib": "da;Appbrain;http://www.appbrain.com/", "sp": "com/appbrain", "bh": 527178, "btc": 922, "btn": 342, "pn": "com/appbrain"}
 {"dn": 113, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/app", "bh": 132979, "btc": 1841, "btn": 341, "pn": "android/support/v4"}
 {"dn": 100, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/app", "bh": 20703, "btc": 1833, "btn": 341, "pn": "android/support/v4"}
@@ -3879,9 +3879,9 @@
 {"dn": 116, "lib": "", "sp": "com/automotiontv", "bh": 147827, "btc": 689, "btn": 321}
 {"dn": 1068, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j", "bh": 767297, "btc": 2065, "btn": 320, "pn": "twitter4j"}
 {"dn": 147, "lib": "da;Appyet;http://www.appyet.com/", "sp": "com/appyet/c", "bh": 791040, "btc": 1587, "btn": 320, "pn": "com/appyet"}
-{"dn": 8863, "lib": "da;ACRA;", "sp": "org/acra", "bh": 942166, "btc": 932, "btn": 320, "pn": "org/acra"}
-{"dn": 353, "lib": "da;ACRA;", "sp": "org/acra", "bh": 942164, "btc": 932, "btn": 320, "pn": "org/acra"}
-{"dn": 689, "lib": "da;ACRA;", "sp": "org/acra", "bh": 941854, "btc": 920, "btn": 320, "pn": "org/acra"}
+{"dn": 8863, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 942166, "btc": 932, "btn": 320, "pn": "org/acra"}
+{"dn": 353, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 942164, "btc": 932, "btn": 320, "pn": "org/acra"}
+{"dn": 689, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 941854, "btc": 920, "btn": 320, "pn": "org/acra"}
 {"dn": 213, "lib": "", "sp": "org/zywx/wbpalmstar/plugin/uexzxing", "bh": 148249, "btc": 829, "btn": 320}
 {"dn": 116, "lib": "da;Vercoop;http://www.vercoop.com/", "sp": "com/vercoop/lib/templete", "bh": 225564, "btc": 815, "btn": 320, "pn": "com/vercoop"}
 {"dn": 186, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/internal", "bh": 663655, "btc": 2913, "btn": 319, "pn": "com/google/android/gms"}
@@ -4008,8 +4008,8 @@
 {"dn": 128, "lib": "", "sp": "com/nd/android/pandareader/zone/personal", "bh": 501150, "btc": 1622, "btn": 309}
 {"dn": 257, "lib": "", "sp": "com/tendcloud/tenddata", "bh": 626619, "btc": 1250, "btn": 309}
 {"dn": 110, "lib": "", "sp": "com/sappsuma/salonapps/headmasterhairdesign", "bh": 429811, "btc": 1118, "btn": 309}
-{"dn": 10550, "lib": "da;ACRA;", "sp": "org/acra", "bh": 997560, "btc": 988, "btn": 309, "pn": "org/acra"}
-{"dn": 573, "lib": "da;ACRA;", "sp": "org/acra", "bh": 997554, "btc": 988, "btn": 309, "pn": "org/acra"}
+{"dn": 10550, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 997560, "btc": 988, "btn": 309, "pn": "org/acra"}
+{"dn": 573, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 997554, "btc": 988, "btn": 309, "pn": "org/acra"}
 {"dn": 104, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/widget", "bh": 29723, "btc": 848, "btn": 309, "pn": "com/facebook"}
 {"dn": 132, "lib": "da;OkHttp;https://github.com/square/okhttp", "sp": "com/squareup/okhttp/internal", "bh": 254936, "btc": 804, "btn": 309, "pn": "com/squareup/okhttp"}
 {"dn": 550, "lib": "ad;apperhand;", "sp": "com/apperhand/device", "bh": 919237, "btc": 687, "btn": 309, "pn": "com/apperhand"}
@@ -4106,7 +4106,7 @@
 {"dn": 330, "lib": "", "sp": "com/purplebrain/adbuddiz/sdk", "bh": 306472, "btc": 808, "btn": 303}
 {"dn": 1040, "lib": "", "sp": "com/purplebrain/adbuddiz/sdk", "bh": 306471, "btc": 807, "btn": 303}
 {"dn": 1139, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/widget", "bh": 819209, "btc": 787, "btn": 303, "pn": "com/facebook"}
-{"dn": 390, "lib": "da;ACRA;", "sp": "org/acra", "bh": 960922, "btc": 780, "btn": 303, "pn": "org/acra"}
+{"dn": 390, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 960922, "btc": 780, "btn": 303, "pn": "org/acra"}
 {"dn": 311, "lib": "", "sp": "com/quantcast/measurement/service", "bh": 881322, "btc": 772, "btn": 303}
 {"dn": 280, "lib": "", "sp": "com/purplebrain/adbuddiz/sdk", "bh": 311628, "btc": 738, "btn": 303}
 {"dn": 123, "lib": "", "sp": "com/orange/apple", "bh": 812146, "btc": 665, "btn": 303}
@@ -4157,7 +4157,7 @@
 {"dn": 889, "lib": "da;OkHttp;https://github.com/square/okhttp", "sp": "com/squareup/okhttp/internal", "bh": 833697, "btc": 1106, "btn": 299, "pn": "com/squareup/okhttp"}
 {"dn": 345, "lib": "", "sp": "com/gpsmycity/android/u271/util", "bh": 915353, "btc": 1076, "btn": 299}
 {"dn": 204, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/widget", "bh": 376813, "btc": 1048, "btn": 299, "pn": "android/support/v4"}
-{"dn": 1230, "lib": "da;ACRA;", "sp": "org/acra", "bh": 883607, "btc": 965, "btn": 299, "pn": "org/acra"}
+{"dn": 1230, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 883607, "btc": 965, "btn": 299, "pn": "org/acra"}
 {"dn": 173, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/view", "bh": 588499, "btc": 850, "btn": 299, "pn": "android/support/v4"}
 {"dn": 3758, "lib": "da;ActionBarSherlock;http://actionbarsherlock.com/", "sp": "com/actionbarsherlock/internal/widget", "bh": 83149, "btc": 844, "btn": 299, "pn": "com/actionbarsherlock"}
 {"dn": 231, "lib": "da;ActionBarSherlock;http://actionbarsherlock.com/", "sp": "com/actionbarsherlock/internal/widget", "bh": 82975, "btc": 842, "btn": 299, "pn": "com/actionbarsherlock"}
@@ -4344,9 +4344,9 @@
 {"dn": 115, "lib": "da;ActionBarSherlock;http://actionbarsherlock.com/", "sp": "com/actionbarsherlock/internal/widget", "bh": 824334, "btc": 829, "btn": 289, "pn": "com/actionbarsherlock"}
 {"dn": 127, "lib": "", "sp": "org/modelmapper", "bh": 482710, "btc": 813, "btn": 289}
 {"dn": 107, "lib": "", "sp": "com/prime31", "bh": 801188, "btc": 801, "btn": 289}
-{"dn": 115, "lib": "da;ACRA;", "sp": "org/acra", "bh": 623534, "btc": 779, "btn": 289, "pn": "org/acra"}
-{"dn": 260, "lib": "da;ACRA;", "sp": "org/acra", "bh": 602943, "btc": 725, "btn": 289, "pn": "org/acra"}
-{"dn": 129, "lib": "da;ACRA;", "sp": "org/acra", "bh": 602576, "btc": 708, "btn": 289, "pn": "org/acra"}
+{"dn": 115, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 623534, "btc": 779, "btn": 289, "pn": "org/acra"}
+{"dn": 260, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 602943, "btc": 725, "btn": 289, "pn": "org/acra"}
+{"dn": 129, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 602576, "btc": 708, "btn": 289, "pn": "org/acra"}
 {"dn": 1520, "lib": "", "sp": "org/apache", "bh": 780560, "btc": 578, "btn": 289}
 {"dn": 210, "lib": "da;Appinventor;http://appinventor.mit.edu/", "sp": "appinventor/ai_yunliaoyun/TouchTwins_Silent/mobi/vserv/android/ads", "bh": 656383, "btc": 2154, "btn": 288, "pn": "appinventor"}
 {"dn": 321, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/app", "bh": 487236, "btc": 1724, "btn": 288, "pn": "android/support/v4"}
@@ -4357,7 +4357,7 @@
 {"dn": 1041, "lib": "", "sp": "com/greystripe/sdk", "bh": 541831, "btc": 904, "btn": 288}
 {"dn": 127, "lib": "", "sp": "org/modelmapper/internal", "bh": 443157, "btc": 764, "btn": 288}
 {"dn": 639, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader", "bh": 916054, "btc": 758, "btn": 288, "pn": "com/nostra13"}
-{"dn": 331, "lib": "da;ACRA;", "sp": "org/acra", "bh": 500448, "btc": 730, "btn": 288, "pn": "org/acra"}
+{"dn": 331, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 500448, "btc": 730, "btn": 288, "pn": "org/acra"}
 {"dn": 189, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/app", "bh": 495269, "btc": 1727, "btn": 287, "pn": "android/support/v4"}
 {"dn": 105, "lib": "", "sp": "com/revesoft/itelmobiledialer/dialer", "bh": 95103, "btc": 1573, "btn": 287}
 {"dn": 1961, "lib": "da;OkHttp;https://github.com/square/okhttp", "sp": "com/squareup/okhttp/internal", "bh": 663953, "btc": 1100, "btn": 287, "pn": "com/squareup/okhttp"}
@@ -5266,7 +5266,7 @@
 {"dn": 131, "lib": "", "sp": "com/adobe/adms", "bh": 762993, "btc": 991, "btn": 239}
 {"dn": 4947, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics/tracking/android", "bh": 416575, "btc": 949, "btn": 239, "pn": "com/google/analytics"}
 {"dn": 322, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics/tracking/android", "bh": 415431, "btc": 905, "btn": 239, "pn": "com/google/analytics"}
-{"dn": 267, "lib": "da;ACRA;", "sp": "org/acra", "bh": 593721, "btc": 843, "btn": 239, "pn": "org/acra"}
+{"dn": 267, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 593721, "btc": 843, "btn": 239, "pn": "org/acra"}
 {"dn": 149, "lib": "", "sp": "mediba/ad/sdk/android", "bh": 106498, "btc": 825, "btn": 239}
 {"dn": 156, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics/tracking/android", "bh": 312983, "btc": 781, "btn": 239, "pn": "com/google/analytics"}
 {"dn": 150, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/layout", "bh": 850549, "btc": 774, "btn": 239, "pn": "com/biznessapps"}
@@ -6743,7 +6743,7 @@
 {"dn": 2742, "lib": "da;Jsoup;http://jsoup.org/", "sp": "org/jsoup", "bh": 323890, "btc": 569, "btn": 188, "pn": "org/jsoup"}
 {"dn": 293, "lib": "ut;skplanet;http://www.skplanet.com", "sp": "com/skplanet/tad/mraid", "bh": 240806, "btc": 558, "btn": 188, "pn": "com/skplanet"}
 {"dn": 264, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "nd/android/support/v4", "bh": 365646, "btc": 513, "btn": 188, "pn": "android/support/v4"}
-{"dn": 311, "lib": "da;ACRA;", "sp": "org/acra", "bh": 293745, "btc": 510, "btn": 188, "pn": "org/acra"}
+{"dn": 311, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 293745, "btc": 510, "btn": 188, "pn": "org/acra"}
 {"dn": 291, "lib": "", "sp": "com/smaato/soma/internal", "bh": 596776, "btc": 495, "btn": 188}
 {"dn": 175, "lib": "", "sp": "com/zxing/client/android", "bh": 320994, "btc": 485, "btn": 188}
 {"dn": 196, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader/core", "bh": 437534, "btc": 459, "btn": 188, "pn": "com/nostra13"}
@@ -8031,7 +8031,7 @@
 {"dn": 2281, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/banner", "bh": 897139, "btc": 321, "btn": 149, "pn": "com/startapp"}
 {"dn": 387, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/banner", "bh": 897119, "btc": 321, "btn": 149, "pn": "com/startapp"}
 {"dn": 246, "lib": "", "sp": "com/foxykeep/datadroid", "bh": 155255, "btc": 319, "btn": 149}
-{"dn": 144, "lib": "da;ACRA;", "sp": "org/acra", "bh": 909828, "btc": 317, "btn": 149, "pn": "org/acra"}
+{"dn": 144, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 909828, "btc": 317, "btn": 149, "pn": "org/acra"}
 {"dn": 407, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/view/a", "bh": 965470, "btc": 284, "btn": 149, "pn": "android/support/v4"}
 {"dn": 264, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fragments/single", "bh": 973706, "btc": 870, "btn": 148, "pn": "com/biznessapps"}
 {"dn": 117, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fragments/single", "bh": 949316, "btc": 868, "btn": 148, "pn": "com/biznessapps"}
@@ -8370,7 +8370,7 @@
 {"dn": 188, "lib": "", "sp": "com/tapjoy", "bh": 667111, "btc": 1081, "btn": 141}
 {"dn": 1594, "lib": "", "sp": "com/google/android/apps/analytics", "bh": 649481, "btc": 1010, "btn": 141}
 {"dn": 101, "lib": "", "sp": "com/google/android/apps/analytics", "bh": 653849, "btc": 996, "btn": 141}
-{"dn": 110, "lib": "da;ACRA;", "sp": "org/acra/collector", "bh": 347125, "btc": 875, "btn": 141, "pn": "org/acra"}
+{"dn": 110, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/collector", "bh": 347125, "btc": 875, "btn": 141, "pn": "org/acra"}
 {"dn": 268, "lib": "", "sp": "net/sqlcipher/database", "bh": 169375, "btc": 866, "btn": 141}
 {"dn": 160, "lib": "", "sp": "com/sessionm/core", "bh": 446554, "btc": 735, "btn": 141}
 {"dn": 128, "lib": "", "sp": "org/modelmapper/internal/cglib", "bh": 745730, "btc": 724, "btn": 141}
@@ -8690,8 +8690,8 @@
 {"dn": 137, "lib": "", "sp": "org/chromium/content/browser/accessibility", "bh": 333440, "btc": 221, "btn": 135}
 {"dn": 136, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/utils", "bh": 630723, "btc": 1052, "btn": 134, "pn": "com/badlogic"}
 {"dn": 199, "lib": "", "sp": "com/thoughtworks/xstream/converters/reflection", "bh": 271683, "btc": 886, "btn": 134}
-{"dn": 4127, "lib": "da;ACRA;", "sp": "org/acra/b", "bh": 319178, "btc": 881, "btn": 134, "pn": "org/acra"}
-{"dn": 187, "lib": "da;ACRA;", "sp": "org/acra/b", "bh": 319175, "btc": 881, "btn": 134, "pn": "org/acra"}
+{"dn": 4127, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/b", "bh": 319178, "btc": 881, "btn": 134, "pn": "org/acra"}
+{"dn": 187, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/b", "bh": 319175, "btc": 881, "btn": 134, "pn": "org/acra"}
 {"dn": 160, "lib": "", "sp": "com/mobileapploader/AID215084", "bh": 456519, "btc": 710, "btn": 134}
 {"dn": 144, "lib": "", "sp": "com/tripomatic/sdk", "bh": 519440, "btc": 666, "btn": 134}
 {"dn": 1141, "lib": "da;mongoDB;http://mongodb.github.io/mongo-java-driver/2.13/getting-started/quick-tour/", "sp": "com/mongodb/util", "bh": 313220, "btc": 632, "btn": 134, "pn": "com/mongodb"}
@@ -8732,7 +8732,7 @@
 {"dn": 293, "lib": "ad;adsmogo;http://www.adsmogo.com/", "sp": "com/adsmogo/informationflow", "bh": 338348, "btc": 1007, "btn": 133, "pn": "com/adsmogo"}
 {"dn": 4115, "lib": "", "sp": "com/google/android/apps/analytics", "bh": 729647, "btc": 976, "btn": 133}
 {"dn": 400, "lib": "", "sp": "com/google/android/apps/analytics", "bh": 729645, "btc": 976, "btn": 133}
-{"dn": 320, "lib": "da;ACRA;", "sp": "org/acra/a", "bh": 314085, "btc": 866, "btn": 133, "pn": "org/acra"}
+{"dn": 320, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/a", "bh": 314085, "btc": 866, "btn": 133, "pn": "org/acra"}
 {"dn": 1508, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/databind/introspect", "bh": 302461, "btc": 836, "btn": 133, "pn": "com/fasterxml"}
 {"dn": 358, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/databind/introspect", "bh": 284058, "btc": 836, "btn": 133, "pn": "com/fasterxml"}
 {"dn": 115, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fragments/single", "bh": 421512, "btc": 685, "btn": 133, "pn": "com/biznessapps"}
@@ -9344,8 +9344,8 @@
 {"dn": 479, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "com/flurry/org/codehaus/jackson/map/introspect", "bh": 68347, "btc": 619, "btn": 122, "pn": "org/codehaus"}
 {"dn": 119, "lib": "", "sp": "com/android/mms/exif", "bh": 943889, "btc": 616, "btn": 122}
 {"dn": 686, "lib": "", "sp": "com/crittercism", "bh": 29482, "btc": 596, "btn": 122}
-{"dn": 408, "lib": "da;ACRA;", "sp": "org/acra/collector", "bh": 60854, "btc": 594, "btn": 122, "pn": "org/acra"}
-{"dn": 118, "lib": "da;ACRA;", "sp": "org/acra/b", "bh": 57821, "btc": 593, "btn": 122, "pn": "org/acra"}
+{"dn": 408, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/collector", "bh": 60854, "btc": 594, "btn": 122, "pn": "org/acra"}
+{"dn": 118, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/b", "bh": 57821, "btc": 593, "btn": 122, "pn": "org/acra"}
 {"dn": 2129, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "org/codehaus/jackson/map/deser", "bh": 889089, "btc": 592, "btn": 122, "pn": "org/codehaus"}
 {"dn": 231, "lib": "", "sp": "com/crittercism", "bh": 17266, "btc": 591, "btn": 122}
 {"dn": 290, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "org/codehaus/jackson/map/deser", "bh": 885956, "btc": 590, "btn": 122, "pn": "org/codehaus"}
@@ -9426,7 +9426,7 @@
 {"dn": 109, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/pqc", "bh": 465072, "btc": 611, "btn": 121, "pn": "org/bouncycastle"}
 {"dn": 156, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/tz", "bh": 959753, "btc": 593, "btn": 121, "pn": "org/joda/time"}
 {"dn": 155, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/tz", "bh": 959063, "btc": 592, "btn": 121, "pn": "org/joda/time"}
-{"dn": 268, "lib": "da;ACRA;", "sp": "org/acra/b", "bh": 51306, "btc": 588, "btn": 121, "pn": "org/acra"}
+{"dn": 268, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/b", "bh": 51306, "btc": 588, "btn": 121, "pn": "org/acra"}
 {"dn": 481, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "org/codehaus/jackson/map/deser", "bh": 862398, "btc": 580, "btn": 121, "pn": "org/codehaus"}
 {"dn": 1485, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "org/codehaus/jackson/map/deser", "bh": 853247, "btc": 576, "btn": 121, "pn": "org/codehaus"}
 {"dn": 2454, "lib": "ut;Nuance Speech Kit Library;https://nuance.com/", "sp": "com/nuance/nmsp/client/sdk/oem", "bh": 68922, "btc": 570, "btn": 121, "pn": "com/nuance"}
@@ -9535,8 +9535,8 @@
 {"dn": 3173, "lib": "ut;Nine Old Androids;https://github.com/JakeWharton/NineOldAndroids", "sp": "com/nineoldandroids/view", "bh": 182206, "btc": 276, "btn": 120, "pn": "com/nineoldandroids"}
 {"dn": 303, "lib": "ut;Nine Old Androids;https://github.com/JakeWharton/NineOldAndroids", "sp": "com/nineoldandroids/view", "bh": 182128, "btc": 276, "btn": 120, "pn": "com/nineoldandroids"}
 {"dn": 542, "lib": "", "sp": "com/swarmconnect/nineoldandroids/view", "bh": 178338, "btc": 273, "btn": 120}
-{"dn": 4034, "lib": "da;ACRA;", "sp": "org/acra/e", "bh": 640822, "btc": 263, "btn": 120, "pn": "org/acra"}
-{"dn": 182, "lib": "da;ACRA;", "sp": "org/acra/e", "bh": 640815, "btc": 263, "btn": 120, "pn": "org/acra"}
+{"dn": 4034, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/e", "bh": 640822, "btc": 263, "btn": 120, "pn": "org/acra"}
+{"dn": 182, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/e", "bh": 640815, "btc": 263, "btn": 120, "pn": "org/acra"}
 {"dn": 319, "lib": "da;Appinventor;http://appinventor.mit.edu/", "sp": "appinventor/ai_yunliaoyun/TouchTwins_Silent/mobi/vserv/android/b", "bh": 515709, "btc": 257, "btn": 120, "pn": "appinventor"}
 {"dn": 207, "lib": "", "sp": "mobi/vserv/android/b", "bh": 515707, "btc": 255, "btn": 120}
 {"dn": 168, "lib": "", "sp": "net/daum/android/map", "bh": 144810, "btc": 248, "btn": 120}
@@ -9739,7 +9739,7 @@
 {"dn": 168, "lib": "", "sp": "com/rank_plat/util", "bh": 784271, "btc": 329, "btn": 117}
 {"dn": 106, "lib": "", "sp": "com/kakao/http", "bh": 953831, "btc": 324, "btn": 117}
 {"dn": 346, "lib": "da;AndroidAnnotations API;https://github.com/excilys/androidannotations", "sp": "org/androidannotations", "bh": 282421, "btc": 319, "btn": 117, "pn": "org/androidannotations/"}
-{"dn": 331, "lib": "da;ACRA;", "sp": "org/acra/util", "bh": 560626, "btc": 318, "btn": 117, "pn": "org/acra"}
+{"dn": 331, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/util", "bh": 560626, "btc": 318, "btn": 117, "pn": "org/acra"}
 {"dn": 124, "lib": "", "sp": "net/hockeyapp/android/tasks", "bh": 635643, "btc": 316, "btn": 117}
 {"dn": 126, "lib": "da;Bolts Base Library;https://github.com/BoltsFramework/Bolts-Android", "sp": "bolts", "bh": 629685, "btc": 316, "btn": 117, "pn": "bolts"}
 {"dn": 12559, "lib": "", "sp": "com/qbiki/modules/savephoto", "bh": 796562, "btc": 311, "btn": 117}
@@ -9757,7 +9757,7 @@
 {"dn": 387, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/banner/banner3d", "bh": 677645, "btc": 255, "btn": 117, "pn": "com/startapp"}
 {"dn": 160, "lib": "", "sp": "com/syncronex/PayMeterLib", "bh": 522067, "btc": 254, "btn": 117}
 {"dn": 131, "lib": "", "sp": "cn/jpush/android/ui", "bh": 683072, "btc": 251, "btn": 117}
-{"dn": 412, "lib": "da;ACRA;", "sp": "org/acra/d", "bh": 627497, "btc": 244, "btn": 117, "pn": "org/acra"}
+{"dn": 412, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/d", "bh": 627497, "btc": 244, "btn": 117, "pn": "org/acra"}
 {"dn": 125, "lib": "", "sp": "com/petitfute/online/strasbourg/ui/activities", "bh": 712852, "btc": 241, "btn": 117}
 {"dn": 735, "lib": "", "sp": "uk/co/senab/photoview", "bh": 968658, "btc": 231, "btn": 117}
 {"dn": 126, "lib": "", "sp": "com/nd/android/pandareader/common/widget/dialog", "bh": 113173, "btc": 230, "btn": 117}
@@ -9846,10 +9846,10 @@
 {"dn": 733, "lib": "", "sp": "com/crittercism", "bh": 19000, "btc": 615, "btn": 115}
 {"dn": 126, "lib": "", "sp": "com/nobexinc/rc/core/streaming", "bh": 819432, "btc": 606, "btn": 115}
 {"dn": 220, "lib": "", "sp": "com/nobexinc/rc/core/streaming", "bh": 813019, "btc": 601, "btn": 115}
-{"dn": 10611, "lib": "da;ACRA;", "sp": "org/acra/b", "bh": 32932, "btc": 600, "btn": 115, "pn": "org/acra"}
-{"dn": 578, "lib": "da;ACRA;", "sp": "org/acra/collector", "bh": 32930, "btc": 600, "btn": 115, "pn": "org/acra"}
+{"dn": 10611, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/b", "bh": 32932, "btc": 600, "btn": 115, "pn": "org/acra"}
+{"dn": 578, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/collector", "bh": 32930, "btc": 600, "btn": 115, "pn": "org/acra"}
 {"dn": 109, "lib": "da;ActionBarSherlock;http://actionbarsherlock.com/", "sp": "com/actionbarsherlock/internal/nineoldandroids", "bh": 84202, "btc": 599, "btn": 115, "pn": "com/actionbarsherlock"}
-{"dn": 1305, "lib": "da;ACRA;", "sp": "org/acra/b", "bh": 29899, "btc": 599, "btn": 115, "pn": "org/acra"}
+{"dn": 1305, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/b", "bh": 29899, "btc": 599, "btn": 115, "pn": "org/acra"}
 {"dn": 309, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/crypto", "bh": 256713, "btc": 546, "btn": 115, "pn": "org/bouncycastle"}
 {"dn": 362, "lib": "da;EPublib;http://www.siegmann.nl/epublib", "sp": "nl/siegmann/epublib/epub", "bh": 94792, "btc": 540, "btn": 115, "pn": "nl/siegmann/epublib"}
 {"dn": 213, "lib": "", "sp": "com/lidroid/xutils/db", "bh": 297618, "btc": 515, "btn": 115}
@@ -9922,7 +9922,7 @@
 {"dn": 212, "lib": "", "sp": "com/qbiki/modules/order", "bh": 57367, "btc": 604, "btn": 114}
 {"dn": 163, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "myrete/org/apache/commons/logging/impl", "bh": 753345, "btc": 602, "btn": 114, "pn": "org/apache/commons"}
 {"dn": 1510, "lib": "", "sp": "com/qbiki/modules/order", "bh": 57153, "btc": 601, "btn": 114}
-{"dn": 109, "lib": "da;ACRA;", "sp": "org/acra/a", "bh": 27840, "btc": 586, "btn": 114, "pn": "org/acra"}
+{"dn": 109, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/a", "bh": 27840, "btc": 586, "btn": 114, "pn": "org/acra"}
 {"dn": 100, "lib": "", "sp": "fi/harism/curl", "bh": 31994, "btc": 553, "btn": 114}
 {"dn": 134, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fragments/single", "bh": 105756, "btc": 530, "btn": 114, "pn": "com/biznessapps"}
 {"dn": 658, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/util/json", "bh": 856038, "btc": 509, "btn": 114, "pn": "com/amazonaws"}
@@ -10228,7 +10228,7 @@
 {"dn": 128, "lib": "da;Apache Harmony;https://harmony.apache.org/", "sp": "org/apache/harmony/awt/datatransfer", "bh": 80032, "btc": 236, "btn": 110, "pn": "org/apache/harmony"}
 {"dn": 174, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app640404/s", "bh": 561663, "btc": 233, "btn": 110, "pn": "com/appmakr"}
 {"dn": 427, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common", "bh": 576326, "btc": 224, "btn": 110, "pn": "com/google/android/gms"}
-{"dn": 172, "lib": "da;ACRA;", "sp": "org/acra/d", "bh": 591334, "btc": 216, "btn": 110, "pn": "org/acra"}
+{"dn": 172, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/d", "bh": 591334, "btc": 216, "btn": 110, "pn": "org/acra"}
 {"dn": 149, "lib": "", "sp": "com/gau/go/gostaticsdk/utiltool", "bh": 552668, "btc": 214, "btn": 110}
 {"dn": 646, "lib": "", "sp": "com/wDrWhoACompleteUnauthorizedMiniNovel/Controllers", "bh": 466758, "btc": 197, "btn": 110}
 {"dn": 2084, "lib": "da;Appinventor;http://appinventor.mit.edu/", "sp": "com/wAppInventorTutorial/Controllers", "bh": 465595, "btc": 196, "btn": 110, "pn": "appinventor"}
@@ -11226,8 +11226,8 @@
 {"dn": 100, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/app9kuNgwoOfC/client/eventguide/model/list", "bh": 705439, "btc": 249, "btn": 97, "pn": "com/crowdcompass"}
 {"dn": 459, "lib": "", "sp": "org/geometerplus/fbreader/formats", "bh": 657600, "btc": 248, "btn": 97}
 {"dn": 165, "lib": "", "sp": "com/pushwoosh", "bh": 483198, "btc": 247, "btn": 97}
-{"dn": 10577, "lib": "da;ACRA;", "sp": "org/acra/e", "bh": 398328, "btc": 236, "btn": 97, "pn": "org/acra"}
-{"dn": 574, "lib": "da;ACRA;", "sp": "org/acra/util", "bh": 398327, "btc": 236, "btn": 97, "pn": "org/acra"}
+{"dn": 10577, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/e", "bh": 398328, "btc": 236, "btn": 97, "pn": "org/acra"}
+{"dn": 574, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/util", "bh": 398327, "btc": 236, "btn": 97, "pn": "org/acra"}
 {"dn": 173, "lib": "sn;Tencent Wechat;https://open.weixin.qq.com/", "sp": "com/tencent/mm/sdk", "bh": 537137, "btc": 226, "btn": 97, "pn": "com/tencent/mm"}
 {"dn": 365, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/web", "bh": 521316, "btc": 220, "btn": 97, "pn": "com/biznessapps"}
 {"dn": 1227, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/around_us", "bh": 562170, "btc": 210, "btn": 97, "pn": "com/biznessapps"}
@@ -11301,8 +11301,8 @@
 {"dn": 505, "lib": "", "sp": "org/mockito/cglib/transform", "bh": 903266, "btc": 243, "btn": 96}
 {"dn": 598, "lib": "ad;Applovin;https://www.applovin.com/", "sp": "com/applovin/impl/adview", "bh": 397660, "btc": 238, "btn": 96, "pn": "com/applovin"}
 {"dn": 126, "lib": "", "sp": "com/haarman/listviewanimations/itemmanipulation", "bh": 858755, "btc": 236, "btn": 96}
-{"dn": 1347, "lib": "da;ACRA;", "sp": "org/acra/e", "bh": 384243, "btc": 233, "btn": 96, "pn": "org/acra"}
-{"dn": 103, "lib": "da;ACRA;", "sp": "org/acra/util", "bh": 384242, "btc": 233, "btn": 96, "pn": "org/acra"}
+{"dn": 1347, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/e", "bh": 384243, "btc": 233, "btn": 96, "pn": "org/acra"}
+{"dn": 103, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/util", "bh": 384242, "btc": 233, "btn": 96, "pn": "org/acra"}
 {"dn": 127, "lib": "", "sp": "com/joanzapata/pdfview", "bh": 280714, "btc": 233, "btn": 96}
 {"dn": 755, "lib": "", "sp": "com/joanzapata/pdfview", "bh": 280713, "btc": 232, "btn": 96}
 {"dn": 109, "lib": "", "sp": "com/socialize/ui/view", "bh": 749309, "btc": 220, "btn": 96}
@@ -11503,7 +11503,7 @@
 {"dn": 1183, "lib": "da;Adobe Air;http://www.adobe.com/cn/devnet/air/air_for_android.html", "sp": "com/adobe/air/utils", "bh": 733817, "btc": 234, "btn": 94, "pn": "com/adobe/air"}
 {"dn": 231, "lib": "", "sp": "com/google/code/microlog4android", "bh": 635061, "btc": 232, "btn": 94}
 {"dn": 131, "lib": "ad;Vpon;http://www.vpon.com/", "sp": "com/vpon/adon/android/webClientHandler", "bh": 547933, "btc": 228, "btn": 94, "pn": "com/vpon"}
-{"dn": 139, "lib": "da;ACRA;", "sp": "org/acra/d", "bh": 385004, "btc": 218, "btn": 94, "pn": "org/acra"}
+{"dn": 139, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/d", "bh": 385004, "btc": 218, "btn": 94, "pn": "org/acra"}
 {"dn": 2271, "lib": "", "sp": "com/fancypush/pushnotifications/ad", "bh": 690356, "btc": 217, "btn": 94}
 {"dn": 194, "lib": "", "sp": "com/fancypush/pushnotifications/ad", "bh": 690338, "btc": 217, "btn": 94}
 {"dn": 145, "lib": "", "sp": "at/srfg/ar/view", "bh": 461385, "btc": 216, "btn": 94}
@@ -12086,9 +12086,9 @@
 {"dn": 118, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation", "bh": 289208, "btc": 146, "btn": 88, "pn": "com/google/ads"}
 {"dn": 1389, "lib": "ui;urbanairship;https://www.urbanairship.com/", "sp": "com/urbanairship/restclient", "bh": 408575, "btc": 142, "btn": 88, "pn": "com/urbanairship"}
 {"dn": 526, "lib": "da;Java-WebSocket;https://github.com/TooTallNate/Java-WebSocket", "sp": "org/java_websocket/server", "bh": 36163, "btc": 142, "btn": 88, "pn": "org/java_websocket"}
-{"dn": 8895, "lib": "da;ACRA;", "sp": "org/acra/c", "bh": 364181, "btc": 141, "btn": 88, "pn": "org/acra"}
-{"dn": 356, "lib": "da;ACRA;", "sp": "org/acra/c", "bh": 364179, "btc": 141, "btn": 88, "pn": "org/acra"}
-{"dn": 711, "lib": "da;ACRA;", "sp": "org/acra/util", "bh": 364129, "btc": 139, "btn": 88, "pn": "org/acra"}
+{"dn": 8895, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/c", "bh": 364181, "btc": 141, "btn": 88, "pn": "org/acra"}
+{"dn": 356, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/c", "bh": 364179, "btc": 141, "btn": 88, "pn": "org/acra"}
+{"dn": 711, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/util", "bh": 364129, "btc": 139, "btn": 88, "pn": "org/acra"}
 {"dn": 146, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/widget", "bh": 78512, "btc": 132, "btn": 88, "pn": "android/support/v4"}
 {"dn": 167, "lib": "", "sp": "android/runtime", "bh": 447368, "btc": 121, "btn": 88}
 {"dn": 409, "lib": "da;ActionBarSherlock;http://actionbarsherlock.com/", "sp": "com/actionbarsherlock/app", "bh": 841419, "btc": 107, "btn": 88, "pn": "com/actionbarsherlock"}
@@ -12138,7 +12138,7 @@
 {"dn": 5538, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/auth", "bh": 522238, "btc": 302, "btn": 87, "pn": "com/google/android/gms"}
 {"dn": 103, "lib": "", "sp": "de/tavendo/autobahn", "bh": 989134, "btc": 299, "btn": 87}
 {"dn": 139, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/wallet", "bh": 543266, "btc": 298, "btn": 87, "pn": "com/google/android/gms"}
-{"dn": 340, "lib": "da;ACRA;", "sp": "org/acra/collector", "bh": 516512, "btc": 297, "btn": 87, "pn": "org/acra"}
+{"dn": 340, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/collector", "bh": 516512, "btc": 297, "btn": 87, "pn": "org/acra"}
 {"dn": 133, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/auth", "bh": 522030, "btc": 294, "btn": 87, "pn": "com/google/android/gms"}
 {"dn": 187, "lib": "", "sp": "io/vov/vitamio/utils", "bh": 376636, "btc": 292, "btn": 87}
 {"dn": 347, "lib": "sn;Weibo;http://weibo.com/", "sp": "com/sina/weibo/sdk/api", "bh": 485140, "btc": 291, "btn": 87, "pn": "com/sina/weibo"}
@@ -12164,7 +12164,7 @@
 {"dn": 138, "lib": "da;Umeng Common;http://dev.umeng.com/", "sp": "com/umeng/common/util", "bh": 332150, "btc": 199, "btn": 87, "pn": "com/umeng/common"}
 {"dn": 1009, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/util/adt", "bh": 418710, "btc": 197, "btn": 87, "pn": "org/andengine"}
 {"dn": 144, "lib": "", "sp": "com/tripomatic/ui/itinerary", "bh": 773559, "btc": 192, "btn": 87}
-{"dn": 493, "lib": "da;ACRA;", "sp": "org/acra/util", "bh": 348867, "btc": 191, "btn": 87, "pn": "org/acra"}
+{"dn": 493, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/util", "bh": 348867, "btc": 191, "btn": 87, "pn": "org/acra"}
 {"dn": 4416, "lib": "ad;PlayHaven Mobile Ads;http://www.playhaven.com/", "sp": "v2/com/playhaven/requests/base", "bh": 272804, "btc": 187, "btn": 87, "pn": "v2/com/playhaven"}
 {"dn": 222, "lib": "ad;PlayHaven Mobile Ads;http://www.playhaven.com/", "sp": "v2/com/playhaven/requests/base", "bh": 272803, "btc": 187, "btn": 87, "pn": "v2/com/playhaven"}
 {"dn": 117, "lib": "", "sp": "com/gamedolphin/common", "bh": 360407, "btc": 186, "btn": 87}
@@ -12277,7 +12277,7 @@
 {"dn": 308, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/util/adt", "bh": 416615, "btc": 196, "btn": 86, "pn": "org/andengine"}
 {"dn": 285, "lib": "", "sp": "com/wbtech/ums/common", "bh": 360900, "btc": 195, "btn": 86}
 {"dn": 225, "lib": "da;Github;https://github.com/", "sp": "com/github/ignition/support/cache", "bh": 381741, "btc": 193, "btn": 86, "pn": "com/github"}
-{"dn": 146, "lib": "da;ACRA;", "sp": "org/acra/d", "bh": 334782, "btc": 188, "btn": 86, "pn": "org/acra"}
+{"dn": 146, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/d", "bh": 334782, "btc": 188, "btn": 86, "pn": "org/acra"}
 {"dn": 2276, "lib": "da;Appcelerator;http://www.appcelerator.org/", "sp": "org/appcelerator/kroll/common", "bh": 687568, "btc": 182, "btn": 86, "pn": "org/appcelerator"}
 {"dn": 910, "lib": "ut;anywheresoftware;", "sp": "anywheresoftware/b4a/http", "bh": 741825, "btc": 180, "btn": 86, "pn": "anywheresoftware"}
 {"dn": 301, "lib": "", "sp": "com/ngigroup/adsta", "bh": 367199, "btc": 179, "btn": 86}
@@ -13848,9 +13848,9 @@
 {"dn": 140, "lib": "", "sp": "com/logicimmo/whitelabellib/data", "bh": 242218, "btc": 144, "btn": 72}
 {"dn": 748, "lib": "da;simple framework;http://www.simpleframework.org/", "sp": "org/simpleframework/xml/transform", "bh": 287394, "btc": 128, "btn": 72, "pn": "org/simpleframework"}
 {"dn": 1040, "lib": "", "sp": "de/greenrobot/event/util", "bh": 265023, "btc": 120, "btn": 72}
-{"dn": 299, "lib": "da;ACRA;", "sp": "org/acra/a", "bh": 254336, "btc": 109, "btn": 72, "pn": "org/acra"}
-{"dn": 267, "lib": "da;ACRA;", "sp": "org/acra/b", "bh": 259180, "btc": 108, "btn": 72, "pn": "org/acra"}
-{"dn": 198, "lib": "da;ACRA;", "sp": "org/acra/b", "bh": 254282, "btc": 105, "btn": 72, "pn": "org/acra"}
+{"dn": 299, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/a", "bh": 254336, "btc": 109, "btn": 72, "pn": "org/acra"}
+{"dn": 267, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/b", "bh": 259180, "btc": 108, "btn": 72, "pn": "org/acra"}
+{"dn": 198, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/b", "bh": 254282, "btc": 105, "btn": 72, "pn": "org/acra"}
 {"dn": 201, "lib": "sn;Tencent Login;http://wiki.open.qq.com/wiki/mobile/Android_SDK", "sp": "com/tencent/record", "bh": 282785, "btc": 102, "btn": 72, "pn": "com/tencent/record"}
 {"dn": 178, "lib": "", "sp": "de/ankri/views", "bh": 410067, "btc": 101, "btn": 72}
 {"dn": 238, "lib": "", "sp": "org/droidparts/net/image", "bh": 316590, "btc": 100, "btn": 72}
@@ -18952,7 +18952,7 @@
 {"dn": 113, "lib": "", "sp": "com/vision/library/file", "bh": 172430, "btc": 102, "btn": 41}
 {"dn": 1037, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/lang3/mutable", "bh": 324686, "btc": 101, "btn": 41, "pn": "org/apache/commons"}
 {"dn": 979, "lib": "da;subsplash;http://www.subsplash.com/", "sp": "com/subsplash/thechurchapp/handlers/sharing", "bh": 178554, "btc": 99, "btn": 41, "pn": "com/subsplash"}
-{"dn": 274, "lib": "da;ACRA;", "sp": "org/acra/e", "bh": 121190, "btc": 99, "btn": 41, "pn": "org/acra"}
+{"dn": 274, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/e", "bh": 121190, "btc": 99, "btn": 41, "pn": "org/acra"}
 {"dn": 328, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/util/httputil", "bh": 233844, "btc": 97, "btn": 41, "pn": "com/google/gdata"}
 {"dn": 342, "lib": "", "sp": "a/a", "bh": 225989, "btc": 97, "btn": 41}
 {"dn": 382, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/messages", "bh": 213837, "btc": 97, "btn": 41, "pn": "com/biznessapps"}
@@ -23083,14 +23083,14 @@
 {"dn": 183, "lib": "", "sp": "org/mockito/exceptions", "bh": 139212, "btc": 124, "btn": 24}
 {"dn": 118, "lib": "", "sp": "com/ocpsoft/pretty/time", "bh": 454096, "btc": 119, "btn": 24}
 {"dn": 101, "lib": "", "sp": "com/aquafadas/dp/reader/engine/debug", "bh": 290169, "btc": 118, "btn": 24}
-{"dn": 4343, "lib": "da;ACRA;", "sp": "org/acra/sender", "bh": 96664, "btc": 118, "btn": 24, "pn": "org/acra"}
+{"dn": 4343, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/sender", "bh": 96664, "btc": 118, "btn": 24, "pn": "org/acra"}
 {"dn": 166, "lib": "", "sp": "com/nexage/android/sdkmanager", "bh": 117542, "btc": 116, "btn": 24}
 {"dn": 561, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games", "bh": 120205, "btc": 115, "btn": 24, "pn": "com/google/android/gms"}
 {"dn": 5354, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/base", "bh": 109048, "btc": 115, "btn": 24, "pn": "org/joda/time"}
 {"dn": 373, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/base", "bh": 109046, "btc": 115, "btn": 24, "pn": "org/joda/time"}
 {"dn": 106, "lib": "", "sp": "com/musicg/math", "bh": 216882, "btc": 114, "btn": 24}
 {"dn": 118, "lib": "", "sp": "org/krysalis/barcode4j/output/svg", "bh": 939325, "btc": 112, "btn": 24}
-{"dn": 440, "lib": "da;ACRA;", "sp": "org/acra/c", "bh": 93194, "btc": 112, "btn": 24, "pn": "org/acra"}
+{"dn": 440, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/c", "bh": 93194, "btc": 112, "btn": 24, "pn": "org/acra"}
 {"dn": 323, "lib": "", "sp": "org/zywx/wbpalmstar/plugin/uexzxing/qrcode/encoder", "bh": 176760, "btc": 110, "btn": 24}
 {"dn": 1889, "lib": "da;Spongy Castle;http://rtyley.github.io/spongycastle/", "sp": "org/spongycastle/jce/examples", "bh": 535279, "btc": 108, "btn": 24, "pn": "org/spongycastle"}
 {"dn": 1343, "lib": "da;AChartEngine;http://www.achartengine.org/", "sp": "org/achartengine/model", "bh": 241470, "btc": 108, "btn": 24, "pn": "org/achartengine"}
@@ -23103,7 +23103,7 @@
 {"dn": 105, "lib": "", "sp": "com/drew/metadata/xmp", "bh": 103362, "btc": 103, "btn": 24}
 {"dn": 309, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 53334, "btc": 103, "btn": 24, "pn": "org/osmdroid"}
 {"dn": 1885, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/tileprovider/tilesource", "bh": 52795, "btc": 102, "btn": 24, "pn": "org/osmdroid"}
-{"dn": 195, "lib": "da;ACRA;", "sp": "org/acra/c", "bh": 92908, "btc": 101, "btn": 24, "pn": "org/acra"}
+{"dn": 195, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/c", "bh": 92908, "btc": 101, "btn": 24, "pn": "org/acra"}
 {"dn": 153, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/location", "bh": 81418, "btc": 101, "btn": 24, "pn": "com/google/android/gms"}
 {"dn": 159, "lib": "", "sp": "com/wsi/android/framework/app/gamification", "bh": 75272, "btc": 99, "btn": 24}
 {"dn": 1309, "lib": "da;mongoDB;http://mongodb.github.io/mongo-java-driver/2.13/getting-started/quick-tour/", "sp": "com/mongodb/io", "bh": 169244, "btc": 98, "btn": 24, "pn": "com/mongodb"}
@@ -23926,21 +23926,21 @@
 {"dn": 850, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/g/b", "bh": 124551, "btc": 92, "btn": 21, "pn": "com/google/zxing"}
 {"dn": 10238, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/f/b", "bh": 121667, "btc": 90, "btn": 21, "pn": "com/google/zxing"}
 {"dn": 1120, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/h/c", "bh": 50863, "btc": 90, "btn": 21, "pn": "com/google/zxing"}
-{"dn": 12608, "lib": "da;ACRA;", "sp": "org/acra/d", "bh": 80595, "btc": 89, "btn": 21, "pn": "org/acra"}
+{"dn": 12608, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/d", "bh": 80595, "btc": 89, "btn": 21, "pn": "org/acra"}
 {"dn": 153, "lib": "", "sp": "com/admarvel/android/admarveladmobadapter", "bh": 452250, "btc": 88, "btn": 21}
 {"dn": 403, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/auth/sample", "bh": 142616, "btc": 88, "btn": 21, "pn": "com/google/android/gms"}
 {"dn": 356, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/data/introspection", "bh": 100268, "btc": 87, "btn": 21, "pn": "com/google/gdata"}
 {"dn": 163, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/data/introspection", "bh": 100242, "btc": 86, "btn": 21, "pn": "com/google/gdata"}
 {"dn": 115, "lib": "", "sp": "org/apache/xerces/impl/xs/models", "bh": 224434, "btc": 84, "btn": 21}
 {"dn": 105, "lib": "", "sp": "com/willna/extensions/ads4air/inmobi", "bh": 141305, "btc": 84, "btn": 21}
-{"dn": 244, "lib": "da;ACRA;", "sp": "org/acra/c", "bh": 79842, "btc": 84, "btn": 21, "pn": "org/acra"}
+{"dn": 244, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/c", "bh": 79842, "btc": 84, "btn": 21, "pn": "org/acra"}
 {"dn": 312, "lib": "", "sp": "com/livenation/mobile/android/library/tmcheckout/resource", "bh": 238216, "btc": 82, "btn": 21}
 {"dn": 108, "lib": "", "sp": "com/admarvel/android/admarveladmobadapter", "bh": 457394, "btc": 81, "btn": 21}
 {"dn": 157, "lib": "", "sp": "com/wsi/android/framework/app/mrss", "bh": 85619, "btc": 81, "btn": 21}
 {"dn": 132, "lib": "ge;cocos2D;http://www.cocos2d-x.org/", "sp": "org/cocos2d/events", "bh": 63341, "btc": 81, "btn": 21, "pn": "org/cocos2d"}
 {"dn": 156, "lib": "", "sp": "com/tripomatic/ui/menu/actions/gridActions", "bh": 153619, "btc": 79, "btn": 21}
 {"dn": 2753, "lib": "", "sp": "com/wAfricaTVLiveAmharic/n", "bh": 113028, "btc": 79, "btn": 21}
-{"dn": 348, "lib": "da;ACRA;", "sp": "org/acra/sender", "bh": 78798, "btc": 79, "btn": 21, "pn": "org/acra"}
+{"dn": 348, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/sender", "bh": 78798, "btc": 79, "btn": 21, "pn": "org/acra"}
 {"dn": 206, "lib": "", "sp": "com/quickmobile/conference/event/adapter", "bh": 64065, "btc": 79, "btn": 21}
 {"dn": 196, "lib": "sn;Youmi Ads;http://www.youmi.net/", "sp": "net/youmi/android/smart/a", "bh": 132305, "btc": 78, "btn": 21, "pn": "net/youmi"}
 {"dn": 159, "lib": "", "sp": "views/cards", "bh": 106443, "btc": 78, "btn": 21}
@@ -23950,7 +23950,7 @@
 {"dn": 222, "lib": "", "sp": "com/googlecode/flickrjandroid/activity", "bh": 176475, "btc": 76, "btn": 21}
 {"dn": 344, "lib": "", "sp": "sandhills/machinery/app/security", "bh": 136205, "btc": 76, "btn": 21}
 {"dn": 133, "lib": "ad;Adtech;http://www.adtech.com/", "sp": "com/adtech/mobilesdk/publisher/mediation/vdopia/internal", "bh": 131349, "btc": 76, "btn": 21, "pn": "com/adtech"}
-{"dn": 655, "lib": "da;ACRA;", "sp": "org/acra/c", "bh": 79634, "btc": 76, "btn": 21, "pn": "org/acra"}
+{"dn": 655, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/c", "bh": 79634, "btc": 76, "btn": 21, "pn": "org/acra"}
 {"dn": 13433, "lib": "da;Adobe Air;http://www.adobe.com/cn/devnet/air/air_for_android.html", "sp": "com/adobe/air/gestures", "bh": 388305, "btc": 75, "btn": 21, "pn": "com/adobe/air"}
 {"dn": 882, "lib": "da;Adobe Air;http://www.adobe.com/cn/devnet/air/air_for_android.html", "sp": "com/adobe/air/gestures", "bh": 388293, "btc": 75, "btn": 21, "pn": "com/adobe/air"}
 {"dn": 620, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/events/data", "bh": 190617, "btc": 75, "btn": 21, "pn": "com/conduit/app"}
@@ -24772,7 +24772,7 @@
 {"dn": 693, "lib": "da;Appyet;http://www.appyet.com/", "sp": "com/appyet/mobile/h", "bh": 503931, "btc": 90, "btn": 18, "pn": "com/appyet"}
 {"dn": 115, "lib": "", "sp": "com/ibm/icu/impl/data", "bh": 528496, "btc": 89, "btn": 18}
 {"dn": 124, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/math3/analysis/differentiation", "bh": 133796, "btc": 86, "btn": 18, "pn": "org/apache/commons"}
-{"dn": 9860, "lib": "da;ACRA;", "sp": "org/acra/a", "bh": 73314, "btc": 86, "btn": 18, "pn": "org/acra"}
+{"dn": 9860, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/a", "bh": 73314, "btc": 86, "btn": 18, "pn": "org/acra"}
 {"dn": 265, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/query", "bh": 96736, "btc": 85, "btn": 18, "pn": "com/google/android/gms"}
 {"dn": 279, "lib": "", "sp": "com/eightbitmage/gdxlw", "bh": 66126, "btc": 85, "btn": 18}
 {"dn": 122, "lib": "", "sp": "com/applifier/impact/android/properties", "bh": 132998, "btc": 83, "btn": 18}
@@ -24780,7 +24780,7 @@
 {"dn": 22184, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/query/internal", "bh": 86506, "btc": 82, "btn": 18, "pn": "com/google/android/gms"}
 {"dn": 135, "lib": "", "sp": "com/heyzap/sdk/extensions/air", "bh": 106281, "btc": 81, "btn": 18}
 {"dn": 599, "lib": "", "sp": "com/brightcove/player/media/tasks", "bh": 73602, "btc": 81, "btn": 18}
-{"dn": 1014, "lib": "da;ACRA;", "sp": "org/acra/a", "bh": 73080, "btc": 77, "btn": 18, "pn": "org/acra"}
+{"dn": 1014, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/a", "bh": 73080, "btc": 77, "btn": 18, "pn": "org/acra"}
 {"dn": 265, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/query/internal", "bh": 86324, "btc": 75, "btn": 18, "pn": "com/google/android/gms"}
 {"dn": 355, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/data/batch", "bh": 104092, "btc": 74, "btn": 18, "pn": "com/google/gdata"}
 {"dn": 549, "lib": "ut;Amazon;", "sp": "com/amazon/ags/e/d/a", "bh": 72635, "btc": 74, "btn": 18, "pn": "com/amazon"}
@@ -28446,8 +28446,8 @@
 {"dn": 605, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/c", "bh": 22644, "btc": 11, "btn": 8, "pn": "com/google/zxing"}
 {"dn": 131, "lib": "da;Apache Harmony;https://harmony.apache.org/", "sp": "org/apache/harmony/awt/a", "bh": 21644, "btc": 11, "btn": 8, "pn": "org/apache/harmony"}
 {"dn": 199, "lib": "", "sp": "com/korovyansk/android/slideout/utils", "bh": 19923, "btc": 11, "btn": 8}
-{"dn": 5641, "lib": "da;ACRA;", "sp": "org/acra/c/a", "bh": 19382, "btc": 11, "btn": 8, "pn": "org/acra"}
-{"dn": 266, "lib": "da;ACRA;", "sp": "org/acra/c/a", "bh": 19381, "btc": 11, "btn": 8, "pn": "org/acra"}
+{"dn": 5641, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/c/a", "bh": 19382, "btc": 11, "btn": 8, "pn": "org/acra"}
+{"dn": 266, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra/c/a", "bh": 19381, "btc": 11, "btn": 8, "pn": "org/acra"}
 {"dn": 500, "lib": "", "sp": "com/vungle/publisher/log", "bh": 19350, "btc": 11, "btn": 8}
 {"dn": 660, "lib": "", "sp": "com/longevitysoft/android/util", "bh": 18567, "btc": 11, "btn": 8}
 {"dn": 265, "lib": "", "sp": "com/commonsware/cwac/endless", "bh": 17307, "btc": 11, "btn": 8}
