@@ -26582,7 +26582,7 @@
 {"dn": 2358, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/d", "bh": 179025, "btc": 20, "btn": 13, "pn": "android/support/v4"}
 {"dn": 228, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/d", "bh": 179018, "btc": 20, "btn": 13, "pn": "android/support/v4"}
 {"dn": 157, "lib": "", "sp": "com/shoutem/io", "bh": 108501, "btc": 20, "btn": 13}
-{"dn": 125, "lib": "", "sp": "com/mindprod/ledatastream", "bh": 104729, "btc": 20, "btn": 13}
+{"dn": 125, "lib": "da;LEDataStream;http://mindprod.com/products1.html", "sp": "com/mindprod/ledatastream", "bh": 104729, "btc": 20, "btn": 13, "pn": "com/mindprod/ledatastream"}
 {"dn": 262, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/net/finger", "bh": 63390, "btc": 20, "btn": 13, "pn": "org/apache/commons"}
 {"dn": 136, "lib": "", "sp": "com/varduna/server/actions/util", "bh": 32609, "btc": 20, "btn": 13}
 {"dn": 262, "lib": "", "sp": "com/ning/http/client/listenable", "bh": 26788, "btc": 20, "btn": 13}
