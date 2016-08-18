@@ -7668,7 +7668,7 @@
 {"dn": 455, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/impl/conn/tsccm", "bh": 396107, "btc": 589, "btn": 158, "pn": "org/apache/http"}
 {"dn": 1675, "lib": "pa;PayPal;https://developer.paypal.com/docs/integration/mobile/android-integration-guide/", "sp": "com/paypal/android", "bh": 326938, "btc": 569, "btn": 158, "pn": "com/paypal"}
 {"dn": 304, "lib": "da;Qoppa Software;https://www.qoppa.com/", "sp": "com/qoppa/viewer/c", "bh": 852, "btc": 542, "btn": 158, "pn": "com/qoppa"}
-{"dn": 134, "lib": "", "sp": "com/stericson/RootTools", "bh": 245524, "btc": 530, "btn": 158}
+{"dn": 134, "lib": "da;Stericson RootTools;https://github.com/Stericson/RootTool", "sp": "com/stericson/RootTools", "bh": 245524, "btc": 530, "btn": 158, "pn": "com/stericson/RootTools"}
 {"dn": 403, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/net/ftp", "bh": 184267, "btc": 519, "btn": 158, "pn": "org/apache/commons"}
 {"dn": 104, "lib": "", "sp": "com/doomonafireball/betterpickers/timezonepicker", "bh": 600331, "btc": 507, "btn": 158}
 {"dn": 104, "lib": "", "sp": "org/opencv", "bh": 379741, "btc": 502, "btn": 158}
@@ -11533,7 +11533,7 @@
 {"dn": 665, "lib": "", "sp": "gnu/math", "bh": 396940, "btc": 652, "btn": 93}
 {"dn": 1520, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/fitness", "bh": 267463, "btc": 651, "btn": 93, "pn": "com/google/android/gms"}
 {"dn": 200, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/fitness", "bh": 267455, "btc": 651, "btn": 93, "pn": "com/google/android/gms"}
-{"dn": 181, "lib": "", "sp": "com/stericson/RootTools/internal", "bh": 619138, "btc": 648, "btn": 93}
+{"dn": 181, "lib": "da;Stericson RootTools;https://github.com/Stericson/RootTools", "sp": "com/stericson/RootTools/internal", "bh": 619138, "btc": 648, "btn": 93, "pn": "com/stericson/RootTools"}
 {"dn": 204, "lib": "ut;Nine Old Androids;https://github.com/JakeWharton/NineOldAndroids", "sp": "com/nineoldandroids/animation", "bh": 125585, "btc": 644, "btn": 93, "pn": "com/nineoldandroids"}
 {"dn": 6964, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive", "bh": 238116, "btc": 511, "btn": 93, "pn": "com/google/android/gms"}
 {"dn": 191, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive", "bh": 250357, "btc": 507, "btn": 93, "pn": "com/google/android/gms"}
@@ -16098,7 +16098,7 @@
 {"dn": 199, "lib": "", "sp": "com/googlecode/mp4parser/authoring/builder", "bh": 544535, "btc": 261, "btn": 55}
 {"dn": 167, "lib": "", "sp": "com/csipsimple/models", "bh": 613939, "btc": 259, "btn": 55}
 {"dn": 123, "lib": "", "sp": "net/manageapps/batchdownload", "bh": 424990, "btc": 254, "btn": 55}
-{"dn": 102, "lib": "", "sp": "com/stericson/RootTools/containers", "bh": 251258, "btc": 252, "btn": 55}
+{"dn": 102, "lib": "da;Stericson RootTools;https://github.com/Stericson/RootTools", "sp": "com/stericson/RootTools/containers", "bh": 251258, "btc": 252, "btn": 55, "pn": "com/stericson/RootTools"}
 {"dn": 176, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/appeaUjo6e8XP/client/socialsharing", "bh": 419752, "btc": 245, "btn": 55, "pn": "com/crowdcompass"}
 {"dn": 111, "lib": "da;doapps;http://www.doapps.com/", "sp": "com/doapps/android/mln/ads/adapters", "bh": 245032, "btc": 242, "btn": 55, "pn": "com/doapps"}
 {"dn": 116, "lib": "ad;AdSDK;", "sp": "com/adsdk/sdk/customevents", "bh": 486840, "btc": 239, "btn": 55, "pn": "com/adsdk"}
@@ -16473,7 +16473,7 @@
 {"dn": 212, "lib": "", "sp": "com/purplebrain/giftiz/sdk/request", "bh": 370459, "btc": 216, "btn": 53}
 {"dn": 100, "lib": "", "sp": "com/socialize/notifications", "bh": 255227, "btc": 216, "btn": 53}
 {"dn": 363, "lib": "", "sp": "org/yaml/snakeyaml/representer", "bh": 332973, "btc": 211, "btn": 53}
-{"dn": 160, "lib": "", "sp": "com/stericson/RootTools/execution", "bh": 605297, "btc": 210, "btn": 53}
+{"dn": 160, "lib": "da;Stericson RootTools;https://github.com/Stericson/RootTools", "sp": "com/stericson/RootTools/execution", "bh": 605297, "btc": 210, "btn": 53, "pn": "com/stericson/RootTools"}
 {"dn": 130, "lib": "ui;urbanairship;https://www.urbanairship.com/", "sp": "com/urbanairship/widget", "bh": 235912, "btc": 202, "btn": 53, "pn": "com/urbanairship"}
 {"dn": 107, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/commons/analytics/db", "bh": 397079, "btc": 194, "btn": 53, "pn": "com/inmobi"}
 {"dn": 143, "lib": "", "sp": "org/joda/time/b", "bh": 318466, "btc": 194, "btn": 53}
