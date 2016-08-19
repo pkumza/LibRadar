@@ -1276,7 +1276,7 @@
 {"dn": 105, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova", "bh": 499434, "btc": 2288, "btn": 727, "pn": "org/apache/cordova"}
 {"dn": 1245, "lib": "da;Adobe Air;http://www.adobe.com/cn/devnet/air/air_for_android.html", "sp": "com/adobe/air", "bh": 176552, "btc": 2034, "btn": 727, "pn": "com/adobe/air"}
 {"dn": 124, "lib": "da;Adobe Air;http://www.adobe.com/cn/devnet/air/air_for_android.html", "sp": "com/adobe/air", "bh": 176359, "btc": 2034, "btn": 727, "pn": "com/adobe/air"}
-{"dn": 298, "lib": "", "sp": "org/bouncycastle", "bh": 762232, "btc": 3210, "btn": 726}
+{"dn": 298, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle", "bh": 762232, "btc": 3210, "btn": 726, "pn": "org/bouncycastle"}
 {"dn": 423, "lib": "", "sp": "com/adobe", "bh": 49110, "btc": 1989, "btn": 726}
 {"dn": 137, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova", "bh": 492664, "btc": 2284, "btn": 725, "pn": "org/apache/cordova"}
 {"dn": 315, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi", "bh": 262112, "btc": 1909, "btn": 725, "pn": "com/inmobi"}
@@ -1299,7 +1299,7 @@
 {"dn": 187, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/ui/widget", "bh": 162964, "btc": 1511, "btn": 719, "pn": "ti/modules/titanium"}
 {"dn": 165, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/ui/widget", "bh": 161575, "btc": 1507, "btn": 719, "pn": "ti/modules/titanium"}
 {"dn": 100, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova", "bh": 231461, "btc": 4011, "btn": 718, "pn": "org/apache/cordova"}
-{"dn": 144, "lib": "", "sp": "org/bouncycastle", "bh": 868912, "btc": 3820, "btn": 718}
+{"dn": 144, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle", "bh": 868912, "btc": 3820, "btn": 718, "pn": "org/bouncycastle"}
 {"dn": 128, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4", "bh": 519682, "btc": 2919, "btn": 718, "pn": "android/support/v4"}
 {"dn": 229, "lib": "da;Google Appinventor;https://code.google.com/p/app-inventor-for-android/", "sp": "com/google/appinventor/components", "bh": 149828, "btc": 3381, "btn": 716, "pn": "com/google/appinventor"}
 {"dn": 102, "lib": "da;Google Appinventor;https://code.google.com/p/app-inventor-for-android/", "sp": "com/google/appinventor/components", "bh": 49185, "btc": 3314, "btn": 716, "pn": "com/google/appinventor"}
@@ -1315,8 +1315,8 @@
 {"dn": 2025, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi", "bh": 112362, "btc": 1837, "btn": 712, "pn": "com/inmobi"}
 {"dn": 101, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi", "bh": 112361, "btc": 1837, "btn": 712, "pn": "com/inmobi"}
 {"dn": 263, "lib": "da;subsplash;http://www.subsplash.com/", "sp": "com/subsplash/thechurchapp", "bh": 472505, "btc": 1409, "btn": 712, "pn": "com/subsplash"}
-{"dn": 236, "lib": "", "sp": "org/bouncycastle", "bh": 99151, "btc": 3932, "btn": 711}
-{"dn": 338, "lib": "", "sp": "org/bouncycastle", "bh": 940784, "btc": 3920, "btn": 711}
+{"dn": 236, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle", "bh": 99151, "btc": 3932, "btn": 711, "pn": "org/bouncycastle"}
+{"dn": 338, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle", "bh": 940784, "btc": 3920, "btn": 711, "pn": "org/bouncycastle"}
 {"dn": 229, "lib": "da;Google Appinventor;https://code.google.com/p/app-inventor-for-android/", "sp": "com/google/appinventor/components/runtime", "bh": 134944, "btc": 3386, "btn": 711, "pn": "com/google/appinventor"}
 {"dn": 102, "lib": "da;Google Appinventor;https://code.google.com/p/app-inventor-for-android/", "sp": "com/google/appinventor/components/runtime", "bh": 34301, "btc": 3319, "btn": 711, "pn": "com/google/appinventor"}
 {"dn": 230, "lib": "da;Google Appinventor;https://code.google.com/p/app-inventor-for-android/", "sp": "com/google/appinventor/components", "bh": 19216, "btc": 3294, "btn": 710, "pn": "com/google/appinventor"}
@@ -16219,7 +16219,7 @@
 {"dn": 135, "lib": "", "sp": "com/androidnative/billing/core", "bh": 261607, "btc": 406, "btn": 54}
 {"dn": 283, "lib": "", "sp": "com/androidnative/billing/core", "bh": 261581, "btc": 405, "btn": 54}
 {"dn": 194, "lib": "", "sp": "com/android/billing/core", "bh": 261009, "btc": 383, "btn": 54}
-{"dn": 662, "lib": "", "sp": "org/bouncycastle/ocsp", "bh": 980164, "btc": 378, "btn": 54}
+{"dn": 662, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/ocsp", "bh": 980164, "btc": 378, "btn": 54, "pn": "org/bouncycastle"}
 {"dn": 352, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/model", "bh": 271188, "btc": 372, "btn": 54, "pn": "com/startapp"}
 {"dn": 3829, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/model", "bh": 264456, "btc": 367, "btn": 54, "pn": "com/startapp"}
 {"dn": 563, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/model", "bh": 264455, "btc": 366, "btn": 54, "pn": "com/startapp"}
@@ -16227,7 +16227,7 @@
 {"dn": 348, "lib": "", "sp": "org/afree/graphics/geom", "bh": 927044, "btc": 358, "btn": 54}
 {"dn": 356, "lib": "", "sp": "com/texterity/webreader", "bh": 826516, "btc": 355, "btn": 54}
 {"dn": 169, "lib": "da;Spongy Castle;http://rtyley.github.io/spongycastle/", "sp": "org/spongycastle/operator", "bh": 293661, "btc": 352, "btn": 54, "pn": "org/spongycastle"}
-{"dn": 1544, "lib": "", "sp": "org/bouncycastle/ocsp", "bh": 925234, "btc": 350, "btn": 54}
+{"dn": 1544, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/ocsp", "bh": 925234, "btc": 350, "btn": 54, "pn": "org/bouncycastle"}
 {"dn": 337, "lib": "", "sp": "org/mockito/cglib/proxy", "bh": 368963, "btc": 342, "btn": 54}
 {"dn": 375, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/model", "bh": 263754, "btc": 340, "btn": 54, "pn": "com/startapp"}
 {"dn": 380, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/fitness", "bh": 486985, "btc": 336, "btn": 54, "pn": "com/google/android/gms"}
@@ -22784,8 +22784,8 @@
 {"dn": 25849, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/realtime/internal", "bh": 267910, "btc": 1096, "btn": 25, "pn": "com/google/android/gms"}
 {"dn": 1350, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/realtime/internal", "bh": 267520, "btc": 1081, "btn": 25, "pn": "com/google/android/gms"}
 {"dn": 239, "lib": "", "sp": "japa/parser/ast", "bh": 908475, "btc": 583, "btn": 25}
-{"dn": 107, "lib": "", "sp": "org/bouncycastle/jce/provider/symmetric", "bh": 999483, "btc": 409, "btn": 25}
-{"dn": 185, "lib": "", "sp": "org/bouncycastle/jce/provider/symmetric", "bh": 836954, "btc": 389, "btn": 25}
+{"dn": 107, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/jce/provider/symmetric", "bh": 999483, "btc": 409, "btn": 25, "pn": "org/bouncycastle"}
+{"dn": 185, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/jce/provider/symmetric", "bh": 836954, "btc": 389, "btn": 25, "pn": "org/bouncycastle"}
 {"dn": 211, "lib": "da;Appyet;http://www.appyet.com/", "sp": "com/appyet/b", "bh": 933070, "btc": 382, "btn": 25, "pn": "com/appyet"}
 {"dn": 117, "lib": "", "sp": "repack/org/bouncycastle/jce/provider/symmetric", "bh": 997819, "btc": 345, "btn": 25}
 {"dn": 176, "lib": "", "sp": "com/fitnessmobileapps/fma/server/api/json", "bh": 643237, "btc": 281, "btn": 25}
@@ -24719,10 +24719,10 @@
 {"dn": 403, "lib": "", "sp": "edu/emory/mathcs/jtransforms/dht", "bh": 526844, "btc": 626, "btn": 18}
 {"dn": 142, "lib": "", "sp": "com/c", "bh": 55557, "btc": 383, "btn": 18}
 {"dn": 2007, "lib": "ut;Amazon;", "sp": "com/amazon/ags/jni/whispersync", "bh": 110633, "btc": 357, "btn": 18, "pn": "com/amazon"}
-{"dn": 236, "lib": "", "sp": "org/bouncycastle/jce/provider/symmetric", "bh": 648728, "btc": 319, "btn": 18}
-{"dn": 108, "lib": "", "sp": "org/bouncycastle/jce/provider/symmetric", "bh": 487567, "btc": 303, "btn": 18}
+{"dn": 236, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/jce/provider/symmetric", "bh": 648728, "btc": 319, "btn": 18, "pn": "org/bouncycastle"}
+{"dn": 108, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/jce/provider/symmetric", "bh": 487567, "btc": 303, "btn": 18, "pn": "org/bouncycastle"}
 {"dn": 197, "lib": "", "sp": "com/aetrion/flickr/places", "bh": 648866, "btc": 301, "btn": 18}
-{"dn": 359, "lib": "", "sp": "org/bouncycastle/jce/provider/symmetric", "bh": 486199, "btc": 299, "btn": 18}
+{"dn": 359, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/jce/provider/symmetric", "bh": 486199, "btc": 299, "btn": 18, "pn": "org/bouncycastle"}
 {"dn": 733, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/ui/activity", "bh": 253461, "btc": 295, "btn": 18, "pn": "org/andengine"}
 {"dn": 463, "lib": "", "sp": "com/google/code/rome/android/repackaged/com/sun/syndication/feed/synd/impl", "bh": 400476, "btc": 279, "btn": 18}
 {"dn": 257, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/oned/rss/expanded/decoders", "bh": 134451, "btc": 269, "btn": 18, "pn": "com/google/zxing"}
