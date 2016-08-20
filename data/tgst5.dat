@@ -7014,7 +7014,7 @@
 {"dn": 333, "lib": "", "sp": "com/all/cnyingtone", "bh": 321366, "btc": 636, "btn": 178}
 {"dn": 102, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/compress/archivers/zip", "bh": 979917, "btc": 635, "btn": 178, "pn": "org/apache/commons"}
 {"dn": 224, "lib": "da;javax;", "sp": "javax/activation", "bh": 175576, "btc": 632, "btn": 178, "pn": "javax"}
-{"dn": 313, "lib": "", "sp": "org/aspectj", "bh": 247029, "btc": 594, "btn": 178}
+{"dn": 313, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj", "bh": 247029, "btc": 594, "btn": 178, "pn": "org/aspectj"}
 {"dn": 167, "lib": "da;Google Gson;https://github.com/google/gson", "sp": "com/google/gson/internal", "bh": 973814, "btc": 559, "btn": 178, "pn": "com/google/gson"}
 {"dn": 12353, "lib": "ad;millennialmedia;http://www.millennialmedia.com/", "sp": "com/millennialmedia/google/gson/internal", "bh": 927702, "btc": 558, "btn": 178, "pn": "com/millennialmedia"}
 {"dn": 179, "lib": "", "sp": "org/brickred/socialauth/android", "bh": 103236, "btc": 550, "btn": 178}
@@ -7055,7 +7055,7 @@
 {"dn": 116, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry/org/apache/avro", "bh": 44806, "btc": 625, "btn": 177, "pn": "com/flurry"}
 {"dn": 314, "lib": "da;javax;", "sp": "javax/jmdns/impl/tasks", "bh": 747185, "btc": 592, "btn": 177, "pn": "javax"}
 {"dn": 116, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay", "bh": 790615, "btc": 591, "btn": 177, "pn": "org/osmdroid"}
-{"dn": 232, "lib": "", "sp": "org/aspectj", "bh": 236517, "btc": 591, "btn": 177}
+{"dn": 232, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj", "bh": 236517, "btc": 591, "btn": 177, "pn": "org/aspectj"}
 {"dn": 208, "lib": "", "sp": "org/zywx/wbpalmstar/plugin/uexmultiHttp", "bh": 592630, "btc": 564, "btn": 177}
 {"dn": 122, "lib": "da;Appcelerator;http://www.appcelerator.org/", "sp": "org/appcelerator/titanium/view", "bh": 62532, "btc": 546, "btn": 177, "pn": "org/appcelerator"}
 {"dn": 126, "lib": "ad;Baidu Mobile Ads;https://developer.baidu.com/", "sp": "com/baidu/mobads", "bh": 454842, "btc": 536, "btn": 177, "pn": "com/baidu/mobads"}
@@ -10660,7 +10660,7 @@
 {"dn": 143, "lib": "ut;Amazon;", "sp": "com/amazon", "bh": 828226, "btc": 683, "btn": 103, "pn": "com/amazon"}
 {"dn": 178, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/asn1", "bh": 741790, "btc": 619, "btn": 103, "pn": "org/bouncycastle"}
 {"dn": 154, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/services/sqs", "bh": 440320, "btc": 598, "btn": 103, "pn": "com/amazonaws"}
-{"dn": 573, "lib": "", "sp": "org/aspectj/internal/lang/reflect", "bh": 965613, "btc": 585, "btn": 103}
+{"dn": 573, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj/internal/lang/reflect", "bh": 965613, "btc": 585, "btn": 103, "pn": "org/aspectj"}
 {"dn": 436, "lib": "da;ActionBarSherlock;http://actionbarsherlock.com/", "sp": "com/actionbarsherlock/internal/nineoldandroids", "bh": 966535, "btc": 579, "btn": 103, "pn": "com/actionbarsherlock"}
 {"dn": 687, "lib": "", "sp": "com/crittercism/app", "bh": 977019, "btc": 576, "btn": 103}
 {"dn": 232, "lib": "", "sp": "com/crittercism/app", "bh": 964803, "btc": 571, "btn": 103}
@@ -11473,7 +11473,7 @@
 {"dn": 134, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 536888, "btc": 301, "btn": 94, "pn": "com/facebook"}
 {"dn": 696, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 536887, "btc": 300, "btn": 94, "pn": "com/facebook"}
 {"dn": 102, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 536737, "btc": 300, "btn": 94, "pn": "com/facebook"}
-{"dn": 314, "lib": "", "sp": "org/aspectj/runtime", "bh": 973037, "btc": 299, "btn": 94}
+{"dn": 314, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj/runtime", "bh": 973037, "btc": 299, "btn": 94, "pn": "org/aspectj"}
 {"dn": 608, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 536886, "btc": 299, "btn": 94, "pn": "com/facebook"}
 {"dn": 625, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 536885, "btc": 298, "btn": 94, "pn": "com/facebook"}
 {"dn": 5248, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 536884, "btc": 297, "btn": 94, "pn": "com/facebook"}
@@ -11570,7 +11570,7 @@
 {"dn": 6010, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/impl/auth", "bh": 659486, "btc": 302, "btn": 93, "pn": "org/apache/http"}
 {"dn": 446, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/impl/auth", "bh": 659359, "btc": 302, "btn": 93, "pn": "org/apache/http"}
 {"dn": 311, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 531618, "btc": 297, "btn": 93, "pn": "com/facebook"}
-{"dn": 232, "lib": "", "sp": "org/aspectj/runtime", "bh": 962525, "btc": 296, "btn": 93}
+{"dn": 232, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj/runtime", "bh": 962525, "btc": 296, "btn": 93, "pn": "org/aspectj"}
 {"dn": 4223, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/a", "bh": 531616, "btc": 295, "btn": 93, "pn": "com/facebook"}
 {"dn": 8274, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 531615, "btc": 294, "btn": 93, "pn": "com/facebook"}
 {"dn": 180, "lib": "", "sp": "net/bluumi/CHOPP/customcontrols", "bh": 471042, "btc": 290, "btn": 93}
@@ -16645,7 +16645,7 @@
 {"dn": 626, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/lang3/math", "bh": 640809, "btc": 236, "btn": 52, "pn": "org/apache/commons"}
 {"dn": 112, "lib": "", "sp": "com/socialize/notifications", "bh": 252437, "btc": 234, "btn": 52}
 {"dn": 352, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/lang3/math", "bh": 624502, "btc": 226, "btn": 52, "pn": "org/apache/commons"}
-{"dn": 547, "lib": "", "sp": "org/aspectj/runtime/reflect", "bh": 717407, "btc": 222, "btn": 52}
+{"dn": 547, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj/runtime/reflect", "bh": 717407, "btc": 222, "btn": 52, "pn": "org/aspectj"}
 {"dn": 104, "lib": "", "sp": "com/socialize/notifications", "bh": 261059, "btc": 220, "btn": 52}
 {"dn": 302, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/b", "bh": 254506, "btc": 217, "btn": 52, "pn": "com/startapp"}
 {"dn": 873, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/b", "bh": 255587, "btc": 216, "btn": 52, "pn": "com/startapp"}
@@ -16688,7 +16688,7 @@
 {"dn": 2827, "lib": "", "sp": "org/springframework/core/io", "bh": 354299, "btc": 149, "btn": 52}
 {"dn": 110, "lib": "", "sp": "org/springframework/core/io", "bh": 354287, "btc": 149, "btn": 52}
 {"dn": 1184, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/client/android/b", "bh": 392374, "btc": 148, "btn": 52, "pn": "com/google/zxing"}
-{"dn": 341, "lib": "", "sp": "org/aspectj/runtime/internal", "bh": 365948, "btc": 147, "btn": 52}
+{"dn": 341, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj/runtime/internal", "bh": 365948, "btc": 147, "btn": 52, "pn": "org/aspectj"}
 {"dn": 132, "lib": "da;Vercoop;http://www.vercoop.com/", "sp": "com/vercoop/gcm", "bh": 272145, "btc": 147, "btn": 52, "pn": "com/vercoop"}
 {"dn": 191, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/client/androidWY/camera", "bh": 396069, "btc": 145, "btn": 52, "pn": "com/google/zxing"}
 {"dn": 3600, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/commons/uid", "bh": 203380, "btc": 145, "btn": 52, "pn": "com/inmobi"}
@@ -16863,7 +16863,7 @@
 {"dn": 261, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/datamatrix", "bh": 210439, "btc": 147, "btn": 51, "pn": "com/google/zxing"}
 {"dn": 111, "lib": "", "sp": "com/rhomobile/rhodes/datetime", "bh": 865073, "btc": 145, "btn": 51}
 {"dn": 132, "lib": "", "sp": "com/free/cast/listen/one/service", "bh": 306171, "btc": 145, "btn": 51}
-{"dn": 246, "lib": "", "sp": "org/aspectj/runtime/internal", "bh": 355436, "btc": 144, "btn": 51}
+{"dn": 246, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj/runtime/internal", "bh": 355436, "btc": 144, "btn": 51, "pn": "org/aspectj"}
 {"dn": 125, "lib": "", "sp": "com/Tobit/android/slitte/json", "bh": 273545, "btc": 143, "btn": 51}
 {"dn": 1171, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/datamatrix", "bh": 203976, "btc": 143, "btn": 51, "pn": "com/google/zxing"}
 {"dn": 11831, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/widgets/calendar", "bh": 134262, "btc": 141, "btn": 51, "pn": "com/biznessapps"}
@@ -20276,7 +20276,7 @@
 {"dn": 220, "lib": "", "sp": "reader/adapters", "bh": 116911, "btc": 129, "btn": 35}
 {"dn": 109, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/multiplayer", "bh": 149809, "btc": 128, "btn": 35, "pn": "com/google/android/gms"}
 {"dn": 810, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/g", "bh": 154123, "btc": 127, "btn": 35, "pn": "com/google/zxing"}
-{"dn": 572, "lib": "", "sp": "org/aspectj/lang", "bh": 280258, "btc": 126, "btn": 35}
+{"dn": 572, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj/lang", "bh": 280258, "btc": 126, "btn": 35, "pn": "org/aspectj"}
 {"dn": 231, "lib": "", "sp": "com/google/code/microlog4android/format", "bh": 301271, "btc": 124, "btn": 35}
 {"dn": 4647, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive", "bh": 161320, "btc": 121, "btn": 35, "pn": "com/google/android/gms"}
 {"dn": 374, "lib": "", "sp": "net/manageapps/models", "bh": 135277, "btc": 121, "btn": 35}
@@ -23459,7 +23459,7 @@
 {"dn": 484, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry/org/apache/avro/data", "bh": 76800, "btc": 51, "btn": 23, "pn": "com/flurry"}
 {"dn": 691, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/media/android", "bh": 52390, "btc": 51, "btn": 23, "pn": "ti/modules/titanium"}
 {"dn": 374, "lib": "", "sp": "org/osmdroid/contributor/util", "bh": 166398, "btc": 50, "btn": 23}
-{"dn": 352, "lib": "", "sp": "org/aspectj/runtime/internal/cflowstack", "bh": 133145, "btc": 50, "btn": 23}
+{"dn": 352, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj/runtime/internal/cflowstack", "bh": 133145, "btc": 50, "btn": 23, "pn": "org/aspectj"}
 {"dn": 169, "lib": "", "sp": "com/Tobit/android/barcode/views", "bh": 129138, "btc": 50, "btn": 23}
 {"dn": 150, "lib": "", "sp": "io/presage/b", "bh": 106144, "btc": 50, "btn": 23}
 {"dn": 1304, "lib": "", "sp": "com/readystatesoftware/mapviewballoons", "bh": 52270, "btc": 50, "btn": 23}
@@ -23736,7 +23736,7 @@
 {"dn": 126, "lib": "", "sp": "com/ggbook/l", "bh": 84706, "btc": 49, "btn": 22}
 {"dn": 151, "lib": "ui;goodbarber;http://www.goodbarber.com/", "sp": "com/goodbarber/v2/utils/media", "bh": 78142, "btc": 49, "btn": 22, "pn": "com/goodbarber"}
 {"dn": 358, "lib": "", "sp": "ch/qos/logback/classic/android", "bh": 222093, "btc": 48, "btn": 22}
-{"dn": 279, "lib": "", "sp": "org/aspectj/runtime/internal/cflowstack", "bh": 126281, "btc": 48, "btn": 22}
+{"dn": 279, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj/runtime/internal/cflowstack", "bh": 126281, "btc": 48, "btn": 22, "pn": "org/aspectj"}
 {"dn": 675, "lib": "ma;Parse.com;https://parse.com/docs/cn/android/guide", "sp": "com/parse/auth", "bh": 122860, "btc": 48, "btn": 22, "pn": "com/parse"}
 {"dn": 154, "lib": "ad;Adtech;http://www.adtech.com/", "sp": "com/adtech/mobilesdk/publisher/configuration", "bh": 95839, "btc": 48, "btn": 22, "pn": "com/adtech"}
 {"dn": 140, "lib": "ui;goodbarber;http://www.goodbarber.com/", "sp": "com/goodbarber/v2/utils/media", "bh": 75333, "btc": 48, "btn": 22, "pn": "com/goodbarber"}
@@ -27694,7 +27694,7 @@
 {"dn": 612, "lib": "", "sp": "I", "bh": 45103, "btc": 17, "btn": 10}
 {"dn": 176, "lib": "", "sp": "com/logicimmo/whitelabellib/ui/home", "bh": 42195, "btc": 17, "btn": 10}
 {"dn": 1580, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app640404/cache/remote", "bh": 29343, "btc": 17, "btn": 10, "pn": "com/appmakr"}
-{"dn": 630, "lib": "", "sp": "org/aspectj/lang/reflect", "bh": 29150, "btc": 17, "btn": 10}
+{"dn": 630, "lib": "da;AspectJ;https://eclipse.org/aspectj/", "sp": "org/aspectj/lang/reflect", "bh": 29150, "btc": 17, "btn": 10, "pn": "org/aspectj"}
 {"dn": 466, "lib": "", "sp": "com/admarvel/android/util", "bh": 28420, "btc": 17, "btn": 10}
 {"dn": 112, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova/statusbar", "bh": 25023, "btc": 17, "btn": 10, "pn": "org/apache/cordova"}
 {"dn": 221, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/library/tracking", "bh": 21407, "btc": 17, "btn": 10, "pn": "com/aviary"}
