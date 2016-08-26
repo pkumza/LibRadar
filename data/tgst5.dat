@@ -21765,7 +21765,7 @@
 {"dn": 230, "lib": "", "sp": "com/googlecode/flickrjandroid/photosets", "bh": 335605, "btc": 173, "btn": 29}
 {"dn": 231, "lib": "ge;cocos2D;http://www.cocos2d-x.org/", "sp": "org/cocos2d/particlesystem", "bh": 123218, "btc": 170, "btn": 29, "pn": "org/cocos2d"}
 {"dn": 403, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/files", "bh": 109470, "btc": 169, "btn": 29, "pn": "com/badlogic"}
-{"dn": 125, "lib": "", "sp": "org/apache/tools/ant/taskdefs/optional/depend/constantpool", "bh": 551692, "btc": 167, "btn": 29}
+{"dn": 125, "lib": "da;Apache Ant Core;http://ant.apache.org/", "sp": "org/apache/tools/ant/taskdefs/optional/depend/constantpool", "bh": 551692, "btc": 167, "btn": 29, "pn": "org/apache/tools/ant"}
 {"dn": 108, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/databind/jsontype/impl", "bh": 94991, "btc": 163, "btn": 29, "pn": "com/fasterxml"}
 {"dn": 2402, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/a", "bh": 242952, "btc": 153, "btn": 29, "pn": "com/j256"}
 {"dn": 176, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/misc", "bh": 242945, "btc": 153, "btn": 29, "pn": "com/j256"}
@@ -22861,7 +22861,7 @@
 {"dn": 272, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/physics/box2d", "bh": 77743, "btc": 89, "btn": 25, "pn": "com/badlogic"}
 {"dn": 337, "lib": "", "sp": "org/afree/chart/util", "bh": 665379, "btc": 88, "btn": 25}
 {"dn": 142, "lib": "", "sp": "c", "bh": 326117, "btc": 88, "btn": 25}
-{"dn": 122, "lib": "", "sp": "org/apache/tools/ant/taskdefs/optional/ccm", "bh": 227159, "btc": 88, "btn": 25}
+{"dn": 122, "lib": "da;Apache Ant Core;http://ant.apache.org/", "sp": "org/apache/tools/ant/taskdefs/optional/ccm", "bh": 227159, "btc": 88, "btn": 25, "pn": "org/apache/tools/ant"}
 {"dn": 314, "lib": "da;CommonsWare MergeAdapter;https://github.com/commonsguy/cwac-merge", "sp": "com/commonsware/cwac/merge", "bh": 312042, "btc": 87, "btn": 25, "pn": "com/commonsware/cwac/merge"}
 {"dn": 8494, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/network/socket", "bh": 210646, "btc": 87, "btn": 25, "pn": "ti/modules/titanium"}
 {"dn": 301, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/network/socket", "bh": 210643, "btc": 87, "btn": 25, "pn": "ti/modules/titanium"}
@@ -26332,7 +26332,7 @@
 {"dn": 1276, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/asn1/pkcs", "bh": 259559, "btc": 139, "btn": 13, "pn": "org/bouncycastle"}
 {"dn": 182, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/examples/account", "bh": 172766, "btc": 137, "btn": 13, "pn": "twitter4j"}
 {"dn": 276, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/examples/account", "bh": 169553, "btc": 132, "btn": 13, "pn": "twitter4j"}
-{"dn": 126, "lib": "", "sp": "org/apache/tools/ant/taskdefs/optional/j2ee", "bh": 295841, "btc": 127, "btn": 13}
+{"dn": 126, "lib": "da;Apache Ant Core;http://ant.apache.org/", "sp": "org/apache/tools/ant/taskdefs/optional/j2ee", "bh": 295841, "btc": 127, "btn": 13, "pn": "org/apache/tools/ant"}
 {"dn": 7023, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/wallet", "bh": 113232, "btc": 127, "btn": 13, "pn": "com/google/android/gms"}
 {"dn": 2302, "lib": "da;Spongy Castle;http://rtyley.github.io/spongycastle/", "sp": "org/spongycastle/crypto/macs", "bh": 117479, "btc": 121, "btn": 13, "pn": "org/spongycastle"}
 {"dn": 107, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/asn1/pkcs", "bh": 264877, "btc": 120, "btn": 13, "pn": "org/bouncycastle"}
@@ -26369,7 +26369,7 @@
 {"dn": 4468, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/quest", "bh": 55920, "btc": 65, "btn": 13, "pn": "com/google/android/gms"}
 {"dn": 995, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/voms", "bh": 43391, "btc": 65, "btn": 13, "pn": "org/bouncycastle"}
 {"dn": 244, "lib": "da;Spongy Castle;http://rtyley.github.io/spongycastle/", "sp": "org/spongycastle/voms", "bh": 19056, "btc": 65, "btn": 13, "pn": "org/spongycastle"}
-{"dn": 140, "lib": "", "sp": "org/apache/tools/ant/dispatch", "bh": 126720, "btc": 63, "btn": 13}
+{"dn": 140, "lib": "da;Apache Ant Core;http://ant.apache.org/", "sp": "org/apache/tools/ant/dispatch", "bh": 126720, "btc": 63, "btn": 13, "pn": "org/apache/tools/ant"}
 {"dn": 114, "lib": "", "sp": "com/freshplanet/flurry/functions/analytics", "bh": 77937, "btc": 63, "btn": 13}
 {"dn": 236, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/quest", "bh": 55868, "btc": 63, "btn": 13, "pn": "com/google/android/gms"}
 {"dn": 342, "lib": "", "sp": "com/vividsolutions/jts/geomgraph/index", "bh": 76254, "btc": 61, "btn": 13}
@@ -26473,7 +26473,7 @@
 {"dn": 1761, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "org/codehaus/jackson/map/module", "bh": 24937, "btc": 30, "btn": 13, "pn": "org/codehaus"}
 {"dn": 105, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/c", "bh": 437465, "btc": 29, "btn": 13, "pn": "android/support/v4"}
 {"dn": 26254, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/androidsdk/impl/a", "bh": 110287, "btc": 29, "btn": 13, "pn": "com/inmobi"}
-{"dn": 126, "lib": "", "sp": "org/apache/tools/ant/taskdefs/optional/extension/resolvers", "bh": 59093, "btc": 29, "btn": 13}
+{"dn": 126, "lib": "da;Apache Ant Core;http://ant.apache.org/", "sp": "org/apache/tools/ant/taskdefs/optional/extension/resolvers", "bh": 59093, "btc": 29, "btn": 13, "pn": "org/apache/tools/ant"}
 {"dn": 593, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/crypto/encodings", "bh": 46299, "btc": 29, "btn": 13, "pn": "org/bouncycastle"}
 {"dn": 837, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/util/algorithm", "bh": 37058, "btc": 29, "btn": 13, "pn": "org/andengine"}
 {"dn": 579, "lib": "da;Yixia;http://www.yixia.com/", "sp": "com/yixia/vitamio/pusher", "bh": 31321, "btc": 29, "btn": 13, "pn": "com/yixia"}
@@ -26630,7 +26630,7 @@
 {"dn": 205, "lib": "", "sp": "com/db4o/internal/threading", "bh": 42320, "btc": 16, "btn": 13}
 {"dn": 2453, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/adm", "bh": 36330, "btc": 16, "btn": 13, "pn": "com/conduit/app"}
 {"dn": 101, "lib": "", "sp": "junit/extensions", "bh": 32476, "btc": 16, "btn": 13}
-{"dn": 156, "lib": "", "sp": "org/apache/tools/ant/types/spi", "bh": 30075, "btc": 16, "btn": 13}
+{"dn": 156, "lib": "da;Apache Ant Core;http://ant.apache.org/", "sp": "org/apache/tools/ant/types/spi", "bh": 30075, "btc": 16, "btn": 13, "pn": "org/apache/tools/ant"}
 {"dn": 129, "lib": "", "sp": "com/google/api/client/testing/util", "bh": 110448, "btc": 15, "btn": 13}
 {"dn": 427, "lib": "", "sp": "com/gamesalad/common/plugins", "bh": 44297, "btc": 15, "btn": 13}
 {"dn": 1349, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/c/h", "bh": 39750, "btc": 15, "btn": 13, "pn": "org/andengine"}
@@ -27815,7 +27815,7 @@
 {"dn": 512, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/services/cloudwatch/model/transform", "bh": 79865, "btc": 207, "btn": 9, "pn": "com/amazonaws"}
 {"dn": 110, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/examples/list", "bh": 501569, "btc": 194, "btn": 9, "pn": "twitter4j"}
 {"dn": 364, "lib": "", "sp": "org/mapsforge/map/reader/header", "bh": 9618, "btc": 174, "btn": 9}
-{"dn": 126, "lib": "", "sp": "org/apache/tools/ant/taskdefs/optional/clearcase", "bh": 397292, "btc": 166, "btn": 9}
+{"dn": 126, "lib": "da;Apache Ant Core;http://ant.apache.org/", "sp": "org/apache/tools/ant/taskdefs/optional/clearcase", "bh": 397292, "btc": 166, "btn": 9, "pn": "org/apache/tools/ant"}
 {"dn": 117, "lib": "da;Logback;http://logback.qos.ch/", "sp": "ch/qos/logback/classic/db", "bh": 36363, "btc": 163, "btn": 9, "pn": "ch/qos/logback"}
 {"dn": 734, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/asn1/teletrust", "bh": 229048, "btc": 160, "btn": 9, "pn": "org/bouncycastle"}
 {"dn": 595, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/services/simpledb/model/a", "bh": 48253, "btc": 156, "btn": 9, "pn": "com/amazonaws"}
@@ -28070,7 +28070,7 @@
 {"dn": 104, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/maps/internal", "bh": 65767, "btc": 12, "btn": 9, "pn": "com/google/android/gms"}
 {"dn": 285, "lib": "da;Mashape Relocation API;", "sp": "com/mashape/relocation/conn/params", "bh": 59668, "btc": 12, "btn": 9, "pn": "com/mashape/relocation"}
 {"dn": 1304, "lib": "ut;anywheresoftware;", "sp": "anywheresoftware/b4a/keywords/constants", "bh": 58386, "btc": 12, "btn": 9, "pn": "anywheresoftware"}
-{"dn": 101, "lib": "", "sp": "org/apache/tools/ant/util/facade", "bh": 57492, "btc": 12, "btn": 9}
+{"dn": 101, "lib": "da;Apache Ant Core;http://ant.apache.org/", "sp": "org/apache/tools/ant/util/facade", "bh": 57492, "btc": 12, "btn": 9, "pn": "org/apache/tools/ant"}
 {"dn": 323, "lib": "da;Apache Log4j;http://logging.apache.org/log4j/2.x/", "sp": "org/apache/log4j/or/sax", "bh": 52097, "btc": 12, "btn": 9, "pn": "org/apache/log4j"}
 {"dn": 478, "lib": "da;Apache Log4j;http://logging.apache.org/log4j/2.x/", "sp": "org/apache/log4j/h/b", "bh": 50747, "btc": 12, "btn": 9, "pn": "org/apache/log4j"}
 {"dn": 151, "lib": "", "sp": "com/applift/playads/ui/widget/wheel/adapter", "bh": 31404, "btc": 12, "btn": 9}
@@ -28577,7 +28577,7 @@
 {"dn": 355, "lib": "da;AppMachine App Generator;http://www.appmachine.com/", "sp": "appmachine/controls/actionbar", "bh": 29040, "btc": 30, "btn": 7, "pn": "appmachine"}
 {"dn": 299, "lib": "", "sp": "com/memetix/mst/detect", "bh": 23380, "btc": 30, "btn": 7}
 {"dn": 610, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/achievement", "bh": 22227, "btc": 30, "btn": 7, "pn": "com/google/android/gms"}
-{"dn": 126, "lib": "", "sp": "org/apache/tools/ant/taskdefs/optional/sos", "bh": 72829, "btc": 29, "btn": 7}
+{"dn": 126, "lib": "da;Apache Ant Core;http://ant.apache.org/", "sp": "org/apache/tools/ant/taskdefs/optional/sos", "bh": 72829, "btc": 29, "btn": 7, "pn": "org/apache/tools/ant"}
 {"dn": 7159, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics/a", "bh": 51306, "btc": 29, "btn": 7, "pn": "com/google/analytics"}
 {"dn": 166, "lib": "ad;Adtech;http://www.adtech.com/", "sp": "com/adtech/mobilesdk/publisher/mediation/greystripe", "bh": 33198, "btc": 29, "btn": 7, "pn": "com/adtech"}
 {"dn": 109, "lib": "", "sp": "com/sessionm/api/ext", "bh": 69181, "btc": 28, "btn": 7}
