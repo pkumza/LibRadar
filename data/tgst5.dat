@@ -4533,8 +4533,8 @@
 {"dn": 238, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/widget", "bh": 908252, "btc": 934, "btn": 278, "pn": "android/support/v4"}
 {"dn": 180, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/widget", "bh": 863104, "btc": 934, "btn": 278, "pn": "android/support/v4"}
 {"dn": 482, "lib": "", "sp": "jp/basicinc/gamefeat/android/sdk", "bh": 344659, "btc": 853, "btn": 278}
-{"dn": 4459, "lib": "ut;Tapit;Tapit NFC\u6280\u672f", "sp": "com/tapit", "bh": 705938, "btc": 805, "btn": 278, "pn": "com/tapit"}
-{"dn": 443, "lib": "ut;Tapit;Tapit NFC\u6280\u672f", "sp": "com/tapit", "bh": 705930, "btc": 805, "btn": 278, "pn": "com/tapit"}
+{"dn": 4459, "lib": "ut;Tapit;Tapit NFC", "sp": "com/tapit", "bh": 705938, "btc": 805, "btn": 278, "pn": "com/tapit"}
+{"dn": 443, "lib": "ut;Tapit;Tapit NFC", "sp": "com/tapit", "bh": 705930, "btc": 805, "btn": 278, "pn": "com/tapit"}
 {"dn": 537, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite", "bh": 274615, "btc": 790, "btn": 278, "pn": "com/j256"}
 {"dn": 124, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite", "bh": 271516, "btc": 770, "btn": 278, "pn": "com/j256"}
 {"dn": 19753, "lib": "da;ActionBarSherlock;http://actionbarsherlock.com/", "sp": "com/actionbarsherlock/widget", "bh": 825549, "btc": 731, "btn": 278, "pn": "com/actionbarsherlock"}
@@ -4556,8 +4556,8 @@
 {"dn": 143, "lib": "", "sp": "com/wiyun/engine/nodes", "bh": 372329, "btc": 1099, "btn": 277}
 {"dn": 727, "lib": "ut;Papaya;http://en.papayamobile.com/", "sp": "com/papaya/view", "bh": 848004, "btc": 1060, "btn": 277, "pn": "com/papaya"}
 {"dn": 212, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/h", "bh": 490605, "btc": 865, "btn": 277, "pn": "com/startapp"}
-{"dn": 4459, "lib": "ut;Tapit;Tapit NFC\u6280\u672f", "sp": "com/tapit/adview", "bh": 756308, "btc": 844, "btn": 277, "pn": "com/tapit"}
-{"dn": 443, "lib": "ut;Tapit;Tapit NFC\u6280\u672f", "sp": "com/tapit/adview", "bh": 756300, "btc": 844, "btn": 277, "pn": "com/tapit"}
+{"dn": 4459, "lib": "ut;Tapit;Tapit NFC", "sp": "com/tapit/adview", "bh": 756308, "btc": 844, "btn": 277, "pn": "com/tapit"}
+{"dn": 443, "lib": "ut;Tapit;Tapit NFC", "sp": "com/tapit/adview", "bh": 756300, "btc": 844, "btn": 277, "pn": "com/tapit"}
 {"dn": 293, "lib": "", "sp": "net/daum/adam/publisher/impl/b", "bh": 98853, "btc": 758, "btn": 277}
 {"dn": 207, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite", "bh": 234566, "btc": 754, "btn": 277, "pn": "com/j256"}
 {"dn": 143, "lib": "da;Appbrain;http://www.appbrain.com/", "sp": "com/appbrain", "bh": 778556, "btc": 696, "btn": 277, "pn": "com/appbrain"}
@@ -6525,8 +6525,8 @@
 {"dn": 470, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/net/ftp", "bh": 936514, "btc": 799, "btn": 194, "pn": "org/apache/commons"}
 {"dn": 200, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/io", "bh": 886154, "btc": 747, "btn": 194, "pn": "com/google/common"}
 {"dn": 127, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/androidsdk/ai/controller", "bh": 8869, "btc": 735, "btn": 194, "pn": "com/inmobi"}
-{"dn": 7831, "lib": "da;jnlua;Java Lua \u4e92\u8054\u5de5\u5177", "sp": "com/naef/jnlua", "bh": 531851, "btc": 680, "btn": 194, "pn": "com/naef/jnlua"}
-{"dn": 325, "lib": "da;jnlua;Java Lua \u4e92\u8054\u5de5\u5177", "sp": "com/naef/jnlua", "bh": 531805, "btc": 680, "btn": 194, "pn": "com/naef/jnlua"}
+{"dn": 7831, "lib": "da;jnlua;Java Lua", "sp": "com/naef/jnlua", "bh": 531851, "btc": 680, "btn": 194, "pn": "com/naef/jnlua"}
+{"dn": 325, "lib": "da;jnlua;Java Lua", "sp": "com/naef/jnlua", "bh": 531805, "btc": 680, "btn": 194, "pn": "com/naef/jnlua"}
 {"dn": 330, "lib": "da;retrofit RESTful Library;https://square.github.io/retrofit/", "sp": "retrofit", "bh": 93467, "btc": 663, "btn": 194, "pn": "retrofit"}
 {"dn": 148, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal", "bh": 736338, "btc": 645, "btn": 194, "pn": "twitter4j"}
 {"dn": 920, "lib": "da;Jsoup;http://jsoup.org/", "sp": "org/jsoup", "bh": 362505, "btc": 580, "btn": 194, "pn": "org/jsoup"}
@@ -6619,8 +6619,8 @@
 {"dn": 113, "lib": "", "sp": "com/tencent/qc/stat", "bh": 497142, "btc": 711, "btn": 191}
 {"dn": 294, "lib": "", "sp": "com/gpsmycity/android/u271/attractions", "bh": 57721, "btc": 703, "btn": 191}
 {"dn": 778, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/io", "bh": 684005, "btc": 700, "btn": 191, "pn": "com/google/common"}
-{"dn": 1340, "lib": "da;jnlua;Java Lua \u4e92\u8054\u5de5\u5177", "sp": "com/naef/jnlua", "bh": 535819, "btc": 681, "btn": 191, "pn": "com/naef/jnlua"}
-{"dn": 145, "lib": "da;jnlua;Java Lua \u4e92\u8054\u5de5\u5177", "sp": "com/naef/jnlua", "bh": 535773, "btc": 681, "btn": 191, "pn": "com/naef/jnlua"}
+{"dn": 1340, "lib": "da;jnlua;Java Lua", "sp": "com/naef/jnlua", "bh": 535819, "btc": 681, "btn": 191, "pn": "com/naef/jnlua"}
+{"dn": 145, "lib": "da;jnlua;Java Lua", "sp": "com/naef/jnlua", "bh": 535773, "btc": 681, "btn": 191, "pn": "com/naef/jnlua"}
 {"dn": 108, "lib": "", "sp": "com/firebase/client", "bh": 218908, "btc": 601, "btn": 191}
 {"dn": 261, "lib": "", "sp": "com/thoughtworks/xstream/core/util", "bh": 881825, "btc": 550, "btn": 191}
 {"dn": 4810, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/androidsdk/impl", "bh": 995225, "btc": 547, "btn": 191, "pn": "com/inmobi"}
@@ -15573,8 +15573,8 @@
 {"dn": 1479, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/commons/analytics/util", "bh": 248581, "btc": 131, "btn": 59, "pn": "com/inmobi"}
 {"dn": 121, "lib": "", "sp": "com/longevitysoft/android/xml/plist/domain", "bh": 318770, "btc": 129, "btn": 59}
 {"dn": 341, "lib": "", "sp": "net/miidi/ad/banner/b", "bh": 365642, "btc": 127, "btn": 59}
-{"dn": 9171, "lib": "da;jnlua;Java Lua \u4e92\u8054\u5de5\u5177", "sp": "com/naef/jnlua/script", "bh": 790776, "btc": 124, "btn": 59, "pn": "com/naef/jnlua"}
-{"dn": 471, "lib": "da;jnlua;Java Lua \u4e92\u8054\u5de5\u5177", "sp": "com/naef/jnlua/script", "bh": 790751, "btc": 124, "btn": 59, "pn": "com/naef/jnlua"}
+{"dn": 9171, "lib": "da;jnlua;Java Lua", "sp": "com/naef/jnlua/script", "bh": 790776, "btc": 124, "btn": 59, "pn": "com/naef/jnlua"}
+{"dn": 471, "lib": "da;jnlua;Java Lua", "sp": "com/naef/jnlua/script", "bh": 790751, "btc": 124, "btn": 59, "pn": "com/naef/jnlua"}
 {"dn": 125, "lib": "pa;pocketchange;http://www.pocketchange.com/", "sp": "com/pocketchange/android/content", "bh": 162582, "btc": 124, "btn": 59, "pn": "com/pocketchange/"}
 {"dn": 7018, "lib": "ad;Adfonic Mobile Ads;http://www.adfonic.com", "sp": "com/adfonic/android/api/request", "bh": 204310, "btc": 122, "btn": 59, "pn": "com/adfonic"}
 {"dn": 649, "lib": "ad;Adfonic Mobile Ads;http://www.adfonic.com", "sp": "com/adfonic/android/api/request", "bh": 204309, "btc": 122, "btn": 59, "pn": "com/adfonic"}
@@ -18804,7 +18804,7 @@
 {"dn": 840, "lib": "ut;anywheresoftware;", "sp": "anywheresoftware/b4a/objects/collections", "bh": 195242, "btc": 73, "btn": 42, "pn": "anywheresoftware"}
 {"dn": 11970, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader/cache/disc", "bh": 165219, "btc": 73, "btn": 42, "pn": "com/nostra13"}
 {"dn": 158, "lib": "", "sp": "com/wBESTWAPIN/FullscreenBanner", "bh": 163598, "btc": 71, "btn": 42}
-{"dn": 112, "lib": "ut;Tapit;Tapit NFC\u6280\u672f", "sp": "com/tapit/vastsdk/player", "bh": 178003, "btc": 70, "btn": 42, "pn": "com/tapit"}
+{"dn": 112, "lib": "ut;Tapit;Tapit NFC", "sp": "com/tapit/vastsdk/player", "bh": 178003, "btc": 70, "btn": 42, "pn": "com/tapit"}
 {"dn": 176, "lib": "", "sp": "com/darvds/ribbonmenu", "bh": 160500, "btc": 69, "btn": 42}
 {"dn": 2712, "lib": "", "sp": "com/wAfricaTVLiveAmharic/e", "bh": 158985, "btc": 69, "btn": 42}
 {"dn": 217, "lib": "", "sp": "com/sponsorpay/publisher/a", "bh": 133842, "btc": 69, "btn": 42}
@@ -23239,7 +23239,7 @@
 {"dn": 186, "lib": "", "sp": "databases/json", "bh": 86714, "btc": 45, "btn": 24}
 {"dn": 1587, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader/utils", "bh": 58532, "btc": 45, "btn": 24, "pn": "com/nostra13"}
 {"dn": 361, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/data/apt", "bh": 43313, "btc": 45, "btn": 24, "pn": "com/google/gdata"}
-{"dn": 9644, "lib": "da;jnlua;Java Lua \u4e92\u8054\u5de5\u5177", "sp": "com/naef/jnlua/console", "bh": 128084, "btc": 44, "btn": 24, "pn": "com/naef/jnlua"}
+{"dn": 9644, "lib": "da;jnlua;Java Lua", "sp": "com/naef/jnlua/console", "bh": 128084, "btc": 44, "btn": 24, "pn": "com/naef/jnlua"}
 {"dn": 2033, "lib": "ut;Amazon;", "sp": "com/amazon/identity/auth/device/g", "bh": 113889, "btc": 44, "btn": 24, "pn": "com/amazon"}
 {"dn": 255, "lib": "", "sp": "org/emdev/utils/listeners", "bh": 82474, "btc": 44, "btn": 24}
 {"dn": 139, "lib": "", "sp": "dk/publishonline/mandieselapp/debug", "bh": 82466, "btc": 44, "btn": 24}
@@ -24208,7 +24208,7 @@
 {"dn": 369, "lib": "", "sp": "org/yaml/snakeyaml/parser", "bh": 57891, "btc": 103, "btn": 20}
 {"dn": 7957, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/logging", "bh": 304010, "btc": 102, "btn": 20, "pn": "twitter4j"}
 {"dn": 164, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/logging", "bh": 304008, "btc": 102, "btn": 20, "pn": "twitter4j"}
-{"dn": 5123, "lib": "ut;Tapit;Tapit NFC\u6280\u672f", "sp": "com/tapit/adview/a", "bh": 72467, "btc": 102, "btn": 20, "pn": "com/tapit"}
+{"dn": 5123, "lib": "ut;Tapit;Tapit NFC", "sp": "com/tapit/adview/a", "bh": 72467, "btc": 102, "btn": 20, "pn": "com/tapit"}
 {"dn": 788, "lib": "", "sp": "com/qualcomm/vuforia", "bh": 117009, "btc": 100, "btn": 20}
 {"dn": 374, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/logging", "bh": 296427, "btc": 99, "btn": 20, "pn": "twitter4j"}
 {"dn": 118, "lib": "", "sp": "org/krysalis/barcode4j/impl/code39", "bh": 239672, "btc": 99, "btn": 20}
@@ -26115,7 +26115,7 @@
 {"dn": 12238, "lib": "", "sp": "com/google/api/client/googleapis/services", "bh": 24342, "btc": 41, "btn": 14}
 {"dn": 130, "lib": "", "sp": "com/quantcast/json", "bh": 12482, "btc": 41, "btn": 14}
 {"dn": 482, "lib": "", "sp": "com/android/internal/telephony", "bh": 139724, "btc": 40, "btn": 14}
-{"dn": 9657, "lib": "da;jnlua;Java Lua \u4e92\u8054\u5de5\u5177", "sp": "com/naef/jnlua/util", "bh": 29954, "btc": 40, "btn": 14, "pn": "com/naef/jnlua"}
+{"dn": 9657, "lib": "da;jnlua;Java Lua", "sp": "com/naef/jnlua/util", "bh": 29954, "btc": 40, "btn": 14, "pn": "com/naef/jnlua"}
 {"dn": 2994, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/javax/xml/namespace", "bh": 28833, "btc": 40, "btn": 14, "pn": "com/amazonaws"}
 {"dn": 141, "lib": "", "sp": "org/oscim/theme/rule", "bh": 41420, "btc": 39, "btn": 14}
 {"dn": 160, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core/sym", "bh": 40069, "btc": 39, "btn": 14, "pn": "com/fasterxml"}
@@ -29220,7 +29220,7 @@
 {"dn": 185, "lib": "", "sp": "com/vividsolutions/jts/shape/random", "bh": 33399, "btc": 11, "btn": 5}
 {"dn": 3589, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/anddev/andengine/h/h", "bh": 24706, "btc": 11, "btn": 5, "pn": "org/anddev/andengine"}
 {"dn": 221, "lib": "da;Apache James Mail Enterprise Serve;http://james.apache.org", "sp": "org/apache/james/mime4j/util", "bh": 19027, "btc": 11, "btn": 5, "pn": "org/apache/james"}
-{"dn": 5133, "lib": "ut;Tapit;Tapit NFC\u6280\u672f", "sp": "com/tapit/a", "bh": 17714, "btc": 11, "btn": 5, "pn": "com/tapit"}
+{"dn": 5133, "lib": "ut;Tapit;Tapit NFC", "sp": "com/tapit/a", "bh": 17714, "btc": 11, "btn": 5, "pn": "com/tapit"}
 {"dn": 698, "lib": "da;Baidu APP SDK;https://developer.baidu.com/", "sp": "com/baidu/platform/comapi/a", "bh": 17314, "btc": 11, "btn": 5, "pn": "com/baidu/platform"}
 {"dn": 4319, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/re/a", "bh": 16434, "btc": 11, "btn": 5, "pn": "com/inmobi"}
 {"dn": 4772, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/g/h", "bh": 15788, "btc": 11, "btn": 5, "pn": "org/andengine"}
