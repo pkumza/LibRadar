@@ -5330,7 +5330,7 @@
 {"dn": 482, "lib": "", "sp": "com/am/adlib", "bh": 689378, "btc": 682, "btn": 237}
 {"dn": 1340, "lib": "", "sp": "com/reverbnation/artistapp/i431619/utils", "bh": 646830, "btc": 655, "btn": 237}
 {"dn": 279, "lib": "", "sp": "com/am/analytics", "bh": 328457, "btc": 632, "btn": 237}
-{"dn": 362, "lib": "", "sp": "org/yaml/snakeyaml", "bh": 902128, "btc": 631, "btn": 237}
+{"dn": 362, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml", "bh": 902128, "btc": 631, "btn": 237, "pn": "org/yaml/snakeyaml"}
 {"dn": 193, "lib": "", "sp": "net/sf/antcontrib", "bh": 565143, "btc": 523, "btn": 237}
 {"dn": 168, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader", "bh": 514831, "btc": 483, "btn": 237, "pn": "com/nostra13"}
 {"dn": 134, "lib": "", "sp": "org/oscim/app", "bh": 426520, "btc": 436, "btn": 237}
@@ -10549,7 +10549,7 @@
 {"dn": 185, "lib": "", "sp": "com/radiusnetworks/ibeacon", "bh": 907142, "btc": 583, "btn": 105}
 {"dn": 244, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/auth", "bh": 842048, "btc": 562, "btn": 105, "pn": "com/amazonaws"}
 {"dn": 123, "lib": "da;OkHttp;https://github.com/square/okhttp", "sp": "com/squareup/okhttp/internal/http", "bh": 321485, "btc": 562, "btn": 105, "pn": "com/squareup/okhttp"}
-{"dn": 413, "lib": "", "sp": "org/yaml/snakeyaml/constructor", "bh": 795430, "btc": 525, "btn": 105}
+{"dn": 413, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/constructor", "bh": 795430, "btc": 525, "btn": 105, "pn": "org/yaml/snakeyaml"}
 {"dn": 649, "lib": "ad;Adtech;http://www.adtech.com/", "sp": "com/adtech/mobilesdk/view/internal", "bh": 598811, "btc": 512, "btn": 105, "pn": "com/adtech"}
 {"dn": 162, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "org/codehaus/jackson/map/introspect", "bh": 825401, "btc": 494, "btn": 105, "pn": "org/codehaus"}
 {"dn": 2871, "lib": "", "sp": "com/qbiki/modules/barcodescanner", "bh": 822216, "btc": 473, "btn": 105}
@@ -16335,7 +16335,7 @@
 {"dn": 1323, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/webmodule", "bh": 215215, "btc": 118, "btn": 54, "pn": "com/conduit/app"}
 {"dn": 736, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova/geolocation", "bh": 238749, "btc": 117, "btn": 54, "pn": "org/apache/cordova"}
 {"dn": 257, "lib": "", "sp": "com/socialize/ui/slider", "bh": 211299, "btc": 117, "btn": 54}
-{"dn": 365, "lib": "", "sp": "org/yaml/snakeyaml/introspector", "bh": 366813, "btc": 116, "btn": 54}
+{"dn": 365, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/introspector", "bh": 366813, "btc": 116, "btn": 54, "pn": "org/yaml/snakeyaml"}
 {"dn": 307, "lib": "", "sp": "ringtones/codebhak/start", "bh": 239545, "btc": 116, "btn": 54}
 {"dn": 6759, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/ads", "bh": 143468, "btc": 115, "btn": 54, "pn": "com/google/android/gms"}
 {"dn": 471, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/ads", "bh": 139152, "btc": 115, "btn": 54, "pn": "com/google/android/gms"}
@@ -16472,7 +16472,7 @@
 {"dn": 103, "lib": "", "sp": "com/itextpdf/text/pdf/fonts", "bh": 287113, "btc": 219, "btn": 53}
 {"dn": 212, "lib": "", "sp": "com/purplebrain/giftiz/sdk/request", "bh": 370459, "btc": 216, "btn": 53}
 {"dn": 100, "lib": "", "sp": "com/socialize/notifications", "bh": 255227, "btc": 216, "btn": 53}
-{"dn": 363, "lib": "", "sp": "org/yaml/snakeyaml/representer", "bh": 332973, "btc": 211, "btn": 53}
+{"dn": 363, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/representer", "bh": 332973, "btc": 211, "btn": 53, "pn": "org/yaml/snakeyaml"}
 {"dn": 160, "lib": "da;Stericson RootTools;https://github.com/Stericson/RootTools", "sp": "com/stericson/RootTools/execution", "bh": 605297, "btc": 210, "btn": 53, "pn": "com/stericson/RootTools"}
 {"dn": 130, "lib": "ui;urbanairship;https://www.urbanairship.com/", "sp": "com/urbanairship/widget", "bh": 235912, "btc": 202, "btn": 53, "pn": "com/urbanairship"}
 {"dn": 107, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/commons/analytics/db", "bh": 397079, "btc": 194, "btn": 53, "pn": "com/inmobi"}
@@ -17174,7 +17174,7 @@
 {"dn": 473, "lib": "da;Dom4j;http://dom4j.sourceforge.net/", "sp": "org/dom4j/datatype", "bh": 724324, "btc": 477, "btn": 49, "pn": "org/dom4j"}
 {"dn": 434, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/oned", "bh": 658830, "btc": 472, "btn": 49, "pn": "com/google/zxing"}
 {"dn": 124, "lib": "", "sp": "com/xtify/asmack/org/jivesoftware/smack/packet", "bh": 331762, "btc": 453, "btn": 49}
-{"dn": 365, "lib": "", "sp": "org/yaml/snakeyaml/scanner", "bh": 392094, "btc": 429, "btn": 49}
+{"dn": 365, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/scanner", "bh": 392094, "btc": 429, "btn": 49, "pn": "org/yaml/snakeyaml"}
 {"dn": 334, "lib": "", "sp": "org/afree/data/xy", "bh": 883834, "btc": 414, "btn": 49}
 {"dn": 149, "lib": "", "sp": "com/bredir/boopsie/springville/ContactAPI", "bh": 160336, "btc": 387, "btn": 49}
 {"dn": 101, "lib": "", "sp": "org/restlet/engine/component", "bh": 954102, "btc": 371, "btn": 49}
@@ -18167,7 +18167,7 @@
 {"dn": 158, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core/json", "bh": 495015, "btc": 421, "btn": 44, "pn": "com/fasterxml"}
 {"dn": 192, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core/json", "bh": 491590, "btc": 416, "btn": 44, "pn": "com/fasterxml"}
 {"dn": 1485, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core/json", "bh": 491564, "btc": 415, "btn": 44, "pn": "com/fasterxml"}
-{"dn": 368, "lib": "", "sp": "org/yaml/snakeyaml/emitter", "bh": 601484, "btc": 391, "btn": 44}
+{"dn": 368, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/emitter", "bh": 601484, "btc": 391, "btn": 44, "pn": "org/yaml/snakeyaml"}
 {"dn": 181, "lib": "", "sp": "com/custom/lwp/AcquariumWithFish", "bh": 597857, "btc": 374, "btn": 44}
 {"dn": 383, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/wearable", "bh": 359110, "btc": 373, "btn": 44, "pn": "com/google/android/gms"}
 {"dn": 357, "lib": "da;Logback;http://logback.qos.ch/", "sp": "ch/qos/logback/core/joran/action", "bh": 498249, "btc": 357, "btn": 44, "pn": "ch/qos/logback"}
@@ -19856,7 +19856,7 @@
 {"dn": 200, "lib": "", "sp": "com/freewebtoon/android/webtoonparadise/totalapi", "bh": 245209, "btc": 98, "btn": 37}
 {"dn": 151, "lib": "", "sp": "com/zenmobi/zenlib/pipes/reader", "bh": 186281, "btc": 95, "btn": 37}
 {"dn": 129, "lib": "", "sp": "com/nd/android/pandareader/wxapi", "bh": 136896, "btc": 95, "btn": 37}
-{"dn": 369, "lib": "", "sp": "org/yaml/snakeyaml/extensions/compactnotation", "bh": 112732, "btc": 94, "btn": 37}
+{"dn": 369, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/extensions/compactnotation", "bh": 112732, "btc": 94, "btn": 37, "pn": "org/yaml/snakeyaml"}
 {"dn": 476, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/util/common/io", "bh": 295999, "btc": 93, "btn": 37, "pn": "com/google/gdata"}
 {"dn": 5888, "lib": "da;Appcelerator;http://www.appcelerator.org/", "sp": "org/appcelerator/kroll/runtime/v8", "bh": 132526, "btc": 93, "btn": 37, "pn": "org/appcelerator"}
 {"dn": 168, "lib": "da;Appcelerator;http://www.appcelerator.org/", "sp": "org/appcelerator/kroll/runtime/v8", "bh": 132524, "btc": 93, "btn": 37, "pn": "org/appcelerator"}
@@ -20532,7 +20532,7 @@
 {"dn": 660, "lib": "da;newrelic;https://newrelic.com/", "sp": "com/newrelic/agent/android/background", "bh": 639299, "btc": 137, "btn": 34, "pn": "com/newrelic"}
 {"dn": 347, "lib": "", "sp": "com/feelingk/lguiab/manager/net/wifimgr", "bh": 180209, "btc": 137, "btn": 34}
 {"dn": 164, "lib": "", "sp": "com/quickmobile/conference/ad", "bh": 136115, "btc": 135, "btn": 34}
-{"dn": 462, "lib": "", "sp": "org/yaml/snakeyaml/nodes", "bh": 105792, "btc": 134, "btn": 34}
+{"dn": 462, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/nodes", "bh": 105792, "btc": 134, "btn": 34, "pn": "org/yaml/snakeyaml"}
 {"dn": 302, "lib": "da;KObjects;http://kobjects.org", "sp": "org/kobjects/pim", "bh": 385245, "btc": 133, "btn": 34, "pn": "org/kobjects"}
 {"dn": 487, "lib": "da;Dom4j;http://dom4j.sourceforge.net/", "sp": "org/dom4j/rule", "bh": 300900, "btc": 133, "btn": 34, "pn": "org/dom4j"}
 {"dn": 393, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/appbriMEsLHiQ/client/global/model/list", "bh": 108665, "btc": 133, "btn": 34, "pn": "com/crowdcompass"}
@@ -21686,7 +21686,7 @@
 {"dn": 103, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/collections4/queue", "bh": 234686, "btc": 56, "btn": 30, "pn": "org/apache/commons"}
 {"dn": 159, "lib": "", "sp": "com/db4o/typehandlers", "bh": 167529, "btc": 55, "btn": 30}
 {"dn": 1276, "lib": "ge;Fmod;https://www.fmod.org/", "sp": "org/fmod", "bh": 166780, "btc": 55, "btn": 30, "pn": "org/fmod"}
-{"dn": 431, "lib": "", "sp": "org/yaml/snakeyaml/external", "bh": 157123, "btc": 55, "btn": 30}
+{"dn": 431, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/external", "bh": 157123, "btc": 55, "btn": 30, "pn": "org/yaml/snakeyaml"}
 {"dn": 367, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fragments/utils", "bh": 144390, "btc": 55, "btn": 30, "pn": "com/biznessapps"}
 {"dn": 745, "lib": "sn;Tencent Login;http://wiki.open.qq.com/wiki/mobile/Android_SDK", "sp": "com/tencent/qqconnect/dataprovider", "bh": 90035, "btc": 54, "btn": 30, "pn": "com/tencent/qqconnect"}
 {"dn": 428, "lib": "", "sp": "com/google/devtools/simple/runtime/events", "bh": 72255, "btc": 54, "btn": 30}
@@ -22651,7 +22651,7 @@
 {"dn": 1091, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation/inmobi", "bh": 88694, "btc": 64, "btn": 26, "pn": "com/google/ads"}
 {"dn": 192, "lib": "da;doapps;http://www.doapps.com/", "sp": "com/doapps/android/mediation/plans", "bh": 79108, "btc": 64, "btn": 26, "pn": "com/doapps"}
 {"dn": 14784, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/multiplayer/realtime", "bh": 73333, "btc": 64, "btn": 26, "pn": "com/google/android/gms"}
-{"dn": 368, "lib": "", "sp": "org/yaml/snakeyaml/reader", "bh": 136511, "btc": 63, "btn": 26}
+{"dn": 368, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/reader", "bh": 136511, "btc": 63, "btn": 26, "pn": "org/yaml/snakeyaml"}
 {"dn": 100, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/audio", "bh": 115428, "btc": 63, "btn": 26, "pn": "com/badlogic"}
 {"dn": 380, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/multiplayer/realtime", "bh": 73307, "btc": 63, "btn": 26, "pn": "com/google/android/gms"}
 {"dn": 3073, "lib": "", "sp": "org/springframework/http/converter/xml", "bh": 256899, "btc": 62, "btn": 26}
@@ -23797,7 +23797,7 @@
 {"dn": 105, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/tagmanager", "bh": 49590, "btc": 37, "btn": 22, "pn": "com/google/android/gms"}
 {"dn": 312, "lib": "", "sp": "com/livenation/android/shared/drawable", "bh": 203037, "btc": 36, "btn": 22}
 {"dn": 198, "lib": "", "sp": "org/xbill/DNS/spi", "bh": 188856, "btc": 35, "btn": 22}
-{"dn": 418, "lib": "", "sp": "org/yaml/snakeyaml/serializer", "bh": 131006, "btc": 35, "btn": 22}
+{"dn": 418, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/serializer", "bh": 131006, "btc": 35, "btn": 22, "pn": "org/yaml/snakeyaml"}
 {"dn": 352, "lib": "da;doapps;http://www.doapps.com/", "sp": "com/doapps/android/mln/ads/adagogo/web", "bh": 107809, "btc": 35, "btn": 22, "pn": "com/doapps"}
 {"dn": 13230, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/async", "bh": 100509, "btc": 35, "btn": 22, "pn": "twitter4j"}
 {"dn": 531, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/async", "bh": 100507, "btc": 35, "btn": 22, "pn": "twitter4j"}
@@ -24040,7 +24040,7 @@
 {"dn": 244, "lib": "", "sp": "org/mockito/internal/stubbing/answers", "bh": 153006, "btc": 47, "btn": 21}
 {"dn": 87794, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/b", "bh": 137315, "btc": 47, "btn": 21, "pn": "com/google/android/gms"}
 {"dn": 133, "lib": "", "sp": "com/genuitec/mobione/build/template/android", "bh": 112855, "btc": 47, "btn": 21}
-{"dn": 440, "lib": "", "sp": "org/yaml/snakeyaml/resolver", "bh": 89869, "btc": 47, "btn": 21}
+{"dn": 440, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/resolver", "bh": 89869, "btc": 47, "btn": 21, "pn": "org/yaml/snakeyaml"}
 {"dn": 165, "lib": "", "sp": "org/apache/mina/core/write", "bh": 30402, "btc": 47, "btn": 21}
 {"dn": 296, "lib": "da;Neoline;http://www.neoline.biz/", "sp": "biz/neoline/reader/bookmodel", "bh": 103416, "btc": 46, "btn": 21, "pn": "biz/neoline"}
 {"dn": 122, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/a", "bh": 332286, "btc": 45, "btn": 21, "pn": "android/support/v4"}
@@ -24197,7 +24197,7 @@
 {"dn": 130, "lib": "da;AChartEngine;http://www.achartengine.org/", "sp": "org/achartengine/model", "bh": 183738, "btc": 114, "btn": 20, "pn": "org/achartengine"}
 {"dn": 107, "lib": "ma;Umeng Analytics;https://www.umeng.com/analytics", "sp": "com/umeng/analytics/e", "bh": 61227, "btc": 112, "btn": 20, "pn": "com/umeng/analytics"}
 {"dn": 11641, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/c/a", "bh": 123015, "btc": 109, "btn": 20, "pn": "com/google/android/gms"}
-{"dn": 135, "lib": "", "sp": "org/yaml/snakeyaml/parser", "bh": 66253, "btc": 108, "btn": 20}
+{"dn": 135, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/parser", "bh": 66253, "btc": 108, "btn": 20, "pn": "org/yaml/snakeyaml"}
 {"dn": 143, "lib": "", "sp": "com/magazinecloner/magclonerreader/datamodel/v5", "bh": 139983, "btc": 107, "btn": 20}
 {"dn": 474, "lib": "", "sp": "org/geometerplus/fbreader/formats/b", "bh": 254946, "btc": 105, "btn": 20}
 {"dn": 5221, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/logging", "bh": 306739, "btc": 103, "btn": 20, "pn": "twitter4j"}
@@ -24205,7 +24205,7 @@
 {"dn": 167, "lib": "", "sp": "rajawali/math", "bh": 286974, "btc": 103, "btn": 20}
 {"dn": 595, "lib": "da;AChartEngine;http://www.achartengine.org/", "sp": "org/achartengine/model", "bh": 168952, "btc": 103, "btn": 20, "pn": "org/achartengine"}
 {"dn": 104, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/model", "bh": 109801, "btc": 103, "btn": 20, "pn": "com/biznessapps"}
-{"dn": 369, "lib": "", "sp": "org/yaml/snakeyaml/parser", "bh": 57891, "btc": 103, "btn": 20}
+{"dn": 369, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/parser", "bh": 57891, "btc": 103, "btn": 20, "pn": "org/yaml/snakeyaml"}
 {"dn": 7957, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/logging", "bh": 304010, "btc": 102, "btn": 20, "pn": "twitter4j"}
 {"dn": 164, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/logging", "bh": 304008, "btc": 102, "btn": 20, "pn": "twitter4j"}
 {"dn": 5123, "lib": "ut;Tapit;Tapit NFC\u6280\u672f", "sp": "com/tapit/adview/a", "bh": 72467, "btc": 102, "btn": 20, "pn": "com/tapit"}
@@ -25217,7 +25217,7 @@
 {"dn": 215, "lib": "ui;actionbarpulltorefresh;https://github.com/chrisbanes/ActionBar-PullToRefresh", "sp": "src/uk/co/senab/actionbarpulltorefresh/extras", "bh": 60272, "btc": 31, "btn": 17, "pn": "uk/co/senab/actionbarpulltorefresh"}
 {"dn": 141, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/blog/data", "bh": 52102, "btc": 31, "btn": 17, "pn": "com/conduit/app"}
 {"dn": 733, "lib": "", "sp": "com/brightcove/player/util", "bh": 44049, "btc": 31, "btn": 17}
-{"dn": 435, "lib": "", "sp": "org/yaml/snakeyaml/composer", "bh": 41953, "btc": 31, "btn": 17}
+{"dn": 435, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/composer", "bh": 41953, "btc": 31, "btn": 17, "pn": "org/yaml/snakeyaml"}
 {"dn": 381, "lib": "", "sp": "ch/qos/logback/core/android", "bh": 41673, "btc": 31, "btn": 17}
 {"dn": 133, "lib": "", "sp": "biz/app/android/gcm", "bh": 39583, "btc": 31, "btn": 17}
 {"dn": 101, "lib": "", "sp": "org/zywx/wbpalmstar/plugin/uexemail", "bh": 39317, "btc": 31, "btn": 17}
@@ -25716,7 +25716,7 @@
 {"dn": 1953, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/physics/box2d", "bh": 23873, "btc": 63, "btn": 15, "pn": "com/badlogic"}
 {"dn": 1469, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/qrcode/a", "bh": 122154, "btc": 62, "btn": 15, "pn": "com/google/zxing"}
 {"dn": 11823, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/c/a", "bh": 22779, "btc": 62, "btn": 15, "pn": "com/google/zxing"}
-{"dn": 440, "lib": "", "sp": "org/yaml/snakeyaml/tokens", "bh": 16868, "btc": 62, "btn": 15}
+{"dn": 440, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/tokens", "bh": 16868, "btc": 62, "btn": 15, "pn": "org/yaml/snakeyaml"}
 {"dn": 434, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/qrcode/decoder", "bh": 121948, "btc": 61, "btn": 15, "pn": "com/google/zxing"}
 {"dn": 152, "lib": "", "sp": "com/liverail/library/f", "bh": 25661, "btc": 61, "btn": 15}
 {"dn": 296, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/datamatrix/decoder", "bh": 22778, "btc": 61, "btn": 15, "pn": "com/google/zxing"}
@@ -26641,7 +26641,7 @@
 {"dn": 282, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app586411/web", "bh": 23222, "btc": 15, "btn": 13, "pn": "com/appmakr"}
 {"dn": 889, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation/admob", "bh": 23161, "btc": 15, "btn": 13, "pn": "com/google/ads"}
 {"dn": 127, "lib": "", "sp": "com/blundell/tut/ui/adapter", "bh": 75160, "btc": 14, "btn": 13}
-{"dn": 469, "lib": "", "sp": "org/yaml/snakeyaml/util", "bh": 63288, "btc": 14, "btn": 13}
+{"dn": 469, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/util", "bh": 63288, "btc": 14, "btn": 13, "pn": "org/yaml/snakeyaml"}
 {"dn": 110, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/base/internal", "bh": 61700, "btc": 14, "btn": 13, "pn": "com/google/common"}
 {"dn": 105, "lib": "", "sp": "it/sephiroth/android/library/util", "bh": 56776, "btc": 14, "btn": 13}
 {"dn": 219, "lib": "", "sp": "biz/app/android/task", "bh": 50484, "btc": 14, "btn": 13}
@@ -26937,7 +26937,7 @@
 {"dn": 117, "lib": "", "sp": "cx/hell/android/pdfview", "bh": 21562, "btc": 19, "btn": 12}
 {"dn": 305, "lib": "da;Neoline;http://www.neoline.biz/", "sp": "biz/neoline/app_core/text/hyphenation", "bh": 16941, "btc": 19, "btn": 12, "pn": "biz/neoline"}
 {"dn": 116, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/query/internal", "bh": 15728, "btc": 19, "btn": 12, "pn": "com/google/android/gms"}
-{"dn": 431, "lib": "", "sp": "org/yaml/snakeyaml/external/biz/base64Coder", "bh": 15089, "btc": 19, "btn": 12}
+{"dn": 431, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/external/biz/base64Coder", "bh": 15089, "btc": 19, "btn": 12, "pn": "org/yaml/snakeyaml"}
 {"dn": 31177, "lib": "da;Jsoup;http://jsoup.org/", "sp": "org/jsoup/examples", "bh": 11866, "btc": 19, "btn": 12, "pn": "org/jsoup"}
 {"dn": 683, "lib": "ui;actionbarpulltorefresh;https://github.com/chrisbanes/ActionBar-PullToRefresh", "sp": "uk/co/senab/actionbarpulltorefresh/library/viewdelegates", "bh": 237179, "btc": 18, "btn": 12, "pn": "uk/co/senab/actionbarpulltorefresh"}
 {"dn": 1075, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/scenes/scene2d/ui/utils", "bh": 147826, "btc": 18, "btn": 12, "pn": "com/badlogic"}
@@ -27119,7 +27119,7 @@
 {"dn": 653, "lib": "", "sp": "com/socialize/api/action/share", "bh": 33546, "btc": 43, "btn": 11}
 {"dn": 200, "lib": "", "sp": "com/tripomatic/sdk/offline", "bh": 25862, "btc": 43, "btn": 11}
 {"dn": 356, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/physics/box2d", "bh": 17800, "btc": 43, "btn": 11, "pn": "com/badlogic"}
-{"dn": 440, "lib": "", "sp": "org/yaml/snakeyaml/events", "bh": 7067, "btc": 43, "btn": 11}
+{"dn": 440, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/events", "bh": 7067, "btc": 43, "btn": 11, "pn": "org/yaml/snakeyaml"}
 {"dn": 146, "lib": "ad;ChartBoost;http://www.chartboost.com/ ", "sp": "com/chartboost/sdk/unity", "bh": 53497, "btc": 42, "btn": 11, "pn": "com/chartboost/sdk"}
 {"dn": 222, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/events", "bh": 31885, "btc": 42, "btn": 11, "pn": "com/google/android/gms"}
 {"dn": 350, "lib": "", "sp": "com/twitterapime/xauth/ui", "bh": 18708, "btc": 42, "btn": 11}
@@ -27873,7 +27873,7 @@
 {"dn": 131, "lib": "", "sp": "com/vungle/publisher/event", "bh": 24250, "btc": 48, "btn": 9}
 {"dn": 168, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "ogrelab/org/apache/http/impl/entity", "bh": 88384, "btc": 47, "btn": 9, "pn": "org/apache/http"}
 {"dn": 613, "lib": "", "sp": "Sprites", "bh": 14867, "btc": 47, "btn": 9}
-{"dn": 369, "lib": "", "sp": "org/yaml/snakeyaml/error", "bh": 10601, "btc": 47, "btn": 9}
+{"dn": 369, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/error", "bh": 10601, "btc": 47, "btn": 9, "pn": "org/yaml/snakeyaml"}
 {"dn": 584, "lib": "", "sp": "com/pusher/client/example", "bh": 70887, "btc": 46, "btn": 9}
 {"dn": 272, "lib": "", "sp": "com/androidnative/gms/listeners/network", "bh": 33951, "btc": 45, "btn": 9}
 {"dn": 401, "lib": "", "sp": "org/ocpsoft/prettytime/format", "bh": 30578, "btc": 45, "btn": 9}
