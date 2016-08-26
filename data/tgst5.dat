@@ -19851,7 +19851,7 @@
 {"dn": 284, "lib": "da;ksoap2;http://ksoap2.sourceforge.net/", "sp": "org/ksoap2/servlet", "bh": 658961, "btc": 104, "btn": 37, "pn": "org/ksoap2"}
 {"dn": 113, "lib": "", "sp": "com/coremedia/iso/boxes/apple", "bh": 218882, "btc": 104, "btn": 37}
 {"dn": 1812, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/escape", "bh": 148120, "btc": 102, "btn": 37, "pn": "com/google/common"}
-{"dn": 102, "lib": "", "sp": "com/bea/xml/stream/reader", "bh": 409096, "btc": 101, "btn": 37}
+{"dn": 102, "lib": "da;StAX API;https://jcp.org/en/jsr/detail?id=173", "sp": "com/bea/xml/stream/reader", "bh": 409096, "btc": 101, "btn": 37, "pn": "com/bea/xml/stream"}
 {"dn": 655, "lib": "mp;Google Maps Utils;https://github.com/googlemaps/android-maps-utils", "sp": "com/google/maps/android/heatmaps", "bh": 228774, "btc": 99, "btn": 37, "pn": "com/google/maps/android"}
 {"dn": 200, "lib": "", "sp": "com/freewebtoon/android/webtoonparadise/totalapi", "bh": 245209, "btc": 98, "btn": 37}
 {"dn": 151, "lib": "", "sp": "com/zenmobi/zenlib/pipes/reader", "bh": 186281, "btc": 95, "btn": 37}
