@@ -5343,7 +5343,7 @@
 {"dn": 5210, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/logging", "bh": 42669, "btc": 1114, "btn": 236, "pn": "org/apache/commons"}
 {"dn": 355, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/logging", "bh": 42159, "btc": 1114, "btn": 236, "pn": "org/apache/commons"}
 {"dn": 512, "lib": "da;Umeng Common;http://dev.umeng.com/", "sp": "com/umeng/common/net", "bh": 717879, "btc": 1024, "btn": 236, "pn": "com/umeng/common"}
-{"dn": 324, "lib": "", "sp": "com/androidplot", "bh": 577954, "btc": 712, "btn": 236}
+{"dn": 324, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot", "bh": 577954, "btc": 712, "btn": 236, "pn": "com/androidplot"}
 {"dn": 142, "lib": "da;Vercoop;http://www.vercoop.com/", "sp": "com/vercoop/lib/templete/view", "bh": 819769, "btc": 676, "btn": 236, "pn": "com/vercoop"}
 {"dn": 634, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/internal", "bh": 166581, "btc": 664, "btn": 236, "pn": "com/facebook"}
 {"dn": 430, "lib": "", "sp": "com/am/adlib", "bh": 723663, "btc": 662, "btn": 236}
@@ -8122,9 +8122,9 @@
 {"dn": 310, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fragments/single", "bh": 836040, "btc": 830, "btn": 146, "pn": "com/biznessapps"}
 {"dn": 152, "lib": "", "sp": "cn/jpush/android/a", "bh": 775060, "btc": 778, "btn": 146}
 {"dn": 140, "lib": "ui;goodbarber;http://www.goodbarber.com/", "sp": "com/goodbarber/v2/fragments/live", "bh": 278029, "btc": 774, "btn": 146, "pn": "com/goodbarber"}
-{"dn": 145, "lib": "", "sp": "com/androidplot", "bh": 36259, "btc": 755, "btn": 146}
+{"dn": 145, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot", "bh": 36259, "btc": 755, "btn": 146, "pn": "com/androidplot"}
 {"dn": 177, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fragments/single", "bh": 571673, "btc": 739, "btn": 146, "pn": "com/biznessapps"}
-{"dn": 112, "lib": "", "sp": "com/androidplot", "bh": 983795, "btc": 735, "btn": 146}
+{"dn": 112, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot", "bh": 983795, "btc": 735, "btn": 146, "pn": "com/androidplot"}
 {"dn": 119, "lib": "", "sp": "io/branch/referral", "bh": 359270, "btc": 726, "btn": 146}
 {"dn": 353, "lib": "", "sp": "com/qbiki/modules/facebookfeeds", "bh": 371341, "btc": 694, "btn": 146}
 {"dn": 4586, "lib": "da;OkHttp;https://github.com/square/okhttp", "sp": "com/squareup/okhttpx/internal/http", "bh": 41428, "btc": 676, "btn": 146, "pn": "com/squareup/okhttp"}
@@ -9230,7 +9230,7 @@
 {"dn": 135, "lib": "", "sp": "com/google/i18n/phonenumbers", "bh": 270392, "btc": 2230, "btn": 124}
 {"dn": 215, "lib": "", "sp": "rajawali/materials", "bh": 951702, "btc": 1060, "btn": 124}
 {"dn": 186, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common/internal", "bh": 755743, "btc": 1048, "btn": 124, "pn": "com/google/android/gms"}
-{"dn": 324, "lib": "", "sp": "com/androidplot/xy", "bh": 534562, "btc": 799, "btn": 124}
+{"dn": 324, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/xy", "bh": 534562, "btc": 799, "btn": 124, "pn": "com/androidplot"}
 {"dn": 1370, "lib": "da;AChartEngine;http://www.achartengine.org/", "sp": "org/achartengine/chart", "bh": 63039, "btc": 791, "btn": 124, "pn": "org/achartengine"}
 {"dn": 130, "lib": "", "sp": "org/cmc/music", "bh": 677323, "btc": 738, "btn": 124}
 {"dn": 7058, "lib": "", "sp": "com/google/code/linkedinapi/client", "bh": 930847, "btc": 716, "btn": 124}
@@ -10619,7 +10619,7 @@
 {"dn": 127, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/appeaUjo6e8XP/client/util/resource/provider", "bh": 636344, "btc": 349, "btn": 104, "pn": "com/crowdcompass"}
 {"dn": 655, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/commons/analytics/iat/impl", "bh": 526682, "btc": 345, "btn": 104, "pn": "com/inmobi"}
 {"dn": 1323, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/facebook", "bh": 716322, "btc": 344, "btn": 104, "pn": "com/conduit/app"}
-{"dn": 430, "lib": "", "sp": "com/androidplot/util", "bh": 529746, "btc": 334, "btn": 104}
+{"dn": 430, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/util", "bh": 529746, "btc": 334, "btn": 104, "pn": "com/androidplot"}
 {"dn": 171, "lib": "", "sp": "com/relaxseriouslivewallpaper/cool", "bh": 988495, "btc": 292, "btn": 104}
 {"dn": 447, "lib": "", "sp": "com/vietandroid", "bh": 759076, "btc": 291, "btn": 104}
 {"dn": 141, "lib": "", "sp": "com/tapfortap", "bh": 537275, "btc": 289, "btn": 104}
@@ -10832,8 +10832,8 @@
 {"dn": 404, "lib": "da;Pollfish;https://www.pollfish.com/", "sp": "com/pollfish/a", "bh": 39681, "btc": 722, "btn": 101, "pn": "com/pollfish"}
 {"dn": 213, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/graphics/g2d", "bh": 873281, "btc": 699, "btn": 101, "pn": "com/badlogic"}
 {"dn": 260, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/fitness", "bh": 370961, "btc": 661, "btn": 101, "pn": "com/google/android/gms"}
-{"dn": 145, "lib": "", "sp": "com/androidplot/xy", "bh": 710219, "btc": 645, "btn": 101}
-{"dn": 112, "lib": "", "sp": "com/androidplot/xy", "bh": 658808, "btc": 629, "btn": 101}
+{"dn": 145, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/xy", "bh": 710219, "btc": 645, "btn": 101, "pn": "com/androidplot"}
+{"dn": 112, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/xy", "bh": 658808, "btc": 629, "btn": 101, "pn": "com/androidplot"}
 {"dn": 232, "lib": "ui;butterknife UI Framework;https://github.com/JakeWharton/butterknife", "sp": "butterknife/internal", "bh": 131367, "btc": 552, "btn": 101, "pn": "butterknife"}
 {"dn": 224, "lib": "da;OkHttp;https://github.com/square/okhttp", "sp": "com/squareup/okhttp/internal/http", "bh": 264877, "btc": 538, "btn": 101, "pn": "com/squareup/okhttp"}
 {"dn": 131, "lib": "", "sp": "com/smarteragent/android/results/view", "bh": 696688, "btc": 536, "btn": 101}
@@ -16664,7 +16664,7 @@
 {"dn": 555, "lib": "", "sp": "net/manageapps/widget", "bh": 862357, "btc": 204, "btn": 52}
 {"dn": 838, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/dao", "bh": 230993, "btc": 204, "btn": 52, "pn": "com/j256"}
 {"dn": 140, "lib": "", "sp": "com/archantmobile/stlawrenceclinic", "bh": 318075, "btc": 201, "btn": 52}
-{"dn": 122, "lib": "", "sp": "com/androidplot/ui", "bh": 763311, "btc": 197, "btn": 52}
+{"dn": 122, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/ui", "bh": 763311, "btc": 197, "btn": 52, "pn": "com/androidplot"}
 {"dn": 134, "lib": "", "sp": "com/tripwolf/view/filtering", "bh": 458310, "btc": 196, "btn": 52}
 {"dn": 2215, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common/internal/safeparcel", "bh": 450181, "btc": 193, "btn": 52, "pn": "com/google/android/gms"}
 {"dn": 24340, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common/internal/safeparcel", "bh": 452290, "btc": 192, "btn": 52, "pn": "com/google/android/gms"}
@@ -17202,7 +17202,7 @@
 {"dn": 565, "lib": "", "sp": "org/geometerplus/fbreader/formats/c", "bh": 202129, "btc": 221, "btn": 49}
 {"dn": 114, "lib": "", "sp": "com/smartadserver/android/library/controller/mraid", "bh": 252448, "btc": 220, "btn": 49}
 {"dn": 1455, "lib": "da;newrelic;https://newrelic.com/", "sp": "com/newrelic/agent/android/tracing", "bh": 390164, "btc": 219, "btn": 49, "pn": "com/newrelic"}
-{"dn": 359, "lib": "", "sp": "com/androidplot/ui", "bh": 760370, "btc": 216, "btn": 49}
+{"dn": 359, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/ui", "bh": 760370, "btc": 216, "btn": 49, "pn": "com/androidplot"}
 {"dn": 1132, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/c", "bh": 258550, "btc": 216, "btn": 49, "pn": "com/startapp"}
 {"dn": 116, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/c", "bh": 269677, "btc": 214, "btn": 49, "pn": "com/startapp"}
 {"dn": 194, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/c", "bh": 270619, "btc": 213, "btn": 49, "pn": "com/startapp"}
@@ -17432,7 +17432,7 @@
 {"dn": 163, "lib": "da;Google GCM;https://developers.google.com/cloud-messaging/", "sp": "com/google/android/gcm", "bh": 193931, "btc": 197, "btn": 48, "pn": "com/google/android/gcm"}
 {"dn": 212, "lib": "ut;skplanet;http://www.skplanet.com", "sp": "com/skplanet/tad/controller", "bh": 287380, "btc": 190, "btn": 48, "pn": "com/skplanet"}
 {"dn": 169, "lib": "sn;Tencent Wechat;https://open.weixin.qq.com/", "sp": "com/tencent/mm/sdk/plugin", "bh": 169092, "btc": 189, "btn": 48, "pn": "com/tencent/mm"}
-{"dn": 293, "lib": "", "sp": "com/androidplot/ui", "bh": 741500, "btc": 188, "btn": 48}
+{"dn": 293, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/ui", "bh": 741500, "btc": 188, "btn": 48, "pn": "com/androidplot"}
 {"dn": 372, "lib": "", "sp": "javazoom/jl/decoder", "bh": 416505, "btc": 185, "btn": 48}
 {"dn": 111, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/scenes/scene2d", "bh": 192482, "btc": 185, "btn": 48, "pn": "com/badlogic"}
 {"dn": 161, "lib": "", "sp": "com/embarcadero/expansion/activityimpl", "bh": 526281, "btc": 179, "btn": 48}
@@ -19618,7 +19618,7 @@
 {"dn": 223, "lib": "", "sp": "net/manageapps/app_39028/recentactivity", "bh": 215851, "btc": 117, "btn": 38}
 {"dn": 300, "lib": "", "sp": "org/jasypt/encryption/pbe", "bh": 480936, "btc": 116, "btn": 38}
 {"dn": 807, "lib": "", "sp": "com/devsmart/android/ui/lifecycle", "bh": 392299, "btc": 115, "btn": 38}
-{"dn": 337, "lib": "", "sp": "com/androidplot/pie", "bh": 322976, "btc": 115, "btn": 38}
+{"dn": 337, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/pie", "bh": 322976, "btc": 115, "btn": 38, "pn": "com/androidplot"}
 {"dn": 172, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/input", "bh": 398195, "btc": 111, "btn": 38, "pn": "com/badlogic"}
 {"dn": 266, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/api/navigation", "bh": 282427, "btc": 111, "btn": 38, "pn": "com/biznessapps"}
 {"dn": 294, "lib": "da;comscore;https://www.comscore.com/", "sp": "com/comscore/android", "bh": 201764, "btc": 111, "btn": 38, "pn": "com/comscore"}
@@ -21842,7 +21842,7 @@
 {"dn": 487, "lib": "da;Dom4j;http://dom4j.sourceforge.net/", "sp": "org/dom4j/swing", "bh": 362910, "btc": 84, "btn": 29, "pn": "org/dom4j"}
 {"dn": 261, "lib": "", "sp": "org/geometerplus/zlibrary/core/money", "bh": 358182, "btc": 84, "btn": 29}
 {"dn": 158, "lib": "ad;Vpon;http://www.vpon.com/", "sp": "com/vpon/adon/android/webClientHandler", "bh": 224127, "btc": 84, "btn": 29, "pn": "com/vpon"}
-{"dn": 152, "lib": "", "sp": "com/androidplot/util", "bh": 192193, "btc": 84, "btn": 29}
+{"dn": 152, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/util", "bh": 192193, "btc": 84, "btn": 29, "pn": "com/androidplot"}
 {"dn": 1736, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "org/codehaus/jackson/map/ser/impl", "bh": 62342, "btc": 84, "btn": 29, "pn": "org/codehaus"}
 {"dn": 3748, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "org/codehaus/jackson/map/ser/impl", "bh": 61659, "btc": 83, "btn": 29, "pn": "org/codehaus"}
 {"dn": 108, "lib": "", "sp": "com/commonsware/cwac", "bh": 306978, "btc": 82, "btn": 29}
@@ -21850,7 +21850,7 @@
 {"dn": 161, "lib": "", "sp": "com/google/youngandroid", "bh": 231702, "btc": 82, "btn": 29}
 {"dn": 1597, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/internal", "bh": 96787, "btc": 82, "btn": 29, "pn": "com/google/android/gms"}
 {"dn": 216, "lib": "", "sp": "com/everyplay/Everyplay/communication/a", "bh": 137269, "btc": 81, "btn": 29}
-{"dn": 150, "lib": "", "sp": "com/androidplot/util", "bh": 191157, "btc": 80, "btn": 29}
+{"dn": 150, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/util", "bh": 191157, "btc": 80, "btn": 29, "pn": "com/androidplot"}
 {"dn": 159, "lib": "", "sp": "com/google/example/games/basegameutils", "bh": 157334, "btc": 80, "btn": 29}
 {"dn": 13203, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/facebook", "bh": 139891, "btc": 80, "btn": 29, "pn": "com/biznessapps"}
 {"dn": 804, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/input", "bh": 76716, "btc": 79, "btn": 29, "pn": "org/andengine"}
@@ -22415,7 +22415,7 @@
 {"dn": 618, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/aboutus/data", "bh": 130676, "btc": 57, "btn": 27, "pn": "com/conduit/app"}
 {"dn": 127, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/appeaUjo6e8XP/client/eventguide/eventcompass/quick", "bh": 98811, "btc": 57, "btn": 27, "pn": "com/crowdcompass"}
 {"dn": 753, "lib": "", "sp": "mono", "bh": 59811, "btc": 57, "btn": 27}
-{"dn": 359, "lib": "", "sp": "com/androidplot/ui/widget", "bh": 178217, "btc": 56, "btn": 27}
+{"dn": 359, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/ui/widget", "bh": 178217, "btc": 56, "btn": 27, "pn": "com/androidplot"}
 {"dn": 125, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/c", "bh": 151797, "btc": 56, "btn": 27, "pn": "com/google/zxing"}
 {"dn": 5734, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/metadata/internal", "bh": 69255, "btc": 56, "btn": 27, "pn": "com/google/android/gms"}
 {"dn": 118, "lib": "", "sp": "com/finger2finger/games/common/loginfo", "bh": 94864, "btc": 55, "btn": 27}
@@ -24404,7 +24404,7 @@
 {"dn": 310, "lib": "", "sp": "org/jivesoftware/smackx/ping", "bh": 70440, "btc": 28, "btn": 20}
 {"dn": 268, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app509797/b", "bh": 55077, "btc": 28, "btn": 20, "pn": "com/appmakr"}
 {"dn": 149, "lib": "da;jUnit Java Unit Test;http://junit.org/", "sp": "org/junit/runner/notification", "bh": 48501, "btc": 28, "btn": 20, "pn": "org/junit"}
-{"dn": 426, "lib": "", "sp": "com/androidplot/ui/widget", "bh": 46741, "btc": 28, "btn": 20}
+{"dn": 426, "lib": "da;Androidplot;http://androidplot.com/", "sp": "com/androidplot/ui/widget", "bh": 46741, "btc": 28, "btn": 20, "pn": "com/androidplot"}
 {"dn": 659, "lib": "", "sp": "com/ibm/mqtt/j2se", "bh": 116553, "btc": 27, "btn": 20}
 {"dn": 107, "lib": "", "sp": "com/sileria/android/event", "bh": 105049, "btc": 27, "btn": 20}
 {"dn": 4097, "lib": "", "sp": "net/daum/adam/publisher/impl/a", "bh": 83766, "btc": 27, "btn": 20}
