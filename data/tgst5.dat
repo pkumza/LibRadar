@@ -4699,7 +4699,7 @@
 {"dn": 342, "lib": "", "sp": "io/vov", "bh": 488172, "btc": 662, "btn": 268}
 {"dn": 304, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common", "bh": 225692, "btc": 621, "btn": 268, "pn": "com/google/android/gms"}
 {"dn": 665, "lib": "da;simple framework;http://www.simpleframework.org/", "sp": "org/simpleframework/xml", "bh": 565652, "btc": 620, "btn": 268, "pn": "org/simpleframework"}
-{"dn": 206, "lib": "", "sp": "org/xbill/DNS", "bh": 82552, "btc": 1873, "btn": 267}
+{"dn": 206, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS", "bh": 82552, "btc": 1873, "btn": 267, "pn": "org/xbill/DNS"}
 {"dn": 112, "lib": "", "sp": "net", "bh": 671530, "btc": 1705, "btn": 267}
 {"dn": 186, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/util/concurrent", "bh": 682217, "btc": 1368, "btn": 267, "pn": "com/google/common"}
 {"dn": 796, "lib": "ge;cocos2D;http://www.cocos2d-x.org/", "sp": "org/cocos2d/opengl", "bh": 467250, "btc": 1222, "btn": 267, "pn": "org/cocos2d"}
@@ -4732,7 +4732,7 @@
 {"dn": 1039, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/content", "bh": 619529, "btc": 572, "btn": 266, "pn": "android/support/v4"}
 {"dn": 421, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/content", "bh": 617347, "btc": 569, "btn": 266, "pn": "android/support/v4"}
 {"dn": 351, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/content", "bh": 616957, "btc": 554, "btn": 266, "pn": "android/support/v4"}
-{"dn": 122, "lib": "", "sp": "org/xbill/DNS", "bh": 82202, "btc": 1868, "btn": 265}
+{"dn": 122, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS", "bh": 82202, "btc": 1868, "btn": 265, "pn": "org/xbill/DNS"}
 {"dn": 345, "lib": "", "sp": "com/gpsmycity/android/u271/fragment", "bh": 507466, "btc": 1410, "btn": 265}
 {"dn": 4083, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/analytics", "bh": 637488, "btc": 1092, "btn": 265, "pn": "com/google/android/gms"}
 {"dn": 148, "lib": "", "sp": "com/heyzap/http", "bh": 532686, "btc": 973, "btn": 265}
@@ -4821,7 +4821,7 @@
 {"dn": 110, "lib": "da;ActionBarSherlock;http://actionbarsherlock.com/", "sp": "com/actionbarsherlock/internal", "bh": 283314, "btc": 429, "btn": 260, "pn": "com/actionbarsherlock"}
 {"dn": 1539, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/collect", "bh": 184429, "btc": 3272, "btn": 259, "pn": "com/google/common"}
 {"dn": 368, "lib": "ad;adsmogo;http://www.adsmogo.com/", "sp": "com/adsmogo/adapters/api", "bh": 308246, "btc": 3259, "btn": 259, "pn": "com/adsmogo"}
-{"dn": 150, "lib": "", "sp": "org/xbill/DNS", "bh": 839913, "btc": 1844, "btn": 259}
+{"dn": 150, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS", "bh": 839913, "btc": 1844, "btn": 259, "pn": "org/xbill/DNS"}
 {"dn": 101, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/effects", "bh": 844712, "btc": 1554, "btn": 259, "pn": "com/aviary"}
 {"dn": 162, "lib": "", "sp": "net/daum/mobilead", "bh": 857982, "btc": 1222, "btn": 259}
 {"dn": 464, "lib": "ge;cocos2D;http://www.cocos2d-x.org/", "sp": "org/cocos2d/opengl", "bh": 870628, "btc": 1130, "btn": 259, "pn": "org/cocos2d"}
@@ -4839,7 +4839,7 @@
 {"dn": 162, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/impl", "bh": 223404, "btc": 630, "btn": 259, "pn": "org/apache/http"}
 {"dn": 106, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/network", "bh": 890799, "btc": 626, "btn": 259, "pn": "ti/modules/titanium"}
 {"dn": 186, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/network", "bh": 847878, "btc": 617, "btn": 259, "pn": "ti/modules/titanium"}
-{"dn": 112, "lib": "", "sp": "org/xbill/DNS", "bh": 701036, "btc": 1791, "btn": 258}
+{"dn": 112, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS", "bh": 701036, "btc": 1791, "btn": 258, "pn": "org/xbill/DNS"}
 {"dn": 109, "lib": "", "sp": "com/qunhuiTone/jian", "bh": 137336, "btc": 1617, "btn": 258}
 {"dn": 151, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/effects", "bh": 683082, "btc": 1435, "btn": 258, "pn": "com/aviary"}
 {"dn": 243, "lib": "da;Umeng Common;http://dev.umeng.com/", "sp": "com/umeng/common/net", "bh": 207664, "btc": 1212, "btn": 258, "pn": "com/umeng/common"}
@@ -4904,7 +4904,7 @@
 {"dn": 736, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics", "bh": 473100, "btc": 2968, "btn": 255, "pn": "com/google/analytics"}
 {"dn": 4678, "lib": "", "sp": "com/qbiki/modules/sharepoint", "bh": 70999, "btc": 1926, "btn": 255}
 {"dn": 169, "lib": "", "sp": "com/qbiki/modules/sharepoint", "bh": 70971, "btc": 1926, "btn": 255}
-{"dn": 147, "lib": "", "sp": "org/xbill/DNS", "bh": 764585, "btc": 1753, "btn": 255}
+{"dn": 147, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS", "bh": 764585, "btc": 1753, "btn": 255, "pn": "org/xbill/DNS"}
 {"dn": 1783, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/backends/android/surfaceview", "bh": 20172, "btc": 1272, "btn": 255, "pn": "com/badlogic"}
 {"dn": 130, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/backends/android/surfaceview", "bh": 19626, "btc": 1251, "btn": 255, "pn": "com/badlogic"}
 {"dn": 139, "lib": "", "sp": "com/heyzap/sdk/ads", "bh": 138733, "btc": 974, "btn": 255}
@@ -4923,7 +4923,7 @@
 {"dn": 481, "lib": "ad;adsmogo;http://www.adsmogo.com/", "sp": "com/adsmogo/mriad", "bh": 344695, "btc": 609, "btn": 255, "pn": "com/adsmogo"}
 {"dn": 172, "lib": "da;Github;https://github.com/", "sp": "com/github/ignition/support", "bh": 770056, "btc": 469, "btn": 255, "pn": "com/github"}
 {"dn": 20269, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics", "bh": 462646, "btc": 3008, "btn": 254, "pn": "com/google/analytics"}
-{"dn": 267, "lib": "", "sp": "org/xbill/DNS", "bh": 667762, "btc": 1786, "btn": 254}
+{"dn": 267, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS", "bh": 667762, "btc": 1786, "btn": 254, "pn": "org/xbill/DNS"}
 {"dn": 455, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/httpclient", "bh": 414503, "btc": 1685, "btn": 254, "pn": "org/apache/commons"}
 {"dn": 119, "lib": "", "sp": "cn/jpush/android/service", "bh": 747236, "btc": 1645, "btn": 254}
 {"dn": 182, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics", "bh": 188740, "btc": 1266, "btn": 254, "pn": "com/google/analytics"}
@@ -20822,7 +20822,7 @@
 {"dn": 461, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/media", "bh": 917756, "btc": 118, "btn": 33, "pn": "android/support/v4"}
 {"dn": 149, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/media", "bh": 361590, "btc": 118, "btn": 33, "pn": "android/support/v4"}
 {"dn": 1035, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive", "bh": 159512, "btc": 118, "btn": 33, "pn": "com/google/android/gms"}
-{"dn": 104, "lib": "", "sp": "org/xbill/DNS/utils", "bh": 277751, "btc": 117, "btn": 33}
+{"dn": 104, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS/utils", "bh": 277751, "btc": 117, "btn": 33, "pn": "org/xbill/DNS"}
 {"dn": 111, "lib": "", "sp": "com/estimote/sdk/internal", "bh": 169990, "btc": 116, "btn": 33}
 {"dn": 311, "lib": "", "sp": "com/spirem/wrappertools/extensions", "bh": 167446, "btc": 116, "btn": 33}
 {"dn": 144, "lib": "", "sp": "com/etqanapps/EtqanChannel/Adapters", "bh": 264307, "btc": 115, "btn": 33}
@@ -21069,7 +21069,7 @@
 {"dn": 111, "lib": "", "sp": "com/vervewireless/advert/internal/a", "bh": 82497, "btc": 122, "btn": 32}
 {"dn": 312, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing1/pdf417", "bh": 149539, "btc": 121, "btn": 32, "pn": "com/google/zxing"}
 {"dn": 268, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation", "bh": 88022, "btc": 121, "btn": 32, "pn": "com/google/ads"}
-{"dn": 573, "lib": "", "sp": "org/xbill/DNS/utils", "bh": 275215, "btc": 119, "btn": 32}
+{"dn": 573, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS/utils", "bh": 275215, "btc": 119, "btn": 32, "pn": "org/xbill/DNS"}
 {"dn": 118, "lib": "", "sp": "net/emome/hamiapps/sdk/ad", "bh": 165766, "btc": 118, "btn": 32}
 {"dn": 555, "lib": "", "sp": "com/sun/pdfview/decode", "bh": 193093, "btc": 117, "btn": 32}
 {"dn": 300, "lib": "", "sp": "com/vervewireless/advert/internal/a", "bh": 71867, "btc": 117, "btn": 32}
@@ -21305,7 +21305,7 @@
 {"dn": 174, "lib": "", "sp": "com/lgt/arm", "bh": 117134, "btc": 122, "btn": 31}
 {"dn": 1457, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/activity", "bh": 220947, "btc": 116, "btn": 31, "pn": "com/inmobi"}
 {"dn": 165, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/activity", "bh": 220944, "btc": 116, "btn": 31, "pn": "com/inmobi"}
-{"dn": 215, "lib": "", "sp": "org/xbill/DNS/utils", "bh": 261388, "btc": 115, "btn": 31}
+{"dn": 215, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS/utils", "bh": 261388, "btc": 115, "btn": 31, "pn": "org/xbill/DNS"}
 {"dn": 129, "lib": "", "sp": "com/applifier/impact/android/campaign", "bh": 144695, "btc": 115, "btn": 31}
 {"dn": 192, "lib": "da;doapps;http://www.doapps.com/", "sp": "com/doapps/android/mln/content/warden", "bh": 91602, "btc": 115, "btn": 31, "pn": "com/doapps"}
 {"dn": 7913, "lib": "", "sp": "com/qbiki/modules/bmicalculator", "bh": 468465, "btc": 113, "btn": 31}
@@ -21561,7 +21561,7 @@
 {"dn": 263, "lib": "", "sp": "com/substanceofcode/utils", "bh": 182574, "btc": 119, "btn": 30}
 {"dn": 205, "lib": "", "sp": "com/mobileroadie/map", "bh": 142248, "btc": 119, "btn": 30}
 {"dn": 169, "lib": "da;doapps;http://www.doapps.com/", "sp": "com/doapps/android/mln/ads/interstitials", "bh": 66779, "btc": 118, "btn": 30, "pn": "com/doapps"}
-{"dn": 577, "lib": "", "sp": "org/xbill/DNS/utils", "bh": 258852, "btc": 117, "btn": 30}
+{"dn": 577, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS/utils", "bh": 258852, "btc": 117, "btn": 30, "pn": "org/xbill/DNS"}
 {"dn": 236, "lib": "ad;adsmogo;http://www.adsmogo.com/", "sp": "com/adsmogo/encryption", "bh": 312625, "btc": 116, "btn": 30, "pn": "com/adsmogo"}
 {"dn": 165, "lib": "", "sp": "org/apache/mina/proxy/handlers/http/digest", "bh": 126512, "btc": 116, "btn": 30}
 {"dn": 162, "lib": "", "sp": "com/milkmangames/extensions/android", "bh": 126558, "btc": 115, "btn": 30}
@@ -21796,7 +21796,7 @@
 {"dn": 312, "lib": "", "sp": "com/nd/android/pandareader/bookread/book", "bh": 209175, "btc": 123, "btn": 29}
 {"dn": 162, "lib": "", "sp": "org/apache/sanselan/formats/bmp", "bh": 554187, "btc": 122, "btn": 29}
 {"dn": 149, "lib": "", "sp": "com/vungle/sdk/model", "bh": 348962, "btc": 120, "btn": 29}
-{"dn": 140, "lib": "", "sp": "org/xbill/DNS/utils", "bh": 308391, "btc": 119, "btn": 29}
+{"dn": 140, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS/utils", "bh": 308391, "btc": 119, "btn": 29, "pn": "org/xbill/DNS"}
 {"dn": 111, "lib": "", "sp": "com/handpet/xml/packet", "bh": 152344, "btc": 118, "btn": 29}
 {"dn": 360, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader/core/assist/a", "bh": 429074, "btc": 117, "btn": 29, "pn": "com/nostra13"}
 {"dn": 302, "lib": "", "sp": "org/jasypt/digest", "bh": 340143, "btc": 116, "btn": 29}
@@ -23796,7 +23796,7 @@
 {"dn": 272, "lib": "da;jUnit Java Unit Test;http://junit.org/", "sp": "org/junit/runner/notification", "bh": 66975, "btc": 37, "btn": 22, "pn": "org/junit"}
 {"dn": 105, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/tagmanager", "bh": 49590, "btc": 37, "btn": 22, "pn": "com/google/android/gms"}
 {"dn": 312, "lib": "", "sp": "com/livenation/android/shared/drawable", "bh": 203037, "btc": 36, "btn": 22}
-{"dn": 198, "lib": "", "sp": "org/xbill/DNS/spi", "bh": 188856, "btc": 35, "btn": 22}
+{"dn": 198, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS/spi", "bh": 188856, "btc": 35, "btn": 22, "pn": "org/xbill/DNS"}
 {"dn": 418, "lib": "da;SnakeYAML;https://bitbucket.org/asomov/snakeyaml", "sp": "org/yaml/snakeyaml/serializer", "bh": 131006, "btc": 35, "btn": 22, "pn": "org/yaml/snakeyaml"}
 {"dn": 352, "lib": "da;doapps;http://www.doapps.com/", "sp": "com/doapps/android/mln/ads/adagogo/web", "bh": 107809, "btc": 35, "btn": 22, "pn": "com/doapps"}
 {"dn": 13230, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/async", "bh": 100509, "btc": 35, "btn": 22, "pn": "twitter4j"}
@@ -25258,8 +25258,8 @@
 {"dn": 442, "lib": "", "sp": "com/pansi/msg/theme/halloween", "bh": 39898, "btc": 27, "btn": 17}
 {"dn": 110, "lib": "", "sp": "rx/android/observables", "bh": 38040, "btc": 27, "btn": 17}
 {"dn": 519, "lib": "ge;Scoreloop Game;", "sp": "com/scoreloop/client/android/ui/component/d", "bh": 19590, "btc": 27, "btn": 17, "pn": "com/scoreloop"}
-{"dn": 1416, "lib": "", "sp": "org/xbill/DNS/spi", "bh": 133718, "btc": 26, "btn": 17}
-{"dn": 112, "lib": "", "sp": "org/xbill/DNS/spi", "bh": 133713, "btc": 26, "btn": 17}
+{"dn": 1416, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS/spi", "bh": 133718, "btc": 26, "btn": 17, "pn": "org/xbill/DNS"}
+{"dn": 112, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS/spi", "bh": 133713, "btc": 26, "btn": 17, "pn": "org/xbill/DNS"}
 {"dn": 236, "lib": "", "sp": "com/askmedia/sic", "bh": 116427, "btc": 26, "btn": 17}
 {"dn": 120, "lib": "", "sp": "com/socialize/ui/dialog", "bh": 88568, "btc": 26, "btn": 17}
 {"dn": 146, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova/plugins/devicemotion", "bh": 70551, "btc": 26, "btn": 17, "pn": "org/apache/cordova"}
@@ -25684,7 +25684,7 @@
 {"dn": 134, "lib": "da;Appyet;http://www.appyet.com/", "sp": "com/appyet/data", "bh": 151349, "btc": 84, "btn": 15, "pn": "com/appyet"}
 {"dn": 989, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/db", "bh": 55742, "btc": 84, "btn": 15, "pn": "com/j256"}
 {"dn": 104, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/db", "bh": 55741, "btc": 84, "btn": 15, "pn": "com/j256"}
-{"dn": 1203, "lib": "", "sp": "org/xbill/DNS/tests", "bh": 103950, "btc": 80, "btn": 15}
+{"dn": 1203, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS/tests", "bh": 103950, "btc": 80, "btn": 15, "pn": "org/xbill/DNS"}
 {"dn": 182, "lib": "", "sp": "g", "bh": 68876, "btc": 80, "btn": 15}
 {"dn": 272, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/db", "bh": 55638, "btc": 80, "btn": 15, "pn": "com/j256"}
 {"dn": 124, "lib": "", "sp": "rx/plugins", "bh": 113263, "btc": 78, "btn": 15}
@@ -25692,7 +25692,7 @@
 {"dn": 580, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing_gingerbread/d/b", "bh": 214203, "btc": 77, "btn": 15, "pn": "com/google/zxing"}
 {"dn": 196, "lib": "", "sp": "com/aetrion/flickr/contacts", "bh": 317030, "btc": 76, "btn": 15}
 {"dn": 269, "lib": "", "sp": "com/googlecode/flickrjandroid/contacts", "bh": 145380, "btc": 76, "btn": 15}
-{"dn": 337, "lib": "", "sp": "org/xbill/DNS/tests", "bh": 103820, "btc": 75, "btn": 15}
+{"dn": 337, "lib": "da;Dnsjava;http://www.dnsjava.org/", "sp": "org/xbill/DNS/tests", "bh": 103820, "btc": 75, "btn": 15, "pn": "org/xbill/DNS"}
 {"dn": 148, "lib": "", "sp": "com/heyzap/sdk/mediation/wrapper", "bh": 244568, "btc": 74, "btn": 15}
 {"dn": 214, "lib": "", "sp": "com/jcraft/jzlib", "bh": 49788, "btc": 73, "btn": 15}
 {"dn": 1872, "lib": "da;Appyet;http://www.appyet.com/", "sp": "com/appyet/data", "bh": 114741, "btc": 71, "btn": 15, "pn": "com/appyet"}
