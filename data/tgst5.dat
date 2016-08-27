@@ -7668,7 +7668,7 @@
 {"dn": 455, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/impl/conn/tsccm", "bh": 396107, "btc": 589, "btn": 158, "pn": "org/apache/http"}
 {"dn": 1675, "lib": "pa;PayPal;https://developer.paypal.com/docs/integration/mobile/android-integration-guide/", "sp": "com/paypal/android", "bh": 326938, "btc": 569, "btn": 158, "pn": "com/paypal"}
 {"dn": 304, "lib": "da;Qoppa Software;https://www.qoppa.com/", "sp": "com/qoppa/viewer/c", "bh": 852, "btc": 542, "btn": 158, "pn": "com/qoppa"}
-{"dn": 134, "lib": "da;Stericson RootTools;https://github.com/Stericson/RootTool", "sp": "com/stericson/RootTools", "bh": 245524, "btc": 530, "btn": 158, "pn": "com/stericson/RootTools"}
+{"dn": 134, "lib": "da;Stericson RootTools;https://github.com/Stericson/RootTools", "sp": "com/stericson/RootTools", "bh": 245524, "btc": 530, "btn": 158, "pn": "com/stericson/RootTools"}
 {"dn": 403, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/net/ftp", "bh": 184267, "btc": 519, "btn": 158, "pn": "org/apache/commons"}
 {"dn": 104, "lib": "", "sp": "com/doomonafireball/betterpickers/timezonepicker", "bh": 600331, "btc": 507, "btn": 158}
 {"dn": 104, "lib": "", "sp": "org/opencv", "bh": 379741, "btc": 502, "btn": 158}
@@ -14231,8 +14231,8 @@
 {"dn": 956, "lib": "", "sp": "jp/innovationplus/ipp/client", "bh": 481195, "btc": 338, "btn": 68}
 {"dn": 421, "lib": "", "sp": "com/google/code/rome/android/repackaged/com/sun/syndication/feed/impl", "bh": 827309, "btc": 324, "btn": 68}
 {"dn": 286, "lib": "", "sp": "com/vividsolutions/jts/io/gml2", "bh": 73663, "btc": 318, "btn": 68}
-{"dn": 5575, "lib": "", "sp": "com/sun/activation/registries", "bh": 519098, "btc": 309, "btn": 68}
-{"dn": 373, "lib": "", "sp": "com/sun/activation/registries", "bh": 519093, "btc": 309, "btn": 68}
+{"dn": 5575, "lib": "da;JavaBeans(TM) Activation Framework;http://java.sun.com/javase/technologies/desktop/javabeans/jaf/index.jsp", "sp": "com/sun/activation/registries", "bh": 519098, "btc": 309, "btn": 68, "pn": "com/sun/activation"}
+{"dn": 373, "lib": "da;JavaBeans(TM) Activation Framework;http://java.sun.com/javase/technologies/desktop/javabeans/jaf/index.jsp", "sp": "com/sun/activation/registries", "bh": 519093, "btc": 309, "btn": 68, "pn": "com/sun/activation"}
 {"dn": 224, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/geolocation", "bh": 404133, "btc": 302, "btn": 68, "pn": "ti/modules/titanium"}
 {"dn": 180, "lib": "da;Neoline;http://www.neoline.biz/", "sp": "biz/neoline/reader/reader", "bh": 246484, "btc": 299, "btn": 68, "pn": "biz/neoline"}
 {"dn": 923, "lib": "", "sp": "com/widdit/thirdParty/android/gcm", "bh": 293229, "btc": 295, "btn": 68}
@@ -17730,7 +17730,7 @@
 {"dn": 577, "lib": "da;Yixia;http://www.yixia.com/", "sp": "com/yixia/zi/widget/quickaction", "bh": 302038, "btc": 81, "btn": 47, "pn": "com/yixia"}
 {"dn": 1228, "lib": "da;Loopj;https://github.com/loopj/android-async-http", "sp": "com/loopj/android/image", "bh": 219583, "btc": 79, "btn": 47, "pn": "com/loopj"}
 {"dn": 362, "lib": "", "sp": "com/wscl/wallpapermarket/network", "bh": 162878, "btc": 79, "btn": 47}
-{"dn": 113, "lib": "", "sp": "com/sun/activation/viewers", "bh": 685075, "btc": 77, "btn": 47}
+{"dn": 113, "lib": "da;JavaBeans(TM) Activation Framework;http://java.sun.com/javase/technologies/desktop/javabeans/jaf/index.jsp", "sp": "com/sun/activation/viewers", "bh": 685075, "btc": 77, "btn": 47, "pn": "com/sun/activation"}
 {"dn": 1426, "lib": "da;Google Appinventor;https://code.google.com/p/app-inventor-for-android/", "sp": "com/google/appinventor/components/runtime/variants", "bh": 451885, "btc": 76, "btn": 47, "pn": "com/google/appinventor"}
 {"dn": 181, "lib": "", "sp": "com/toura/app2_3456/service", "bh": 204934, "btc": 76, "btn": 47}
 {"dn": 107, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova/splashscreen", "bh": 164160, "btc": 76, "btn": 47, "pn": "org/apache/cordova"}
