@@ -3519,7 +3519,7 @@
 {"dn": 1778, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry/sdk", "bh": 286403, "btc": 1796, "btn": 351, "pn": "com/flurry"}
 {"dn": 136, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry/sdk", "bh": 286377, "btc": 1796, "btn": 351, "pn": "com/flurry"}
 {"dn": 1463, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry/sdk", "bh": 281407, "btc": 1794, "btn": 351, "pn": "com/flurry"}
-{"dn": 102, "lib": "", "sp": "com/smaato/soma", "bh": 315827, "btc": 1592, "btn": 351}
+{"dn": 102, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma", "bh": 315827, "btc": 1592, "btn": 351, "pn": "com/smaato"}
 {"dn": 4042, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/re", "bh": 253401, "btc": 1141, "btn": 351, "pn": "com/inmobi"}
 {"dn": 3591, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/re", "bh": 251415, "btc": 1106, "btn": 351, "pn": "com/inmobi"}
 {"dn": 307, "lib": "", "sp": "com/qbiki/util", "bh": 684824, "btc": 1049, "btn": 351}
@@ -3546,7 +3546,7 @@
 {"dn": 212, "lib": "", "sp": "com/Tobit/android/helpers", "bh": 315496, "btc": 1858, "btn": 349}
 {"dn": 3364, "lib": "", "sp": "com/Tobit/android/helpers", "bh": 312735, "btc": 1857, "btn": 349}
 {"dn": 168, "lib": "", "sp": "com/fitnessmobileapps/fma/views/fragments", "bh": 268154, "btc": 1737, "btn": 349}
-{"dn": 147, "lib": "", "sp": "com/smaato/soma", "bh": 325743, "btc": 1595, "btn": 349}
+{"dn": 147, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma", "bh": 325743, "btc": 1595, "btn": 349, "pn": "com/smaato"}
 {"dn": 290, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons", "bh": 210023, "btc": 1550, "btn": 349, "pn": "org/apache/commons"}
 {"dn": 170, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/util", "bh": 769779, "btc": 1310, "btn": 349, "pn": "com/google/gdata"}
 {"dn": 114, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/util", "bh": 762918, "btc": 1309, "btn": 349, "pn": "com/google/gdata"}
@@ -3913,7 +3913,7 @@
 {"dn": 113, "lib": "ad;Applovin;https://www.applovin.com/", "sp": "com/applovin/impl", "bh": 347450, "btc": 2063, "btn": 316, "pn": "com/applovin"}
 {"dn": 499, "lib": "", "sp": "com/Tobit/android/slitte/fragments", "bh": 571488, "btc": 2026, "btn": 316}
 {"dn": 277, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/app", "bh": 76718, "btc": 1931, "btn": 316, "pn": "android/support/v4"}
-{"dn": 154, "lib": "", "sp": "com/smaato/soma", "bh": 616979, "btc": 1471, "btn": 316}
+{"dn": 154, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma", "bh": 616979, "btc": 1471, "btn": 316, "pn": "com/smaato"}
 {"dn": 145, "lib": "", "sp": "com/mopub/mobileads", "bh": 639753, "btc": 1267, "btn": 316}
 {"dn": 214, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebooklib/internal", "bh": 309589, "btc": 1122, "btn": 316, "pn": "com/facebook"}
 {"dn": 239, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/internal", "bh": 308987, "btc": 1121, "btn": 316, "pn": "com/facebook"}
@@ -3947,7 +3947,7 @@
 {"dn": 156, "lib": "da;Github;https://github.com/", "sp": "com/github/ignition", "bh": 281577, "btc": 560, "btn": 315, "pn": "com/github"}
 {"dn": 250, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry/sdk", "bh": 391870, "btc": 2127, "btn": 314, "pn": "com/flurry"}
 {"dn": 120, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/app", "bh": 153055, "btc": 1794, "btn": 314, "pn": "android/support/v4"}
-{"dn": 246, "lib": "", "sp": "com/smaato/soma", "bh": 593351, "btc": 1463, "btn": 314}
+{"dn": 246, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma", "bh": 593351, "btc": 1463, "btn": 314, "pn": "com/smaato"}
 {"dn": 335, "lib": "", "sp": "com/fancypush/pushnotifications", "bh": 876234, "btc": 1038, "btn": 314}
 {"dn": 21325, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons", "bh": 321502, "btc": 944, "btn": 314, "pn": "org/apache/commons"}
 {"dn": 1430, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons", "bh": 321423, "btc": 944, "btn": 314, "pn": "org/apache/commons"}
@@ -4089,7 +4089,7 @@
 {"dn": 2700, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry", "bh": 752994, "btc": 1449, "btn": 304, "pn": "com/flurry"}
 {"dn": 149, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry", "bh": 752974, "btc": 1449, "btn": 304, "pn": "com/flurry"}
 {"dn": 275, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry", "bh": 750368, "btc": 1348, "btn": 304, "pn": "com/flurry"}
-{"dn": 114, "lib": "", "sp": "com/smaato/soma", "bh": 747966, "btc": 1056, "btn": 304}
+{"dn": 114, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma", "bh": 747966, "btc": 1056, "btn": 304, "pn": "com/smaato"}
 {"dn": 126, "lib": "da;AndroidAsync;https://github.com/koush/AndroidAsync", "sp": "com/koushikdutta/async/http", "bh": 248339, "btc": 774, "btn": 304, "pn": "com/koushikdutta/async"}
 {"dn": 118, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/ads", "bh": 505302, "btc": 747, "btn": 304, "pn": "com/facebook"}
 {"dn": 323, "lib": "ad;apperhand;", "sp": "com/apperhand/device", "bh": 899241, "btc": 679, "btn": 304, "pn": "com/apperhand"}
@@ -4676,8 +4676,8 @@
 {"dn": 156, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/widget", "bh": 458357, "btc": 904, "btn": 269, "pn": "android/support/v4"}
 {"dn": 108, "lib": "", "sp": "com/easy3d/factory", "bh": 921156, "btc": 903, "btn": 269}
 {"dn": 906, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/widget", "bh": 423944, "btc": 902, "btn": 269, "pn": "android/support/v4"}
-{"dn": 12467, "lib": "", "sp": "com/smaato/SOMA", "bh": 121461, "btc": 838, "btn": 269}
-{"dn": 1299, "lib": "", "sp": "com/smaato/SOMA", "bh": 121402, "btc": 838, "btn": 269}
+{"dn": 12467, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/SOMA", "bh": 121461, "btc": 838, "btn": 269, "pn": "com/smaato"}
+{"dn": 1299, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/SOMA", "bh": 121402, "btc": 838, "btn": 269, "pn": "com/smaato"}
 {"dn": 458, "lib": "ut;Amazon;", "sp": "com/amazon/insights", "bh": 708703, "btc": 583, "btn": 269, "pn": "com/amazon"}
 {"dn": 144, "lib": "ge;cocos2D;http://www.cocos2d-x.org/", "sp": "org/cocos2d", "bh": 887259, "btc": 581, "btn": 269, "pn": "org/cocos2d"}
 {"dn": 549, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/content", "bh": 730764, "btc": 578, "btn": 269, "pn": "android/support/v4"}
@@ -4718,7 +4718,7 @@
 {"dn": 149, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/widget", "bh": 535833, "btc": 901, "btn": 266, "pn": "android/support/v4"}
 {"dn": 1822, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j", "bh": 466223, "btc": 888, "btn": 266, "pn": "twitter4j"}
 {"dn": 148, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j", "bh": 466199, "btc": 888, "btn": 266, "pn": "twitter4j"}
-{"dn": 126, "lib": "", "sp": "com/smaato/SOMA", "bh": 8682, "btc": 808, "btn": 266}
+{"dn": 126, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/SOMA", "bh": 8682, "btc": 808, "btn": 266, "pn": "com/smaato"}
 {"dn": 121, "lib": "da;doapps;http://www.doapps.com/", "sp": "com/doapps/android/mln/frontpage", "bh": 972870, "btc": 787, "btn": 266, "pn": "com/doapps"}
 {"dn": 1059, "lib": "am;Google Play;https://play.google.com", "sp": "com/google/android/vending/expansion/downloader", "bh": 672136, "btc": 741, "btn": 266, "pn": "com/google/android/vending"}
 {"dn": 169, "lib": "", "sp": "com/mobileroadie/mediaplayer", "bh": 804193, "btc": 731, "btn": 266}
@@ -4737,7 +4737,7 @@
 {"dn": 4083, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/analytics", "bh": 637488, "btc": 1092, "btn": 265, "pn": "com/google/android/gms"}
 {"dn": 148, "lib": "", "sp": "com/heyzap/http", "bh": 532686, "btc": 973, "btn": 265}
 {"dn": 316, "lib": "am;Google Play;https://play.google.com", "sp": "com/google/android/vending/expansion/downloader", "bh": 670952, "btc": 795, "btn": 265, "pn": "com/google/android/vending"}
-{"dn": 182, "lib": "", "sp": "com/smaato/SOMA", "bh": 30760, "btc": 784, "btn": 265}
+{"dn": 182, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/SOMA", "bh": 30760, "btc": 784, "btn": 265, "pn": "com/smaato"}
 {"dn": 2967, "lib": "am;Google Play;https://play.google.com", "sp": "com/google/android/vending/expansion/downloader", "bh": 670536, "btc": 779, "btn": 265, "pn": "com/google/android/vending"}
 {"dn": 109, "lib": "am;Google Play;https://play.google.com", "sp": "com/google/android/vending/expansion/downloader", "bh": 670519, "btc": 779, "btn": 265, "pn": "com/google/android/vending"}
 {"dn": 220, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/view", "bh": 963672, "btc": 735, "btn": 265, "pn": "android/support/v4"}
@@ -5139,7 +5139,7 @@
 {"dn": 124, "lib": "", "sp": "com/heyzap/sdk/ads", "bh": 37552, "btc": 985, "btn": 244}
 {"dn": 905, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/widget", "bh": 875784, "btc": 873, "btn": 244, "pn": "android/support/v4"}
 {"dn": 319, "lib": "da;Appinventor;http://appinventor.mit.edu/", "sp": "appinventor/ai_yunliaoyun/TouchTwins_Silent/mobi/vserv/org/ormma/controller", "bh": 708840, "btc": 862, "btn": 244, "pn": "appinventor"}
-{"dn": 258, "lib": "", "sp": "com/smaato/soma", "bh": 257313, "btc": 828, "btn": 244}
+{"dn": 258, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma", "bh": 257313, "btc": 828, "btn": 244, "pn": "com/smaato"}
 {"dn": 106, "lib": "", "sp": "www/conduit/app/views", "bh": 342739, "btc": 704, "btn": 244}
 {"dn": 2359, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/androidsdk", "bh": 274739, "btc": 612, "btn": 244, "pn": "com/inmobi"}
 {"dn": 3340, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/androidsdk", "bh": 274271, "btc": 594, "btn": 244, "pn": "com/inmobi"}
@@ -5184,7 +5184,7 @@
 {"dn": 422, "lib": "", "sp": "net/mz/callflakessdk/core", "bh": 987419, "btc": 835, "btn": 242}
 {"dn": 232, "lib": "", "sp": "com/tapfortap", "bh": 422202, "btc": 832, "btn": 242}
 {"dn": 123, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/layout", "bh": 851270, "btc": 784, "btn": 242, "pn": "com/biznessapps"}
-{"dn": 914, "lib": "", "sp": "com/smaato/soma", "bh": 214439, "btc": 777, "btn": 242}
+{"dn": 914, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma", "bh": 214439, "btc": 777, "btn": 242, "pn": "com/smaato"}
 {"dn": 128, "lib": "ad;AdSDK;", "sp": "com/adsdk/sdk/mraid", "bh": 987760, "btc": 678, "btn": 242, "pn": "com/adsdk"}
 {"dn": 135, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/view", "bh": 956936, "btc": 675, "btn": 242, "pn": "android/support/v4"}
 {"dn": 718, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/e", "bh": 398519, "btc": 673, "btn": 242, "pn": "com/startapp"}
@@ -5372,7 +5372,7 @@
 {"dn": 100, "lib": "", "sp": "net/fortuna/ical4j", "bh": 571040, "btc": 916, "btn": 235}
 {"dn": 337, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/androidsdk", "bh": 391128, "btc": 870, "btn": 235, "pn": "com/inmobi"}
 {"dn": 419, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/androidsdk", "bh": 377306, "btc": 856, "btn": 235, "pn": "com/inmobi"}
-{"dn": 191, "lib": "", "sp": "com/smaato/soma", "bh": 168756, "btc": 796, "btn": 235}
+{"dn": 191, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma", "bh": 168756, "btc": 796, "btn": 235, "pn": "com/smaato"}
 {"dn": 807, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/internal", "bh": 156466, "btc": 686, "btn": 235, "pn": "com/facebook"}
 {"dn": 142, "lib": "", "sp": "io/vov/vitamio", "bh": 339898, "btc": 596, "btn": 235}
 {"dn": 311, "lib": "", "sp": "com/nd/android/pandareader/bookread/pdf/view", "bh": 748876, "btc": 581, "btn": 235}
@@ -6399,7 +6399,7 @@
 {"dn": 108, "lib": "", "sp": "com/nhaarman/listviewanimations", "bh": 205682, "btc": 526, "btn": 198}
 {"dn": 3229, "lib": "da;Loopj;https://github.com/loopj/android-async-http", "sp": "com/loopj/rhl/surge", "bh": 459009, "btc": 509, "btn": 198, "pn": "com/loopj"}
 {"dn": 239, "lib": "da;Loopj;https://github.com/loopj/android-async-http", "sp": "com/loopj/android/http", "bh": 458985, "btc": 509, "btn": 198, "pn": "com/loopj"}
-{"dn": 109, "lib": "", "sp": "com/smaato/soma/internal", "bh": 625688, "btc": 506, "btn": 198}
+{"dn": 109, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal", "bh": 625688, "btc": 506, "btn": 198, "pn": "com/smaato"}
 {"dn": 1280, "lib": "ma;Umeng Analytics;https://www.umeng.com/analytics", "sp": "com/umeng/analytics", "bh": 179491, "btc": 501, "btn": 198, "pn": "com/umeng/analytics"}
 {"dn": 156, "lib": "ma;Umeng Analytics;https://www.umeng.com/analytics", "sp": "com/umeng/analytics", "bh": 174444, "btc": 499, "btn": 198, "pn": "com/umeng/analytics"}
 {"dn": 242, "lib": "", "sp": "com/qualcomm/ar/pl", "bh": 455336, "btc": 488, "btn": 198}
@@ -6433,7 +6433,7 @@
 {"dn": 7812, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal", "bh": 554981, "btc": 540, "btn": 197, "pn": "twitter4j"}
 {"dn": 148, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal", "bh": 554960, "btc": 540, "btn": 197, "pn": "twitter4j"}
 {"dn": 440, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/views/overlay", "bh": 691449, "btc": 518, "btn": 197, "pn": "org/osmdroid"}
-{"dn": 200, "lib": "", "sp": "com/smaato/soma/internal", "bh": 656271, "btc": 516, "btn": 197}
+{"dn": 200, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal", "bh": 656271, "btc": 516, "btn": 197, "pn": "com/smaato"}
 {"dn": 314, "lib": "da;Appcelerator;http://www.appcelerator.org/", "sp": "org/appcelerator/kroll", "bh": 341619, "btc": 495, "btn": 197, "pn": "org/appcelerator"}
 {"dn": 1129, "lib": "da;Appcelerator;http://www.appcelerator.org/", "sp": "org/appcelerator/kroll", "bh": 331394, "btc": 491, "btn": 197, "pn": "org/appcelerator"}
 {"dn": 135, "lib": "", "sp": "com/smartadserver/android/library/ui", "bh": 203510, "btc": 484, "btn": 197}
@@ -6654,7 +6654,7 @@
 {"dn": 115, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/library/utils", "bh": 234187, "btc": 571, "btn": 190, "pn": "com/aviary"}
 {"dn": 479, "lib": "", "sp": "com/feedback", "bh": 501666, "btc": 509, "btn": 190}
 {"dn": 235, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/media", "bh": 630670, "btc": 503, "btn": 190, "pn": "ti/modules/titanium"}
-{"dn": 161, "lib": "", "sp": "com/smaato/soma/internal", "bh": 605571, "btc": 499, "btn": 190}
+{"dn": 161, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal", "bh": 605571, "btc": 499, "btn": 190, "pn": "com/smaato"}
 {"dn": 847, "lib": "ut;anywheresoftware;", "sp": "anywheresoftware/b4a/keywords", "bh": 390710, "btc": 486, "btn": 190, "pn": "anywheresoftware"}
 {"dn": 2202, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/d", "bh": 40664, "btc": 486, "btn": 190, "pn": "com/startapp"}
 {"dn": 117, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/d", "bh": 40644, "btc": 486, "btn": 190, "pn": "com/startapp"}
@@ -6744,7 +6744,7 @@
 {"dn": 293, "lib": "ut;skplanet;http://www.skplanet.com", "sp": "com/skplanet/tad/mraid", "bh": 240806, "btc": 558, "btn": 188, "pn": "com/skplanet"}
 {"dn": 264, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "nd/android/support/v4", "bh": 365646, "btc": 513, "btn": 188, "pn": "android/support/v4"}
 {"dn": 311, "lib": "da;ACRA (Application Crash Reports for Android);https://github.com/ACRA/acra", "sp": "org/acra", "bh": 293745, "btc": 510, "btn": 188, "pn": "org/acra"}
-{"dn": 291, "lib": "", "sp": "com/smaato/soma/internal", "bh": 596776, "btc": 495, "btn": 188}
+{"dn": 291, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal", "bh": 596776, "btc": 495, "btn": 188, "pn": "com/smaato"}
 {"dn": 175, "lib": "", "sp": "com/zxing/client/android", "bh": 320994, "btc": 485, "btn": 188}
 {"dn": 196, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader/core", "bh": 437534, "btc": 459, "btn": 188, "pn": "com/nostra13"}
 {"dn": 506, "lib": "da;Loopj;https://github.com/loopj/android-async-http", "sp": "com/loopj/android/http", "bh": 355376, "btc": 447, "btn": 188, "pn": "com/loopj"}
@@ -6770,7 +6770,7 @@
 {"dn": 371, "lib": "ut;anywheresoftware;", "sp": "anywheresoftware/b4a/keywords", "bh": 420279, "btc": 506, "btn": 187, "pn": "anywheresoftware"}
 {"dn": 146, "lib": "", "sp": "com/oopsconsultancy/xmltask", "bh": 90286, "btc": 494, "btn": 187}
 {"dn": 247, "lib": "", "sp": "com/feedback", "bh": 391554, "btc": 484, "btn": 187}
-{"dn": 102, "lib": "", "sp": "com/smaato/SOMA", "bh": 444836, "btc": 477, "btn": 187}
+{"dn": 102, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/SOMA", "bh": 444836, "btc": 477, "btn": 187, "pn": "com/smaato"}
 {"dn": 111, "lib": "", "sp": "com/fancypush/pushnotifications", "bh": 268756, "btc": 447, "btn": 187}
 {"dn": 15296, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common", "bh": 825795, "btc": 436, "btn": 187, "pn": "com/google/android/gms"}
 {"dn": 140, "lib": "da;AndroidAnnotations API;https://github.com/excilys/androidannotations", "sp": "org/androidannotations/api", "bh": 708614, "btc": 433, "btn": 187, "pn": "org/androidannotations/"}
@@ -7197,7 +7197,7 @@
 {"dn": 1657, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core", "bh": 174226, "btc": 677, "btn": 173, "pn": "com/fasterxml"}
 {"dn": 351, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core", "bh": 157970, "btc": 677, "btn": 173, "pn": "com/fasterxml"}
 {"dn": 198, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/b", "bh": 15988, "btc": 669, "btn": 173, "pn": "com/google/ads"}
-{"dn": 258, "lib": "", "sp": "com/smaato/soma/internal", "bh": 563173, "btc": 659, "btn": 173}
+{"dn": 258, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal", "bh": 563173, "btc": 659, "btn": 173, "pn": "com/smaato"}
 {"dn": 195, "lib": "", "sp": "com/appmk/magazine/main", "bh": 82420, "btc": 655, "btn": 173}
 {"dn": 235, "lib": "ut;Magtab;https://www.magtab.com/", "sp": "com/magtab/RevistaDiCasa/Telas/Banca", "bh": 39656, "btc": 637, "btn": 173, "pn": "com/magtab"}
 {"dn": 100, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/compress/archivers/zip", "bh": 971743, "btc": 629, "btn": 173, "pn": "org/apache/commons"}
@@ -7442,7 +7442,7 @@
 {"dn": 253, "lib": "", "sp": "com/ormma/controller", "bh": 80215, "btc": 634, "btn": 166}
 {"dn": 186, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/reflect", "bh": 911656, "btc": 613, "btn": 166, "pn": "com/google/common"}
 {"dn": 168, "lib": "", "sp": "a/a", "bh": 297964, "btc": 583, "btn": 166}
-{"dn": 914, "lib": "", "sp": "com/smaato/soma/internal", "bh": 499019, "btc": 576, "btn": 166}
+{"dn": 914, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal", "bh": 499019, "btc": 576, "btn": 166, "pn": "com/smaato"}
 {"dn": 119, "lib": "ad;Appflood;http://appflood.com", "sp": "com/appflood/e", "bh": 2370, "btc": 553, "btn": 166, "pn": "com/appflood"}
 {"dn": 169, "lib": "ut;Nuance Speech Kit Library;https://nuance.com/", "sp": "com/nuance", "bh": 537217, "btc": 543, "btn": 166, "pn": "com/nuance"}
 {"dn": 175, "lib": "", "sp": "org/apache/poi/poifs", "bh": 131371, "btc": 518, "btn": 166}
@@ -7637,7 +7637,7 @@
 {"dn": 114, "lib": "", "sp": "com/appbuilder/u96508p228874/embedded/ECommercePlugin", "bh": 485978, "btc": 741, "btn": 159}
 {"dn": 381, "lib": "", "sp": "com/pad/android/util", "bh": 985234, "btc": 661, "btn": 159}
 {"dn": 102, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/databind/deser", "bh": 48800, "btc": 632, "btn": 159, "pn": "com/fasterxml"}
-{"dn": 221, "lib": "", "sp": "com/smaato/soma/internal", "bh": 485829, "btc": 621, "btn": 159}
+{"dn": 221, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal", "bh": 485829, "btc": 621, "btn": 159, "pn": "com/smaato"}
 {"dn": 2264, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core", "bh": 960043, "btc": 578, "btn": 159, "pn": "com/fasterxml"}
 {"dn": 118, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core", "bh": 960036, "btc": 578, "btn": 159, "pn": "com/fasterxml"}
 {"dn": 144, "lib": "", "sp": "com/tripomatic/ui/maps", "bh": 231179, "btc": 556, "btn": 159}
@@ -8407,7 +8407,7 @@
 {"dn": 230, "lib": "ad;Adwhirl Ads;https://code.google.com/p/adwhirl/", "sp": "com/adwhirl", "bh": 697645, "btc": 320, "btn": 141, "pn": "com/adwhirl"}
 {"dn": 485, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/reports/controls", "bh": 896842, "btc": 317, "btn": 141, "pn": "com/conduit/app"}
 {"dn": 504, "lib": "", "sp": "com/burstly/lib/component/networkcomponent/burstly/html/rewards", "bh": 829200, "btc": 306, "btn": 141}
-{"dn": 114, "lib": "", "sp": "com/smaato/soma/internal", "bh": 68717, "btc": 280, "btn": 141}
+{"dn": 114, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal", "bh": 68717, "btc": 280, "btn": 141, "pn": "com/smaato"}
 {"dn": 3924, "lib": "ad;PlayHaven Mobile Ads;http://www.playhaven.com/", "sp": "v2/com/playhaven/requests", "bh": 587511, "btc": 276, "btn": 141, "pn": "v2/com/playhaven"}
 {"dn": 177, "lib": "ad;PlayHaven Mobile Ads;http://www.playhaven.com/", "sp": "v2/com/playhaven/requests", "bh": 587501, "btc": 276, "btn": 141, "pn": "v2/com/playhaven"}
 {"dn": 331, "lib": "", "sp": "com/sponsorpay/sdk/android/publisher", "bh": 859953, "btc": 270, "btn": 141}
@@ -11103,7 +11103,7 @@
 {"dn": 309, "lib": "", "sp": "ru/perm/kefir/bbcode", "bh": 899574, "btc": 302, "btn": 98}
 {"dn": 646, "lib": "ad;adsmogo;http://www.adsmogo.com/", "sp": "com/adsmogo/mriad/view", "bh": 468206, "btc": 300, "btn": 98, "pn": "com/adsmogo"}
 {"dn": 236, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/anddev/andengine/opengl/texture", "bh": 702046, "btc": 298, "btn": 98, "pn": "org/anddev/andengine"}
-{"dn": 293, "lib": "", "sp": "com/smaato/soma/bannerutilities", "bh": 694972, "btc": 295, "btn": 98}
+{"dn": 293, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/bannerutilities", "bh": 694972, "btc": 295, "btn": 98, "pn": "com/smaato"}
 {"dn": 215, "lib": "", "sp": "org/xmlrpc/android", "bh": 99515, "btc": 294, "btn": 98}
 {"dn": 129, "lib": "", "sp": "com/android/vk/group/fragments", "bh": 691157, "btc": 288, "btn": 98}
 {"dn": 133, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/generic", "bh": 98667, "btc": 276, "btn": 98, "pn": "com/conduit/app"}
@@ -11197,14 +11197,14 @@
 {"dn": 103, "lib": "", "sp": "com/crittercism/app", "bh": 659173, "btc": 351, "btn": 97}
 {"dn": 144, "lib": "", "sp": "com/tripomatic/ui/maps/overlays", "bh": 767770, "btc": 348, "btn": 97}
 {"dn": 108, "lib": "ad;Vpon;http://www.vpon.com/", "sp": "com/vpon/widget", "bh": 647841, "btc": 345, "btn": 97, "pn": "com/vpon"}
-{"dn": 181, "lib": "", "sp": "com/smaato/soma/internal/utilities", "bh": 163978, "btc": 343, "btn": 97}
+{"dn": 181, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/utilities", "bh": 163978, "btc": 343, "btn": 97, "pn": "com/smaato"}
 {"dn": 2277, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/ui/widget/listview", "bh": 704203, "btc": 322, "btn": 97, "pn": "ti/modules/titanium"}
 {"dn": 194, "lib": "", "sp": "com/vervewireless/advert/internal/e", "bh": 700417, "btc": 316, "btn": 97}
 {"dn": 353, "lib": "", "sp": "ti/cloudpush", "bh": 483672, "btc": 309, "btn": 97}
 {"dn": 425, "lib": "ad;apperhand;", "sp": "com/apperhand/device/android/a", "bh": 610936, "btc": 302, "btn": 97, "pn": "com/apperhand"}
 {"dn": 139, "lib": "ui;urbanairship;https://www.urbanairship.com/", "sp": "com/urbanairship/util", "bh": 464269, "btc": 296, "btn": 97, "pn": "com/urbanairship"}
 {"dn": 106, "lib": "ui;urbanairship;https://www.urbanairship.com/", "sp": "com/urbanairship/location", "bh": 467156, "btc": 295, "btn": 97, "pn": "com/urbanairship"}
-{"dn": 157, "lib": "", "sp": "com/smaato/soma/bannerutilities", "bh": 713059, "btc": 291, "btn": 97}
+{"dn": 157, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/bannerutilities", "bh": 713059, "btc": 291, "btn": 97, "pn": "com/smaato"}
 {"dn": 340, "lib": "", "sp": "com/vietandroid", "bh": 722768, "btc": 289, "btn": 97}
 {"dn": 307, "lib": "", "sp": "com/qbiki/location", "bh": 639820, "btc": 282, "btn": 97}
 {"dn": 2147, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "org/codehaus/jackson/map/util", "bh": 622156, "btc": 281, "btn": 97, "pn": "org/codehaus"}
@@ -11464,11 +11464,11 @@
 {"dn": 119, "lib": "", "sp": "com/uucun/adsdk/c", "bh": 564924, "btc": 380, "btn": 94}
 {"dn": 160, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/graphics", "bh": 434394, "btc": 380, "btn": 94, "pn": "com/aviary"}
 {"dn": 2398, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader/cache/disc/impl", "bh": 403732, "btc": 357, "btn": 94, "pn": "com/nostra13"}
-{"dn": 121, "lib": "", "sp": "com/smaato/soma/bannerutilities", "bh": 761204, "btc": 348, "btn": 94}
+{"dn": 121, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/bannerutilities", "bh": 761204, "btc": 348, "btn": 94, "pn": "com/smaato"}
 {"dn": 161, "lib": "", "sp": "org/jdom/input", "bh": 520053, "btc": 332, "btn": 94}
 {"dn": 199, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/pool", "bh": 46556, "btc": 324, "btn": 94, "pn": "org/apache/http"}
 {"dn": 105, "lib": "", "sp": "com/socialize/ui/comment", "bh": 852313, "btc": 321, "btn": 94}
-{"dn": 109, "lib": "", "sp": "com/smaato/soma/bannerutilities", "bh": 761177, "btc": 321, "btn": 94}
+{"dn": 109, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/bannerutilities", "bh": 761177, "btc": 321, "btn": 94, "pn": "com/smaato"}
 {"dn": 128, "lib": "", "sp": "com/nd/android/pandareader/payment/space", "bh": 926821, "btc": 308, "btn": 94}
 {"dn": 134, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 536888, "btc": 301, "btn": 94, "pn": "com/facebook"}
 {"dn": 696, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 536887, "btc": 300, "btn": 94, "pn": "com/facebook"}
@@ -11558,15 +11558,15 @@
 {"dn": 112, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core", "bh": 457959, "btc": 371, "btn": 93, "pn": "com/fasterxml"}
 {"dn": 101, "lib": "", "sp": "com/liquidair/spodtronic/stream", "bh": 108090, "btc": 352, "btn": 93}
 {"dn": 199, "lib": "", "sp": "org/jdom/input", "bh": 546716, "btc": 343, "btn": 93}
-{"dn": 202, "lib": "", "sp": "com/smaato/soma/internal/utilities", "bh": 158615, "btc": 339, "btn": 93}
+{"dn": 202, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/utilities", "bh": 158615, "btc": 339, "btn": 93, "pn": "com/smaato"}
 {"dn": 311, "lib": "", "sp": "com/nd/android/pandareader/bookread/ndz", "bh": 644885, "btc": 337, "btn": 93}
-{"dn": 457, "lib": "", "sp": "com/smaato/soma/internal/utilities", "bh": 155047, "btc": 336, "btn": 93}
+{"dn": 457, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/utilities", "bh": 155047, "btc": 336, "btn": 93, "pn": "com/smaato"}
 {"dn": 181, "lib": "ut;Nostra13 Image Loading;https://github.com/nostra13/Android-Universal-Image-Loader", "sp": "com/nostra13/universalimageloader/cache/disc/impl", "bh": 400110, "btc": 335, "btn": 93, "pn": "com/nostra13"}
 {"dn": 524, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/databind/ser/std", "bh": 553497, "btc": 334, "btn": 93, "pn": "com/fasterxml"}
 {"dn": 254, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/ui/widget/webview", "bh": 491545, "btc": 331, "btn": 93, "pn": "ti/modules/titanium"}
 {"dn": 134, "lib": "", "sp": "com/renren/sdk/systeminfo", "bh": 331237, "btc": 314, "btn": 93}
 {"dn": 152, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/apphkgQo6EvDQ/client/util/db", "bh": 502641, "btc": 310, "btn": 93, "pn": "com/crowdcompass"}
-{"dn": 147, "lib": "", "sp": "com/smaato/soma/bannerutilities", "bh": 734876, "btc": 309, "btn": 93}
+{"dn": 147, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/bannerutilities", "bh": 734876, "btc": 309, "btn": 93, "pn": "com/smaato"}
 {"dn": 6010, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/impl/auth", "bh": 659486, "btc": 302, "btn": 93, "pn": "org/apache/http"}
 {"dn": 446, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/impl/auth", "bh": 659359, "btc": 302, "btn": 93, "pn": "org/apache/http"}
 {"dn": 311, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/android", "bh": 531618, "btc": 297, "btn": 93, "pn": "com/facebook"}
@@ -12246,7 +12246,7 @@
 {"dn": 207, "lib": "ad;Baidu Mobile Ads;https://developer.baidu.com/", "sp": "com/baidu/mobads/a", "bh": 777545, "btc": 284, "btn": 86, "pn": "com/baidu/mobads"}
 {"dn": 200, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/library/b", "bh": 726002, "btc": 280, "btn": 86, "pn": "com/aviary"}
 {"dn": 306, "lib": "da;Qoppa Software;https://www.qoppa.com/", "sp": "com/qoppa/android/pdfProcess/e", "bh": 348997, "btc": 276, "btn": 86, "pn": "com/qoppa"}
-{"dn": 202, "lib": "", "sp": "com/smaato/soma/internal/requests", "bh": 489139, "btc": 275, "btn": 86}
+{"dn": 202, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/requests", "bh": 489139, "btc": 275, "btn": 86, "pn": "com/smaato"}
 {"dn": 128, "lib": "", "sp": "com/nd/android/pandareader/a", "bh": 643262, "btc": 260, "btn": 86}
 {"dn": 101, "lib": "", "sp": "a", "bh": 631637, "btc": 257, "btn": 86}
 {"dn": 167, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/adtracker/androidsdk/impl", "bh": 365462, "btc": 254, "btn": 86, "pn": "com/inmobi"}
@@ -12447,7 +12447,7 @@
 {"dn": 105, "lib": "", "sp": "com/arthisoftlib/aisparser/plistparser", "bh": 526976, "btc": 274, "btn": 84}
 {"dn": 428, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/music", "bh": 689529, "btc": 269, "btn": 84, "pn": "com/biznessapps"}
 {"dn": 239, "lib": "ad;adsmogo;http://www.adsmogo.com/", "sp": "com/adsmogo/mriad/view", "bh": 409708, "btc": 269, "btn": 84, "pn": "com/adsmogo"}
-{"dn": 128, "lib": "", "sp": "com/smaato/soma/internal/requests", "bh": 471102, "btc": 264, "btn": 84}
+{"dn": 128, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/requests", "bh": 471102, "btc": 264, "btn": 84, "pn": "com/smaato"}
 {"dn": 201, "lib": "", "sp": "com/splunk/mint/network/http", "bh": 503303, "btc": 263, "btn": 84}
 {"dn": 140, "lib": "", "sp": "com/android/debug/hv", "bh": 135034, "btc": 259, "btn": 84}
 {"dn": 150, "lib": "ui;android widget;", "sp": "com/googlecode/android/widgets/DateSlider", "bh": 859054, "btc": 238, "btn": 84, "pn": "android/widget"}
@@ -12889,7 +12889,7 @@
 {"dn": 214, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/android/apptools", "bh": 418592, "btc": 258, "btn": 80, "pn": "com/j256"}
 {"dn": 3678, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/splash", "bh": 555979, "btc": 256, "btn": 80, "pn": "com/startapp"}
 {"dn": 120, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/splash", "bh": 555974, "btc": 256, "btn": 80, "pn": "com/startapp"}
-{"dn": 121, "lib": "", "sp": "com/smaato/soma/internal/requests", "bh": 458818, "btc": 255, "btn": 80}
+{"dn": 121, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/requests", "bh": 458818, "btc": 255, "btn": 80, "pn": "com/smaato"}
 {"dn": 136, "lib": "ut;Aviary photo editing SDK;https://developers.aviary.com/docs/android", "sp": "com/aviary/android/feather/library/plugins", "bh": 690356, "btc": 252, "btn": 80, "pn": "com/aviary"}
 {"dn": 277, "lib": "ad;StartApp;http://www.startapp.com/", "sp": "com/startapp/android/publish/splash", "bh": 555823, "btc": 250, "btn": 80, "pn": "com/startapp"}
 {"dn": 142, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/client/vizandgoandroid/encode", "bh": 459205, "btc": 238, "btn": 80, "pn": "com/google/zxing"}
@@ -13025,7 +13025,7 @@
 {"dn": 171, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/android/apptools", "bh": 417068, "btc": 258, "btn": 79, "pn": "com/j256"}
 {"dn": 104, "lib": "ge;Scoreloop Game;", "sp": "com/scoreloop/client/android/core/server", "bh": 471918, "btc": 249, "btn": 79, "pn": "com/scoreloop"}
 {"dn": 348, "lib": "ge;Scoreloop Game;", "sp": "com/scoreloop/client/android/core/server", "bh": 444137, "btc": 242, "btn": 79, "pn": "com/scoreloop"}
-{"dn": 176, "lib": "", "sp": "com/smaato/soma/internal/requests", "bh": 429487, "btc": 242, "btn": 79}
+{"dn": 176, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/requests", "bh": 429487, "btc": 242, "btn": 79, "pn": "com/smaato"}
 {"dn": 253, "lib": "", "sp": "com/banking/services", "bh": 637109, "btc": 239, "btn": 79}
 {"dn": 105, "lib": "", "sp": "honuproductions/corkslwpfree", "bh": 723202, "btc": 238, "btn": 79}
 {"dn": 205, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/android/apptools", "bh": 415950, "btc": 238, "btn": 79, "pn": "com/j256"}
@@ -13269,7 +13269,7 @@
 {"dn": 151, "lib": "", "sp": "com/sec/android/ad/info", "bh": 409206, "btc": 227, "btn": 77}
 {"dn": 132, "lib": "", "sp": "com/sec/android/ad/info", "bh": 402617, "btc": 221, "btn": 77}
 {"dn": 7012, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common/data", "bh": 368799, "btc": 221, "btn": 77, "pn": "com/google/android/gms"}
-{"dn": 263, "lib": "", "sp": "com/smaato/soma/internal/requests", "bh": 399918, "btc": 220, "btn": 77}
+{"dn": 263, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/requests", "bh": 399918, "btc": 220, "btn": 77, "pn": "com/smaato"}
 {"dn": 349, "lib": "", "sp": "org/osmdroid/contributor", "bh": 526507, "btc": 218, "btn": 77}
 {"dn": 182, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/appoK44rFRs7S/client/maps/model", "bh": 592995, "btc": 216, "btn": 77, "pn": "com/crowdcompass"}
 {"dn": 100, "lib": "", "sp": "com/bindapp/cartoon", "bh": 312459, "btc": 215, "btn": 77}
@@ -14913,7 +14913,7 @@
 {"dn": 123, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/images", "bh": 476019, "btc": 239, "btn": 63, "pn": "com/biznessapps"}
 {"dn": 1207, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/music", "bh": 613324, "btc": 236, "btn": 63, "pn": "com/biznessapps"}
 {"dn": 156, "lib": "", "sp": "com/energysource/szj/embeded/utils", "bh": 453213, "btc": 233, "btn": 63}
-{"dn": 205, "lib": "", "sp": "com/smaato/soma/internal/requests/settings", "bh": 380535, "btc": 231, "btn": 63}
+{"dn": 205, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/requests/settings", "bh": 380535, "btc": 231, "btn": 63, "pn": "com/smaato"}
 {"dn": 279, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/eilc2013/client/model/map/tileprovider", "bh": 692503, "btc": 228, "btn": 63, "pn": "com/crowdcompass"}
 {"dn": 698, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/music", "bh": 597988, "btc": 228, "btn": 63, "pn": "com/biznessapps"}
 {"dn": 1172, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/jcajce/provider/asymmetric/x509", "bh": 68660, "btc": 225, "btn": 63, "pn": "org/bouncycastle"}
@@ -15223,7 +15223,7 @@
 {"dn": 1036, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/backends/android/surfaceview", "bh": 640411, "btc": 222, "btn": 61, "pn": "com/badlogic"}
 {"dn": 609, "lib": "", "sp": "com/mobimento/caponate/section/dataviews/calendar", "bh": 746647, "btc": 219, "btn": 61}
 {"dn": 187, "lib": "", "sp": "com/smaato/soma/internal/requests/settings", "bh": 361396, "btc": 219, "btn": 61}
-{"dn": 129, "lib": "", "sp": "com/smaato/soma/internal/requests/settings", "bh": 361394, "btc": 217, "btn": 61}
+{"dn": 129, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/requests/settings", "bh": 361394, "btc": 217, "btn": 61, "pn": "com/smaato"}
 {"dn": 109, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/gallery", "bh": 344652, "btc": 217, "btn": 61, "pn": "com/biznessapps"}
 {"dn": 11344, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/hash", "bh": 760398, "btc": 214, "btn": 61, "pn": "com/google/common"}
 {"dn": 1203, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/hash", "bh": 760380, "btc": 214, "btn": 61, "pn": "com/google/common"}
@@ -15838,7 +15838,7 @@
 {"dn": 220, "lib": "ge;Unity3D;https://unity3d.com/", "sp": "com/unity3d/plugin/downloader/a", "bh": 277528, "btc": 142, "btn": 57, "pn": "com/unity3d"}
 {"dn": 217, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fragments/webview", "bh": 272939, "btc": 139, "btn": 57, "pn": "com/biznessapps"}
 {"dn": 175, "lib": "", "sp": "com/plugin/gcm", "bh": 357707, "btc": 138, "btn": 57}
-{"dn": 114, "lib": "", "sp": "com/smaato/soma/internal/utilities", "bh": 679633, "btc": 137, "btn": 57}
+{"dn": 114, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/utilities", "bh": 679633, "btc": 137, "btn": 57, "pn": "com/smaato"}
 {"dn": 326, "lib": "da;newrelic;https://newrelic.com/", "sp": "com/newrelic/agent/android/api", "bh": 289826, "btc": 137, "btn": 57, "pn": "com/newrelic"}
 {"dn": 141, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core/util", "bh": 225480, "btc": 135, "btn": 57, "pn": "com/fasterxml"}
 {"dn": 1673, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/androidsdk/ai/controller/a", "bh": 196805, "btc": 134, "btn": 57, "pn": "com/inmobi"}
@@ -15971,7 +15971,7 @@
 {"dn": 474, "lib": "", "sp": "org/objectweb/asm", "bh": 445175, "btc": 204, "btn": 56}
 {"dn": 327, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive", "bh": 289403, "btc": 204, "btn": 56, "pn": "com/google/android/gms"}
 {"dn": 347, "lib": "am;Google Play;https://play.google.com", "sp": "com/android/vending", "bh": 730348, "btc": 203, "btn": 56, "pn": "com/android/vending"}
-{"dn": 179, "lib": "", "sp": "com/smaato/soma/internal/requests/settings", "bh": 320883, "btc": 198, "btn": 56}
+{"dn": 179, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/requests/settings", "bh": 320883, "btc": 198, "btn": 56, "pn": "com/smaato"}
 {"dn": 1174, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova/api", "bh": 217356, "btc": 194, "btn": 56, "pn": "org/apache/cordova"}
 {"dn": 155, "lib": "", "sp": "org/apache/mina/proxy/handlers/http/ntlm", "bh": 320320, "btc": 191, "btn": 56}
 {"dn": 1102, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/commons/network", "bh": 320782, "btc": 186, "btn": 56, "pn": "com/inmobi"}
@@ -16275,7 +16275,7 @@
 {"dn": 7683, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova/api", "bh": 205714, "btc": 185, "btn": 54, "pn": "org/apache/cordova"}
 {"dn": 273, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation", "bh": 178725, "btc": 180, "btn": 54, "pn": "com/google/ads"}
 {"dn": 273, "lib": "da;SLF4J;http://www.slf4j.org/", "sp": "org/slf4j/helpers", "bh": 375355, "btc": 179, "btn": 54, "pn": "org/slf4j"}
-{"dn": 263, "lib": "", "sp": "com/smaato/soma/internal/requests/settings", "bh": 291314, "btc": 176, "btn": 54}
+{"dn": 263, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/requests/settings", "bh": 291314, "btc": 176, "btn": 54, "pn": "com/smaato"}
 {"dn": 800, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/hash", "bh": 709768, "btc": 173, "btn": 54, "pn": "com/google/common"}
 {"dn": 338, "lib": "", "sp": "org/mockito/cglib/beans", "bh": 450119, "btc": 171, "btn": 54}
 {"dn": 145, "lib": "", "sp": "com/mobmatrix/mmappwall", "bh": 382242, "btc": 171, "btn": 54}
@@ -17840,7 +17840,7 @@
 {"dn": 264, "lib": "ut;AurelienRibon Animation Library;http://www.aurelienribon.com", "sp": "aurelienribon", "bh": 248655, "btc": 145, "btn": 46, "pn": "aurelienribon"}
 {"dn": 102, "lib": "", "sp": "com/jackhenry/godough/core/transfers", "bh": 299761, "btc": 143, "btn": 46}
 {"dn": 156, "lib": "", "sp": "com/sonicnotify/sdk/ui/internal/cache", "bh": 166903, "btc": 143, "btn": 46}
-{"dn": 434, "lib": "", "sp": "com/smaato/soma/twister", "bh": 672190, "btc": 141, "btn": 46}
+{"dn": 434, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/twister", "bh": 672190, "btc": 141, "btn": 46, "pn": "com/smaato"}
 {"dn": 169, "lib": "", "sp": "com/heyzap/sdk/ads", "bh": 231016, "btc": 140, "btn": 46}
 {"dn": 150, "lib": "sn;Facebook;https://developers.facebook.com", "sp": "com/facebook/sharepost", "bh": 224360, "btc": 138, "btn": 46, "pn": "com/facebook"}
 {"dn": 148, "lib": "", "sp": "pl/magot/vetch/ancal/database", "bh": 351620, "btc": 136, "btn": 46}
@@ -18729,7 +18729,7 @@
 {"dn": 265, "lib": "ad;PlayHaven Mobile Ads;http://www.playhaven.com/", "sp": "com/playhaven/android/data", "bh": 195828, "btc": 121, "btn": 42, "pn": "com/playhaven"}
 {"dn": 497, "lib": "da;AndroidAsync;https://github.com/koush/AndroidAsync", "sp": "com/koushikdutta/async/http/body", "bh": 232759, "btc": 119, "btn": 42, "pn": "com/koushikdutta/async"}
 {"dn": 162, "lib": "", "sp": "com/yyxu/download/widgets", "bh": 184468, "btc": 118, "btn": 42}
-{"dn": 114, "lib": "", "sp": "com/smaato/soma/twister", "bh": 615029, "btc": 116, "btn": 42}
+{"dn": 114, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/twister", "bh": 615029, "btc": 116, "btn": 42, "pn": "com/smaato"}
 {"dn": 5283, "lib": "ut;Sun Mail.jar;", "sp": "com/sun/mail/c", "bh": 470869, "btc": 115, "btn": 42, "pn": "com/sun/mail"}
 {"dn": 352, "lib": "ut;Sun Mail.jar;", "sp": "com/sun/mail/a", "bh": 470863, "btc": 115, "btn": 42, "pn": "com/sun/mail"}
 {"dn": 1735, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games", "bh": 147866, "btc": 115, "btn": 42, "pn": "com/google/android/gms"}
@@ -19212,7 +19212,7 @@
 {"dn": 169, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common", "bh": 171900, "btc": 89, "btn": 40, "pn": "com/google/android/gms"}
 {"dn": 186, "lib": "", "sp": "com/sponsorpay/publisher/interstitial", "bh": 160088, "btc": 89, "btn": 40}
 {"dn": 363, "lib": "", "sp": "net/manageapps/app_39028/moroconnect", "bh": 197591, "btc": 88, "btn": 40}
-{"dn": 154, "lib": "", "sp": "com/smaato/soma", "bh": 243346, "btc": 86, "btn": 40}
+{"dn": 154, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma", "bh": 243346, "btc": 86, "btn": 40, "pn": "com/smaato"}
 {"dn": 312, "lib": "ad;adsmogo;http://www.adsmogo.com/", "sp": "com/adsmogo/controller/adsmogoconfigsource", "bh": 137825, "btc": 86, "btn": 40, "pn": "com/adsmogo"}
 {"dn": 546, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common", "bh": 424473, "btc": 85, "btn": 40, "pn": "com/google/android/gms"}
 {"dn": 806, "lib": "", "sp": "com/socialize/ui/profile/activity", "bh": 272801, "btc": 85, "btn": 40}
@@ -20804,7 +20804,7 @@
 {"dn": 298, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/multiplayer", "bh": 137973, "btc": 144, "btn": 33, "pn": "com/google/android/gms"}
 {"dn": 225, "lib": "", "sp": "com/ning/http/client/oauth", "bh": 138502, "btc": 141, "btn": 33}
 {"dn": 283, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games", "bh": 165221, "btc": 140, "btn": 33, "pn": "com/google/android/gms"}
-{"dn": 263, "lib": "", "sp": "com/smaato/soma/internal/connector", "bh": 130100, "btc": 139, "btn": 33}
+{"dn": 263, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/connector", "bh": 130100, "btc": 139, "btn": 33, "pn": "com/smaato"}
 {"dn": 623, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/lang3/text/translate", "bh": 286987, "btc": 135, "btn": 33, "pn": "org/apache/commons"}
 {"dn": 16104, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation", "bh": 95449, "btc": 135, "btn": 33, "pn": "com/google/ads"}
 {"dn": 122, "lib": "", "sp": "repack/org/bouncycastle/i18n", "bh": 553918, "btc": 134, "btn": 33}
@@ -21289,7 +21289,7 @@
 {"dn": 3353, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/pdf417/encoder", "bh": 140736, "btc": 136, "btn": 31, "pn": "com/google/zxing"}
 {"dn": 108, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/pdf417/encoder", "bh": 140734, "btc": 136, "btn": 31, "pn": "com/google/zxing"}
 {"dn": 349, "lib": "", "sp": "com/twitterapime/xauth", "bh": 175343, "btc": 134, "btn": 31}
-{"dn": 743, "lib": "", "sp": "com/smaato/soma/internal/connector", "bh": 148487, "btc": 134, "btn": 31}
+{"dn": 743, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal/connector", "bh": 148487, "btc": 134, "btn": 31, "pn": "com/smaato"}
 {"dn": 139, "lib": "", "sp": "com/scringo/features/feedback", "bh": 150523, "btc": 133, "btn": 31}
 {"dn": 3396, "lib": "ma;Parse.com;https://parse.com/docs/cn/android/guide", "sp": "com/parse/gdata", "bh": 176608, "btc": 131, "btn": 31, "pn": "com/parse"}
 {"dn": 2123, "lib": "", "sp": "com/purplebrain/adbuddiz/sdk/model", "bh": 353210, "btc": 130, "btn": 31}
@@ -22507,7 +22507,7 @@
 {"dn": 693, "lib": "", "sp": "www/conduit/app/pgplugins/exbrowse", "bh": 119274, "btc": 35, "btn": 27}
 {"dn": 210, "lib": "", "sp": "com/sessionm/c", "bh": 84871, "btc": 35, "btn": 27}
 {"dn": 214, "lib": "", "sp": "com/makegeodeals/smartad/activities", "bh": 87815, "btc": 34, "btn": 27}
-{"dn": 868, "lib": "", "sp": "com/smaato/soma/interstitial", "bh": 83019, "btc": 34, "btn": 27}
+{"dn": 868, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/interstitial", "bh": 83019, "btc": 34, "btn": 27, "pn": "com/smaato"}
 {"dn": 161, "lib": "", "sp": "yuku/ambilwarna/widget", "bh": 221400, "btc": 33, "btn": 27}
 {"dn": 2276, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/app", "bh": 173596, "btc": 33, "btn": 27, "pn": "ti/modules/titanium"}
 {"dn": 159, "lib": "da;Signpost Oauth;https://code.google.com/p/oauth-signpost/", "sp": "oauth/signpost/commonshttp", "bh": 89796, "btc": 33, "btn": 27, "pn": "oauth/signpost"}
@@ -23044,7 +23044,7 @@
 {"dn": 353, "lib": "", "sp": "com/mobimento/caponate/ad/web", "bh": 63839, "btc": 33, "btn": 25}
 {"dn": 238, "lib": "", "sp": "com/quoord/tools/uploadanddownload", "bh": 61671, "btc": 33, "btn": 25}
 {"dn": 139, "lib": "", "sp": "com/jumio/netswipe/sdk/remote/a", "bh": 174675, "btc": 32, "btn": 25}
-{"dn": 118, "lib": "", "sp": "com/smaato/soma/interstitial", "bh": 79194, "btc": 32, "btn": 25}
+{"dn": 118, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/interstitial", "bh": 79194, "btc": 32, "btn": 25, "pn": "com/smaato"}
 {"dn": 283, "lib": "", "sp": "com/quoord/tapatalkpro/ics/alert", "bh": 127311, "btc": 31, "btn": 25}
 {"dn": 135, "lib": "", "sp": "com/google/api/client/json/gson", "bh": 77295, "btc": 31, "btn": 25}
 {"dn": 111, "lib": "", "sp": "com/quickmobile/conference/infobooth", "bh": 74367, "btc": 31, "btn": 25}
@@ -24955,7 +24955,7 @@
 {"dn": 490, "lib": "da;Apache Log4j;http://logging.apache.org/log4j/2.x/", "sp": "org/apache/log4j/d", "bh": 320265, "btc": 26, "btn": 18, "pn": "org/apache/log4j"}
 {"dn": 3061, "lib": "", "sp": "com/hzwp/mtmotocross/Gallery", "bh": 168591, "btc": 26, "btn": 18}
 {"dn": 170, "lib": "", "sp": "com/hzwp/mtmotocross/Gallery", "bh": 168584, "btc": 26, "btn": 18}
-{"dn": 139, "lib": "", "sp": "com/smaato/soma/toaster", "bh": 58645, "btc": 26, "btn": 18}
+{"dn": 139, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/toaster", "bh": 58645, "btc": 26, "btn": 18, "pn": "com/smaato"}
 {"dn": 4433, "lib": "da;javax;", "sp": "javax/annotation", "bh": 425691, "btc": 25, "btn": 18, "pn": "javax"}
 {"dn": 343, "lib": "da;javax;", "sp": "javax/annotation", "bh": 425680, "btc": 25, "btn": 18, "pn": "javax"}
 {"dn": 707, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app108991/ui", "bh": 143392, "btc": 25, "btn": 18, "pn": "com/appmakr"}
@@ -24975,7 +24975,7 @@
 {"dn": 2185, "lib": "", "sp": "net/roarsoftware/util", "bh": 39361, "btc": 24, "btn": 18}
 {"dn": 145, "lib": "ui;GreenDroid;https://github.com/cyrilmottier/GreenDroid", "sp": "greendroid/app", "bh": 38513, "btc": 24, "btn": 18, "pn": "greendroid"}
 {"dn": 416, "lib": "", "sp": "reader/tools", "bh": 59222, "btc": 23, "btn": 18}
-{"dn": 1073, "lib": "", "sp": "com/smaato/soma/toaster", "bh": 49554, "btc": 23, "btn": 18}
+{"dn": 1073, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/toaster", "bh": 49554, "btc": 23, "btn": 18, "pn": "com/smaato"}
 {"dn": 2062, "lib": "ut;Amazon;", "sp": "com/amazon/ags/client/d", "bh": 40481, "btc": 23, "btn": 18, "pn": "com/amazon"}
 {"dn": 410, "lib": "ui;GreenDroid;https://github.com/cyrilmottier/GreenDroid", "sp": "greendroid/app", "bh": 37812, "btc": 23, "btn": 18, "pn": "greendroid"}
 {"dn": 108, "lib": "", "sp": "com/nobollel/harmonyblocks", "bh": 71743, "btc": 22, "btn": 18}
@@ -25240,7 +25240,7 @@
 {"dn": 3388, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/opengl/f", "bh": 82703, "btc": 28, "btn": 17, "pn": "org/andengine"}
 {"dn": 288, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/opengl/view", "bh": 82700, "btc": 28, "btn": 17, "pn": "org/andengine"}
 {"dn": 122, "lib": "", "sp": "mobi/dash/microlog4android/repository", "bh": 76428, "btc": 28, "btn": 17}
-{"dn": 173, "lib": "", "sp": "com/smaato/soma/internal", "bh": 72705, "btc": 28, "btn": 17}
+{"dn": 173, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/internal", "bh": 72705, "btc": 28, "btn": 17, "pn": "com/smaato"}
 {"dn": 12933, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/android", "bh": 49349, "btc": 28, "btn": 17, "pn": "com/biznessapps"}
 {"dn": 120, "lib": "", "sp": "com/handpet/xml/document/parser", "bh": 48410, "btc": 28, "btn": 17}
 {"dn": 549, "lib": "ut;Amazon;", "sp": "com/amazon/ags/e/d/b", "bh": 27741, "btc": 28, "btn": 17, "pn": "com/amazon"}
@@ -25852,7 +25852,7 @@
 {"dn": 169, "lib": "", "sp": "com/Tobit/android/slitte/fragments/Pro", "bh": 46779, "btc": 28, "btn": 15}
 {"dn": 140, "lib": "", "sp": "com/csipsimple/ui/prefs/cupcake", "bh": 42011, "btc": 28, "btn": 15}
 {"dn": 9508, "lib": "ad;ChartBoost;http://www.chartboost.com/ ", "sp": "com/chartboost/sdk/Analytics", "bh": 37982, "btc": 28, "btn": 15, "pn": "com/chartboost/sdk"}
-{"dn": 1128, "lib": "", "sp": "com/smaato/soma/measurements", "bh": 34723, "btc": 28, "btn": 15}
+{"dn": 1128, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/measurements", "bh": 34723, "btc": 28, "btn": 15, "pn": "com/smaato"}
 {"dn": 375, "lib": "", "sp": "com/novoda/imageloader/core/bitmap", "bh": 106896, "btc": 27, "btn": 15}
 {"dn": 721, "lib": "ad;Adtech;http://www.adtech.com/", "sp": "com/adtech/mobilesdk/crypto", "bh": 98137, "btc": 27, "btn": 15, "pn": "com/adtech"}
 {"dn": 786, "lib": "", "sp": "org/geometerplus/android/fbreader/tips", "bh": 66140, "btc": 27, "btn": 15}
@@ -27108,7 +27108,7 @@
 {"dn": 651, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/scenes/scene2d/actions", "bh": 24087, "btc": 46, "btn": 11, "pn": "com/badlogic"}
 {"dn": 131, "lib": "am;Google Play;https://play.google.com", "sp": "com/android/vending/billing", "bh": 90795, "btc": 45, "btn": 11, "pn": "com/android/vending"}
 {"dn": 113, "lib": "", "sp": "scala/reflect", "bh": 48730, "btc": 45, "btn": 11}
-{"dn": 990, "lib": "", "sp": "com/smaato/soma/debug", "bh": 34473, "btc": 45, "btn": 11}
+{"dn": 990, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/debug", "bh": 34473, "btc": 45, "btn": 11, "pn": "com/smaato"}
 {"dn": 940, "lib": "ma;Umeng feedback;http://dev.umeng.com/feedback", "sp": "com/umeng/fb/b", "bh": 93893, "btc": 44, "btn": 11, "pn": "com/umeng/fb"}
 {"dn": 107, "lib": "", "sp": "com/musicg/experiment", "bh": 41368, "btc": 44, "btn": 11}
 {"dn": 1399, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/extension/physics/box2d/util", "bh": 38352, "btc": 44, "btn": 11, "pn": "org/andengine"}
@@ -27634,7 +27634,7 @@
 {"dn": 497, "lib": "da;Appyet;http://www.appyet.com/", "sp": "com/appyet/mobile/b", "bh": 12142, "btc": 22, "btn": 10, "pn": "com/appyet"}
 {"dn": 132, "lib": "", "sp": "org/jboss/netty/handler/codec/marshalling", "bh": 11757, "btc": 22, "btn": 10}
 {"dn": 597, "lib": "ui;GreenDroid;https://github.com/cyrilmottier/GreenDroid", "sp": "greendroid/b", "bh": 122451, "btc": 21, "btn": 10, "pn": "greendroid"}
-{"dn": 457, "lib": "", "sp": "com/smaato/soma/twister/utilities", "bh": 61521, "btc": 21, "btn": 10}
+{"dn": 457, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/twister/utilities", "bh": 61521, "btc": 21, "btn": 10, "pn": "com/smaato"}
 {"dn": 315, "lib": "", "sp": "com/automotiontv/service/impl/prod", "bh": 51061, "btc": 21, "btn": 10}
 {"dn": 2753, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova/barcodeScanner", "bh": 47053, "btc": 21, "btn": 10, "pn": "org/apache/cordova"}
 {"dn": 100, "lib": "", "sp": "com/quickmobile/conference/questionAndAnswer/adapter", "bh": 44898, "btc": 21, "btn": 10}
@@ -27651,7 +27651,7 @@
 {"dn": 242, "lib": "da;Appyet;http://www.appyet.com/", "sp": "com/appyet/mobile/b", "bh": 12141, "btc": 21, "btn": 10, "pn": "com/appyet"}
 {"dn": 119, "lib": "", "sp": "com/varduna/android/constants", "bh": 11219, "btc": 21, "btn": 10}
 {"dn": 26655, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads2/searchads", "bh": 64243, "btc": 20, "btn": 10, "pn": "com/google/ads"}
-{"dn": 132, "lib": "", "sp": "com/smaato/soma/twister/utilities", "bh": 61520, "btc": 20, "btn": 10}
+{"dn": 132, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/twister/utilities", "bh": 61520, "btc": 20, "btn": 10, "pn": "com/smaato"}
 {"dn": 2760, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/constants", "bh": 35779, "btc": 20, "btn": 10, "pn": "com/biznessapps"}
 {"dn": 149, "lib": "da;Kawa for Android;https://www.gnu.org/software/kawa/Building-for-Android.html", "sp": "com/kawana/facebook", "bh": 26000, "btc": 20, "btn": 10, "pn": "kawa"}
 {"dn": 108, "lib": "ad;Revmob;https://www.revmobmobileadnetwork.com/", "sp": "com/revmob/cordova", "bh": 23433, "btc": 20, "btn": 10, "pn": "com/revmob"}
@@ -28082,7 +28082,7 @@
 {"dn": 180, "lib": "", "sp": "com/wsi/android/weather/ui/dialogs/survey", "bh": 18600, "btc": 12, "btn": 9}
 {"dn": 297, "lib": "", "sp": "com/quickmobile/conference/speakout/adapter", "bh": 15307, "btc": 12, "btn": 9}
 {"dn": 200, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/fitness/service", "bh": 13910, "btc": 12, "btn": 9, "pn": "com/google/android/gms"}
-{"dn": 978, "lib": "", "sp": "com/smaato/soma/test", "bh": 13212, "btc": 12, "btn": 9}
+{"dn": 978, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/test", "bh": 13212, "btc": 12, "btn": 9, "pn": "com/smaato"}
 {"dn": 132, "lib": "", "sp": "com/igivings/calvarynorth/openintents/calendarpicker/container", "bh": 13080, "btc": 12, "btn": 9}
 {"dn": 365, "lib": "", "sp": "org/droidparts/concurrent/thread", "bh": 12730, "btc": 12, "btn": 9}
 {"dn": 714, "lib": "", "sp": "com/h2/org/springframework/beans/factory/config", "bh": 12527, "btc": 12, "btn": 9}
@@ -28800,7 +28800,7 @@
 {"dn": 25726, "lib": "", "sp": "com/google/tagmanager/proto", "bh": 9772, "btc": 10, "btn": 7}
 {"dn": 422, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation/customevent", "bh": 9288, "btc": 10, "btn": 7, "pn": "com/google/ads"}
 {"dn": 215, "lib": "ui;Espian ShowcaseView;https://github.com/arianvp/ShowcaseView", "sp": "com/espian/showcaseview/utils", "bh": 7529, "btc": 10, "btn": 7, "pn": "com/espian/showcaseview"}
-{"dn": 1628, "lib": "", "sp": "com/smaato/soma/test", "bh": 6417, "btc": 10, "btn": 7}
+{"dn": 1628, "lib": "ad;Smaato;https://www.smaato.com/", "sp": "com/smaato/soma/test", "bh": 6417, "btc": 10, "btn": 7, "pn": "com/smaato"}
 {"dn": 468, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/a", "bh": 5678, "btc": 10, "btn": 7, "pn": "com/google/android/gms"}
 {"dn": 149, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/graphics/g3d/materials", "bh": 5497, "btc": 10, "btn": 7, "pn": "com/badlogic"}
 {"dn": 188, "lib": "", "sp": "org/apache/mina/proxy/session", "bh": 3704, "btc": 10, "btn": 7}
