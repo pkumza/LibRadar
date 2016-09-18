@@ -13010,8 +13010,8 @@
 {"dn": 1736, "lib": "ui;urbanairship;https://www.urbanairship.com/", "sp": "com/urbanairship/location", "bh": 750471, "btc": 307, "btn": 79, "pn": "com/urbanairship"}
 {"dn": 131, "lib": "", "sp": "org/htmlparser/http", "bh": 2401, "btc": 300, "btn": 79}
 {"dn": 153, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/c", "bh": 534954, "btc": 294, "btn": 79, "pn": "android/support/v4"}
-{"dn": 1682, "lib": "", "sp": "com/jakewharton/disklrucache", "bh": 313869, "btc": 292, "btn": 79}
-{"dn": 1345, "lib": "", "sp": "com/jakewharton/disklrucache", "bh": 313216, "btc": 291, "btn": 79}
+{"dn": 1682, "lib": "da;Disk LRU Cache;https://github.com/JakeWharton/DiskLruCache", "sp": "com/jakewharton/disklrucache", "bh": 313869, "btc": 292, "btn": 79, "pn": "com/jakewharton/disklrucache/"}
+{"dn": 1345, "lib": "da;Disk LRU Cache;https://github.com/JakeWharton/DiskLruCache", "sp": "com/jakewharton/disklrucache", "bh": 313216, "btc": 291, "btn": 79, "pn": "com/jakewharton/disklrucache/"}
 {"dn": 778, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/hash", "bh": 975009, "btc": 290, "btn": 79, "pn": "com/google/common"}
 {"dn": 655, "lib": "ad;Inmobi;http://inmobi.com", "sp": "com/inmobi/commons/analytics/iat/impl/net", "bh": 417352, "btc": 288, "btn": 79, "pn": "com/inmobi"}
 {"dn": 26749, "lib": "da;Apache James Mail Enterprise Serve;http://james.apache.org", "sp": "org/apache/james/mime4j/util", "bh": 408745, "btc": 277, "btn": 79, "pn": "org/apache/james"}
