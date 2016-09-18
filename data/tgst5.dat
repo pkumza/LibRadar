@@ -4998,7 +4998,7 @@
 {"dn": 606, "lib": "da;Google Core Libraries for Java 6+;https://github.com/google/guava", "sp": "com/google/common/util/concurrent", "bh": 194755, "btc": 1158, "btn": 251, "pn": "com/google/common"}
 {"dn": 193, "lib": "", "sp": "com/appbuilder/u100702p206765/embedded/NewsPlugin", "bh": 361614, "btc": 1004, "btn": 251}
 {"dn": 8639, "lib": "ma;Google Analytics;https://www.google.com/analytics/", "sp": "com/google/analytics/tracking/android", "bh": 496273, "btc": 952, "btn": 251, "pn": "com/google/analytics"}
-{"dn": 174, "lib": "", "sp": "com/vividsolutions/jts", "bh": 940857, "btc": 936, "btn": 251}
+{"dn": 174, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts", "bh": 940857, "btc": 936, "btn": 251, "pn": "com/vividsolutions/jts"}
 {"dn": 134, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/services", "bh": 691768, "btc": 904, "btn": 251, "pn": "com/amazonaws"}
 {"dn": 259, "lib": "da;Appcelerator;http://www.appcelerator.org/", "sp": "org/appcelerator/titanium/view", "bh": 896333, "btc": 776, "btn": 251, "pn": "org/appcelerator"}
 {"dn": 178, "lib": "da;Appcelerator;http://www.appcelerator.org/", "sp": "org/appcelerator/titanium/view", "bh": 891887, "btc": 775, "btn": 251, "pn": "org/appcelerator"}
@@ -10082,7 +10082,7 @@
 {"dn": 121, "lib": "", "sp": "cn/jpush/android/a", "bh": 450950, "btc": 657, "btn": 111}
 {"dn": 317, "lib": "da;Apache Log4j;http://logging.apache.org/log4j/2.x/", "sp": "org/apache/log4j/helpers", "bh": 967142, "btc": 647, "btn": 111, "pn": "org/apache/log4j"}
 {"dn": 118, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/auth", "bh": 970646, "btc": 646, "btn": 111, "pn": "com/amazonaws"}
-{"dn": 176, "lib": "", "sp": "com/vividsolutions/jts/io", "bh": 180116, "btc": 645, "btn": 111}
+{"dn": 176, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/io", "bh": 180116, "btc": 645, "btn": 111, "pn": "com/vividsolutions/jts"}
 {"dn": 1032, "lib": "", "sp": "com/qbiki/modules/order", "bh": 989626, "btc": 581, "btn": 111}
 {"dn": 1211, "lib": "da;Bouncy Castle;http://www.bouncycastle.org/java.html", "sp": "org/bouncycastle/asn1", "bh": 641609, "btc": 559, "btn": 111, "pn": "org/bouncycastle"}
 {"dn": 284, "lib": "", "sp": "com/aurasma/aurasma/repository", "bh": 447539, "btc": 559, "btn": 111}
@@ -13571,7 +13571,7 @@
 {"dn": 115, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry/org/apache/avro/generic", "bh": 317139, "btc": 252, "btn": 74, "pn": "com/flurry"}
 {"dn": 484, "lib": "", "sp": "com/appmk/book/view", "bh": 653910, "btc": 250, "btn": 74}
 {"dn": 246, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/ui/widget/webview", "bh": 366613, "btc": 248, "btn": 74, "pn": "ti/modules/titanium"}
-{"dn": 176, "lib": "", "sp": "com/vividsolutions/jts/operation", "bh": 380950, "btc": 240, "btn": 74}
+{"dn": 176, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation", "bh": 380950, "btc": 240, "btn": 74, "pn": "com/vividsolutions/jts"}
 {"dn": 450, "lib": "ut;Amazon;", "sp": "com/amazon/ags/html5/util", "bh": 341174, "btc": 238, "btn": 74, "pn": "com/amazon"}
 {"dn": 165, "lib": "", "sp": "net/fortuna/ical4j/util", "bh": 731136, "btc": 226, "btn": 74}
 {"dn": 3599, "lib": "da;jUnit Java Unit Test;http://junit.org/", "sp": "org/junit/runners", "bh": 471768, "btc": 226, "btn": 74, "pn": "org/junit"}
@@ -14230,7 +14230,7 @@
 {"dn": 1406, "lib": "", "sp": "com/google/android", "bh": 156216, "btc": 382, "btn": 68}
 {"dn": 956, "lib": "", "sp": "jp/innovationplus/ipp/client", "bh": 481195, "btc": 338, "btn": 68}
 {"dn": 421, "lib": "", "sp": "com/google/code/rome/android/repackaged/com/sun/syndication/feed/impl", "bh": 827309, "btc": 324, "btn": 68}
-{"dn": 286, "lib": "", "sp": "com/vividsolutions/jts/io/gml2", "bh": 73663, "btc": 318, "btn": 68}
+{"dn": 286, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/io/gml2", "bh": 73663, "btc": 318, "btn": 68, "pn": "com/vividsolutions/jts"}
 {"dn": 5575, "lib": "da;JavaBeans(TM) Activation Framework;http://java.sun.com/javase/technologies/desktop/javabeans/jaf/index.jsp", "sp": "com/sun/activation/registries", "bh": 519098, "btc": 309, "btn": 68, "pn": "com/sun/activation"}
 {"dn": 373, "lib": "da;JavaBeans(TM) Activation Framework;http://java.sun.com/javase/technologies/desktop/javabeans/jaf/index.jsp", "sp": "com/sun/activation/registries", "bh": 519093, "btc": 309, "btn": 68, "pn": "com/sun/activation"}
 {"dn": 224, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/geolocation", "bh": 404133, "btc": 302, "btn": 68, "pn": "ti/modules/titanium"}
@@ -14349,7 +14349,7 @@
 {"dn": 15225, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/plus", "bh": 468616, "btc": 294, "btn": 67, "pn": "com/google/android/gms"}
 {"dn": 207, "lib": "ut;Amazon;", "sp": "com/amazon/inapp/purchasing", "bh": 404907, "btc": 289, "btn": 67, "pn": "com/amazon"}
 {"dn": 147, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/plus", "bh": 451033, "btc": 280, "btn": 67, "pn": "com/google/android/gms"}
-{"dn": 180, "lib": "", "sp": "com/vividsolutions/jts/geom", "bh": 427197, "btc": 280, "btn": 67}
+{"dn": 180, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/geom", "bh": 427197, "btc": 280, "btn": 67, "pn": "com/vividsolutions/jts"}
 {"dn": 5721, "lib": "da;Json org;http://www.json.org/", "sp": "org/json/simple/parser", "bh": 945374, "btc": 269, "btn": 67, "pn": "org/json"}
 {"dn": 493, "lib": "da;Json org;http://www.json.org/", "sp": "org/json/simple/parser", "bh": 945263, "btc": 269, "btn": 67, "pn": "org/json"}
 {"dn": 134, "lib": "pa;SquareUp;https://squareup.com", "sp": "com/squareup/javawriter", "bh": 965244, "btc": 265, "btn": 67, "pn": "com/squareup"}
@@ -17411,7 +17411,7 @@
 {"dn": 405, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/graphics/g3d/loaders", "bh": 593376, "btc": 251, "btn": 48, "pn": "com/badlogic"}
 {"dn": 118, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/graphics/g3d/loaders", "bh": 593324, "btc": 249, "btn": 48, "pn": "com/badlogic"}
 {"dn": 169, "lib": "da;Spongy Castle;http://rtyley.github.io/spongycastle/", "sp": "org/spongycastle/operator/jcajce", "bh": 55957, "btc": 249, "btn": 48, "pn": "org/spongycastle"}
-{"dn": 174, "lib": "", "sp": "com/vividsolutions/jts/awt", "bh": 920405, "btc": 243, "btn": 48}
+{"dn": 174, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/awt", "bh": 920405, "btc": 243, "btn": 48, "pn": "com/vividsolutions/jts"}
 {"dn": 125, "lib": "", "sp": "com/petitfute/online/strasbourg/ui/adapters", "bh": 562951, "btc": 237, "btn": 48}
 {"dn": 4932, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/lang/a", "bh": 561936, "btc": 235, "btn": 48, "pn": "org/apache/commons"}
 {"dn": 284, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/lang/reflect", "bh": 561935, "btc": 235, "btn": 48, "pn": "org/apache/commons"}
@@ -18208,7 +18208,7 @@
 {"dn": 384, "lib": "", "sp": "com/nd/android/pandareaderlib/parser/b", "bh": 267647, "btc": 187, "btn": 44}
 {"dn": 217, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/graphics/g3d", "bh": 246650, "btc": 179, "btn": 44, "pn": "com/badlogic"}
 {"dn": 105, "lib": "da;PhoneGap;http://phonegap.com/", "sp": "com/phonegap/plugin", "bh": 360949, "btc": 173, "btn": 44, "pn": "com/phonegap"}
-{"dn": 287, "lib": "", "sp": "com/vividsolutions/jts/util", "bh": 206199, "btc": 166, "btn": 44}
+{"dn": 287, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/util", "bh": 206199, "btc": 166, "btn": 44, "pn": "com/vividsolutions/jts"}
 {"dn": 106, "lib": "ui;android widget;", "sp": "com/romanblack/android/widget/imagegallery", "bh": 546579, "btc": 163, "btn": 44, "pn": "android/widget"}
 {"dn": 385, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/fragments/music", "bh": 352606, "btc": 163, "btn": 44, "pn": "com/biznessapps"}
 {"dn": 221, "lib": "", "sp": "com/appmk/book/util", "bh": 342650, "btc": 159, "btn": 44}
@@ -18423,7 +18423,7 @@
 {"dn": 112, "lib": "", "sp": "it/sauronsoftware/ftp4j/listparsers", "bh": 490517, "btc": 201, "btn": 43}
 {"dn": 1699, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/lib/scenes/scene2d", "bh": 187395, "btc": 199, "btn": 43, "pn": "org/andengine"}
 {"dn": 534, "lib": "da;Codehaus;http://www.codehaus.org/", "sp": "org/codehaus/jackson/map/jsontype/impl", "bh": 143237, "btc": 194, "btn": 43, "pn": "org/codehaus"}
-{"dn": 176, "lib": "", "sp": "com/vividsolutions/jts/operation/buffer", "bh": 225904, "btc": 191, "btn": 43}
+{"dn": 176, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/buffer", "bh": 225904, "btc": 191, "btn": 43, "pn": "com/vividsolutions/jts"}
 {"dn": 116, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/lang3", "bh": 371469, "btc": 189, "btn": 43, "pn": "org/apache/commons"}
 {"dn": 145, "lib": "ge;OpenFeint;", "sp": "com/openfeint/api", "bh": 148954, "btc": 189, "btn": 43, "pn": "com/openfeint"}
 {"dn": 1006, "lib": "", "sp": "com/mobimento/caponate/shading", "bh": 663040, "btc": 187, "btn": 43}
@@ -18616,11 +18616,11 @@
 {"dn": 111, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/wearable", "bh": 355459, "btc": 394, "btn": 42, "pn": "com/google/android/gms"}
 {"dn": 1008, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/math", "bh": 427660, "btc": 387, "btn": 42, "pn": "com/badlogic"}
 {"dn": 1329, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/wearable", "bh": 347118, "btc": 387, "btn": 42, "pn": "com/google/android/gms"}
-{"dn": 180, "lib": "", "sp": "com/vividsolutions/jts/geomgraph", "bh": 440246, "btc": 377, "btn": 42}
+{"dn": 180, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/geomgraph", "bh": 440246, "btc": 377, "btn": 42, "pn": "com/vividsolutions/jts"}
 {"dn": 1885, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/wearable", "bh": 338516, "btc": 369, "btn": 42, "pn": "com/google/android/gms"}
 {"dn": 117, "lib": "", "sp": "com/nexage/android/sdks", "bh": 467087, "btc": 343, "btn": 42}
 {"dn": 644, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/filesystem", "bh": 310499, "btc": 335, "btn": 42, "pn": "ti/modules/titanium"}
-{"dn": 110, "lib": "", "sp": "com/vividsolutions/jts/geomgraph", "bh": 399006, "btc": 316, "btn": 42}
+{"dn": 110, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/geomgraph", "bh": 399006, "btc": 316, "btn": 42, "pn": "com/vividsolutions/jts"}
 {"dn": 1448, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/files", "bh": 177241, "btc": 309, "btn": 42, "pn": "com/badlogic"}
 {"dn": 118, "lib": "", "sp": "com/androidmapsextensions/impl", "bh": 405405, "btc": 291, "btn": 42}
 {"dn": 723, "lib": "", "sp": "org/brickred/socialauth/oauthstrategy", "bh": 424116, "btc": 286, "btn": 42}
@@ -18847,7 +18847,7 @@
 {"dn": 114, "lib": "da;Logback;http://logback.qos.ch/", "sp": "ch/qos/logback/core/pattern", "bh": 238654, "btc": 278, "btn": 41, "pn": "ch/qos/logback"}
 {"dn": 990, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core/base", "bh": 297967, "btc": 275, "btn": 41, "pn": "com/fasterxml"}
 {"dn": 170, "lib": "", "sp": "com/firebase/client/core/view", "bh": 329317, "btc": 271, "btn": 41}
-{"dn": 176, "lib": "", "sp": "com/vividsolutions/jts/triangulate", "bh": 371190, "btc": 269, "btn": 41}
+{"dn": 176, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/triangulate", "bh": 371190, "btc": 269, "btn": 41, "pn": "com/vividsolutions/jts"}
 {"dn": 906, "lib": "ge;cocos2D;http://www.cocos2d-x.org/", "sp": "org/cocos2d/particlesystem", "bh": 279827, "btc": 261, "btn": 41, "pn": "org/cocos2d"}
 {"dn": 146, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/conf", "bh": 670193, "btc": 256, "btn": 41, "pn": "twitter4j"}
 {"dn": 2314, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/conf", "bh": 663939, "btc": 254, "btn": 41, "pn": "twitter4j"}
@@ -19395,7 +19395,7 @@
 {"dn": 156, "lib": "", "sp": "com/nhn/android/maps/overlay", "bh": 308609, "btc": 119, "btn": 39}
 {"dn": 113, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/assets", "bh": 235028, "btc": 118, "btn": 39, "pn": "com/badlogic"}
 {"dn": 140, "lib": "", "sp": "net/manageapps/MeSoHungry/recentactivity", "bh": 216953, "btc": 118, "btn": 39}
-{"dn": 175, "lib": "", "sp": "com/vividsolutions/jts/algorithm", "bh": 191744, "btc": 116, "btn": 39}
+{"dn": 175, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/algorithm", "bh": 191744, "btc": 116, "btn": 39, "pn": "com/vividsolutions/jts"}
 {"dn": 239, "lib": "", "sp": "com/drew/imaging/jpeg", "bh": 191948, "btc": 115, "btn": 39}
 {"dn": 1248, "lib": "", "sp": "com/drew/lang", "bh": 139748, "btc": 114, "btn": 39}
 {"dn": 252, "lib": "da;Neoline;http://www.neoline.biz/", "sp": "biz/neoline/app_core/text/model", "bh": 80469, "btc": 114, "btn": 39, "pn": "biz/neoline"}
@@ -19671,7 +19671,7 @@
 {"dn": 354, "lib": "da;newrelic;https://newrelic.com/", "sp": "com/newrelic/agent/android/util", "bh": 188661, "btc": 80, "btn": 38, "pn": "com/newrelic"}
 {"dn": 219, "lib": "", "sp": "com/saubcy/LegoBoxes/Layout", "bh": 214570, "btc": 79, "btn": 38}
 {"dn": 143, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/integration/android", "bh": 146327, "btc": 79, "btn": 38, "pn": "com/google/zxing"}
-{"dn": 176, "lib": "", "sp": "com/vividsolutions/jts/index", "bh": 103719, "btc": 79, "btn": 38}
+{"dn": 176, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/index", "bh": 103719, "btc": 79, "btn": 38, "pn": "com/vividsolutions/jts"}
 {"dn": 550, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/ads", "bh": 90410, "btc": 79, "btn": 38, "pn": "com/google/android/gms"}
 {"dn": 467, "lib": "", "sp": "android/support/util", "bh": 991952, "btc": 78, "btn": 38}
 {"dn": 188, "lib": "", "sp": "com/ianhanniballake/localstorage", "bh": 404749, "btc": 78, "btn": 38}
@@ -19890,7 +19890,7 @@
 {"dn": 123, "lib": "", "sp": "com/vision/android/core/components", "bh": 367760, "btc": 81, "btn": 37}
 {"dn": 155, "lib": "", "sp": "org/apache/mina/handler", "bh": 164140, "btc": 81, "btn": 37}
 {"dn": 154, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/ads", "bh": 94296, "btc": 81, "btn": 37, "pn": "com/google/android/gms"}
-{"dn": 110, "lib": "", "sp": "com/vividsolutions/jts/index", "bh": 105139, "btc": 80, "btn": 37}
+{"dn": 110, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/index", "bh": 105139, "btc": 80, "btn": 37, "pn": "com/vividsolutions/jts"}
 {"dn": 164, "lib": "da;Android Support v4;http://developer.android.com/reference/android/support/v4/app/package-summary.html", "sp": "android/support/v4/c", "bh": 357736, "btc": 79, "btn": 37, "pn": "android/support/v4"}
 {"dn": 185, "lib": "da;doapps;http://www.doapps.com/", "sp": "com/doapps/android/mln/web/signals", "bh": 144119, "btc": 79, "btn": 37, "pn": "com/doapps"}
 {"dn": 125, "lib": "da;Conduit App;http://apps.conduit.com/", "sp": "com/conduit/app/pages/blog", "bh": 143982, "btc": 79, "btn": 37, "pn": "com/conduit/app"}
@@ -20080,7 +20080,7 @@
 {"dn": 183, "lib": "ge;OpenFeint;", "sp": "com/openfeint/internal/db", "bh": 317881, "btc": 96, "btn": 36, "pn": "com/openfeint"}
 {"dn": 228, "lib": "ge;Scoreloop Game;", "sp": "com/scoreloop/client/android/ui/component/profile", "bh": 162989, "btc": 96, "btn": 36, "pn": "com/scoreloop"}
 {"dn": 1274, "lib": "ge;cocos2D;http://www.cocos2d-x.org/", "sp": "org/cocos2d/grid", "bh": 764143, "btc": 93, "btn": 36, "pn": "org/cocos2d"}
-{"dn": 227, "lib": "", "sp": "com/vividsolutions/jts/planargraph", "bh": 153440, "btc": 93, "btn": 36}
+{"dn": 227, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/planargraph", "bh": 153440, "btc": 93, "btn": 36, "pn": "com/vividsolutions/jts"}
 {"dn": 1419, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games", "bh": 133548, "btc": 93, "btn": 36, "pn": "com/google/android/gms"}
 {"dn": 429, "lib": "ge;OpenFeint;", "sp": "com/openfeint/internal/resource", "bh": 98429, "btc": 93, "btn": 36, "pn": "com/openfeint"}
 {"dn": 132, "lib": "", "sp": "fr/pcsoft/wdjava/framework/poo", "bh": 143415, "btc": 92, "btn": 36}
@@ -21260,7 +21260,7 @@
 {"dn": 521, "lib": "", "sp": "com/qbiki/analytics", "bh": 114893, "btc": 241, "btn": 31}
 {"dn": 149, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/maps/tiled", "bh": 202236, "btc": 240, "btn": 31, "pn": "com/badlogic"}
 {"dn": 108, "lib": "", "sp": "eu/alebianco/air/extensions", "bh": 453344, "btc": 239, "btn": 31}
-{"dn": 180, "lib": "", "sp": "com/vividsolutions/jts/noding", "bh": 213257, "btc": 236, "btn": 31}
+{"dn": 180, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/noding", "bh": 213257, "btc": 236, "btn": 31, "pn": "com/vividsolutions/jts"}
 {"dn": 311, "lib": "", "sp": "com/nd/android/pandareader/common/b", "bh": 292000, "btc": 226, "btn": 31}
 {"dn": 128, "lib": "", "sp": "com/nd/android/pandareader/common/a", "bh": 281225, "btc": 225, "btn": 31}
 {"dn": 377, "lib": "da;Apache James Mail Enterprise Serve;http://james.apache.org", "sp": "org/apache/james/mime4j/field/contenttype/parser", "bh": 508622, "btc": 213, "btn": 31, "pn": "org/apache/james"}
@@ -21529,7 +21529,7 @@
 {"dn": 153, "lib": "mp;Baidu Map;http://lbsyun.baidu.com/", "sp": "com/baidu/mapapi/cloud", "bh": 197502, "btc": 180, "btn": 30, "pn": "com/baidu/mapapi/"}
 {"dn": 1821, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/convert", "bh": 310055, "btc": 177, "btn": 30, "pn": "org/joda/time"}
 {"dn": 125, "lib": "da;Joda Time;http://www.joda.org/joda-time/", "sp": "org/joda/time/convert", "bh": 310049, "btc": 177, "btn": 30, "pn": "org/joda/time"}
-{"dn": 224, "lib": "", "sp": "com/vividsolutions/jts/triangulate/quadedge", "bh": 250404, "btc": 176, "btn": 30}
+{"dn": 224, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/triangulate/quadedge", "bh": 250404, "btc": 176, "btn": 30, "pn": "com/vividsolutions/jts"}
 {"dn": 114, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/assets", "bh": 172623, "btc": 176, "btn": 30, "pn": "com/badlogic"}
 {"dn": 223, "lib": "", "sp": "com/googlecode/flickrjandroid/tags", "bh": 327575, "btc": 174, "btn": 30}
 {"dn": 211, "lib": "", "sp": "com/novell", "bh": 273870, "btc": 172, "btn": 30}
@@ -21770,7 +21770,7 @@
 {"dn": 2402, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/a", "bh": 242952, "btc": 153, "btn": 29, "pn": "com/j256"}
 {"dn": 176, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/misc", "bh": 242945, "btc": 153, "btn": 29, "pn": "com/j256"}
 {"dn": 107, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/databind/jsontype/impl", "bh": 94731, "btc": 153, "btn": 29, "pn": "com/fasterxml"}
-{"dn": 179, "lib": "", "sp": "com/vividsolutions/jts/math", "bh": 125426, "btc": 151, "btn": 29}
+{"dn": 179, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/math", "bh": 125426, "btc": 151, "btn": 29, "pn": "com/vividsolutions/jts"}
 {"dn": 127, "lib": "da;OkHttp;https://github.com/square/okhttp", "sp": "com/squareup/okhttp/internal/ws", "bh": 213279, "btc": 147, "btn": 29, "pn": "com/squareup/okhttp"}
 {"dn": 4477, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/misc", "bh": 242692, "btc": 143, "btn": 29, "pn": "com/j256"}
 {"dn": 275, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/misc", "bh": 242685, "btc": 143, "btn": 29, "pn": "com/j256"}
@@ -22806,7 +22806,7 @@
 {"dn": 130, "lib": "", "sp": "com/ssd/ane/archanoextension", "bh": 312193, "btc": 164, "btn": 25}
 {"dn": 194, "lib": "ge;badlogic;http://www.badlogicgames.com/", "sp": "com/badlogic/gdx/assets", "bh": 119655, "btc": 160, "btn": 25, "pn": "com/badlogic"}
 {"dn": 594, "lib": "ge;OpenFeint;", "sp": "com/openfeint/api/resource", "bh": 87969, "btc": 154, "btn": 25, "pn": "com/openfeint"}
-{"dn": 180, "lib": "", "sp": "com/vividsolutions/jts/geom/util", "bh": 137390, "btc": 153, "btn": 25}
+{"dn": 180, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/geom/util", "bh": 137390, "btc": 153, "btn": 25, "pn": "com/vividsolutions/jts"}
 {"dn": 717, "lib": "da;Jaxen;http://jaxen.org/", "sp": "org/jaxen/pattern", "bh": 358986, "btc": 150, "btn": 25, "pn": "org/jaxen"}
 {"dn": 10985, "lib": "da;Jaxen;http://jaxen.org/", "sp": "org/jaxen/pattern", "bh": 125463, "btc": 147, "btn": 25, "pn": "org/jaxen"}
 {"dn": 176, "lib": "", "sp": "org/springframework/web/client", "bh": 100574, "btc": 145, "btn": 25}
@@ -23604,7 +23604,7 @@
 {"dn": 398, "lib": "sn;Youmi Ads;http://www.youmi.net/", "sp": "net/youmi/android/d/c", "bh": 329995, "btc": 193, "btn": 22, "pn": "net/youmi"}
 {"dn": 223, "lib": "", "sp": "org/jivesoftware/smackx/workgroup/settings", "bh": 331153, "btc": 190, "btn": 22}
 {"dn": 119, "lib": "", "sp": "com/blackboard/android/portal_shared/maps", "bh": 95379, "btc": 162, "btn": 22}
-{"dn": 180, "lib": "", "sp": "com/vividsolutions/jts/operation/overlay", "bh": 188779, "btc": 158, "btn": 22}
+{"dn": 180, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/overlay", "bh": 188779, "btc": 158, "btn": 22, "pn": "com/vividsolutions/jts"}
 {"dn": 11433, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/query", "bh": 158826, "btc": 154, "btn": 22, "pn": "com/google/android/gms"}
 {"dn": 355, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/codec/language", "bh": 361379, "btc": 149, "btn": 22, "pn": "org/apache/commons"}
 {"dn": 160, "lib": "", "sp": "com/androidnative/features/common", "bh": 159754, "btc": 142, "btn": 22}
@@ -23623,7 +23623,7 @@
 {"dn": 106, "lib": "", "sp": "com/musicg/math/rank", "bh": 210413, "btc": 112, "btn": 22}
 {"dn": 135, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/math3/geometry/euclidean/twod", "bh": 203434, "btc": 111, "btn": 22, "pn": "org/apache/commons"}
 {"dn": 116, "lib": "", "sp": "org/kisa", "bh": 740659, "btc": 107, "btn": 22}
-{"dn": 185, "lib": "", "sp": "com/vividsolutions/jts/index/strtree", "bh": 120682, "btc": 104, "btn": 22}
+{"dn": 185, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/index/strtree", "bh": 120682, "btc": 104, "btn": 22, "pn": "com/vividsolutions/jts"}
 {"dn": 765, "lib": "", "sp": "com/microeyes/admob", "bh": 250358, "btc": 103, "btn": 22}
 {"dn": 228, "lib": "", "sp": "org/achartengine/internal/model", "bh": 170613, "btc": 103, "btn": 22}
 {"dn": 113, "lib": "", "sp": "net/gree/asdk/api/incentive", "bh": 78651, "btc": 102, "btn": 22}
@@ -23741,7 +23741,7 @@
 {"dn": 154, "lib": "ad;Adtech;http://www.adtech.com/", "sp": "com/adtech/mobilesdk/publisher/configuration", "bh": 95839, "btc": 48, "btn": 22, "pn": "com/adtech"}
 {"dn": 140, "lib": "ui;goodbarber;http://www.goodbarber.com/", "sp": "com/goodbarber/v2/utils/media", "bh": 75333, "btc": 48, "btn": 22, "pn": "com/goodbarber"}
 {"dn": 2094, "lib": "da;Scribe Java Lib;https://github.com/scribejava/scribejava", "sp": "org/scribe/extractors", "bh": 73584, "btc": 48, "btn": 22, "pn": "org/scribe"}
-{"dn": 290, "lib": "", "sp": "com/vividsolutions/jts/index/quadtree", "bh": 42811, "btc": 48, "btn": 22}
+{"dn": 290, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/index/quadtree", "bh": 42811, "btc": 48, "btn": 22, "pn": "com/vividsolutions/jts"}
 {"dn": 295, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/anddev/andengine/util/pool", "bh": 41992, "btc": 48, "btn": 22, "pn": "org/anddev/andengine"}
 {"dn": 394, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/analytics/internal", "bh": 139129, "btc": 47, "btn": 22, "pn": "com/google/android/gms"}
 {"dn": 1483, "lib": "da;Appyet;http://www.appyet.com/", "sp": "com/appyet/receiver", "bh": 91029, "btc": 47, "btn": 22, "pn": "com/appyet"}
@@ -23891,7 +23891,7 @@
 {"dn": 100, "lib": "da;Fasterxml;http://fasterxml.com/", "sp": "com/fasterxml/jackson/core/a", "bh": 213141, "btc": 166, "btn": 21, "pn": "com/fasterxml"}
 {"dn": 222, "lib": "ge;cocos2D;http://www.cocos2d-x.org/", "sp": "org/cocos2d/types", "bh": 48496, "btc": 162, "btn": 21, "pn": "org/cocos2d"}
 {"dn": 119, "lib": "", "sp": "com/twitterapime/search/handler", "bh": 383752, "btc": 159, "btn": 21}
-{"dn": 110, "lib": "", "sp": "com/vividsolutions/jts/operation/overlay", "bh": 186030, "btc": 157, "btn": 21}
+{"dn": 110, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/overlay", "bh": 186030, "btc": 157, "btn": 21, "pn": "com/vividsolutions/jts"}
 {"dn": 538, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/maps", "bh": 278337, "btc": 155, "btn": 21, "pn": "com/google/android/gms"}
 {"dn": 103, "lib": "", "sp": "org/bingmaps/rest/models", "bh": 354428, "btc": 148, "btn": 21}
 {"dn": 110, "lib": "", "sp": "com/twitterapime/search/handler", "bh": 350640, "btc": 145, "btn": 21}
@@ -24223,12 +24223,12 @@
 {"dn": 217, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/gesture", "bh": 69728, "btc": 90, "btn": 20, "pn": "ti/modules/titanium"}
 {"dn": 154, "lib": "ma;Umeng Analytics;https://www.umeng.com/analytics", "sp": "com/umeng/analytics/game", "bh": 106213, "btc": 85, "btn": 20, "pn": "com/umeng/analytics"}
 {"dn": 1159, "lib": "ut;Amazon;", "sp": "com/amazon/ags/html5/javascript/domain", "bh": 89280, "btc": 85, "btn": 20, "pn": "com/amazon"}
-{"dn": 290, "lib": "", "sp": "com/vividsolutions/jts/operation/valid", "bh": 89141, "btc": 82, "btn": 20}
+{"dn": 290, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/valid", "bh": 89141, "btc": 82, "btn": 20, "pn": "com/vividsolutions/jts"}
 {"dn": 307, "lib": "", "sp": "org/jivesoftware/smackx/pubsub/provider", "bh": 233296, "btc": 80, "btn": 20}
 {"dn": 234, "lib": "", "sp": "jp/co/microad/smartphone/sdk/logic", "bh": 45256, "btc": 80, "btn": 20}
 {"dn": 320, "lib": "", "sp": "com/livenation/app/model/category", "bh": 69166, "btc": 78, "btn": 20}
 {"dn": 148, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "com/amazonaws/org/apache/http/auth", "bh": 46659, "btc": 78, "btn": 20, "pn": "org/apache/http"}
-{"dn": 337, "lib": "", "sp": "com/vividsolutions/jts/operation/linemerge", "bh": 144145, "btc": 77, "btn": 20}
+{"dn": 337, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/linemerge", "bh": 144145, "btc": 77, "btn": 20, "pn": "com/vividsolutions/jts"}
 {"dn": 135, "lib": "", "sp": "org/robolectric/impl", "bh": 136892, "btc": 77, "btn": 20}
 {"dn": 169, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/io/filefilter", "bh": 112114, "btc": 77, "btn": 20, "pn": "org/apache/commons"}
 {"dn": 631, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/ui/android", "bh": 65788, "btc": 77, "btn": 20, "pn": "ti/modules/titanium"}
@@ -25041,7 +25041,7 @@
 {"dn": 115, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/query", "bh": 119717, "btc": 109, "btn": 17, "pn": "com/google/android/gms"}
 {"dn": 25841, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/c/a", "bh": 112005, "btc": 107, "btn": 17, "pn": "com/google/android/gms"}
 {"dn": 353, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/drive/query", "bh": 122156, "btc": 106, "btn": 17, "pn": "com/google/android/gms"}
-{"dn": 342, "lib": "", "sp": "com/vividsolutions/jts/operation/polygonize", "bh": 136521, "btc": 104, "btn": 17}
+{"dn": 342, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/polygonize", "bh": 136521, "btc": 104, "btn": 17, "pn": "com/vividsolutions/jts"}
 {"dn": 1253, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/db", "bh": 61396, "btc": 104, "btn": 17, "pn": "com/j256"}
 {"dn": 101, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/db", "bh": 61395, "btc": 104, "btn": 17, "pn": "com/j256"}
 {"dn": 684, "lib": "ui;android widget;", "sp": "com/googlecode/android/widgets/DateSlider/labeler", "bh": 373831, "btc": 103, "btn": 17, "pn": "android/widget"}
@@ -25752,7 +25752,7 @@
 {"dn": 112, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/analytics", "bh": 29908, "btc": 50, "btn": 15, "pn": "ti/modules/titanium"}
 {"dn": 117, "lib": "", "sp": "cx/hell/android/lib/pagesview", "bh": 19855, "btc": 50, "btn": 15}
 {"dn": 182, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/appoK44rFRs7S/client/global/model/list", "bh": 92306, "btc": 48, "btn": 15, "pn": "com/crowdcompass"}
-{"dn": 227, "lib": "", "sp": "com/vividsolutions/jts/operation/distance", "bh": 52635, "btc": 48, "btn": 15}
+{"dn": 227, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/distance", "bh": 52635, "btc": 48, "btn": 15, "pn": "com/vividsolutions/jts"}
 {"dn": 411, "lib": "da;Apache Common;https://commons.apache.org/", "sp": "org/apache/commons/net/util", "bh": 54776, "btc": 46, "btn": 15, "pn": "org/apache/commons"}
 {"dn": 149, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/c/a", "bh": 54125, "btc": 46, "btn": 15, "pn": "com/google/gdata"}
 {"dn": 613, "lib": "", "sp": "com/google/api/client/googleapis/json", "bh": 12799, "btc": 46, "btn": 15}
@@ -25798,12 +25798,12 @@
 {"dn": 276, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/data/acl", "bh": 26157, "btc": 37, "btn": 15, "pn": "com/google/gdata"}
 {"dn": 1373, "lib": "da;Apache Log4j;http://logging.apache.org/log4j/2.x/", "sp": "org/apache/log4j/h/a", "bh": 620318, "btc": 36, "btn": 15, "pn": "org/apache/log4j"}
 {"dn": 4799, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation/millennial", "bh": 48572, "btc": 36, "btn": 15, "pn": "com/google/ads"}
-{"dn": 157, "lib": "", "sp": "com/vividsolutions/jts/simplify", "bh": 36536, "btc": 36, "btn": 15}
+{"dn": 157, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/simplify", "bh": 36536, "btc": 36, "btn": 15, "pn": "com/vividsolutions/jts"}
 {"dn": 123, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/internal/request", "bh": 26747, "btc": 36, "btn": 15, "pn": "com/google/android/gms"}
 {"dn": 111, "lib": "", "sp": "com/vervewireless/advert/resources", "bh": 47603, "btc": 35, "btn": 15}
 {"dn": 1967, "lib": "ad;Google Ads;https://www.google.com/ads/", "sp": "com/google/ads/mediation/millennial", "bh": 45806, "btc": 35, "btn": 15, "pn": "com/google/ads"}
 {"dn": 808, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/util/algorithm", "bh": 41280, "btc": 35, "btn": 15, "pn": "org/andengine"}
-{"dn": 185, "lib": "", "sp": "com/vividsolutions/jts/simplify", "bh": 34005, "btc": 35, "btn": 15}
+{"dn": 185, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/simplify", "bh": 34005, "btc": 35, "btn": 15, "pn": "com/vividsolutions/jts"}
 {"dn": 132, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/internal/request", "bh": 26721, "btc": 35, "btn": 15, "pn": "com/google/android/gms"}
 {"dn": 113, "lib": "", "sp": "com/quickmobile/conference/venue/adapter", "bh": 71717, "btc": 34, "btn": 15}
 {"dn": 160, "lib": "sn;Weibo;http://weibo.com/", "sp": "com/sina/weibo/sdk/handler", "bh": 47229, "btc": 34, "btn": 15, "pn": "com/sina/weibo"}
@@ -25831,7 +25831,7 @@
 {"dn": 1005, "lib": "", "sp": "com/getjar/sdk/response", "bh": 48307, "btc": 30, "btn": 15}
 {"dn": 236, "lib": "", "sp": "com/mfoundry/push/utils", "bh": 39807, "btc": 30, "btn": 15}
 {"dn": 3684, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/aztec", "bh": 39598, "btc": 30, "btn": 15, "pn": "com/google/zxing"}
-{"dn": 290, "lib": "", "sp": "com/vividsolutions/jts/operation/overlay/validate", "bh": 24061, "btc": 30, "btn": 15}
+{"dn": 290, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/overlay/validate", "bh": 24061, "btc": 30, "btn": 15, "pn": "com/vividsolutions/jts"}
 {"dn": 124, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/anddev/andengine/d/a", "bh": 94737, "btc": 29, "btn": 15, "pn": "org/anddev/andengine"}
 {"dn": 204, "lib": "", "sp": "com/ning/http/client/websocket", "bh": 85212, "btc": 29, "btn": 15}
 {"dn": 1739, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/anddev/andengine/entity/particle", "bh": 75519, "btc": 29, "btn": 15, "pn": "org/anddev/andengine"}
@@ -26083,11 +26083,11 @@
 {"dn": 245, "lib": "", "sp": "com/googlecode/flickrjandroid/photos/comments", "bh": 99718, "btc": 52, "btn": 14}
 {"dn": 215, "lib": "", "sp": "org/jdom/filter", "bh": 98965, "btc": 52, "btn": 14}
 {"dn": 235, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app640404/feed/b", "bh": 88976, "btc": 52, "btn": 14, "pn": "com/appmakr"}
-{"dn": 185, "lib": "", "sp": "com/vividsolutions/jts/operation/union", "bh": 63249, "btc": 52, "btn": 14}
+{"dn": 185, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/union", "bh": 63249, "btc": 52, "btn": 14, "pn": "com/vividsolutions/jts"}
 {"dn": 104, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/bap2011/client/model/sync", "bh": 54856, "btc": 52, "btn": 14, "pn": "com/crowdcompass"}
 {"dn": 255, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app640404/session/a", "bh": 34987, "btc": 52, "btn": 14, "pn": "com/appmakr"}
 {"dn": 340, "lib": "", "sp": "com/lowagie/text/pdf/internal", "bh": 28680, "btc": 51, "btn": 14}
-{"dn": 125, "lib": "", "sp": "com/vividsolutions/jts/operation/union", "bh": 60122, "btc": 50, "btn": 14}
+{"dn": 125, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/union", "bh": 60122, "btc": 50, "btn": 14, "pn": "com/vividsolutions/jts"}
 {"dn": 147, "lib": "", "sp": "com/kitapps/android/api/twitter/request", "bh": 21471, "btc": 50, "btn": 14}
 {"dn": 172, "lib": "", "sp": "com/quickmobile/snap", "bh": 30510, "btc": 48, "btn": 14}
 {"dn": 150, "lib": "", "sp": "org/jboss/netty/handler/timeout", "bh": 56594, "btc": 47, "btn": 14}
@@ -26361,7 +26361,7 @@
 {"dn": 123, "lib": "", "sp": "com/sttl/augmented_reality/common", "bh": 63214, "btc": 69, "btn": 13}
 {"dn": 272, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/anddev/andengine/entity/shape", "bh": 185701, "btc": 68, "btn": 13, "pn": "org/anddev/andengine"}
 {"dn": 251, "lib": "da;Java jdeferred Library;http://jdeferred.org/", "sp": "org/jdeferred/multiple", "bh": 39125, "btc": 68, "btn": 13, "pn": "org/jdeferred"}
-{"dn": 290, "lib": "", "sp": "com/vividsolutions/jts/operation/relate", "bh": 58090, "btc": 67, "btn": 13}
+{"dn": 290, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/relate", "bh": 58090, "btc": 67, "btn": 13, "pn": "com/vividsolutions/jts"}
 {"dn": 20558, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/g", "bh": 169138, "btc": 65, "btn": 13, "pn": "com/google/zxing"}
 {"dn": 378, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/e", "bh": 169137, "btc": 65, "btn": 13, "pn": "com/google/zxing"}
 {"dn": 147, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/d/a", "bh": 165487, "btc": 65, "btn": 13, "pn": "com/google/zxing"}
@@ -26372,7 +26372,7 @@
 {"dn": 140, "lib": "da;Apache Ant Core;http://ant.apache.org/", "sp": "org/apache/tools/ant/dispatch", "bh": 126720, "btc": 63, "btn": 13, "pn": "org/apache/tools/ant"}
 {"dn": 114, "lib": "", "sp": "com/freshplanet/flurry/functions/analytics", "bh": 77937, "btc": 63, "btn": 13}
 {"dn": 236, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/quest", "bh": 55868, "btc": 63, "btn": 13, "pn": "com/google/android/gms"}
-{"dn": 342, "lib": "", "sp": "com/vividsolutions/jts/geomgraph/index", "bh": 76254, "btc": 61, "btn": 13}
+{"dn": 342, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/geomgraph/index", "bh": 76254, "btc": 61, "btn": 13, "pn": "com/vividsolutions/jts"}
 {"dn": 445, "lib": "da;ZXing ('Zebra Crossing');https://github.com/zxing/zxing", "sp": "com/google/zxing/datamatrix/decoder", "bh": 147135, "btc": 60, "btn": 13, "pn": "com/google/zxing"}
 {"dn": 251, "lib": "da;Scribe Java Lib;https://github.com/scribejava/scribejava", "sp": "org/scribe/oauth", "bh": 12340, "btc": 59, "btn": 13, "pn": "org/scribe"}
 {"dn": 168, "lib": "", "sp": "com/db4o/internal/ids", "bh": 30866, "btc": 58, "btn": 13}
@@ -26526,7 +26526,7 @@
 {"dn": 434, "lib": "", "sp": "com/banking/model/datacontainer/j", "bh": 35123, "btc": 24, "btn": 13}
 {"dn": 778, "lib": "", "sp": "com/socialize/location", "bh": 33300, "btc": 24, "btn": 13}
 {"dn": 2485, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/ads/b", "bh": 32867, "btc": 24, "btn": 13, "pn": "com/google/android/gms"}
-{"dn": 286, "lib": "", "sp": "com/vividsolutions/jts/index/bintree", "bh": 29389, "btc": 24, "btn": 13}
+{"dn": 286, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/index/bintree", "bh": 29389, "btc": 24, "btn": 13, "pn": "com/vividsolutions/jts"}
 {"dn": 237, "lib": "", "sp": "org/apache/thrift/meta_data", "bh": 17807, "btc": 24, "btn": 13}
 {"dn": 128, "lib": "", "sp": "biz/app/android/ui/actionsheets", "bh": 106054, "btc": 23, "btn": 13}
 {"dn": 681, "lib": "ad;PlayHaven Mobile Ads;http://www.playhaven.com/", "sp": "com/playhaven/src/publishersdk/b", "bh": 77895, "btc": 23, "btn": 13, "pn": "com/playhaven"}
@@ -27098,7 +27098,7 @@
 {"dn": 116, "lib": "", "sp": "org/jivesoftware/smack/sasl", "bh": 38116, "btc": 50, "btn": 11}
 {"dn": 297, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/appeaUjo6e8XP/client/model/sync", "bh": 23121, "btc": 50, "btn": 11, "pn": "com/crowdcompass"}
 {"dn": 550, "lib": "", "sp": "edu/emory/mathcs/backport/java/util/concurrent/atomic", "bh": 82518, "btc": 49, "btn": 11}
-{"dn": 185, "lib": "", "sp": "com/vividsolutions/jts/noding/snapround", "bh": 49665, "btc": 48, "btn": 11}
+{"dn": 185, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/noding/snapround", "bh": 49665, "btc": 48, "btn": 11, "pn": "com/vividsolutions/jts"}
 {"dn": 148, "lib": "", "sp": "com/ad_stir/adp", "bh": 25217, "btc": 48, "btn": 11}
 {"dn": 337, "lib": "da;Neoline;http://www.neoline.biz/", "sp": "biz/neoline/app_core/core/sqliteconfig", "bh": 307630, "btc": 47, "btn": 11, "pn": "biz/neoline"}
 {"dn": 280, "lib": "", "sp": "com/googlecode/flickrjandroid/reflection", "bh": 94956, "btc": 47, "btn": 11}
@@ -27199,7 +27199,7 @@
 {"dn": 201, "lib": "", "sp": "org/objenesis/strategy", "bh": 70746, "btc": 29, "btn": 11}
 {"dn": 103, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http4/conn/params", "bh": 65601, "btc": 29, "btn": 11, "pn": "org/apache/http"}
 {"dn": 239, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/util/testing", "bh": 37166, "btc": 29, "btn": 11, "pn": "com/crowdcompass"}
-{"dn": 180, "lib": "", "sp": "com/vividsolutions/jts/geom/impl", "bh": 26336, "btc": 29, "btn": 11}
+{"dn": 180, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/geom/impl", "bh": 26336, "btc": 29, "btn": 11, "pn": "com/vividsolutions/jts"}
 {"dn": 218, "lib": "", "sp": "ti/loading", "bh": 23362, "btc": 29, "btn": 11}
 {"dn": 230, "lib": "", "sp": "com/esri/android/map/osm", "bh": 10557, "btc": 29, "btn": 11}
 {"dn": 225, "lib": "da;Appmakr;https://www.appmakr.com/", "sp": "com/appmakr/app147109/feed/callback", "bh": 64755, "btc": 28, "btn": 11, "pn": "com/appmakr"}
@@ -27210,7 +27210,7 @@
 {"dn": 3225, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/support", "bh": 36197, "btc": 28, "btn": 11, "pn": "com/j256"}
 {"dn": 104, "lib": "da;J256;https://github.com/j256/ormlite-android", "sp": "com/j256/ormlite/support", "bh": 36196, "btc": 28, "btn": 11, "pn": "com/j256"}
 {"dn": 176, "lib": "", "sp": "com/logicimmo/whitelabellib/ui/announces/lists", "bh": 28896, "btc": 28, "btn": 11}
-{"dn": 111, "lib": "", "sp": "com/vividsolutions/jts/geom/impl", "bh": 26335, "btc": 28, "btn": 11}
+{"dn": 111, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/geom/impl", "bh": 26335, "btc": 28, "btn": 11, "pn": "com/vividsolutions/jts"}
 {"dn": 410, "lib": "", "sp": "com/integralblue/httpresponsecache/compat/java/net", "bh": 128299, "btc": 27, "btn": 11}
 {"dn": 522, "lib": "", "sp": "org/objenesis/strategy", "bh": 69108, "btc": 27, "btn": 11}
 {"dn": 116, "lib": "ui;GreenDroid;https://github.com/cyrilmottier/GreenDroid", "sp": "greendroid/widget/item", "bh": 58903, "btc": 27, "btn": 11, "pn": "greendroid"}
@@ -27264,7 +27264,7 @@
 {"dn": 320, "lib": "", "sp": "fr/pcsoft/wdjava/framework/h", "bh": 57866, "btc": 22, "btn": 11}
 {"dn": 14439, "lib": "da;Adobe FlashPlayer;", "sp": "com/adobe/flashruntime", "bh": 44587, "btc": 22, "btn": 11, "pn": "com/adobe/flashruntime"}
 {"dn": 937, "lib": "da;Adobe FlashPlayer;", "sp": "com/adobe/flashruntime", "bh": 44586, "btc": 22, "btn": 11, "pn": "com/adobe/flashruntime"}
-{"dn": 317, "lib": "", "sp": "com/vividsolutions/jts/index/intervalrtree", "bh": 25291, "btc": 22, "btn": 11}
+{"dn": 317, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/index/intervalrtree", "bh": 25291, "btc": 22, "btn": 11, "pn": "com/vividsolutions/jts"}
 {"dn": 160, "lib": "da;Adobe FlashPlayer;", "sp": "com/adobe/flashruntime/shared", "bh": 44536, "btc": 21, "btn": 11, "pn": "com/adobe/flashruntime"}
 {"dn": 862, "lib": "da;biznessapps;https://www.biznessapps.com/", "sp": "com/biznessapps/constants", "bh": 37343, "btc": 21, "btn": 11, "pn": "com/biznessapps"}
 {"dn": 250, "lib": "da;Apache Http;https://hc.apache.org/", "sp": "org/apache/http/entity/mime/content", "bh": 35980, "btc": 21, "btn": 11, "pn": "org/apache/http"}
@@ -27500,13 +27500,13 @@
 {"dn": 279, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/multiplayer/turnbased", "bh": 31101, "btc": 48, "btn": 10, "pn": "com/google/android/gms"}
 {"dn": 182, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/appoK44rFRs7S/client/maps/model/tileprovider", "bh": 14979, "btc": 48, "btn": 10, "pn": "com/crowdcompass"}
 {"dn": 162, "lib": "", "sp": "com/ad_stir/bpc", "bh": 14865, "btc": 48, "btn": 10}
-{"dn": 114, "lib": "", "sp": "com/vividsolutions/jts/noding/snapround", "bh": 49459, "btc": 47, "btn": 10}
+{"dn": 114, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/noding/snapround", "bh": 49459, "btc": 47, "btn": 10, "pn": "com/vividsolutions/jts"}
 {"dn": 629, "lib": "", "sp": "com/iflytek/msc/e", "bh": 35134, "btc": 47, "btn": 10}
 {"dn": 182, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/appoK44rFRs7S/client/model/sync", "bh": 21928, "btc": 47, "btn": 10, "pn": "com/crowdcompass"}
 {"dn": 237, "lib": "", "sp": "biz/app/common/list", "bh": 16784, "btc": 46, "btn": 10}
 {"dn": 597, "lib": "", "sp": "rajawali/c", "bh": 196523, "btc": 45, "btn": 10}
 {"dn": 120, "lib": "", "sp": "org/jbox2d/dynamics/joints", "bh": 78674, "btc": 45, "btn": 10}
-{"dn": 290, "lib": "", "sp": "com/vividsolutions/jts/operation/buffer/validate", "bh": 11834, "btc": 44, "btn": 10}
+{"dn": 290, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/buffer/validate", "bh": 11834, "btc": 44, "btn": 10, "pn": "com/vividsolutions/jts"}
 {"dn": 125, "lib": "", "sp": "com/socialize/api/action/share", "bh": 30909, "btc": 42, "btn": 10}
 {"dn": 121, "lib": "", "sp": "com/nth/android/sharekit/model", "bh": 19953, "btc": 42, "btn": 10}
 {"dn": 661, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/games/snapshot", "bh": 51619, "btc": 41, "btn": 10, "pn": "com/google/android/gms"}
@@ -27665,7 +27665,7 @@
 {"dn": 6737, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/b", "bh": 64073, "btc": 19, "btn": 10, "pn": "twitter4j"}
 {"dn": 357, "lib": "sn;Twitter;http://twitter4j.org/", "sp": "twitter4j/internal/json", "bh": 64071, "btc": 19, "btn": 10, "pn": "twitter4j"}
 {"dn": 732, "lib": "", "sp": "org/objenesis/instantiator/jrockit", "bh": 62207, "btc": 19, "btn": 10}
-{"dn": 232, "lib": "", "sp": "com/vividsolutions/jts/shape", "bh": 46966, "btc": 19, "btn": 10}
+{"dn": 232, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/shape", "bh": 46966, "btc": 19, "btn": 10, "pn": "com/vividsolutions/jts"}
 {"dn": 159, "lib": "", "sp": "com/blackboard/android/directory/g", "bh": 46932, "btc": 19, "btn": 10}
 {"dn": 143, "lib": "", "sp": "com/quickmobile/conference/video/adapter", "bh": 45598, "btc": 19, "btn": 10}
 {"dn": 6105, "lib": "da;Titanium-Modules;", "sp": "ti/modules/titanium/ui/widget/searchview", "bh": 43283, "btc": 19, "btn": 10, "pn": "ti/modules/titanium"}
@@ -27769,7 +27769,7 @@
 {"dn": 277, "lib": "ui;goodbarber;http://www.goodbarber.com/", "sp": "com/goodbarber/v2/fragments/other", "bh": 36868, "btc": 12, "btn": 10, "pn": "com/goodbarber"}
 {"dn": 158, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/anddev/andengine/g/a", "bh": 35163, "btc": 12, "btn": 10, "pn": "org/anddev/andengine"}
 {"dn": 158, "lib": "", "sp": "com/applift/playads/model/http", "bh": 31192, "btc": 12, "btn": 10}
-{"dn": 342, "lib": "", "sp": "com/vividsolutions/jts/planargraph/algorithm", "bh": 29316, "btc": 12, "btn": 10}
+{"dn": 342, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/planargraph/algorithm", "bh": 29316, "btc": 12, "btn": 10, "pn": "com/vividsolutions/jts"}
 {"dn": 204, "lib": "", "sp": "com/nhn/android/appstore/iap/error", "bh": 25049, "btc": 12, "btn": 10}
 {"dn": 945, "lib": "ad;Revmob;https://www.revmobmobileadnetwork.com/", "sp": "com/revmob/ads/link", "bh": 18937, "btc": 12, "btn": 10, "pn": "com/revmob"}
 {"dn": 118, "lib": "", "sp": "com/lowagie/text/pdf/crypto", "bh": 18184, "btc": 12, "btn": 10}
@@ -27887,7 +27887,7 @@
 {"dn": 156, "lib": "da;Google GData;https://developers.google.com/gdata/", "sp": "com/google/gdata/data/health", "bh": 13539, "btc": 38, "btn": 9, "pn": "com/google/gdata"}
 {"dn": 859, "lib": "", "sp": "com/mobimento/caponate/tracking", "bh": 13494, "btc": 38, "btn": 9}
 {"dn": 106, "lib": "", "sp": "net/hockeyapp/android/objects", "bh": 8850, "btc": 38, "btn": 9}
-{"dn": 227, "lib": "", "sp": "com/vividsolutions/jts/precision", "bh": 18766, "btc": 37, "btn": 9}
+{"dn": 227, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/precision", "bh": 18766, "btc": 37, "btn": 9, "pn": "com/vividsolutions/jts"}
 {"dn": 199, "lib": "", "sp": "com/aetrion/flickr/blogs", "bh": 103052, "btc": 36, "btn": 9}
 {"dn": 124, "lib": "", "sp": "com/quickmobile/conference/search/adapter", "bh": 18084, "btc": 35, "btn": 9}
 {"dn": 195, "lib": "", "sp": "org/mockito/internal/debugging", "bh": 63080, "btc": 34, "btn": 9}
@@ -28604,7 +28604,7 @@
 {"dn": 1565, "lib": "", "sp": "mono/android/app", "bh": 15989, "btc": 25, "btn": 7}
 {"dn": 1807, "lib": "da;Pollfish;https://www.pollfish.com/", "sp": "com/pollfish/main", "bh": 5711, "btc": 25, "btn": 7, "pn": "com/pollfish"}
 {"dn": 1033, "lib": "mp;OpenStreetMap-Tools for Android;https://github.com/osmdroid/osmdroid", "sp": "org/osmdroid/events", "bh": 4114, "btc": 25, "btn": 7, "pn": "org/osmdroid"}
-{"dn": 179, "lib": "", "sp": "com/vividsolutions/jts/linearref", "bh": 2753, "btc": 25, "btn": 7}
+{"dn": 179, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/linearref", "bh": 2753, "btc": 25, "btn": 7, "pn": "com/vividsolutions/jts"}
 {"dn": 230, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/opengl/c/d", "bh": 2593, "btc": 25, "btn": 7, "pn": "org/andengine"}
 {"dn": 255, "lib": "da;Xamarin;https://xamarin.com/", "sp": "xamarin/social", "bh": 45908, "btc": 24, "btn": 7, "pn": "xamarin"}
 {"dn": 8882, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/plus/internal", "bh": 29545, "btc": 24, "btn": 7, "pn": "com/google/android/gms"}
@@ -28705,7 +28705,7 @@
 {"dn": 219, "lib": "da;Java jdeferred Library;http://jdeferred.org/", "sp": "org/jdeferred/android", "bh": 39193, "btc": 14, "btn": 7, "pn": "org/jdeferred"}
 {"dn": 146, "lib": "", "sp": "com/securepreferences/util", "bh": 24311, "btc": 14, "btn": 7}
 {"dn": 9534, "lib": "da;Kawa for Android;https://www.gnu.org/software/kawa/Building-for-Android.html", "sp": "com/wBabiesKawaiisnowball/Factory", "bh": 21941, "btc": 14, "btn": 7, "pn": "kawa"}
-{"dn": 342, "lib": "", "sp": "com/vividsolutions/jts/index/chain", "bh": 17413, "btc": 14, "btn": 7}
+{"dn": 342, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/index/chain", "bh": 17413, "btc": 14, "btn": 7, "pn": "com/vividsolutions/jts"}
 {"dn": 1665, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/ads/doubleclick", "bh": 11374, "btc": 14, "btn": 7, "pn": "com/google/android/gms"}
 {"dn": 175, "lib": "", "sp": "com/asbma/ambayagold", "bh": 11013, "btc": 14, "btn": 7}
 {"dn": 442, "lib": "ge;OpenFeint;", "sp": "com/openfeint/internal/f/a", "bh": 10929, "btc": 14, "btn": 7, "pn": "com/openfeint"}
@@ -28756,7 +28756,7 @@
 {"dn": 172, "lib": "pa;Bump pay;", "sp": "com/bumptech/glide/g", "bh": 8881, "btc": 12, "btn": 7, "pn": "com/bump"}
 {"dn": 327, "lib": "da;crowdcompass;https://www.crowdcompass.com/", "sp": "com/crowdcompass/appeaUjo6e8XP/client/eventguide/contacts/item", "bh": 7345, "btc": 12, "btn": 7, "pn": "com/crowdcompass"}
 {"dn": 111, "lib": "", "sp": "com/vervewireless/advert/mediation", "bh": 7344, "btc": 12, "btn": 7}
-{"dn": 318, "lib": "", "sp": "com/vividsolutions/jts/algorithm/locate", "bh": 5777, "btc": 12, "btn": 7}
+{"dn": 318, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/algorithm/locate", "bh": 5777, "btc": 12, "btn": 7, "pn": "com/vividsolutions/jts"}
 {"dn": 102, "lib": "", "sp": "com/eventgenie/android/ui/badgecount", "bh": 32662, "btc": 11, "btn": 7}
 {"dn": 2980, "lib": "da;Apache Cordova;https://cordova.apache.org/", "sp": "org/apache/cordova/device", "bh": 32560, "btc": 11, "btn": 7, "pn": "org/apache/cordova"}
 {"dn": 107, "lib": "", "sp": "org/apache/mina/handler/support", "bh": 30158, "btc": 11, "btn": 7}
@@ -28983,7 +28983,7 @@
 {"dn": 331, "lib": "", "sp": "mobi/dash/sdk/chartboost", "bh": 17235, "btc": 12, "btn": 6}
 {"dn": 257, "lib": "", "sp": "org/mockito/internal/handler", "bh": 16497, "btc": 12, "btn": 6}
 {"dn": 208, "lib": "", "sp": "com/nhn/android/appstore/iap/code", "bh": 15540, "btc": 12, "btn": 6}
-{"dn": 342, "lib": "", "sp": "com/vividsolutions/jts/index/sweepline", "bh": 12481, "btc": 12, "btn": 6}
+{"dn": 342, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/index/sweepline", "bh": 12481, "btc": 12, "btn": 6, "pn": "com/vividsolutions/jts"}
 {"dn": 5750, "lib": "da;Appinventor;http://appinventor.mit.edu/", "sp": "appinventor/ai_thoi_droid", "bh": 12145, "btc": 12, "btn": 6, "pn": "appinventor"}
 {"dn": 160, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/common/api", "bh": 9598, "btc": 12, "btn": 6, "pn": "com/google/android/gms"}
 {"dn": 178, "lib": "am;Google Play;https://play.google.com", "sp": "com/android/vending/billing", "bh": 7283, "btc": 12, "btn": 6, "pn": "com/android/vending"}
@@ -29031,7 +29031,7 @@
 {"dn": 310, "lib": "", "sp": "com/ibuildapp/romanblack/VideoPlugin/entities/youtube", "bh": 14026, "btc": 10, "btn": 6}
 {"dn": 119, "lib": "", "sp": "com/blackboard/android/central/task", "bh": 13985, "btc": 10, "btn": 6}
 {"dn": 288, "lib": "da;AppMachine App Generator;http://www.appmachine.com/", "sp": "appmachine/components/fragments/debug", "bh": 13430, "btc": 10, "btn": 6, "pn": "appmachine"}
-{"dn": 339, "lib": "", "sp": "com/vividsolutions/jts/operation/overlay/snap", "bh": 13028, "btc": 10, "btn": 6}
+{"dn": 339, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/operation/overlay/snap", "bh": 13028, "btc": 10, "btn": 6, "pn": "com/vividsolutions/jts"}
 {"dn": 131, "lib": "", "sp": "com/vungle/publisher/device", "bh": 12843, "btc": 10, "btn": 6}
 {"dn": 215, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/cast", "bh": 12791, "btc": 10, "btn": 6, "pn": "com/google/android/gms"}
 {"dn": 186, "lib": "", "sp": "com/w3i/common/billingtracking", "bh": 12598, "btc": 10, "btn": 6}
@@ -29106,7 +29106,7 @@
 {"dn": 152, "lib": "", "sp": "com/varduna/cbadm/entityaccess", "bh": 28356, "btc": 28, "btn": 5}
 {"dn": 166, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/identity/intents", "bh": 25030, "btc": 28, "btn": 5, "pn": "com/google/android/gms"}
 {"dn": 323, "lib": "", "sp": "com/distimo/sdk/air", "bh": 42405, "btc": 27, "btn": 5}
-{"dn": 185, "lib": "", "sp": "com/vividsolutions/jts/geom/prep", "bh": 30829, "btc": 27, "btn": 5}
+{"dn": 185, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/geom/prep", "bh": 30829, "btc": 27, "btn": 5, "pn": "com/vividsolutions/jts"}
 {"dn": 959, "lib": "", "sp": "com/socialize/error", "bh": 15475, "btc": 27, "btn": 5}
 {"dn": 11164, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/identity/intents", "bh": 25028, "btc": 26, "btn": 5, "pn": "com/google/android/gms"}
 {"dn": 444, "lib": "ge;OpenFeint;", "sp": "com/openfeint/internal/i", "bh": 13591, "btc": 26, "btn": 5, "pn": "com/openfeint"}
@@ -29217,7 +29217,7 @@
 {"dn": 6477, "lib": "da;Authorize.NET;http://www.authorize.net/", "sp": "net/authorize/data/cim", "bh": 4323, "btc": 12, "btn": 5, "pn": "net/authorize"}
 {"dn": 5654, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/andengine/engine/options/a", "bh": 2849, "btc": 12, "btn": 5, "pn": "org/andengine"}
 {"dn": 979, "lib": "", "sp": "jp/innovationplus/ipp/core", "bh": 985, "btc": 12, "btn": 5}
-{"dn": 185, "lib": "", "sp": "com/vividsolutions/jts/shape/random", "bh": 33399, "btc": 11, "btn": 5}
+{"dn": 185, "lib": "da;JTS Topology Suite;http://sourceforge.net/projects/jts-topo-suite", "sp": "com/vividsolutions/jts/shape/random", "bh": 33399, "btc": 11, "btn": 5, "pn": "com/vividsolutions/jts"}
 {"dn": 3589, "lib": "ge;Andengine Game Engine;http://www.andengine.org/", "sp": "org/anddev/andengine/h/h", "bh": 24706, "btc": 11, "btn": 5, "pn": "org/anddev/andengine"}
 {"dn": 221, "lib": "da;Apache James Mail Enterprise Serve;http://james.apache.org", "sp": "org/apache/james/mime4j/util", "bh": 19027, "btc": 11, "btn": 5, "pn": "org/apache/james"}
 {"dn": 5133, "lib": "ut;Tapit;Tapit NFC", "sp": "com/tapit/a", "bh": 17714, "btc": 11, "btn": 5, "pn": "com/tapit"}
