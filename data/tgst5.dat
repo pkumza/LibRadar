@@ -12309,7 +12309,7 @@
 {"dn": 170, "lib": "da;Google Mobile Services;https://developers.google.com/android/reference/com/google/android/gms/package-summary", "sp": "com/google/android/gms/maps", "bh": 225009, "btc": 1910, "btn": 85, "pn": "com/google/android/gms"}
 {"dn": 2983, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/javax/xml/stream/xerces/util", "bh": 955081, "btc": 1383, "btn": 85, "pn": "com/amazonaws"}
 {"dn": 180, "lib": "ut;Amazon AWS;http://mvnrepository.com/artifact/com.amazonaws", "sp": "com/amazonaws/javax/xml/stream/xerces/util", "bh": 955069, "btc": 1383, "btn": 85, "pn": "com/amazonaws"}
-{"dn": 424, "lib": "", "sp": "hirondelle/date4j", "bh": 298152, "btc": 927, "btn": 85}
+{"dn": 424, "lib": "da;DATE4J;http://www.date4j.net/", "sp": "hirondelle/date4j", "bh": 298152, "btc": 927, "btn": 85, "pn": "hirondelle/date4j"}
 {"dn": 270, "lib": "ge;Scoreloop Game;", "sp": "com/scoreloop/client/android/core/controller", "bh": 4160, "btc": 615, "btn": 85, "pn": "com/scoreloop"}
 {"dn": 450, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry/android/impl/ads", "bh": 786787, "btc": 613, "btn": 85, "pn": "com/flurry"}
 {"dn": 252, "lib": "ma;Flurry;https://flurry.com", "sp": "com/flurry/android/impl/ads", "bh": 776948, "btc": 609, "btn": 85, "pn": "com/flurry"}
