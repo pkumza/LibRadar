@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name = "LibRadar",
-    version = "2.0.0.dev5",
+    version = "2.0.1.dev1",
     author = "Zachary Marv",
     author_email = "maziang@pku.edu.cn",
     description = ("LibRadar is an automatic tool for Android library detection."),
@@ -18,7 +18,7 @@ setup(
     scripts=['bin/libradart'],
     keywords = "Android Third-party Library",
     url = "http://radar.pkuos.org/",
-    packages=['LibRadar', 'tests'],
+    packages=['LibRadar', 'LibRadarData', 'tests'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 1 - Planning",
