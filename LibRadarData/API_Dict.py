@@ -59,7 +59,7 @@ class ApiDictionaryGenerator(Singleton):
         self.redis_class_name.flushdb()
         self.redis_android_api = redis.StrictRedis(host=db_host, port=db_port, db=db_android_api)
         self.redis_android_api.flushdb()
-        self.redis_android_api_simplified = redis.StrictRedis(host=db_host, port=db_port, db=db_android_api_simplified)
+        self.redis_android_api_simplified = redis.StrictRedis(host=db_host, port=db_port, db=db_api_invoke)
         self.redis_android_api_simplified.flushdb()
         self.api_set = set()
         self.txt_output_api = open("./Data/IntermediateData/api.txt", 'w')

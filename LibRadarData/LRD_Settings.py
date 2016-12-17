@@ -12,12 +12,31 @@ import time
 # whether clean the workspace after work
 clean_workspace = False
 
-# Config about database
+"""
+    Config about databases
+        0 : Android.jar Classes
+            Key: Classes (Not used)
+            Value: Count (Not used)
+        1 : Android.jar APIs with return_type and argument_type
+            Key: API with return_type and argument_type (Not used)
+            Value: Count (Not used)
+        2 : Android.jar APIs with only full class name and method name
+            Key: API with only class name and method name (Important!!!)
+            Value: Count (Not used)
+        3 : Feature Count
+            Key: Hash (MD5) of a package or smali file
+            Value: Count
+        4 : Feature Weight
+            Key: Hash (MD5) of a package or smali file
+            Value: Weigh. Which means how many APIs used in this package or smali file.
+"""
 db_host = 'localhost'
 db_port = 6379
 db_class_name = 0
 db_android_api = 1
-db_android_api_simplified = 2
+db_api_invoke = 2
+db_feature_count = 3
+db_feature_weight = 4
 
 """
     Logs
