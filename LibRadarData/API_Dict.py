@@ -27,7 +27,8 @@ from settings import *
     What's the databases for?
 
         0 : Android.jar Classes
-        1 : Android.jar APIs
+        1 : Android.jar APIs with return_type and arguments
+        2 : Android.jar APIs with only full class name and method name
 """
 
 
@@ -53,14 +54,17 @@ class ApiDictionaryGenerator(Singleton):
             open a file for api output.
         """
         self.jar_list = []
-        self.redis_class_name = redis.StrictRedis(host=db_host, port=db_port, db=db_class_name_id)
-        log_w("Clean all the keys in class database")
+        self.redis_class_name = redis.StrictRedis(host=db_host, port=db_port, db=db_class_name)
+        log_w("Clean all the keys in databases")
         self.redis_class_name.flushdb()
-        self.redis_android_api = redis.StrictRedis(host=db_host, port=db_port, db=db_android_api_id)
-        log_w("Clean all the keys in API database")
+        self.redis_android_api = redis.StrictRedis(host=db_host, port=db_port, db=db_android_api)
         self.redis_android_api.flushdb()
+        self.redis_android_api_simplified = redis.StrictRedis(host=db_host, port=db_port, db=db_android_api_simplified)
+        self.redis_android_api_simplified.flushdb()
         self.api_set = set()
         self.txt_output_api = open("./Data/IntermediateData/api.txt", 'w')
+        self.api_simplified_set = set()
+        self.txt_invoke_format = open("./Data/IntermediateData/invokeFormat.txt", 'w')
 
     def __del__(self):
         """
@@ -140,7 +144,7 @@ class ApiDictionaryGenerator(Singleton):
                         '''
                         if '$' in full_path_name:
                             continue
-                        self.read_java(full_path_name, class_name, jar, self.api_set)
+                        self.read_java(full_path_name, class_name, jar)
                         self.redis_class_name.incr(class_name)
             # clean the directory
             if clean_workspace:
@@ -150,8 +154,10 @@ class ApiDictionaryGenerator(Singleton):
         log_i("Write the APIs into txt file as a backup.")
         for api in self.api_set:
             self.txt_output_api.write(api + '\n')
+        for api_s in self.api_simplified_set:
+            self.txt_invoke_format.write(api_s + '\n')
 
-    def read_java(self, full_path_name, class_name, jar, api_set):
+    def read_java(self, full_path_name, class_name, jar):
         """
             Read APIs from java file.
         """
@@ -170,14 +176,26 @@ class ApiDictionaryGenerator(Singleton):
             if 'public' in line and 'class' in line and brackets_count == 0:
                 continue
             # inner class
-            if 'public' in line and 'class' in line and brackets_count == 1:
+            if ('public' in line or 'protected' in line) and 'class' in line and brackets_count == 1:
                 current_inner_class = line.split('class')[1].strip()
+                # if there's 'extends' here in this string
+                if " " in current_inner_class:
+                    current_inner_class = current_inner_class.split(' ')[0]
+                continue
+            if ('public' in line or 'protected' in line) and 'interface' in line and brackets_count == 1:
+                current_inner_class = line.split('interface')[1].strip()
+                if " " in current_inner_class:
+                    current_inner_class = current_inner_class.split(' ')[0]
                 continue
             # method (API)
             if 'public' in line and '(' in line and ')' in line:
                 left_part = line.split('(')[0]
                 method_name = left_part.split(' ')[-1]
                 return_type = left_part.split(' ')[-2]
+                if "extends" in method_name:
+                    pass
+                if "extends" in return_type:
+                    pass
                 '''
                     if the value is public, that means the function is a constructive method.
                     I use '#' here to tag that the method does not have a return type.
@@ -207,9 +225,16 @@ class ApiDictionaryGenerator(Singleton):
                     if i != 0:
                         parameters_string += ','
                     parameters_string += paras[i]
-                method_declare = "%s %s;->%s(%s)" % (return_type, full_class_name, method_name, parameters_string)
-                api_set.add(method_declare)
+                method_declare = "%s %s->%s(%s)" % (return_type, full_class_name, method_name, parameters_string)
+                point_to_slash = full_class_name.replace('.', '/')
+                if method_name == class_name.split('.')[-1]:
+                    method_name = "<init>"
+                method_invoke = "L%s;->%s" % (point_to_slash, method_name)
+
+                self.redis_android_api_simplified.incr(method_invoke)
+                self.api_set.add(method_declare)
                 self.redis_android_api.incr(method_declare)
+                self.api_simplified_set.add(method_invoke)
 
         open_java_file.close()
 
@@ -231,7 +256,7 @@ class ApiDictionaryGeneratorWrapper:
         adg.add_jars(jar_list)
         # decompiling the jar file. decompiling is only needed once.
         log_i("Decompiling jar")
-        adg.decompile_jar()
+        #adg.decompile_jar()
         # walk through the directory to find APIs.clean
         adg.walk_dir()
 

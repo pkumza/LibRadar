@@ -10,13 +10,14 @@
 import time
 
 # whether clean the workspace after work
-clean_workspace = True
+clean_workspace = False
 
 # Config about database
 db_host = 'localhost'
 db_port = 6379
-db_class_name_id = 0
-db_android_api_id = 1
+db_class_name = 0
+db_android_api = 1
+db_android_api_simplified = 2
 
 """
     Logs
