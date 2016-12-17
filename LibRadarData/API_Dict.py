@@ -17,7 +17,7 @@ import os
 import commands
 import redis
 import glob
-from settings import *
+from LRD_Settings import *
 
 """
     Information about Database.
@@ -150,7 +150,8 @@ class ApiDictionaryGenerator(Singleton):
             if clean_workspace:
                 log_i("Cleaning the directory which is already walked.")
                 os.system('rm -rf %s' % dir_to_be_walked)
-        log_i("API Count is %d" % len(self.api_set))
+        log_i("API Count is %d counting overloading." % len(self.api_set))
+        log_i("API Count is %d without overloading." % len(self.api_simplified_set))
         log_i("Write the APIs into txt file as a backup.")
         for api in self.api_set:
             self.txt_output_api.write(api + '\n')
@@ -173,7 +174,7 @@ class ApiDictionaryGenerator(Singleton):
             if '}' in line:
                 brackets_count -= 1
             # outer class
-            if 'public' in line and 'class' in line and brackets_count == 0:
+            if ('public' in line or 'protected' in line) and 'class' in line and brackets_count == 0:
                 continue
             # inner class
             if ('public' in line or 'protected' in line) and 'class' in line and brackets_count == 1:
@@ -188,7 +189,7 @@ class ApiDictionaryGenerator(Singleton):
                     current_inner_class = current_inner_class.split(' ')[0]
                 continue
             # method (API)
-            if 'public' in line and '(' in line and ')' in line:
+            if ('public' in line or 'protected' in line) and '(' in line and ')' in line:
                 left_part = line.split('(')[0]
                 method_name = left_part.split(' ')[-1]
                 return_type = left_part.split(' ')[-2]
@@ -202,7 +203,7 @@ class ApiDictionaryGenerator(Singleton):
 
                     If the value is not '#', the value is put into database 0 for a count.
                 '''
-                if return_type == 'public':
+                if return_type == 'public' or return_type == 'protected':
                     return_type = '#'
                 else:
                     self.redis_class_name.incr(return_type)
@@ -256,7 +257,7 @@ class ApiDictionaryGeneratorWrapper:
         adg.add_jars(jar_list)
         # decompiling the jar file. decompiling is only needed once.
         log_i("Decompiling jar")
-        #adg.decompile_jar()
+        adg.decompile_jar()
         # walk through the directory to find APIs.clean
         adg.walk_dir()
 
