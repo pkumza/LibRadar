@@ -2,6 +2,8 @@ LData
 clean_app
 decoded
 Data/RawData
+Data/log.txt
+
 
 # .idea
 .idea

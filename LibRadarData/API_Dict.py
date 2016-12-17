@@ -6,12 +6,15 @@
 
     Firstly, get android.jar in Android SDK folder.
 
+    Warning: Working Directory should be LibRadar other than LibRadar/LibRadarData
+
 """
 
 import os
 import commands
 import redis
-
+import glob
+from settings import *
 
 """
     Information about Database.
@@ -23,11 +26,6 @@ import redis
         0 : Android.jar Classes
         1 : Android.jar APIs
 """
-
-db_host = 'localhost'
-db_port = 6379
-db_class_name_id = 0
-db_android_api_id = 1
 
 
 class Singleton(object):
@@ -53,8 +51,13 @@ class ApiDictionaryGenerator(Singleton):
         """
         self.jar_list = []
         self.redis_class_name = redis.StrictRedis(host=db_host, port=db_port, db=db_class_name_id)
+        log_w("Clean all the keys in class database")
+        self.redis_class_name.flushdb()
         self.redis_android_api = redis.StrictRedis(host=db_host, port=db_port, db=db_android_api_id)
-        self.txt_output_api = open("../Data/IntermediateData/api.txt", 'w')
+        log_w("Clean all the keys in API database")
+        self.redis_android_api.flushdb()
+        self.api_set = set()
+        self.txt_output_api = open("./Data/IntermediateData/api.txt", 'w')
 
     def __del__(self):
         """
@@ -76,13 +79,12 @@ class ApiDictionaryGenerator(Singleton):
         # run `jad` command as a test here to exam if jad is installed.
         status, out = commands.getstatusoutput('jad')
         if status == 32512:
-            print("Jad is not runnable. please put `tool/jad` into your $PATH environment.")
+            log_e("Jad is not runnable. please put `tool/jad` into your $PATH environment.")
             raise AssertionError
         if status == 256:
             pass
         else:
-            print("Maybe there is something wrong with jad status.")
-            raise AssertionError
+            log_w("Maybe there is something wrong with jad status.")
 
     """
         Take jar file into account. It is ok to have only one version of android.jar
@@ -110,8 +112,9 @@ class ApiDictionaryGenerator(Singleton):
     def decompile_jar(self):
         self.if_jad_exists()
         for jar in self.jar_list:
-            cmd = "../tool/jar_decompiler.sh ../Data/RawData/" + jar
-            os.system(cmd)
+            log_i("Decompiling %s" % jar)
+            cmd = "./tool/jar_decompiler.sh " + jar
+            os.popen(cmd)
 
     """
         Walk through the directories to find all the class names and methods (SDK API).
@@ -120,7 +123,8 @@ class ApiDictionaryGenerator(Singleton):
     """
     def walk_dir(self):
         for jar in self.jar_list:
-            dir_to_be_walked = "../Data/RawData/" + jar + ".dir"
+            dir_to_be_walked = jar + ".dir"
+            log_i("Walk %s" % dir_to_be_walked)
             for dirName, subdirList, fileList in os.walk(dir_to_be_walked):
                 for filename in fileList:
                     if len(filename) > 4 and filename[-5:] == ".java":
@@ -133,14 +137,22 @@ class ApiDictionaryGenerator(Singleton):
                         '''
                         if '$' in full_path_name:
                             continue
-                        self.read_java(full_path_name, class_name, jar, self.txt_output_api)
+                        self.read_java(full_path_name, class_name, jar, self.api_set)
                         self.redis_class_name.incr(class_name)
+            # clean the directory
+            if clean_workspace:
+                log_i("Cleaning the directory which is already walked.")
+                os.system('rm -rf %s' % dir_to_be_walked)
+        log_i("API Count is %d" % len(self.api_set))
+        log_i("Write the APIs into txt file as a backup.")
+        for api in self.api_set:
+            self.txt_output_api.write(api + '\n')
 
-    def read_java(self, full_path_name, class_name, jar, txt_dump):
+    def read_java(self, full_path_name, class_name, jar, api_set):
         """
             Read APIs from java file.
         """
-        open_java_file = open("../Data/RawData/" + jar + '.dir/' + full_path_name, 'r')
+        open_java_file = open(jar + '.dir/' + full_path_name, 'r')
         brackets_count = 0
         current_inner_class = ""
         for line in open_java_file:
@@ -193,7 +205,7 @@ class ApiDictionaryGenerator(Singleton):
                         parameters_string += ','
                     parameters_string += paras[i]
                 method_declare = "%s %s;->%s(%s)" % (return_type, full_class_name, method_name, parameters_string)
-                txt_dump.write(method_declare + '\n')
+                api_set.add(method_declare)
                 self.redis_android_api.incr(method_declare)
 
         open_java_file.close()
@@ -207,14 +219,17 @@ class ApiDictionaryGeneratorWrapper:
         There're no more thing you need to do here.
         information about classes and APIs are automatically stalled into txt file and database.
     """
-    def __init__(self, android_jar_list):
+    def __init__(self, jar_list):
         # create an instance.
+        log_i("Creating an instance of ApiDictionaryGenerator")
         adg = ApiDictionaryGenerator()
         # add the jar into list.
-        adg.add_jars(android_jar_list)
+        log_i("Adding jar path into jar list")
+        adg.add_jars(jar_list)
         # decompiling the jar file. decompiling is only needed once.
+        log_i("Decompiling jar")
         adg.decompile_jar()
-        # walk through the directory to find APIs.
+        # walk through the directory to find APIs.clean
         adg.walk_dir()
 
 
@@ -237,4 +252,5 @@ if __name__ == "__main__":
         PS:
             There are commonly 30 thousands of APIs in one version of android.jar
     """
-    api_dict_generator_wrapper = ApiDictionaryGeneratorWrapper(["android21.jar", "android24.jar"])
+    jar_file_list = glob.glob("./Data/RawData/*.jar")
+    api_dict_generator_wrapper = ApiDictionaryGeneratorWrapper(jar_file_list)
