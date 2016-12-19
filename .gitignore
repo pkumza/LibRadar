@@ -3,6 +3,7 @@ clean_app
 decoded
 Data/RawData
 Data/log.txt
+Data/Decompiled
 
 
 # .idea

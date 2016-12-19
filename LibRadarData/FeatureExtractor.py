@@ -2,11 +2,11 @@
 """
     Feature Extractor
 
-    This script is used to extract features from smali files.
+    This script is used to extract features from directory and smali files.
 """
 
 import redis
-from LRD_Settings import *
+from LRDSettings import *
 import hashlib
 import threading
 import os
@@ -17,15 +17,15 @@ class FeatureExtractor(threading.Thread):
     Feature Extractor
 
     """
-    def __init__(self, thread_id, smali_dir_path):
+    def __init__(self, thread_name, smali_dir_path):
         """
             Init the Feature Extractor with ID and smali folder's path.
-        :type thread_id: basestring
+        :type thread_name: basestring
         :type smali_dir_path: basestring
         """
-        self.thread_id = thread_id
+        threading.Thread.__init__(self, name=thread_name)
+        self.thread_name = thread_name
         self.smali_dir_path = smali_dir_path
-        threading.Thread.__init__(self, name=thread_id)
         self.db_invoke = redis.StrictRedis(host=db_host, port=db_port, db=db_api_invoke)
         self.db_feature_count = redis.StrictRedis(host=db_host, port=db_port, db=db_feature_count)
         self.db_feature_weight = redis.StrictRedis(host=db_host, port=db_port, db=db_feature_weight)
@@ -168,11 +168,11 @@ class FeatureExtractor(threading.Thread):
         return hash_storage
 
     def run(self):
-        log_i("Feature Extractor %s is extracting %s" % (self.thread_id, self.smali_dir_path))
+        log_i("Feature Extractor %s is extracting %s" % (self.thread_name, self.smali_dir_path))
         hash_storage = self.dir_extractor(self.smali_dir_path)
         for key, vl in hash_storage.items():
             log_v("%s - %s" % (vl, key))
-        log_i("Feature Extractor %s has extracted %s" % (self.thread_id, self.smali_dir_path))
+        log_i("Feature Extractor %s has extracted %s" % (self.thread_name, self.smali_dir_path))
 
 
 if __name__ == "__main__":
