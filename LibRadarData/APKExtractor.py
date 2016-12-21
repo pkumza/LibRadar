@@ -29,9 +29,7 @@ class APKExtractor(threading.Thread):
         self.APKPath = apk_path
         self.md5 = ""
         self.package_name = ""
-        self.db_un_ob_pn = redis.StrictRedis(host=db_host, port=db_port, db=db_un_ob_pn)
-        self.db_un_ob_pn_count = redis.StrictRedis(host=db_host, port=db_port, db=db_un_ob_pn_count)
-        self.db_apk_list = redis.StrictRedis(host=db_host, port=db_port, db=db_apk_list)
+        self.db_md5_to_apk_pn = redis.StrictRedis(host=db_host, port=db_port, db=db_md5_to_apk_pn)
         self.decompiled_path = ""
 
     def get_md5(self):
@@ -54,6 +52,14 @@ class APKExtractor(threading.Thread):
     def decompile(self):
         # get md5 for this file.
         self.get_md5()
+        package_name_in_db = self.db_md5_to_apk_pn.get(self.md5)
+        if package_name_in_db is not None:
+            # There's already the same file extracted in database.
+            log_w("File already in database")
+            if repeat_file_rerun:
+                pass
+            else:
+                return -1
         # get the basename for the location of decompiling
         apk_file_name = os.path.basename(self.APKPath)
         if os.path.exists("./Data/Decompiled/%s" % apk_file_name):
@@ -81,18 +87,29 @@ class APKExtractor(threading.Thread):
             log_w("No package name information in manifest file. Use file name instead.")
             self.package_name = apk_file_name
         log_v("Package Name of %s is %s" % (self.APKPath, self.package_name))
+        # DB 8
+        self.db_md5_to_apk_pn.set(self.md5, self.package_name)
+        return 0
 
     def feature_extract(self):
-        feature_extractor = FeatureExtractor.FeatureExtractor(self.thread_name + "_FE", self.decompiled_path + "/smali")
+        feature_extractor = FeatureExtractor.FeatureExtractor("FE_%s" % self.thread_name,
+                                                              self.decompiled_path + "/smali",
+                                                              self.md5)
+        feature_extractor.flush_feature_db()
         feature_extractor.start()
         feature_extractor.join()
         log_i("Feature Extractor finished.")
 
     def run(self):
         log_i("Thread %s is dealing with %s" % (self.thread_name, self.APKPath))
-        self.decompile()
-        self.feature_extract()
+        if self.decompile() >= 0:
+            # if no error in decompiling
+            self.feature_extract()
+        else:
+            # if the ret is -1, that means the same file is already extracted.
+            pass
 
-ae = APKExtractor("001", "/Users/marchon/Downloads/air.com.dpflashes.clearvision3.apk")
-ae.start()
-ae.join()
+if __name__ == "__main__":
+    ae = APKExtractor("001", "/Volumes/UltraPassport/apks/advanced.speed.booster.apk")
+    ae.start()
+    ae.join()

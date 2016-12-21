@@ -65,7 +65,8 @@ db_feature_count = 3
 db_feature_weight = 4
 db_un_ob_pn = 5
 db_un_ob_pn_count = 6
-db_apk_list = 7
+db_apk_md5_list = 7
+db_md5_to_apk_pn = 8
 
 """
     Logs
@@ -76,6 +77,8 @@ _log_level = 5
 _log_file_name = "./Data/log.txt"
 _log_file = open(_log_file_name, 'a')
 
+# This var defines whether we need to re-run the extracting stage when we find the same file MD5 in DB.
+repeat_file_rerun = True
 
 def _log(log_l, message):
     """
