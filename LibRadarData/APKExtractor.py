@@ -100,11 +100,35 @@ class APKExtractor(threading.Thread):
         feature_extractor.join()
         log_i("Feature Extractor finished.")
 
+    def clean(self):
+        if clean_workspace == 0:
+            return
+        if clean_workspace == 1:
+            cmd_rm_assets = "rm -rf %s/assets" % self.decompiled_path
+            os.system(cmd_rm_assets)
+            cmd_rm_res = "rm -rf %s/res" % self.decompiled_path
+            os.system(cmd_rm_res)
+            return
+        if clean_workspace == 2:
+            cmd_rm_assets = "rm -rf %s/assets" % self.decompiled_path
+            os.system(cmd_rm_assets)
+            cmd_rm_res = "rm -rf %s/res" % self.decompiled_path
+            os.system(cmd_rm_res)
+            cmd_rm_smali = "rm -rf %s/smali" % self.decompiled_path
+            os.system(cmd_rm_smali)
+            return
+        if clean_workspace == 3:
+            cmd_rm = "rm -rf %s" % self.decompiled_path
+            os.system(cmd_rm)
+            return
+        log_e("Should not arrive here!!! Something wrong with clean_workspace in LRDSettings.py!!")
+
     def run(self):
         log_i("Thread %s is dealing with %s" % (self.thread_name, self.APKPath))
         if self.decompile() >= 0:
             # if no error in decompiling
             self.feature_extract()
+            self.clean()
         else:
             # if the ret is -1, that means the same file is already extracted.
             pass
