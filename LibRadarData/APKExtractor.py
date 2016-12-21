@@ -5,11 +5,12 @@
     This script is used to extract features and other information from APK files.
 """
 
-import redis
-from LRDSettings import *
-import hashlib
 import os
+import redis
+import hashlib
 import threading
+from LRDSettings import *
+import FeatureExtractor
 
 
 class APKExtractor(threading.Thread):
@@ -31,6 +32,7 @@ class APKExtractor(threading.Thread):
         self.db_un_ob_pn = redis.StrictRedis(host=db_host, port=db_port, db=db_un_ob_pn)
         self.db_un_ob_pn_count = redis.StrictRedis(host=db_host, port=db_port, db=db_un_ob_pn_count)
         self.db_apk_list = redis.StrictRedis(host=db_host, port=db_port, db=db_apk_list)
+        self.decompiled_path = ""
 
     def get_md5(self):
         if not os.path.isfile(self.APKPath):
@@ -54,13 +56,20 @@ class APKExtractor(threading.Thread):
         self.get_md5()
         # get the basename for the location of decompiling
         apk_file_name = os.path.basename(self.APKPath)
+        if os.path.exists("./Data/Decompiled/%s" % apk_file_name):
+            repeat_id = 1
+            while os.path.exists("./Data/Decompiled/%s-%d" % (apk_file_name, repeat_id)):
+                repeat_id += 1
+            self.decompiled_path = "./Data/Decompiled/%s-%d" % (apk_file_name, repeat_id)
+        else:
+            self.decompiled_path = "./Data/Decompiled/%s" % apk_file_name
         # command line for terminal
-        apktool_cmd = "./tool/apktool d -q -b -f -o ./Data/Decompiled/%s %s" % (apk_file_name, self.APKPath)
+        apktool_cmd = "./tool/apktool d -q -b -o %s %s" % (self.decompiled_path, self.APKPath)
         log_v("APKTOOL CMD LINE : %s" % apktool_cmd)
         # run cmd
         os.system(apktool_cmd)
         # extract features from AndroidManifest.xml
-        manifest_file = open("./Data/decompiled/%s/AndroidManifest.xml" % apk_file_name, 'r')
+        manifest_file = open("%s/AndroidManifest.xml" % self.decompiled_path, 'r')
         self.package_name = ""
         for line in manifest_file:
             if "manifest" in line and "package=" in line:
@@ -73,10 +82,16 @@ class APKExtractor(threading.Thread):
             self.package_name = apk_file_name
         log_v("Package Name of %s is %s" % (self.APKPath, self.package_name))
 
+    def feature_extract(self):
+        feature_extractor = FeatureExtractor.FeatureExtractor(self.thread_name + "_FE", self.decompiled_path + "/smali")
+        feature_extractor.start()
+        feature_extractor.join()
+        log_i("Feature Extractor finished.")
 
     def run(self):
         log_i("Thread %s is dealing with %s" % (self.thread_name, self.APKPath))
         self.decompile()
+        self.feature_extract()
 
 ae = APKExtractor("001", "/Users/marchon/Downloads/air.com.dpflashes.clearvision3.apk")
 ae.start()

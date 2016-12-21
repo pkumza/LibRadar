@@ -177,10 +177,10 @@ class FeatureExtractor(threading.Thread):
 
 if __name__ == "__main__":
     """
-        Usage Sample
+        Usage Sample：
     """
     fe = FeatureExtractor("001", "./Data/RawData/com.FunLiveWallpaper/smali")
-    fe.flush_feature_db()
+    # fe.flush_feature_db()
     fe.start()
     fe.join()
     log_i("All Threads Finished")

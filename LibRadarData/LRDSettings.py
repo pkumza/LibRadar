@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    settings.py
+    LibRadar settings.py
 
     Settings about python scripts in LibRadarData folder.
     All the scripts in LibRadarData need import this file.
@@ -9,8 +9,14 @@
 
 import time
 
-# whether clean the workspace after work
-clean_workspace = False
+"""
+    whether clean the workspace after work
+        0 : Clean nothing
+        1 : Clean res files
+        2 : Clean smali files
+        3 : Clean everything, including AndroidManifest.xml & apktool.yml
+"""
+clean_workspace = 0
 
 """
     Config about databases
@@ -43,9 +49,12 @@ clean_workspace = False
             Value: count of potential package name
         7 : A list of APK files that contains this package or smali.
             Key: Hash (MD5) of a package or smali file
-            Value: a list of APK package name and MD5 for this APK
-                e.g. "5cbcb2c2248ccdf30aca87612bc7b0de;com.Viserl.FunLiveWallpaper"
-
+            Value: a list of APK file MD5 for this APP
+                e.g. "5cbcb2c2248ccdf30aca87612bc7b0de"
+        8 : File MD5 to APP Package Name
+            Key: APK file MD5
+            Value: App's package name
+                e.g. 6cc6e58b9229a05f35ae34d05da9f688 -> com.Viserl.FunLiveWallpaper
 """
 db_host = 'localhost'
 db_port = 6379
