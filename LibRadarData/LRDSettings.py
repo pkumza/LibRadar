@@ -69,6 +69,12 @@ db_apk_md5_list = 7
 db_md5_to_apk_pn = 8
 
 """
+running_threads
+"""
+running_threads_number = 4
+queue_time_out = 30
+
+"""
     Logs
 """
 

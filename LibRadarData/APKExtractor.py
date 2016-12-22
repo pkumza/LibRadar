@@ -11,6 +11,7 @@ import hashlib
 import threading
 from LRDSettings import *
 import FeatureExtractor
+# import Queue # ???
 
 
 class APKExtractor(threading.Thread):
@@ -18,15 +19,16 @@ class APKExtractor(threading.Thread):
     APK Extractor
 
     """
-    def __init__(self, thread_name, apk_path):
+    def __init__(self, thread_name, app_queue):
         """
             Init the Feature Extractor with ID and smali folder's path.
         :type thread_name: basestring
-        :type apk_path: basestring
+        :type app_queue: Queue.Queue
         """
         threading.Thread.__init__(self, name=thread_name)
         self.thread_name = thread_name
-        self.APKPath = apk_path
+        self.app_queue = app_queue
+        self.APKPath = ""
         self.md5 = ""
         self.package_name = ""
         self.db_md5_to_apk_pn = redis.StrictRedis(host=db_host, port=db_port, db=db_md5_to_apk_pn)
@@ -95,7 +97,7 @@ class APKExtractor(threading.Thread):
         feature_extractor = FeatureExtractor.FeatureExtractor("FE_%s" % self.thread_name,
                                                               self.decompiled_path + "/smali",
                                                               self.md5)
-        feature_extractor.flush_feature_db()
+        # feature_extractor.flush_feature_db()
         feature_extractor.start()
         feature_extractor.join()
         log_i("Feature Extractor finished.")
@@ -124,14 +126,24 @@ class APKExtractor(threading.Thread):
         log_e("Should not arrive here!!! Something wrong with clean_workspace in LRDSettings.py!!")
 
     def run(self):
-        log_i("Thread %s is dealing with %s" % (self.thread_name, self.APKPath))
-        if self.decompile() >= 0:
-            # if no error in decompiling
-            self.feature_extract()
-            self.clean()
-        else:
-            # if the ret is -1, that means the same file is already extracted.
-            pass
+        while True:
+            try:
+                self.APKPath = self.app_queue.get(block=True, timeout=queue_time_out)
+                log_i("Thread %s is dealing with %s" % (self.thread_name, self.APKPath))
+                if self.decompile() >= 0:
+                    # if no error in decompiling
+                    self.feature_extract()
+                    self.clean()
+                else:
+                    # if the ret is -1, that means the same file is already extracted.
+                    pass
+            except:
+                # More than queue_time_out(30) seconds.
+                log_i("No more app needs to be extracted. By thread %s" % self.thread_name)
+                break
+            finally:
+                # Trivial but debug-able: Set APKPath to empty.
+                self.APKPath = ""
 
 if __name__ == "__main__":
     ae = APKExtractor("001", "/Volumes/UltraPassport/apks/advanced.speed.booster.apk")

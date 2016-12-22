@@ -144,7 +144,7 @@ class FeatureExtractor(threading.Thread):
                 # Store the potential un-obfuscated path of the smali file.
                 # If the database cannot hold this, this section could be deleted.
                 '''Start'''
-                str_smali_position = dir_path.find("/smali/")
+                str_smali_position = dir_path.find("/smali")
                 if str_smali_position == -1:
                     log_e("Something Wrong with dir_path: '%s' !" % dir_path)
                 potential_smali_path = "%s/%s" % (dir_path[str_smali_position + 7:], smali_file)
@@ -197,7 +197,7 @@ class FeatureExtractor(threading.Thread):
             # Store the potential un-obfuscated path of the smali file.
             # If the database cannot hold this, this section could be deleted.
             '''Start'''
-            str_smali_position = dir_path.find("/smali/")
+            str_smali_position = dir_path.find("/smali")
             if str_smali_position == -1:
                 log_e("Something Wrong with dir_path: '%s' !" % dir_path)
             potential_dir_path = "%s" % dir_path[str_smali_position + 7:]
