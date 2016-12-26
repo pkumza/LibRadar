@@ -72,6 +72,7 @@ class APKExtractor(threading.Thread):
         else:
             self.decompiled_path = "./Data/Decompiled/%s" % apk_file_name
         # command line for terminal
+        #
         apktool_cmd = "./tool/apktool d -q -b -o %s %s" % (self.decompiled_path, self.APKPath)
         log_v("APKTOOL CMD LINE : %s" % apktool_cmd)
         # run cmd

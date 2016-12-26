@@ -8,6 +8,7 @@
 """
 
 import time
+import os
 
 """
     whether clean the workspace after work
@@ -80,6 +81,8 @@ queue_time_out = 30
 
 # log level from 0 to 5
 _log_level = 5
+if not os.path.exists("./Data"):
+    os.mkdir("./Data")
 _log_file_name = "./Data/log.txt"
 _log_file = open(_log_file_name, 'a')
 
