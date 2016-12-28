@@ -20,7 +20,7 @@ setup(
     scripts=['bin/libradart'],
     keywords="Android Third-party Library",
     url="http://radar.pkuos.org/",
-    packages=['LibRadar', 'LibRadarData', 'tests'],
+    packages=['LibRadar'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 1 - Planning",

@@ -9,7 +9,7 @@
     Glob module will automatically detect them and decompile them.
     Finally, we could extract all the APIs.
 
-    Warning: Working Directory should be LibRadar other than LibRadar/LibRadarData
+    Warning: Working Directory should be LibRadar other than LibRadar/LibRadar
 
 """
 

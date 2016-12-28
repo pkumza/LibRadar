@@ -2,8 +2,8 @@
 """
     LibRadar settings.py
 
-    Settings about python scripts in LibRadarData folder.
-    All the scripts in LibRadarData need import this file.
+    Settings about python scripts in LibRadar folder.
+    All the scripts in LibRadar need import this file.
 
 """
 
