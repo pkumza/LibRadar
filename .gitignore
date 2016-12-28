@@ -2,7 +2,7 @@ LData
 clean_app
 decoded
 Data/RawData
-Data/log.txt
+Data/log*
 Data/Decompiled
 
 
