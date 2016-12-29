@@ -36,7 +36,7 @@ class APKExtractor(threading.Thread):
 
     def get_md5(self):
         if not os.path.isfile(self.APKPath):
-            log_e("file path %s is not a file" % self.APKPath)
+            logger.critical("file path %s is not a file" % self.APKPath)
             raise AssertionError
         file_md5 = hashlib.md5()
         f = file(self.APKPath, 'rb')
@@ -47,7 +47,7 @@ class APKExtractor(threading.Thread):
             file_md5.update(block)
         f.close()
         file_md5_value = file_md5.hexdigest()
-        log_v("APK %s's MD5 is %s" % (self.APKPath, file_md5_value))
+        logger.debug("APK %s's MD5 is %s" % (self.APKPath, file_md5_value))
         self.md5 = file_md5_value
         return file_md5_value
 
@@ -57,8 +57,8 @@ class APKExtractor(threading.Thread):
         package_name_in_db = self.db_md5_to_apk_pn.get(self.md5)
         if package_name_in_db is not None:
             # There's already the same file extracted in database.
-            log_w("File already in database")
-            if repeat_file_rerun:
+            logger.warning("File already in database")
+            if False: # repeated file rerun.
                 pass
             else:
                 return -1
@@ -74,7 +74,7 @@ class APKExtractor(threading.Thread):
         # command line for terminal
         #
         apktool_cmd = "./tool/apktool d -q -b -o %s %s" % (self.decompiled_path, self.APKPath)
-        log_v("APKTOOL CMD LINE : %s" % apktool_cmd)
+        logger.debug("APKTOOL CMD LINE : %s" % apktool_cmd)
         # run cmd
         os.system(apktool_cmd)
         # extract features from AndroidManifest.xml
@@ -87,9 +87,9 @@ class APKExtractor(threading.Thread):
                 self.package_name = line[left_point:left_point + right_point]
                 break
         if self.package_name == "":
-            log_w("No package name information in manifest file. Use file name instead.")
+            logger.warning("No package name information in manifest file. Use file name instead.")
             self.package_name = apk_file_name
-        log_v("Package Name of %s is %s" % (self.APKPath, self.package_name))
+        logger.debug("Package Name of %s is %s" % (self.APKPath, self.package_name))
         # DB 8
         self.db_md5_to_apk_pn.set(self.md5, self.package_name)
         return 0
@@ -101,7 +101,7 @@ class APKExtractor(threading.Thread):
         # feature_extractor.flush_feature_db()
         feature_extractor.start()
         feature_extractor.join()
-        log_i("Feature Extractor finished.")
+        logger.info("Feature Extractor finished.")
 
     def clean(self):
         if clean_workspace == 0:
@@ -124,13 +124,13 @@ class APKExtractor(threading.Thread):
             cmd_rm = "rm -rf %s" % self.decompiled_path
             os.system(cmd_rm)
             return
-        log_e("Should not arrive here!!! Something wrong with clean_workspace in LRDSettings.py!!")
+        logger.critical("Should not arrive here!!! Something wrong with clean_workspace in LRDSettings.py!!")
 
     def run(self):
         while True:
             try:
                 self.APKPath = self.app_queue.get(block=True, timeout=queue_time_out)
-                log_i("Thread %s is dealing with %s" % (self.thread_name, self.APKPath))
+                logger.info("Thread %s is dealing with %s" % (self.thread_name, self.APKPath))
                 if self.decompile() >= 0:
                     # if no error in decompiling
                     self.feature_extract()
@@ -140,7 +140,7 @@ class APKExtractor(threading.Thread):
                     pass
             except:
                 # More than queue_time_out(30) seconds.
-                log_i("No more app needs to be extracted. By thread %s" % self.thread_name)
+                logger.info("No more app needs to be extracted. By thread %s" % self.thread_name)
                 break
             finally:
                 # Trivial but debug-able: Set APKPath to empty.

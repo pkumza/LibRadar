@@ -40,9 +40,9 @@ class FeatureExtractor(threading.Thread):
             Warning! Just for Test!!!
         :return: None
         """
-        log_w("Delete database feature count!  [DB3]")
+        logger.warning("Delete database feature count!  [DB3]")
         self.db_feature_count.flushdb()
-        log_w("Delete database feature weight! [DB4]")
+        logger.warning("Delete database feature weight! [DB4]")
         self.db_feature_weight.flushdb()
 
     def smali_extractor(self, smali_file_name):
@@ -91,17 +91,17 @@ class FeatureExtractor(threading.Thread):
             Check if there's something wrong with directory setting.
         """
         if not isinstance(directory_name, basestring):
-            log_e("Directory name is not a string.")
+            logger.critical("Directory name is not a string.")
             raise AssertionError
         if len(directory_name) < 7:
-            log_e("Directory name is too short.")
+            logger.critical("Directory name is too short.")
             raise AssertionError
         if directory_name[-6:] != "/smali":
             if directory_name[-1] == '/':
-                log_e("There should be no '/' in the end of directory name.")
+                logger.critical("There should be no '/' in the end of directory name.")
                 raise AssertionError
             else:
-                log_e("The Directory name should ends with smali. You should adjoin decoded path with '/smali'.")
+                logger.critical("The Directory name should ends with smali. You should adjoin decoded path with '/smali'.")
 
     def dir_extractor(self, directory_name):
         """
@@ -136,17 +136,17 @@ class FeatureExtractor(threading.Thread):
                     if smali_weight_in_db != str(smali_api_count):
                         # Strong checking mode for examining MD5-128bit is really powerful for this work.
                         # It can be closed after this examination to save calculation resource.
-                        log_d("SmaliPath: %s/%s" % (dir_path, smali_file))
-                        log_d("SmaliHash: %s" % smali_hash)
-                        log_d("Weight   : %s" % smali_weight_in_db)
-                        log_d("Count    : %d" % smali_api_count)
-                        log_e("Something wrong with the code or MD5-128bit is not enough. [Smali Level]")
+                        logger.warning("SmaliPath: %s/%s" % (dir_path, smali_file))
+                        logger.warning("SmaliHash: %s" % smali_hash)
+                        logger.warning("Weight   : %s" % smali_weight_in_db)
+                        logger.warning("Count    : %d" % smali_api_count)
+                        logger.critical("Something wrong with the code or MD5-128bit is not enough. [Smali Level]")
                 # Store the potential un-obfuscated path of the smali file.
                 # If the database cannot hold this, this section could be deleted.
                 '''Start'''
                 str_smali_position = dir_path.find("/smali")
                 if str_smali_position == -1:
-                    log_e("Something Wrong with dir_path: '%s' !" % dir_path)
+                    logger.critical("Something Wrong with dir_path: '%s' !" % dir_path)
                 potential_smali_path = "%s/%s" % (dir_path[str_smali_position + 7:], smali_file)
                 if smali_weight_in_db is None:
                     self.db_un_ob_pn.set(smali_hash, potential_smali_path)
@@ -188,18 +188,18 @@ class FeatureExtractor(threading.Thread):
                 if weight_in_db != str(api_count):
                     # Strong checking mode for examining MD5-128bit is really powerful for this work.
                     # It can be closed after this examination to save calculation resource.
-                    log_d("DirPath: %s" % dir_path)
-                    log_d("DirHash: %s" % dir_hash)
-                    log_d("Weight : %s" % weight_in_db)
-                    log_d("Count  : %d" % api_count)
-                    log_e("Something wrong with the code or MD5-128bit is not enough. [Package Level]")
+                    logger.warning("DirPath: %s" % dir_path)
+                    logger.warning("DirHash: %s" % dir_hash)
+                    logger.warning("Weight : %s" % weight_in_db)
+                    logger.warning("Count  : %d" % api_count)
+                    logger.critical("Something wrong with the code or MD5-128bit is not enough. [Package Level]")
                     raise AssertionError
             # Store the potential un-obfuscated path of the smali file.
             # If the database cannot hold this, this section could be deleted.
             '''Start'''
             str_smali_position = dir_path.find("/smali")
             if str_smali_position == -1:
-                log_e("Something Wrong with dir_path: '%s' !" % dir_path)
+                logger.critical("Something Wrong with dir_path: '%s' !" % dir_path)
             potential_dir_path = "%s" % dir_path[str_smali_position + 7:]
             if weight_in_db is None:
                 self.db_un_ob_pn.set(dir_hash, potential_dir_path)
@@ -221,11 +221,11 @@ class FeatureExtractor(threading.Thread):
         return hash_storage
 
     def run(self):
-        log_i("Feature Extractor %s is extracting %s" % (self.thread_name, self.smali_dir_path))
+        logger.info("Feature Extractor %s is extracting %s" % (self.thread_name, self.smali_dir_path))
         hash_storage = self.dir_extractor(self.smali_dir_path)
         for key, vl in hash_storage.items():
-            log_v("%s - %s" % (vl, key))
-        log_i("Feature Extractor %s has extracted %s" % (self.thread_name, self.smali_dir_path))
+            logger.debug("%s - %s" % (vl, key))
+        logger.info("Feature Extractor %s has extracted %s" % (self.thread_name, self.smali_dir_path))
 
 
 if __name__ == "__main__":
@@ -236,4 +236,4 @@ if __name__ == "__main__":
     fe.flush_feature_db()
     fe.start()
     fe.join()
-    log_i("All Threads Finished")
+    logger.info("All Threads Finished")

@@ -17,7 +17,6 @@ setup(
     author_email="maziang@pku.edu.cn",
     description="LibRadar is an automatic tool for Android library detection.",
     license="BSD",
-    scripts=['bin/libradart'],
     keywords="Android Third-party Library",
     url="http://radar.pkuos.org/",
     packages=['LibRadar'],

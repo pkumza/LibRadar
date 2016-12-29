@@ -55,7 +55,7 @@ class ApiDictionaryGenerator(Singleton):
         """
         self.jar_list = []
         self.redis_class_name = redis.StrictRedis(host=db_host, port=db_port, db=db_class_name)
-        log_w("Clean all the keys in databases")
+        logger.warning("Clean all the keys in databases")
         self.redis_class_name.flushdb()
         self.redis_android_api = redis.StrictRedis(host=db_host, port=db_port, db=db_android_api)
         self.redis_android_api.flushdb()
@@ -86,12 +86,12 @@ class ApiDictionaryGenerator(Singleton):
         # run `jad` command as a test here to exam if jad is installed.
         status, out = commands.getstatusoutput('jad')
         if status == 32512:
-            log_e("Jad is not runnable. please put `tool/jad` into your $PATH environment.")
+            logger.critical("Jad is not runnable. please put `tool/jad` into your $PATH environment.")
             raise AssertionError
         if status == 256:
             pass
         else:
-            log_w("Maybe there is something wrong with jad status.")
+            logger.warning("Maybe there is something wrong with jad status.")
 
     """
         Take jar file into account. It is ok to have only one version of android.jar
@@ -119,7 +119,7 @@ class ApiDictionaryGenerator(Singleton):
     def decompile_jar(self):
         self.if_jad_exists()
         for jar in self.jar_list:
-            log_i("Decompiling %s" % jar)
+            logger.info("Decompiling %s" % jar)
             cmd = "./tool/jar_decompiler.sh " + jar
             os.popen(cmd)
 
@@ -131,7 +131,7 @@ class ApiDictionaryGenerator(Singleton):
     def walk_dir(self):
         for jar in self.jar_list:
             dir_to_be_walked = jar + ".dir"
-            log_i("Walk %s" % dir_to_be_walked)
+            logger.info("Walk %s" % dir_to_be_walked)
             for dirName, subdirList, fileList in os.walk(dir_to_be_walked):
                 for filename in fileList:
                     if len(filename) > 4 and filename[-5:] == ".java":
@@ -148,11 +148,11 @@ class ApiDictionaryGenerator(Singleton):
                         self.redis_class_name.incr(class_name)
             # clean the directory
             if clean_workspace:
-                log_i("Cleaning the directory which is already walked.")
+                logger.info("Cleaning the directory which is already walked.")
                 os.system('rm -rf %s' % dir_to_be_walked)
-        log_i("API Count is %d counting overloading." % len(self.api_set))
-        log_i("API Count is %d without overloading." % len(self.api_simplified_set))
-        log_i("Write the APIs into txt file as a backup.")
+        logger.info("API Count is %d counting overloading." % len(self.api_set))
+        logger.info("API Count is %d without overloading." % len(self.api_simplified_set))
+        logger.info("Write the APIs into txt file as a backup.")
         for api in self.api_set:
             self.txt_output_api.write(api + '\n')
         for api_s in self.api_simplified_set:
@@ -250,13 +250,13 @@ class ApiDictionaryGeneratorWrapper:
     """
     def __init__(self, jar_list):
         # create an instance.
-        log_i("Creating an instance of ApiDictionaryGenerator")
+        logger.info("Creating an instance of ApiDictionaryGenerator")
         adg = ApiDictionaryGenerator()
         # add the jar into list.
-        log_i("Adding jar path into jar list")
+        logger.info("Adding jar path into jar list")
         adg.add_jars(jar_list)
         # decompiling the jar file. decompiling is only needed once.
-        log_i("Decompiling jar")
+        logger.info("Decompiling jar")
         adg.decompile_jar()
         # walk through the directory to find APIs.clean
         adg.walk_dir()

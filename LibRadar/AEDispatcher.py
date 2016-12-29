@@ -31,12 +31,12 @@ class AEDispatcher:
             thread_list.append(ae_thread)
         for one_thread in thread_list:
             one_thread.start()
-            log_i("Ignite thread %s" % one_thread.thread_name)
+            logger.info("Ignite thread %s" % one_thread.thread_name)
         for one_thread in thread_list:
             one_thread.join()
-            log_i("Reap thread %s" % one_thread.thread_name)
+            logger.info("Reap thread %s" % one_thread.thread_name)
 
 if __name__ == "__main__":
-    aed = AEDispatcher("/Users/marchon/Downloads/aappkk")
+    aed = AEDispatcher("")
     aed.run()
 
