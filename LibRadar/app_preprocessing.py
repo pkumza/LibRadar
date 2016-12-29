@@ -98,7 +98,7 @@ class AppTreat:
         if platform.system() == "Windows":
             cmd_keytool = r"tool\keytool.exe -printcert -file %s" % target_cert_file
         else:
-            cmd_keytool = "./tool/keytool -printcert -file %s" % target_cert_file
+            cmd_keytool = "keytool -printcert -file %s" % target_cert_file
         cmd_output = os.popen(cmd_keytool)
         for line in cmd_output.readlines():
             self.meta_inf += line
