@@ -79,11 +79,9 @@ queue_time_out = 30
 """
     Logs
 """
-print "???"
 
 if not os.path.exists("./Data"):
     os.mkdir("./Data")
 logging.config.fileConfig('LibRadar/logging.conf')
 # create logger
-logger = logging.getLogger('LibRadar')
-logger.warning("RSF")
+logger = logging.getLogger('radar')

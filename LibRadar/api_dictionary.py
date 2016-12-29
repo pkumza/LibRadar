@@ -17,7 +17,7 @@ import os
 import commands
 import redis
 import glob
-from LRDSettings import *
+from _settings import *
 
 """
     Information about Database.

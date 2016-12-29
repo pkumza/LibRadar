@@ -9,8 +9,8 @@ import os
 import redis
 import hashlib
 import threading
-from LRDSettings import *
-import FeatureExtractor
+from _settings import *
+import feature_extracting
 # import Queue # ???
 
 
@@ -95,9 +95,9 @@ class APKExtractor(threading.Thread):
         return 0
 
     def feature_extract(self):
-        feature_extractor = FeatureExtractor.FeatureExtractor("FE_%s" % self.thread_name,
-                                                              self.decompiled_path + "/smali",
-                                                              self.md5)
+        feature_extractor = feature_extracting.FeatureExtractor("FE_%s" % self.thread_name,
+                                                                self.decompiled_path + "/smali",
+                                                                self.md5)
         # feature_extractor.flush_feature_db()
         feature_extractor.start()
         feature_extractor.join()
@@ -124,7 +124,7 @@ class APKExtractor(threading.Thread):
             cmd_rm = "rm -rf %s" % self.decompiled_path
             os.system(cmd_rm)
             return
-        logger.critical("Should not arrive here!!! Something wrong with clean_workspace in LRDSettings.py!!")
+        logger.critical("Should not arrive here!!! Something wrong with clean_workspace in _settings.py!!")
 
     def run(self):
         while True:

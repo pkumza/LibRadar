@@ -6,7 +6,7 @@
 """
 
 import redis
-from LRDSettings import *
+from _settings import *
 import hashlib
 import threading
 import os

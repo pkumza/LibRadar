@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    AEDispatcher.py
+    dispatcher
         Android Package Extractor Dispatcher
     This script is a dispatcher for scheduling.
 """
@@ -8,8 +8,8 @@
 import threading
 import glob
 from Queue import Queue
-from LRDSettings import *
-import APKExtractor
+from _settings import *
+import app_extracting
 
 
 class AEDispatcher:
@@ -27,7 +27,7 @@ class AEDispatcher:
         thread_list = list()
         for i in range(running_threads_number):
             thread_name = str(i).zfill(4)
-            ae_thread = APKExtractor.APKExtractor(thread_name,queue)
+            ae_thread = app_extracting.APKExtractor(thread_name, queue)
             thread_list.append(ae_thread)
         for one_thread in thread_list:
             one_thread.start()
