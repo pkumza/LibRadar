@@ -753,6 +753,7 @@ def dexDecodeInstruction(dexFile, dexCode, offset):
             indexType = 'method'
             dexMethodIdObj = dexFile.DexMethodIdList[int(BBBB, 16)]
             indexStr = dexMethodIdObj.toString(dexFile)
+            decodedInstruction.getApi = dexMethodIdObj.toApi(dexFile)
 
         registers = None
         if A == 0:  # [A=0] op {}, kind@BBBB
@@ -851,6 +852,7 @@ def dexDecodeInstruction(dexFile, dexCode, offset):
             indexType = 'type'
             indexStr = dexFile.DexTypeIdList[int(BBBB, 16)]
         # (2) opcode=74..78 invoke-kind/range {vCCCC .. vNNNN}, method@BBBB
+        # TODO I don't know if other types of invoke could also have effects.
         if opcode >= 0x74 and opcode <= 0x78:
             ops = ['invoke-virtual/range', 'invoke-super/range', 'invoke-direct/range', 'invoke-static/range', 'invoke-intenrface/range']
             op = ops[opcode - 0x74]
@@ -1978,6 +1980,13 @@ class DexMethodId(object):
             return '%s.%s:%s' % (dexFile.getDexTypeId(self.classIdx),
                                  dexFile.getDexStringId(self.nameIdx),
                                  dexFile.DexProtoIdList[self.protoIdx].toString(dexFile))
+        else:
+            return None
+
+    def toApi(self, dexFile):
+        if (self.classIdx != None) and (self.protoIdx != None) and (self.nameIdx != None):
+            return '%s->%s' % (dexFile.getDexTypeId(self.classIdx),
+                                 dexFile.getDexStringId(self.nameIdx))
         else:
             return None
 
