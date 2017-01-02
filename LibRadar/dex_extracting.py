@@ -10,6 +10,7 @@
 import os.path
 import hashlib
 import dex_parser
+import redis
 from _settings import *
 
 
@@ -20,7 +21,7 @@ class PackageNode:
         self.weight = 0
 
 
-class DexExtractor():
+class DexExtractor:
     """
     DEX Extractor
 
@@ -35,72 +36,83 @@ class DexExtractor():
         self.dex = None
         # use as a stack
         self.package_node_list = list()
+        # database
+        self.db_invoke = redis.StrictRedis(host=db_host, port=db_port, db=db_api_invoke)
 
     def _flush(self):
         self.dex = None
 
-    def dumpDexCode(self, dexMethod, api_list):
-        if dexMethod.dexCode == None:
+    def get_api_list(self, dex_method, api_list):
+        if dex_method.dexCode is None:
             return
         offset = 0
-        insnsSize = dexMethod.dexCode.insnsSize * 4
-        weight = 0
+        insns_size = dex_method.dexCode.insnsSize * 4
 
-        while offset < insnsSize:
-            op_code = int(dexMethod.dexCode.insns[offset:offset + 2], 16)
-            formatIns, _ = dex_parser.getOpCode(op_code)
-
-            decodedInstruction = dex_parser.dexDecodeInstruction(self.dex, dexMethod.dexCode, offset)
-
-            smaliCode = decodedInstruction.smaliCode
-            if smaliCode == None:
+        while offset < insns_size:
+            op_code = int(dex_method.dexCode.insns[offset:offset + 2], 16)
+            decoded_instruction = dex_parser.dexDecodeInstruction(self.dex, dex_method.dexCode, offset)
+            smali_code = decoded_instruction.smaliCode
+            if smali_code is None:
                 continue
-            insns = dexMethod.dexCode.insns[decodedInstruction.offset:decodedInstruction.offset + decodedInstruction.length]
-            #print  '    \t%-16s|%04x: %s' % (insns, offset/4, smaliCode)
-            offset += decodedInstruction.length
+            # insns = dex_method.dexCode.insns[decoded_instruction.offset:decoded_instruction.offset
+            #                                                            + decoded_instruction.length]
+            # print  '    \t%-16s|%04x: %s' % (insns, offset/4, smali_code)
+            offset += decoded_instruction.length
 
-            if smaliCode == 'nop':
+            if smali_code == 'nop':
                 break
 
-            if op_code >= 0x6e and op_code <= 0x72:
-                api_list.append(decodedInstruction.getApi)
-                weight += 1
-        return weight
+            if 0x6e <= op_code <= 0x72:
+                version_count = self.db_invoke.get(decoded_instruction.getApi)
+                if version_count is not None:
+                    api_list.append(decoded_instruction.getApi)
+        return
 
     def extract_class(self, dex_class_def_obj):
-        # print 'classIdx\t= %s\t#%s' % (hex(dex_class_def_obj.classIdx), self.dex.getDexTypeId(dex_class_def_obj.classIdx))
-        lastMethodIdx = 0
+        class_md5 = hashlib.md5()
+        # print 'classIdx\t= %s\t#%s' % (hex(dex_class_def_obj.classIdx),
+        #  self.dex.getDexTypeId(dex_class_def_obj.classIdx))
+        last_method_index = 0
         # API List
         #   a list for basestring
         api_list = list()
-        weight = 0
         for k in range(len(dex_class_def_obj.directMethods)):
-            currMethodIdx = lastMethodIdx + dex_class_def_obj.directMethods[k].methodIdx
-            dexMethodIdObj = self.dex.DexMethodIdList[currMethodIdx]
-            lastMethodIdx = currMethodIdx
+            current_method_index = last_method_index + dex_class_def_obj.directMethods[k].methodIdx
+            # dex_methodIdObj = self.dex.dex_methodIdList[current_method_index]
+            last_method_index = current_method_index
             """
             print '    # %s~%s' % (hex(dex_class_def_obj.directMethods[k].offset),
-                                   hex(dex_class_def_obj.directMethods[k].offset + dex_class_def_obj.directMethods[k].length))
-            print '    DexClassDef[]->DexClassData->directMethods[%d]\t= %s\t#%s' % ( k, dexMethodIdObj.toString(self.dex), dex_class_def_obj.directMethods[k])
+                                   hex(dex_class_def_obj.directMethods[k].offset +
+                                    dex_class_def_obj.directMethods[k].length))
+            print '    DexClassDef[]->DexClassData->directMethods[%d]\t= %s\t#%s' %
+             ( k, dex_methodIdObj.toString(self.dex), dex_class_def_obj.directMethods[k])
             """
-            self.dumpDexCode(dex_class_def_obj.directMethods[k], api_list=api_list)
+            self.get_api_list(dex_class_def_obj.directMethods[k], api_list=api_list)
             # print '    ------------------------------------------------------------------------'
 
-        lastMethodIdx = 0
+        last_method_index = 0
         for k in range(len(dex_class_def_obj.virtualMethods)):
-            currMethodIdx = lastMethodIdx + dex_class_def_obj.virtualMethods[k].methodIdx
-            dexMethodIdObj = self.dex.DexMethodIdList[currMethodIdx]
-            lastMethodIdx = currMethodIdx
+            current_method_index = last_method_index + dex_class_def_obj.virtualMethods[k].methodIdx
+            # dex_methodIdObj = self.dex.dex_methodIdList[current_method_index]
+            last_method_index = current_method_index
             """
             print '    # %s~%s' % (hex(dex_class_def_obj.virtualMethods[k].offset),
-                                   hex(dex_class_def_obj.virtualMethods[k].offset + dex_class_def_obj.virtualMethods[k].length))
-            print '    DexClassDef[]->DexClassData->virtualMethods[%d]\t= %s\t#%s' % ( k, dexMethodIdObj.toString(self.dex), dex_class_def_obj.virtualMethods[k])
+                                   hex(dex_class_def_obj.virtualMethods[k].offset +
+                                    dex_class_def_obj.virtualMethods[k].length))
+            print '    DexClassDef[]->DexClassData->virtualMethods[%d]\t= %s\t#%s' %
+             ( k, dex_methodIdObj.toString(self.dex), dex_class_def_obj.virtualMethods[k])
             """
-            self.dumpDexCode(dex_class_def_obj.virtualMethods[k], api_list=api_list)
-            #print '    ------------------------------------------------------------------------'
+            self.get_api_list(dex_class_def_obj.virtualMethods[k], api_list=api_list)
+            # print '    ------------------------------------------------------------------------'
+        """
         print "LIST:"
         for api in  api_list:
             print api
+        """
+        api_list.sort()
+        for api in api_list:
+            class_md5.update(api)
+        return class_md5.digest(), class_md5.hexdigest()
 
     def run(self):
         # Log Start
@@ -113,7 +125,11 @@ class DexExtractor():
         self.dex = dex_parser.DexFile(self.dex_name)
         # Generate Md5 from Dex
         for dex_class_def_obj in self.dex.dexClassDefList:
-            self.extract_class(dex_class_def_obj=dex_class_def_obj)
+            print
+            raw_md5, hex_md5 = self.extract_class(dex_class_def_obj=dex_class_def_obj)
+            print raw_md5
+            print hex_md5
+            print len(raw_md5)
 
 
 if __name__ == "__main__":
