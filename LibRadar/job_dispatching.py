@@ -25,7 +25,7 @@ class AEDispatcher:
         for app in self.app_list:
             queue.put(app)
         thread_list = list()
-        for i in range(running_threads_number):
+        for i in range(RUNNING_THREAD_NUMBER):
             thread_name = str(i).zfill(4)
             ae_thread = app_extracting.APKExtractor(thread_name, queue)
             thread_list.append(ae_thread)

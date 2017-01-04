@@ -28,7 +28,8 @@ class PackageNode:
             curr_md5.update(md5_item)
         # TODO: put it into database
         if not IGNORE_ZERO_API_FILES or len(self.md5_list) != 0:
-            logger.debug("MD5: %s Weight: %-6d PackageName: %s" % (curr_md5.hexdigest(), self.weight, '/'.join(self.full_path)))
+            logger.debug("MD5: %s Weight: %-6d PackageName: %s" %
+                         (curr_md5.hexdigest(), self.weight, '/'.join(self.full_path)))
         return curr_md5.digest(), self.weight
 
 
@@ -108,7 +109,7 @@ class DexExtractor:
         # use as a stack
         self.package_node_list = list()
         # database
-        self.db_invoke = redis.StrictRedis(host=db_host, port=db_port, db=db_api_invoke)
+        self.db_invoke = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_API_INVOKE)
 
     def _flush(self):
         self.dex = None
@@ -124,9 +125,6 @@ class DexExtractor:
             smali_code = decoded_instruction.smaliCode
             if smali_code is None:
                 continue
-            # insns = dex_method.dexCode.insns[decoded_instruction.offset:decoded_instruction.offset
-            #                                                            + decoded_instruction.length]
-            # print  '    \t%-16s|%04x: %s' % (insns, offset/4, smali_code)
             offset += decoded_instruction.length
 
             if smali_code == 'nop':
@@ -140,50 +138,30 @@ class DexExtractor:
 
     def extract_class(self, dex_class_def_obj):
         class_md5 = hashlib.md5()
-        # print 'classIdx\t= %s\t#%s' % (hex(dex_class_def_obj.classIdx),
-        #  self.dex.getDexTypeId(dex_class_def_obj.classIdx))
-        last_method_index = 0
         # API List
         #   a list for basestring
         api_list = list()
+        # direct methods
+        last_method_index = 0
         for k in range(len(dex_class_def_obj.directMethods)):
             current_method_index = last_method_index + dex_class_def_obj.directMethods[k].methodIdx
-            # dex_methodIdObj = self.dex.dex_methodIdList[current_method_index]
             last_method_index = current_method_index
-            """
-            print '    # %s~%s' % (hex(dex_class_def_obj.directMethods[k].offset),
-                                   hex(dex_class_def_obj.directMethods[k].offset +
-                                    dex_class_def_obj.directMethods[k].length))
-            print '    DexClassDef[]->DexClassData->directMethods[%d]\t= %s\t#%s' %
-             ( k, dex_methodIdObj.toString(self.dex), dex_class_def_obj.directMethods[k])
-            """
             self.get_api_list(dex_class_def_obj.directMethods[k], api_list=api_list)
-            # print '    ------------------------------------------------------------------------'
-
+        # virtual methods
         last_method_index = 0
         for k in range(len(dex_class_def_obj.virtualMethods)):
             current_method_index = last_method_index + dex_class_def_obj.virtualMethods[k].methodIdx
-            # dex_methodIdObj = self.dex.dex_methodIdList[current_method_index]
             last_method_index = current_method_index
-            """
-            print '    # %s~%s' % (hex(dex_class_def_obj.virtualMethods[k].offset),
-                                   hex(dex_class_def_obj.virtualMethods[k].offset +
-                                    dex_class_def_obj.virtualMethods[k].length))
-            print '    DexClassDef[]->DexClassData->virtualMethods[%d]\t= %s\t#%s' %
-             ( k, dex_methodIdObj.toString(self.dex), dex_class_def_obj.virtualMethods[k])
-            """
             self.get_api_list(dex_class_def_obj.virtualMethods[k], api_list=api_list)
-            # print '    ------------------------------------------------------------------------'
-        """
-        print "LIST:"
-        for api in  api_list:
-            print api
-        """
+        # Use sort to pass the tree construction stage.
+        # In this case, we could only use a stack to create the package features.
         api_list.sort()
         for api in api_list:
             class_md5.update(api)
         if not IGNORE_ZERO_API_FILES or len(api_list) != 0:
-            logger.debug("MD5: %s Weight: %-6d ClassName: %s" % (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
+            # TODO: use database to output this.
+            logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
+                         (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
         return len(api_list), class_md5.digest(), class_md5.hexdigest()
 
     def extract_dex(self):
@@ -191,8 +169,8 @@ class DexExtractor:
         logger.debug("Extracting %s" % self.dex_name)
         # Validate existing
         if not os.path.isfile(self.dex_name):
-            print "%s not file" % self.dex_name
-            return
+            logger.error("%s not file" % self.dex_name)
+            return -1
         # Create a Dex object
         self.dex = dex_parser.DexFile(self.dex_name)
         pnl = PackageNodeList()
@@ -205,9 +183,9 @@ class DexExtractor:
             if IGNORE_ZERO_API_FILES and weight == 0:
                 continue
             class_info_list.append((class_name, weight, raw_md5))
-        class_info_list.sort(cmp=lambda x, y : cmp(x[0], y[0]))
+        class_info_list.sort(cmp=lambda x, y: cmp(x[0], y[0]))
         for class_info in class_info_list:
-            # print "class_name %s" % class_name
+            # logger.debug("class_name %s" % class_name)
             class_name = class_info[0]
             raw_md5 = class_info[2]
             weight = class_info[1]
@@ -222,8 +200,10 @@ class DexExtractor:
             # logger.debug("Class: %s    Hex Md5: %s    Weight: %d" % (class_name, hex_md5, weight))
         # Let PackageNodeList pop all the nodes.
         pnl.catch_a_class_def("", "", 0)
+        return 0
 
 
 if __name__ == "__main__":
     de = DexExtractor("./Data/IntermediateData/air/classes.dex")
-    de.extract_dex()
+    if de.extract_dex() < 0:
+        logger.error("Wrong!")

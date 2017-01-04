@@ -54,12 +54,12 @@ class ApiDictionaryGenerator(Singleton):
             open a file for api output.
         """
         self.jar_list = []
-        self.redis_class_name = redis.StrictRedis(host=db_host, port=db_port, db=db_class_name)
+        self.redis_class_name = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_CLASS_NAME)
         logger.warning("Clean all the keys in databases")
         self.redis_class_name.flushdb()
-        self.redis_android_api = redis.StrictRedis(host=db_host, port=db_port, db=db_android_api)
+        self.redis_android_api = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ANDROID_API)
         self.redis_android_api.flushdb()
-        self.redis_android_api_simplified = redis.StrictRedis(host=db_host, port=db_port, db=db_api_invoke)
+        self.redis_android_api_simplified = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_API_INVOKE)
         self.redis_android_api_simplified.flushdb()
         self.api_set = set()
         self.txt_output_api = open("./Data/IntermediateData/api.txt", 'w')
@@ -147,7 +147,7 @@ class ApiDictionaryGenerator(Singleton):
                         self.read_java(full_path_name, class_name, jar)
                         self.redis_class_name.incr(class_name)
             # clean the directory
-            if clean_workspace:
+            if CLEAN_WORKSPACE:
                 logger.info("Cleaning the directory which is already walked.")
                 os.system('rm -rf %s' % dir_to_be_walked)
         logger.info("API Count is %d counting overloading." % len(self.api_set))

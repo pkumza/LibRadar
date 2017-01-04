@@ -17,7 +17,7 @@ import logging.config
         2 : Clean smali files
         3 : Clean everything, including AndroidManifest.xml & apktool.yml
 """
-clean_workspace = 0
+CLEAN_WORKSPACE = 0
 
 """
     Config about databases
@@ -57,23 +57,23 @@ clean_workspace = 0
             Value: App's package name
                 e.g. 6cc6e58b9229a05f35ae34d05da9f688 -> com.Viserl.FunLiveWallpaper
 """
-db_host = 'localhost'
-db_port = 6379
-db_class_name = 0
-db_android_api = 1
-db_api_invoke = 2
-db_feature_count = 3
-db_feature_weight = 4
-db_un_ob_pn = 5
-db_un_ob_pn_count = 6
-db_apk_md5_list = 7
-db_md5_to_apk_pn = 8
+DB_HOST = 'localhost'
+DB_PORT = 6379
+DB_CLASS_NAME = 0
+DB_ANDROID_API = 1
+DB_API_INVOKE = 2
+DB_FEATURE_COUNT = 3
+DB_FEATURE_WEIGHT = 4
+DB_UN_OB_PN = 5
+DB_UN_OB_PN_COUNT = 6
+DB_APK_MD5_LIST = 7
+DB_MD5_TO_APK_PN = 8
 
 """
 running_threads
 """
-running_threads_number = 4
-queue_time_out = 30
+RUNNING_THREAD_NUMBER = 4
+QUEUE_TIME_OUT = 30
 
 
 """
