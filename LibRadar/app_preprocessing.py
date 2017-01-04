@@ -132,7 +132,7 @@ class AppTreat:
 
 if __name__ == "__main__":
     # Usage
-    app_treat = AppTreat("Data/RawData/air.br.com.bitlabs.SWFPlayer.apk", "Data/IntermediateData/air")
+    app_treat = AppTreat("/Users/marchon/Downloads/aappkk/air.br.com.bitlabs.SWFPlayer.apk", "Data/IntermediateData/air")
     if app_treat.valid == 0:
         print("---------------------------------\nMD5:")
         print(app_treat.md5)

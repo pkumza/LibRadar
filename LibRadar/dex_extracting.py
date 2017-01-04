@@ -15,10 +15,81 @@ from _settings import *
 
 
 class PackageNode:
-    def __init__(self, path):
-        self.md5 = hashlib.md5()
+    def __init__(self, path, full_path):
+        self.md5_list = list()
         self.path = path
+        self.full_path = full_path
         self.weight = 0
+
+    def generate_md5(self):
+        curr_md5 = hashlib.md5()
+        self.md5_list.sort()
+        for md5_item in self.md5_list:
+            curr_md5.update(md5_item)
+        # TODO: put it into database
+        if not IGNORE_ZERO_API_FILES or len(self.md5_list) != 0:
+            logger.debug("MD5: %s Weight: %-6d PackageName: %s" % (curr_md5.hexdigest(), self.weight, '/'.join(self.full_path)))
+        return curr_md5.digest(), self.weight
+
+
+class PackageNodeList:
+    def __init__(self):
+        self.pn_list = list()
+
+    def catch_a_class_def(self, package_name, class_md5, class_weight):
+        package_path_parts_list = package_name.split('/')
+        common_depth = 0
+        """
+            len(self.pn_list)               The Length of the Stack
+            len(package_path_parts_list)    The Length of current Class's package
+            common_depth                           The Common parts' Length
+
+            Operation 1:
+                pop accomplished packages in pn_list
+
+            Operation 2:
+                append new parts from package_p... into pn_list
+
+            e.g.
+                self.pn_list     Lair/br/com/bitlabs/SWFPlayer/Player    len: 6
+                package_p...     Lair/br/com/bitlabs/Software            len: 5
+                --------
+                common_depth: 4
+
+                Operation 1:
+                    Generate feature of Lair/br/com/bitlabs/SWFPlayer/Player
+                    Pop Player
+                    Update feature of Lair/br/com/bitlabs/SWFPlayer
+                    Generate feature of Lair/br/com/bitlabs/SWFPlayer
+                    Pop SWFPlayer
+                    Update feature of Lair/br/com/bitlabs
+
+                Operation 2:
+                    Create new Node Software
+        """
+        # Get Common Depth ---- Test how many stages are the same.
+        while common_depth < len(self.pn_list) and common_depth < len(package_path_parts_list):
+            if package_path_parts_list[common_depth] != self.pn_list[common_depth].path:
+                break
+            common_depth += 1
+        # Operation 1
+        pn_list_size = len(self.pn_list)
+        for d in range(pn_list_size - 1, common_depth - 1, -1):
+            stage_to_be_pop = self.pn_list[-1]
+            child_md5, curr_weight = stage_to_be_pop.generate_md5()
+            if len(self.pn_list) > 1:
+                stage_to_be_update = self.pn_list[-2]
+                stage_to_be_update.md5_list.append(child_md5)
+                stage_to_be_update.weight += curr_weight
+            self.pn_list.pop()
+        # Operation 2
+        for d in range(common_depth, len(package_path_parts_list)):
+            self.pn_list.append(PackageNode(package_path_parts_list[d], package_path_parts_list[:d + 1]))
+
+        # add md5
+        if len(self.pn_list) != 0:
+            self.pn_list[-1].md5_list.append(class_md5)
+            self.pn_list[-1].weight += class_weight
 
 
 class DexExtractor:
@@ -47,7 +118,6 @@ class DexExtractor:
             return
         offset = 0
         insns_size = dex_method.dexCode.insnsSize * 4
-
         while offset < insns_size:
             op_code = int(dex_method.dexCode.insns[offset:offset + 2], 16)
             decoded_instruction = dex_parser.dexDecodeInstruction(self.dex, dex_method.dexCode, offset)
@@ -112,9 +182,11 @@ class DexExtractor:
         api_list.sort()
         for api in api_list:
             class_md5.update(api)
-        return class_md5.digest(), class_md5.hexdigest()
+        if not IGNORE_ZERO_API_FILES or len(api_list) != 0:
+            logger.debug("MD5: %s Weight: %-6d ClassName: %s" % (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
+        return len(api_list), class_md5.digest(), class_md5.hexdigest()
 
-    def run(self):
+    def extract_dex(self):
         # Log Start
         logger.debug("Extracting %s" % self.dex_name)
         # Validate existing
@@ -123,15 +195,35 @@ class DexExtractor:
             return
         # Create a Dex object
         self.dex = dex_parser.DexFile(self.dex_name)
+        pnl = PackageNodeList()
         # Generate Md5 from Dex
+
+        class_info_list = list()
         for dex_class_def_obj in self.dex.dexClassDefList:
-            print
-            raw_md5, hex_md5 = self.extract_class(dex_class_def_obj=dex_class_def_obj)
-            print raw_md5
-            print hex_md5
-            print len(raw_md5)
+            weight, raw_md5, hex_md5 = self.extract_class(dex_class_def_obj=dex_class_def_obj)
+            class_name = self.dex.getDexTypeId(dex_class_def_obj.classIdx)
+            if IGNORE_ZERO_API_FILES and weight == 0:
+                continue
+            class_info_list.append((class_name, weight, raw_md5))
+        class_info_list.sort(cmp=lambda x, y : cmp(x[0], y[0]))
+        for class_info in class_info_list:
+            # print "class_name %s" % class_name
+            class_name = class_info[0]
+            raw_md5 = class_info[2]
+            weight = class_info[1]
+            last_slash = class_name.rfind('/')
+            # If a class belongs to root, just ignore it because it hardly be a library.
+            if last_slash == -1:
+                continue
+            # get the package name
+            # for class name Lcom/company/air/R; It's package name is Lcom/company/air
+            package_name = class_name[:last_slash]
+            pnl.catch_a_class_def(package_name, raw_md5, weight)
+            # logger.debug("Class: %s    Hex Md5: %s    Weight: %d" % (class_name, hex_md5, weight))
+        # Let PackageNodeList pop all the nodes.
+        pnl.catch_a_class_def("", "", 0)
 
 
 if __name__ == "__main__":
     de = DexExtractor("./Data/IntermediateData/air/classes.dex")
-    de.run()
+    de.extract_dex()

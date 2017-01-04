@@ -75,6 +75,15 @@ running_threads
 running_threads_number = 4
 queue_time_out = 30
 
+
+"""
+IGNORE ZERO API FILES
+
+    If there's no API in a class file, just ignore it.
+    If there's no API in a package, just ignore it.
+"""
+IGNORE_ZERO_API_FILES = True
+
 """
     Logs
 """
