@@ -75,7 +75,6 @@
 import os.path
 import hashlib
 import dex_parser
-import redis
 from _settings import *
 
 
@@ -203,8 +202,14 @@ class DexExtractor:
         self.dex = None
         # use as a stack
         self.package_node_list = list()
-        # database
-        self.db_invoke = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_API_INVOKE)
+        """
+            Use redis database to exam whether a call is an Android API consumes 27% running time.
+            I think it should be replaced by a hash table as the API list could not be modified during the progress.
+        """
+        invoke_file = open("./Data/IntermediateData/invokeFormat.txt", 'r')
+        self.invokes = set()
+        for line in invoke_file:
+            self.invokes.add(line[:-1])
 
     def get_api_list(self, dex_method, api_list):
         if dex_method.dexCode is None:
@@ -223,8 +228,7 @@ class DexExtractor:
                 break
             # 4 invokes from 0x6e to 0x72
             if 0x6e <= op_code <= 0x72:
-                version_count = self.db_invoke.get(decoded_instruction.getApi)
-                if version_count is not None:
+                if decoded_instruction.getApi in self.invokes:
                     api_list.append(decoded_instruction.getApi)
         return
 
