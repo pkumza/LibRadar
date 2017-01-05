@@ -27,12 +27,12 @@ class FeatureExtractor(threading.Thread):
         self.thread_name = thread_name
         self.smali_dir_path = smali_dir_path
         self.apk_md5 = apk_md5
-        self.db_invoke = redis.StrictRedis(host=db_host, port=db_port, db=db_api_invoke)
-        self.db_feature_count = redis.StrictRedis(host=db_host, port=db_port, db=db_feature_count)
-        self.db_feature_weight = redis.StrictRedis(host=db_host, port=db_port, db=db_feature_weight)
-        self.db_un_ob_pn = redis.StrictRedis(host=db_host, port=db_port, db=db_un_ob_pn)
-        self.db_un_ob_pn_count = redis.StrictRedis(host=db_host, port=db_port, db=db_un_ob_pn_count)
-        self.db_apk_list = redis.StrictRedis(host=db_host, port=db_port, db=db_apk_md5_list)
+        self.db_invoke = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_API_INVOKE)
+        self.DB_FEATURE_COUNT = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_COUNT)
+        self.DB_FEATURE_WEIGHT = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_WEIGHT)
+        self.DB_UN_OB_PN = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN)
+        self.DB_UN_OB_PN_COUNT = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN_COUNT)
+        self.db_apk_list = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_APK_MD5_LIST)
 
     def flush_feature_db(self):
         """
@@ -41,9 +41,9 @@ class FeatureExtractor(threading.Thread):
         :return: None
         """
         logger.warning("Delete database feature count!  [DB3]")
-        self.db_feature_count.flushdb()
+        self.DB_FEATURE_COUNT.flushdb()
         logger.warning("Delete database feature weight! [DB4]")
-        self.db_feature_weight.flushdb()
+        self.DB_FEATURE_WEIGHT.flushdb()
 
     def smali_extractor(self, smali_file_name):
         """
@@ -129,9 +129,9 @@ class FeatureExtractor(threading.Thread):
                     continue
                 api_count += smali_api_count
                 hash_list.append(smali_hash)
-                smali_weight_in_db = self.db_feature_weight.get(smali_hash)
+                smali_weight_in_db = self.DB_FEATURE_WEIGHT.get(smali_hash)
                 if smali_weight_in_db is None:
-                    self.db_feature_weight.set(smali_hash, smali_api_count)
+                    self.DB_FEATURE_WEIGHT.set(smali_hash, smali_api_count)
                 else:
                     if smali_weight_in_db != str(smali_api_count):
                         # Strong checking mode for examining MD5-128bit is really powerful for this work.
@@ -149,20 +149,20 @@ class FeatureExtractor(threading.Thread):
                     logger.critical("Something Wrong with dir_path: '%s' !" % dir_path)
                 potential_smali_path = "%s/%s" % (dir_path[str_smali_position + 7:], smali_file)
                 if smali_weight_in_db is None:
-                    self.db_un_ob_pn.set(smali_hash, potential_smali_path)
+                    self.DB_UN_OB_PN.set(smali_hash, potential_smali_path)
                 else:
                     # mode_count 众数
-                    mode_count = self.db_un_ob_pn_count.get(smali_hash)
+                    mode_count = self.DB_UN_OB_PN_COUNT.get(smali_hash)
                     if mode_count is None or mode_count <= 0:
-                        self.db_un_ob_pn.set(smali_hash, potential_smali_path)
-                        self.db_un_ob_pn_count.incr(smali_hash)
+                        self.DB_UN_OB_PN.set(smali_hash, potential_smali_path)
+                        self.DB_UN_OB_PN_COUNT.incr(smali_hash)
                     else:
-                        if self.db_un_ob_pn.get(smali_hash) == potential_smali_path:
-                            self.db_un_ob_pn_count.incr(smali_hash)
+                        if self.DB_UN_OB_PN.get(smali_hash) == potential_smali_path:
+                            self.DB_UN_OB_PN_COUNT.incr(smali_hash)
                         else:
-                            self.db_un_ob_pn_count.decr(smali_hash)
+                            self.DB_UN_OB_PN_COUNT.decr(smali_hash)
                 '''End'''
-                self.db_feature_count.incr(smali_hash)
+                self.DB_FEATURE_COUNT.incr(smali_hash)
                 self.db_apk_list.lpush(smali_hash, self.apk_md5)
             for sub_dir in sub_dirs:
                 sub_dir_full_path = dir_path + '/' + sub_dir
@@ -180,10 +180,10 @@ class FeatureExtractor(threading.Thread):
             dir_hash = md5.hexdigest()
             hash_api_count[dir_path] = api_count
             hash_storage[dir_path] = dir_hash
-            weight_in_db = self.db_feature_weight.get(dir_hash)
+            weight_in_db = self.DB_FEATURE_WEIGHT.get(dir_hash)
             if weight_in_db is None:
                 # If It's the first time we met this hash.
-                self.db_feature_weight.set(dir_hash, api_count)
+                self.DB_FEATURE_WEIGHT.set(dir_hash, api_count)
             else:
                 if weight_in_db != str(api_count):
                     # Strong checking mode for examining MD5-128bit is really powerful for this work.
@@ -202,21 +202,21 @@ class FeatureExtractor(threading.Thread):
                 logger.critical("Something Wrong with dir_path: '%s' !" % dir_path)
             potential_dir_path = "%s" % dir_path[str_smali_position + 7:]
             if weight_in_db is None:
-                self.db_un_ob_pn.set(dir_hash, potential_dir_path)
+                self.DB_UN_OB_PN.set(dir_hash, potential_dir_path)
             else:
                 # mode_count 众数
-                mode_count = self.db_un_ob_pn_count.get(dir_hash)
+                mode_count = self.DB_UN_OB_PN_COUNT.get(dir_hash)
                 if mode_count is None or mode_count <= 0:
-                    self.db_un_ob_pn.set(dir_hash, potential_dir_path)
-                    self.db_un_ob_pn_count.incr(dir_hash)
+                    self.DB_UN_OB_PN.set(dir_hash, potential_dir_path)
+                    self.DB_UN_OB_PN_COUNT.incr(dir_hash)
                 else:
-                    if self.db_un_ob_pn.get(dir_hash) == potential_dir_path:
-                        self.db_un_ob_pn_count.incr(dir_hash)
+                    if self.DB_UN_OB_PN.get(dir_hash) == potential_dir_path:
+                        self.DB_UN_OB_PN_COUNT.incr(dir_hash)
                     else:
-                        self.db_un_ob_pn_count.decr(dir_hash)
+                        self.DB_UN_OB_PN_COUNT.decr(dir_hash)
             '''End'''
             # Feature Count++
-            self.db_feature_count.incr(dir_hash)
+            self.DB_FEATURE_COUNT.incr(dir_hash)
             self.db_apk_list.lpush(dir_hash, self.apk_md5)
         return hash_storage
 
