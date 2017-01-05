@@ -56,6 +56,10 @@ def word_to_buma(val):
 
     return -(int(sb, 2) + 1)
 
+"""
+
+# Not Used?  zachary 20170105
+
 def dword_to_buma(val):
     binVal = bin(val)[2:].zfill(32)
     if binVal[0:1] == '0':
@@ -68,7 +72,7 @@ def dword_to_buma(val):
             sb += '0'
 
     return -(int(sb, 2) + 1)
-
+"""
 """
 ############### OPCODE #################
 """

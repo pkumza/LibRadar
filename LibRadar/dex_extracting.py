@@ -80,13 +80,39 @@ from _settings import *
 
 
 class PackageNode:
+    """
+        PackageNode
+            Every Node of PackageNodeList is an instance of PackageNode.
+
+        contains:
+            md5_list: children's md5
+                the md5 feature of current node is based on md5 from children.
+                sort children's md5 and then generate its own md5 feature.
+
+            path: the path is current packages' folder's name.
+                e.g. Lcom/google/ads 's path is "ads"
+
+            full_path: It is easy to imaging that full path of Lcom/google/ads is Lcom/google/ads
+
+            weight: How many APIs are used in this package.
+    """
     def __init__(self, path, full_path):
+        """
+            Init PackageNode with path
+            Weight and md5 list are initiated as empty.
+        :param path: basestring
+        :param full_path: basestring
+        """
         self.md5_list = list()
         self.path = path
         self.full_path = full_path
         self.weight = 0
 
     def generate_md5(self):
+        """
+            Generate Md5 of current node based on children's md5.
+        :return: current Node's raw_md5 and weight.
+        """
         curr_md5 = hashlib.md5()
         self.md5_list.sort()
         for md5_item in self.md5_list:
@@ -99,6 +125,10 @@ class PackageNode:
 
 
 class PackageNodeList:
+    """
+        A list (could be token as a stack) of PackageNodes.
+        Used to implement the algorithm in introduction.
+    """
     def __init__(self):
         self.pn_list = list()
 
@@ -176,9 +206,6 @@ class DexExtractor:
         # database
         self.db_invoke = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_API_INVOKE)
 
-    def _flush(self):
-        self.dex = None
-
     def get_api_list(self, dex_method, api_list):
         if dex_method.dexCode is None:
             return
@@ -189,12 +216,12 @@ class DexExtractor:
             decoded_instruction = dex_parser.dexDecodeInstruction(self.dex, dex_method.dexCode, offset)
             smali_code = decoded_instruction.smaliCode
             if smali_code is None:
+                logger.warning("smali code is None.")
                 continue
             offset += decoded_instruction.length
-
             if smali_code == 'nop':
                 break
-
+            # 4 invokes from 0x6e to 0x72
             if 0x6e <= op_code <= 0x72:
                 version_count = self.db_invoke.get(decoded_instruction.getApi)
                 if version_count is not None:
@@ -275,3 +302,5 @@ if __name__ == "__main__":
     de = DexExtractor("./Data/IntermediateData/air/classes.dex")
     if de.extract_dex() < 0:
         logger.error("Wrong!")
+    logger.critical(" END -----------------------------------------------------")
+    # os.system("eject cdrom")
