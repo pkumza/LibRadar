@@ -5,6 +5,71 @@
     This script is used to extract features and other information from DEX files.
     :copyright: (c) 2016 by Zachary Ma
     : Project: LibRadar
+
+    Target:
+        Get a dex file
+        Generate features from the dex file.
+        Get the features of classes and packages.
+
+    Implementation:
+        Firstly, get class defines from dex file.
+        For each class, we could generate it's APIs and so as the MD5 feature.
+        As the class definition contains the path, so we could construct a tree for the classes.
+
+        e.g.
+
+                        root
+                        /   \
+                  android   com
+                    /       /  \
+                support  google facebook
+                  /       /   \      \
+                 v4     gson  ads    c.class
+                 |       |      \
+               media   e.class  purchase
+               /    \              |
+           a.class  b.class       d.class
+
+        For every package, we generate features based on it's child.
+        for example, the feature of /android/support/v4/media is based on a.class and b.class.
+        If we need to generate features of all packages, we could construct a tree for them.
+        To minimize the complexity, and avoid constructing the tree, I sorted the class defines first.
+
+        android/support/v4/media/a
+        android/support/v4/media/b
+        com/facebook/c
+        com/google/ads/purchase/d
+        com/google/gson/e
+
+        It's like an in-order traversal for this tree:
+
+        Create a stack for this. (Type: PackageNode)
+        Scan android/support/v4/media/a and put 'android', 'support', 'v4', 'media' into the stack.
+        Get the feature of a.class
+        Update media's feature
+        Get the feature of b.class
+        Update media's feature
+        Get the feature of c.class
+        Pop media and put the feature into db
+        Update and pop v4      and put the feature into db
+        Update and pop support and put the feature into db
+        Update and pop android and put the feature into db
+        Push com
+        Push facebook
+        Update facebook with c.class
+        Pop facebook
+        Push google
+        Push ads
+        Push purchase
+        Update Purchase's feature with d
+        Pop Purchase
+        Pop ads
+        Push gson
+        Update gson with e
+        Pop gson
+        Update and pop google
+        Update and pop com
+
 """
 
 import os.path
@@ -28,7 +93,8 @@ class PackageNode:
             curr_md5.update(md5_item)
         # TODO: put it into database
         if not IGNORE_ZERO_API_FILES or len(self.md5_list) != 0:
-            logger.debug("MD5: %s Weight: %-6d PackageName: %s" % (curr_md5.hexdigest(), self.weight, '/'.join(self.full_path)))
+            md5_hex = curr_md5.hexdigest()
+            logger.debug("MD5: %s Weight: %-6d PackageName: %s" % (md5_hex, self.weight, '/'.join(self.full_path)))
         return curr_md5.digest(), self.weight
 
 
@@ -183,7 +249,8 @@ class DexExtractor:
         for api in api_list:
             class_md5.update(api)
         if not IGNORE_ZERO_API_FILES or len(api_list) != 0:
-            logger.debug("MD5: %s Weight: %-6d ClassName: %s" % (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
+            logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
+                         (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
         return len(api_list), class_md5.digest(), class_md5.hexdigest()
 
     def extract_dex(self):
@@ -205,7 +272,10 @@ class DexExtractor:
             if IGNORE_ZERO_API_FILES and weight == 0:
                 continue
             class_info_list.append((class_name, weight, raw_md5))
-        class_info_list.sort(cmp=lambda x, y : cmp(x[0], y[0]))
+        """
+            Sort the info list with the package name.
+        """
+        class_info_list.sort(cmp=lambda x, y: cmp(x[0], y[0]))
         for class_info in class_info_list:
             # print "class_name %s" % class_name
             class_name = class_info[0]
