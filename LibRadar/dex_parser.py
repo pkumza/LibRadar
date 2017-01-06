@@ -637,7 +637,7 @@ def dexDecodeInstruction(dexFile, dexCode, offset):
             buma = word_to_buma(int(insns[offset + 4:offset + 12].decode('hex')[::-1].encode('hex'), 16))
 
             decodedInstruction.op = 'goto/32'
-            decodedInstruction.vA = int(AAAAAAAA, 12)
+            decodedInstruction.vA = int(AAAAAAAA, 16)
             decodedInstruction.smaliCode = 'goto/32 %s //%s' % (hex(offset/4+buma), hex(buma))
             decodedInstruction.offset = offset
             decodedInstruction.length = 12
