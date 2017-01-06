@@ -1285,16 +1285,21 @@ class DexFile(object):
         for index in range(string_ids_size_int):
             # string offset
             self.DexHeader.f.seek(string_ids_off_int + index*4, 0)
-            string_data_off = int(binascii.b2a_hex(self.DexHeader.f.read(4)).decode('hex')[::-1].encode('hex'), 16)
+            try:
+                string_data_off = int(binascii.b2a_hex(self.DexHeader.f.read(4)).decode('hex')[::-1].encode('hex'), 16)
+            except:
+                print binascii.b2a_hex(self.DexHeader.f.read(4)).decode('hex')[::-1].encode('hex')
             self.DexHeader.f.seek(string_data_off, 0)
 
             # length of str
             self.DexHeader.f.read(1)
 
             length = 0
-            while int(binascii.b2a_hex(self.DexHeader.f.read(1)).decode('hex')[::-1].encode('hex'),16) != 0:
-                length += 1
-
+            try:
+                while int(binascii.b2a_hex(self.DexHeader.f.read(1)).decode('hex')[::-1].encode('hex'),16) != 0:
+                    length += 1
+            except:
+                print binascii.b2a_hex(self.DexHeader.f.read(1)).decode('hex')[::-1].encode('hex')
             self.DexHeader.f.seek(string_data_off + 1,0)
             dex_str = self.DexHeader.f.read(length)
             self.DexHeader.f.read(1) # remove \x00

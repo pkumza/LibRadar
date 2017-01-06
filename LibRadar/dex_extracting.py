@@ -118,9 +118,9 @@ class PackageNode:
         for md5_item in self.md5_list:
             curr_md5.update(md5_item)
         # TODO: Currently do not put class into database.
-        if not IGNORE_ZERO_API_FILES or len(self.md5_list) != 0:
-            logger.debug("MD5: %s Weight: %-6d PackageName: %s" %
-                         (curr_md5.hexdigest(), self.weight, '/'.join(self.full_path)))
+        #if not IGNORE_ZERO_API_FILES or len(self.md5_list) != 0:
+        #    logger.debug("MD5: %s Weight: %-6d PackageName: %s" %
+        #                 (curr_md5.hexdigest(), self.weight, '/'.join(self.full_path)))
         return curr_md5.digest(), self.weight
 
 
@@ -138,6 +138,16 @@ class PackageNodeList:
         self.db_un_ob_pn = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN)
         self.db_un_ob_pn_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN_COUNT)
         self.db_apk_md5_list = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_APK_MD5_LIST)
+
+    def flush_db(self):
+        self.db_feature_count.flushdb()
+        self.db_feature_weight.flushdb()
+        self.db_un_ob_pn.flushdb()
+        self.db_un_ob_pn_count.flushdb()
+        self.db_apk_md5_list.flushdb()
+
+    def flush_all(self):
+        self.db_apk_md5_list.flushall()
 
     def catch_a_class_def(self, package_name, class_md5, class_weight):
         package_path_parts_list = package_name.split('/')
@@ -300,9 +310,10 @@ class DexExtractor:
         for api in api_list:
             class_md5.update(api)
         if not IGNORE_ZERO_API_FILES or len(api_list) != 0:
+            pass
             # TODO: use database to output this.
-            logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
-                         (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
+            # logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
+            #              (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
         return len(api_list), class_md5.digest(), class_md5.hexdigest()
 
     def extract_dex(self):
@@ -321,6 +332,16 @@ class DexExtractor:
         for dex_class_def_obj in self.dex.dexClassDefList:
             weight, raw_md5, hex_md5 = self.extract_class(dex_class_def_obj=dex_class_def_obj)
             class_name = self.dex.getDexTypeId(dex_class_def_obj.classIdx)
+            """
+            I got many \x01 here before the class name.
+                such as '\x01Lcom/vungle/publisher/inject'
+            don't know exactly but could use code below to deal with it.
+            """
+            if class_name[0] is not 'L':
+                l_index = class_name.find('L')
+                if l_index == '-1':
+                    continue
+                class_name = class_name[l_index:]
             if IGNORE_ZERO_API_FILES and weight == 0:
                 continue
             class_info_list.append((class_name, weight, raw_md5))
