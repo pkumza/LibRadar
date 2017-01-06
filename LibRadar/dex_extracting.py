@@ -74,6 +74,7 @@
 
 import os.path
 import hashlib
+import redis
 import dex_parser
 from _settings import *
 
@@ -116,7 +117,7 @@ class PackageNode:
         self.md5_list.sort()
         for md5_item in self.md5_list:
             curr_md5.update(md5_item)
-        # TODO: put it into database
+        # TODO: Currently do not put class into database.
         if not IGNORE_ZERO_API_FILES or len(self.md5_list) != 0:
             logger.debug("MD5: %s Weight: %-6d PackageName: %s" %
                          (curr_md5.hexdigest(), self.weight, '/'.join(self.full_path)))
@@ -127,9 +128,16 @@ class PackageNodeList:
     """
         A list (could be token as a stack) of PackageNodes.
         Used to implement the algorithm in introduction.
+
+        One instance for one DexExtractor
     """
     def __init__(self):
         self.pn_list = list()
+        self.db_feature_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_COUNT)
+        self.db_feature_weight = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_WEIGHT)
+        self.db_un_ob_pn = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN)
+        self.db_un_ob_pn_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN_COUNT)
+        self.db_apk_md5_list = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_APK_MD5_LIST)
 
     def catch_a_class_def(self, package_name, class_md5, class_weight):
         package_path_parts_list = package_name.split('/')
@@ -176,6 +184,42 @@ class PackageNodeList:
                 stage_to_be_update = self.pn_list[-2]
                 stage_to_be_update.md5_list.append(child_md5)
                 stage_to_be_update.weight += curr_weight
+            package_exist = self.db_feature_count.get(name=child_md5)
+            """
+                If there's no instance in database.
+                    incr count
+                    set weight
+                    set un ob pn
+                    un ob pn count incr
+                Else
+                    incr count
+                    If un ob pn == current pn
+                        un ob pn count incr
+                    Else
+                        un ob pn count decr
+                        if un ob pn count <= 0
+                            un ob pn = current pn
+            """
+            if package_exist is None:
+                self.db_feature_count.incr(name=child_md5, amount=1)
+                self.db_feature_weight.set(name=child_md5, value=curr_weight)
+                self.db_un_ob_pn.set(name=child_md5, value='/'.join(stage_to_be_pop.full_path))
+                self.db_un_ob_pn_count.incr(name=child_md5, amount=1)
+            else:
+                self.db_feature_count.incr(name=child_md5, amount=1)
+                db_un_ob_pn = self.db_un_ob_pn.get(name=child_md5)
+                if db_un_ob_pn is None:
+                    logger.error("db_un_ob_pn should not be None here.")
+                if '/'.join(stage_to_be_pop.full_path) == db_un_ob_pn:
+                    self.db_un_ob_pn_count.incr(name=child_md5, amount=1)
+                else:
+                    self.db_un_ob_pn_count.decr(name=child_md5, amount=1)
+                    db_un_ob_pn_count = self.db_un_ob_pn_count.get(name=child_md5)
+                    if db_un_ob_pn_count is None:
+                        logger.error("db_un_ob_pn_count should not be None here.")
+                    if int(db_un_ob_pn_count) <= 0:
+                        self.db_un_ob_pn.set(name=child_md5, value='/'.join(stage_to_be_pop.full_path))
+            # TODO: APK List
             self.pn_list.pop()
         # Operation 2
         for d in range(common_depth, len(package_path_parts_list)):
@@ -223,6 +267,7 @@ class DexExtractor:
             if smali_code is None:
                 logger.warning("smali code is None.")
                 continue
+            # Next Instruction.
             offset += decoded_instruction.length
             if smali_code == 'nop':
                 break
@@ -303,8 +348,9 @@ class DexExtractor:
 
 
 if __name__ == "__main__":
+    logger.critical(" ------------------------- START ------------------------- ")
     de = DexExtractor("./Data/IntermediateData/air/classes.dex")
     if de.extract_dex() < 0:
         logger.error("Wrong!")
-    logger.critical(" END -----------------------------------------------------")
+    logger.critical(" -------------------------- END -------------------------- ")
     # os.system("eject cdrom")
