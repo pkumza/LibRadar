@@ -50,6 +50,8 @@ class DexExtractorWrapper(threading.Thread):
             logger.info("Thread %s is extracting %s" % (self.t_name, self.app_path))
             self.get_md5()
             logger.info("Thread %s got md5 %s" % (self.t_name, self.md5))
+            # TODO: Every corner could went wrong. I must wrap everything with 'try'.
+            # If the apk file is broken, it can not be unzipped.
             zf = zipfile.ZipFile(self.app_path, mode="r")
             dex_file_extracted = zf.extract("classes.dex", "/dev/shm/Data/Decompiled/%s" % self.md5)
             de = dex_extracting.DexExtractor(dex_file_extracted)

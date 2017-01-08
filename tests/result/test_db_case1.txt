@@ -1,0 +1,1820 @@
+PackageName : Lcom/google/android/gms/drive/metadata
+Count       : 113
+Weight      : 237
+-------
+PackageName : Lcom/google/android/gms/games/multiplayer/realtime
+Count       : 447
+Weight      : 99
+-------
+PackageName : Lcom/google/android/gms/games/internal/player
+Count       : 182
+Weight      : 119
+-------
+PackageName : Landroid/support/v4/print
+Count       : 541
+Weight      : 119
+-------
+PackageName : Lcom/android
+Count       : 497
+Weight      : 110
+-------
+PackageName : Lcom/google/android/gms/games/quest
+Count       : 641
+Weight      : 67
+-------
+PackageName : Lcom/google/android/gms/ads
+Count       : 110
+Weight      : 2683
+-------
+PackageName : Lcom/google/ads/searchads
+Count       : 106
+Weight      : 30
+-------
+PackageName : Lcom/google/android/gms/games/internal/game
+Count       : 445
+Weight      : 76
+-------
+PackageName : Lcom/chartboost/sdk/Model
+Count       : 105
+Weight      : 32
+-------
+PackageName : Landroid/support/v7/widget/helper
+Count       : 117
+Weight      : 144
+-------
+PackageName : Lcom/google/android/gms/analytics/internal
+Count       : 153
+Weight      : 43
+-------
+PackageName : Lcom/google/android/gms/clearcut
+Count       : 211
+Weight      : 74
+-------
+PackageName : Landroid/support/v4/util
+Count       : 126
+Weight      : 131
+-------
+PackageName : Lcom/inmobi/monetization/internal/objects
+Count       : 110
+Weight      : 40
+-------
+PackageName : Lcom/google/android/gms/vision/face/internal
+Count       : 181
+Weight      : 95
+-------
+PackageName : Lcom/prime31/billing/util
+Count       : 138
+Weight      : 24
+-------
+PackageName : Lcom/nineoldandroids/view/animation
+Count       : 210
+Weight      : 53
+-------
+PackageName : Landroid/support/v7/appcompat
+Count       : 264
+Weight      : 13
+-------
+PackageName : Lcom/google/android/gms/iid
+Count       : 277
+Weight      : 505
+-------
+PackageName : Landroid/support/v4/media
+Count       : 101
+Weight      : 1428
+-------
+PackageName : Lcom/google/android/gms/ads/internal
+Count       : 211
+Weight      : 2496
+-------
+PackageName : Lcom/google/android/gms/ads/search
+Count       : 289
+Weight      : 84
+-------
+PackageName : Lcom/google/android/gms/ads/internal/util/client
+Count       : 243
+Weight      : 101
+-------
+PackageName : Lcom/google/android/gms/drive/widget
+Count       : 314
+Weight      : 27
+-------
+PackageName : Lcom/google/android/gms/vision/barcode
+Count       : 181
+Weight      : 195
+-------
+PackageName : Lcom/google/android/gms/drive/realtime/internal/event
+Count       : 404
+Weight      : 86
+-------
+PackageName : Lcom/google/android/gms/cast/internal
+Count       : 174
+Weight      : 540
+-------
+PackageName : Lcom/google/ads/afma
+Count       : 261
+Weight      : 123
+-------
+PackageName : Lcom/facebook/ads/internal/g/b
+Count       : 112
+Weight      : 530
+-------
+PackageName : Lcom/google/android/gms/fitness/result
+Count       : 109
+Weight      : 235
+-------
+PackageName : Lcom/nineoldandroids/util
+Count       : 199
+Weight      : 60
+-------
+PackageName : Lcom/google/android/gms/drive/events/internal
+Count       : 126
+Weight      : 37
+-------
+PackageName : Lcom/google/android/gms/drive/execution/internal
+Count       : 111
+Weight      : 16
+-------
+PackageName : Lio/fabric/sdk/android/services/d
+Count       : 105
+Weight      : 18
+-------
+PackageName : Lcom/google/android/gms/wallet
+Count       : 269
+Weight      : 455
+-------
+PackageName : Lcom/google/android/gms/maps/model
+Count       : 103
+Weight      : 1849
+-------
+PackageName : Lcom/google/android/gms/common/internal/safeparcel
+Count       : 197
+Weight      : 235
+-------
+PackageName : Lcom/google/android/gms/maps/model/internal
+Count       : 386
+Weight      : 1518
+-------
+PackageName : Lcom/google/android/gms/games/multiplayer
+Count       : 367
+Weight      : 294
+-------
+PackageName : Lcom/google/android/gms/fitness/service
+Count       : 134
+Weight      : 36
+-------
+PackageName : Lcom/chartboost/sdk/InPlay
+Count       : 142
+Weight      : 37
+-------
+PackageName : Landroid/support/v4/graphics
+Count       : 167
+Weight      : 262
+-------
+PackageName : Lcom/google/android/gms/location
+Count       : 131
+Weight      : 166
+-------
+PackageName : Lcom/google/android/gms/ads/internal/request
+Count       : 238
+Weight      : 213
+-------
+PackageName : Lcom/google/android/gms/playlog/internal
+Count       : 288
+Weight      : 147
+-------
+PackageName : Lcom/google/android/gms/wallet/firstparty
+Count       : 122
+Weight      : 32
+-------
+PackageName : Landroid/support/v4/media
+Count       : 358
+Weight      : 62
+-------
+PackageName : Landroid/support/v4/hardware/fingerprint
+Count       : 672
+Weight      : 24
+-------
+PackageName : Landroid/support/v4/provider
+Count       : 856
+Weight      : 119
+-------
+PackageName : Lcom/a/a/a
+Count       : 106
+Weight      : 109
+-------
+PackageName : Lcom/google/android/gms/auth/api/signin/internal
+Count       : 102
+Weight      : 62
+-------
+PackageName : Lcom/google/android/gms/common/data
+Count       : 151
+Weight      : 270
+-------
+PackageName : Lcom/google/android/gms/common/api
+Count       : 179
+Weight      : 812
+-------
+PackageName : Lcom/google/android/gms/ads/internal/util/client
+Count       : 344
+Weight      : 76
+-------
+PackageName : Lcom/google/android/gms/drive/metadata
+Count       : 121
+Weight      : 265
+-------
+PackageName : Lcom/google/android/gms/analytics/internal
+Count       : 123
+Weight      : 1116
+-------
+PackageName : Lcom/google/android/gms/drive/events
+Count       : 163
+Weight      : 97
+-------
+PackageName : Lcom/google/android/gms/games/internal/game
+Count       : 330
+Weight      : 25
+-------
+PackageName : Lcom/google/android/gms/games/internal/data
+Count       : 801
+Weight      : 11
+-------
+PackageName : Lcom/google/android/gms/games/internal/events
+Count       : 705
+Weight      : 24
+-------
+PackageName : Lcom/google/gson/stream
+Count       : 173
+Weight      : 279
+-------
+PackageName : Lcom/google/android/gms/drive/realtime/internal
+Count       : 103
+Weight      : 1145
+-------
+PackageName : Landroid/support/v4/view/accessibility
+Count       : 102
+Weight      : 262
+-------
+PackageName : Lcom/google/android/gms/nearby/messages
+Count       : 105
+Weight      : 520
+-------
+PackageName : Landroid/support/v4/widget
+Count       : 180
+Weight      : 1107
+-------
+PackageName : Lcom/google/android/gms/common/images
+Count       : 202
+Weight      : 111
+-------
+PackageName : Landroid/support/v7/util
+Count       : 213
+Weight      : 131
+-------
+PackageName : Lcom/google/android/gms/tagmanager
+Count       : 107
+Weight      : 1804
+-------
+PackageName : Lcom/google/android/gms/ads/internal/overlay
+Count       : 320
+Weight      : 478
+-------
+PackageName : Lcom/google/android/vending/licensing/util
+Count       : 114
+Weight      : 28
+-------
+PackageName : Lcom/google/ads/mediation/customevent
+Count       : 375
+Weight      : 17
+-------
+PackageName : Lcom/unity3d/ads/android/zone
+Count       : 319
+Weight      : 50
+-------
+PackageName : Lcom/google/android/gms/plus/internal/model/people
+Count       : 323
+Weight      : 739
+-------
+PackageName : Lcom/google/android/gms/auth/api/signin
+Count       : 102
+Weight      : 262
+-------
+PackageName : Lcom/google/android/gms/tasks
+Count       : 191
+Weight      : 84
+-------
+PackageName : Lcom/google/ads/mediation/customevent
+Count       : 1120
+Weight      : 12
+-------
+PackageName : Lcom/google/android/gms/games/achievement
+Count       : 577
+Weight      : 29
+-------
+PackageName : Lcom/amazon/inapp/purchasing
+Count       : 103
+Weight      : 546
+-------
+PackageName : Landroid/support/v4/content
+Count       : 298
+Weight      : 400
+-------
+PackageName : Lcom/google/android/gms/auth
+Count       : 108
+Weight      : 88
+-------
+PackageName : Lcom/google/android/gms/location/places
+Count       : 174
+Weight      : 15
+-------
+PackageName : Lcom/google/ads/mediation
+Count       : 191
+Weight      : 89
+-------
+PackageName : Lcom/google/android/gms/plus/internal/model/moments
+Count       : 323
+Weight      : 473
+-------
+PackageName : Lcom/google/android/gms/auth/api/signin/internal
+Count       : 219
+Weight      : 41
+-------
+PackageName : Lcom/google/android/gms/tagmanager
+Count       : 138
+Weight      : 1805
+-------
+PackageName : Landroid/support/v4/accessibilityservice
+Count       : 1221
+Weight      : 22
+-------
+PackageName : Lcom/facebook/login/widget
+Count       : 167
+Weight      : 137
+-------
+PackageName : Lcom/facebook/ads/internal/g/b/a
+Count       : 120
+Weight      : 149
+-------
+PackageName : Lcom/facebook/model
+Count       : 105
+Weight      : 239
+-------
+PackageName : Lcom/google/android/gms/ads/internal/client
+Count       : 266
+Weight      : 1129
+-------
+PackageName : Landroid/support/v4/graphics
+Count       : 130
+Weight      : 70
+-------
+PackageName : Landroid/support/v4/database
+Count       : 1386
+Weight      : 12
+-------
+PackageName : Lcom/google/android/gms/security
+Count       : 835
+Weight      : 20
+-------
+PackageName : Lcom/google/ads
+Count       : 158
+Weight      : 245
+-------
+PackageName : Landroid/support/v4/os
+Count       : 104
+Weight      : 63
+-------
+PackageName : Lcom/google/android/gms/common/images
+Count       : 333
+Weight      : 132
+-------
+PackageName : Lcom/google/android/gms/maps
+Count       : 131
+Weight      : 4557
+-------
+PackageName : Lcom/google/android/gms/identity/intents
+Count       : 213
+Weight      : 37
+-------
+PackageName : Landroid/support/v4/content/res
+Count       : 119
+Weight      : 42
+-------
+PackageName : Lcom/google/android/gms/dynamic
+Count       : 174
+Weight      : 44
+-------
+PackageName : Lcom/google/android/gms/ads/identifier
+Count       : 229
+Weight      : 32
+-------
+PackageName : Lcom/google/android/gms/fitness/result
+Count       : 166
+Weight      : 232
+-------
+PackageName : Lcom/google/android/gms/wallet/wobs
+Count       : 652
+Weight      : 81
+-------
+PackageName : Lcom/google/android/gms/games/internal/api
+Count       : 123
+Weight      : 92
+-------
+PackageName : Lcom/facebook/ads/internal/g
+Count       : 111
+Weight      : 704
+-------
+PackageName : Lcom/google/android/gms/ads/internal/reward
+Count       : 264
+Weight      : 351
+-------
+PackageName : Lcom/google/android/gms/games/stats
+Count       : 131
+Weight      : 45
+-------
+PackageName : Landroid/support/v4/animation
+Count       : 676
+Weight      : 36
+-------
+PackageName : Lcom/nineoldandroids/animation
+Count       : 172
+Weight      : 605
+-------
+PackageName : Lcom/google/android/gms/auth/firstparty
+Count       : 359
+Weight      : 34
+-------
+PackageName : Lcom/facebook/ads/internal/server
+Count       : 102
+Weight      : 39
+-------
+PackageName : Lcom/google/android/gms/vision/face/internal/client
+Count       : 181
+Weight      : 95
+-------
+PackageName : Lcom/google/android/gms/location/places/personalized
+Count       : 172
+Weight      : 47
+-------
+PackageName : Lcom/google/android/gms/drive/realtime
+Count       : 126
+Weight      : 1164
+-------
+PackageName : Lcom/google/android/gms/drive/metadata
+Count       : 134
+Weight      : 117
+-------
+PackageName : Lcom/google/android/gms/ads/internal/reward/mediation
+Count       : 216
+Weight      : 148
+-------
+PackageName : Lcom/google/android/gms/common/internal/safeparcel
+Count       : 370
+Weight      : 215
+-------
+PackageName : Lcom/google/android/gms/plus
+Count       : 184
+Weight      : 2039
+-------
+PackageName : Lcom/chartboost/sdk/Model
+Count       : 126
+Weight      : 20
+-------
+PackageName : Landroid/support/v4/view/accessibility
+Count       : 301
+Weight      : 222
+-------
+PackageName : Lcom/google/android/gms/fitness/data
+Count       : 134
+Weight      : 410
+-------
+PackageName : Lcom/google/android/gms/common/internal/safeparcel
+Count       : 221
+Weight      : 221
+-------
+PackageName : Landroid/support/v7/appcompat
+Count       : 148
+Weight      : 16
+-------
+PackageName : Lcom/google/android/gms/auth/api/signin
+Count       : 104
+Weight      : 643
+-------
+PackageName : Lcom/google/android/gms/plus/model/moments
+Count       : 928
+Weight      : 122
+-------
+PackageName : Lcom/google/android/gms/ads/internal/client
+Count       : 214
+Weight      : 768
+-------
+PackageName : Lcom/google/android/gms/games/internal/constants
+Count       : 397
+Weight      : 53
+-------
+PackageName : Lcom/google/android/gms/common/api
+Count       : 108
+Weight      : 228
+-------
+PackageName : Lcom/google/ads/mediation
+Count       : 109
+Weight      : 104
+-------
+PackageName : Lcom/google/android/gms/signin/internal
+Count       : 246
+Weight      : 282
+-------
+PackageName : Lcom/google/android/gms/drive/metadata/internal
+Count       : 134
+Weight      : 106
+-------
+PackageName : Landroid/support/v4/content
+Count       : 102
+Weight      : 423
+-------
+PackageName : Lcom/google/android/gms/common/images
+Count       : 276
+Weight      : 113
+-------
+PackageName : Lcom/google/android/gms/maps/internal
+Count       : 181
+Weight      : 2153
+-------
+PackageName : Lcom/facebook/ads/internal/g/a
+Count       : 244
+Weight      : 174
+-------
+PackageName : Landroid/support/v4/accessibilityservice
+Count       : 164
+Weight      : 20
+-------
+PackageName : Lcom/google/android/gms/analytics/ecommerce
+Count       : 358
+Weight      : 42
+-------
+PackageName : Lcom/google/ads/mediation
+Count       : 220
+Weight      : 129
+-------
+PackageName : Landroid/support/v4/print
+Count       : 104
+Weight      : 102
+-------
+PackageName : Lcom/google/android/gms/ads/identifier
+Count       : 209
+Weight      : 28
+-------
+PackageName : Lcom/google/android/gms/common/server
+Count       : 533
+Weight      : 395
+-------
+PackageName : Lcom/google/android/gms/signin
+Count       : 249
+Weight      : 284
+-------
+PackageName : Lcom/google/android/gms/fitness
+Count       : 134
+Weight      : 1276
+-------
+PackageName : Lcom/google/android/gms/ads/internal
+Count       : 103
+Weight      : 3309
+-------
+PackageName : Landroid/support/v4/view/accessibility
+Count       : 518
+Weight      : 355
+-------
+PackageName : Lcom/inmobi/commons/metric
+Count       : 110
+Weight      : 104
+-------
+PackageName : Landroid/support/v4/graphics/drawable
+Count       : 168
+Weight      : 152
+-------
+PackageName : Landroid/support/v4/view/animation
+Count       : 774
+Weight      : 17
+-------
+PackageName : Lcom/google/android/gms/games/multiplayer/turnbased
+Count       : 450
+Weight      : 95
+-------
+PackageName : Lcom/google/android/gms/ads/mediation/customevent
+Count       : 390
+Weight      : 29
+-------
+PackageName : Lcom/google/android/gms/games/internal/api
+Count       : 186
+Weight      : 88
+-------
+PackageName : Lcom/google/android/gms/ads/internal/util
+Count       : 243
+Weight      : 101
+-------
+PackageName : Landroid/support/v4/graphics
+Count       : 201
+Weight      : 207
+-------
+PackageName : Lcom/google/ads/mediation/jsadapter
+Count       : 125
+Weight      : 56
+-------
+PackageName : Lcom/google/android/gms/ads/internal/purchase
+Count       : 153
+Weight      : 252
+-------
+PackageName : Lcom/google/android/gms/games/internal/request
+Count       : 729
+Weight      : 46
+-------
+PackageName : Lcom/google/android/gms/common/util
+Count       : 189
+Weight      : 305
+-------
+PackageName : Lcom/google/android/gms/common
+Count       : 108
+Weight      : 1017
+-------
+PackageName : Lcom/google/android/gms/common/server/converter
+Count       : 601
+Weight      : 50
+-------
+PackageName : Lcom/google/android/gms/common/data
+Count       : 113
+Weight      : 301
+-------
+PackageName : Lcom/google/android/gms/wallet/firstparty
+Count       : 183
+Weight      : 40
+-------
+PackageName : Landroid/support/v4/widget
+Count       : 116
+Weight      : 726
+-------
+PackageName : Lcom/google/ads
+Count       : 117
+Weight      : 144
+-------
+PackageName : Lcom/google/android/gms/playlog/internal
+Count       : 255
+Weight      : 47
+-------
+PackageName : Lcom/nostra13/universalimageloader/cache/disc/naming
+Count       : 107
+Weight      : 11
+-------
+PackageName : Lcom/google/android/gms/drive/realtime
+Count       : 109
+Weight      : 973
+-------
+PackageName : Landroid/support/v4/text
+Count       : 597
+Weight      : 84
+-------
+PackageName : Landroid/support/v7/graphics/drawable
+Count       : 144
+Weight      : 69
+-------
+PackageName : Lcom/google/android/gms/common/data
+Count       : 467
+Weight      : 272
+-------
+PackageName : Lcom/google/android/gms/maps/model/internal
+Count       : 238
+Weight      : 1576
+-------
+PackageName : Lcom/google/ads/mediation
+Count       : 117
+Weight      : 138
+-------
+PackageName : Lcom/bumptech/glide/f
+Count       : 110
+Weight      : 12
+-------
+PackageName : Lcom/google/android/gms/drive/query
+Count       : 108
+Weight      : 133
+-------
+PackageName : Lcom/vungle/log
+Count       : 154
+Weight      : 11
+-------
+PackageName : Landroid/support/v4/media/session
+Count       : 164
+Weight      : 1124
+-------
+PackageName : Lcom/google/ads/mediation
+Count       : 164
+Weight      : 116
+-------
+PackageName : Lcom/google/android/gms/safetynet
+Count       : 176
+Weight      : 18
+-------
+PackageName : Lcom/google/android/gms/identity/intents/model
+Count       : 766
+Weight      : 18
+-------
+PackageName : Lcom/google/android/gms/ads/identifier
+Count       : 103
+Weight      : 30
+-------
+PackageName : Lcom/google/android/gms/appstate
+Count       : 141
+Weight      : 15
+-------
+PackageName : Lcom/google/android/gms/common/server/response
+Count       : 533
+Weight      : 337
+-------
+PackageName : Lcom/google/android/gms/drive/realtime/internal
+Count       : 126
+Weight      : 1164
+-------
+PackageName : Lcom/google/android/gms/games/internal/api
+Count       : 108
+Weight      : 85
+-------
+PackageName : Lcom/google/android/gms/games/video
+Count       : 130
+Weight      : 49
+-------
+PackageName : Lcom/google/android/gms/location
+Count       : 152
+Weight      : 15
+-------
+PackageName : Landroid/support/v4/media
+Count       : 180
+Weight      : 1894
+-------
+PackageName : Lcom/google/android/gms/common/data
+Count       : 156
+Weight      : 305
+-------
+PackageName : Lcom/google/android/gms/ads/mediation
+Count       : 291
+Weight      : 36
+-------
+PackageName : Lcom/google/android/gms/drive/query/internal
+Count       : 163
+Weight      : 109
+-------
+PackageName : Lcom/mopub/mobileads/factories
+Count       : 118
+Weight      : 18
+-------
+PackageName : Lcom/inmobi/commons/thinICE/wifi
+Count       : 111
+Weight      : 71
+-------
+PackageName : Lcom/facebook/model
+Count       : 102
+Weight      : 245
+-------
+PackageName : Lcom/google/android/gms/maps/model/internal
+Count       : 139
+Weight      : 1584
+-------
+PackageName : Lcom/google/android/gms/plus
+Count       : 107
+Weight      : 846
+-------
+PackageName : Lcom/google/android/gms/drive/widget
+Count       : 591
+Weight      : 26
+-------
+PackageName : Lcom/google/android/gms/drive/query
+Count       : 284
+Weight      : 182
+-------
+PackageName : Lcom/google/android/gms/common/stats
+Count       : 351
+Weight      : 152
+-------
+PackageName : Landroid/support/v4/view
+Count       : 101
+Weight      : 1381
+-------
+PackageName : Lcom/inmobi/re/configs
+Count       : 102
+Weight      : 27
+-------
+PackageName : Lcom/google/android/gms/ads/identifier
+Count       : 268
+Weight      : 30
+-------
+PackageName : Lcom/appsflyer/cache
+Count       : 102
+Weight      : 79
+-------
+PackageName : Lcom/google/android/gms/vision/barcode/internal
+Count       : 181
+Weight      : 71
+-------
+PackageName : Landroid/support/v4/net
+Count       : 1229
+Weight      : 34
+-------
+PackageName : Landroid/support/v4/os
+Count       : 113
+Weight      : 34
+-------
+PackageName : Landroid/support/v7/graphics/drawable
+Count       : 181
+Weight      : 25
+-------
+PackageName : Lcom/google/android/gms/a
+Count       : 214
+Weight      : 19
+-------
+PackageName : Lcom/inmobi/monetization/internal/anim
+Count       : 138
+Weight      : 29
+-------
+PackageName : Landroid/support/v4/content
+Count       : 401
+Weight      : 492
+-------
+PackageName : Lcom/unity3d/ads/android/item
+Count       : 320
+Weight      : 25
+-------
+PackageName : Lcom/google/android/gms/games/leaderboard
+Count       : 789
+Weight      : 62
+-------
+PackageName : Lcom/google/android/gms/maps/model
+Count       : 170
+Weight      : 1832
+-------
+PackageName : Ldagger/internal/loaders
+Count       : 123
+Weight      : 65
+-------
+PackageName : Lcom/degoo/android/fbmassage
+Count       : 140
+Weight      : 15
+-------
+PackageName : Lcom/facebook/ads/internal/a
+Count       : 196
+Weight      : 82
+-------
+PackageName : Lcom/google/android/gms/maps/model
+Count       : 122
+Weight      : 1573
+-------
+PackageName : Lcom/android/vending
+Count       : 550
+Weight      : 110
+-------
+PackageName : Lcom/google/android/gms/appstate
+Count       : 417
+Weight      : 16
+-------
+PackageName : Lcom/google/android/gms/games/event
+Count       : 695
+Weight      : 17
+-------
+PackageName : Lcom/google/android/gms/ads/identifier
+Count       : 292
+Weight      : 16
+-------
+PackageName : Lcom/google/android/gms/games/internal/multiplayer
+Count       : 793
+Weight      : 29
+-------
+PackageName : Lcom/facebook/ads/internal/h/b
+Count       : 119
+Weight      : 37
+-------
+PackageName : Lcom/google/android/gms/common/images
+Count       : 108
+Weight      : 110
+-------
+PackageName : Lcom/mopub/mobileads/resource
+Count       : 114
+Weight      : 90
+-------
+PackageName : Lcom/google/android/gms/auth/api/signin/internal
+Count       : 105
+Weight      : 430
+-------
+PackageName : Lcom/google/ads
+Count       : 159
+Weight      : 135
+-------
+PackageName : Lcom/google/android/gms/ads/mediation
+Count       : 471
+Weight      : 26
+-------
+PackageName : Lcom/google/android/gms/ads/e
+Count       : 103
+Weight      : 11
+-------
+PackageName : Lcom/google/android/gms/games/multiplayer/realtime
+Count       : 395
+Weight      : 99
+-------
+PackageName : Lcom/google/android/gms/ads/internal/reward
+Count       : 274
+Weight      : 396
+-------
+PackageName : Lcom/google/android/gms/ads/internal/purchase
+Count       : 137
+Weight      : 266
+-------
+PackageName : Lcom/google/android/gms/common/server/converter
+Count       : 232
+Weight      : 44
+-------
+PackageName : Lcom/google/android/gms/drive/internal
+Count       : 121
+Weight      : 1600
+-------
+PackageName : Lcom/google/android/gms/games/internal/constants
+Count       : 286
+Weight      : 52
+-------
+PackageName : Lcom/google/android/gms/nearby/messages/internal
+Count       : 105
+Weight      : 300
+-------
+PackageName : Lcom/android/vending/billing
+Count       : 593
+Weight      : 110
+-------
+PackageName : Lcom/google/android/gms/analytics
+Count       : 116
+Weight      : 1778
+-------
+PackageName : Lcom/google/android/gms/auth/api/signin
+Count       : 207
+Weight      : 168
+-------
+PackageName : Lcom/google/android/gms/drive/query
+Count       : 163
+Weight      : 160
+-------
+PackageName : Lcom/google/android/gms/fitness/result
+Count       : 164
+Weight      : 190
+-------
+PackageName : Lcom/google/android/gms/cast
+Count       : 108
+Weight      : 461
+-------
+PackageName : Lcom/google/android/gms/maps/model/internal
+Count       : 130
+Weight      : 1387
+-------
+PackageName : Lcom/google/android/gms/panorama
+Count       : 146
+Weight      : 11
+-------
+PackageName : Lcom/google/android/gms/location/places
+Count       : 107
+Weight      : 1161
+-------
+PackageName : Lcom/google/android/gms/flags/impl
+Count       : 662
+Weight      : 23
+-------
+PackageName : Lcom/google/android/gms/ads/mediation/customevent
+Count       : 471
+Weight      : 24
+-------
+PackageName : Lcom/google/android/gms/ads/internal/reward/mediation/client
+Count       : 336
+Weight      : 147
+-------
+PackageName : Lcom/google/android/gms/games/internal/api
+Count       : 133
+Weight      : 86
+-------
+PackageName : Lcom/google/android/gms/drive/metadata/internal
+Count       : 113
+Weight      : 194
+-------
+PackageName : Lcom/google/android/gms/plus/internal
+Count       : 293
+Weight      : 1759
+-------
+PackageName : Lcom/google/android/gms/wearable/internal
+Count       : 108
+Weight      : 896
+-------
+PackageName : Lcom/google/android/gms/games/internal/player
+Count       : 185
+Weight      : 143
+-------
+PackageName : Lcom/google/android/gms/nearby/messages/devices
+Count       : 110
+Weight      : 102
+-------
+PackageName : Lcom/google/android/gms/location/internal
+Count       : 108
+Weight      : 675
+-------
+PackageName : Landroid/support/design/internal
+Count       : 122
+Weight      : 149
+-------
+PackageName : Lcom/inmobi/commons/thinICE/location
+Count       : 124
+Weight      : 35
+-------
+PackageName : Lcom/google/ads/mediation
+Count       : 190
+Weight      : 103
+-------
+PackageName : Landroid/support/v4/view
+Count       : 180
+Weight      : 1382
+-------
+PackageName : Landroid/support/v4/f
+Count       : 108
+Weight      : 31
+-------
+PackageName : Lcom/google/android/gms/dynamic
+Count       : 1222
+Weight      : 373
+-------
+PackageName : Lcom/google/android/gms/games/internal/player
+Count       : 118
+Weight      : 111
+-------
+PackageName : Lcom/google/android/gms/wearable
+Count       : 108
+Weight      : 1308
+-------
+PackageName : Lcom/google/android/gms/wallet/fragment
+Count       : 133
+Weight      : 225
+-------
+PackageName : Lcom/google/ads
+Count       : 182
+Weight      : 109
+-------
+PackageName : Lcom/google/android/gms/ads/internal/util
+Count       : 327
+Weight      : 181
+-------
+PackageName : Lcom/google/android/gms/common
+Count       : 177
+Weight      : 3868
+-------
+PackageName : Lcom/google/android/gms/games/internal
+Count       : 123
+Weight      : 4934
+-------
+PackageName : Lcom/google/android/gms/ads/internal/request
+Count       : 240
+Weight      : 222
+-------
+PackageName : Landroid/support/v4/hardware
+Count       : 666
+Weight      : 37
+-------
+PackageName : Lcom/google/ads/mediation
+Count       : 154
+Weight      : 114
+-------
+PackageName : Landroid/support/v4/content/res
+Count       : 432
+Weight      : 26
+-------
+PackageName : Lcom/google/android/gms/gass/internal
+Count       : 148
+Weight      : 50
+-------
+PackageName : Lcom/inmobi/commons/thirdparty
+Count       : 111
+Weight      : 27
+-------
+PackageName : Lcom/google/ads
+Count       : 108
+Weight      : 110
+-------
+PackageName : Lcom/google/android/gms/drive/events
+Count       : 108
+Weight      : 56
+-------
+PackageName : Lcom/google/android/gms/drive/realtime/internal/event
+Count       : 292
+Weight      : 78
+-------
+PackageName : Lcom/google/android/gms/ads
+Count       : 110
+Weight      : 146
+-------
+PackageName : Landroid/support/v4/os
+Count       : 132
+Weight      : 22
+-------
+PackageName : Lcom/google/android/gms/fitness/internal
+Count       : 279
+Weight      : 30
+-------
+PackageName : Landroid/support/v4/content/res
+Count       : 116
+Weight      : 21
+-------
+PackageName : Lcom/google/android/gms/common/stats
+Count       : 106
+Weight      : 77
+-------
+PackageName : Landroid/support/v4/util
+Count       : 124
+Weight      : 290
+-------
+PackageName : Lcom/google/android/gms/maps
+Count       : 105
+Weight      : 3191
+-------
+PackageName : Lcom/google/android/gms/analytics/internal
+Count       : 138
+Weight      : 1081
+-------
+PackageName : Lcom/google/android/gms/drive
+Count       : 107
+Weight      : 2411
+-------
+PackageName : Lcom/google/android/gms/auth/api
+Count       : 102
+Weight      : 265
+-------
+PackageName : Lcom/nineoldandroids/view
+Count       : 197
+Weight      : 239
+-------
+PackageName : Lcom/google/android/gms/ads/doubleclick
+Count       : 136
+Weight      : 18
+-------
+PackageName : Lcom/google/android/gms/signin
+Count       : 246
+Weight      : 282
+-------
+PackageName : Lcom/google/android/gms/drive/metadata
+Count       : 108
+Weight      : 164
+-------
+PackageName : Lcom/google/android/gms/gcm
+Count       : 267
+Weight      : 63
+-------
+PackageName : Lcom/google/android/gms/cast
+Count       : 131
+Weight      : 259
+-------
+PackageName : Landroid/support/v7/view/menu
+Count       : 334
+Weight      : 352
+-------
+PackageName : Lcom/google/android/gms/common/data
+Count       : 201
+Weight      : 238
+-------
+PackageName : Lcom/google/android/gms/signin/internal
+Count       : 249
+Weight      : 284
+-------
+PackageName : Landroid/support/v4/content
+Count       : 113
+Weight      : 485
+-------
+PackageName : Lcom/google/android/gms/nearby/sharing/internal
+Count       : 184
+Weight      : 156
+-------
+PackageName : Lcom/google/android/gms/fitness/internal/service
+Count       : 279
+Weight      : 30
+-------
+PackageName : Lcom/google/android/gms/nearby/connection
+Count       : 154
+Weight      : 19
+-------
+PackageName : Landroid/support/v4/hardware
+Count       : 600
+Weight      : 13
+-------
+PackageName : Lcom/google/android/gms/identity
+Count       : 540
+Weight      : 38
+-------
+PackageName : Lcom/google/android/gms/phenotype
+Count       : 279
+Weight      : 84
+-------
+PackageName : Lcom/google/android/gms/security
+Count       : 235
+Weight      : 20
+-------
+PackageName : Lcom/google/android/gms/auth/api
+Count       : 207
+Weight      : 168
+-------
+PackageName : Landroid/support/v4/graphics
+Count       : 112
+Weight      : 197
+-------
+PackageName : Landroid/support/v4/speech/tts
+Count       : 851
+Weight      : 11
+-------
+PackageName : Lcom/inmobi/commons/db
+Count       : 103
+Weight      : 131
+-------
+PackageName : Lcom/google/android/gms/games/internal/player
+Count       : 175
+Weight      : 115
+-------
+PackageName : Lcom/google/android/gms/plus/internal
+Count       : 108
+Weight      : 558
+-------
+PackageName : Lcom/google/android/gms/gass
+Count       : 148
+Weight      : 50
+-------
+PackageName : Lcom/tapjoy/mraid/listener
+Count       : 120
+Weight      : 20
+-------
+PackageName : Landroid/support/v4/speech
+Count       : 851
+Weight      : 11
+-------
+PackageName : Lcom/google/android/gms/identity/intents
+Count       : 553
+Weight      : 38
+-------
+PackageName : Lcom/google/android/gms/common/internal/safeparcel
+Count       : 111
+Weight      : 196
+-------
+PackageName : Ldagger
+Count       : 120
+Weight      : 591
+-------
+PackageName : Lcom/google/android/gms/common/server
+Count       : 199
+Weight      : 339
+-------
+PackageName : Lcom/google/android/gms/ads/internal/overlay
+Count       : 241
+Weight      : 318
+-------
+PackageName : Lcom/google/android/gms/location
+Count       : 107
+Weight      : 194
+-------
+PackageName : Lcom/google/android/gms/ads/internal/reward/mediation
+Count       : 264
+Weight      : 133
+-------
+PackageName : Landroid/support/v4/app
+Count       : 124
+Weight      : 2733
+-------
+PackageName : Lcom/google/android/gms/drive/query/internal
+Count       : 284
+Weight      : 128
+-------
+PackageName : Lcom/google/android/gms/appdatasearch
+Count       : 156
+Weight      : 133
+-------
+PackageName : Lcom/immersion/content
+Count       : 154
+Weight      : 12
+-------
+PackageName : Lcom/google/android/gms/appindexing
+Count       : 134
+Weight      : 67
+-------
+PackageName : Landroid/support/v4/media/session
+Count       : 180
+Weight      : 1102
+-------
+PackageName : Lcom/google/android/gms/auth/api/credentials/internal
+Count       : 103
+Weight      : 116
+-------
+PackageName : Lcom/google/android/gms/ads/search
+Count       : 1153
+Weight      : 19
+-------
+PackageName : Lcom/google/android/gms/games/request
+Count       : 791
+Weight      : 34
+-------
+PackageName : Lcom/google/android/gms/maps/internal
+Count       : 109
+Weight      : 1524
+-------
+PackageName : Landroid/support/v7/graphics
+Count       : 137
+Weight      : 69
+-------
+PackageName : Lcom/google/android/gms/common/server/response
+Count       : 199
+Weight      : 288
+-------
+PackageName : Lcom/google/android/gms/analytics/ecommerce
+Count       : 146
+Weight      : 58
+-------
+PackageName : Lcom/google/android/gms/drive/realtime
+Count       : 103
+Weight      : 1145
+-------
+PackageName : Lcom/google/android/gms/ads/internal/purchase
+Count       : 176
+Weight      : 283
+-------
+PackageName : Landroid/support/v4/os
+Count       : 403
+Weight      : 58
+-------
+PackageName : Landroid/support/v4/view
+Count       : 113
+Weight      : 995
+-------
+PackageName : Lcom/facebook/ads/internal/h/a
+Count       : 322
+Weight      : 65
+-------
+PackageName : Landroid/support/v4/print
+Count       : 132
+Weight      : 101
+-------
+PackageName : Lcom/google/android/gms/drive/metadata/internal
+Count       : 109
+Weight      : 127
+-------
+PackageName : Lcom/google/android/gms/auth/firstparty/shared
+Count       : 359
+Weight      : 34
+-------
+PackageName : Lcom/google/android/gms/playlog
+Count       : 255
+Weight      : 47
+-------
+PackageName : Lcom/google/android/gms/ads/internal/formats
+Count       : 144
+Weight      : 190
+-------
+PackageName : Lcom/google/android/gms/ads/doubleclick
+Count       : 1304
+Weight      : 22
+-------
+PackageName : Lcom/google/android/gms/location/places/ui
+Count       : 141
+Weight      : 65
+-------
+PackageName : Landroid/support/v4/util
+Count       : 417
+Weight      : 308
+-------
+PackageName : Lcom/google/android/gms/ads/internal/reward/mediation/client
+Count       : 216
+Weight      : 148
+-------
+PackageName : Lcom/google/android/gms/maps/internal
+Count       : 141
+Weight      : 2523
+-------
+PackageName : Lcom/google/android/gms/nearby/bootstrap
+Count       : 220
+Weight      : 78
+-------
+PackageName : Lcom/google/android/gms/plus/model
+Count       : 908
+Weight      : 129
+-------
+PackageName : Lcom/google/android/gms/location/places/internal
+Count       : 108
+Weight      : 698
+-------
+PackageName : Lcom/google/android/gms/search
+Count       : 239
+Weight      : 18
+-------
+PackageName : Lcom/google/android/gms/common/api
+Count       : 255
+Weight      : 202
+-------
+PackageName : Lcom/google/android/gms/wallet/fragment
+Count       : 414
+Weight      : 223
+-------
+PackageName : Lcom/google/android/gms/auth/api/proxy
+Count       : 256
+Weight      : 66
+-------
+PackageName : Lcom/google/android/gms/nearby/sharing
+Count       : 184
+Weight      : 220
+-------
+PackageName : Lcom/google/gson/reflect
+Count       : 626
+Weight      : 49
+-------
+PackageName : Lcom/google/android/gms/common/images
+Count       : 266
+Weight      : 136
+-------
+PackageName : Lcom/google/android/gms/iid
+Count       : 236
+Weight      : 29
+-------
+PackageName : Lcom/google/android/gms/ads/mediation
+Count       : 286
+Weight      : 41
+-------
+PackageName : Lcom/google/gson/internal/bind
+Count       : 162
+Weight      : 401
+-------
+PackageName : Landroid/support/v7/view
+Count       : 160
+Weight      : 537
+-------
+PackageName : Lcom/google/android/gms/auth
+Count       : 196
+Weight      : 168
+-------
+PackageName : Landroid/support/v4
+Count       : 110
+Weight      : 5495
+-------
+PackageName : Lcom/google/android/gms/appindexing
+Count       : 277
+Weight      : 60
+-------
+PackageName : Lcom/google/android/gms/fitness/service
+Count       : 328
+Weight      : 36
+-------
+PackageName : Landroid/support/v4/print
+Count       : 221
+Weight      : 100
+-------
+PackageName : Lcom/google/android/gms/drive/realtime
+Count       : 165
+Weight      : 999
+-------
+PackageName : Lcom/google/android/gms/common/stats
+Count       : 349
+Weight      : 232
+-------
+PackageName : Lcom/google/android/gms/ads/internal/reward/client
+Count       : 478
+Weight      : 218
+-------
+PackageName : Lcom/google/android/gms/fitness/request
+Count       : 134
+Weight      : 476
+-------
+PackageName : Lcom/inmobi/re/controller/util
+Count       : 113
+Weight      : 133
+-------
+PackageName : Landroid/support/v4/media/session
+Count       : 101
+Weight      : 1068
+-------
+PackageName : Lcom/google/android/gms/gcm
+Count       : 101
+Weight      : 608
+-------
+PackageName : Lcom/nineoldandroids
+Count       : 171
+Weight      : 904
+-------
+PackageName : Landroid/support/v7/graphics
+Count       : 170
+Weight      : 25
+-------
+PackageName : Landroid/support/v4/util
+Count       : 130
+Weight      : 292
+-------
+PackageName : Lcom/google/ads/afma/nano
+Count       : 261
+Weight      : 123
+-------
+PackageName : Lcom/google/android/gms/vision/barcode/internal/client
+Count       : 181
+Weight      : 71
+-------
+PackageName : Landroid/support/v4/media/routing
+Count       : 564
+Weight      : 99
+-------
+PackageName : Lcom/unity3d/ads/android/unity3d
+Count       : 163
+Weight      : 74
+-------
+PackageName : Lcom/google/android/gms/ads/internal/formats
+Count       : 310
+Weight      : 151
+-------
+PackageName : Lcom/google/android/gms/drive/realtime/internal
+Count       : 109
+Weight      : 973
+-------
+PackageName : Lcom/google/android/gms/ads/internal/reward/client
+Count       : 278
+Weight      : 249
+-------
+PackageName : Landroid/support/v4/graphics/drawable
+Count       : 130
+Weight      : 59
+-------
+PackageName : Lcom/inmobi/monetization/internal/imai/db
+Count       : 103
+Weight      : 58
+-------
+PackageName : Lcom/google/android/gms/ads/internal/reward/mediation
+Count       : 336
+Weight      : 147
+-------
+PackageName : Lcom/google/android/gms/identity
+Count       : 180
+Weight      : 37
+-------
+PackageName : Lcom/google/android/gms/nearby/connection
+Count       : 199
+Weight      : 20
+-------
+PackageName : Lcom/google/android/gms/location/places/personalized
+Count       : 163
+Weight      : 47
+-------
+PackageName : Lcom/google/android/gms/drive/internal
+Count       : 107
+Weight      : 955
+-------
+PackageName : Lcom/google/android/gms/ads/internal/reward/mediation/client
+Count       : 264
+Weight      : 133
+-------
+PackageName : Landroid/support/v4/util
+Count       : 198
+Weight      : 310
+-------
+PackageName : Landroid/support/v4/widget
+Count       : 117
+Weight      : 621
+-------
+PackageName : Lcom/google/android/gms/ads/internal/util/client
+Count       : 327
+Weight      : 181
+-------
+PackageName : Lcom/google/android/gms/maps/model
+Count       : 108
+Weight      : 1783
+-------
+PackageName : Lcom/google/android/gms/base
+Count       : 325
+Weight      : 12
+-------
+PackageName : Lcom/google/android/gms/flags
+Count       : 662
+Weight      : 23
+-------
+PackageName : Landroid/support/v7/graphics
+Count       : 144
+Weight      : 67
+-------
+PackageName : Lcom/google/android/gms/auth/api
+Count       : 104
+Weight      : 1012
+-------
+PackageName : Lcom/google/android/gms/auth/api/credentials/internal
+Count       : 107
+Weight      : 160
+-------
+PackageName : Lcom/bumptech/glide/load/resource/d
+Count       : 107
+Weight      : 24
+-------
+PackageName : Lcom/google/android/gms/auth/api/credentials
+Count       : 105
+Weight      : 288
+-------
+PackageName : Lcom/google/android/gms/ads/internal/purchase
+Count       : 385
+Weight      : 279
+-------
+PackageName : Lcom/google/android/gms/games/multiplayer/turnbased
+Count       : 403
+Weight      : 95
+-------
+PackageName : Landroid/support/v4/media/session
+Count       : 104
+Weight      : 132
+-------
+PackageName : Lcom/google/android/gms/analytics/ecommerce
+Count       : 500
+Weight      : 56
+-------
+PackageName : Lcom/google/android/gms/ads/internal/util
+Count       : 344
+Weight      : 76
+-------
+PackageName : Lcom/amazon/inapp
+Count       : 103
+Weight      : 546
+-------
+PackageName : Lcom/google/android/gms/maps/model
+Count       : 108
+Weight      : 1770
+-------
+PackageName : Landroid/support/v4/hardware/display
+Count       : 1267
+Weight      : 13
+-------
+PackageName : Landroid/support/v4/media
+Count       : 103
+Weight      : 440
+-------
+PackageName : Lcom/google/android/gms/games/multiplayer
+Count       : 334
+Weight      : 295
+-------
+PackageName : Lcom/mopub/mobileads/util
+Count       : 116
+Weight      : 49
+-------
+PackageName : Lcom/facebook/messenger
+Count       : 169
+Weight      : 112
+-------
+PackageName : Lcom/google/android/gms/clearcut
+Count       : 246
+Weight      : 50
+-------
+PackageName : Lcom/google/android/gms/measurement/internal
+Count       : 122
+Weight      : 1567
+-------
+PackageName : Landroid/support/multidex
+Count       : 211
+Weight      : 487
+-------
+PackageName : Lcom/google/android/gms/ads/internal/reward
+Count       : 212
+Weight      : 366
+-------
+PackageName : Lcom/google/android/gms/common/internal
+Count       : 111
+Weight      : 196
+-------
+PackageName : Landroid/support/v4/app
+Count       : 148
+Weight      : 3175
+-------
+PackageName : Landroid/support/v7/graphics/drawable
+Count       : 162
+Weight      : 67
+-------
+PackageName : Lcom/google/android/gms/maps
+Count       : 107
+Weight      : 4085
+-------
+PackageName : Landroid/support/v7/appcompat
+Count       : 616
+Weight      : 14
+-------
+PackageName : Lcom/google/android/gms/common/internal
+Count       : 179
+Weight      : 1810
+-------
+PackageName : Landroid/support/v4/text
+Count       : 607
+Weight      : 98
+-------
+PackageName : Lcom/google/android/gms/drive/events
+Count       : 121
+Weight      : 224
+-------
+PackageName : Lcom/facebook/ads/internal/thirdparty
+Count       : 125
+Weight      : 174
+-------
+PackageName : Ldagger/internal
+Count       : 120
+Weight      : 528
+-------
+PackageName : Lcom/google/android/gms/maps/internal
+Count       : 106
+Weight      : 2603
+-------
+PackageName : Lcom/google/android/gms/nearby/bootstrap/request
+Count       : 220
+Weight      : 62
+-------
+PackageName : Landroid/support/v4/util
+Count       : 174
+Weight      : 273
+-------
+PackageName : Lcom/google/android/gms/drive/realtime/internal
+Count       : 165
+Weight      : 999
+-------
+PackageName : Lcom/google/android/gms/drive/metadata/internal
+Count       : 121
+Weight      : 222
+-------
+PackageName : Lcom/google/android/gms/games/internal
+Count       : 108
+Weight      : 4806
+-------
+PackageName : Landroid/support/v4/view/accessibility
+Count       : 133
+Weight      : 156
+-------
+PackageName : Lcom/google/android/gms/ads/mediation/customevent
+Count       : 287
+Weight      : 34
+-------
+PackageName : Landroid/support/v4/os
+Count       : 302
+Weight      : 17
+-------
+PackageName : Lcom/google/android/gms/games/appcontent
+Count       : 374
+Weight      : 128
+-------
+PackageName : Lcom/google/android/gms/maps/model
+Count       : 152
+Weight      : 1774
+-------
+PackageName : Lcom/google/android/gms/analytics/internal
+Count       : 154
+Weight      : 1054
+-------
+PackageName : Lcom/google/android/gms/auth/api/proxy
+Count       : 101
+Weight      : 23
+-------
+PackageName : Lcom/google/android/gms/games/snapshot
+Count       : 369
+Weight      : 74
+-------
+PackageName : Lcom/google/ads
+Count       : 184
+Weight      : 95
+-------
+PackageName : Lcom/google/android/gms/drive/events
+Count       : 190
+Weight      : 150
+-------
+PackageName : Lcom/google/ads/mediation/admob
+Count       : 497
+Weight      : 17
+-------
+PackageName : Landroid/support/v4/view
+Count       : 166
+Weight      : 873
+-------
+PackageName : Lcom/google/android/gms/common/api/internal
+Count       : 179
+Weight      : 658
+-------
+PackageName : Landroid/support/v4/graphics/drawable
+Count       : 313
+Weight      : 133
+-------
+PackageName : Lbolts
+Count       : 141
+Weight      : 373
+-------
+PackageName : Lcom/google/android/gms/tagmanager
+Count       : 153
+Weight      : 1844
+-------
+PackageName : Landroid/support/v4/content
+Count       : 125
+Weight      : 427
+-------
+PackageName : Lcom/google/android/gms/ads/identifier
+Count       : 402
+Weight      : 32
+-------
+PackageName : Lcom/google/android/gms/playlog
+Count       : 287
+Weight      : 147
+-------
+PackageName : Lcom/google/android/gms/drive/query/internal
+Count       : 108
+Weight      : 107
+-------
+PackageName : Lcom/google/android/gms/plus/internal/model
+Count       : 323
+Weight      : 1212
+-------

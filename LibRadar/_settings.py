@@ -56,6 +56,9 @@ CLEAN_WORKSPACE = 0
             Key: APK file MD5
             Value: App's package name
                 e.g. 6cc6e58b9229a05f35ae34d05da9f688 -> com.Viserl.FunLiveWallpaper
+        9 : Tag
+            Key: Hash (MD5) of a package
+            Value: Tag
 """
 DB_HOST = 'localhost'
 DB_PORT = 6379
@@ -68,6 +71,7 @@ DB_UN_OB_PN = 5
 DB_UN_OB_PN_COUNT = 6
 DB_APK_MD5_LIST = 7
 DB_MD5_TO_APK_PN = 8
+DB_TAG = 9
 
 """
 running_threads
