@@ -59,6 +59,9 @@ CLEAN_WORKSPACE = 0
         9 : Tag
             Key: Hash (MD5) of a package
             Value: Tag
+        10: Rule
+            Key: prefix of library package name
+            Value: Library Name; Library Type; Official Website
 """
 DB_HOST = 'localhost'
 DB_PORT = 6379
@@ -72,6 +75,7 @@ DB_UN_OB_PN_COUNT = 6
 DB_APK_MD5_LIST = 7
 DB_MD5_TO_APK_PN = 8
 DB_TAG = 9
+DB_RULE = 10
 
 """
 running_threads
@@ -89,11 +93,17 @@ IGNORE ZERO API FILES
 IGNORE_ZERO_API_FILES = True
 
 """
+Config Files
+"""
+FILE_LOGGING = 'LibRadar/logging.conf'
+FILE_RULE = 'Data/IntermediateData/tag_rules.csv'
+
+"""
     Logs
 """
 
 if not os.path.exists("./Data"):
     os.mkdir("./Data")
-logging.config.fileConfig('LibRadar/logging.conf')
+logging.config.fileConfig(FILE_LOGGING)
 # create logger
 logger = logging.getLogger('radar')

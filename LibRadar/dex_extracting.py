@@ -210,6 +210,7 @@ class PackageNodeList:
                         if un ob pn count <= 0
                             un ob pn = current pn
             """
+            # TODO: Should use pipe and scan_iter to modify the efficiency.
             if package_exist is None:
                 self.db_feature_count.incr(name=child_md5, amount=1)
                 self.db_feature_weight.set(name=child_md5, value=curr_weight)
