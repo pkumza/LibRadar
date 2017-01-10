@@ -18,13 +18,19 @@
         In my database of 4600 apps, There're already 140 packages shares the same feature. That's definitely wrong!
         (MD5: 5019771e5f8ce4bc333b504a3a6bc4a6)
 
+    Implementation:
+        ApiDictionaryGenerator.ignore_list
+
     Warning: Working Directory should be LibRadar other than LibRadar/LibRadar
+
+    # Take API Level 16,18,19,21,22,23,24,25 in account, We could found 34299 APIs without overloading
+    # Ignore 1761 APIs
 
 """
 
 import os.path
 import commands
-### import redis
+# ## import redis
 import glob
 from _settings import *
 
@@ -63,17 +69,27 @@ class ApiDictionaryGenerator(Singleton):
             open a file for api output.
         """
         self.jar_list = []
-        ### self.redis_class_name = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_CLASS_NAME)
+        # ## self.redis_class_name = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_CLASS_NAME)
         logger.warning("Clean all the keys in databases")
-        ### self.redis_class_name.flushdb()
-        ### self.redis_android_api = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ANDROID_API)
-        ### self.redis_android_api.flushdb()
-        ### self.redis_android_api_simplified = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_API_INVOKE)
-        ### self.redis_android_api_simplified.flushdb()
-        self.api_set = set()
-        self.txt_output_api = open("./Data/IntermediateData/api.txt", 'w')
+        # ## self.redis_class_name.flushdb()
+        # ## self.redis_android_api = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ANDROID_API)
+        # ## self.redis_android_api.flushdb()
+        # ## self.redis_android_api_simplified = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_API_INVOKE)
+        # ## self.redis_android_api_simplified.flushdb()
+        # ## self.api_set = set()
+        # ## self.txt_output_api = open("./Data/IntermediateData/api.txt", 'w')
         self.api_simplified_set = set()
         self.txt_invoke_format = open("./Data/IntermediateData/invokeFormat.txt", 'w')
+        self.ignore_list = [
+            "Ljava/lang",
+            "Ljava/util/logging",
+            "Landroid/util/Log",
+            "Landroid/Manifest",
+            "Landroid/R",
+            "Landroid/test",
+            "Ljunit",
+            "Lorg/apache/commons/logging/Log"
+        ]
 
     def __del__(self):
         """
@@ -81,7 +97,7 @@ class ApiDictionaryGenerator(Singleton):
             StrictRedis doesn't implement close or quit methods.
             We don't need to close redis connection here.
         """
-        self.txt_output_api.close()
+        self.txt_invoke_format.close()
 
     @staticmethod
     def if_jad_exists():
@@ -154,18 +170,31 @@ class ApiDictionaryGenerator(Singleton):
                         if '$' in full_path_name:
                             continue
                         self.read_java(full_path_name, class_name, jar)
-                        self.redis_class_name.incr(class_name)
+                        # ## self.redis_class_name.incr(class_name)
             # clean the directory
             if CLEAN_WORKSPACE:
                 logger.info("Cleaning the directory which is already walked.")
                 os.system('rm -rf %s' % dir_to_be_walked)
-        logger.info("API Count is %d counting overloading." % len(self.api_set))
+        # ## logger.info("API Count is %d counting overloading." % len(self.api_set))
         logger.info("API Count is %d without overloading." % len(self.api_simplified_set))
         logger.info("Write the APIs into txt file as a backup.")
-        for api in self.api_set:
-            self.txt_output_api.write(api + '\n')
-        self.api_simplified_set.sort()
+        # ## for api in self.api_set:
+        # ##     self.txt_output_api.write(api + '\n')
+        api_simplified_list = list()
+        # Ignore those APIs that appears in ignore_list. Such as Landroid/util/Log
+        ignore_cnt = 0
         for api_s in self.api_simplified_set:
+            flag = True
+            for ign_api in self.ignore_list:
+                if ign_api in api_s:
+                    flag = False
+                    break
+            if flag:
+                api_simplified_list.append(api_s)
+            else:
+                ignore_cnt += 1
+        logger.info("Ignore %d APIs" % ignore_cnt)
+        for api_s in sorted(api_simplified_list):
             self.txt_invoke_format.write(api_s + '\n')
 
     def read_java(self, full_path_name, class_name, jar):
@@ -213,10 +242,10 @@ class ApiDictionaryGenerator(Singleton):
 
                     If the value is not '#', the value is put into database 0 for a count.
                 '''
-                if return_type == 'public' or return_type == 'protected':
-                    return_type = '#'
-                else:
-                    self.redis_class_name.incr(return_type)
+                # ## if return_type == 'public' or return_type == 'protected':
+                # ##     return_type = '#'
+                # ## else:
+                # ##     self.redis_class_name.incr(return_type)
                 right_part = line.split('(')[1]
                 # parameters of the method
                 paras = []
@@ -224,7 +253,7 @@ class ApiDictionaryGenerator(Singleton):
                 for i in range(paras_number):
                     if i % 2 == 0:
                         para_type = right_part.split(' ')[i]
-                        self.redis_class_name.incr(para_type)
+                        # ## self.redis_class_name.incr(para_type)
                         paras.append(para_type)
                 # reconstruct the method
                 full_class_name = class_name
@@ -236,15 +265,15 @@ class ApiDictionaryGenerator(Singleton):
                     if i != 0:
                         parameters_string += ','
                     parameters_string += paras[i]
-                method_declare = "%s %s->%s(%s)" % (return_type, full_class_name, method_name, parameters_string)
+                # ## method_declare = "%s %s->%s(%s)" % (return_type, full_class_name, method_name, parameters_string)
                 point_to_slash = full_class_name.replace('.', '/')
                 if method_name == class_name.split('.')[-1]:
                     method_name = "<init>"
                 method_invoke = "L%s;->%s" % (point_to_slash, method_name)
 
-                self.redis_android_api_simplified.incr(method_invoke)
-                self.api_set.add(method_declare)
-                self.redis_android_api.incr(method_declare)
+                # ## self.redis_android_api_simplified.incr(method_invoke)
+                # ## self.api_set.add(method_declare)
+                # ## self.redis_android_api.incr(method_declare)
                 self.api_simplified_set.add(method_invoke)
 
         open_java_file.close()
