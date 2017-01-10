@@ -21,13 +21,14 @@ CLEAN_WORKSPACE = 0
 
 """
     Config about databases
-        0 : Android.jar Classes
+
+        @deprecated 0 : Android.jar Classes
             Key: Classes (Not used)
             Value: Count (Not used)
-        1 : Android.jar APIs with return_type and argument_type
+        @deprecated 1 : Android.jar APIs with return_type and argument_type
             Key: API with return_type and argument_type (Not used)
             Value: Count (Not used)
-        2 : Android.jar APIs with only full class name and method name
+        @deprecated 2 : Android.jar APIs with only full class name and method name
             Key: API with only class name and method name (Important!!!)
             Value: Count (Not used)
         3 : Feature Count

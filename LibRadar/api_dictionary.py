@@ -7,15 +7,24 @@
     Firstly, get android.jar in Android SDK folder.
     Rename them and place them into Data/RawData folder.
     Glob module will automatically detect them and decompile them.
-    Finally, we could extract all the APIs.
+    In this case, we could extract all the APIs.
+    Finally, some non-sense API should be removed.
+
+    Non-sense API:
+        As an example, a package named Lcom/degoo/android/fbmassage is not a library, which belongs to an app named
+        "Princess Full Body Massage APK". This package contains no API other than 15 "Ljava/lang/Object;-><init>()"
+        It is very likely that another packages share the same feature.
+
+        In my database of 4600 apps, There're already 140 packages shares the same feature. That's definitely wrong!
+        (MD5: 5019771e5f8ce4bc333b504a3a6bc4a6)
 
     Warning: Working Directory should be LibRadar other than LibRadar/LibRadar
 
 """
 
-import os
+import os.path
 import commands
-import redis
+### import redis
 import glob
 from _settings import *
 
@@ -54,13 +63,13 @@ class ApiDictionaryGenerator(Singleton):
             open a file for api output.
         """
         self.jar_list = []
-        self.redis_class_name = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_CLASS_NAME)
+        ### self.redis_class_name = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_CLASS_NAME)
         logger.warning("Clean all the keys in databases")
-        self.redis_class_name.flushdb()
-        self.redis_android_api = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ANDROID_API)
-        self.redis_android_api.flushdb()
-        self.redis_android_api_simplified = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_API_INVOKE)
-        self.redis_android_api_simplified.flushdb()
+        ### self.redis_class_name.flushdb()
+        ### self.redis_android_api = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ANDROID_API)
+        ### self.redis_android_api.flushdb()
+        ### self.redis_android_api_simplified = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_API_INVOKE)
+        ### self.redis_android_api_simplified.flushdb()
         self.api_set = set()
         self.txt_output_api = open("./Data/IntermediateData/api.txt", 'w')
         self.api_simplified_set = set()
@@ -155,6 +164,7 @@ class ApiDictionaryGenerator(Singleton):
         logger.info("Write the APIs into txt file as a backup.")
         for api in self.api_set:
             self.txt_output_api.write(api + '\n')
+        self.api_simplified_set.sort()
         for api_s in self.api_simplified_set:
             self.txt_invoke_format.write(api_s + '\n')
 
