@@ -2,7 +2,13 @@
 """
     API_Dict.py
 
-    This is the first step for data collection.
+    WARNING!!! Could be run under Mac OS only.
+
+    You don't need to run this again!!! Just use Data/IntermediateData/invokeFormat.txt
+
+    This is the first step for data collection. However, jad is out of data and it could only been easily used on Mac.
+    What's more, running this script need to download all the versions of Android SDK.
+    So, if you do not want to learn about the principle, just ignore this script.
 
     Firstly, get android.jar in Android SDK folder.
     Rename them and place them into Data/RawData folder.
@@ -25,6 +31,12 @@
 
     # Take API Level 16,18,19,21,22,23,24,25 in account, We could found 34299 APIs without overloading
     # Ignore 1761 APIs
+    # 2016/12/30
+
+    # Take API Level 7,8,9,...,25 in account, we could found 34683 APIs without overloading.
+    # (From Android 2.1 to newest Android 7.1.1)
+    # Ignore 1775 APIs
+    # 2017/01/10
 
 """
 
@@ -70,7 +82,7 @@ class ApiDictionaryGenerator(Singleton):
         """
         self.jar_list = []
         # ## self.redis_class_name = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_CLASS_NAME)
-        logger.warning("Clean all the keys in databases")
+        # ## logger.warning("Clean all the keys in databases")
         # ## self.redis_class_name.flushdb()
         # ## self.redis_android_api = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ANDROID_API)
         # ## self.redis_android_api.flushdb()
