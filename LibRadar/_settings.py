@@ -82,7 +82,7 @@ DB_RULE = 10
 running_processes
 """
 RUNNING_PROCESS_NUMBER = 8
-QUEUE_TIME_OUT = 5
+QUEUE_TIME_OUT = 30
 
 
 """

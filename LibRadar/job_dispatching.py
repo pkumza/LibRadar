@@ -27,18 +27,33 @@ class DexExtractorWrapper:
         while True:
             try:
                 self.app_path = self.queue.get(block=True, timeout=QUEUE_TIME_OUT)
-            except multiprocessing.Manager().Queue.Empty:
+            except: # multiprocessing.Manager().Queue.Empty:
                 break
             logger.debug("Process %s is extracting %s" % (self.p_name, self.app_path))
-            self.get_md5()
+            try:
+                self.get_md5()
+            except:
+                logger.error("Process %s get Md5 error!" % self.p_name)
+                continue
             # logger.info("Process %s got md5 %s" % (self.p_name, self.md5))
             # If the apk file is broken, it can not be unzipped.
-            zf = zipfile.ZipFile(self.app_path, mode="r")
-            dex_file_extracted = zf.extract("classes.dex", "Data/Decompiled/%s" % self.md5)
-            de = dex_extracting.DexExtractor(dex_file_extracted)
-            de.extract_dex()
-            cmd = 'rm -rf ' + "Data/Decompiled/%s" % self.md5
-            os.system(cmd)
+            try:
+                zf = zipfile.ZipFile(self.app_path, mode="r")
+                dex_file_extracted = zf.extract("classes.dex", "Data/Decompiled/%s" % self.md5)
+            except:
+                logger.error("Process %s, not a valid Zip file." % self.p_name)
+                continue
+            try:
+                de = dex_extracting.DexExtractor(dex_file_extracted)
+                de.extract_dex()
+            except:
+                logger.critical("Process %s, extracting error!!" % self.p_name)
+                continue
+            try:
+                cmd = 'rm -rf ' + "Data/Decompiled/%s" % self.md5
+                os.system(cmd)
+            except:
+                logger.error("Process %s, rm error" % self.p_name)
         logger.info("Process %s returns" % self.p_name)
 
     def get_md5(self):
@@ -99,7 +114,7 @@ class DexExtractorDispatcher:
 
 if __name__ == "__main__":
     ded = DexExtractorDispatcher("/home/zachary/Projects/apks")
-    ded.flush_all()
+    # ded.flush_all()
     ded.clear_decompiled()
     ded.execute()
     os.system("eject cdrom")
