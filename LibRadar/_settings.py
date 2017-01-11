@@ -79,9 +79,9 @@ DB_TAG = 9
 DB_RULE = 10
 
 """
-running_threads
+running_processes
 """
-RUNNING_THREAD_NUMBER = 3
+RUNNING_PROCESS_NUMBER = 8
 QUEUE_TIME_OUT = 5
 
 
