@@ -16,10 +16,25 @@ import redis
 
 
 class DexExtractorWrapper:
+    """
+        Dex Extractor Wrapper
+
+        Dex Extractor is a class for extracting features from dex file.
+        DexExtractorWrapper is a container for the extractor.
+        DexExtractorWrapper occupies a process and got a queue from arguments.
+        In the main loop, it get an item from the queue and then create a new instance of DexExtractor and run it.
+    """
     def __init__(self, p_name, queue):
+        """
+        Init the instance with process name and queue(full of app path)
+        :param p_name: basestring
+        :param queue: multiprocessing.Manager().Queue
+        """
         self.p_name = p_name
         self.queue = queue
+        # MD5 for current app, for the current instance of Dex Extractor
         self.md5 = ""
+        # Path for current app.
         self.app_path = ""
 
     def execute(self):
@@ -33,6 +48,9 @@ class DexExtractorWrapper:
             try:
                 self.get_md5()
             except:
+                # Yeah, Too broad exception it is. But I don't care.
+                # There could be many types of exception but what I want to do is ignore the wrong apk and focus on
+                # the next app.
                 logger.error("Process %s get Md5 error!" % self.p_name)
                 continue
             # logger.info("Process %s got md5 %s" % (self.p_name, self.md5))
@@ -117,4 +135,7 @@ if __name__ == "__main__":
     # ded.flush_all()
     ded.clear_decompiled()
     ded.execute()
+    # q:-)
+    # "eject" is just a trick as a reminder. Do not work on Mac obviously. Remove it when necessary.
+    # d:-)
     os.system("eject cdrom")

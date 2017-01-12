@@ -118,7 +118,7 @@ class PackageNode:
         for md5_item in self.md5_list:
             curr_md5.update(md5_item)
         # TODO: Currently do not put class into database.
-        #if not IGNORE_ZERO_API_FILES or len(self.md5_list) != 0:
+        # if not IGNORE_ZERO_API_FILES or len(self.md5_list) != 0:
         #    logger.debug("MD5: %s Weight: %-6d PackageName: %s" %
         #                 (curr_md5.hexdigest(), self.weight, '/'.join(self.full_path)))
         return curr_md5.digest(), self.weight
@@ -137,9 +137,21 @@ class PackageNodeList:
         self.db_feature_weight = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_WEIGHT)
         self.db_un_ob_pn = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN)
         self.db_un_ob_pn_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN_COUNT)
+        # TODO: apk md5 list didn't used.
+        # If every package contains a list of apk, it consumes a lot.
+        # It's only use for research but in fact it's no use for LibRadar the project itself.
         self.db_apk_md5_list = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_APK_MD5_LIST)
 
     def flush_db(self):
+        """
+        Flush databases
+        :return: None
+        """
+        certain_flush = raw_input("You really want to flush database?(Y/N)")
+        if certain_flush != "Y":
+            logger.info("Do not flush.")
+            return
+        logger.warning("Flush 5 Databases")
         self.db_feature_count.flushdb()
         self.db_feature_weight.flushdb()
         self.db_un_ob_pn.flushdb()
@@ -147,9 +159,30 @@ class PackageNodeList:
         self.db_apk_md5_list.flushdb()
 
     def flush_all(self):
+        """
+        Flush databases
+        :return: None
+        """
+        certain_flush = raw_input("You really want to flush all databases?(Y/N)")
+        if certain_flush != "Y":
+            logger.info("Do not flush.")
+            return
+        logger.warning("Flush All Databases")
         self.db_apk_md5_list.flushall()
 
     def catch_a_class_def(self, package_name, class_md5, class_weight):
+        """
+        catch a class definition
+
+        Class definitions are sorted.
+        Every time this function catch a new class definition.
+        It got the class's package name, md5 and class weight(API count)
+
+        :param package_name: basestring
+        :param class_md5: basestring
+        :param class_weight: int
+        :return: None
+        """
         package_path_parts_list = package_name.split('/')
         common_depth = 0
         """
@@ -249,11 +282,12 @@ class DexExtractor:
     """
     def __init__(self, dex_name):
         """
-            Init the Feature Extractor
-
+         Init the Feature Extractor
+        :param dex_name: basestring
         """
         self.dex_name = dex_name
         # self.dex is an instance of dex_parser.DexFile()
+        # clear it here
         self.dex = None
         # use as a stack
         self.package_node_list = list()
@@ -370,6 +404,7 @@ class DexExtractor:
 
 
 if __name__ == "__main__":
+    # A test for dex extractor here.
     logger.critical(" ------------------------- START ------------------------- ")
     de = DexExtractor("./Data/IntermediateData/air/classes.dex")
     if de.extract_dex() < 0:

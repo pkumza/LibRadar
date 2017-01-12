@@ -79,7 +79,11 @@ DB_TAG = 9
 DB_RULE = 10
 
 """
-running_processes
+    running_processes
+
+    Use multi-processing could fully use the cores of cpu.
+    Once I set QUEUE_TIME_OUT 5. After about two hours, three processes returns. So it should be little longer.
+    I set it 30 yesterday and in two hours' processing, every process runs well.
 """
 RUNNING_PROCESS_NUMBER = 8
 QUEUE_TIME_OUT = 30
