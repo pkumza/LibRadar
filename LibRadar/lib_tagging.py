@@ -30,7 +30,7 @@ class Tagger:
         Key:
             package name
         Value:
-            Library Name ; Library Type; Official Website;
+            Library Name , Library Type, Official Website,
     """
     def __init__(self, base_count=20, base_weight=100):
         self.db_feature_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_COUNT)
@@ -49,12 +49,12 @@ class Tagger:
         self.new_prefix_list = list()
         if os.path.exists(FILE_RULE):
             file_rules = open(FILE_RULE, 'r')
-            csv_rules_reader = csv.reader(file_rules, delimiter=';', quotechar='|')
+            csv_rules_reader = csv.reader(file_rules, delimiter=',', quotechar='|')
             for row in csv_rules_reader:
                 self.dict_tag_rules[row[0]] = (row[1], row[2], row[3])
             file_rules.close()
         file_rules_w = open(FILE_RULE, 'a')
-        self.csv_rule_writer = csv.writer(file_rules_w, delimiter=';', quotechar='|')
+        self.csv_rule_writer = csv.writer(file_rules_w, delimiter=',', quotechar='|')
         # self.db_rule = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_RULE)
         self.base_count = base_count
         self.base_weight = base_weight
@@ -115,7 +115,7 @@ class Tagger:
                 while True:
                     if potential_package_name == "":
                         ign += 1
-                        break;
+                        break
                     if potential_package_name in self.dict_tag_rules:
                         self.db_tag.set(key, potential_package_name)
                         cnt += 1

@@ -6,6 +6,8 @@
 
 import lib_tagging
 import csv
+import os
+from _settings import FILE_RULE
 
 from Tkinter import *           # 导入 Tkinter 库
 
@@ -16,6 +18,16 @@ class TaggerGui(Frame):
         self.pack()
         # Frame 1 Welcome
         self.create_f1_welcome()
+        # read csv
+        self.labeled_prefix = list()
+        if os.path.exists(FILE_RULE):
+            file_rules = open(FILE_RULE, 'r')
+            csv_rules_reader = csv.reader(file_rules, delimiter=',', quotechar='|')
+            for row in csv_rules_reader:
+                self.labeled_prefix.append(row[0])
+            file_rules.close()
+        self.file_rules_w = open(FILE_RULE, 'a')
+        self.csv_rule_writer = csv.writer(self.file_rules_w, delimiter=',', quotechar='|')
 
     def create_f1_welcome(self):
         self.hello_label = Label(self, text='\nHello!\nThis is LibRadar Tagging System.\n'
@@ -55,12 +67,15 @@ class TaggerGui(Frame):
         self.base_weight = -1
         good_flag = True
         try:
-            if self.count_text.get() == "" and self.weight_text.get() == "":
+            if self.weight_text.get() == "":
                 self.base_weight = 20
+            else:
+                self.base_weight = int(self.weight_text.get())
+            if self.count_text.get() == "":
                 self.base_count = 20
             else:
                 self.base_count = int(self.count_text.get())
-                self.base_weight = int(self.weight_text.get())
+
         except:
             good_flag = False
         if self.base_count < 0:
@@ -94,7 +109,6 @@ class TaggerGui(Frame):
         INFO
         """
         self.master.geometry("300x520")
-        self.labeled_prefix = list()
         self.label_index = -1
         self.labeled_cnt = 0
 
@@ -206,9 +220,7 @@ class TaggerGui(Frame):
             good_flag = False
         if good_flag:
             # insert into csv
-            print prefix
-            print lib_name
-            print website
+            self.csv_rule_writer.writerow([prefix, lib_name, "no_type", website])
             # insert the prefix into list
             self.labeled_prefix.append(prefix)
         else:
@@ -231,9 +243,7 @@ class TaggerGui(Frame):
             good_flag = False
         if good_flag:
             # insert into csv
-            print prefix
-            print lib_name
-            print website
+            self.csv_rule_writer.writerow([prefix, lib_name, "no_type", website])
             # insert the prefix into list
             self.labeled_prefix.append(prefix)
         else:
