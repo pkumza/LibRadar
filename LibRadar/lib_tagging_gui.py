@@ -2,6 +2,10 @@
 """
     Library tagger GUI
 
+    When tagging libraries using this script, you could refer to
+    https://raw.githubusercontent.com/pkumza/LibRadar/master/data/tgst5.dat and
+    https://github.com/pkumza/LibRadar/blob/dev/extract/step2.py
+
 """
 
 import lib_tagging
@@ -10,6 +14,7 @@ import os
 from _settings import FILE_RULE
 
 from Tkinter import *           # 导入 Tkinter 库
+import ttk
 
 
 class TaggerGui(Frame):
@@ -19,12 +24,18 @@ class TaggerGui(Frame):
         # Frame 1 Welcome
         self.create_f1_welcome()
         # read csv
+        # contains items like android/support/v4, org/apache/http,
         self.labeled_prefix = list()
+        # contains items like com/android, com/google
+        self.no_lib_prefix = list()
         if os.path.exists(FILE_RULE):
             file_rules = open(FILE_RULE, 'r')
             csv_rules_reader = csv.reader(file_rules, delimiter=',', quotechar='|')
             for row in csv_rules_reader:
-                self.labeled_prefix.append(row[0])
+                if row[1] == "no":
+                    self.no_lib_prefix.append(row[0])
+                else:
+                    self.labeled_prefix.append(row[0])
             file_rules.close()
         self.file_rules_w = open(FILE_RULE, 'a')
         self.csv_rule_writer = csv.writer(self.file_rules_w, delimiter=',', quotechar='|')
@@ -142,6 +153,25 @@ class TaggerGui(Frame):
         self.t_lib_name = StringVar()
         self.entry_name = Entry(self, textvariable=self.t_lib_name)
         self.entry_name.pack()
+        self.label_type = Label(self, text="Library Type:")
+        self.label_type.pack()
+        self.t_lib_type = StringVar()
+        self.type_chosen = ttk.Combobox(self, textvariable=self.t_lib_type)
+        self.type_chosen['values'] = (
+            "Development Aid",
+            "Social Network",
+            "Advertisement",
+            "App Market",
+            "Mobile Analytics",
+            "Payment",
+            "Game Engine",
+            "Map/LBS",
+            "GUI Component",
+            "Development Framework",
+            "Not Sure"
+        )
+        self.type_chosen.current(0)
+        self.type_chosen.pack()
         self.label_website = Label(self, text="Official SDK Website:")
         self.label_website.pack()
         self.t_website = StringVar()
@@ -168,6 +198,12 @@ class TaggerGui(Frame):
             if prefix in package_name:
                 flag = True
                 break
+        if flag:
+            return flag
+        for prefix in self.no_lib_prefix:
+            if prefix == package_name:
+                flag = True
+                break
         return flag
 
     def create_f3(self):
@@ -177,7 +213,6 @@ class TaggerGui(Frame):
         """
 
         # Clear Text
-        self.t_lib_prefix.set("")
         self.t_website.set("")
         self.t_lib_name.set("")
 
@@ -190,6 +225,8 @@ class TaggerGui(Frame):
             self.destroy_f3()
             return
 
+
+        self.t_lib_prefix.set(self.features[self.label_index][3])
         # Show information
         self.label_progress["text"] = "\nProgress: %d/%d" % (self.label_index + 1, len(self.features))
         self.n_label_count["text"] = str(self.features[self.label_index][1])
@@ -216,11 +253,12 @@ class TaggerGui(Frame):
                 return
             lib_name = self.t_lib_name.get()
             website = self.t_website.get()
+            lib_type = self.t_lib_type.get()
         except:
             good_flag = False
         if good_flag:
             # insert into csv
-            self.csv_rule_writer.writerow([prefix, lib_name, "no_type", website])
+            self.csv_rule_writer.writerow([prefix, lib_name, lib_type, website])
             # insert the prefix into list
             self.labeled_prefix.append(prefix)
         else:
@@ -243,9 +281,9 @@ class TaggerGui(Frame):
             good_flag = False
         if good_flag:
             # insert into csv
-            self.csv_rule_writer.writerow([prefix, lib_name, "no_type", website])
+            self.csv_rule_writer.writerow([prefix, lib_name, "no", website])
             # insert the prefix into list
-            self.labeled_prefix.append(prefix)
+            self.no_lib_prefix.append(prefix)
         else:
             # ignore
             pass
