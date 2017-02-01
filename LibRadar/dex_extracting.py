@@ -263,6 +263,8 @@ class PackageNodeList:
                         logger.error("db_un_ob_pn_count should not be None here.")
                     if int(db_un_ob_pn_count) <= 0:
                         self.db_un_ob_pn.set(name=child_md5, value='/'.join(stage_to_be_pop.full_path))
+                        # forget to reset the count, which caused some count appears to be negative number.
+                        self.db_un_ob_pn_count.set(name=child_md5, value=0)
             # TODO: APK List
             self.pn_list.pop()
         # Operation 2
