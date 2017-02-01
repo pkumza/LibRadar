@@ -6,6 +6,20 @@
     https://raw.githubusercontent.com/pkumza/LibRadar/master/data/tgst5.dat and
     https://github.com/pkumza/LibRadar/blob/dev/extract/step2.py
 
+    Introduction:
+        This script is not used for tagging libraries actually, It gives you some untagged libraries and you could set a
+        rule for tagging.
+        As there would be so many packages and so many libraries, it not possible to tag them one by one.
+        There could be many versions of libraries, so there's some repeat work.
+
+        We presume that more than half package names of a library is un-obfuscated, in this case, we could know the true
+        package name but we could not get the real library name, the website, type, or the other information.
+
+        tag_rules.csv is a projection from un-obfuscated package name to its detailed information.
+
+    Usage:
+        Run this script or just modify Data/IntermediateData/tag_rules.csv
+
 """
 
 import lib_tagging
@@ -39,11 +53,26 @@ class TaggerGui(Frame):
             file_rules.close()
         self.file_rules_w = open(FILE_RULE, 'a')
         self.csv_rule_writer = csv.writer(self.file_rules_w, delimiter=',', quotechar='|')
+        # Init items
+        self.hello_label = None
+        self.next_button = None
+        self.quit_button = None
+        self.count_label = None
+        self.count_text = None
+        self.count_entry = None
+        self.weight_text = None
+        self.weight_label = None
+        self.weight_entry = None
+        self.d2c3_button = None
+        self.tagger = None
+        self.features = None
+        self.labeled_prefix = None
+        self.labeled_cnt = None
 
     def create_f1_welcome(self):
-        self.hello_label = Label(self, text='\nHello!\nThis is LibRadar Tagging System.\n'
-                                           'Version: 2.0.1.dev1\n'
-                                           'Author:  Zachary Ma')
+        self.hello_label = Label(self,
+                                 text='\nHello!\nThis is LibRadar Tagging System.\nVersion: 2.0.1.dev1\n'
+                                      'Author:  Zachary Ma')
         self.hello_label.pack(side=TOP)
         self.next_button = Button(self, text="Next", command=self.destroy_f1)
         self.next_button.pack()
@@ -58,7 +87,9 @@ class TaggerGui(Frame):
 
     def create_f2_init(self):
         self.master.geometry("300x210")
-        self.hello_label = Label(self, text="\nPlease input some arguments for this system.\nThis would take a few moments, please wait.")
+        self.hello_label = Label(self,
+                                 text="\nPlease input some arguments for this system.\nThis would take a few moments,"
+                                      " please wait.")
         self.hello_label.pack()
         self.count_label = Label(self, text="Base count (default 20):")
         self.count_label.pack()
@@ -225,7 +256,6 @@ class TaggerGui(Frame):
             self.destroy_f3()
             return
 
-
         self.t_lib_prefix.set(self.features[self.label_index][3])
         # Show information
         self.label_progress["text"] = "\nProgress: %d/%d" % (self.label_index + 1, len(self.features))
@@ -244,6 +274,10 @@ class TaggerGui(Frame):
         """
         self.label_message["text"] = ""
         good_flag = True
+        lib_name = ""
+        lib_type = ""
+        website = ""
+        prefix = ""
         try:
             prefix = self.t_lib_prefix.get()
             if self.features[self.label_index][3][:len(prefix)] != prefix:
@@ -273,6 +307,9 @@ class TaggerGui(Frame):
         """
         self.label_message["text"] = ""
         good_flag = True
+        lib_name = ""
+        website = ""
+        prefix = ""
         try:
             prefix = str(self.features[self.label_index][3])
             lib_name = "no"
