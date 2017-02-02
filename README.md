@@ -20,72 +20,56 @@ Use __detect.py__ under the  main directory.
 Input the first parameters as the path of the target apk.
 
 ```bash
-$ python main/main.py _YOUR\_APK\_FILE_
+$ python LibRadar/libradar.py someapp.apk
 ```
-Or modify the code in the main function.
 
-If you want an online trial, just click [http://radar.pkuos.org/](http://radar.pkuos.org/).
+~~If you want an online trial, just click http://radar.pkuos.org/~~. (Still version 1 temporarily)
 
 ## Description for output
 
-[LibRadar](https://github.com/pkumza/LibRadar) put a json format result to stdout.
-That's a list braced by [] and every item stands for a library that LibRadar found.
-
-There should be two situation for a library detected:
-
-If the library is tagged in my database, the output may have these items as follows:
-
-|Symbol|Stands for|Description|
-|---|---|---|
-|dn|Repetitions|The number of the library (of just the **same version**!)|
-|ch|Link| Link for the official SDK developer guide website. I forget why I used 'ch' at the very beginning.|
-|bh|B\_Hash|The hash value of the package.|
-|btc|B\_Total\_Count|The total count of API.|
-|btn|B\_Total\_Number|The total types of API.|
-|lib|Library|Library Name|
-|cpn|Current Package Name|The package name from **your given APK** that seems match this library. 'Current' means what you just uploaded.|
-|csp|Current Specified Package Name|The sub-package (a part of the whole package) from your given APK that finally, exactly matched with what in the database.|
-|pn|Package Name|The package name from the database that seems matched.|
-|sp|Specified Package Name|The sub-package(a part of the whole package) that exactly matched with that in your APK.|
-|tp|Type|The type that the library belongs to.|
-|p|Permission|The permissions that the library used. It is specified by the API it used.|
-
-If the library is not popular enough that I didn't tagged, the output will have only four items:
-dn, p, pn, cpn. The meaning of them is just the same. The library is not tagged, so I cannot give you its name, but you can guess by yourself via the package name, which is not gonna be difficult if the package name is not obfuscated.
-
-I used a A\_HASH before and it failed, so I use B\_HASH to replace that one.
-cpn, csp, pn, sp can be difficult to understand. If you are confused, just use pn for the package name.
-I divided the libraries into ten types:
-
-```python
-library_type = {
-    "da": "Development Aid",
-    "sn": "Social Network",
-    "ad": "Advertisement",
-    "am": "App Market",
-    "ma": "Mobile Analytics",
-    "pa": "Payment",
-    "ui": "UI Component",
-    "ge": "Game Engine",
-    "ut": "Utility",
-    "mp": "Map"
-}
-```
+Sorry, Docs not finished.
 
 ## Dev Environment
-* JDK Version : Java 1.8.0_25
 
-* IDE : PyCharm 4.0.3
+* PyPy Version:
+```
+Python 2.7.12 (aff251e54385, Nov 09 2016, 17:25:49)
+[PyPy 5.6.0 with GCC 4.2.1 Compatible Apple LLVM 5.1 (clang-503.0.40)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+```
 
-* APKTOOL Version : 2.0.1
+* Python Version (optional):
+```
+Python 2.7.12 (v2.7.12:d33e0cf91556, Jun 26 2016, 12:10:39)
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+```
 
-## Web Server Environment
-* Java : 1.7.0_79
+* JDK Version :
+```
+java version "1.8.0_65"
+Java(TM) SE Runtime Environment (build 1.8.0_65-b17)
+Java HotSpot(TM) 64-Bit Server VM (build 25.65-b01, mixed mode)
+```
 
-* Node.js : v0.10.37
+* IDE :
+```
+PyCharm 2016.3.2
+Build #PY-163.10154.50, built on December 29, 2016
+Licensed to Ziang Ma
+Subscription is active until September 15, 2017
+For educational use only.
+JRE: 1.8.0_112-release-408-b6 x86_64
+JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
+```
 
 ##Update History
-__version 1.3.0 (current version)__
+
+__version 2.0.2dev1 (current version)__
+
+1. Lots of changes! ^_^
+
+__version 1.3.0__
 
 1. Ajax support.
 

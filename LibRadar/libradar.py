@@ -1,0 +1,162 @@
+# -*- coding: utf-8 -*-
+"""
+    LibRadar
+
+    main function for instant detecting use.
+
+"""
+
+import sys
+from _settings import *
+import dex_tree
+import dex_parser
+import hashlib
+import zipfile
+
+class LibRadar(object):
+    """
+    LibRadar
+    """
+    def __init__(self, apk_path):
+        self.apk_path = apk_path
+        self.tree = dex_tree.Tree()
+        self.dex_name = ""
+        # Instance of Dex Object in dex_parser.
+        self.dex = None
+        """
+            Use redis database to exam whether a call is an Android API consumes 27% running time.
+            I think it should be replaced by a hash table as the API list could not be modified during the progress.
+        """
+        invoke_file = open("./Data/IntermediateData/invokeFormat.txt", 'r')
+        self.invokes = set()
+        for line in invoke_file:
+            self.invokes.add(line[:-1])
+
+    def __del__(self):
+        # Delete dex file
+        if CLEAN_WORKSPACE >= 3:
+            os.remove(self.dex_name)
+            os.removedirs(self.dex_name[:-12])
+
+    def unzip(self):
+        # If it is a valid file
+        if not os.path.isfile(self.apk_path):
+            logger.error("%s is not a valid file." % self.apk_path)
+            raise AssertionError
+        # If it is a apk file
+        if len(self.apk_path) <= 4 or self.apk_path[-4:] != ".apk":
+            logger.error("%s is not a apk file.")
+            raise AssertionError
+        # Get Md5
+        self.hex_md5 = self.get_md5()
+        # Unzip
+        zf = zipfile.ZipFile(self.apk_path, mode='r')
+        # Transfer the unzipped dex file name to self.dex_name
+        self.dex_name = zf.extract("classes.dex", "Data/Decompiled/%s" % self.hex_md5)
+        return self.dex_name
+
+    def get_md5(self):
+        if not os.path.isfile(self.apk_path):
+            logger.critical("file path %s is not a file" % self.apk_path)
+            raise AssertionError
+        file_md5 = hashlib.md5()
+        f = file(self.apk_path, 'rb')
+        while True:
+            block = f.read(4096)
+            if not block:
+                break
+            file_md5.update(block)
+        f.close()
+        file_md5_value = file_md5.hexdigest()
+        logger.debug("APK %s's MD5 is %s" % (self.apk_path, file_md5_value))
+        return file_md5_value
+
+    def get_api_list(self, dex_method, api_list):
+        if dex_method.dexCode is None:
+            return
+        offset = 0
+        insns_size = dex_method.dexCode.insnsSize * 4
+        while offset < insns_size:
+            op_code = int(dex_method.dexCode.insns[offset:offset + 2], 16)
+            decoded_instruction = dex_parser.dexDecodeInstruction(self.dex, dex_method.dexCode, offset)
+            smali_code = decoded_instruction.smaliCode
+            if smali_code is None:
+                logger.warning("smali code is None.")
+                continue
+            # Next Instruction.
+            offset += decoded_instruction.length
+            if smali_code == 'nop':
+                break
+            # 4 invokes from 0x6e to 0x72
+            if 0x6e <= op_code <= 0x72:
+                if decoded_instruction.getApi in self.invokes:
+                    api_list.append(decoded_instruction.getApi)
+        return
+
+    def extract_class(self, dex_class_def_obj):
+        class_md5 = hashlib.md5()
+        # API List
+        #   a list for basestring
+        api_list = list()
+        # direct methods
+        last_method_index = 0
+        for k in range(len(dex_class_def_obj.directMethods)):
+            current_method_index = last_method_index + dex_class_def_obj.directMethods[k].methodIdx
+            last_method_index = current_method_index
+            self.get_api_list(dex_class_def_obj.directMethods[k], api_list=api_list)
+        # virtual methods
+        last_method_index = 0
+        for k in range(len(dex_class_def_obj.virtualMethods)):
+            current_method_index = last_method_index + dex_class_def_obj.virtualMethods[k].methodIdx
+            last_method_index = current_method_index
+            self.get_api_list(dex_class_def_obj.virtualMethods[k], api_list=api_list)
+        # Use sort to pass the tree construction stage.
+        # In this case, we could only use a stack to create the package features.
+        api_list.sort()
+        for api in api_list:
+            class_md5.update(api)
+        if not IGNORE_ZERO_API_FILES or len(api_list) != 0:
+            pass
+            # TODO: use database to output this.
+            # logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
+            #              (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
+        return len(api_list), class_md5.digest(), class_md5.hexdigest()
+
+    def extract_dex(self):
+        # Log Start
+        logger.debug("Extracting %s" % self.dex_name)
+        # Validate existing
+        if not os.path.isfile(self.dex_name):
+            logger.error("%s is not a file" % self.dex_name)
+            return -1
+        # Create a Dex object
+        self.dex = dex_parser.DexFile(self.dex_name)
+        for dex_class_def_obj in self.dex.dexClassDefList:
+            weight, raw_md5, hex_md5 = self.extract_class(dex_class_def_obj=dex_class_def_obj)
+            class_name = self.dex.getDexTypeId(dex_class_def_obj.classIdx)
+            """
+            I got many \x01 here before the class name.
+                such as '\x01Lcom/vungle/publisher/inject'
+            don't know exactly but could use code below to deal with it.
+            """
+            if class_name[0] is not 'L':
+                l_index = class_name.find('L')
+                if l_index == '-1':
+                    continue
+                class_name = class_name[l_index:]
+            if IGNORE_ZERO_API_FILES and weight == 0:
+                continue
+            self.tree.insert(package_name=class_name, weight=weight, md5=raw_md5)
+        return 0
+
+
+if __name__ == '__main__':
+    apk_path = sys.argv[1]
+    lrd = LibRadar(apk_path)
+    lrd.unzip()
+    lrd.extract_dex()
+    lrd.tree.cal_md5()
+    lrd.tree.match()
+    print "===== RESULT: ============"
+    lrd.tree.get_lib()
+    print "=========================="
