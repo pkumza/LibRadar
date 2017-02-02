@@ -4,6 +4,8 @@
 
     This script is used to extract features from directory and smali files.
 """
+'''
+@deprecated Not used any more!
 
 import redis
 from _settings import *
@@ -143,7 +145,7 @@ class FeatureExtractor(threading.Thread):
                         logger.critical("Something wrong with the code or MD5-128bit is not enough. [Smali Level]")
                 # Store the potential un-obfuscated path of the smali file.
                 # If the database cannot hold this, this section could be deleted.
-                '''Start'''
+                """Start"""
                 str_smali_position = dir_path.find("/smali")
                 if str_smali_position == -1:
                     logger.critical("Something Wrong with dir_path: '%s' !" % dir_path)
@@ -161,7 +163,7 @@ class FeatureExtractor(threading.Thread):
                             self.DB_UN_OB_PN_COUNT.incr(smali_hash)
                         else:
                             self.DB_UN_OB_PN_COUNT.decr(smali_hash)
-                '''End'''
+                """End"""
                 self.DB_FEATURE_COUNT.incr(smali_hash)
                 self.db_apk_list.lpush(smali_hash, self.apk_md5)
             for sub_dir in sub_dirs:
@@ -196,7 +198,7 @@ class FeatureExtractor(threading.Thread):
                     raise AssertionError
             # Store the potential un-obfuscated path of the smali file.
             # If the database cannot hold this, this section could be deleted.
-            '''Start'''
+            """Start"""
             str_smali_position = dir_path.find("/smali")
             if str_smali_position == -1:
                 logger.critical("Something Wrong with dir_path: '%s' !" % dir_path)
@@ -214,7 +216,7 @@ class FeatureExtractor(threading.Thread):
                         self.DB_UN_OB_PN_COUNT.incr(dir_hash)
                     else:
                         self.DB_UN_OB_PN_COUNT.decr(dir_hash)
-            '''End'''
+            """End"""
             # Feature Count++
             self.DB_FEATURE_COUNT.incr(dir_hash)
             self.db_apk_list.lpush(dir_hash, self.apk_md5)
@@ -237,3 +239,4 @@ if __name__ == "__main__":
     fe.start()
     fe.join()
     logger.info("All Threads Finished")
+'''

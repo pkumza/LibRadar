@@ -8,8 +8,29 @@
 
 """
 
-from _settings import logger
+from _settings import *
 import binascii
+import hashlib
+import csv
+import redis
+
+# Databases
+db_feature_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_COUNT)
+db_feature_weight = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_WEIGHT)
+db_un_ob_pn = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN)
+db_un_ob_pn_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN_COUNT)
+
+# tag_rules
+labeled_libs = list()
+no_lib = list()
+
+with open(FILE_RULE, 'r') as file_rules:
+    csv_rules_reader = csv.reader(file_rules, delimiter=',', quotechar='|')
+    for row in csv_rules_reader:
+        if row[1] == "no":
+            no_lib.append(row)
+        else:
+            labeled_libs.append(row)
 
 
 class TreeNode(object):
@@ -37,6 +58,7 @@ class TreeNode(object):
         current_depth = 0 if self.pn == "" else self.pn.count('/') + 1
         target_depth = package_name.count('/') + 1
         if current_depth == target_depth:
+            self.md5 = md5
             return "F: %s" % package_name
         target_package_name = '/'.join(package_name.split('/')[:current_depth + 1])
         if target_package_name in self.children:
@@ -65,14 +87,12 @@ class TreeNode(object):
         print("---- print parent Later----")
 
 
-
 class Tree(object):
     """
     Tree
     """
     def __init__(self):
         self.root = TreeNode()
-        pass
 
     def insert(self, package_name, weight, md5):
         self.root.insert(package_name, weight, md5)
@@ -115,10 +135,124 @@ class Tree(object):
         else:
             logger.error("Wrong node to be printed.")
 
+    @staticmethod
+    def _cal_md5(node):
+        # Ignore Leaf Node
+        if len(node.children) == 0 and node.md5 != "":
+            return
+        # Test bug: Wrong Node
+        if len(node.children) == 0:
+            logger.error("Md5 is not empty but no child")
+        # Test bug: Wrong Node
+        if node.md5 != "":
+            logger.error("Children exist but md5 is not empty")
+        # Everything seems Okay.
+        cur_md5 = hashlib.md5()
+        md5_list = list()
+        for child in node.children:
+            md5_list.append(node.children[child].md5)
+        md5_list.sort()
+        for md5_item in md5_list:
+            cur_md5.update(md5_item)
+        node.md5 = cur_md5.digest()
+        # you could see node.pn here. e.g. Lcom/tencent/mm/sdk/modelpay
+
+    def cal_md5(self):
+        """
+        Calculate md5 for every package
+        :return:
+        """
+        self.post_order(visit=self._cal_md5)
+
+    @staticmethod
+    def _match(node):
+        a = db_un_ob_pn.get(node.md5)
+        w = db_feature_weight.get(node.md5)
+        c = db_feature_count.get(node.md5)
+        u = db_un_ob_pn_count.get(node.md5)
+        """ Debug Log
+        if a is not None:
+            print "----"
+            print "Potential Name: " + a
+            print "Package Name  :" + node.pn
+            print "Count: " + u + '/' + c
+            print str(node.weight) + " " + str(w)
+        """
+        # if could not find this package in database, search its children.
+        if a is None:
+            return 1
+        # CRITICAL PROBLEM
+        if int(w) != node.weight:
+            logger.critical("Same Md5, Diff Weight: %s" % (binascii.hexlify(node.md5)))
+        # Potential Name is not convincing enough.
+        if u < 8 or float(u) / float(c) < 0.3:
+            return 2
+        for lib in labeled_libs:
+            # if the potential package name is the same as full lib path
+            # do not search its children
+            if lib[0] == a:
+                node.match.append([lib, node.weight])
+                return -1
+            # If they have the same length but not equal to each other, just continue
+            if len(lib[0]) == len(a):
+                continue
+            # if the potential package name is part of full lib path, search its children
+            #   e.g. a is Lcom/google, we could find it as a part of Lcom/google/android/gms, so search its children for
+            #       more details
+            if len(a) < len(lib[0]) and a == lib[0][:len(a)]:
+                return 3
+            # If the lib path is part of potential package name, add some count into parent's match list.
+            if len(a) > len(lib[0]) and lib[0] == a[:len(lib[0])]:
+                depth_diff = a.count('/') - lib[0].count('/')
+                cursor = node
+                for i in range(depth_diff):
+                    # cursor should not be the root, so cursor's parent should not be None.
+                    if cursor.parent.parent != None:
+                        cursor = cursor.parent
+                    else:
+                        # root's parent is None
+                        #   This situation exists
+                        #   For Example: If it takes Lcom/a/b as Lcom/google/android/gms/ads/mediation/customevent,
+                        #   It will find its ancestor until root or None.
+                        return 4
+                flag = False
+                for matc in cursor.match:
+                    # if matc[0][0] == lib[0]:
+                    if matc[0] == lib:
+                        matc[1] += node.weight
+                        flag = True
+                if not flag:
+                    cursor.match.append([lib, node.weight])
+        # Never find a good match, search its children.
+        return 5
+
+    def match(self):
+        self.pre_order(visit=self._match)
+
+    @staticmethod
+    def _get_lib(node):
+        for matc in node.match:
+            print("----")
+            print("Package: %s" % node.pn)
+            print("Library: %s" % matc[0][1])
+            print("Standard Package: %s" % matc[0][0])
+            print("Type: %s" % matc[0][2])
+            print("Website: %s" % matc[0][3])
+            print("Similarity: %d/%d" % (matc[1], node.weight))
+            continue
+            if matc[1] * 2 > node.weight * 1:
+                print matc[0]
+                return -1
+        return 0
+
+    def get_lib(self):
+        self.pre_order(visit=self._get_lib)
+
 
 if __name__ == '__main__':
     print " === Test starts ===="
-
+    pass
+    """
     tn = Tree()
     tn.insert("a/b", 12, "")
     tn.insert("a/c", 14, "")
@@ -140,4 +274,5 @@ if __name__ == '__main__':
     tn.post_order(vis)
     print "CS:"
     print tn.get_node("b/a/s").pn
+    """
     print " === Test ends   ===="
