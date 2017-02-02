@@ -157,6 +157,6 @@ if __name__ == '__main__':
     lrd.extract_dex()
     lrd.tree.cal_md5()
     lrd.tree.match()
-    print "===== RESULT: ============"
+    print "\n===== RESULT: ============"
     lrd.tree.get_lib()
     print "=========================="

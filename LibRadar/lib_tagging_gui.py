@@ -3,7 +3,7 @@
     Library tagger GUI
 
     When tagging libraries using this script, you could refer to
-    https://raw.githubusercontent.com/pkumza/LibRadar/master/data/tgst5.dat and
+    https://raw.githubusercontent.com/pkumza/LibRadar/v1.4.0/data/tgst5.dat and
     https://github.com/pkumza/LibRadar/blob/dev/extract/step2.py
 
     Introduction:
@@ -53,21 +53,6 @@ class TaggerGui(Frame):
             file_rules.close()
         self.file_rules_w = open(FILE_RULE, 'a')
         self.csv_rule_writer = csv.writer(self.file_rules_w, delimiter=',', quotechar='|')
-        # Init items
-        self.hello_label = None
-        self.next_button = None
-        self.quit_button = None
-        self.count_label = None
-        self.count_text = None
-        self.count_entry = None
-        self.weight_text = None
-        self.weight_label = None
-        self.weight_entry = None
-        self.d2c3_button = None
-        self.tagger = None
-        self.features = None
-        self.labeled_prefix = None
-        self.labeled_cnt = None
 
     def create_f1_welcome(self):
         self.hello_label = Label(self,
