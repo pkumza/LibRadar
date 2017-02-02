@@ -1,6 +1,11 @@
 LData
 clean_app
 decoded
+Data/RawData
+Data/log*
+Data/Decompiled
+Data/IntermediateData
+
 
 # .idea
 .idea
