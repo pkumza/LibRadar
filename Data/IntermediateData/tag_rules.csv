@@ -1,3 +1,4 @@
+Package Name,Library Name,Type,Official Website
 Lcom/google/android/gms,Google GMS,Development Aid,https://developers.google.com/android/reference/com/google/android/gms/package-summary
 Lcom/google/android,no,no,no
 Lcom/google,no,no,no
@@ -94,7 +95,7 @@ Lcom/newrelic,newrelic,Development Aid,https://newrelic.com/
 Lappinventor,Appinventor,Development Aid,http://appinventor.mit.edu/
 Lorg/apache/commons,Apache Common,Development Aid,https://commons.apache.org/
 Lcom/paypal,PayPal,Payment,https://developer.paypal.com/docs/integration/mobile/android-integration-guide/
-Lorg/osmdroid,OpenStreetMap-Tools for Android,Map/LBS,https://github.com/osmdroid/osmdroid
+Lorg/osmdroid,OpenStreetMap-Tools,Map/LBS,https://github.com/osmdroid/osmdroid
 Lcn/domob,domob,Advertisement,http://www.domob.cn/
 Lcom/adtech,Adtech,Advertisement,http://www.adtech.com/
 Lcom/magtab,Magtab,Development Aid,https://www.magtab.com/
@@ -367,7 +368,7 @@ Lshared_presage,no,no,no
 Lshared_presage/com,no,no,no
 Landroid/support/a/a,no,no,no
 Landroid/support/a,no,no,no
-Lorg/nexage/sourcekit/mraid,Nexage SourceKit-MRAID For Android (MARID part of the library Millennial Media),Advertisement,https://github.com/nexage/sourcekit-mraid-android
+Lorg/nexage/sourcekit/mraid,Nexage SourceKit-MRAID(part of MillennialMedia),Advertisement,https://github.com/nexage/sourcekit-mraid-android
 Lcom/squareup,no,no,no
 Lcom/appsflyer,AppsFlyer,Mobile Analytics,https://www.appsflyer.com/
 Lb/a/a/a/a,no,no,no
