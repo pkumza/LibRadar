@@ -18,6 +18,12 @@ class LibRadar(object):
     LibRadar
     """
     def __init__(self, apk_path):
+        """
+        Init LibRadar instance with apk_path as a basestring.
+        Create a Tree for every LibRadar instance. The tree describe the architecture of the apk. Every package is a
+        node.
+        :param apk_path: basestring
+        """
         self.apk_path = apk_path
         self.tree = dex_tree.Tree()
         self.dex_name = ""
@@ -149,14 +155,24 @@ class LibRadar(object):
             self.tree.insert(package_name=class_name, weight=weight, md5=raw_md5)
         return 0
 
+    def analyse(self):
+        """
+        Main function for LibRadar Object.
+        :return: None
+        """
+        # Step 1: Unzip APK file, only extract the dex file.
+        self.unzip()
+        # Step 2: Extract Dex and insert package-level info into Tree
+        self.extract_dex()
+        # Step 3: post-order traverse the tree, calculate every package's md5 value.
+        self.tree.cal_md5()
+        # Step 4: pre-order traverse the tree, calculate every node's match degree (similarity).
+        self.tree.match()
+        # Step 5: traverse the tree, find out all the libraries.
+        self.tree.get_lib()
+
 
 if __name__ == '__main__':
     apk_path = sys.argv[1]
     lrd = LibRadar(apk_path)
-    lrd.unzip()
-    lrd.extract_dex()
-    lrd.tree.cal_md5()
-    lrd.tree.match()
-    print "\n===== RESULT: ============"
-    lrd.tree.get_lib()
-    print "=========================="
+    lrd.analyse()

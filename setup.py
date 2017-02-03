@@ -12,7 +12,7 @@ def read(fname):
 
 setup(
     name="LibRadar",
-    version="2.0.2.dev1",
+    version="2.0.2.dev2",
     author="Zachary Marv",
     author_email="maziang@pku.edu.cn",
     description="LibRadar is an automatic tool for Android library detection.",

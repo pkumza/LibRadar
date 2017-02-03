@@ -239,14 +239,12 @@ class Tree(object):
             print("Type: %s" % matc[0][2])
             print("Website: %s" % matc[0][3])
             print("Similarity: %d/%d" % (matc[1], node.weight))
-            continue
-            if matc[1] * 2 > node.weight * 1:
-                print matc[0]
-                return -1
         return 0
 
     def get_lib(self):
+        print("\n===== RESULT: ============")
         self.pre_order(visit=self._get_lib)
+        print("==========================")
 
 
 if __name__ == '__main__':

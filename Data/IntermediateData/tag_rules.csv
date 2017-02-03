@@ -108,7 +108,6 @@ Lkawa,Kawa for Android,Development Aid,https://www.gnu.org/software/kawa/Buildin
 Lcom/maximono,Maximono,Social Network,http://maximono.com
 Lcom/baidu/android,Baidu APP SDK,Development Aid,https://developer.baidu.com/
 Lcom/appflood,Appflood,Advertisement,http://appflood.com
-Lcom/squareup,SquareUp,Payment,https://squareup.com
 Lcom/pocketchange/,pocketchange,Payment,http://www.pocketchange.com/
 Lch/boye/httpclientandroidlib,httpclientandroidlib,Development Aid,https://github.com/surespot/httpclientandroidlib
 Lcom/google/zxing,ZXing ('Zebra Crossing'),Development Aid,https://github.com/zxing/zxing
@@ -195,7 +194,6 @@ Lcom/adfonic,Adfonic Mobile Ads,Advertisement,http://www.adfonic.com
 Lcom/umeng/fb,Umeng feedback,Mobile Analytics,http://dev.umeng.com/feedback
 Lnl/siegmann/epublib,EPublib,Development Aid,http://www.siegmann.nl/epublib
 Lorg/jsoup,Jsoup,Development Aid,http://jsoup.org/
-Lcom/mopub/nativeads,Native Ads,Advertisement,
 Lcom/adwhirl,Adwhirl Ads,Advertisement,https://code.google.com/p/adwhirl/
 Lcom/tencent/tauth,Tencent Login,Social Network,http://wiki.open.qq.com/wiki/mobile/Android_SDK
 Lcom/nineoldandroids,Nine Old Androids,Development Aid,https://github.com/JakeWharton/NineOldAndroids
@@ -344,3 +342,60 @@ Lcom/daimajia/androidanimations,AndroidAnimations Library,Development Aid,https:
 Lorg/tukaani/xz,XZ For Java,Development Aid,http://tukaani.org/xz/java.html
 Lopentk,The Open Toolkit Library,Development Aid,http://www.opentk.com/
 Lcom/flurry,no,no,no
+Lcom/amazon/identity/auth,Amazon Auth SDK,Development Aid,https://developer.amazon.com/public/apis/engage/login-with-amazon/docs/use_sdk_android.html
+Lcom/amazon/identity,no,no,no
+Lcom/flurry/android,Flurry,Mobile Analytics,https://flurry.com
+Lorg/apache,no,no,no
+Lio/fabric/sdk,no,no,no
+Lio/fabric,no,no,no
+Lio,no,no,no
+Lcom/mopub,MoPub,Advertisement,http://www.mopub.com
+Lcom/my/target/core/ui,no,no,no
+Lcom/my/target/core/ui/views,no,no,no
+Lcom/amazon/ags,Amazon Game Studios,Game Engine,https://games.amazon.com/
+Lokhttp3,OKHttp3.0,Development Aid,https://github.com/square/okhttp
+Lcom/crashlytics,Crashlytics,Mobile Analytics,http://try.crashlytics.com
+Lcom/supersonicads/sdk,Supersonic: Mobile Advertising,Advertisement,https://www.supersonic.com/
+Lcom/supersonicads,no,no,no
+Lcom/immersion,no,no,no
+Lcom/amazon/inapp,Amazon In-App Purchasing,Payment,https://developer.amazon.com/in-app-purchasing
+Lcom/threatmetrix,ThreatMetrix,Digital Identity,https://www.threatmetrix.com/
+Lc/a/a,no,no,no
+Lc/a,no,no,no
+Lc/a/a/a,no,no,no
+Lshared_presage,no,no,no
+Lshared_presage/com,no,no,no
+Landroid/support/a/a,no,no,no
+Landroid/support/a,no,no,no
+Lorg/nexage/sourcekit/mraid,Nexage SourceKit-MRAID For Android (MARID part of the library Millennial Media),Advertisement,https://github.com/nexage/sourcekit-mraid-android
+Lcom/squareup,no,no,no
+Lcom/appsflyer,AppsFlyer,Mobile Analytics,https://www.appsflyer.com/
+Lb/a/a/a/a,no,no,no
+Lcom/digits/sdk/vcard,Digits,Mobile Analytics,https://fabric.io/kits/android/digits/summary
+Lc/a/a/a/a,no,no,no
+Lcom/outlinegames,Outline Games,Payment,http://www.outlinegames.com
+Lcom/google/android/a,no,no,no
+Lcom/a,no,no,no
+Lc/a/a/a/a/c,no,no,no
+Lcom/c/a/a/a/a/a,no,no,no
+Lc/m/x/a/am48,no,no,no
+Lcom/e/a,no,no,no
+Lc/m/x/a,no,no,no
+Lc,no,no,no
+Lc/m/x,no,no,no
+Lc/m,no,no,no
+Lcom/bda,no,no,no
+Lcom/a/c/a,no,no,no
+Lcom/igaworks,igaworks,Advertisement,http://www.igaworks.com/en/index.html
+Lcom/g6677/spread,no,no,no
+Lcom/c/a/b/a/a,no,no,no
+Lcom/amazon/insights,Amazon Analytics,Mobile Analytics,https://developer.amazon.com/public/apis/manage/analytics/docs/analytics-for-android-fire-os
+Lcom/milkmangames/extensions/android/coremobile,Milkman plugins,Development Aid,https://www.milkmanplugins.com
+Lcom/c/a/a/a/a,no,no,no
+Lcom/radiusnetworks,Radius Networks,Development Aid,http://www.radiusnetworks.com
+Lorg/nexage,Millennial Media,Advertisement,http://www.nexage.com
+Lcom/google/firebase,Firebase,Development Framework,http://firebase.com
+Lcom/c/a/b/d,no,no,no
+Lc/a/a/a/a/b,no,no,no
+Lair/com,no,no,no
+Lair,no,no,no
