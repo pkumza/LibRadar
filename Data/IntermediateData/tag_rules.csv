@@ -2,7 +2,7 @@ Package Name,Library Name,Type,Official Website
 Lcom/google/android/gms,Google GMS,Development Aid,https://developers.google.com/android/reference/com/google/android/gms/package-summary
 Lcom/google/android,no,no,no
 Lcom/google,no,no,no
-Landroid/support,no,no,no
+Landroid/support,Android Support,Development Aid,https://developer.android.com/reference/android/package-summary.html
 Landroid,no,no,no
 Lcom/appodeal/ads,Appodeal Ads,Advertisement,https://www.appodeal.com
 Lcom/appodeal,no,no,no
@@ -21,7 +21,6 @@ Lcom/heyzap,Heyzap,Development Aid,https://www.heyzap.com
 Lcom/google/ads,Google Ads,Advertisement,https://www.google.com/ads/
 Landroid/support/multidex,Multidex,Development Aid,https://developer.android.com/studio/build/multidex.html
 Lcom/google/analytics,Google Analytics,Mobile Analytics,https://www.google.com/analytics
-Lcom/google/gson,Google Gson,Development Aid,https://github.com/google/gson
 Lcom/adobe/air,Adobe Air,Development Aid,http://www.adobe.com/cn/devnet/air/air_for_android.html
 Lcom/adobe,no,no,no
 Lcom/actionbarsherlock,ActionBarSherlock,Development Aid,http://actionbarsherlock.com
@@ -400,3 +399,5 @@ Lcom/c/a/b/d,no,no,no
 Lc/a/a/a/a/b,no,no,no
 Lair/com,no,no,no
 Lair,no,no,no
+Lcom/jayway,no,no,no
+Lcom/jayway/jsonpath,JsonPath,Development Aid,https://github.com/jayway/JsonPath
