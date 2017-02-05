@@ -1,54 +1,4 @@
 Package Name,Library Name,Type,Official Website
-Lcom/google/android/gms,Google GMS,Development Aid,https://developers.google.com/android/reference/com/google/android/gms/package-summary
-Lcom/google/android,no,no,no
-Lcom/google,no,no,no
-Landroid/support,Android Support,Development Aid,https://developer.android.com/reference/android/package-summary.html
-Landroid,no,no,no
-Lcom/appodeal/ads,Appodeal Ads,Advertisement,https://www.appodeal.com
-Lcom/appodeal,no,no,no
-Lcom/flurry/sdk,Flurry SDK,Mobile Analytics,https://developer.yahoo.com
-Lcom/android/vending,Google Play,App Market,https://play.google.com
-Lcom/android,no,no,no
-Lcom/inmobi,Inmobi,Advertisement,http://inmobi.com
-Lcom/facebook,Facebook,Social Network,https://developers.facebook.com
-Lcom/millennialmedia,Millennialmedia,Advertisement,http://www.millennialmedia.com
-Lorg/apache/commons,Apache Common,Development Aid,https://commons.apache.org
-Lcom/startapp,StartApp,Advertisement,http://www.startapp.com
-Lcom/chartboost,ChartBoost,Advertisement,http://www.chartboost.com
-Lorg/fmod,Fmod,Game Engine,https://www.fmod.org
-Lcom/ironsource,IronSource,Development Aid,http://www.ironsrc.com
-Lcom/heyzap,Heyzap,Development Aid,https://www.heyzap.com
-Lcom/google/ads,Google Ads,Advertisement,https://www.google.com/ads/
-Landroid/support/multidex,Multidex,Development Aid,https://developer.android.com/studio/build/multidex.html
-Lcom/google/analytics,Google Analytics,Mobile Analytics,https://www.google.com/analytics
-Lcom/adobe/air,Adobe Air,Development Aid,http://www.adobe.com/cn/devnet/air/air_for_android.html
-Lcom/adobe,no,no,no
-Lcom/actionbarsherlock,ActionBarSherlock,Development Aid,http://actionbarsherlock.com
-Lcom/flurry/org,Flurry,Mobile Analytics,https://flurry.com
-Lcom/my/target/core,no,no,no
-Lcom/everyplay,Everyplay,Game Engine,https://everyplay.com/
-Lcom/unity3d/ads,Unity3d Ads,Advertisement,https://unity3d.com/cn/services/ads
-Lcom/google/android/exoplayer,ExoPlayer,Development Aid,https://github.com/google/ExoPlayer
-Lcom/google/android/youtube/player,YouTube Android Player API,Development Aid,https://developers.google.com/youtube/android/player/
-Lcom/google/android/youtube,no,no,no
-Lcom/tapjoy,Tapjoy,Advertisement,https://home.tapjoy.com/
-Lcom/vungle,Vungle,Advertisement,https://vungle.com
-Lorg,no,no,no
-Lcom/nineoldandroids,Nine Old Androids,Development Aid,https://github.com/JakeWharton/NineOldAndroids
-Lu/aly,Umeng Analysis,Mobile Analytics,https://www.umeng.com/
-Lu,no,no,no
-Lcom/google/tagmanager,Google Tag Manager,Mobile Analytics,https://www.google.com/analytics/tag-manager/
-Lcom/jirbo/adcolony,Jirbo,Development Aid,http://www.jirbo.com/
-Lcom/jirbo,no,no,no
-Lorg/springframework,Spring Framework,Development Aid,https://projects.spring.io/spring-framework/
-Landroid/support/design,Android Support Design,Development Aid,https://developer.android.com/reference/android/support/design/package-summary.html
-Lcom/immersion/hapticmediasdk,Immersion TouchSense SDK,Development Aid,https://www.immersion.com/products-services/software-development-kit-for-mobile-games/
-Lcom/applovin,Applovin,Advertisement,https://www.applovin.com/
-Lcom/amazon/device/ads,Amazon Advertisement,Advertisement,https://developer.amazon.com/public/apis/earn/mobile-ads/docs/quick-start
-Lcom/amazon/device,no,no,no
-Lcom/amazon,no,no,no
-Lcom/amazon/device/associates,Amazon Mobile Associates,Advertisement,https://developer.amazon.com/mobile-associates
-Lcom/amazon/device/iap,Amazon In-App Purchasing,Payment,https://developer.amazon.com/public/apis/earn/in-app-purchasing
 Landroid/support/v4,Android Support v4,Development Aid,http://developer.android.com/reference/android/support/v4/app/package-summary.html
 Landroid/support/v7,Android Support v7,Development Aid,https://developer.android.com/reference/android/support/v7/app/package-summary.html
 Lorg/apache/http,Apache Http,Development Aid,https://hc.apache.org/
@@ -341,6 +291,40 @@ Lxamarin,Xamarin,Development Aid,https://xamarin.com/
 Lcom/daimajia/androidanimations,AndroidAnimations Library,Development Aid,https://github.com/daimajia/AndroidViewAnimations
 Lorg/tukaani/xz,XZ For Java,Development Aid,http://tukaani.org/xz/java.html
 Lopentk,The Open Toolkit Library,Development Aid,http://www.opentk.com/
+Lcom/google/android,no,no,no
+Lcom/google,no,no,no
+Landroid/support,Android Support,Development Aid,https://developer.android.com/reference/android/package-summary.html
+Landroid,no,no,no
+Lcom/appodeal/ads,Appodeal Ads,Advertisement,https://www.appodeal.com
+Lcom/appodeal,no,no,no
+Lcom/flurry/sdk,Flurry SDK,Mobile Analytics,https://developer.yahoo.com
+Lcom/android,no,no,no
+Lcom/heyzap,Heyzap,Development Aid,https://www.heyzap.com
+Landroid/support/multidex,Multidex,Development Aid,https://developer.android.com/studio/build/multidex.html
+Lcom/adobe,no,no,no
+Lcom/flurry/org,Flurry,Mobile Analytics,https://flurry.com
+Lcom/my/target/core,no,no,no
+Lcom/everyplay,Everyplay,Game Engine,https://everyplay.com/
+Lcom/unity3d/ads,Unity3d Ads,Advertisement,https://unity3d.com/cn/services/ads
+Lcom/google/android/exoplayer,ExoPlayer,Development Aid,https://github.com/google/ExoPlayer
+Lcom/google/android/youtube/player,YouTube Android Player API,Development Aid,https://developers.google.com/youtube/android/player/
+Lcom/google/android/youtube,no,no,no
+Lcom/tapjoy,Tapjoy,Advertisement,https://home.tapjoy.com/
+Lcom/vungle,Vungle,Advertisement,https://vungle.com
+Lorg,no,no,no
+Lu/aly,Umeng Analysis,Mobile Analytics,https://www.umeng.com/
+Lu,no,no,no
+Lcom/google/tagmanager,Google Tag Manager,Mobile Analytics,https://www.google.com/analytics/tag-manager/
+Lcom/jirbo/adcolony,Jirbo,Development Aid,http://www.jirbo.com/
+Lcom/jirbo,no,no,no
+Lorg/springframework,Spring Framework,Development Aid,https://projects.spring.io/spring-framework/
+Landroid/support/design,Android Support Design,Development Aid,https://developer.android.com/reference/android/support/design/package-summary.html
+Lcom/immersion/hapticmediasdk,Immersion TouchSense SDK,Development Aid,https://www.immersion.com/products-services/software-development-kit-for-mobile-games/
+Lcom/amazon/device/ads,Amazon Advertisement,Advertisement,https://developer.amazon.com/public/apis/earn/mobile-ads/docs/quick-start
+Lcom/amazon/device,no,no,no
+Lcom/amazon,no,no,no
+Lcom/amazon/device/associates,Amazon Mobile Associates,Advertisement,https://developer.amazon.com/mobile-associates
+Lcom/amazon/device/iap,Amazon In-App Purchasing,Payment,https://developer.amazon.com/public/apis/earn/in-app-purchasing
 Lcom/flurry,no,no,no
 Lcom/amazon/identity/auth,Amazon Auth SDK,Development Aid,https://developer.amazon.com/public/apis/engage/login-with-amazon/docs/use_sdk_android.html
 Lcom/amazon/identity,no,no,no

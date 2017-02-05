@@ -170,6 +170,8 @@ class LibRadar(object):
         self.tree.match()
         # Step 5: traverse the tree, find out all the libraries.
         self.tree.get_lib()
+        # Step 6: traverse the tree, find potential libraries that has not been tagged.
+        self.tree.find_untagged()
 
 
 if __name__ == '__main__':

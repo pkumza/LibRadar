@@ -241,6 +241,32 @@ class Tree(object):
         self.pre_order(visit=self._match)
 
     @staticmethod
+    def _find_untagged(node):
+        # If there's already some matches here, do not search its children. non-sense.
+        if len(node.match) != 0:
+            return -1
+        a = db_un_ob_pn.get(node.md5)
+        c = db_feature_count.get(node.md5)
+        u = db_un_ob_pn_count.get(node.md5)
+        # If the package name is already in no_lib list, ignore it and search its children.
+        for non_lib in no_lib:
+            if non_lib[0] == a:
+                return 1
+        # Potential Name is not convincing enough. search its children
+        if u < 100 or float(u) / float(c) < 0.5 or node.weight < 50 or int(c) < 20:
+            return 2
+        print("----")
+        print("Package: %s" % node.pn)
+        print("Match Package: %s" % u)
+        print("Library: Unknown.")
+        print("Popularity: %s" % c)
+        print("API count: %s" % node.weight)
+
+    def find_untagged(self):
+        self.pre_order(visit=self._find_untagged)
+        print("==========================")
+
+    @staticmethod
     def _get_lib(node):
         for matc in node.match:
             print("----")
