@@ -2,15 +2,57 @@
 
 ## How to use LibRadar
 
-1. Download code from [Github:LibRadar](http://github.com/pkumza/LibRadar)
-1. Install Redis
-1. Run redis database
-1. Run LibRadar/libradar.py script.
+1. Install dependencies. build-essential, python2, pip, git, redis, vim, pypy, pypy-pip
+  - Install redis
+  ```bash
+    wget http://download.redis.io/releases/redis-3.2.7.tar.gz
+	tar xzf redis-3.2.7.tar.gz
+	cd redis-3.2.7
+	make
+	apt-get install tcl
+	make test
+	make install
+	ln src/redis-server /usr/bin/
+  ```
+
+1. Install modules
+ - python-redis
+  ```
+    $pip install redis
+  ```
+
+1. Download code
+
+ - Github
+   ```bash
+   $git clone https://github.com/pkumza/LibRadar
+   ```
+
+ - Pypi
+   ```bash
+   $pip install libradar
+   ```
+
+1. Download LibRadarData.rdb and run redis-server
+  https://github.com/pkumza/LibRadar/blob/LR_DataSet_1/Data/IntermediateData/LibRadarData.rdb
+
+  ```bash
+  cd LibRadar
+  vim tool/redis.conf.
+  (find "dir /Users/marchon/Projects/Databases" and change it into your LibRadarData.rdb path.)
+
+  redis-server tool/redis.conf &
+  ```
+1. Use LibRadar to detect libraries.
+
+  ```bash
+  pypy LibRadar/libradar.py someapp.apk
+  ```
 
 # Example
 
 ```bash
-$ pypy LibRadar/libradar.py /Users/marchon/Downloads/ArticleNews.apk
+$ python LibRadar/libradar.py /Users/marchon/Downloads/ArticleNews.apk
 
 ===== RESULT: ============
 ----

@@ -13,23 +13,16 @@
 
 
 
-# TODO: Step 1 jar 反编译，得到api dict [tech: jad]
-# TODO: Step 2 hash feature Tree [tech: md5]
-# TODO: Step 3 [tech: Redis]
-# TODO: Step 3.1 [tech: 众数机制]
-# TODO: Step 3.2 [tech: 分布式、并行]
-# TODO: Step 3.3 Redis 导出
-# TODO: Step 4 Detector
-# TODO: Step 5 online [tech: node.js]
+# Step 1 jar 反编译，得到api dict [tech: jad]
+# Step 2 hash feature Tree [tech: md5]
+# Step 3 [tech: Redis]
+# Step 3.1 [tech: 众数机制]
+# Step 3.2 [tech: 分布式、并行]
+# Step 3.3 Redis 导出
+# Step 4 Detector
+# Step 5 online [tech: node.js]
 
 # -*- coding: utf-8 -*-
 
-__version__ = '2.0.1-dev'
-__author__ = 'Zachary M (马子昂)'
-
-# TODO: delete these lines after all the functions being implemented.
-
-print '=' * 75
-print "Thank you for your support. LibRadar(Version2) is still under construction."
-print "                                             -- " + __author__
-print '=' * 75
+__version__ = '2.0b2'
+__author__ = 'Zachary Marv (马子昂)'

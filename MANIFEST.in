@@ -1,2 +1,6 @@
 include MANIFEST.in
 include README.md
+include Data/IntermediateData/invokeFormat.txt
+include Data/IntermediateData/tag_rules.csv
+include docs/QuickStart.md
+include docs/PyPI_Index.rst
