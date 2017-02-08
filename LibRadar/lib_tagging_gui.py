@@ -1,26 +1,40 @@
 # -*- coding: utf-8 -*-
-"""
-    Library tagger GUI
 
-    When tagging libraries using this script, you could refer to
-    https://raw.githubusercontent.com/pkumza/LibRadar/v1.4.0/data/tgst5.dat and
-    https://github.com/pkumza/LibRadar/blob/dev/extract/step2.py
+#   Copyright 2017 Zachary Marv (马子昂)
+#
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
 
-    Introduction:
-        This script is not used for tagging libraries actually, It gives you some untagged libraries and you could set a
-        rule for tagging.
-        As there would be so many packages and so many libraries, it not possible to tag them one by one.
-        There could be many versions of libraries, so there's some repeat work.
 
-        We presume that more than half package names of a library is un-obfuscated, in this case, we could know the true
-        package name but we could not get the real library name, the website, type, or the other information.
+#   Library tagger GUI
+#
+#   When tagging libraries using this script, you could refer to
+#   https://raw.githubusercontent.com/pkumza/LibRadar/v1.4.0/data/tgst5.dat and
+#   https://github.com/pkumza/LibRadar/blob/dev/extract/step2.py
+#
+#   Introduction:
+#       This script is not used for tagging libraries actually, It gives you some untagged libraries and you could set a
+#       rule for tagging.
+#       As there would be so many packages and so many libraries, it not possible to tag them one by one.
+#       There could be many versions of libraries, so there's some repeat work.
+#
+#       We presume that more than half package names of a library is un-obfuscated, in this case, we could know the true
+#       package name but we could not get the real library name, the website, type, or the other information.
+#
+#       tag_rules.csv is a projection from un-obfuscated package name to its detailed information.
+#
+#   Usage:
+#       Run this script or just modify Data/IntermediateData/tag_rules.csv
 
-        tag_rules.csv is a projection from un-obfuscated package name to its detailed information.
-
-    Usage:
-        Run this script or just modify Data/IntermediateData/tag_rules.csv
-
-"""
 
 import lib_tagging
 import csv
@@ -56,8 +70,8 @@ class TaggerGui(Frame):
 
     def create_f1_welcome(self):
         self.hello_label = Label(self,
-                                 text='\nHello!\nThis is LibRadar Tagging System.\nVersion: 2.0.1.dev1\n'
-                                      'Author:  Zachary Ma')
+                                 text='\nHello!\nThis is LibRadar Tagging System.\n'
+                                      'Author:  Zachary Marv')
         self.hello_label.pack(side=TOP)
         self.next_button = Button(self, text="Next", command=self.destroy_f1)
         self.next_button.pack()

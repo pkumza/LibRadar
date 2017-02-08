@@ -1,76 +1,90 @@
 # -*- coding: utf-8 -*-
-"""
-    DEX Extractor
 
-    This script is used to extract features and other information from DEX files.
-    :copyright: (c) 2016 by Zachary Ma
-    : Project: LibRadar
+#   Copyright 2017 Zachary Marv (马子昂)
+#
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
 
-    Target:
-        Get a dex file
-        Generate features from the dex file.
-        Get the features of classes and packages.
 
-    Implementation:
-        Firstly, get class defines from dex file.
-        For each class, we could generate it's APIs and so as the MD5 feature.
-        As the class definition contains the path, so we could construct a tree for the classes.
+#   DEX Extractor
+#
+#   This script is used to extract features and other information from DEX files.
+#   :copyright: (c) 2016 by Zachary Ma
+#   : Project: LibRadar
+#
+#   Target:
+#       Get a dex file
+#       Generate features from the dex file.
+#       Get the features of classes and packages.
+#
+#   Implementation:
+#       Firstly, get class defines from dex file.
+#       For each class, we could generate it's APIs and so as the MD5 feature.
+#       As the class definition contains the path, so we could construct a tree for the classes.
+#
+#       e.g.
+#
+#                     root
+#                     /   \
+#               android   com
+#                 /       /  \
+#             support  google facebook
+#               /       /   \      \
+#              v4     gson  ads    c.class
+#              |       |      \
+#            media   e.class  purchase
+#            /    \              |
+#        a.class  b.class       d.class
+#
+#       For every package, we generate features based on it's child.
+#       for example, the feature of /android/support/v4/media is based on a.class and b.class.
+#       If we need to generate features of all packages, we could construct a tree for them.
+#       To minimize the complexity, and avoid constructing the tree, I sorted the class defines first.
+#
+#       android/support/v4/media/a
+#       android/support/v4/media/b
+#       com/facebook/c
+#       com/google/ads/purchase/d
+#       com/google/gson/e
+#
+#       It's like an in-order traversal for this tree:
+#
+#       Create a stack for this. (Type: PackageNode)
+#       Scan android/support/v4/media/a and put 'android', 'support', 'v4', 'media' into the stack.
+#       Get the feature of a.class
+#       Update media's feature
+#       Get the feature of b.class
+#       Update media's feature
+#       Get the feature of c.class
+#       Pop media and put the feature into db
+#       Update and pop v4      and put the feature into db
+#       Update and pop support and put the feature into db
+#       Update and pop android and put the feature into db
+#       Push com
+#       Push facebook
+#       Update facebook with c.class
+#       Pop facebook
+#       Push google
+#       Push ads
+#       Push purchase
+#       Update Purchase's feature with d
+#       Pop Purchase
+#       Pop ads
+#       Push gson
+#       Update gson with e
+#       Pop gson
+#       Update and pop google
+#       Update and pop com
 
-        e.g.
-
-                        root
-                        /   \
-                  android   com
-                    /       /  \
-                support  google facebook
-                  /       /   \      \
-                 v4     gson  ads    c.class
-                 |       |      \
-               media   e.class  purchase
-               /    \              |
-           a.class  b.class       d.class
-
-        For every package, we generate features based on it's child.
-        for example, the feature of /android/support/v4/media is based on a.class and b.class.
-        If we need to generate features of all packages, we could construct a tree for them.
-        To minimize the complexity, and avoid constructing the tree, I sorted the class defines first.
-
-        android/support/v4/media/a
-        android/support/v4/media/b
-        com/facebook/c
-        com/google/ads/purchase/d
-        com/google/gson/e
-
-        It's like an in-order traversal for this tree:
-
-        Create a stack for this. (Type: PackageNode)
-        Scan android/support/v4/media/a and put 'android', 'support', 'v4', 'media' into the stack.
-        Get the feature of a.class
-        Update media's feature
-        Get the feature of b.class
-        Update media's feature
-        Get the feature of c.class
-        Pop media and put the feature into db
-        Update and pop v4      and put the feature into db
-        Update and pop support and put the feature into db
-        Update and pop android and put the feature into db
-        Push com
-        Push facebook
-        Update facebook with c.class
-        Pop facebook
-        Push google
-        Push ads
-        Push purchase
-        Update Purchase's feature with d
-        Pop Purchase
-        Pop ads
-        Push gson
-        Update gson with e
-        Pop gson
-        Update and pop google
-        Update and pop com
-
-"""
 
 import os.path
 import hashlib

@@ -1,44 +1,56 @@
 # -*- coding: utf-8 -*-
-"""
-    API_Dict.py
 
-    WARNING!!! Could be run under Mac OS only.
+#   Copyright 2017 Zachary Marv (马子昂)
+#
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
 
-    You don't need to run this again!!! Just use Data/IntermediateData/invokeFormat.txt
+#   API_Dict.py
+#
+#   WARNING!!! Could be run under Mac OS only.
+#
+#   You don't need to run this again!!! Just use Data/IntermediateData/invokeFormat.txt
+#
+#   This is the first step for data collection. However, jad is out of data and it could only been easily used on Mac.
+#   What's more, running this script need to download all the versions of Android SDK.
+#   So, if you do not want to learn about the principle, just ignore this script.
+#
+#   Firstly, get android.jar in Android SDK folder.
+#   Rename them and place them into Data/RawData folder.
+#   Glob module will automatically detect them and decompile them.
+#   In this case, we could extract all the APIs.
+#   Finally, some non-sense API should be removed.
+#
+#   Non-sense API:
+#       As an example, a package named Lcom/degoo/android/fbmassage is not a library, which belongs to an app named
+#       "Princess Full Body Massage APK". This package contains no API other than 15 "Ljava/lang/Object;-><init>()"
+#       It is very likely that another packages share the same feature.
+#
+#       In my database of 4600 apps, There're already 140 packages shares the same feature. That's definitely wrong!
+#       (MD5: 5019771e5f8ce4bc333b504a3a6bc4a6)
+#
+#   Implementation:
+#       ApiDictionaryGenerator.ignore_list
+#
+#   Warning: Working Directory should be LibRadar other than LibRadar/LibRadar
 
-    This is the first step for data collection. However, jad is out of data and it could only been easily used on Mac.
-    What's more, running this script need to download all the versions of Android SDK.
-    So, if you do not want to learn about the principle, just ignore this script.
+#   Take API Level 16,18,19,21,22,23,24,25 in account, We could found 34299 APIs without overloading
+#   Ignore 1761 APIs
+#   2016/12/30
 
-    Firstly, get android.jar in Android SDK folder.
-    Rename them and place them into Data/RawData folder.
-    Glob module will automatically detect them and decompile them.
-    In this case, we could extract all the APIs.
-    Finally, some non-sense API should be removed.
-
-    Non-sense API:
-        As an example, a package named Lcom/degoo/android/fbmassage is not a library, which belongs to an app named
-        "Princess Full Body Massage APK". This package contains no API other than 15 "Ljava/lang/Object;-><init>()"
-        It is very likely that another packages share the same feature.
-
-        In my database of 4600 apps, There're already 140 packages shares the same feature. That's definitely wrong!
-        (MD5: 5019771e5f8ce4bc333b504a3a6bc4a6)
-
-    Implementation:
-        ApiDictionaryGenerator.ignore_list
-
-    Warning: Working Directory should be LibRadar other than LibRadar/LibRadar
-
-    # Take API Level 16,18,19,21,22,23,24,25 in account, We could found 34299 APIs without overloading
-    # Ignore 1761 APIs
-    # 2016/12/30
-
-    # Take API Level 7,8,9,...,25 in account, we could found 34683 APIs without overloading.
-    # (From Android 2.1 to newest Android 7.1.1)
-    # Ignore 1775 APIs
-    # 2017/01/10
-
-"""
+#   Take API Level 7,8,9,...,25 in account, we could found 34683 APIs without overloading.
+#   (From Android 2.1 to newest Android 7.1.1)
+#   Ignore 1775 APIs
+#   2017/01/10
 
 import os.path
 import commands

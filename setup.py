@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 from setuptools import setup
 
@@ -6,19 +7,21 @@ from setuptools import setup
 # README file and 2) it's easier to type in the README file than to put a raw
 # string in below ...
 
+import LibRadar
 
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
+def read(f_name):
+    return open(os.path.join(os.path.dirname(__file__), f_name)).read()
 
 setup(
-    name="LibRadar",
-    version="2.0b2",
-    author="Zachary Marv",
-    author_email="maziang@pku.edu.cn",
-    description="LibRadar is a tool for Android library detection.",
-    license="BSD",
+    name=LibRadar.__title__,
+    version=LibRadar.__version__,
+    author=LibRadar.__author__,
+    author_email=LibRadar.__email__,
+    description=LibRadar.__summary__,
+    license=LibRadar.__license__,
     keywords="Android Third-party Library",
-    url="http://radar.pkuos.org/",
+    url=LibRadar.__uri__,
     packages=['LibRadar'],
     long_description=read('docs/PyPI_Index.rst'),
     requires=['redis'],
@@ -30,6 +33,6 @@ setup(
         "Operating System :: POSIX :: Linux",
         "Topic :: Security",
         "Topic :: Utilities",
-        "License :: OSI Approved :: BSD License",
+        "License :: OSI Approved :: Apache Software License"
     ],
 )

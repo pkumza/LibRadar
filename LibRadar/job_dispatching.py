@@ -1,9 +1,33 @@
 # -*- coding: utf-8 -*-
-"""
-    dispatcher
-        Android Package Extractor Dispatcher
-    This script is a dispatcher for scheduling.
-"""
+
+#   Copyright 2017 Zachary Marv (马子昂)
+#
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+
+#   dispatcher
+#       Android Package Extractor Dispatcher
+#   This script is a dispatcher for scheduling.
+
+
+# Step 1 jar 反编译，得到api dict [tech: jad]
+# Step 2 hash feature Tree [tech: md5]
+# Step 3 [tech: Redis]
+# Step 3.1 [tech: 众数机制]
+# Step 3.2 [tech: 分布式、并行]
+# Step 3.3 Redis 导出
+# Step 4 Detector
+# Step 5 online [tech: node.js]
 
 from multiprocessing import Pool
 import multiprocessing

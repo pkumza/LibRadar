@@ -1,11 +1,25 @@
 # -*- coding: utf-8 -*-
-"""
-    LibRadar settings.py
 
-    Settings about python scripts in LibRadar folder.
-    All the scripts in LibRadar need import this file.
+#   Copyright 2017 Zachary Marv (马子昂)
+#
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
 
-"""
+#   LibRadar settings.py
+
+#   Settings about python scripts in LibRadar folder.
+#   All the scripts in LibRadar need import this file.
+
+
 
 import os
 import logging.config
@@ -15,7 +29,7 @@ import logging.config
         0 : Clean nothing
         1 : Clean res files
         2 : Clean smali files
-        3 : Clean everything, including AndroidManifest.xml & apktool.yml
+        3 : Clean everything
 """
 CLEAN_WORKSPACE = 0
 
@@ -57,10 +71,10 @@ CLEAN_WORKSPACE = 0
             Key: APK file MD5
             Value: App's package name
                 e.g. 6cc6e58b9229a05f35ae34d05da9f688 -> com.Viserl.FunLiveWallpaper
-        9 : Tag
+        @deprecated 9 : Tag
             Key: Hash (MD5) of a package
             Value: Tag
-        10: Rule
+        @deprecated 10: Rule
             Key: prefix of library package name
             Value: Library Name; Library Type; Official Website
 """

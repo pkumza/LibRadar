@@ -1,10 +1,24 @@
 # -*- coding: utf-8 -*-
-"""
-    Library tagger
 
-    This script should be an interact-able script.
+#   Copyright 2017 Zachary Marv (马子昂)
+#
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
 
-"""
+#   Library tagger
+#
+#   This script should be an interact-able script.
+
+
 
 import redis
 import csv
@@ -106,12 +120,11 @@ class Tagger:
             What's more, the un_ob_package_name could change during times.
         :return:
         """
-        cnt = 0 # tag count
-        ign = 0 # ignore
+        cnt = 0  # tag count
+        ign = 0  # ignore
         for key in self.db_feature_count.keys():
             if self.db_tag.get(key) is None:
                 potential_package_name = self.db_un_ob_pn.get(key)
-                flag = False
                 while True:
                     if potential_package_name == "":
                         ign += 1
@@ -132,7 +145,8 @@ class TaggerCli:
         self._tag()
         # self._apply_rules()
 
-    def _print_title(self):
+    @staticmethod
+    def _print_title():
         print("|---- LibRadar Tagging System -----|")
         print("|      Version: 2.0.1.dev1         |")
         print("|      Author:  Zachary Ma         |")
@@ -248,8 +262,3 @@ class TaggerCli:
             if ipt_know != 'Y' and ipt_know != 'y':
                 print("Sorry? I don't know what you mean.")
                 continue
-
-
-if __name__ == "__main__":
-    tc = TaggerCli()
-    pass
