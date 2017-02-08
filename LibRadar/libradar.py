@@ -47,7 +47,7 @@ class LibRadar(object):
             Use redis database to exam whether a call is an Android API consumes 27% running time.
             I think it should be replaced by a hash table as the API list could not be modified during the progress.
         """
-        invoke_file = open("./Data/IntermediateData/invokeFormat.txt", 'r')
+        invoke_file = open(SCRIPT_PATH +"/Data/IntermediateData/invokeFormat.txt", 'r')
         self.invokes = set()
         for line in invoke_file:
             self.invokes.add(line[:-1])
@@ -72,7 +72,7 @@ class LibRadar(object):
         # Unzip
         zf = zipfile.ZipFile(self.apk_path, mode='r')
         # Transfer the unzipped dex file name to self.dex_name
-        self.dex_name = zf.extract("classes.dex", "Data/Decompiled/%s" % self.hex_md5)
+        self.dex_name = zf.extract("classes.dex", SCRIPT_PATH + "/Data/Decompiled/%s" % self.hex_md5)
         return self.dex_name
 
     def get_md5(self):

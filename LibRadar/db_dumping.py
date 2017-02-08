@@ -27,7 +27,7 @@ def dump_database():
     db_feature_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_COUNT)
     db_feature_weight = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_WEIGHT)
     db_un_ob_pn = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN)
-    dump_file = open("Data/IntermediateData/db_dump.csv", "w")
+    dump_file = open(SCRIPT_PATH + "/Data/IntermediateData/db_dump.csv", "w")
     # Run once, so do not care the complexity.
     for key in db_feature_count.keys():
         count = db_feature_count.get(key)

@@ -311,7 +311,7 @@ class DexExtractor:
             Use redis database to exam whether a call is an Android API consumes 27% running time.
             I think it should be replaced by a hash table as the API list could not be modified during the progress.
         """
-        invoke_file = open("./Data/IntermediateData/invokeFormat.txt", 'r')
+        invoke_file = open(SCRIPT_PATH + "/Data/IntermediateData/invokeFormat.txt", 'r')
         self.invokes = set()
         for line in invoke_file:
             self.invokes.add(line[:-1])
@@ -422,7 +422,7 @@ class DexExtractor:
 if __name__ == "__main__":
     # A test for dex extractor here.
     logger.critical(" ------------------------- START ------------------------- ")
-    de = DexExtractor("./Data/IntermediateData/air/classes.dex")
+    de = DexExtractor(SCRIPT_PATH + "/Data/IntermediateData/air/classes.dex")
     if de.extract_dex() < 0:
         logger.error("Wrong!")
     logger.critical(" -------------------------- END -------------------------- ")

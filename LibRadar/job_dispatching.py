@@ -81,7 +81,7 @@ class DexExtractorWrapper:
             # If the apk file is broken, it can not be unzipped.
             try:
                 zf = zipfile.ZipFile(self.app_path, mode="r")
-                dex_file_extracted = zf.extract("classes.dex", "Data/Decompiled/%s" % self.md5)
+                dex_file_extracted = zf.extract("classes.dex", SCRIPT_PATH + "/Data/Decompiled/%s" % self.md5)
             except:
                 logger.error("Process %s, not a valid Zip file." % self.p_name)
                 continue
@@ -92,7 +92,7 @@ class DexExtractorWrapper:
                 logger.critical("Process %s, extracting error!!" % self.p_name)
                 continue
             try:
-                cmd = 'rm -rf ' + "Data/Decompiled/%s" % self.md5
+                cmd = 'rm -rf ' + SCRIPT_PATH + "/Data/Decompiled/%s" % self.md5
                 os.system(cmd)
             except:
                 logger.error("Process %s, rm error" % self.p_name)
@@ -134,7 +134,7 @@ class DexExtractorDispatcher:
 
     @staticmethod
     def clear_decompiled():
-        cmd = 'rm -rf Data/Decompiled'
+        cmd = 'rm -rf ' + SCRIPT_PATH + '/Data/Decompiled'
         os.system(cmd)
 
     def execute(self):

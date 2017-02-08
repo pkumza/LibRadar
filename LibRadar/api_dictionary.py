@@ -103,7 +103,7 @@ class ApiDictionaryGenerator(Singleton):
         # ## self.api_set = set()
         # ## self.txt_output_api = open("./Data/IntermediateData/api.txt", 'w')
         self.api_simplified_set = set()
-        self.txt_invoke_format = open("./Data/IntermediateData/invokeFormat.txt", 'w')
+        self.txt_invoke_format = open(SCRIPT_PATH + "/Data/IntermediateData/invokeFormat.txt", 'w')
         self.ignore_list = [
             "Ljava/lang",
             "Ljava/util/logging",
@@ -344,5 +344,5 @@ if __name__ == "__main__":
         PS:
             There are commonly 30 thousands of APIs in one version of android.jar
     """
-    jar_file_list = glob.glob("./Data/RawData/*.jar")
+    jar_file_list = glob.glob(SCRIPT_PATH + "/Data/RawData/*.jar")
     api_dict_generator_wrapper = ApiDictionaryGeneratorWrapper(jar_file_list)

@@ -114,15 +114,17 @@ IGNORE_ZERO_API_FILES = True
 """
 Config Files
 """
-FILE_LOGGING = 'Data/logging.conf'
-FILE_RULE = 'Data/IntermediateData/tag_rules.csv'
+
+SCRIPT_PATH = os.path.split(os.path.realpath(__file__))[0]
+if not os.path.exists(SCRIPT_PATH + '/Data'):
+    os.mkdir(SCRIPT_PATH + '/Data')
+FILE_LOGGING = SCRIPT_PATH + '/Data/logging.conf'
+FILE_RULE = SCRIPT_PATH + '/Data/IntermediateData/tag_rules.csv'
 
 """
     Logs
 """
 
-if not os.path.exists("./Data"):
-    os.mkdir("./Data")
 logging.config.fileConfig(FILE_LOGGING)
 # create logger
 logger = logging.getLogger('radar')

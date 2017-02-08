@@ -21,6 +21,8 @@
 #   Ideas about this tool is written as a publisher, you could view the [PDF]
 #   (http://dl.acm.org/citation.cfm?id=2889178) here.
 
+from libradar import LibRadar
+
 __all__ = (
     "__title__", "__summary__", "__uri__", "__version__", "__author__",
     "__email__", "__license__", "__copyright__",
