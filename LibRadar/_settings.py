@@ -100,7 +100,7 @@ IGNORE_ZERO_API_FILES = True
 """
 Config Files
 """
-FILE_LOGGING = 'LibRadar/logging.conf'
+FILE_LOGGING = 'Data/logging.conf'
 FILE_RULE = 'Data/IntermediateData/tag_rules.csv'
 
 """

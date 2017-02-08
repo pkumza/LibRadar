@@ -1,10 +1,7 @@
-LData
-clean_app
-decoded
-Data/RawData
-Data/log*
-Data/Decompiled
-Data/IntermediateData
+LibRadar/Data/RawData
+LibRadar/Data/log*
+LibRadar/Data/Decompiled
+LibRadar/Data/IntermediateData
 
 
 # .idea
