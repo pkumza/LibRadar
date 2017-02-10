@@ -4,9 +4,9 @@
 
 1. Install dependencies. build-essential, python2, pip, git, redis
 
-   Recommand to use pypy, install pypy and pypy-pip to boost LibRadar
+   Recommend to use pypy, install pypy and pypy-pip to boost LibRadar
 
-  - Install redis
+  - Install redis>=3.2
   ```bash
     $ wget http://download.redis.io/releases/redis-3.2.7.tar.gz
 	$ tar xzf redis-3.2.7.tar.gz
@@ -15,15 +15,15 @@
 	$ apt-get install tcl
 	$ make test
 	$ make install
-	# If you're using Linux, ignore this 'ln' line below.
-	# If you're using Mac OS, link redis-server to make it runnable.
+	$ # If you're using Linux, ignore this 'ln' line below.
+	$ # If you're using Mac OS, link redis-server to make it runnable.
 	$ ln src/redis-server /usr/bin/
   ```
 
 1. Install modules
- - python-redis
+
   ```
-    $ pip install redis
+    $ pip install requirements.txt
   ```
 
 1. Download code
