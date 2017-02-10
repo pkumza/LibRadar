@@ -1,6 +1,7 @@
 include MANIFEST.in
 include README.md
-include Data/IntermediateData/invokeFormat.txt
-include Data/IntermediateData/tag_rules.csv
+include LibRadar/Data/IntermediateData/invokeFormat.txt
+include LibRadar/Data/IntermediateData/tag_rules.csv
 include docs/QuickStart.md
 include docs/PyPI_Index.rst
+include tool/redis.conf

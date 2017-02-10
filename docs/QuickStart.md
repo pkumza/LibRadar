@@ -2,57 +2,65 @@
 
 ## How to use LibRadar
 
-1. Install dependencies. build-essential, python2, pip, git, redis, vim, pypy, pypy-pip
+1. Install dependencies. build-essential, python2, pip, git, redis
+
+   Recommand to use pypy, install pypy and pypy-pip to boost LibRadar
+
   - Install redis
   ```bash
-    wget http://download.redis.io/releases/redis-3.2.7.tar.gz
-	tar xzf redis-3.2.7.tar.gz
-	cd redis-3.2.7
-	make
-	apt-get install tcl
-	make test
-	make install
-	ln src/redis-server /usr/bin/
+    $ wget http://download.redis.io/releases/redis-3.2.7.tar.gz
+	$ tar xzf redis-3.2.7.tar.gz
+	$ cd redis-3.2.7
+	$ make
+	$ apt-get install tcl
+	$ make test
+	$ make install
+	# If you're using Linux, ignore this 'ln' line below.
+	# If you're using Mac OS, link redis-server to make it runnable.
+	$ ln src/redis-server /usr/bin/
   ```
 
 1. Install modules
  - python-redis
   ```
-    $pip install redis
+    $ pip install redis
   ```
 
 1. Download code
 
  - Github
    ```bash
-   $git clone https://github.com/pkumza/LibRadar
+   $ git clone https://github.com/pkumza/LibRadar
    ```
 
  - Pypi
-   ```bash
-   $pip install libradar
-   ```
+
+   Download tar.gz code from https://pypi.python.org/pypi/LibRadar/ and extract the file into your work directory.
+   Do not use pip install because I didn't include data file into the code, as libradar will get error that it could not
+   find data file.
 
 1. Download LibRadarData.rdb and run redis-server
-  https://github.com/pkumza/LibRadar/blob/LR_DataSet_1/Data/IntermediateData/LibRadarData.rdb
+  https://raw.githubusercontent.com/pkumza/LibRadar/LR_DataSet_1/Data/IntermediateData/LibRadarData.rdb
 
   ```bash
-  cd LibRadar
-  vim tool/redis.conf.
+  $ wget https://raw.githubusercontent.com/pkumza/LibRadar/LR_DataSet_1/Data/IntermediateData/LibRadarData.rdb
+  $ cd LibRadar
+  $ vi tool/redis.conf.
   (find "dir /Users/marchon/Projects/Databases" and change it into your LibRadarData.rdb path.)
 
-  redis-server tool/redis.conf &
+  $ redis-server tool/redis.conf &
   ```
 1. Use LibRadar to detect libraries.
 
   ```bash
-  pypy LibRadar/libradar.py someapp.apk
+  $ python LibRadar/libradar.py someapp.apk
   ```
 
 # Example
 
 ```bash
 $ python LibRadar/libradar.py /Users/marchon/Downloads/ArticleNews.apk
+```
 
 ===== RESULT: ============
 ----
