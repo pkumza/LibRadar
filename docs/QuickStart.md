@@ -28,6 +28,12 @@
 
 1. Download code
 
+ * Github Release (Recommanded)
+ <br/>
+ Click [https://github.com/pkumza/LibRadar/releases](https://github.com/pkumza/LibRadar/releases)
+ <br/>
+ Download zip or tar.gz, then extract code from it.
+
  - Github
    ```bash
    $ git clone https://github.com/pkumza/LibRadar
@@ -60,7 +66,6 @@
 
 ```bash
 $ python LibRadar/libradar.py /Users/marchon/Downloads/ArticleNews.apk
-```
 
 ===== RESULT: ============
 ----
@@ -153,6 +158,8 @@ Similarity: 57/57
 
 ## How to develop LibRadar
 
+#### For Professional use
+
 1. Install LibRadar from [pypi](https://pypi.python.org/pypi/LibRadar) or download the code from [Github](http://github.com/pkumza/LibRadar).
 
 2. Get some dependency.
@@ -162,6 +169,6 @@ Similarity: 57/57
 
 3. Get android.jar from Android SDK and place them into $Project_HOME$/Data/RawData, Run APIDict.py
 
-4. Change the apk folder name and run AEDispatcher.py
+4. Change the apk folder name and run job_dispatching.py
 
-PS: Change variables in LRDSettings.py if you need.
+PS: Change variables in _settings.py if you need.
