@@ -4,3 +4,4 @@ include LibRadar/Data/IntermediateData/invokeFormat.txt
 include LibRadar/Data/IntermediateData/tag_rules.csv
 include docs/QuickStart.md
 include docs/PyPI_Index.rst
+include tool/redis.conf
