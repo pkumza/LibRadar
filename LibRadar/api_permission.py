@@ -23,6 +23,8 @@
 
 # Output api_permission.csv
 
+# Refer: https://developer.android.com/reference/android/Manifest.permission.html
+
 import glob
 
 def generate_permission():
