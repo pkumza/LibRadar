@@ -27,12 +27,35 @@
 
 import glob
 
+STRICT_API = True
+
 def generate_permission():
     # invokes
     invokes = dict()
     with open("Data/IntermediateData/invokeFormat.txt") as invoke_format:
         for line in invoke_format:
             invokes[line.strip()] = set()
+    # There's no change when I put old permission into account!! 2017-02-20
+    pscout_old_files = glob.glob("Data/RawData/*_allmappings.txt")
+    for old_file in pscout_old_files:
+        current_p = ""
+        with open(old_file, 'r') as pscout:
+            for line in pscout:
+                if line[0] <= '9' and line[0] >= '0':
+                    continue
+                if line[0] == 'P':
+                    permission = line[11:].strip()
+                if line[0] == '<':
+                    caller_class = line[1:line.index(':')]
+                    caller_method = line[line.index(" ") : line.index("(")]
+                    caller_method = caller_method[caller_method.rindex(" ") + 1:]
+                    invoke = "L" + caller_class + ";->" + caller_method
+                    if invoke in invokes:
+                        invokes[invoke].add(permission)
+                    else:
+                        if not STRICT_API:
+                            invokes[invoke] = set()
+                            invokes[invoke].add(permission)
     # Now we got 4.1.1 4.2.2 4.4.4 5.0.2 5.1.1 as sample
     pscout_files = glob.glob("Data/RawData/mapping_*.csv")
     for pscout_file in pscout_files:
@@ -52,13 +75,18 @@ def generate_permission():
                 if invoke in invokes:
                     invokes[invoke].add(permission)
                 else:
-                    invokes[invoke] = set()
-                    invokes[invoke].add(permission)
+                    if not STRICT_API:
+                        invokes[invoke] = set()
+                        invokes[invoke].add(permission)
     invoke_list = list()
     for invoke in invokes:
         invoke_list.append([invoke, list(invokes[invoke])])
     invoke_list.sort()
-    with open("Data/IntermediateData/api.csv", "w") as api_file:
+    if STRICT_API:
+        api_csv_filename = "Data/IntermediateData/strict_api.csv"
+    else:
+        api_csv_filename = "Data/IntermediateData/api.csv"
+    with open(api_csv_filename, "w") as api_file:
         for invoke in invoke_list:
             api_file.write(invoke[0] + ",")
             for permi in invoke[1]:
