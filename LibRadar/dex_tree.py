@@ -65,8 +65,12 @@ class TreeNode(object):
         self.parent = n_parent
         self.children = dict()
         self.match = list()
+        self.permissions = set()
 
-    def insert(self, package_name, weight, md5):
+    def insert(self, package_name, weight, md5, permission_list):
+        # no matter how deep the package is, add permissions here.
+        for permission in permission_list:
+            self.permissions.add(permission)
         current_depth = 0 if self.pn == "" else self.pn.count('/') + 1
         target_depth = package_name.count('/') + 1
         if current_depth == target_depth:
@@ -75,10 +79,10 @@ class TreeNode(object):
         target_package_name = '/'.join(package_name.split('/')[:current_depth + 1])
         if target_package_name in self.children:
             self.children[target_package_name].weight += weight
-            return self.children[target_package_name].insert(package_name, weight, md5)
+            return self.children[target_package_name].insert(package_name, weight, md5, permission_list)
         else:
             self.children[target_package_name] = TreeNode(n_weight=weight, n_pn=target_package_name, n_parent=self)
-            return self.children[target_package_name].insert(package_name, weight, md5)
+            return self.children[target_package_name].insert(package_name, weight, md5, permission_list)
 
 
 class Tree(object):
@@ -88,8 +92,8 @@ class Tree(object):
     def __init__(self):
         self.root = TreeNode()
 
-    def insert(self, package_name, weight, md5):
-        self.root.insert(package_name, weight, md5)
+    def insert(self, package_name, weight, md5, permission_list):
+        self.root.insert(package_name, weight, md5, permission_list)
 
     def pre_order(self, visit):
         self._pre_order(self.root, visit)
