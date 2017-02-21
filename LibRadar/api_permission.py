@@ -34,7 +34,15 @@ def generate_permission():
     invokes = dict()
     with open("Data/IntermediateData/invokeFormat.txt") as invoke_format:
         for line in invoke_format:
-            invokes[line.strip()] = set()
+            caller_method = line.split(";->")[1]
+            # Some wrong invoke do not have any characters.
+            flag = False
+            for character in caller_method:
+                if character >= 'a' and character <= 'z' or character >= 'A' and character <= 'Z':
+                    flag = True
+                    break
+            if flag:
+                invokes[line.strip()] = set()
     # There's no change when I put old permission into account!! 2017-02-20
     pscout_old_files = glob.glob("Data/RawData/*_allmappings.txt")
     for old_file in pscout_old_files:
@@ -80,7 +88,7 @@ def generate_permission():
                         invokes[invoke].add(permission)
     invoke_list = list()
     for invoke in invokes:
-        invoke_list.append([invoke, list(invokes[invoke])])
+        invoke_list.append([invoke, sorted(list(invokes[invoke]))])
     invoke_list.sort()
     if STRICT_API:
         api_csv_filename = "Data/IntermediateData/strict_api.csv"
