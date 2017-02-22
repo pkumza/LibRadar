@@ -47,10 +47,23 @@ class LibRadar(object):
             Use redis database to exam whether a call is an Android API consumes 27% running time.
             I think it should be replaced by a hash table as the API list could not be modified during the progress.
         """
+        self.k_api_v_permission = dict()
+        with open(SCRIPT_PATH + "/Data/IntermediateData/strict_api.csv", 'r') as api_and_permission:
+            for line in api_and_permission:
+                api, permission_with_colon = line.split(",")
+                permissions = permission_with_colon[:-2].split(":")
+                # delete the last empty one
+                permission_list = list()
+                for permission in permissions:
+                    if permission != "":
+                        permission_list.append(permission)
+                self.k_api_v_permission[api] = permission_list
+        """
         invoke_file = open(SCRIPT_PATH +"/Data/IntermediateData/invokeFormat.txt", 'r')
         self.invokes = set()
         for line in invoke_file:
             self.invokes.add(line[:-1])
+        """
 
     def __del__(self):
         # Delete dex file
@@ -91,7 +104,7 @@ class LibRadar(object):
         logger.debug("APK %s's MD5 is %s" % (self.apk_path, file_md5_value))
         return file_md5_value
 
-    def get_api_list(self, dex_method, api_list):
+    def get_api_list(self, dex_method, api_list, permission_list):
         if dex_method.dexCode is None:
             return
         offset = 0
@@ -109,8 +122,10 @@ class LibRadar(object):
                 break
             # 4 invokes from 0x6e to 0x72
             if 0x6e <= op_code <= 0x72:
-                if decoded_instruction.getApi in self.invokes:
+                if decoded_instruction.getApi in self.k_api_v_permission:
                     api_list.append(decoded_instruction.getApi)
+                    for permission in self.k_api_v_permission[decoded_instruction.getApi]:
+                        permission_list.add(permission)
         return
 
     def extract_class(self, dex_class_def_obj):
@@ -118,18 +133,19 @@ class LibRadar(object):
         # API List
         #   a list for basestring
         api_list = list()
+        permission_list = set()
         # direct methods
         last_method_index = 0
         for k in range(len(dex_class_def_obj.directMethods)):
             current_method_index = last_method_index + dex_class_def_obj.directMethods[k].methodIdx
             last_method_index = current_method_index
-            self.get_api_list(dex_class_def_obj.directMethods[k], api_list=api_list)
+            self.get_api_list(dex_class_def_obj.directMethods[k], api_list=api_list, permission_list=permission_list)
         # virtual methods
         last_method_index = 0
         for k in range(len(dex_class_def_obj.virtualMethods)):
             current_method_index = last_method_index + dex_class_def_obj.virtualMethods[k].methodIdx
             last_method_index = current_method_index
-            self.get_api_list(dex_class_def_obj.virtualMethods[k], api_list=api_list)
+            self.get_api_list(dex_class_def_obj.virtualMethods[k], api_list=api_list, permission_list=permission_list)
         # Use sort to pass the tree construction stage.
         # In this case, we could only use a stack to create the package features.
         api_list.sort()
@@ -140,7 +156,7 @@ class LibRadar(object):
             # TODO: use database to output this.
             # logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
             #              (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
-        return len(api_list), class_md5.digest(), class_md5.hexdigest()
+        return len(api_list), class_md5.digest(), class_md5.hexdigest(), sorted(list(permission_list))
 
     def extract_dex(self):
         # Log Start
@@ -152,7 +168,7 @@ class LibRadar(object):
         # Create a Dex object
         self.dex = dex_parser.DexFile(self.dex_name)
         for dex_class_def_obj in self.dex.dexClassDefList:
-            weight, raw_md5, hex_md5 = self.extract_class(dex_class_def_obj=dex_class_def_obj)
+            weight, raw_md5, hex_md5, permission_list = self.extract_class(dex_class_def_obj=dex_class_def_obj)
             class_name = self.dex.getDexTypeId(dex_class_def_obj.classIdx)
             """
             I got many \x01 here before the class name.
@@ -166,7 +182,7 @@ class LibRadar(object):
                 class_name = class_name[l_index:]
             if IGNORE_ZERO_API_FILES and weight == 0:
                 continue
-            self.tree.insert(package_name=class_name, weight=weight, md5=raw_md5)
+            self.tree.insert(package_name=class_name, weight=weight, md5=raw_md5, permission_list=permission_list)
         return 0
 
     def analyse(self):

@@ -65,8 +65,12 @@ class TreeNode(object):
         self.parent = n_parent
         self.children = dict()
         self.match = list()
+        self.permissions = set()
 
-    def insert(self, package_name, weight, md5):
+    def insert(self, package_name, weight, md5, permission_list):
+        # no matter how deep the package is, add permissions here.
+        for permission in permission_list:
+            self.permissions.add(permission)
         current_depth = 0 if self.pn == "" else self.pn.count('/') + 1
         target_depth = package_name.count('/') + 1
         if current_depth == target_depth:
@@ -75,10 +79,10 @@ class TreeNode(object):
         target_package_name = '/'.join(package_name.split('/')[:current_depth + 1])
         if target_package_name in self.children:
             self.children[target_package_name].weight += weight
-            return self.children[target_package_name].insert(package_name, weight, md5)
+            return self.children[target_package_name].insert(package_name, weight, md5, permission_list)
         else:
             self.children[target_package_name] = TreeNode(n_weight=weight, n_pn=target_package_name, n_parent=self)
-            return self.children[target_package_name].insert(package_name, weight, md5)
+            return self.children[target_package_name].insert(package_name, weight, md5, permission_list)
 
 
 class Tree(object):
@@ -88,8 +92,8 @@ class Tree(object):
     def __init__(self):
         self.root = TreeNode()
 
-    def insert(self, package_name, weight, md5):
-        self.root.insert(package_name, weight, md5)
+    def insert(self, package_name, weight, md5, permission_list):
+        self.root.insert(package_name, weight, md5, permission_list)
 
     def pre_order(self, visit):
         self._pre_order(self.root, visit)
@@ -157,7 +161,7 @@ class Tree(object):
             # if the potential package name is the same as full lib path
             # do not search its children
             if lib[0] == a:
-                node.match.append([lib, node.weight])
+                node.match.append([lib, node.weight, int(c)])
                 continue
             # If they have the same length but not equal to each other, just continue
             if len(lib[0]) == len(a):
@@ -189,7 +193,7 @@ class Tree(object):
                         if matc[1] != cursor.weight:
                             matc[1] += node.weight
                 if not flag:
-                    cursor.match.append([lib, node.weight])
+                    cursor.match.append([lib, node.weight, c])
                 flag_not_deeper = True
                 continue
         """
@@ -290,6 +294,13 @@ class Tree(object):
             print("Type: %s" % matc[0][2])
             print("Website: %s" % matc[0][3])
             print("Similarity: %d/%d" % (matc[1], node.weight))
+            print("Popularity: %d" % matc[2])
+            permission_out = ""
+            for permission in sorted(list(node.permissions)):
+                permission_out += (permission + ",")
+            if len(permission_out) > 0:
+                permission_out = permission_out[:-1]
+            print("Permissions:" + permission_out)
         return 0
 
     def get_lib(self):
