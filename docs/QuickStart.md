@@ -15,9 +15,6 @@
 	$ apt-get install tcl
 	$ make test
 	$ make install
-	$ # If you're using Linux, ignore this 'ln' line below.
-	$ # If you're using Mac OS, link redis-server to make it runnable.
-	$ ln src/redis-server /usr/bin/
   ```
 
 1. Install modules
@@ -62,97 +59,141 @@
   $ python LibRadar/libradar.py someapp.apk
   ```
 
-# Example
+# Example (Version 2.1.1)
 
 ```bash
 $ python LibRadar/libradar.py /Users/marchon/Downloads/ArticleNews.apk
-
-===== RESULT: ============
-----
-Package: Landroid/support
-Library: Android Support
-Standard Package: Landroid/support
-Type: Development Aid
-Website: https://developer.android.com/reference/android/package-summary.html
-Similarity: 2006/5254
-----
-Package: Landroid/support/v4
-Library: Android Support v4
-Standard Package: Landroid/support/v4
-Type: Development Aid
-Website: http://developer.android.com/reference/android/support/v4/app/package-summary.html
-Similarity: 578/2529
-----
-Package: Landroid/support/v7
-Library: Android Support v7
-Standard Package: Landroid/support/v7
-Type: Development Aid
-Website: https://developer.android.com/reference/android/support/v7/app/package-summary.html
-Similarity: 1389/2686
-----
-Package: Lcom/facebook
-Library: Facebook
-Standard Package: Lcom/facebook
-Type: Social Network
-Website: https://developers.facebook.com
-Similarity: 1184/1226
-----
-Package: Lcom/google/gson
-Library: Google Gson
-Standard Package: Lcom/google/gson
-Type: Development Aid
-Website: https://github.com/google/gson
-Similarity: 409/409
-----
-Package: Lcom/ss/squareup/okhttp
-Library: OkHttp
-Standard Package: Lcom/squareup/okhttp
-Type: Development Aid
-Website: https://github.com/square/okhttp
-Similarity: 357/602
-----
-Package: Lcom/sina/weibo
-Library: Weibo
-Standard Package: Lcom/sina/weibo
-Type: Social Network
-Website: http://weibo.com/
-Similarity: 39/806
-----
-Package: Lcom/slidingmenu
-Library: SlidingMenu
-Standard Package: Lcom/slidingmenu
-Type: GUI Component
-Website: https://github.com/jfeinstein10/SlidingMenu
-Similarity: 10/210
-----
-Package: Lcom/tencent/mm
-Library: Tencent Wechat
-Standard Package: Lcom/tencent/mm
-Type: Social Network
-Website: https://open.weixin.qq.com/
-Similarity: 235/235
-----
-Package: Lcom/umeng/analytics
-Library: Umeng Analytics
-Standard Package: Lcom/umeng/analytics
-Type: Mobile Analytics
-Website: https://www.umeng.com/analytics
-Similarity: 325/325
-----
-Package: Lu/aly
-Library: Umeng Analysis
-Standard Package: Lu/aly
-Type: Mobile Analytics
-Website: https://www.umeng.com/
-Similarity: 1624/1624
-----
-Package: Lorg/apache/http
-Library: Apache Http
-Standard Package: Lorg/apache/http
-Type: Development Aid
-Website: https://hc.apache.org/
-Similarity: 57/57
-==========================
+[
+    {
+        "Library": "Android Support",
+        "Package": "Landroid/support",
+        "Permission": [
+            "android.permission.BACKUP",
+            "android.permission.BLUETOOTH_ADMIN",
+            "android.permission.DUMP",
+            "android.permission.INTERACT_ACROSS_USERS",
+            "android.permission.INTERACT_ACROSS_USERS_FULL",
+            "android.permission.INTERNET",
+            "android.permission.WAKE_LOCK"
+        ],
+        "Popularity": "18",
+        "Match Ratio": "4/3260",
+        "Standard Package": "Landroid/support",
+        "Type": "Development Aid",
+        "Website": "https://developer.android.com/reference/android/package-summary.html"
+    },
+    {
+        "Library": "Android Support v4",
+        "Package": "Landroid/support/v4",
+        "Permission": [
+            "android.permission.BACKUP",
+            "android.permission.BLUETOOTH_ADMIN",
+            "android.permission.DUMP",
+            "android.permission.INTERACT_ACROSS_USERS",
+            "android.permission.INTERACT_ACROSS_USERS_FULL",
+            "android.permission.INTERNET",
+            "android.permission.WAKE_LOCK"
+        ],
+        "Popularity": "18",
+        "Match Ratio": "4/2700",
+        "Standard Package": "Landroid/support/v4",
+        "Type": "Development Aid",
+        "Website": "http://developer.android.com/reference/android/support/v4/app/package-summary.html"
+    },
+    {
+        "Library": "Google Mobile Services",
+        "Package": "Lcom/google/android/gms",
+        "Permission": [
+            "android.permission.DUMP",
+            "android.permission.INTERACT_ACROSS_USERS",
+            "android.permission.INTERACT_ACROSS_USERS_FULL"
+        ],
+        "Popularity": "15",
+        "Match Ratio": "17/227",
+        "Standard Package": "Lcom/google/android/gms",
+        "Type": "Development Aid",
+        "Website": "https://developers.google.com/android/reference/com/google/android/gms/package-summary"
+    },
+    {
+        "Library": "ZXing ('Zebra Crossing')",
+        "Package": "Lcom/google/zxing",
+        "Permission": [],
+        "Popularity": 3,
+        "Match Ratio": "3/3",
+        "Standard Package": "Lcom/google/zxing",
+        "Type": "Development Aid",
+        "Website": "https://github.com/zxing/zxing"
+    },
+    {
+        "Library": "Tencent Login",
+        "Package": "Lcom/tencent/tauth",
+        "Permission": [
+            "android.permission.DUMP",
+            "android.permission.INTERACT_ACROSS_USERS",
+            "android.permission.INTERACT_ACROSS_USERS_FULL"
+        ],
+        "Popularity": 2,
+        "Match Ratio": "20/20",
+        "Standard Package": "Lcom/tencent/tauth",
+        "Type": "Social Network",
+        "Website": "http://wiki.open.qq.com/wiki/mobile/Android_SDK"
+    },
+    {
+        "Library": "Tencent Login",
+        "Package": "Lcom/tencent/tauth",
+        "Permission": [
+            "android.permission.DUMP",
+            "android.permission.INTERACT_ACROSS_USERS",
+            "android.permission.INTERACT_ACROSS_USERS_FULL"
+        ],
+        "Popularity": "2",
+        "Match Ratio": "20/20",
+        "Standard Package": "Lcom/tencent/t",
+        "Type": "Social Network",
+        "Website": "http://t.qq.com"
+    },
+    {
+        "Library": "Tencent Login",
+        "Package": "Lcom/tencent/connect",
+        "Permission": [
+            "android.permission.DUMP",
+            "android.permission.INTERACT_ACROSS_USERS",
+            "android.permission.INTERACT_ACROSS_USERS_FULL"
+        ],
+        "Popularity": 1,
+        "Match Ratio": "53/53",
+        "Standard Package": "Lcom/tencent/connect",
+        "Type": "Social Network",
+        "Website": "https://connect.qq.com"
+    },
+    {
+        "Library": "Tencent Login",
+        "Package": "Lcom/tencent/open",
+        "Permission": [
+            "android.permission.DUMP"
+        ],
+        "Popularity": "6",
+        "Match Ratio": "4/100",
+        "Standard Package": "Lcom/tencent/open",
+        "Type": "Social Network",
+        "Website": "http://wiki.open.qq.com/wiki/mobile/Android_SDK"
+    },
+    {
+        "Library": "Weibo",
+        "Package": "Lcom/sina/weibo",
+        "Permission": [
+            "android.permission.DUMP",
+            "android.permission.INTERACT_ACROSS_USERS",
+            "android.permission.INTERACT_ACROSS_USERS_FULL",
+            "android.permission.INTERNET"
+        ],
+        "Popularity": "1",
+        "Match Ratio": "25/323",
+        "Standard Package": "Lcom/sina/weibo",
+        "Type": "Social Network",
+        "Website": "http://weibo.com/"
+    }
+]
 
 ```
 

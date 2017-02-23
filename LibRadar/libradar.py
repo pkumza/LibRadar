@@ -26,6 +26,7 @@ import dex_tree
 import dex_parser
 import hashlib
 import zipfile
+import json
 
 class LibRadar(object):
     """
@@ -198,13 +199,18 @@ class LibRadar(object):
         self.tree.cal_md5()
         # Step 4: pre-order traverse the tree, calculate every node's match degree (similarity).
         self.tree.match()
+        # Init res for step 5 & 6
+        res = list()
         # Step 5: traverse the tree, find out all the libraries.
-        self.tree.get_lib()
+        self.tree.get_lib(res)
         # Step 6: traverse the tree, find potential libraries that has not been tagged.
-        self.tree.find_untagged()
+        self.tree.find_untagged(res)
+        return res
+
 
 
 if __name__ == '__main__':
     apk_path = sys.argv[1]
     lrd = LibRadar(apk_path)
-    lrd.analyse()
+    res = lrd.analyse()
+    print json.dumps(res, indent=4, sort_keys=True)

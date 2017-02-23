@@ -95,6 +95,17 @@ class Tree(object):
     def insert(self, package_name, weight, md5, permission_list):
         self.root.insert(package_name, weight, md5, permission_list)
 
+    def pre_order_res(self, visit, res):
+        self._pre_order_res(node=self.root, visit=visit, res=res)
+
+    def _pre_order_res(self, node, visit, res):
+        ret = visit(node, res)
+        if ret < 0:
+            return
+        else:
+            for child_pn in node.children:
+                self._pre_order_res(node.children[child_pn], visit, res)
+
     def pre_order(self, visit):
         self._pre_order(self.root, visit)
 
@@ -259,7 +270,7 @@ class Tree(object):
         self.pre_order(visit=self._match)
 
     @staticmethod
-    def _find_untagged(node):
+    def _find_untagged(node, res):
         # If there's already some matches here, do not search its children. non-sense.
         if len(node.match) != 0:
             return -1
@@ -273,37 +284,60 @@ class Tree(object):
         # Potential Name is not convincing enough. search its children
         if u < 100 or float(u) / float(c) < 0.5 or node.weight < 50 or int(c) < 20:
             return 2
-        print("----")
-        print("Package: %s" % node.pn)
-        print("Match Package: %s" % u)
-        print("Library: Unknown.")
-        print("Popularity: %s" % c)
-        print("API count: %s" % node.weight)
 
-    def find_untagged(self):
-        self.pre_order(visit=self._find_untagged)
-        print("==========================")
+        # JSON support
+        utg_lib_obj = dict()            # untagged library object
+        utg_lib_obj["Package"] = node.pn
+        utg_lib_obj["Standard Package"] = u
+        utg_lib_obj["Library"] = "Unknown"
+        utg_lib_obj["Popularity"] = int(c)
+        utg_lib_obj["Weight"] = node.weight
+
+        res.append(utg_lib_obj)
+
+        # OLD Print
+        # print("----")
+        # print("Package: %s" % node.pn)
+        # print("Match Package: %s" % u)
+        # print("Library: Unknown.")
+        # print("Popularity: %s" % c)
+        # print("API count: %s" % node.weight)
+
+    def find_untagged(self, res):
+        self.pre_order_res(visit=self._find_untagged, res=res)
 
     @staticmethod
-    def _get_lib(node):
+    def _get_lib(node, res):
         for matc in node.match:
-            print("----")
-            print("Package: %s" % node.pn)
-            print("Library: %s" % matc[0][1])
-            print("Standard Package: %s" % matc[0][0])
-            print("Type: %s" % matc[0][2])
-            print("Website: %s" % matc[0][3])
-            print("Similarity: %d/%d" % (matc[1], node.weight))
-            print("Popularity: %d" % matc[2])
-            permission_out = ""
-            for permission in sorted(list(node.permissions)):
-                permission_out += (permission + ",")
-            if len(permission_out) > 0:
-                permission_out = permission_out[:-1]
-            print("Permissions:" + permission_out)
+            if float(matc[1]) / float(node.weight) < 0.1 and matc[0][0] != node.pn:
+                continue
+            # JSON
+            lib_obj = dict()
+            lib_obj["Package"] = node.pn  # cpn
+            lib_obj["Library"] = matc[0][1] # lib
+            lib_obj["Standard Package"] = matc[0][0] # pn
+            lib_obj["Type"] = matc[0][2] # tp
+            lib_obj["Website"] = matc[0][3] # ch
+            lib_obj["Match Ratio"] = "%d/%d" % (matc[1], node.weight) # no similarity in V1
+            lib_obj["Popularity"] = matc[2] # dn
+            lib_obj["Permission"] = sorted(list(node.permissions))
+            res.append(lib_obj)
+            # Old Print
+            # print("----")
+            # print("Package: %s" % node.pn)
+            # print("Library: %s" % matc[0][1])
+            # print("Standard Package: %s" % matc[0][0])
+            # print("Type: %s" % matc[0][2])
+            # print("Website: %s" % matc[0][3])
+            # print("Similarity: %d/%d" % (matc[1], node.weight))
+            # print("Popularity: %d" % matc[2])
+            # permission_out = ""
+            # for permission in sorted(list(node.permissions)):
+            #     permission_out += (permission + ",")
+            # if len(permission_out) > 0:
+            #     permission_out = permission_out[:-1]
+            # print("Permissions:" + permission_out)
         return 0
 
-    def get_lib(self):
-        print("\n===== RESULT: ============")
-        self.pre_order(visit=self._get_lib)
-        print("==========================")
+    def get_lib(self, res):
+        self.pre_order_res(visit=self._get_lib, res=res)

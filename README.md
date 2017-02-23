@@ -23,8 +23,21 @@ View [docs/QuickStart.md](https://github.com/pkumza/LibRadar/blob/master/docs/Qu
 ~~If you want an online trial, just click http://radar.pkuos.org/~~. (Still version 1 temporarily)
 
 ## Description for output
-
-Sorry, Docs not finished.
+|V2|V1|Stands for|Description|
+|---|---|---|---|
+|Library|lib|Library|Library Name|
+|Package|cpn|Current Package Name|The package name from **your given APK** that seems match this library. 'Current' means what you just uploaded.|
+|Permissions|p|Permission|The permissions that the library used. It is specified by the API it used.|
+|Popularity|dn|Repetitions|The number of the library (of just the **same version**!)|
+|Match Ratio|*Not Implemented*|Similarity|Matched Parts/Total Parts|
+|Standard Package|pn|Package Name|The package name from the database that seems matched.|
+|Type|tp|Type|The type that the library belongs to.|
+|Website|ch|Link| Link for the official SDK developer guide website. I forget why I used 'ch' at the very beginning.|
+|*Not Implemented*|bh|B\_Hash|The hash value of the package.|
+|*Not Implemented*|btc|B\_Total\_Count|The total count of API.|
+|*Not Implemented*|btn|B\_Total\_Number|The total types of API.|
+|*Not Implemented*|csp|Current Specified Package Name|The sub-package (a part of the whole package) from your given APK that finally, exactly matched with what in the database.|
+|*Not Implemented*|sp|Specified Package Name|The sub-package(a part of the whole package) that exactly matched with that in your APK.|
 
 ## Dev Environment
 
