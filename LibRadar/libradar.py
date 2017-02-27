@@ -213,4 +213,4 @@ if __name__ == '__main__':
     apk_path = sys.argv[1]
     lrd = LibRadar(apk_path)
     res = lrd.analyse()
-    print json.dumps(res, indent=4, sort_keys=True)
+    print(json.dumps(res, indent=4, sort_keys=True))
