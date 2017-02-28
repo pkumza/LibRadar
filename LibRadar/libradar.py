@@ -197,6 +197,10 @@ class LibRadar(object):
         self.extract_dex()
         # Step 3: post-order traverse the tree, calculate every package's md5 value.
         self.tree.cal_md5()
+
+
+    def compare(self):
+        self.analyse()
         # Step 4: pre-order traverse the tree, calculate every node's match degree (similarity).
         self.tree.match()
         # Init res for step 5 & 6
@@ -212,5 +216,5 @@ class LibRadar(object):
 if __name__ == '__main__':
     apk_path = sys.argv[1]
     lrd = LibRadar(apk_path)
-    res = lrd.analyse()
+    res = lrd.compare()
     print(json.dumps(res, indent=4, sort_keys=True))

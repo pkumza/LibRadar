@@ -20,21 +20,15 @@
 #   When you find an APK file has a lib, but you could not find it in my database, you could just use this script to
 #   insert it into database with force.
 
-import sys
-from _settings import *
-import dex_tree
-import dex_parser
-import hashlib
-import zipfile
-import json
 import libradar
+import sys
 
 
 class BrandLib(libradar.LibRadar):
     """
     BrandLib
     """
-    def __init__(self, apk_path, lib_package):
+    def __init__(self, apk_path, lib_package, standard_package):
         """
         Init LibRadar instance with apk_path as a basestring.
         Create a Tree for every LibRadar instance. The tree describe the architecture of the apk. Every package is a
@@ -43,35 +37,29 @@ class BrandLib(libradar.LibRadar):
         """
         libradar.LibRadar.__init__(self, apk_path)
         self.lib_package = lib_package
+        self.standard_package = standard_package
 
-    def analyse(self):
-        """
-        Main function for LibRadar Object.
-        :return: None
-        """
-        # Step 1: Unzip APK file, only extract the dex file.
-        self.unzip()
-        # Step 2: Extract Dex and insert package-level info into Tree
-        self.extract_dex()
-        # Step 3: post-order traverse the tree, calculate every package's md5 value.
-        self.tree.cal_md5()
-        # Step 4: pre-order traverse the tree, calculate every node's match degree (similarity).
-        self.tree.match()
-        # Init res for step 5 & 6
-        res = list()
-        # Step 5: traverse the tree, find out all the libraries.
-        self.tree.get_lib(res)
-        # Step 6: traverse the tree, find potential libraries that has not been tagged.
-        self.tree.find_untagged(res)
-        return res
+    def brand(self):
+        # use analyse in libradar.
+        # Do not place the same logic in two place!
+        self.analyse()
+        # brand lib
+        return self.tree.brand(self.lib_package, self.standard_package)
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
-        print("Brand_lib takes 2 parameters!")
+    if len(sys.argv) < 3 or len(sys.argv) > 4:
+        print("== Brand_lib takes 2 or 3 parameters! ==")
+        print("  Usage 1: not obfuscated package name.")
+        print("    python brand_lib.py sample.apk Lcom/google/zxing")
+        print("  Usage 2: obfuscated package name.")
+        print("    python brand_lib.py sample.apk Lcom/a/a Lcom/tencent/tauth")
         exit(1)
     apk_path = sys.argv[1]
     lib_package = sys.argv[2]
-    brand_lib = BrandLib(apk_path, lib_package)
-    res = brand_lib.analyse()
-    print(json.dumps(res, indent=4, sort_keys=True))
+    standard_package = lib_package
+    if (len(sys.argv) == 4):
+        standard_package = sys.argv[3]
+    brand_lib = BrandLib(apk_path, lib_package, standard_package)
+    res = brand_lib.brand()
+    print(res)

@@ -84,6 +84,30 @@ class TreeNode(object):
             self.children[target_package_name] = TreeNode(n_weight=weight, n_pn=target_package_name, n_parent=self)
             return self.children[target_package_name].insert(package_name, weight, md5, permission_list)
 
+    def brand(self, package_name, standard_package):
+        current_depth = 0 if self.pn == "" else self.pn.count('/') + 1
+        target_depth = package_name.count('/') + 1
+        if current_depth == target_depth:
+            yes_or_no = raw_input("Warning: Brand %s as a new library? (Y/n)" % self.pn)
+            if yes_or_no == 'Y' or yes_or_no == 'y':
+                try:
+                    db_feature_count.incr(self.md5, 10000000)
+                    db_feature_weight.set(self.md5, self.weight)
+                    db_un_ob_pn.set(self.md5, standard_package)
+                    db_un_ob_pn_count.set(self.md5, 10000000)
+                except:
+                    return "Error in database."
+                return "Success."
+            else:
+                return "Did nothing. Bye~"
+        else:
+            target_package_name = '/'.join(package_name.split('/')[:current_depth + 1])
+            if target_package_name in self.children:
+                return self.children[target_package_name].brand(package_name, standard_package)
+            else:
+                return "Package Not found in this APK."
+
+
 
 class Tree(object):
     """
@@ -94,6 +118,9 @@ class Tree(object):
 
     def insert(self, package_name, weight, md5, permission_list):
         self.root.insert(package_name, weight, md5, permission_list)
+
+    def brand(self, package_name, standard_package):
+        return self.root.brand(package_name, standard_package)
 
     def pre_order_res(self, visit, res):
         self._pre_order_res(node=self.root, visit=visit, res=res)
