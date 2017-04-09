@@ -90,6 +90,7 @@ import os.path
 import hashlib
 import redis
 import dex_parser
+import time
 from _settings import *
 
 
@@ -135,7 +136,7 @@ class PackageNode:
         # if not IGNORE_ZERO_API_FILES or len(self.md5_list) != 0:
         #    logger.debug("MD5: %s Weight: %-6d PackageName: %s" %
         #                 (curr_md5.hexdigest(), self.weight, '/'.join(self.full_path)))
-        return curr_md5.digest(), self.weight
+        return curr_md5.hexdigest(), self.weight
 
 
 class PackageNodeList:
@@ -147,14 +148,7 @@ class PackageNodeList:
     """
     def __init__(self):
         self.pn_list = list()
-        self.db_feature_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_COUNT)
-        self.db_feature_weight = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_WEIGHT)
-        self.db_un_ob_pn = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN)
-        self.db_un_ob_pn_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN_COUNT)
-        # TODO: apk md5 list didn't used.
-        # If every package contains a list of apk, it consumes a lot.
-        # It's only use for research but in fact it's no use for LibRadar the project itself.
-        self.db_apk_md5_list = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_APK_MD5_LIST)
+        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0)
 
     def flush_db(self):
         """
@@ -165,24 +159,8 @@ class PackageNodeList:
         if certain_flush != "Y":
             logger.info("Do not flush.")
             return
-        logger.warning("Flush 5 Databases")
-        self.db_feature_count.flushdb()
-        self.db_feature_weight.flushdb()
-        self.db_un_ob_pn.flushdb()
-        self.db_un_ob_pn_count.flushdb()
-        self.db_apk_md5_list.flushdb()
-
-    def flush_all(self):
-        """
-        Flush databases
-        :return: None
-        """
-        certain_flush = raw_input("You really want to flush all databases?(Y/N)")
-        if certain_flush != "Y":
-            logger.info("Do not flush.")
-            return
-        logger.warning("Flush All Databases")
-        self.db_apk_md5_list.flushall()
+        logger.warning("Flush Database")
+        self.db.flushdb()
 
     def catch_a_class_def(self, package_name, class_md5, class_weight):
         """
@@ -241,7 +219,7 @@ class PackageNodeList:
                 stage_to_be_update = self.pn_list[-2]
                 stage_to_be_update.md5_list.append(child_md5)
                 stage_to_be_update.weight += curr_weight
-            package_exist = self.db_feature_count.get(name=child_md5)
+            package_exist = self.db.hget(DB_FEATURE_CNT, child_md5)
             """
                 If there's no instance in database.
                     incr count
@@ -258,27 +236,37 @@ class PackageNodeList:
                             un ob pn = current pn
             """
             # TODO: Should use pipe and scan_iter to modify the efficiency.
-            if package_exist is None:
-                self.db_feature_count.incr(name=child_md5, amount=1)
-                self.db_feature_weight.set(name=child_md5, value=curr_weight)
-                self.db_un_ob_pn.set(name=child_md5, value='/'.join(stage_to_be_pop.full_path))
-                self.db_un_ob_pn_count.incr(name=child_md5, amount=1)
-            else:
-                self.db_feature_count.incr(name=child_md5, amount=1)
-                db_un_ob_pn = self.db_un_ob_pn.get(name=child_md5)
-                if db_un_ob_pn is None:
-                    logger.error("db_un_ob_pn should not be None here.")
-                if '/'.join(stage_to_be_pop.full_path) == db_un_ob_pn:
-                    self.db_un_ob_pn_count.incr(name=child_md5, amount=1)
+            while True:
+                res = self.db.setnx("lock_insert", "a")
+                if int(res) == 0:
+                    time.sleep(0.2)
+                    continue
+                self.db.expire("lock_insert", 2)
+                pipe = self.db.pipeline(transaction=False)
+                if package_exist is None:
+                    pipe.hincrby(name=DB_FEATURE_CNT, key=child_md5, amount=1)
+                    pipe.hset(name=DB_FEATURE_WEIGHT, key=child_md5, value=curr_weight)
+                    pipe.hset(name=DB_UN_OB_PN, key=child_md5, value='/'.join(stage_to_be_pop.full_path))
+                    pipe.hset(name=DB_UN_OB_CNT, key=child_md5, value=1)
                 else:
-                    self.db_un_ob_pn_count.decr(name=child_md5, amount=1)
-                    db_un_ob_pn_count = self.db_un_ob_pn_count.get(name=child_md5)
-                    if db_un_ob_pn_count is None:
-                        logger.error("db_un_ob_pn_count should not be None here.")
-                    if int(db_un_ob_pn_count) <= 0:
-                        self.db_un_ob_pn.set(name=child_md5, value='/'.join(stage_to_be_pop.full_path))
-                        # forget to reset the count, which caused some count appears to be negative number.
-                        self.db_un_ob_pn_count.set(name=child_md5, value=0)
+                    pipe.hincrby(name=DB_FEATURE_CNT, key=child_md5, amount=1)
+                    db_un_ob_pn = self.db.hget(name=DB_UN_OB_PN, key=child_md5)
+                    if db_un_ob_pn is None:
+                        logger.error("db_un_ob_pn should not be None here.")
+                    if '/'.join(stage_to_be_pop.full_path) == db_un_ob_pn:
+                        pipe.incr(name=DB_UN_OB_CNT, key=child_md5, amount=1)
+                    else:
+                        pipe.incr(name=DB_UN_OB_CNT, key=child_md5, amount=-1)
+                        db_un_ob_pn_count = self.db.hget(name=DB_UN_OB_PN, key=child_md5)
+                        if db_un_ob_pn_count is None:
+                            logger.error("db_un_ob_pn_count should not be None here.")
+                        if int(db_un_ob_pn_count) <= 0:
+                            pipe.hset(name=DB_UN_OB_PN, key=child_md5, value='/'.join(stage_to_be_pop.full_path))
+                            # forget to reset the count, which caused some count appears to be negative number.
+                            pipe.hset(name=DB_UN_OB_CNT, key=child_md5, value=0)
+                pipe.delete("lock_insert")
+                pipe.execute()
+
             # TODO: APK List
             self.pn_list.pop()
         # Operation 2
@@ -365,7 +353,7 @@ class DexExtractor:
             # TODO: use database to output this.
             # logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
             #              (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
-        return len(api_list), class_md5.digest(), class_md5.hexdigest()
+        return len(api_list), class_md5.hexdigest(), class_md5.hexdigest()
 
     def extract_dex(self):
         # Log Start

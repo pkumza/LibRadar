@@ -127,10 +127,6 @@ class DexExtractorDispatcher:
     """
     def __init__(self, folder_full_of_apps):
         self.folder = folder_full_of_apps
-        self.redis_db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_COUNT)
-
-    def flush_all(self):
-        self.redis_db.flushall()
 
     @staticmethod
     def clear_decompiled():
@@ -156,7 +152,6 @@ class DexExtractorDispatcher:
 
 if __name__ == "__main__":
     ded = DexExtractorDispatcher("/home/zachary/Projects/apks")
-    # ded.flush_all()
     ded.clear_decompiled()
     ded.execute()
     # q:-)

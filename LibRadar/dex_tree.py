@@ -28,10 +28,7 @@ import csv
 import redis
 
 # Databases
-db_feature_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_COUNT)
-db_feature_weight = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_WEIGHT)
-db_un_ob_pn = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN)
-db_un_ob_pn_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN_COUNT)
+db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0)
 
 # tag_rules
 labeled_libs = list()
@@ -85,16 +82,16 @@ class TreeNode(object):
             return self.children[target_package_name].insert(package_name, weight, md5, permission_list)
 
     def brand(self, package_name, standard_package):
-        current_depth = 0 if self.pn == "" else self.pn.count('/') + 1
+        current_depth = 0 if self.pn == "" elsf self.pn.count('/') + 1
         target_depth = package_name.count('/') + 1
         if current_depth == target_depth:
             yes_or_no = raw_input("Warning: Brand %s as a new library? (Y/n)" % self.pn)
             if yes_or_no == 'Y' or yes_or_no == 'y':
                 try:
-                    db_feature_count.incr(self.md5, 10000000)
-                    db_feature_weight.set(self.md5, self.weight)
-                    db_un_ob_pn.set(self.md5, standard_package)
-                    db_un_ob_pn_count.set(self.md5, 10000000)
+                    db.hincrby(name=DB_FEATURE_CNT, key=self.md5, amount=10000000)
+                    db.hset(name=DB_FEATURE_WEIGHT, key=self.md5, value=self.weight)
+                    db.hset(name=DB_UN_OB_PN, key=self.md5, value=standard_package)
+                    db.hset(name=DB_FEATURE_CNT, key=self.md5, value=100000000)
                 except:
                     return "Error in database."
                 return "Success."
@@ -165,7 +162,7 @@ class Tree(object):
         md5_list.sort()
         for md5_item in md5_list:
             cur_md5.update(md5_item)
-        node.md5 = cur_md5.digest()
+        node.md5 = cur_md5.hexdigest()
         # you could see node.pn here. e.g. Lcom/tencent/mm/sdk/modelpay
 
     def cal_md5(self):
@@ -177,9 +174,12 @@ class Tree(object):
 
     @staticmethod
     def _match(node):
-        a = db_un_ob_pn.get(node.md5)
-        c = db_feature_count.get(node.md5)
-        u = db_un_ob_pn_count.get(node.md5)
+        pipe = db.pipeline()
+        pipe.hget(name=DB_UN_OB_PN, key=node.md5)
+        pipe.hget(name=DB_FEATURE_CNT, key=node.md5)
+        pipe.hget(name=DB_UN_OB_CNT, key=node.md5)
+        pipe_res = pipe.execute()
+        a, c, u = pipe_res
         """ Debug Log
         if a is not None:
             print "----"
@@ -301,9 +301,12 @@ class Tree(object):
         # If there's already some matches here, do not search its children. non-sense.
         if len(node.match) != 0:
             return -1
-        a = db_un_ob_pn.get(node.md5)
-        c = db_feature_count.get(node.md5)
-        u = db_un_ob_pn_count.get(node.md5)
+        pipe = db.pipeline()
+        pipe.hget(name=DB_UN_OB_PN, key=node.md5)
+        pipe.hget(name=DB_FEATURE_CNT, key=node.md5)
+        pipe.hget(name=DB_UN_OB_CNT, key=node.md5)
+        pipe_res = pipe.execute()
+        a, c, u = pipe_res
         # If the package name is already in no_lib list, ignore it and search its children.
         for non_lib in no_lib:
             if non_lib[0] == a:

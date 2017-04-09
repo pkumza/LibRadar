@@ -80,17 +80,12 @@ CLEAN_WORKSPACE = 0
 """
 DB_HOST = 'localhost'
 DB_PORT = 6379
-DB_CLASS_NAME = 0
-DB_ANDROID_API = 1
-DB_API_INVOKE = 2
-DB_FEATURE_COUNT = 3
-DB_FEATURE_WEIGHT = 4
-DB_UN_OB_PN = 5
-DB_UN_OB_PN_COUNT = 6
-DB_APK_MD5_LIST = 7
-DB_MD5_TO_APK_PN = 8
-DB_TAG = 9
-DB_RULE = 10
+
+DB_FEATURE_CNT = 'feature_cnt'
+DB_FEATURE_WEIGHT = 'feature_weight'
+DB_UN_OB_PN = 'un_ob_pn'
+DB_UN_OB_CNT = 'un_ob_cnt'
+
 
 """
     running_processes
