@@ -254,10 +254,10 @@ class PackageNodeList:
                     if db_un_ob_pn is None:
                         logger.error("db_un_ob_pn should not be None here.")
                     if '/'.join(stage_to_be_pop.full_path) == db_un_ob_pn:
-                        pipe.incr(name=DB_UN_OB_CNT, key=child_md5, amount=1)
+                        pipe.hincrby(name=DB_UN_OB_CNT, key=child_md5, amount=1)
                     else:
-                        pipe.incr(name=DB_UN_OB_CNT, key=child_md5, amount=-1)
-                        db_un_ob_pn_count = self.db.hget(name=DB_UN_OB_PN, key=child_md5)
+                        pipe.hincrby(name=DB_UN_OB_CNT, key=child_md5, amount=-1)
+                        db_un_ob_pn_count = self.db.hget(name=DB_UN_OB_CNT, key=child_md5)
                         if db_un_ob_pn_count is None:
                             logger.error("db_un_ob_pn_count should not be None here.")
                         if int(db_un_ob_pn_count) <= 0:
@@ -266,6 +266,7 @@ class PackageNodeList:
                             pipe.hset(name=DB_UN_OB_CNT, key=child_md5, value=0)
                 pipe.delete("lock_insert")
                 pipe.execute()
+                break
 
             # TODO: APK List
             self.pn_list.pop()
@@ -410,7 +411,7 @@ class DexExtractor:
 if __name__ == "__main__":
     # A test for dex extractor here.
     logger.critical(" ------------------------- START ------------------------- ")
-    de = DexExtractor(SCRIPT_PATH + "/Data/IntermediateData/air/classes.dex")
+    de = DexExtractor("/home/zachary/Projects/PycharmProjects/libradar/LibRadar/Data/Decompiled/668a863c55ba5c0255b4f3b5c3de0e29/classes.dex")
     if de.extract_dex() < 0:
         logger.error("Wrong!")
     logger.critical(" -------------------------- END -------------------------- ")
