@@ -82,7 +82,7 @@ class TreeNode(object):
             return self.children[target_package_name].insert(package_name, weight, md5, permission_list)
 
     def brand(self, package_name, standard_package):
-        current_depth = 0 if self.pn == "" elsf self.pn.count('/') + 1
+        current_depth = 0 if self.pn == "" else self.pn.count('/') + 1
         target_depth = package_name.count('/') + 1
         if current_depth == target_depth:
             yes_or_no = raw_input("Warning: Brand %s as a new library? (Y/n)" % self.pn)
