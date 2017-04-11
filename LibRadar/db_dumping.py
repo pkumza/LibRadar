@@ -23,7 +23,10 @@ import redis
 from _settings import *
 
 
+# deprecated 2017-04-09
 def dump_database():
+    pass
+    """
     db_feature_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_COUNT)
     db_feature_weight = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_WEIGHT)
     db_un_ob_pn = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN)
@@ -36,7 +39,7 @@ def dump_database():
         weight = db_feature_weight.get(key)
         package_name = db_un_ob_pn.get(key)
         dump_file.write("%s;%s;%s;%s\n" % (binascii.hexlify(key), count, weight, package_name))
-
+    """
 
 if __name__ == "__main__":
     dump_database()

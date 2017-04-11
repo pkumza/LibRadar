@@ -157,7 +157,7 @@ class LibRadar(object):
             # TODO: use database to output this.
             # logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
             #              (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
-        return len(api_list), class_md5.digest(), class_md5.hexdigest(), sorted(list(permission_list))
+        return len(api_list), class_md5.hexdigest(), class_md5.hexdigest(), sorted(list(permission_list))
 
     def extract_dex(self):
         # Log Start

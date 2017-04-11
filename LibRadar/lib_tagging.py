@@ -47,10 +47,7 @@ class Tagger:
             Library Name , Library Type, Official Website,
     """
     def __init__(self, base_count=20, base_weight=100):
-        self.db_feature_count = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_COUNT)
-        self.db_feature_weight = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_FEATURE_WEIGHT)
-        self.db_un_ob_pn = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_UN_OB_PN)
-        self.db_tag = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_TAG)
+        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0)
         """
         Rules:
             There would be hundreds of lines of rules. Quite small the file should be.
@@ -69,7 +66,6 @@ class Tagger:
             file_rules.close()
         file_rules_w = open(FILE_RULE, 'a')
         self.csv_rule_writer = csv.writer(file_rules_w, delimiter=',', quotechar='|')
-        # self.db_rule = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_RULE)
         self.base_count = base_count
         self.base_weight = base_weight
         logger.debug("LibRadar Tagger Initiated.")
@@ -79,15 +75,19 @@ class Tagger:
         logger.debug("Searching in database. Need a few seconds.")
         # Yeah, use 'keys' function may block a while, but lib_tagging.py is designed for professional use only.
         # Up to now, do not like to support multi-threading.
-        for key in self.db_feature_count.keys():
-            curr_count = int(self.db_feature_count.get(key))
+
+        f_cnt = self.db.hgetall(key=DB_FEATURE_CNT)
+        f_weight = self.db.hgetall(key=DB_FEATURE_WEIGHT)
+        f_un_ob_pn = self.db.hgetall(key=DB_UN_OB_PN)
+        for key in f_cnt:
+            curr_count = int(f_cnt[key])
             if curr_count < self.base_count:
                 continue
-            curr_weight = int(self.db_feature_weight.get(key))
+            curr_weight = int(f_weight[key])
             if curr_weight < self.base_weight:
                 continue
             # md5, count, weight, pn
-            self.features.append((key, curr_count, curr_weight, self.db_un_ob_pn.get(key)))
+            self.features.append((key, curr_count, curr_weight, f_un_ob_pn[key]))
         # sort with count and weight
         # count is more important so I gave it 3 times weight.
         self.features.sort(cmp=lambda x, y: cmp(y[1]*3 + y[2], x[1] * 3 + x[2]))
@@ -107,43 +107,12 @@ class Tagger:
                 break
         return flag
 
-    def apply(self):
-        """
-            Apply rule in database
-
-            Maybe there's no need to apply it.
-            Every time I found a package, I will get its potential package name.
-            And I have the tag rules at the same time.
-            So search the package name in the rules file, the result could be gotten quickly.
-
-            Therefore, there's no need to tag the libraries here.
-            What's more, the un_ob_package_name could change during times.
-        :return:
-        """
-        cnt = 0  # tag count
-        ign = 0  # ignore
-        for key in self.db_feature_count.keys():
-            if self.db_tag.get(key) is None:
-                potential_package_name = self.db_un_ob_pn.get(key)
-                while True:
-                    if potential_package_name == "":
-                        ign += 1
-                        break
-                    if potential_package_name in self.dict_tag_rules:
-                        self.db_tag.set(key, potential_package_name)
-                        cnt += 1
-                        break
-                    else:
-                        potential_package_name = potential_package_name[:potential_package_name.rfind('/')]
-        logger.critical("Tagged %d, Ignore %d" % (cnt, ign))
-
 
 class TaggerCli:
     def __init__(self):
         self._print_title()
         self._set_base()
         self._tag()
-        # self._apply_rules()
 
     @staticmethod
     def _print_title():
@@ -249,16 +218,3 @@ class TaggerCli:
 
             # Next
             feature_iterator += 1
-
-    def _apply_rules(self):
-        ipt_know = raw_input("Apply the rules in database? (Y/N) ")
-        while True:
-            if ipt_know == 'N' or ipt_know == 'n':
-                print("OK, Bye!")
-                return
-            if ipt_know == 'Y' or ipt_know == 'Y':
-                self.tagger.apply()
-                return
-            if ipt_know != 'Y' and ipt_know != 'y':
-                print("Sorry? I don't know what you mean.")
-                continue
