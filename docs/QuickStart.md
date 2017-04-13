@@ -43,15 +43,15 @@
    find data file.
 
 1. Download LibRadarData.rdb and run redis-server
-  https://raw.githubusercontent.com/pkumza/LibRadar/LR_DataSet_1/Data/IntermediateData/LibRadarData.rdb
+  https://github.com/pkumza/LibRadar/blob/dataset_2/tool/dataset-0410-19k.rdb.tar.gz?raw=true
 
   ```bash
-  $ wget https://raw.githubusercontent.com/pkumza/LibRadar/LR_DataSet_1/Data/IntermediateData/LibRadarData.rdb
+  $ wget https://github.com/pkumza/LibRadar/blob/dataset_2/tool/dataset-0410-19k.rdb.tar.gz?raw=true
   $ cd LibRadar
   $ vi tool/redis.conf.
   (find "dir /Users/marchon/Projects/Databases" and change it into your LibRadarData.rdb path.)
 
-  $ redis-server tool/redis.conf &
+  $ redis-server tool/redis.conf
   ```
 1. Use LibRadar to detect libraries.
 
