@@ -76,9 +76,9 @@ class Tagger:
         # Yeah, use 'keys' function may block a while, but lib_tagging.py is designed for professional use only.
         # Up to now, do not like to support multi-threading.
 
-        f_cnt = self.db.hgetall(key=DB_FEATURE_CNT)
-        f_weight = self.db.hgetall(key=DB_FEATURE_WEIGHT)
-        f_un_ob_pn = self.db.hgetall(key=DB_UN_OB_PN)
+        f_cnt = self.db.hgetall(name=DB_FEATURE_CNT)
+        f_weight = self.db.hgetall(name=DB_FEATURE_WEIGHT)
+        f_un_ob_pn = self.db.hgetall(name=DB_UN_OB_PN)
         for key in f_cnt:
             curr_count = int(f_cnt[key])
             if curr_count < self.base_count:
