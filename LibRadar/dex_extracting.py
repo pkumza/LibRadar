@@ -91,6 +91,7 @@ import hashlib
 import redis
 import dex_parser
 import time
+import sys
 from _settings import *
 
 
@@ -148,7 +149,7 @@ class PackageNodeList:
     """
     def __init__(self):
         self.pn_list = list()
-        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0)
+        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0, password=DB_PSWD)
 
     def flush_db(self):
         """
@@ -409,9 +410,10 @@ class DexExtractor:
 
 
 if __name__ == "__main__":
+    assert len(sys.argv) == 2
     # A test for dex extractor here.
     logger.critical(" ------------------------- START ------------------------- ")
-    de = DexExtractor("/home/zachary/Projects/PycharmProjects/libradar/LibRadar/Data/Decompiled/668a863c55ba5c0255b4f3b5c3de0e29/classes.dex")
+    de = DexExtractor(sys.argv[1])
     if de.extract_dex() < 0:
         logger.error("Wrong!")
     logger.critical(" -------------------------- END -------------------------- ")
