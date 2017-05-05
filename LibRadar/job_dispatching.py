@@ -29,7 +29,8 @@ import dex_extracting
 access_key_id = os.getenv('OSS_TEST_ACCESS_KEY_ID', 'LTAI19YfqOSkHpRW')
 access_key_secret = os.getenv('OSS_TEST_ACCESS_KEY_SECRET', 'pmxBQkjnHYmnTmoExeG5w7Vdk4laMK')
 bucket_name = os.getenv('OSS_TEST_BUCKET', 'lxapk')
-endpoint = os.getenv('OSS_TEST_ENDPOINT', 'oss-cn-beijing.aliyuncs.com')
+endpoint = os.getenv('OSS_TEST_ENDPOINT', 'vpc100-oss-cn-beijing.aliyuncs.com') # vpc internal!!
+# endpoint = os.getenv('OSS_TEST_ENDPOINT', 'oss-cn-beijing.aliyuncs.com')
 bucket = oss2.Bucket(oss2.Auth(access_key_id, access_key_secret), endpoint, bucket_name)
 try:
     db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0, password=DB_PSWD)
