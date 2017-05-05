@@ -69,5 +69,5 @@ while True:
         os.system(cmd)
     except:
         logging.error("DEX remove error!")
-    exit()
+    db.sadd("processed", key)
 
