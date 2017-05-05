@@ -317,7 +317,7 @@ class DexExtractor:
             smali_code = decoded_instruction.smaliCode
             if smali_code is None:
                 logger.warning("smali code is None.")
-                continue
+                break
             # Next Instruction.
             offset += decoded_instruction.length
             if smali_code == 'nop':
