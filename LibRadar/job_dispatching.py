@@ -39,7 +39,7 @@ except:
 
 while True:
     try:
-        item = db.lpop(name="apk_queue_new").split(" ")
+        item = db.lpop(name="apk_new_2").split(" ")
         assert(len(item) == 5)
     except:
         logging.error("item get error!")
@@ -53,7 +53,7 @@ while True:
         continue
     try:
         zf = zipfile.ZipFile(filename, mode="r")
-        dex_file_extracted = zf.extract("classes.dex", "Data/Decompiled/%s" % filename)
+        dex_file_extracted = zf.extract("classes.dex", "./Data/Decompiled/%s" % filename)
         cmd = 'rm -rf ' + filename
         os.system(cmd)
     except:
@@ -70,5 +70,5 @@ while True:
         os.system(cmd)
     except:
         logging.error("DEX remove error!")
-    db.sadd("processed", key)
+    db.sadd("processed_2", key)
 

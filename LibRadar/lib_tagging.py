@@ -86,7 +86,7 @@ class Tagger:
             curr_weight = int(f_weight[key])
             if curr_weight < self.base_weight:
                 continue
-            # md5, count, weight, pn
+            # sha256, count, weight, pn
             self.features.append((key, curr_count, curr_weight, f_un_ob_pn[key]))
         # sort with count and weight
         # count is more important so I gave it 3 times weight.
