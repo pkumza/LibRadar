@@ -238,11 +238,6 @@ class PackageNodeList:
             """
             # TODO: Should use pipe and scan_iter to modify the efficiency.
             while True:
-                res = self.db.setnx("lock_insert", "a")
-                if int(res) == 0:
-                    time.sleep(0.2)
-                    continue
-                self.db.expire("lock_insert", 2)
                 pipe = self.db.pipeline(transaction=False)
                 if package_exist is None:
                     pipe.hincrby(name=DB_FEATURE_CNT, key=child_md5, amount=1)
@@ -265,7 +260,6 @@ class PackageNodeList:
                             pipe.hset(name=DB_UN_OB_PN, key=child_md5, value='/'.join(stage_to_be_pop.full_path))
                             # forget to reset the count, which caused some count appears to be negative number.
                             pipe.hset(name=DB_UN_OB_CNT, key=child_md5, value=0)
-                pipe.delete("lock_insert")
                 pipe.execute()
                 break
 
