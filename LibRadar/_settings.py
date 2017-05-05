@@ -78,7 +78,7 @@ CLEAN_WORKSPACE = 0
             Key: prefix of library package name
             Value: Library Name; Library Type; Official Website
 """
-DB_HOST = 'redis.pkuos.org'
+DB_HOST = 'redis-internal.pkuos.org'
 DB_PORT = 6379
 DB_PSWD = 'Oslab1435go'
 
