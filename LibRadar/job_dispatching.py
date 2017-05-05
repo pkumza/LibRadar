@@ -19,142 +19,55 @@
 #       Android Package Extractor Dispatcher
 #   This script is a dispatcher for scheduling.
 
-
-# Step 1 jar 反编译，得到api dict [tech: jad]
-# Step 2 hash feature Tree [tech: md5]
-# Step 3 [tech: Redis]
-# Step 3.1 [tech: 众数机制]
-# Step 3.2 [tech: 分布式、并行]
-# Step 3.3 Redis 导出
-# Step 4 Detector
-# Step 5 online [tech: node.js]
-
-from multiprocessing import Pool
-import multiprocessing
-import glob
 from _settings import *
-import hashlib
-import zipfile
-import dex_extracting
 import redis
+import zipfile
+import os
+import oss2
+import dex_extracting
 
+access_key_id = os.getenv('OSS_TEST_ACCESS_KEY_ID', 'LTAI19YfqOSkHpRW')
+access_key_secret = os.getenv('OSS_TEST_ACCESS_KEY_SECRET', 'pmxBQkjnHYmnTmoExeG5w7Vdk4laMK')
+bucket_name = os.getenv('OSS_TEST_BUCKET', 'lxapk')
+endpoint = os.getenv('OSS_TEST_ENDPOINT', 'oss-cn-beijing.aliyuncs.com')
+bucket = oss2.Bucket(oss2.Auth(access_key_id, access_key_secret), endpoint, bucket_name)
+try:
+    db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0, password=DB_PSWD)
+except:
+    logging.error("Redis DB connection error!")
 
-class DexExtractorWrapper:
-    """
-        Dex Extractor Wrapper
-
-        Dex Extractor is a class for extracting features from dex file.
-        DexExtractorWrapper is a container for the extractor.
-        DexExtractorWrapper occupies a process and got a queue from arguments.
-        In the main loop, it get an item from the queue and then create a new instance of DexExtractor and run it.
-    """
-    def __init__(self, p_name, queue):
-        """
-        Init the instance with process name and queue(full of app path)
-        :param p_name: basestring
-        :param queue: multiprocessing.Manager().Queue
-        """
-        self.p_name = p_name
-        self.queue = queue
-        # MD5 for current app, for the current instance of Dex Extractor
-        self.md5 = ""
-        # Path for current app.
-        self.app_path = ""
-
-    def execute(self):
-        logger.info("Process %s is running" % self.p_name)
-        while True:
-            try:
-                self.app_path = self.queue.get(block=True, timeout=QUEUE_TIME_OUT)
-            except: # multiprocessing.Manager().Queue.Empty:
-                break
-            logger.debug("Process %s is extracting %s" % (self.p_name, self.app_path))
-            try:
-                self.get_md5()
-            except:
-                # Yeah, Too broad exception it is. But I don't care.
-                # There could be many types of exception but what I want to do is ignore the wrong apk and focus on
-                # the next app.
-                logger.error("Process %s get Md5 error!" % self.p_name)
-                continue
-            # logger.info("Process %s got md5 %s" % (self.p_name, self.md5))
-            # If the apk file is broken, it can not be unzipped.
-            try:
-                zf = zipfile.ZipFile(self.app_path, mode="r")
-                dex_file_extracted = zf.extract("classes.dex", SCRIPT_PATH + "/Data/Decompiled/%s" % self.md5)
-            except:
-                logger.error("Process %s, not a valid Zip file." % self.p_name)
-                continue
-            try:
-                de = dex_extracting.DexExtractor(dex_file_extracted)
-                de.extract_dex()
-            except:
-                logger.critical("Process %s, extracting error!!" % self.p_name)
-                continue
-            try:
-                cmd = 'rm -rf ' + SCRIPT_PATH + "/Data/Decompiled/%s" % self.md5
-                os.system(cmd)
-            except:
-                logger.error("Process %s, rm error" % self.p_name)
-        logger.info("Process %s returns" % self.p_name)
-
-    def get_md5(self):
-        if not os.path.isfile(self.app_path):
-            logger.critical("file path %s is not a file" % self.app_path)
-            raise AssertionError
-        file_md5 = hashlib.md5()
-        f = file(self.app_path, 'rb')
-        while True:
-            block = f.read(4096)
-            if not block:
-                break
-            file_md5.update(block)
-        f.close()
-        file_md5_value = file_md5.hexdigest()
-        logger.debug("APK %s's MD5 is %s" % (self.app_path, file_md5_value))
-        self.md5 = file_md5_value
-        return file_md5_value
-
-
-def run_dex_extractor_wrapper(process_name, q):
-    dew = DexExtractorWrapper(process_name, q)
-    dew.execute()
-
-
-class DexExtractorDispatcher:
-    """
-        Dex Extractor Dispatcher
-    """
-    def __init__(self, folder_full_of_apps):
-        self.folder = folder_full_of_apps
-
-    @staticmethod
-    def clear_decompiled():
-        cmd = 'rm -rf ' + SCRIPT_PATH + '/Data/Decompiled'
+while True:
+    try:
+        item = db.lpop(name="apk_queue_new").split(" ")
+        assert(len(item) == 5)
+    except:
+        logging.error("item get error!")
+        continue
+    key = '/'.join(item[1:-1]) + '-' + item[-1] + ".apk"
+    filename = "Data/APK/" + item[-2] + '-' + item[-1] + ".apk"
+    try:
+        result = bucket.get_object_to_file(key, filename)
+    except:
+        logging.error("FILE RETRIVE ERROR")
+        continue
+    try:
+        zf = zipfile.ZipFile(filename, mode="r")
+        dex_file_extracted = zf.extract("classes.dex", "Data/Decompiled/%s" % filename)
+        cmd = 'rm -rf ' + filename
         os.system(cmd)
+    except:
+        logging.error("Unzip ERROR")
+        continue
+    try:
+        de = dex_extracting.DexExtractor(dex_file_extracted)
+        de.extract_dex()
+    except:
+        logging.error("DEX EXTRACTING ERROR")
+        continue
+    try:
+        cmd = 'rm -rf ' + 'Data/Decompiled/%s' % filename
+        os.system(cmd)
+    except:
+        logging.error("DEX remove error!")
+    exit()
 
-    def execute(self):
-        q = multiprocessing.Manager().Queue()
-        p = Pool()
-        logger.info("Pool created")
-        app_list = glob.glob("%s/*" % self.folder)
-        for apk in app_list:
-            if len(apk) < 4 or apk[-4:] != ".apk":
-                continue
-            q.put(apk)
-        for i in range(RUNNING_PROCESS_NUMBER):
-            process_name = str(i).zfill(2)
-            p.apply_async(run_dex_extractor_wrapper, args=(process_name, q))
-        logger.info("Waiting for all sub-processes done.")
-        p.close()
-        p.join()
-        logger.critical("All sub-processes done.")
-
-if __name__ == "__main__":
-    ded = DexExtractorDispatcher("/home/zachary/Projects/apks")
-    ded.clear_decompiled()
-    ded.execute()
-    # q:-)
-    # "eject" is just a trick as a reminder. Do not work on Mac obviously. Remove it when necessary.
-    # d:-)
-    os.system("eject cdrom")

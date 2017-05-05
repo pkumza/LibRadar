@@ -95,7 +95,7 @@ DB_UN_OB_CNT = 'un_ob_cnt'
     Once I set QUEUE_TIME_OUT 5. After about two hours, three processes returns. So it should be little longer.
     I set it 30 yesterday and in two hours' processing, every process runs well.
 """
-RUNNING_PROCESS_NUMBER = 8
+RUNNING_PROCESS_NUMBER = 4
 QUEUE_TIME_OUT = 30
 
 
