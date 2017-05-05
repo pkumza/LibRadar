@@ -52,7 +52,7 @@ Lcom/appmakr,Appmakr,Development Aid,https://www.appmakr.com/
 Lcom/appbrain,Appbrain,Development Aid,http://www.appbrain.com/
 Lcom/skplanet,skplanet,Development Aid,http://www.skplanet.com
 Lcom/urbanairship,urbanairship,GUI Component,https://www.urbanairship.com/
-Lnet/youmi,Youmi Ads,Social Network,http://www.youmi.net/
+Lnet/youmi,Youmi Ads,Advertisement,http://www.youmi.net/
 Lcom/adsdk,AdSDK,Advertisement,
 Lkawa,Kawa for Android,Development Aid,https://www.gnu.org/software/kawa/Building-for-Android.html
 Lcom/maximono,Maximono,Social Network,http://maximono.com
@@ -434,3 +434,7 @@ Lcom/meitu/android/trivialdrivesample,no,no,no
 Lcom/purplebrain/adbuddiz,AdBuddiz,Advertisement,https://www.adbuddiz.com
 Lc/a/a/a/a/g,no,no,no
 Lcom/bda/controller,MOGAanywhere,Game Engine,http://www.mogaanywhere.com/
+Lcom,no,no,no
+Ll,no,no,no
+Lcom/jiubang/commerce,no,no,no
+Lcom/yandex,no,no,no
