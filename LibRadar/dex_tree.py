@@ -28,7 +28,7 @@ import csv
 import redis
 
 # Databases
-db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0)
+db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0, password=DB_PSWD)
 
 # tag_rules
 labeled_libs = list()
