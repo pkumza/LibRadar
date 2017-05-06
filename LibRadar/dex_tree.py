@@ -28,7 +28,7 @@ import csv
 import redis
 
 # Databases
-db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0, password=DB_PSWD)
+db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
 
 # tag_rules
 labeled_libs = list()
@@ -47,7 +47,7 @@ class TreeNode(object):
     """
     Tree Node Structure
     {
-        sha256     : 02b018f5b94c5fbc773ab425a15b8bbb              // In fact sha256 is the non-hex one
+        sha256  : 02b018f5b94c5fbc773ab425a15b8bbb              // In fact sha256 is the non-hex one
         weight  : 1023                                          // How many APIs in this Node
         pn      : Lcom/facebook/internal                        // Current package name
         parent  : <TreeNode>                                    // Parent node

@@ -47,7 +47,7 @@ class Tagger:
             Library Name , Library Type, Official Website,
     """
     def __init__(self, base_count=20, base_weight=100):
-        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0, password=DB_PSWD)
+        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
         """
         Rules:
             There would be hundreds of lines of rules. Quite small the file should be.

@@ -28,7 +28,7 @@
 #
 #   Implementation:
 #       Firstly, get class defines from dex file.
-#       For each class, we could generate it's APIs and so as the MD5 feature.
+#       For each class, we could generate it's APIs and so as the sha256 feature.
 #       As the class definition contains the path, so we could construct a tree for the classes.
 #
 #       e.g.
@@ -93,6 +93,7 @@ import dex_parser
 import time
 import sys
 from _settings import *
+import sys
 
 
 class PackageNode:
@@ -126,7 +127,7 @@ class PackageNode:
 
     def generate_sha256(self):
         """
-            Generate Md5 of current node based on children's sha256.
+            Generate sha256 of current node based on children's sha256.
         :return: current Node's raw_sha256 and weight.
         """
         curr_sha256 = hashlib.sha256()
@@ -135,7 +136,7 @@ class PackageNode:
             curr_sha256.update(sha256_item)
         # TODO: Currently do not put class into database.
         # if not IGNORE_ZERO_API_FILES or len(self.sha256_list) != 0:
-        #    logger.debug("MD5: %s Weight: %-6d PackageName: %s" %
+        #    logger.debug("sha256: %s Weight: %-6d PackageName: %s" %
         #                 (curr_sha256.hexdigest(), self.weight, '/'.join(self.full_path)))
         return curr_sha256.hexdigest(), self.weight
 
@@ -149,7 +150,7 @@ class PackageNodeList:
     """
     def __init__(self):
         self.pn_list = list()
-        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=2, password=DB_PSWD)
+        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
 
     def flush_db(self):
         """
@@ -311,7 +312,11 @@ class DexExtractor:
             smali_code = decoded_instruction.smaliCode
             if smali_code is None:
                 logger.warning("smali code is None.")
-                break
+                if decoded_instruction == 0:
+                    break
+                else:
+                    offset += decoded_instruction.length
+                    continue
             # Next Instruction.
             offset += decoded_instruction.length
             if smali_code == 'nop':
@@ -347,7 +352,7 @@ class DexExtractor:
         if not IGNORE_ZERO_API_FILES or len(api_list) != 0:
             pass
             # TODO: use database to output this.
-            # logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
+            # logger.debug("sha256: %s Weight: %-6d ClassName: %s" %
             #              (class_sha256.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
         return len(api_list), class_sha256.hexdigest(), class_sha256.hexdigest()
 
@@ -361,7 +366,7 @@ class DexExtractor:
         # Create a Dex object
         self.dex = dex_parser.DexFile(self.dex_name)
         pnl = PackageNodeList()
-        # Generate Md5 from Dex
+        # Generate sha256 from Dex
 
         class_info_list = list()
         for dex_class_def_obj in self.dex.dexClassDefList:
@@ -397,7 +402,6 @@ class DexExtractor:
             # for class name Lcom/company/air/R; It's package name is Lcom/company/air
             package_name = class_name[:last_slash]
             pnl.catch_a_class_def(package_name, raw_sha256, weight)
-            # logger.debug("Class: %s    Hex Md5: %s    Weight: %d" % (class_name, hex_sha256, weight))
         # Let PackageNodeList pop all the nodes.
         pnl.catch_a_class_def("", "", 0)
         return 0
@@ -406,6 +410,7 @@ class DexExtractor:
 if __name__ == "__main__":
     assert len(sys.argv) == 2
     # A test for dex extractor here.
+    assert len(sys.argv) == 2
     logger.critical(" ------------------------- START ------------------------- ")
     de = DexExtractor(sys.argv[1])
     if de.extract_dex() < 0:
