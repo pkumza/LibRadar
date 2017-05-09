@@ -39,7 +39,7 @@ except:
 
 while True:
     try:
-        item = db.lpop(name="apk_new_2").split(" ")
+        item = db.blpop(name="apk_new_2").split(" ")
         assert(len(item) == 5)
     except:
         logging.error("item get error!")
