@@ -150,7 +150,7 @@ class PackageNodeList:
     """
     def __init__(self):
         self.pn_list = list()
-        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
+        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=2, password=DB_PSWD)
 
     def flush_db(self):
         """
