@@ -39,12 +39,18 @@ except:
 
 while True:
     try:
-        item = db.blpop("apk_new_2")[1].split(" ")
+        item = db.blpop("apk_new_3")[1].split(" ")
         assert(len(item) == 5)
     except:
         logging.error("item get error!")
         continue
     key = '/'.join(item[1:-1]) + '-' + item[-1] + ".apk"
+    try:
+        if db.sismember("processed_2", key):
+            continue
+    except:
+        logging.error("check is member error")
+        continue
     filename = "Data/APK/" + item[-2] + '-' + item[-1] + ".apk"
     try:
         result = bucket.get_object_to_file(key, filename)

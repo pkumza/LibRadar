@@ -4,7 +4,7 @@ import logging
 
 db = redis.StrictRedis(host="redis.pkuos.org", port=DB_PORT, db=0, password=DB_PSWD)
 
-for i in range(2167):
+for i in range(2331):
     a = db.lrange(name="apk_queue", start=-1000-i*1000, end=-1-i*1000)
     multi = db.pipeline(transaction=False)
     for j in a:
