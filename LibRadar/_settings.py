@@ -36,11 +36,16 @@ CLEAN_WORKSPACE = 0
 """
     Database use db 0 as default
 """
-DB_HOST = 'localhost'
+DB_HOST = 'redis.pkuos.org'
 DB_PORT = 6379
-DB_ID = 0
+DB_ID = 2
+
+
+DB_HOST = 'redis.pkuos.org'
+DB_PORT = 6379
+DB_ID = 2
 # if you don't have Password, delete DB_PSWD
-DB_PSWD = ''
+DB_PSWD = 'Oslab1435go'
 
 DB_FEATURE_CNT = 'feature_cnt'
 DB_FEATURE_WEIGHT = 'feature_weight'

@@ -318,7 +318,7 @@ class Tree(object):
         # JSON support
         utg_lib_obj = dict()            # untagged library object
         utg_lib_obj["Package"] = node.pn
-        utg_lib_obj["Standard Package"] = u
+        utg_lib_obj["Standard Package"] = a
         utg_lib_obj["Library"] = "Unknown"
         utg_lib_obj["Popularity"] = int(c)
         utg_lib_obj["Weight"] = node.weight

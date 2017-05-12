@@ -81,7 +81,7 @@ class LibRadar(object):
         if len(self.apk_path) <= 4 or self.apk_path[-4:] != ".apk":
             logger.error("%s is not a apk file.")
             raise AssertionError
-        # Get Md5
+        # Get SHA256
         self.hex_sha256 = self.get_sha256()
         # Unzip
         zf = zipfile.ZipFile(self.apk_path, mode='r')
