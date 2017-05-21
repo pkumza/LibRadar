@@ -52,7 +52,7 @@ Lcom/appmakr,Appmakr,Development Aid,https://www.appmakr.com/
 Lcom/appbrain,Appbrain,Development Aid,http://www.appbrain.com/
 Lcom/skplanet,skplanet,Development Aid,http://www.skplanet.com
 Lcom/urbanairship,urbanairship,GUI Component,https://www.urbanairship.com/
-Lnet/youmi,Youmi Ads,Social Network,http://www.youmi.net/
+Lnet/youmi,Youmi Ads,Advertisement,http://www.youmi.net/
 Lcom/adsdk,AdSDK,Advertisement,
 Lkawa,Kawa for Android,Development Aid,https://www.gnu.org/software/kawa/Building-for-Android.html
 Lcom/maximono,Maximono,Social Network,http://maximono.com
@@ -378,7 +378,7 @@ Lcom/milkmangames/extensions/android/coremobile,Milkman plugins,Development Aid,
 Lcom/c/a/a/a/a,no,no,no
 Lcom/radiusnetworks,Radius Networks,Development Aid,http://www.radiusnetworks.com
 Lorg/nexage,Millennial Media,Advertisement,http://www.nexage.com
-Lcom/google/firebase,Firebase,Development Framework,http://firebase.com
+Lcom/google/firebase,Firebase,Development Aid,http://firebase.com
 Lcom/c/a/b/d,no,no,no
 Lc/a/a/a/a/b,no,no,no
 Lair/com,no,no,no
@@ -389,12 +389,12 @@ Lcom/chartboost,no,no,no
 Lc/a/a/a/a/e,no,no,no
 Lcom/naef,no,no,no
 Lcom/supersonic/mediationsdk,Supersonic MediationSDK(Abandoned),Development Aid,https://github.com/SupersonicAds/android-mediation-sdk
-Lcom/neatplug/u3d/plugins,NeatPlug Unity3d Plugins,Development Framework,https://neatplug.com/
+Lcom/neatplug/u3d/plugins,NeatPlug Unity3d Plugins,Development Aid,https://neatplug.com/
 Lcom/c/a/a/a,no,no,no
 Lb/a/a/a/a/b,no,no,no
 La/a/a/a/a/b,no,no,no
-Lorg/ini4j,ini4j,Development Framework,http://ini4j.sourceforge.net
-Lcom/prime31,prime[31],Development Framework,https://prime31.com
+Lorg/ini4j,ini4j,Development Aid,http://ini4j.sourceforge.net
+Lcom/prime31,prime[31],Development Aid,https://prime31.com
 Lde/greenrobot/event,EventBus,Development Aid,https://github.com/greenrobot/EventBus
 Lcom/sponsorpay,Fyber(SponsorPay),Advertisement,http://www.sponsorpay.com
 Lcom/c/a/a,no,no,no
@@ -434,3 +434,225 @@ Lcom/meitu/android/trivialdrivesample,no,no,no
 Lcom/purplebrain/adbuddiz,AdBuddiz,Advertisement,https://www.adbuddiz.com
 Lc/a/a/a/a/g,no,no,no
 Lcom/bda/controller,MOGAanywhere,Game Engine,http://www.mogaanywhere.com/
+Lcom,no,no,no
+Ll,no,no,no
+Lcom/jiubang/commerce,no,no,no
+Lcom/yandex,no,no,no
+Lcom/baidu,no,no,no
+Lcom/lidroid/xutils,xUtils,Development Aid,https://github.com/wyouflf/xUtils
+Lcom/lidroid,no,no,no
+Lcom/igexin/getuiext,Getui,Development Aid,http://www.getui.com/
+Lcom/tencent,no,no,no
+Lcom/baidu/mapapi,Baidu Map,Map/LBS,http://lbsyun.baidu.com/
+Lcom/tencent/bugly,Bugly,Mobile Analytics,https://bugly.qq.com/
+Lcom/unionpay/mobile/android,Unionpay,Payment,http://mobile.unionpay.com/
+Lcom/unionpay/mobile,no,no,no
+Lcom/unionpay,no,no,no
+Lcom/umeng,no,no,no
+Lorg/jivesoftware/smackx,Smack Extensions,Development Aid,https://mvnrepository.com/artifact/jivesoftware/smackx
+Lcn/jpush/android,Jpush,Development Aid,https://www.jiguang.cn/
+Lcom/sina,no,no,no
+Lcn/jpush,no,no,no
+Lcom/aps,no,no,no
+Lcom/taobao/accs,Taobao ACCS,Development Aid,https://open.taobao.com/
+Lcom/qihoo/stat,Qihoo Stat,Development Aid,http://dev.360.cn/
+Lcom/umeng/socialize,Umeng Socialize,Social Network,http://dev.umeng.com/social/android/operation
+Lcom/qihoo/psdk,Qihoo push,Development Aid,http://dev.360.cn/
+Lcn,no,no,no
+Lcom/taobao,no,no,no
+Lcn/sharesdk/framework,ShareSDK,Social Network,http://www.mob.com/downloadDetail/ShareSDK/android
+Lorg/jivesoftware,no,no,no
+Lcom/igexin,no,no,no
+Lcom/unionpay/tsmservice,Unionpay TSM(Trusted Service Management),Payment,https://www.95516.com/static/union/pages/index/index.html
+Lorg/jivesoftware/smack,Smack,Payment,https://mvnrepository.com/artifact/jivesoftware/smack
+Lcom/baidu/wallet,Baidu Wallet(baifubao),Payment,https://www.baifubao.com/
+Lorg/lobobrowser,Lobobrowser,Development Aid,https://github.com/lobobrowser/LoboBrowser
+Lcom/igexin/push,Gepush,Development Aid,http://www.getui.com/
+Lcom/umeng/message,Umeng Message Push,Development Aid,http://dev.umeng.com/push/android/sdk-download
+Lcom/huawei/android,Huawei Android SDK,Development Aid,http://developer.huawei.com/
+Lcom/baidu/paysdk,Baidu Wallet,Payment,https://www.baifubao.com/
+Lcom/huawei,no,no,no
+Lcom/alibaba/mtl,Alibaba MTL,Development Aid,https://doc.open.alipay.com/doc2/detail.htm?treeId=195&articleId=105220&docType=1
+Lcom/baidu/tiebasdk,Baidu Tieba SDK,Social Network,http://tieba.baidu.com/tb/zt/tiebaapi/index.html
+Lcz/msebera/android/httpclient,HttpClient Android repackage buildscript,Development Aid,https://github.com/smarek/httpclient-android
+Lcom/baidu/mtjstatsdk,baidu Stat Android SDK API.,Development Aid,https://mtj.baidu.com/
+Lcom/qihoopp,no,no,no
+Lcom/idddx/sdk/dynamic,no,no,no
+Lcom/idddx/sdk,no,no,no
+Lcom/idddx/sdk/dynamic/service/thrift,no,no,no
+Lcom/idddx/sdk/dynamic/service,no,no,no
+Lorg/android,no,no,no
+Lcom/qihoo/gamecenter/sdk,Qihoo 360 Gamecenter,Social Network,http://wan.360.cn/
+Lorg/android/agoo,Umeng U-push (Old version called agoo),Development Aid,http://dev.umeng.com/push/android/integration
+Lcn/sharesdk,no,no,no
+Lcom/mob/tools,Mob Tools,Development Aid,http://www.mob.com/
+Lcom/mob,no,no,no
+Lsafiap/framework,no,no,no
+Lsafiap,no,no,no
+Lcom/unionpay/sdk,no,no,no
+Lcn/jiguang,no,no,no
+Lcom/qihoopp/qcoinpay,Qihoo 360 Qcoinpay,Payment,https://pay.360.cn/index/mobile
+Lcom/baidu/navisdk,Baidu Navigation SDK,Map/LBS,http://lbsyun.baidu.com/index.php?title=android-navsdk
+Lcom/tencent/android/tpush,Tencent Tpush (Xinge),Development Aid,http://xg.qq.com/
+Lcom/tencent/android,no,no,no
+Lrx,no,no,no
+Lcom/nd/dianjin,Dianjin Advertisement,Advertisement,http://www.devstore.cn/service/serviceDetail/428.html
+Lcom/iflytek/thirdparty,Iflytek Thirdparty,Development Aid,https://www.xfyun.cn/sdk/dispatcher
+Lcom/mobisage/android,Mobisage(adSage),Advertisement,http://www.adsage.com/
+Lcom/duoku/platform,duoku(Baidu Mobile Game Platform),Social Network,http://www.duoku.com.cn/
+Lname/rkmlpv,no,no,no
+Lname,no,no,no
+Lname/rkmlpv/jjhrjt/ktphvh,no,no,no
+Lname/rkmlpv/jjhrjt,no,no,no
+Lcom/lenovo,no,no,no
+Lcom/qihoopp/framework,QihooPP Framework,Development Framework,http://dev.360.cn
+Lcom/baidu/navi,Baidu Navigation,Map/LBS,http://lbsyun.baidu.com/index.php?title=android-navsdk
+Lnet,no,no,no
+Lcom/lenovo/lps,Lenovo LPS,Development Aid,
+Lcom/iapppay,Iapppay,Payment,https://www.iapppay.com/
+Lorg/ice4j,A Java implementation of the ICE protocol,Development Aid,https://github.com/jitsi/ice4j
+Lcom/baidu/cyberplayer,Baiduyun Android Player,Development Aid,https://cloud.baidu.com/doc/MCT/Android-SDK.html
+Lcom/xiaomi/push,Xiaomi Push,Development Aid,https://dev.mi.com/console/appservice/push.html
+Lc/b/a,no,no,no
+Lc/b,no,no,no
+Lcom/baidu/searchsdk,Baidu Search SDK,Development Aid,https://developer.baidu.com/
+Lcom/appquanta/,Qunta Sky Ino.,Mobile Analytics,http://www.appquanta.com/index.html
+Lcom/tencent/stat,Tecent MTA,Mobile Analytics,http://mta.qq.com/
+Lcom/tencent/wxop,tencent weixin Open(Share),Social Network,https://open.weixin.qq.com/
+Lm/framework,no,no,no
+Lm,no,no,no
+Lcom/alimama/mobile,Alimama Dev,Social Network,http://dev.alimama.com/
+Lcom/alimama,no,no,no
+Lcom/iflytek/speech/aidl,iflytek speech,Development Aid,https://www.xfyun.cn/doccenter/tts
+Lcom/igexin/download,Getui,Development Aid,http://igexin.com
+Lorg/jdom2,JDOM2,Development Aid,https://github.com/hunterhacker/jdom/wiki/JDOM2-A-Primer
+Lcom/qihoo/gamecenter,no,no,no
+Lcom/umeng/newxp/view,no,no,no
+Lcom/umeng/newxp,Umeng newxp,Development Aid,http://www.umeng.com/
+Lcom/baidu/autoupdatesdk,baidu autoupdate sdk,Development Aid,
+Lcom/iflytek/speech,iflyteck speech,Development Aid,
+Lcom/tencent/sdkutil,Tencent SDK Utilities,Development Aid,http://open.qq.com
+Lcom/renn/rennsdk,renren sdk,Development Aid,http://open.renren.com/wiki/SDK2/androidsdk
+Lcom/renn,no,no,no
+Lcn/uc/a/a/a,no,no,no
+Lcn/uc/a/a,no,no,no
+Lcn/uc/a,no,no,no
+Lcom/baidu/appx,Baidu APPX,Advertisement,https://app.baidu.com/
+Lnet/tsz/afinal,Afinal,Advertisement,https://github.com/yangfuhai/afinal/tree/master/src/net/tsz/afinal
+Lnet/tsz,no,no,no
+Lcom/anzhi/market,Anzhi Market,App Market,http://www.anzhi.com/
+Lcn/sharesdk/tencent,Mob share to tencent,Social Network,http://wiki.mob.com/%E5%88%86%E4%BA%AB%E5%88%B0%E6%8C%87%E5%AE%9A%E5%B9%B3%E5%8F%B0/
+Lcom/sun,no,no,no
+Lcom/xiaomi/smack,Xiaomi Smack,Development Aid,
+Ltv/rhmjpj/jrhrjt/ksptvg,no,no,no
+Ltv/rhmjpj,no,no,no
+Ltv/rhmjpj/jrhrjt,no,no,no
+Ltv,no,no,no
+Lorg/zywx/wbpalmstar/platform/myspace,no,no,no
+Lcom/mob/commons,mob share,Social Network,mob.com
+Lcom/cOoNkCqXw/anhYjsorr71313,no,no,no
+Lcom/cOoNkCqXw,no,no,no
+Lanet/channel,Umeng push,Development Aid,http://mobile.umeng.com/push
+Lanet,no,no,no
+Lcom/autonavi/aps/amapapi,AMAP autonavi API,Map/LBS,https://lbs.amap.com/
+Lcom/autonavi/aps,no,no,no
+Lnl/siegmann,no,no,no
+Lnl,no,no,no
+Lcom/duoku,no,no,no
+Lcn/uc/gamesdk,UC GAME,Game Engine,https://game.open.uc.cn/document/doc/detail/95
+Lcom/mobclick/android,Umeng Click Analysis,Mobile Analytics,https://www.umeng.com/
+Lcom/mobclick,no,no,no
+Lcom/data,no,no,no
+Lcom/androidquery,Android-query,GUI Component,https://github.com/androidquery/androidquery
+Lcom/autonavi,no,no,no
+Lcom/easemob/,Huanxin,Development Aid,http://www.easemob.com/
+Lorg/zywx/wbpalmstar,Zywx Wbpalmstar APP Framework,Development Framework,
+Lorg/zywx,no,no,no
+Lcom/baidu/sapi2,Baidu SAPI2,Development Aid,
+Lcz/msebera,no,no,no
+Lcz/msebera/android,no,no,no
+Lcz,no,no,no
+Lcom/alibaba,no,no,no
+Lcom/alibaba/fastjson,Fastjson,Development Aid,https://github.com/alibaba/fastjson
+Lcom/xiaomi/mipush/sdk,miaomi mipush,Development Aid,https://dev.mi.com/console/appservice/push.html
+Lcom/xiaomi/mipush,no,no,no
+Lcom/google/inject,Guice,Development Aid,https://github.com/google/guice
+Lcom/umeng/socom,Umeng social component,Social Network,http://mobile.umeng.com/social
+Lcom/appbyme,Appbyme,Development Framework,http://www.appbyme.com/
+Lcom/iflytek/sunflower,Xunfei(iflytek) Voice,Development Framework,
+Lcom/iflytek,xunfei,Development Framework,http://www.xfyun.cn/
+Lmobisocial,no,no,no
+Lcom/mobcent,MobCent,Social Network,http://www.baike.com/wiki/%E6%91%A9%E8%AE%AF%E7%A7%91%E6%8A%80
+Lcom/adwo/adsdk,adwo,Advertisement,http://www.adwo.com/
+Lcom/tendcloud/tenddata,TendDaTa,Mobile Analytics,https://www.talkingdata.com/products.jsp
+Lcom/tendcloud,no,no,no
+Lcom/baidu/bdgame/sdk,baidu game,Social Network,http://mgame.baidu.com/
+Lcom/baidu/bdgame,no,no,no
+Lcom/adwo,no,no,no
+Lanetwork/channel/aidl,AIDL,Development Aid,https://developer.android.com/guide/components/aidl.html
+Lcom/jcodecraeer/xrecyclerview/progressindicator/indicator,XRecyclerView (pull to refresh),Development Aid,https://github.com/jianghejie/XRecyclerView
+Lcom/qmoney,no,no,no
+Lanetwork/channel,no,no,no
+Lanetwork,no,no,no
+Lcom/ace/universalimageloader,Universal Image Loader,Development Aid,https://github.com/nostra13/Android-Universal-Image-Loader
+Lcom/xiaomi,no,no,no
+Lcom/db4o,db4o,Development Aid,https://github.com/mohataher/db4o-android
+Lcom/chineseall/reader,chineseall reader,Development Aid,
+Lcom/xw,no,no,no
+Lsdk/download,no,no,no
+Lcom/madhouse/android/ads,Madhouse Inc Ads,Advertisement,http://www.madhouse.cn/
+Lcom/madhouse/android,no,no,no
+Lcom/mobisage,no,no,no
+Lrx/internal,RxJava Retrofit,Development Aid,https://github.com/square/retrofit
+Lcom/qmoney/ui,Qmoney,Payment,
+Lcom/shengliwang/CarLogo,no,no,no
+Lcom/nd,no,no,no
+Lcom/loc,no,no,no
+Lcom/avos/avoscloud/okhttp,Okhttp,Development Aid,
+Lorg/geometerplus,no,no,no
+Lpts,no,no,no
+Lcom/idddx,no,no,no
+Lcn/sharesdk/onekeyshare,Mob one key share,Social Network,http://mob.com/
+Lpts/PhoneGap/namespace_2154,PhoneGap,Development Framework,http://phonegap.com/
+Lpts/PhoneGap,PhoneGap,Development Framework,http://phonegap.com/
+Lcom/xiaomi/xmpush/thrift,Xiaomi Push,Development Aid,https://dev.mi.com/doc/p=533/index.html
+Lcom/xiaomi/xmpush,Xiaomi XMpush,Development Aid,https://dev.mi.com/doc/p=533/index.html
+Lcom/baidu/frontia,Baidu Frontia,Development Aid,
+Lcom/appquanta,Quanta Sky Ino.,Mobile Analytics,http://www.appquanta.com/
+Lcom/magook,no,no,no
+Lio/dcloud,Dcloud,Development Aid,http://dcloud.io/doc.html
+Lcom/ace,no,no,no
+Lcn/jiguang/a,no,no,no
+Lcom/jcodecraeer/xrecyclerview/progressindicator,no,no,no
+Lcn/sharesdk/evernote,Mob Share Evernote,Social Network,http://mob.com
+Lcn/jiguang/a/a,no,no,no
+Lcom/tencent/smtt,Tencent X5 (SMTT),Social Network,http://x5.tencent.com/tbs/guide/sdkInit.html
+Lcn/jiguang,Jiguang,Development Aid,https://www.jiguang.cn/
+Lcom/b,no,no,no
+Lcom/coolcloud/uac/android,Coolyun UAC,Development Aid,https://www.coolyun.com/
+Lcom/coolcloud/uac,no,no,no
+Lcom/coolcloud,no,no,no
+Lmobisocial/omlet,no,no,no
+Lorg/geometerplus/zlibrary,Zlibrary(FBReader PDF Reader),Development Aid,
+Lcom/myshare,no,no,no
+Lcom/avos/avoscloud,,Development Aid,
+Lcom/aliyun,Aliyun,Development Aid,
+Lcom/external,no,no,no
+Lv2,no,no,no
+Lcn/smssdk,Mob SMS SDK,Development Aid,http://wiki.mob.com/android-%E7%9F%AD%E4%BF%A1sdk%E9%9B%86%E6%88%90%E6%96%87%E6%A1%A3/
+Lcom/myshare/dynamic,Mob Share Dynamic,Social Network,http://mob.com
+Lcom/umeng/api,Umeng API,Development Aid,http://dev.umeng.com
+Lcom/ut/mini,ut mini push sdk,Development Aid,
+Lcom/ut,no,no,no
+Lsdk,no,no,no
+Lmm/purchasesdk,China Mobile PurchaseSDK,Payment,
+Lcom/google/i18n,Google Internationalization,Development Aid,https://developers.google.com/international/
+Lcom/iwanvi,ZhongWenWanwei Reader,Development Aid,http://www1.iwanvi.com/
+Lmm,no,no,no
+Lmobisocial/omlib,Omlet SDK,Social Network,https://sdk.omlet.me/en/docs.html
+Lcom/umeng/xp,Umeng XP,Development Aid,http://dev.umeng.com/
+Lcom/kuguo/ad,kuguo Advertisement SDK,Advertisement,
+Lco,no,no,no
+Lcn/sharesdk/socialization,mob social,Social Network,mob.com
+Lcom/igexin,getui,Development Aid,http://www.getui.com/cn/index.html
+Lcom/uzmap/pkg/uzkit/fineHttp,fine HTTP,Development Aid,http://docs.apicloud.com/superwebview/Android/com/uzmap/pkg/uzkit/package-summary.html
