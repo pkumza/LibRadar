@@ -41,11 +41,11 @@ DB_PORT = 6379
 DB_ID = 2
 
 
-DB_HOST = 'redis.pkuos.org'
+DB_HOST = 'localhost'
 DB_PORT = 6379
 DB_ID = 2
 # if you don't have Password, delete DB_PSWD
-DB_PSWD = 'Oslab1435go'
+DB_PSWD = ''
 
 DB_FEATURE_CNT = 'feature_cnt'
 DB_FEATURE_WEIGHT = 'feature_weight'

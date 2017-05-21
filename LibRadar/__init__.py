@@ -32,7 +32,7 @@ __title__ = "libradar"
 __summary__ = "A tool for Android library detection."
 __uri__ = "https://github.com/pkumza/libradar"
 
-__version__ = "2.1.1"
+__version__ = "2.2.0"
 
 __author__ = "Zachary Marv (马子昂)"
 __email__ = "ma@zablog.me"
