@@ -2,7 +2,9 @@ LibRadar/Data/RawData
 log*
 LibRadar/Data/Decompiled
 LibRadar/Data/IntermediateData
-
+*.DS_Store
+a/*
+b/*
 
 # .idea
 .idea
