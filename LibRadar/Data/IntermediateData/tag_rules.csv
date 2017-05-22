@@ -81,7 +81,6 @@ Lorg/dom4j,Dom4j,Development Aid,http://dom4j.sourceforge.net/
 Lcom/tencent/weibo,Tencent Weibo,Social Network,http://t.qq.com
 Lcom/tencent/mobwin,Tencent MobWin,Advertisement,
 Lio/fabric/sdk/android,Fabric,Development Aid,https://get.fabric.io/
-Lcom/jirbo,Jirbo,Development Aid,http://www.jirbo.com/
 Lcom/sun/mail,Sun Mail.jar,Development Aid,
 Lcom/baidu/location,Baidu Location,Map/LBS,https://developer.baidu.com/
 Lpdftron,Pdftron PDF Widget,Development Aid,https://www.pdftron.com/
@@ -119,7 +118,7 @@ Lcom/revmob,Revmob,Advertisement,https://www.revmobmobileadnetwork.com/
 Lgnu/kawa,GNU KAWA,Development Aid,https://www.gnu.org/software/kawa/Building-for-Android.html
 Lcom/umeng/update,Umeng Update,Development Aid,https://www.umeng.com/component_update
 Lcom/myappengine,myappengine,Game Engine,https://appengine.google.com/
-Lcom/comscore,comscore,Development Aid,https://www.comscore.com/
+Lcom/comscore,comscore,Mobile Analytics,https://www.comscore.com/
 Lcom/j256,J256,Development Aid,https://github.com/j256/ormlite-android
 Lcom/tapit,Tapit,Development Aid,Tapit NFC
 Lcom/sina/weibo,Weibo,Social Network,http://weibo.com/
@@ -288,7 +287,7 @@ Lcom/adobe/plugin,Adobe plugin,Development Aid,
 Lmono/android,Mono for Android,Development Aid,http://www.mono-project.com/
 Lcom/commonsware/cwac/sacklist,CommonsWare SackOfViewsAdapter,Development Aid,https://github.com/commonsguy/cwac-sacklist
 Lxamarin,Xamarin,Development Aid,https://xamarin.com/
-Lcom/daimajia/androidanimations,AndroidAnimations Library,Development Aid,https://github.com/daimajia/AndroidViewAnimations
+Lcom/daimajia/androidanimations,AndroidAnimations Library,GUI Component,https://github.com/daimajia/AndroidViewAnimations
 Lorg/tukaani/xz,XZ For Java,Development Aid,http://tukaani.org/xz/java.html
 Lopentk,The Open Toolkit Library,Development Aid,http://www.opentk.com/
 Lcom/google/android,no,no,no
@@ -563,7 +562,6 @@ Lcn/uc/gamesdk,UC GAME,Game Engine,https://game.open.uc.cn/document/doc/detail/9
 Lcom/mobclick/android,Umeng Click Analysis,Mobile Analytics,https://www.umeng.com/
 Lcom/mobclick,no,no,no
 Lcom/data,no,no,no
-Lcom/androidquery,Android-query,GUI Component,https://github.com/androidquery/androidquery
 Lcom/autonavi,no,no,no
 Lcom/easemob/,Huanxin,Development Aid,http://www.easemob.com/
 Lorg/zywx/wbpalmstar,Zywx Wbpalmstar APP Framework,Development Framework,
@@ -654,3 +652,6 @@ Lco,no,no,no
 Lcn/sharesdk/socialization,mob social,Social Network,mob.com
 Lcom/igexin,getui,Development Aid,http://www.getui.com/cn/index.html
 Lcom/uzmap/pkg/uzkit/fineHttp,fine HTTP,Development Aid,http://docs.apicloud.com/superwebview/Android/com/uzmap/pkg/uzkit/package-summary.html
+Lcom/androidquery,AndroidQuery,Development Aid,https://github.com/androidquery/androidquery/
+Lcom/bumptech/glide,Glide,Development Aid,https://github.com/bumptech/glide/
+Lit/sauronsoftware/ftp4j,ftp4j,Development Aid,http://www.sauronsoftware.it/projects/ftp4j/
