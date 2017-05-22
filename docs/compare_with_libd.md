@@ -79,6 +79,8 @@ Library's boundary
 ------------------
 It's hard to determine the boundary. In LibD's library list, /com/nineoldandroids/animation is a library and /com/nineoldandroids/view is another. With tagging assistant, LibRadar can solve this problem.
 
+LibD didn't find com/google/android/gms and com/google/ads because in the first stage, LibD take com/google as a code bundle(library candidates). However, There's no com/google in library list, so LibD missed `Google GMS` and `Google Ads` at the same time.
+
 Results of 50 apks
 ==================
 
