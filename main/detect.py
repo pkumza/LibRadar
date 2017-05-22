@@ -42,7 +42,8 @@ class Detector:
         "ui": "UI Component",
         "ge": "Game Engine",
         "ut": "Utility",
-        "mp": "Map"
+        "mp": "Map",
+        "df": "Development Framework"
     }
 
     def __init__(self):
