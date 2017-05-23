@@ -196,7 +196,7 @@ class Detector:
         :return: decoded files' path
         """
         self.time_load_and_extract.start()
-        cmd = self.project_path + "/" + "../tool/apktool decode %s -o " % path + self.project_path + "/" + \
+        cmd = self.project_path + "/" + "../tool/apktool decode -r %s -o " % path + self.project_path + "/" + \
             "../decoded/%s" % os.path.basename(path)
         subprocess.call(cmd, shell=True)
         return self.project_path + '/../decoded/%s' % os.path.basename(path)
