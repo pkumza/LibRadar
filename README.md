@@ -20,7 +20,7 @@ $ python LibRadar/libradar.py someapp.apk
 ```
 View [docs/QuickStart.md](https://github.com/pkumza/LibRadar/blob/master/docs/QuickStart.md) for more information.
 
-~~If you want an online trial, just click http://radar.pkuos.org/~~. (Still version 1 temporarily)
+If you want an online trial, just click http://radar.pkuos.org/. (Updated to  version 2)
 
 ## Description for output
 |V2|V1|Stands for|Description|
