@@ -23,7 +23,8 @@ Lcom/startapp,StartApp,Advertisement,http://www.startapp.com/
 Lcom/appyet,Appyet,Development Aid,http://www.appyet.com/
 Lcom/daggertech,Dagger Tech,Development Aid,
 Lcom/badlogic,badlogic,Game Engine,http://www.badlogicgames.com/
-Lorg/mozilla,Mozilla,Development Aid,https://www.mozilla.org/
+Lorg/mozilla/javascript,Mozilla Rhino,Development Aid,https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino
+Lorg/mozilla/intl/chardet,Mozilla Charset Detector,Utility,
 Lcom/papaya,Papaya,Development Aid,http://en.papayamobile.com/
 Lcom/amazonaws,Amazon AWS,Development Aid,http://mvnrepository.com/artifact/com.amazonaws
 Lcom/millennialmedia,millennialmedia,Advertisement,http://www.millennialmedia.com/
@@ -49,7 +50,7 @@ Lcn/domob,domob,Advertisement,http://www.domob.cn/
 Lcom/adtech,Adtech,Advertisement,http://www.adtech.com/
 Lcom/magtab,Magtab,Development Aid,https://www.magtab.com/
 Lcom/appmakr,Appmakr,Development Aid,https://www.appmakr.com/
-Lcom/appbrain,Appbrain,Development Aid,http://www.appbrain.com/
+Lcom/appbrain,Appbrain SDK,Development Aid,https://www.appbrain.com/info/help/sdk/index.html
 Lcom/skplanet,skplanet,Development Aid,http://www.skplanet.com
 Lcom/urbanairship,urbanairship,Mobile Analytics,https://www.urbanairship.com/
 Lnet/youmi,Youmi Ads,Advertisement,http://www.youmi.net/
@@ -67,11 +68,11 @@ Lcom/google/gdata,Google GData,Development Aid,https://developers.google.com/gda
 Lcom/tencent/mm,Tencent Wechat,Social Network,https://open.weixin.qq.com/
 Lcom/nostra13,Nostra13 Image Loading,Development Aid,https://github.com/nostra13/Android-Universal-Image-Loader
 Lcom/admob,Google Admob,Advertisement,https://www.google.com/admob/
-Lorg/codehaus,Codehaus,Development Aid,http://www.codehaus.org/
+Lorg/codehaus/jackson,Jackson Json-processor,Utility,https://github.com/codehaus/jackson
 Lorg/cocos2d,cocos2D,Game Engine,http://www.cocos2d-x.org/
 Lcom/google/ads,Google Ads,Advertisement,https://www.google.com/ads/
 Lcom/baidu/android/pushservice,baidu push service,Development Aid,https://developer.baidu.com/
-Lcom/fasterxml,Fasterxml,Development Aid,http://fasterxml.com/
+Lcom/fasterxml,Fasterxml,Utility,http://fasterxml.com/
 Lcom/phonegap,PhoneGap,Development Aid,http://phonegap.com/
 Lcom/koushikdutta/async,AndroidAsync,Development Aid,https://github.com/koush/AndroidAsync
 Lorg/anddev/andengine,Andengine Game Engine,Game Engine,http://www.andengine.org/
@@ -129,7 +130,7 @@ Lorg/java_websocket,Java-WebSocket,Development Aid,https://github.com/TooTallNat
 Lcom/squareup/picasso,picasso,Development Aid,https://github.com/square/picasso
 Lorg/joda/time,Joda Time,Development Aid,http://www.joda.org/joda-time/
 Lcom/google/analytics,Google Analytics,Mobile Analytics,https://www.google.com/analytics/
-Lcom/vividsolutions/jts,JTS Topology Suite,Development Aid,http://sourceforge.net/projects/jts-topo-suite
+Lcom/vividsolutions/jts,JTS Topology Suite,Development Framework,http://sourceforge.net/projects/jts-topo-suite
 Lcom/umeng/analytics,Umeng Analytics,Mobile Analytics,https://www.umeng.com/analytics
 Lorg/cocos2dx,cocos2DX,Game Engine,http://www.cocos2d-x.org/
 Lorg/json,Json org,Development Aid,http://www.json.org/
@@ -161,7 +162,7 @@ Lorg/apache/harmony,Apache Harmony,Development Aid,https://harmony.apache.org/
 Lorg/htmlcleaner,htmlCleaner,Development Aid,http://htmlcleaner.sourceforge.net
 Lcom/baidu/mobstat,Baidu Mobile Stat,Mobile Analytics,https://developer.baidu.com/
 Lcom/bugsense,BugSense,Development Aid,https://github.com/wrapp/bugsense-android
-Lorg/androidannotations/,AndroidAnnotations API,Development Aid,https://github.com/excilys/androidannotations
+Lorg/androidannotations,AndroidAnnotations API,Development Aid,https://github.com/excilys/androidannotations
 Lnet/authorize,Authorize.NET,Development Aid,http://www.authorize.net/
 Lcom/slidingmenu,SlidingMenu,GUI Component,https://github.com/jfeinstein10/SlidingMenu
 Lcom/baidu/platform,Baidu APP SDK,Development Aid,https://developer.baidu.com/
@@ -525,6 +526,7 @@ Lcom/alimama,no,no,no
 Lcom/iflytek/speech/aidl,iflytek speech,Development Aid,https://www.xfyun.cn/doccenter/tts
 Lcom/igexin/download,Getui,Development Aid,http://igexin.com
 Lorg/jdom2,JDOM2,Development Aid,https://github.com/hunterhacker/jdom/wiki/JDOM2-A-Primer
+Lorg/jdom,JDOM V1,Development Aid,http://www.jdom.org/
 Lcom/qihoo/gamecenter,no,no,no
 Lcom/umeng/newxp/view,no,no,no
 Lcom/umeng/newxp,Umeng newxp,Development Aid,http://www.umeng.com/
@@ -659,3 +661,17 @@ Lcom/melnykov/fab,FloatingActionButton,GUI Component,https://github.com/makovkas
 Ljavax/jmdns,JavaX jmDNS library,Utility,https://github.com/jmdns/jmdns
 Ljavax/ws/rs,JavaX WebServices RESTful Resources,Utility,https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html
 Ljavax/servlet,JavaX Servlet API,Utility,https://www.jcp.org/en/jsr/detail?id=369
+Ljavax/mail,JavaMail API,Utility,http://www.oracle.com/technetwork/java/javamail/index.html
+Ljavax/activation,JavaBeans Activation Framework (JAF),Utility,http://www.oracle.com/technetwork/java/javase/jaf-135115.html
+Ljavax/annotation,JavaX Annotation API,Utility,
+Lorg/ccil/cowan/tagsoup,TagSoup,Utility,https://github.com/orbeon/tagsoup
+Lcom/ibm/icu,International Components for Unicode,Utility,https://www-01.ibm.com/software/globalization/icu/
+Lcom/dropbox/client2,Dropbox Java SDK,Utility,https://github.com/gini/dropbox-java-sdk
+Lorg/jaudiotagger,JAudiotagger,Utility,http://www.jthink.net/jaudiotagger/
+Ljxl,Java Excel API,Utility,http://jexcelapi.sourceforge.net/
+Lcom/readystatesoftware/sqliteasset,Android SQLiteAssetHelper,Utility,https://github.com/jgilfelt/android-sqlite-asset-helper
+Lcom/google/api/client,Google API Client Libraries,Development Framework,https://developers.google.com/api-client-library/java/
+Lcom/batch,batch,Mobile Analytics,https://batch.com/doc/
+Lcom/squareup/tape,Tape by Square,Utility,https://github.com/square/tape
+Lcom/squareup/seismic,Seismic,Utility,https://github.com/square/seismic
+Lit/gmariotti/cardslib,Card Library,Utility,https://github.com/gabrielemariotti/cardslib
