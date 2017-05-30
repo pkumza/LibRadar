@@ -51,7 +51,7 @@ Lcom/magtab,Magtab,Development Aid,https://www.magtab.com/
 Lcom/appmakr,Appmakr,Development Aid,https://www.appmakr.com/
 Lcom/appbrain,Appbrain,Development Aid,http://www.appbrain.com/
 Lcom/skplanet,skplanet,Development Aid,http://www.skplanet.com
-Lcom/urbanairship,urbanairship,GUI Component,https://www.urbanairship.com/
+Lcom/urbanairship,urbanairship,Mobile Analytics,https://www.urbanairship.com/
 Lnet/youmi,Youmi Ads,Advertisement,http://www.youmi.net/
 Lcom/adsdk,AdSDK,Advertisement,
 Lkawa,Kawa for Android,Development Aid,https://www.gnu.org/software/kawa/Building-for-Android.html
@@ -107,7 +107,7 @@ Lcom/mongodb,mongoDB,Development Aid,http://mongodb.github.io/mongo-java-driver/
 Lv2/com/playhaven,PlayHaven Mobile Ads,Advertisement,http://www.playhaven.com/
 Lcom/doapps,doapps,Development Aid,http://www.doapps.com/
 Lroboguice,Roboguice,Development Aid,https://github.com/roboguice/roboguice
-Lcom/goodbarber,goodbarber,GUI Component,http://www.goodbarber.com/
+Lcom/goodbarber,goodbarber,Development Framework,http://www.goodbarber.com/
 Lcom/tencent/webnet,Tencent WebNet,Development Aid,
 Lgreendroid,GreenDroid,GUI Component,https://github.com/cyrilmottier/GreenDroid
 Lcom/alipay,Alipay,Payment,https://dev.alipay.com/
@@ -337,7 +337,7 @@ Lcom/my/target/core/ui,no,no,no
 Lcom/my/target/core/ui/views,no,no,no
 Lcom/amazon/ags,Amazon Game Studios,Game Engine,https://games.amazon.com/
 Lokhttp3,OKHttp3.0,Development Aid,https://github.com/square/okhttp
-Lcom/crashlytics,Crashlytics,Mobile Analytics,http://try.crashlytics.com
+Lcom/crashlytics/android,Crashlytics,Mobile Analytics,http://try.crashlytics.com
 Lcom/supersonicads/sdk,Supersonic: Mobile Advertising,Advertisement,https://www.supersonic.com/
 Lcom/supersonicads,no,no,no
 Lcom/immersion,no,no,no
@@ -655,3 +655,7 @@ Lcom/uzmap/pkg/uzkit/fineHttp,fine HTTP,Development Aid,http://docs.apicloud.com
 Lcom/androidquery,AndroidQuery,Development Aid,https://github.com/androidquery/androidquery/
 Lcom/bumptech/glide,Glide,Development Aid,https://github.com/bumptech/glide/
 Lit/sauronsoftware/ftp4j,ftp4j,Development Aid,http://www.sauronsoftware.it/projects/ftp4j/
+Lcom/melnykov/fab,FloatingActionButton,GUI Component,https://github.com/makovkastar/FloatingActionButton/
+Ljavax/jmdns,JavaX jmDNS library,Utility,https://github.com/jmdns/jmdns
+Ljavax/ws/rs,JavaX WebServices RESTful Resources,Utility,https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html
+Ljavax/servlet,JavaX Servlet API,Utility,https://www.jcp.org/en/jsr/detail?id=369
