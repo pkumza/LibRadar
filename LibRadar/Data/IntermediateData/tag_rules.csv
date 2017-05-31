@@ -13,7 +13,7 @@ Lcom/google/appinventor,Google Appinventor,Development Aid,https://code.google.c
 Lcom/qoppa,Qoppa Software,Development Aid,https://www.qoppa.com/
 Lcom/adobe/air,Adobe Air,Development Aid,http://www.adobe.com/cn/devnet/air/air_for_android.html
 Lcom/google/common,Google Core Libraries for Java 6+,Development Aid,https://github.com/google/guava
-Ljavax,javax,Development Aid,
+Ljavax,no,no,no
 Lcom/actionbarsherlock,ActionBarSherlock,Development Aid,http://actionbarsherlock.com/
 Lcom/vercoop,Vercoop,Development Aid,http://www.vercoop.com/
 Lcom/chartboost/sdk,ChartBoost,Advertisement,http://www.chartboost.com/
