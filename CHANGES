@@ -2,7 +2,12 @@ LibRadar Changelog
 ===============
 
 
-__version 2.2.0 (current version)__
+__version 2.2.1 (current version)__
+
+1. Updates some lib rules
+2. Add Lite version
+
+__version 2.2.0__
 
 1. Change Md5 to SHA256.
 2. Fix bugs

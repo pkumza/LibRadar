@@ -27,8 +27,6 @@ import hashlib
 import csv
 import redis
 
-# Databases
-db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
 
 # tag_rules
 labeled_libs = list()
@@ -63,6 +61,7 @@ class TreeNode(object):
         self.children = dict()
         self.match = list()
         self.permissions = set()
+        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
 
     def insert(self, package_name, weight, sha256, permission_list):
         # no matter how deep the package is, add permissions here.
@@ -88,10 +87,10 @@ class TreeNode(object):
             yes_or_no = raw_input("Warning: Brand %s as a new library? (Y/n)" % self.pn)
             if yes_or_no == 'Y' or yes_or_no == 'y':
                 try:
-                    db.hincrby(name=DB_FEATURE_CNT, key=self.sha256, amount=10000000)
-                    db.hset(name=DB_FEATURE_WEIGHT, key=self.sha256, value=self.weight)
-                    db.hset(name=DB_UN_OB_PN, key=self.sha256, value=standard_package)
-                    db.hset(name=DB_FEATURE_CNT, key=self.sha256, value=100000000)
+                    self.db.hincrby(name=DB_FEATURE_CNT, key=self.sha256, amount=10000000)
+                    self.db.hset(name=DB_FEATURE_WEIGHT, key=self.sha256, value=self.weight)
+                    self.db.hset(name=DB_UN_OB_PN, key=self.sha256, value=standard_package)
+                    self.db.hset(name=DB_FEATURE_CNT, key=self.sha256, value=100000000)
                 except:
                     return "Error in database."
                 return "Success."
@@ -105,13 +104,23 @@ class TreeNode(object):
                 return "Package Not found in this APK."
 
 
-
 class Tree(object):
     """
     Tree
     """
-    def __init__(self):
+    def __init__(self, lite=True):
+        self.lite = lite
         self.root = TreeNode()
+        self.db = None
+        self.feature = None
+        if not self.lite:
+            self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
+        else:
+            self.feature = dict()
+            with open("Data/IntermediateData/lite_dataset_10.csv", 'r') as file_rules:
+                csv_rules_reader = csv.reader(file_rules, delimiter=',', quotechar='|')
+                for row in csv_rules_reader:
+                    self.feature[row[0]] = row[1:5]
 
     def insert(self, package_name, weight, sha256, permission_list):
         self.root.insert(package_name, weight, sha256, permission_list)
@@ -172,22 +181,20 @@ class Tree(object):
         """
         self.post_order(visit=self._cal_sha256)
 
-    @staticmethod
-    def _match(node):
-        pipe = db.pipeline()
-        pipe.hget(name=DB_UN_OB_PN, key=node.sha256)
-        pipe.hget(name=DB_FEATURE_CNT, key=node.sha256)
-        pipe.hget(name=DB_UN_OB_CNT, key=node.sha256)
-        pipe_res = pipe.execute()
-        a, c, u = pipe_res
-        """ Debug Log
-        if a is not None:
-            print "----"
-            print "Potential Name: " + a
-            print "Package Name  :" + node.pn
-            print "Count: " + u + '/' + c
-            print str(node.weight) + " " + str(w)
-        """
+    def _match(self, node):
+        a, c, u = None, None, None
+        if not self.lite:
+            pipe = self.db.pipeline()
+            pipe.hget(name=DB_UN_OB_PN, key=node.sha256)
+            pipe.hget(name=DB_FEATURE_CNT, key=node.sha256)
+            pipe.hget(name=DB_UN_OB_CNT, key=node.sha256)
+            pipe_res = pipe.execute()
+            a, c, u = pipe_res
+        else:
+            if node.sha256 in self.feature:
+                acu_cur = self.feature[node.sha256]
+                a, c, u = acu_cur[3], acu_cur[0], acu_cur[2]
+
         # if could not find this package in database, search its children.
         if a is None:
             return 1
@@ -296,23 +303,31 @@ class Tree(object):
     def match(self):
         self.pre_order(visit=self._match)
 
-    @staticmethod
-    def _find_untagged(node, res):
+    def _find_untagged(self, node, res):
         # If there's already some matches here, do not search its children. non-sense.
+        a, c, u = None, None, None
         if len(node.match) != 0:
             return -1
-        pipe = db.pipeline()
-        pipe.hget(name=DB_UN_OB_PN, key=node.sha256)
-        pipe.hget(name=DB_FEATURE_CNT, key=node.sha256)
-        pipe.hget(name=DB_UN_OB_CNT, key=node.sha256)
-        pipe_res = pipe.execute()
-        a, c, u = pipe_res
+        if not self.lite:
+            pipe = self.db.pipeline()
+            pipe.hget(name=DB_UN_OB_PN, key=node.sha256)
+            pipe.hget(name=DB_FEATURE_CNT, key=node.sha256)
+            pipe.hget(name=DB_UN_OB_CNT, key=node.sha256)
+            pipe_res = pipe.execute()
+            a, c, u = pipe_res
+        else:
+            if node.sha256 in self.feature:
+                acu_cur = self.feature[node.sha256]
+                a, c, u = acu_cur[3], acu_cur[0], acu_cur[2]
+
+        if a is None:
+            return 1
         # If the package name is already in no_lib list, ignore it and search its children.
         for non_lib in no_lib:
             if non_lib[0] == a:
                 return 1
         # Potential Name is not convincing enough. search its children
-        if u < 100 or float(u) / float(c) < 0.5 or node.weight < 50 or int(c) < 20:
+        if float(u) / float(c) < 0.5 or node.weight < 50 or int(c) < 20:
             return 2
 
         # JSON support
@@ -371,3 +386,4 @@ class Tree(object):
 
     def get_lib(self, res):
         self.pre_order_res(visit=self._get_lib, res=res)
+
