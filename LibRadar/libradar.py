@@ -32,7 +32,7 @@ class LibRadar(object):
     """
     LibRadar
     """
-    def __init__(self, apk_path):
+    def __init__(self, apk_path, lite=True):
         """
         Init LibRadar instance with apk_path as a basestring.
         Create a Tree for every LibRadar instance. The tree describe the architecture of the apk. Every package is a
@@ -40,7 +40,7 @@ class LibRadar(object):
         :param apk_path: basestring
         """
         self.apk_path = apk_path
-        self.tree = dex_tree.Tree()
+        self.tree = dex_tree.Tree(lite=lite)
         self.dex_name = ""
         # Instance of Dex Object in dex_parser.
         self.dex = None
@@ -154,9 +154,6 @@ class LibRadar(object):
             class_sha256.update(api)
         if not IGNORE_ZERO_API_FILES or len(api_list) != 0:
             pass
-            # TODO: use database to output this.
-            # logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
-            #              (class_sha256.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
         return len(api_list), class_sha256.hexdigest(), class_sha256.hexdigest(), sorted(list(permission_list))
 
     def extract_dex(self):
@@ -220,6 +217,6 @@ if __name__ == '__main__':
         print("    $ python libradar.py example.apk")
         exit(1)
     apk_path = sys.argv[1]
-    lrd = LibRadar(apk_path)
+    lrd = LibRadar(apk_path, lite=True)
     res = lrd.compare()
     print(json.dumps(res, indent=4, sort_keys=True))

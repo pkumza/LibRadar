@@ -133,7 +133,6 @@ class PackageNode:
         self.sha256_list.sort()
         for sha256_item in self.sha256_list:
             curr_sha256.update(sha256_item)
-        # TODO: Currently do not put class into database.
         # if not IGNORE_ZERO_API_FILES or len(self.sha256_list) != 0:
         #    logger.debug("sha256: %s Weight: %-6d PackageName: %s" %
         #                 (curr_sha256.hexdigest(), self.weight, '/'.join(self.full_path)))
@@ -236,7 +235,6 @@ class PackageNodeList:
                         if un ob pn count <= 0
                             un ob pn = current pn
             """
-            # TODO: Should use pipe and scan_iter to modify the efficiency.
             while True:
                 pipe = self.db.pipeline(transaction=False)
                 if package_exist is None:
@@ -262,8 +260,6 @@ class PackageNodeList:
                             pipe.hset(name=DB_UN_OB_CNT, key=child_sha256, value=0)
                 pipe.execute()
                 break
-
-            # TODO: APK List
             self.pn_list.pop()
         # Operation 2
         for d in range(common_depth, len(package_path_parts_list)):
@@ -350,9 +346,6 @@ class DexExtractor:
             class_sha256.update(api)
         if not IGNORE_ZERO_API_FILES or len(api_list) != 0:
             pass
-            # TODO: use database to output this.
-            # logger.debug("sha256: %s Weight: %-6d ClassName: %s" %
-            #              (class_sha256.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
         return len(api_list), class_sha256.hexdigest(), class_sha256.hexdigest()
 
     def extract_dex(self):

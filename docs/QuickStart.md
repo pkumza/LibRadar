@@ -2,6 +2,22 @@
 
 ## How to use LibRadar
 
+### Lite Version Online! (The lite version can meet most needs)
+
+1. Download Code
+ - Github
+   ```bash
+   $ git clone https://github.com/pkumza/LibRadar
+   ```
+
+1. Use LibRadar to detect libraries.
+
+  ```bash
+  $ python LibRadar/libradar.py someapp.apk
+  ```
+
+### Ordinary Version
+
 1. Install dependencies. build-essential, python2, pip, git, redis
 
    Recommend to use pypy, install pypy and pypy-pip to boost LibRadar
@@ -53,6 +69,21 @@
 
   $ redis-server tool/redis.conf
   ```
+
+1. Change libradar.py
+
+  Change the code in main function
+
+  ```
+  lrd = LibRadar(apk_path, lite=True)
+  ```
+
+  into
+
+  ```
+  lrd = LibRadar(apk_path, lite=False)
+  ```
+
 1. Use LibRadar to detect libraries.
 
   ```bash

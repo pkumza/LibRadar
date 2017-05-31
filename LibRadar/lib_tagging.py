@@ -94,7 +94,6 @@ class Tagger:
         return self.features
 
     def set_rule(self, ipt_pn, ipt_real_name, ipt_type, ipt_website):
-        # TODO: Determine the weight about the library.
         self.csv_rule_writer.writerow([ipt_pn, ipt_real_name, ipt_type, ipt_website])
         # use for ignore libs that already tagged.
         self.dict_tag_rules[ipt_pn] = (ipt_real_name, ipt_type, ipt_website)
@@ -211,7 +210,6 @@ class TaggerCli:
             ipt_real_name = raw_input("Input Library's real name: ")
             # type
             ipt_lib_type = raw_input("Input Library Type: ")
-            # TODO if type not in types
             # Official website
             ipt_website = raw_input("Input Official Website: ")
             self.tagger.set_rule(ipt_pn, ipt_real_name, ipt_lib_type, ipt_website)

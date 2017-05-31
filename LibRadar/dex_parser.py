@@ -358,7 +358,6 @@ def dexDecodeInstruction(dexFile, dexCode, offset):
     elif formatIns == '20bc':
         # Format: AA|op BBBB <=> op AA, kind@BBBB
         # 无opcode
-        # TODO
         pass
     elif formatIns == '22x':
         # Format: AA|op BBBB <=> op vAA, vBBBB
@@ -627,7 +626,6 @@ def dexDecodeInstruction(dexFile, dexCode, offset):
     elif formatIns == '22cs':
         # Format: B|A|op CCCC <=> op vA, vB, fieldoff@CCCC
         # 无opcode
-        # TODO
         pass
     elif formatIns == '30t':
         # Format: ØØ|op AAAAlo AAAAhi <=> op +AAAAAAAA
@@ -856,7 +854,6 @@ def dexDecodeInstruction(dexFile, dexCode, offset):
             indexType = 'type'
             indexStr = dexFile.DexTypeIdList[int(BBBB, 16)]
         # (2) opcode=74..78 invoke-kind/range {vCCCC .. vNNNN}, method@BBBB
-        # TODO I don't know if other types of invoke could also have effects.
         if opcode >= 0x74 and opcode <= 0x78:
             ops = ['invoke-virtual/range', 'invoke-super/range', 'invoke-direct/range', 'invoke-static/range', 'invoke-intenrface/range']
             op = ops[opcode - 0x74]
