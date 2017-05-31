@@ -10,6 +10,10 @@
    $ git clone https://github.com/pkumza/LibRadar
    ```
 
+1. Download Feature File
+
+  Download file from [Data for LibRadar](https://github.com/pkumza/Data_for_LibRadar/blob/master/lite_dataset_10.csv), then move it into LibRadar/LibRadar/Data/IntermediateData directory.
+
 1. Use LibRadar to detect libraries.
 
   ```bash
