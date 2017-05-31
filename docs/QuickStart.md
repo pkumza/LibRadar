@@ -10,11 +10,9 @@
    $ git clone https://github.com/pkumza/LibRadar
    ```
 
-1. Download Feature File
-
-  Download file from [Data for LibRadar](https://github.com/pkumza/Data_for_LibRadar/blob/master/lite_dataset_10.csv), then move it into LibRadar/LibRadar/Data/IntermediateData directory.
-
-1. Use LibRadar to detect libraries.
+2. Download Feature File
+ - Download file from [Data for LibRadar](https://github.com/pkumza/Data_for_LibRadar/blob/master/lite_dataset_10.csv), then move it into LibRadar/LibRadar/Data/IntermediateData directory.
+3. Use LibRadar to detect libraries.
 
   ```bash
   $ python LibRadar/libradar.py someapp.apk
@@ -37,13 +35,13 @@
 	$ make install
   ```
 
-1. Install modules
+2. Install modules
 
   ```
     $ pip install requirements.txt
   ```
 
-1. Download code
+3. Download code
 
  * Github Release (Recommanded)
  <br/>
@@ -62,7 +60,7 @@
    Do not use pip install because I didn't include data file into the code, as libradar will get error that it could not
    find data file.
 
-1. Download LibRadarData.rdb and run redis-server
+4. Download LibRadarData.rdb and run redis-server
   https://github.com/pkumza/LibRadar/blob/dataset_2/tool/dataset-0410-19k.rdb.tar.gz?raw=true
 
   ```bash
@@ -74,7 +72,7 @@
   $ redis-server tool/redis.conf
   ```
 
-1. Change libradar.py
+5. Change libradar.py
 
   Change the code in main function
 
@@ -88,7 +86,7 @@
   lrd = LibRadar(apk_path, lite=False)
   ```
 
-1. Use LibRadar to detect libraries.
+6. Use LibRadar to detect libraries.
 
   ```bash
   $ python LibRadar/libradar.py someapp.apk
