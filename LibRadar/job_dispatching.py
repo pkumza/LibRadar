@@ -21,7 +21,7 @@
 
 
 # Step 1 jar 反编译，得到api dict [tech: jad]
-# Step 2 hash feature Tree [tech: md5]
+# Step 2 hash feature Tree [tech: sha256]
 # Step 3 [tech: Redis]
 # Step 3.1 [tech: 众数机制]
 # Step 3.2 [tech: 分布式、并行]
@@ -57,7 +57,7 @@ class DexExtractorWrapper:
         self.p_name = p_name
         self.queue = queue
         # MD5 for current app, for the current instance of Dex Extractor
-        self.md5 = ""
+        self.sha256 = ""
         # Path for current app.
         self.app_path = ""
 
@@ -70,18 +70,18 @@ class DexExtractorWrapper:
                 break
             logger.debug("Process %s is extracting %s" % (self.p_name, self.app_path))
             try:
-                self.get_md5()
+                self.get_sha256()
             except:
                 # Yeah, Too broad exception it is. But I don't care.
                 # There could be many types of exception but what I want to do is ignore the wrong apk and focus on
                 # the next app.
                 logger.error("Process %s get Md5 error!" % self.p_name)
                 continue
-            # logger.info("Process %s got md5 %s" % (self.p_name, self.md5))
+            # logger.info("Process %s got sha256 %s" % (self.p_name, self.sha256))
             # If the apk file is broken, it can not be unzipped.
             try:
                 zf = zipfile.ZipFile(self.app_path, mode="r")
-                dex_file_extracted = zf.extract("classes.dex", SCRIPT_PATH + "/Data/Decompiled/%s" % self.md5)
+                dex_file_extracted = zf.extract("classes.dex", SCRIPT_PATH + "/Data/Decompiled/%s" % self.sha256)
             except:
                 logger.error("Process %s, not a valid Zip file." % self.p_name)
                 continue
@@ -92,28 +92,28 @@ class DexExtractorWrapper:
                 logger.critical("Process %s, extracting error!!" % self.p_name)
                 continue
             try:
-                cmd = 'rm -rf ' + SCRIPT_PATH + "/Data/Decompiled/%s" % self.md5
+                cmd = 'rm -rf ' + SCRIPT_PATH + "/Data/Decompiled/%s" % self.sha256
                 os.system(cmd)
             except:
                 logger.error("Process %s, rm error" % self.p_name)
         logger.info("Process %s returns" % self.p_name)
 
-    def get_md5(self):
+    def get_sha256(self):
         if not os.path.isfile(self.app_path):
             logger.critical("file path %s is not a file" % self.app_path)
             raise AssertionError
-        file_md5 = hashlib.md5()
+        file_sha256 = hashlib.sha256()
         f = file(self.app_path, 'rb')
         while True:
             block = f.read(4096)
             if not block:
                 break
-            file_md5.update(block)
+            file_sha256.update(block)
         f.close()
-        file_md5_value = file_md5.hexdigest()
-        logger.debug("APK %s's MD5 is %s" % (self.app_path, file_md5_value))
-        self.md5 = file_md5_value
-        return file_md5_value
+        file_sha256_value = file_sha256.hexdigest()
+        logger.debug("APK %s's MD5 is %s" % (self.app_path, file_sha256_value))
+        self.sha256 = file_sha256_value
+        return file_sha256_value
 
 
 def run_dex_extractor_wrapper(process_name, q):

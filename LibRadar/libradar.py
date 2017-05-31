@@ -81,29 +81,29 @@ class LibRadar(object):
         if len(self.apk_path) <= 4 or self.apk_path[-4:] != ".apk":
             logger.error("%s is not a apk file.")
             raise AssertionError
-        # Get Md5
-        self.hex_md5 = self.get_md5()
+        # Get SHA256
+        self.hex_sha256 = self.get_sha256()
         # Unzip
         zf = zipfile.ZipFile(self.apk_path, mode='r')
         # Transfer the unzipped dex file name to self.dex_name
-        self.dex_name = zf.extract("classes.dex", SCRIPT_PATH + "/Data/Decompiled/%s" % self.hex_md5)
+        self.dex_name = zf.extract("classes.dex", SCRIPT_PATH + "/Data/Decompiled/%s" % self.hex_sha256)
         return self.dex_name
 
-    def get_md5(self):
+    def get_sha256(self):
         if not os.path.isfile(self.apk_path):
             logger.critical("file path %s is not a file" % self.apk_path)
             raise AssertionError
-        file_md5 = hashlib.md5()
+        file_sha256 = hashlib.sha256()
         f = file(self.apk_path, 'rb')
         while True:
             block = f.read(4096)
             if not block:
                 break
-            file_md5.update(block)
+            file_sha256.update(block)
         f.close()
-        file_md5_value = file_md5.hexdigest()
-        logger.debug("APK %s's MD5 is %s" % (self.apk_path, file_md5_value))
-        return file_md5_value
+        file_sha256_value = file_sha256.hexdigest()
+        logger.debug("APK %s's MD5 is %s" % (self.apk_path, file_sha256_value))
+        return file_sha256_value
 
     def get_api_list(self, dex_method, api_list, permission_list):
         if dex_method.dexCode is None:
@@ -130,7 +130,7 @@ class LibRadar(object):
         return
 
     def extract_class(self, dex_class_def_obj):
-        class_md5 = hashlib.md5()
+        class_sha256 = hashlib.sha256()
         # API List
         #   a list for basestring
         api_list = list()
@@ -151,13 +151,13 @@ class LibRadar(object):
         # In this case, we could only use a stack to create the package features.
         api_list.sort()
         for api in api_list:
-            class_md5.update(api)
+            class_sha256.update(api)
         if not IGNORE_ZERO_API_FILES or len(api_list) != 0:
             pass
             # TODO: use database to output this.
             # logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
-            #              (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
-        return len(api_list), class_md5.hexdigest(), class_md5.hexdigest(), sorted(list(permission_list))
+            #              (class_sha256.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
+        return len(api_list), class_sha256.hexdigest(), class_sha256.hexdigest(), sorted(list(permission_list))
 
     def extract_dex(self):
         # Log Start
@@ -169,7 +169,7 @@ class LibRadar(object):
         # Create a Dex object
         self.dex = dex_parser.DexFile(self.dex_name)
         for dex_class_def_obj in self.dex.dexClassDefList:
-            weight, raw_md5, hex_md5, permission_list = self.extract_class(dex_class_def_obj=dex_class_def_obj)
+            weight, raw_sha256, hex_sha256, permission_list = self.extract_class(dex_class_def_obj=dex_class_def_obj)
             class_name = self.dex.getDexTypeId(dex_class_def_obj.classIdx)
             """
             I got many \x01 here before the class name.
@@ -183,7 +183,7 @@ class LibRadar(object):
                 class_name = class_name[l_index:]
             if IGNORE_ZERO_API_FILES and weight == 0:
                 continue
-            self.tree.insert(package_name=class_name, weight=weight, md5=raw_md5, permission_list=permission_list)
+            self.tree.insert(package_name=class_name, weight=weight, sha256=raw_sha256, permission_list=permission_list)
         return 0
 
     def analyse(self):
@@ -195,8 +195,8 @@ class LibRadar(object):
         self.unzip()
         # Step 2: Extract Dex and insert package-level info into Tree
         self.extract_dex()
-        # Step 3: post-order traverse the tree, calculate every package's md5 value.
-        self.tree.cal_md5()
+        # Step 3: post-order traverse the tree, calculate every package's sha256 value.
+        self.tree.cal_sha256()
 
 
     def compare(self):

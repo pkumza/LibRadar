@@ -28,7 +28,7 @@ import csv
 import redis
 
 # Databases
-db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0)
+db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
 
 # tag_rules
 labeled_libs = list()
@@ -47,7 +47,7 @@ class TreeNode(object):
     """
     Tree Node Structure
     {
-        md5     : 02b018f5b94c5fbc773ab425a15b8bbb              // In fact md5 is the non-hex one
+        sha256  : 02b018f5b94c5fbc773ab425a15b8bbb              // In fact sha256 is the non-hex one
         weight  : 1023                                          // How many APIs in this Node
         pn      : Lcom/facebook/internal                        // Current package name
         parent  : <TreeNode>                                    // Parent node
@@ -56,7 +56,7 @@ class TreeNode(object):
     }
     """
     def __init__(self, n_weight=-1, n_pn="", n_parent=None):
-        self.md5 = ""
+        self.sha256 = ""
         self.weight = n_weight
         self.pn = n_pn
         self.parent = n_parent
@@ -64,22 +64,22 @@ class TreeNode(object):
         self.match = list()
         self.permissions = set()
 
-    def insert(self, package_name, weight, md5, permission_list):
+    def insert(self, package_name, weight, sha256, permission_list):
         # no matter how deep the package is, add permissions here.
         for permission in permission_list:
             self.permissions.add(permission)
         current_depth = 0 if self.pn == "" else self.pn.count('/') + 1
         target_depth = package_name.count('/') + 1
         if current_depth == target_depth:
-            self.md5 = md5
+            self.sha256 = sha256
             return "F: %s" % package_name
         target_package_name = '/'.join(package_name.split('/')[:current_depth + 1])
         if target_package_name in self.children:
             self.children[target_package_name].weight += weight
-            return self.children[target_package_name].insert(package_name, weight, md5, permission_list)
+            return self.children[target_package_name].insert(package_name, weight, sha256, permission_list)
         else:
             self.children[target_package_name] = TreeNode(n_weight=weight, n_pn=target_package_name, n_parent=self)
-            return self.children[target_package_name].insert(package_name, weight, md5, permission_list)
+            return self.children[target_package_name].insert(package_name, weight, sha256, permission_list)
 
     def brand(self, package_name, standard_package):
         current_depth = 0 if self.pn == "" else self.pn.count('/') + 1
@@ -88,10 +88,10 @@ class TreeNode(object):
             yes_or_no = raw_input("Warning: Brand %s as a new library? (Y/n)" % self.pn)
             if yes_or_no == 'Y' or yes_or_no == 'y':
                 try:
-                    db.hincrby(name=DB_FEATURE_CNT, key=self.md5, amount=10000000)
-                    db.hset(name=DB_FEATURE_WEIGHT, key=self.md5, value=self.weight)
-                    db.hset(name=DB_UN_OB_PN, key=self.md5, value=standard_package)
-                    db.hset(name=DB_FEATURE_CNT, key=self.md5, value=100000000)
+                    db.hincrby(name=DB_FEATURE_CNT, key=self.sha256, amount=10000000)
+                    db.hset(name=DB_FEATURE_WEIGHT, key=self.sha256, value=self.weight)
+                    db.hset(name=DB_UN_OB_PN, key=self.sha256, value=standard_package)
+                    db.hset(name=DB_FEATURE_CNT, key=self.sha256, value=100000000)
                 except:
                     return "Error in database."
                 return "Success."
@@ -113,8 +113,8 @@ class Tree(object):
     def __init__(self):
         self.root = TreeNode()
 
-    def insert(self, package_name, weight, md5, permission_list):
-        self.root.insert(package_name, weight, md5, permission_list)
+    def insert(self, package_name, weight, sha256, permission_list):
+        self.root.insert(package_name, weight, sha256, permission_list)
 
     def brand(self, package_name, standard_package):
         return self.root.brand(package_name, standard_package)
@@ -150,34 +150,34 @@ class Tree(object):
         visit(node)
 
     @staticmethod
-    def _cal_md5(node):
+    def _cal_sha256(node):
         # Ignore Leaf Node
-        if len(node.children) == 0 and node.md5 != "":
+        if len(node.children) == 0 and node.sha256 != "":
             return
         # Everything seems Okay.
-        cur_md5 = hashlib.md5()
-        md5_list = list()
+        cur_sha256 = hashlib.sha256()
+        sha256_list = list()
         for child in node.children:
-            md5_list.append(node.children[child].md5)
-        md5_list.sort()
-        for md5_item in md5_list:
-            cur_md5.update(md5_item)
-        node.md5 = cur_md5.hexdigest()
+            sha256_list.append(node.children[child].sha256)
+        sha256_list.sort()
+        for sha256_item in sha256_list:
+            cur_sha256.update(sha256_item)
+        node.sha256 = cur_sha256.hexdigest()
         # you could see node.pn here. e.g. Lcom/tencent/mm/sdk/modelpay
 
-    def cal_md5(self):
+    def cal_sha256(self):
         """
-        Calculate md5 for every package
+        Calculate sha256 for every package
         :return:
         """
-        self.post_order(visit=self._cal_md5)
+        self.post_order(visit=self._cal_sha256)
 
     @staticmethod
     def _match(node):
         pipe = db.pipeline()
-        pipe.hget(name=DB_UN_OB_PN, key=node.md5)
-        pipe.hget(name=DB_FEATURE_CNT, key=node.md5)
-        pipe.hget(name=DB_UN_OB_CNT, key=node.md5)
+        pipe.hget(name=DB_UN_OB_PN, key=node.sha256)
+        pipe.hget(name=DB_FEATURE_CNT, key=node.sha256)
+        pipe.hget(name=DB_UN_OB_CNT, key=node.sha256)
         pipe_res = pipe.execute()
         a, c, u = pipe_res
         """ Debug Log
@@ -302,9 +302,9 @@ class Tree(object):
         if len(node.match) != 0:
             return -1
         pipe = db.pipeline()
-        pipe.hget(name=DB_UN_OB_PN, key=node.md5)
-        pipe.hget(name=DB_FEATURE_CNT, key=node.md5)
-        pipe.hget(name=DB_UN_OB_CNT, key=node.md5)
+        pipe.hget(name=DB_UN_OB_PN, key=node.sha256)
+        pipe.hget(name=DB_FEATURE_CNT, key=node.sha256)
+        pipe.hget(name=DB_UN_OB_CNT, key=node.sha256)
         pipe_res = pipe.execute()
         a, c, u = pipe_res
         # If the package name is already in no_lib list, ignore it and search its children.
@@ -318,7 +318,7 @@ class Tree(object):
         # JSON support
         utg_lib_obj = dict()            # untagged library object
         utg_lib_obj["Package"] = node.pn
-        utg_lib_obj["Standard Package"] = u
+        utg_lib_obj["Standard Package"] = a
         utg_lib_obj["Library"] = "Unknown"
         utg_lib_obj["Popularity"] = int(c)
         utg_lib_obj["Weight"] = node.weight

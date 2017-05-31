@@ -2,7 +2,12 @@ LibRadar Changelog
 ===============
 
 
-__version 2.1.0 (current version)__
+__version 2.2.0 (current version)__
+
+1. Change Md5 to SHA256.
+2. Fix bugs
+
+__version 2.1.0__
 
 1. better hashing algorithm
 2. full and convincing API list

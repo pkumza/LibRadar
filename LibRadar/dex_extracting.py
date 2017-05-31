@@ -28,7 +28,7 @@
 #
 #   Implementation:
 #       Firstly, get class defines from dex file.
-#       For each class, we could generate it's APIs and so as the MD5 feature.
+#       For each class, we could generate it's APIs and so as the sha256 feature.
 #       As the class definition contains the path, so we could construct a tree for the classes.
 #
 #       e.g.
@@ -92,6 +92,7 @@ import redis
 import dex_parser
 import time
 from _settings import *
+import sys
 
 
 class PackageNode:
@@ -100,9 +101,9 @@ class PackageNode:
             Every Node of PackageNodeList is an instance of PackageNode.
 
         contains:
-            md5_list: children's md5
-                the md5 feature of current node is based on md5 from children.
-                sort children's md5 and then generate its own md5 feature.
+            sha256_list: children's sha256
+                the sha256 feature of current node is based on sha256 from children.
+                sort children's sha256 and then generate its own sha256 feature.
 
             path: the path is current packages' folder's name.
                 e.g. Lcom/google/ads 's path is "ads"
@@ -114,29 +115,29 @@ class PackageNode:
     def __init__(self, path, full_path):
         """
             Init PackageNode with path
-            Weight and md5 list are initiated as empty.
+            Weight and sha256 list are initiated as empty.
         :param path: basestring
         :param full_path: basestring
         """
-        self.md5_list = list()
+        self.sha256_list = list()
         self.path = path
         self.full_path = full_path
         self.weight = 0
 
-    def generate_md5(self):
+    def generate_sha256(self):
         """
-            Generate Md5 of current node based on children's md5.
-        :return: current Node's raw_md5 and weight.
+            Generate sha256 of current node based on children's sha256.
+        :return: current Node's raw_sha256 and weight.
         """
-        curr_md5 = hashlib.md5()
-        self.md5_list.sort()
-        for md5_item in self.md5_list:
-            curr_md5.update(md5_item)
+        curr_sha256 = hashlib.sha256()
+        self.sha256_list.sort()
+        for sha256_item in self.sha256_list:
+            curr_sha256.update(sha256_item)
         # TODO: Currently do not put class into database.
-        # if not IGNORE_ZERO_API_FILES or len(self.md5_list) != 0:
-        #    logger.debug("MD5: %s Weight: %-6d PackageName: %s" %
-        #                 (curr_md5.hexdigest(), self.weight, '/'.join(self.full_path)))
-        return curr_md5.hexdigest(), self.weight
+        # if not IGNORE_ZERO_API_FILES or len(self.sha256_list) != 0:
+        #    logger.debug("sha256: %s Weight: %-6d PackageName: %s" %
+        #                 (curr_sha256.hexdigest(), self.weight, '/'.join(self.full_path)))
+        return curr_sha256.hexdigest(), self.weight
 
 
 class PackageNodeList:
@@ -148,7 +149,7 @@ class PackageNodeList:
     """
     def __init__(self):
         self.pn_list = list()
-        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=0)
+        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
 
     def flush_db(self):
         """
@@ -162,16 +163,16 @@ class PackageNodeList:
         logger.warning("Flush Database")
         self.db.flushdb()
 
-    def catch_a_class_def(self, package_name, class_md5, class_weight):
+    def catch_a_class_def(self, package_name, class_sha256, class_weight):
         """
         catch a class definition
 
         Class definitions are sorted.
         Every time this function catch a new class definition.
-        It got the class's package name, md5 and class weight(API count)
+        It got the class's package name, sha256 and class weight(API count)
 
         :param package_name: basestring
-        :param class_md5: basestring
+        :param class_sha256: basestring
         :param class_weight: int
         :return: None
         """
@@ -214,12 +215,12 @@ class PackageNodeList:
         pn_list_size = len(self.pn_list)
         for d in range(pn_list_size - 1, common_depth - 1, -1):
             stage_to_be_pop = self.pn_list[-1]
-            child_md5, curr_weight = stage_to_be_pop.generate_md5()
+            child_sha256, curr_weight = stage_to_be_pop.generate_sha256()
             if len(self.pn_list) > 1:
                 stage_to_be_update = self.pn_list[-2]
-                stage_to_be_update.md5_list.append(child_md5)
+                stage_to_be_update.sha256_list.append(child_sha256)
                 stage_to_be_update.weight += curr_weight
-            package_exist = self.db.hget(DB_FEATURE_CNT, child_md5)
+            package_exist = self.db.hget(DB_FEATURE_CNT, child_sha256)
             """
                 If there's no instance in database.
                     incr count
@@ -237,34 +238,28 @@ class PackageNodeList:
             """
             # TODO: Should use pipe and scan_iter to modify the efficiency.
             while True:
-                res = self.db.setnx("lock_insert", "a")
-                if int(res) == 0:
-                    time.sleep(0.2)
-                    continue
-                self.db.expire("lock_insert", 2)
                 pipe = self.db.pipeline(transaction=False)
                 if package_exist is None:
-                    pipe.hincrby(name=DB_FEATURE_CNT, key=child_md5, amount=1)
-                    pipe.hset(name=DB_FEATURE_WEIGHT, key=child_md5, value=curr_weight)
-                    pipe.hset(name=DB_UN_OB_PN, key=child_md5, value='/'.join(stage_to_be_pop.full_path))
-                    pipe.hset(name=DB_UN_OB_CNT, key=child_md5, value=1)
+                    pipe.hincrby(name=DB_FEATURE_CNT, key=child_sha256, amount=1)
+                    pipe.hset(name=DB_FEATURE_WEIGHT, key=child_sha256, value=curr_weight)
+                    pipe.hset(name=DB_UN_OB_PN, key=child_sha256, value='/'.join(stage_to_be_pop.full_path))
+                    pipe.hset(name=DB_UN_OB_CNT, key=child_sha256, value=1)
                 else:
-                    pipe.hincrby(name=DB_FEATURE_CNT, key=child_md5, amount=1)
-                    db_un_ob_pn = self.db.hget(name=DB_UN_OB_PN, key=child_md5)
+                    pipe.hincrby(name=DB_FEATURE_CNT, key=child_sha256, amount=1)
+                    db_un_ob_pn = self.db.hget(name=DB_UN_OB_PN, key=child_sha256)
                     if db_un_ob_pn is None:
                         logger.error("db_un_ob_pn should not be None here.")
                     if '/'.join(stage_to_be_pop.full_path) == db_un_ob_pn:
-                        pipe.hincrby(name=DB_UN_OB_CNT, key=child_md5, amount=1)
+                        pipe.hincrby(name=DB_UN_OB_CNT, key=child_sha256, amount=1)
                     else:
-                        pipe.hincrby(name=DB_UN_OB_CNT, key=child_md5, amount=-1)
-                        db_un_ob_pn_count = self.db.hget(name=DB_UN_OB_CNT, key=child_md5)
+                        pipe.hincrby(name=DB_UN_OB_CNT, key=child_sha256, amount=-1)
+                        db_un_ob_pn_count = self.db.hget(name=DB_UN_OB_CNT, key=child_sha256)
                         if db_un_ob_pn_count is None:
                             logger.error("db_un_ob_pn_count should not be None here.")
                         if int(db_un_ob_pn_count) <= 0:
-                            pipe.hset(name=DB_UN_OB_PN, key=child_md5, value='/'.join(stage_to_be_pop.full_path))
+                            pipe.hset(name=DB_UN_OB_PN, key=child_sha256, value='/'.join(stage_to_be_pop.full_path))
                             # forget to reset the count, which caused some count appears to be negative number.
-                            pipe.hset(name=DB_UN_OB_CNT, key=child_md5, value=0)
-                pipe.delete("lock_insert")
+                            pipe.hset(name=DB_UN_OB_CNT, key=child_sha256, value=0)
                 pipe.execute()
                 break
 
@@ -274,9 +269,9 @@ class PackageNodeList:
         for d in range(common_depth, len(package_path_parts_list)):
             self.pn_list.append(PackageNode(package_path_parts_list[d], package_path_parts_list[:d + 1]))
 
-        # add md5
+        # add sha256
         if len(self.pn_list) != 0:
-            self.pn_list[-1].md5_list.append(class_md5)
+            self.pn_list[-1].sha256_list.append(class_sha256)
             self.pn_list[-1].weight += class_weight
 
 
@@ -316,7 +311,11 @@ class DexExtractor:
             smali_code = decoded_instruction.smaliCode
             if smali_code is None:
                 logger.warning("smali code is None.")
-                continue
+                if decoded_instruction == 0:
+                    break
+                else:
+                    offset += decoded_instruction.length
+                    continue
             # Next Instruction.
             offset += decoded_instruction.length
             if smali_code == 'nop':
@@ -328,7 +327,7 @@ class DexExtractor:
         return
 
     def extract_class(self, dex_class_def_obj):
-        class_md5 = hashlib.md5()
+        class_sha256 = hashlib.sha256()
         # API List
         #   a list for basestring
         api_list = list()
@@ -348,13 +347,13 @@ class DexExtractor:
         # In this case, we could only use a stack to create the package features.
         api_list.sort()
         for api in api_list:
-            class_md5.update(api)
+            class_sha256.update(api)
         if not IGNORE_ZERO_API_FILES or len(api_list) != 0:
             pass
             # TODO: use database to output this.
-            # logger.debug("MD5: %s Weight: %-6d ClassName: %s" %
-            #              (class_md5.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
-        return len(api_list), class_md5.hexdigest(), class_md5.hexdigest()
+            # logger.debug("sha256: %s Weight: %-6d ClassName: %s" %
+            #              (class_sha256.hexdigest(), len(api_list), self.dex.getDexTypeId(dex_class_def_obj.classIdx)))
+        return len(api_list), class_sha256.hexdigest(), class_sha256.hexdigest()
 
     def extract_dex(self):
         # Log Start
@@ -366,11 +365,11 @@ class DexExtractor:
         # Create a Dex object
         self.dex = dex_parser.DexFile(self.dex_name)
         pnl = PackageNodeList()
-        # Generate Md5 from Dex
+        # Generate sha256 from Dex
 
         class_info_list = list()
         for dex_class_def_obj in self.dex.dexClassDefList:
-            weight, raw_md5, hex_md5 = self.extract_class(dex_class_def_obj=dex_class_def_obj)
+            weight, raw_sha256, hex_sha256 = self.extract_class(dex_class_def_obj=dex_class_def_obj)
             class_name = self.dex.getDexTypeId(dex_class_def_obj.classIdx)
             """
             I got many \x01 here before the class name.
@@ -384,7 +383,7 @@ class DexExtractor:
                 class_name = class_name[l_index:]
             if IGNORE_ZERO_API_FILES and weight == 0:
                 continue
-            class_info_list.append((class_name, weight, raw_md5))
+            class_info_list.append((class_name, weight, raw_sha256))
         """
             Sort the info list with the package name.
         """
@@ -392,7 +391,7 @@ class DexExtractor:
         for class_info in class_info_list:
             # logger.debug("class_name %s" % class_name)
             class_name = class_info[0]
-            raw_md5 = class_info[2]
+            raw_sha256 = class_info[2]
             weight = class_info[1]
             last_slash = class_name.rfind('/')
             # If a class belongs to root, just ignore it because it hardly be a library.
@@ -401,8 +400,7 @@ class DexExtractor:
             # get the package name
             # for class name Lcom/company/air/R; It's package name is Lcom/company/air
             package_name = class_name[:last_slash]
-            pnl.catch_a_class_def(package_name, raw_md5, weight)
-            # logger.debug("Class: %s    Hex Md5: %s    Weight: %d" % (class_name, hex_md5, weight))
+            pnl.catch_a_class_def(package_name, raw_sha256, weight)
         # Let PackageNodeList pop all the nodes.
         pnl.catch_a_class_def("", "", 0)
         return 0
@@ -410,8 +408,9 @@ class DexExtractor:
 
 if __name__ == "__main__":
     # A test for dex extractor here.
+    assert len(sys.argv) == 2
     logger.critical(" ------------------------- START ------------------------- ")
-    de = DexExtractor("/home/zachary/Projects/PycharmProjects/libradar/LibRadar/Data/Decompiled/668a863c55ba5c0255b4f3b5c3de0e29/classes.dex")
+    de = DexExtractor(sys.argv[1])
     if de.extract_dex() < 0:
         logger.error("Wrong!")
     logger.critical(" -------------------------- END -------------------------- ")
