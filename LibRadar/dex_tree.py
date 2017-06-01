@@ -214,10 +214,10 @@ class Tree(object):
             # if the potential package name is part of full lib path, search its children
             #   e.g. a is Lcom/google, we could find it as a part of Lcom/google/android/gms, so search its children for
             #       more details
-            if len(a) < len(lib[0]) and a == lib[0][:len(a)]:
+            if len(a) < len(lib[0]) and a == lib[0][:len(a)] and lib[0][len(a)] == '/':
                 continue
             # If the lib path is part of potential package name, add some count into parent's match list.
-            if len(a) > len(lib[0]) and lib[0] == a[:len(lib[0])]:
+            if len(a) > len(lib[0]) and lib[0] == a[:len(lib[0])] and a[len(lib[0])] == '/':
                 depth_diff = a.count('/') - lib[0].count('/')
                 cursor = node
                 for i in range(depth_diff):
