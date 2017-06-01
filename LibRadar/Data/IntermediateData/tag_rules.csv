@@ -1,100 +1,100 @@
 Package Name,Library Name,Type,Official Website
-La,no,no,no
-La/a,no,no,no
-La/a/a,no,no,no
-La/a/a/a,no,no,no
-La/a/a/a/a,no,no,no
-La/a/a/a/a/a,no,no,no
-La/a/a/a/a/b,no,no,no
-Lafzkl,no,no,no
-Lafzkl/development,no,no,no
+La,no,,
+La/a,no,,
+La/a/a,no,,
+La/a/a/a,no,,
+La/a/a/a/a,no,,
+La/a/a/a/a/a,no,,
+La/a/a/a/a/b,no,,
+Lafzkl,no,,
+Lafzkl/development,no,,
 Lafzkl/development/mColorPicker,Penroser,Development Aid,https://github.com/JesusFreke/Penroser
-Lair,no,no,no
-Lair/com,no,no,no
-Landroid,no,no,no
-Landroid/content,no,no,no
+Lair,no,,
+Lair/com,no,,
+Landroid,no,,
+Landroid/content,no,,
 Landroid/content/pm,Android Package management,Development Aid,https://developer.android.com/reference/android/content/pm/package-summary.html
 Landroid/opengl,OpenGL,Development Aid,http://developer.android.com/reference/android/opengl/package-summary.html
-Landroid/support,no,no,no
-Landroid/support/a,no,no,no
-Landroid/support/a/a,no,no,no
+Landroid/support,no,,
+Landroid/support/a,no,,
+Landroid/support/a/a,no,,
 Landroid/support/design,Android Support Design,Development Aid,https://developer.android.com/reference/android/support/design/package-summary.html
 Landroid/support/multidex,Multidex,Development Aid,https://developer.android.com/studio/build/multidex.html
 Landroid/support/v13,Android Support v13,Development Aid,https://developer.android.com/reference/android/support/v13/app/package-summary.html
 Landroid/support/v4,Android Support v4,Development Aid,http://developer.android.com/reference/android/support/v4/app/package-summary.html
 Landroid/support/v7,Android Support v7,Development Aid,https://developer.android.com/reference/android/support/v7/app/package-summary.html
 Landroid/widget,android widget,GUI Component,
-Lanet,no,no,no
+Lanet,no,,
 Lanet/channel,Umeng push,Development Aid,http://mobile.umeng.com/push
-Lanetwork,no,no,no
-Lanetwork/channel,no,no,no
+Lanetwork,no,,
+Lanetwork/channel,no,,
 Lanetwork/channel/aidl,AIDL,Development Aid,https://developer.android.com/guide/components/aidl.html
 Lanywheresoftware,anywheresoftware,Development Aid,
 Lappinventor,Appinventor,Development Aid,http://appinventor.mit.edu/
 Lappmachine,AppMachine App Generator,Development Aid,http://www.appmachine.com/
 Lau/com/bytecode/opencsv,Opencsv,Development Aid,https://github.com/EmergentOrder/opencsv
 Laurelienribon,AurelienRibon Animation Library,Development Aid,http://www.aurelienribon.com
-Lb/a,no,no,no
-Lb/a/a,no,no,no
-Lb/a/a/a,no,no,no
-Lb/a/a/a/a,no,no,no
-Lb/a/a/a/a/b,no,no,no
-Lbiz,no,no,no
+Lb/a,no,,
+Lb/a/a,no,,
+Lb/a/a/a,no,,
+Lb/a/a/a/a,no,,
+Lb/a/a/a/a/b,no,,
+Lbiz,no,,
 Lbiz/neoline,Neoline,Development Aid,http://www.neoline.biz/
 Lbolts,Bolts Base Library,Development Aid,https://github.com/BoltsFramework/Bolts-Android
 Lbutterknife,butterknife UI Framework,GUI Component,https://github.com/JakeWharton/butterknife
-Lc,no,no,no
-Lc/a,no,no,no
-Lc/a/a,no,no,no
-Lc/a/a/a,no,no,no
-Lc/a/a/a/a,no,no,no
-Lc/a/a/a/a/a,no,no,no
-Lc/a/a/a/a/b,no,no,no
-Lc/a/a/a/a/c,no,no,no
-Lc/a/a/a/a/e,no,no,no
-Lc/a/a/a/a/g,no,no,no
-Lc/b,no,no,no
-Lc/b/a,no,no,no
-Lc/m,no,no,no
-Lc/m/x,no,no,no
-Lc/m/x/a,no,no,no
-Lc/m/x/a/am48,no,no,no
+Lc,no,,
+Lc/a,no,,
+Lc/a/a,no,,
+Lc/a/a/a,no,,
+Lc/a/a/a/a,no,,
+Lc/a/a/a/a/a,no,,
+Lc/a/a/a/a/b,no,,
+Lc/a/a/a/a/c,no,,
+Lc/a/a/a/a/e,no,,
+Lc/a/a/a/a/g,no,,
+Lc/b,no,,
+Lc/b/a,no,,
+Lc/m,no,,
+Lc/m/x,no,,
+Lc/m/x/a,no,,
+Lc/m/x/a/am48,no,,
 Lch/boye/httpclientandroidlib,httpclientandroidlib,Development Aid,https://github.com/surespot/httpclientandroidlib
 Lch/qos/logback,Logback,Development Aid,http://logback.qos.ch/
-Lcn,no,no,no
+Lcn,no,,
 Lcn/domob,domob,Advertisement,http://www.domob.cn/
 Lcn/jiguang,Jiguang,Development Aid,https://www.jiguang.cn/
-Lcn/jiguang/a,no,no,no
-Lcn/jiguang/a/a,no,no,no
-Lcn/jpush,no,no,no
+Lcn/jiguang/a,no,,
+Lcn/jiguang/a/a,no,,
+Lcn/jpush,no,,
 Lcn/jpush/android,Jpush,Development Aid,https://www.jiguang.cn/
-Lcn/sharesdk,no,no,no
+Lcn/sharesdk,no,,
 Lcn/sharesdk/evernote,Mob Share Evernote,Social Network,http://mob.com
 Lcn/sharesdk/framework,ShareSDK,Social Network,http://www.mob.com/downloadDetail/ShareSDK/android
 Lcn/sharesdk/onekeyshare,Mob one key share,Social Network,http://mob.com/
 Lcn/sharesdk/socialization,mob social,Social Network,mob.com
 Lcn/sharesdk/tencent,Mob share to tencent,Social Network,http://wiki.mob.com/%E5%88%86%E4%BA%AB%E5%88%B0%E6%8C%87%E5%AE%9A%E5%B9%B3%E5%8F%B0/
 Lcn/smssdk,Mob SMS SDK,Development Aid,http://wiki.mob.com/android-%E7%9F%AD%E4%BF%A1sdk%E9%9B%86%E6%88%90%E6%96%87%E6%A1%A3/
-Lcn/uc,no,no,no
-Lcn/uc/a,no,no,no
-Lcn/uc/a/a,no,no,no
-Lcn/uc/a/a/a,no,no,no
+Lcn/uc,no,,
+Lcn/uc/a,no,,
+Lcn/uc/a/a,no,,
+Lcn/uc/a/a/a,no,,
 Lcn/uc/gamesdk,UC GAME,Game Engine,https://game.open.uc.cn/document/doc/detail/95
-Lco,no,no,no
-Lcom,no,no,no
-Lcom/a,no,no,no
-Lcom/a/a,no,no,no
-Lcom/a/a/a,no,no,no
-Lcom/a/c/a,no,no,no
-Lcom/ace,no,no,no
+Lco,no,,
+Lcom,no,,
+Lcom/a,no,,
+Lcom/a/a,no,,
+Lcom/a/a/a,no,,
+Lcom/a/c/a,no,,
+Lcom/ace,no,,
 Lcom/ace/universalimageloader,Universal Image Loader,Development Aid,https://github.com/nostra13/Android-Universal-Image-Loader
 Lcom/actionbarsherlock,ActionBarSherlock,Development Aid,http://actionbarsherlock.com/
 Lcom/activeandroid,ActiveAndroid,Development Aid,https://github.com/pardom/ActiveAndroid
 Lcom/adfonic,Adfonic Mobile Ads,Advertisement,http://www.adfonic.com
-Lcom/adjust,no,no,no
+Lcom/adjust,no,,
 Lcom/adjust/sdk,adjust,Mobile Analytics,https://www.adjust.com/
 Lcom/admob,Google Admob,Advertisement,https://www.google.com/admob/
-Lcom/adobe,no,no,no
+Lcom/adobe,no,,
 Lcom/adobe/air,Adobe Air,Development Aid,http://www.adobe.com/cn/devnet/air/air_for_android.html
 Lcom/adobe/flashplayer,Adobe FlashPlayer,Development Aid,
 Lcom/adobe/flashruntime,Adobe FlashPlayer,Development Aid,
@@ -105,34 +105,34 @@ Lcom/adsdk,AdSDK,Advertisement,
 Lcom/adsmogo,adsmogo,Advertisement,http://www.adsmogo.com/
 Lcom/adtech,Adtech,Advertisement,http://www.adtech.com/
 Lcom/adwhirl,Adwhirl Ads,Advertisement,https://code.google.com/p/adwhirl/
-Lcom/adwo,no,no,no
+Lcom/adwo,no,,
 Lcom/adwo/adsdk,adwo,Advertisement,http://www.adwo.com/
-Lcom/alibaba,no,no,no
+Lcom/alibaba,no,,
 Lcom/alibaba/fastjson,Fastjson,Development Aid,https://github.com/alibaba/fastjson
 Lcom/alibaba/mtl,Alibaba MTL,Development Aid,https://doc.open.alipay.com/doc2/detail.htm?treeId=195&articleId=105220&docType=1
-Lcom/alimama,no,no,no
+Lcom/alimama,no,,
 Lcom/alimama/mobile,Alimama Dev,Social Network,http://dev.alimama.com/
 Lcom/alipay,Alipay,Payment,https://dev.alipay.com/
 Lcom/aliyun,Aliyun,Development Aid,
 Lcom/amap,Alibaba Amap,Map/LBS,https://lbs.amap.com/
-Lcom/amazon,no,no,no
+Lcom/amazon,no,,
 Lcom/amazon/ags,Amazon Game Studios,Game Engine,https://games.amazon.com/
-Lcom/amazon/device,no,no,no
+Lcom/amazon/device,no,,
 Lcom/amazon/device/ads,Amazon Advertisement,Advertisement,https://developer.amazon.com/public/apis/earn/mobile-ads/docs/quick-start
 Lcom/amazon/device/associates,Amazon Mobile Associates,Advertisement,https://developer.amazon.com/mobile-associates
 Lcom/amazon/device/iap,Amazon In-App Purchasing,Payment,https://developer.amazon.com/public/apis/earn/in-app-purchasing
-Lcom/amazon/identity,no,no,no
+Lcom/amazon/identity,no,,
 Lcom/amazon/identity/auth,Amazon Auth SDK,Development Aid,https://developer.amazon.com/public/apis/engage/login-with-amazon/docs/use_sdk_android.html
 Lcom/amazon/inapp,Amazon In-App Purchasing,Payment,https://developer.amazon.com/in-app-purchasing
 Lcom/amazon/insights,Amazon Analytics,Mobile Analytics,https://developer.amazon.com/public/apis/manage/analytics/docs/analytics-for-android-fire-os
 Lcom/amazonaws,Amazon AWS,Development Aid,http://mvnrepository.com/artifact/com.amazonaws
-Lcom/android,no,no,no
+Lcom/android,no,,
 Lcom/android/vending,Google Play,App Market,https://play.google.com
 Lcom/android/volley,Volley HTTP library,Development Aid,https://developer.android.com/training/volley/index.html
 Lcom/androidplot,Androidplot,Development Aid,http://androidplot.com/
 Lcom/androidquery,AndroidQuery,Development Aid,https://github.com/androidquery/androidquery/
 Lcom/ansca/corona,Corona,Development Aid,https://docs.coronalabs.com/native/android/html/com/ansca/corona/package-summary.html
-Lcom/anzhi,no,no,no
+Lcom/anzhi,no,,
 Lcom/anzhi/market,Anzhi Market,App Market,http://www.anzhi.com/
 Lcom/appbrain,Appbrain SDK,Development Aid,https://www.appbrain.com/info/help/sdk/index.html
 Lcom/appbyme,Appbyme,Development Framework,http://www.appbyme.com/
@@ -140,30 +140,32 @@ Lcom/apperhand,apperhand,Advertisement,
 Lcom/appflood,Appflood,Advertisement,http://appflood.com
 Lcom/applovin,Applovin,Advertisement,https://www.applovin.com/
 Lcom/appmakr,Appmakr,Development Aid,https://www.appmakr.com/
-Lcom/appodeal,no,no,no
+Lcom/appodeal,no,,
 Lcom/appodeal/ads,Appodeal Ads,Advertisement,https://www.appodeal.com
 Lcom/appquanta,Quanta Sky Ino.,Mobile Analytics,http://www.appquanta.com/
 Lcom/appquanta/,Qunta Sky Ino.,Mobile Analytics,http://www.appquanta.com/index.html
 Lcom/appsflyer,AppsFlyer,Mobile Analytics,https://www.appsflyer.com/
 Lcom/appyet,Appyet,Development Aid,http://www.appyet.com/
-Lcom/aps,no,no,no
+Lcom/aps,no,,
 Lcom/astuetz,Astuetz Pager Sliding Tab Strip,GUI Component,https://github.com/astuetz
-Lcom/autonavi,no,no,no
-Lcom/autonavi/aps,no,no,no
+Lcom/auth0/android,Auth0 Android SDK,Utility,https://auth0.com/docs/quickstart/native/android/getting-started
+Lcom/auth0/jwt,Java implementation of JSON Web Token (JWT),Development Aid,https://github.com/auth0/java-jwt
+Lcom/autonavi,no,,
+Lcom/autonavi/aps,no,,
 Lcom/autonavi/aps/amapapi,AMAP autonavi API,Map/LBS,https://lbs.amap.com/
 Lcom/aviary,Aviary photo editing SDK,Development Aid,https://developers.aviary.com/docs/android
 Lcom/avos/avoscloud,,Development Aid,
 Lcom/avos/avoscloud/okhttp,Okhttp,Development Aid,
-Lcom/b,no,no,no
-Lcom/b/a/a,no,no,no
-Lcom/b/a/a/a,no,no,no
+Lcom/b,no,,
+Lcom/b/a/a,no,,
+Lcom/b/a/a/a,no,,
 Lcom/badlogic,badlogic,Game Engine,http://www.badlogicgames.com/
-Lcom/baidu,no,no,no
+Lcom/baidu,no,,
 Lcom/baidu/android,Baidu APP SDK,Development Aid,https://developer.baidu.com/
 Lcom/baidu/android/pushservice,baidu push service,Development Aid,https://developer.baidu.com/
 Lcom/baidu/appx,Baidu APPX,Advertisement,https://app.baidu.com/
 Lcom/baidu/autoupdatesdk,baidu autoupdate sdk,Development Aid,
-Lcom/baidu/bdgame,no,no,no
+Lcom/baidu/bdgame,no,,
 Lcom/baidu/bdgame/sdk,baidu game,Social Network,http://mgame.baidu.com/
 Lcom/baidu/cyberplayer,Baiduyun Android Player,Development Aid,https://cloud.baidu.com/doc/MCT/Android-SDK.html
 Lcom/baidu/frontia,Baidu Frontia,Development Aid,
@@ -182,83 +184,88 @@ Lcom/baidu/searchsdk,Baidu Search SDK,Development Aid,https://developer.baidu.co
 Lcom/baidu/tiebasdk,Baidu Tieba SDK,Social Network,http://tieba.baidu.com/tb/zt/tiebaapi/index.html
 Lcom/baidu/wallet,Baidu Wallet(baifubao),Payment,https://www.baifubao.com/
 Lcom/batch,batch,Mobile Analytics,https://batch.com/doc/
-Lcom/bda,no,no,no
+Lcom/bda,no,,
 Lcom/bda/controller,MOGAanywhere,Game Engine,http://www.mogaanywhere.com/
 Lcom/bea/xml/stream,StAX API,Development Aid,https://jcp.org/en/jsr/detail?id=173
 Lcom/biznessapps,biznessapps,Development Aid,https://www.biznessapps.com/
 Lcom/bugsense,BugSense,Development Aid,https://github.com/wrapp/bugsense-android
 Lcom/bump,Bump pay,Payment,
-Lcom/bumptech,no,no,no
+Lcom/bumptech,no,,
 Lcom/bumptech/glide,Glide,Development Aid,https://github.com/bumptech/glide/
-Lcom/c/a/a,no,no,no
-Lcom/c/a/a/a,no,no,no
-Lcom/c/a/a/a/a,no,no,no
-Lcom/c/a/a/a/a/a,no,no,no
-Lcom/c/a/b/a,no,no,no
-Lcom/c/a/b/a/a,no,no,no
-Lcom/c/a/b/d,no,no,no
-Lcom/c/a/c,no,no,no
-Lcom/cOoNkCqXw,no,no,no
-Lcom/cOoNkCqXw/anhYjsorr71313,no,no,no
-Lcom/chartboost,no,no,no
+Lcom/c,no,,
+Lcom/c/a,no,,
+Lcom/c/a/a,no,,
+Lcom/c/a/a/a,no,,
+Lcom/c/a/a/a/a,no,,
+Lcom/c/a/a/a/a/a,no,,
+Lcom/c/a/b/a,no,,
+Lcom/c/a/b/a/a,no,,
+Lcom/c/a/b/d,no,,
+Lcom/c/a/c,no,,
+Lcom/cOoNkCqXw,no,,
+Lcom/cOoNkCqXw/anhYjsorr71313,no,,
+Lcom/chartboost,no,,
 Lcom/chartboost/sdk,ChartBoost,Advertisement,http://www.chartboost.com/
 Lcom/chineseall/reader,chineseall reader,Development Aid,
 Lcom/commonsware/cwac/merge,CommonsWare MergeAdapter,Development Aid,https://github.com/commonsguy/cwac-merge
 Lcom/commonsware/cwac/sacklist,CommonsWare SackOfViewsAdapter,Development Aid,https://github.com/commonsguy/cwac-sacklist
 Lcom/comscore,comscore,Mobile Analytics,https://www.comscore.com/
 Lcom/conduit/app,Conduit App,Development Aid,http://apps.conduit.com/
-Lcom/coolcloud,no,no,no
-Lcom/coolcloud/uac,no,no,no
+Lcom/coolcloud,no,,
+Lcom/coolcloud/uac,no,,
 Lcom/coolcloud/uac/android,Coolyun UAC,Development Aid,https://www.coolyun.com/
 Lcom/coremedia/iso,ISO Parser,Development Aid,
 Lcom/crashlytics/android,Crashlytics,Mobile Analytics,http://try.crashlytics.com
 Lcom/crowdcompass,crowdcompass,Development Aid,https://www.crowdcompass.com/
 Lcom/daggertech,Dagger Tech,Development Aid,
 Lcom/daimajia/androidanimations,AndroidAnimations Library,GUI Component,https://github.com/daimajia/AndroidViewAnimations
-Lcom/data,no,no,no
+Lcom/data,no,,
 Lcom/db4o,db4o,Development Aid,https://github.com/mohataher/db4o-android
 Lcom/deploygate,com/deploygate,Development Aid,https://deploygate.com/
 Lcom/digits/sdk/vcard,Digits,Mobile Analytics,https://fabric.io/kits/android/digits/summary
 Lcom/doapps,doapps,Development Aid,http://www.doapps.com/
 Lcom/dobao,com/dobao,Development Aid,
-Lcom/dropbox,no,no,no
+Lcom/dropbox,no,,
 Lcom/dropbox/client2,Dropbox Java SDK,Utility,https://github.com/gini/dropbox-java-sdk
-Lcom/duoku,no,no,no
+Lcom/duoku,no,,
 Lcom/duoku/platform,duoku(Baidu Mobile Game Platform),Social Network,http://www.duoku.com.cn/
-Lcom/e/a,no,no,no
+Lcom/e,no,,
+Lcom/e/a,no,,
 Lcom/easemob/,Huanxin,Development Aid,http://www.easemob.com/
 Lcom/esotericsoftware,Esoteric Software 2D,Development Aid,https://github.com/EsotericSoftware
 Lcom/espian/showcaseview,Espian ShowcaseView,GUI Component,https://github.com/arianvp/ShowcaseView
 Lcom/everyplay,Everyplay,Game Engine,https://everyplay.com/
-Lcom/external,no,no,no
+Lcom/external,no,,
+Lcom/f,no,,
+Lcom/f/a,no,,
 Lcom/facebook,Facebook,Social Network,https://developers.facebook.com
 Lcom/fasterxml,Fasterxml,Utility,http://fasterxml.com/
-Lcom/flurry,no,no,no
+Lcom/flurry,no,,
 Lcom/flurry/android,Flurry,Mobile Analytics,https://flurry.com
 Lcom/flurry/org,Flurry,Mobile Analytics,https://flurry.com
 Lcom/flurry/sdk,Flurry SDK,Mobile Analytics,https://developer.yahoo.com
 Lcom/fyber,Fyber,Advertisement,https://www.fyber.com/
-Lcom/g6677/spread,no,no,no
+Lcom/g6677/spread,no,,
 Lcom/github,Github,Development Aid,https://github.com/
 Lcom/goodbarber,goodbarber,Development Framework,http://www.goodbarber.com/
-Lcom/google,no,no,no
-Lcom/google/a,no,no,no
-Lcom/google/a/b,no,no,no
-Lcom/google/a/b/a,no,no,no
-Lcom/google/a/b/a/a,no,no,no
+Lcom/google,no,,
+Lcom/google/a,no,,
+Lcom/google/a/b,no,,
+Lcom/google/a/b/a,no,,
+Lcom/google/a/b/a/a,no,,
 Lcom/google/ads,Google Ads,Advertisement,https://www.google.com/ads/
 Lcom/google/analytics,Google Analytics,Mobile Analytics,https://www.google.com/analytics/
-Lcom/google/android,no,no,no
-Lcom/google/android/a,no,no,no
+Lcom/google/android,no,,
+Lcom/google/android/a,no,,
 Lcom/google/android/apps/dashclock/api,DashClock API,Development Aid,http://api.dashclock.com/reference/com/google/android/apps/dashclock/api/package-summary.html
 Lcom/google/android/exoplayer,ExoPlayer,Development Aid,https://github.com/google/ExoPlayer
 Lcom/google/android/gcm,Google GCM,Development Aid,https://developers.google.com/cloud-messaging/
 Lcom/google/android/gms,Google Mobile Services,Development Aid,https://developers.google.com/android/reference/com/google/android/gms/package-summary
 Lcom/google/android/net,Google Android Net,Development Aid,http://developer.android.com/reference/android/net/package-summary.html
 Lcom/google/android/vending,Google Play,App Market,https://play.google.com
-Lcom/google/android/youtube,no,no,no
+Lcom/google/android/youtube,no,,
 Lcom/google/android/youtube/player,YouTube Android Player API,Development Aid,https://developers.google.com/youtube/android/player/
-Lcom/google/api,no,no,no
+Lcom/google/api,no,,
 Lcom/google/api/client,Google API Client Libraries,Development Framework,https://developers.google.com/api-client-library/java/
 Lcom/google/appinventor,Google Appinventor,Development Aid,https://code.google.com/p/app-inventor-for-android/
 Lcom/google/common,Google Core Libraries for Java 6+,Development Aid,https://github.com/google/guava
@@ -275,17 +282,18 @@ Lcom/google/zxing,ZXing ('Zebra Crossing'),Development Aid,https://github.com/zx
 Lcom/googlecode/apdfviewer,Google Docs PDF Viewer,Development Aid,https://code.google.com/p/apdfviewer/source/browse/trunk/src/com/googlecode/apdfviewer/?r=3
 Lcom/handmark/pulltorefresh,pulltorefresh,GUI Component,https://github.com/chrisbanes/Android-PullToRefresh
 Lcom/heyzap,Heyzap,Development Aid,https://www.heyzap.com
-Lcom/huawei,no,no,no
+Lcom/huawei,no,,
 Lcom/huawei/android,Huawei Android SDK,Development Aid,http://developer.huawei.com/
+Lcom/huawei/ecs,Huawei ECS,Utility,https://www.hwclouds.com/en-us/product/ecs.html
 Lcom/huntmads,HUNT Mobile Ads,Advertisement,http://www.huntmads.com/
 Lcom/iapppay,Iapppay,Payment,https://www.iapppay.com/
-Lcom/ibm,no,no,no
+Lcom/ibm,no,,
 Lcom/ibm/icu,International Components for Unicode,Utility,https://www-01.ibm.com/software/globalization/icu/
-Lcom/idddx,no,no,no
-Lcom/idddx/sdk,no,no,no
-Lcom/idddx/sdk/dynamic,no,no,no
-Lcom/idddx/sdk/dynamic/service,no,no,no
-Lcom/idddx/sdk/dynamic/service/thrift,no,no,no
+Lcom/idddx,no,,
+Lcom/idddx/sdk,no,,
+Lcom/idddx/sdk/dynamic,no,,
+Lcom/idddx/sdk/dynamic/service,no,,
+Lcom/idddx/sdk/dynamic/service/thrift,no,,
 Lcom/iflytek,xunfei,Development Framework,http://www.xfyun.cn/
 Lcom/iflytek/speech,iflyteck speech,Development Aid,
 Lcom/iflytek/speech/aidl,iflytek speech,Development Aid,https://www.xfyun.cn/doccenter/tts
@@ -293,11 +301,7 @@ Lcom/iflytek/sunflower,Xunfei(iflytek) Voice,Development Framework,
 Lcom/iflytek/thirdparty,Iflytek Thirdparty,Development Aid,https://www.xfyun.cn/sdk/dispatcher
 Lcom/igaworks,igaworks,Advertisement,http://www.igaworks.com/en/index.html
 Lcom/igexin,getui,Development Aid,http://www.getui.com/cn/index.html
-Lcom/igexin,no,no,no
-Lcom/igexin/download,Getui,Development Aid,http://igexin.com
-Lcom/igexin/getuiext,Getui,Development Aid,http://www.getui.com/
-Lcom/igexin/push,Gepush,Development Aid,http://www.getui.com/
-Lcom/immersion,no,no,no
+Lcom/immersion,no,,
 Lcom/immersion/hapticmediasdk,Immersion TouchSense SDK,Development Aid,https://www.immersion.com/products-services/software-development-kit-for-mobile-games/
 Lcom/inmobi,Inmobi,Advertisement,http://inmobi.com
 Lcom/inneractive,Inneractive,Advertisement,http://inner-active.com/
@@ -307,70 +311,80 @@ Lcom/j256,J256,Development Aid,https://github.com/j256/ormlite-android
 Lcom/jakewharton/disklrucache,Disk LRU Cache,Development Aid,https://github.com/JakeWharton/DiskLruCache
 Lcom/jakewharton/disklrucache/,Disk LRU Cache,Development Aid,https://github.com/JakeWharton/DiskLruCache
 Lcom/jasonkostempski,Jasonkostempski,Development Aid,https://github.com/jasonkostempski/
-Lcom/jayway,no,no,no
+Lcom/jayway,no,,
 Lcom/jayway/jsonpath,JsonPath,Development Aid,https://github.com/jayway/JsonPath
-Lcom/jcodecraeer/xrecyclerview/progressindicator,no,no,no
+Lcom/jcodecraeer/xrecyclerview/progressindicator,no,,
 Lcom/jcodecraeer/xrecyclerview/progressindicator/indicator,XRecyclerView (pull to refresh),Development Aid,https://github.com/jianghejie/XRecyclerView
 Lcom/jcraft/jsch,Java Secure Channel,Development Aid,http://www.jcraft.com/jsch/
-Lcom/jirbo,no,no,no
+Lcom/jirbo,no,,
 Lcom/jirbo/adcolony,Jirbo,Development Aid,http://www.jirbo.com/
-Lcom/jiubang/commerce,no,no,no
+Lcom/jiubang/commerce,no,,
 Lcom/jumptap,jumptap,Advertisement,http://jumptap.com/
 Lcom/kakao/talk,Kakao,Social Network,https://developers.kakao.com/
-Lcom/kbeanie,no,no,no
+Lcom/kbeanie,no,,
 Lcom/kbeanie/imagechooser,image chooser library,Development Aid,https://github.com/coomar2841/image-chooser-library
 Lcom/koushikdutta/async,AndroidAsync,Development Aid,https://github.com/koush/AndroidAsync
 Lcom/kuguo/ad,kuguo Advertisement SDK,Advertisement,
 Lcom/leadbolt,Leadbolt,Development Aid,https://www.leadbolt.com/
-Lcom/lenovo,no,no,no
+Lcom/lenovo,no,,
 Lcom/lenovo/lps,Lenovo LPS,Development Aid,
-Lcom/lidroid,no,no,no
+Lcom/letv/adlib,Letv Advertisement Library,Advertisement,
+Lcom/letv/datastatistics,Letv Data Statistics,Mobile Analytics,
+Lcom/letv/lepaysdk,Letv pyment,Payment,
+Lcom/letv/sdk,Letv SDK,Utility,
+Lcom/letvcloud,Letv Cloud,Utility,http://www.lecloud.com/
+Lcom/lib,no,,
+Lcom/lidroid,no,,
 Lcom/lidroid/xutils,xUtils,Development Aid,https://github.com/wyouflf/xUtils
-Lcom/loc,no,no,no
+Lcom/loc,no,,
 Lcom/loopj,Loopj,Development Aid,https://github.com/loopj/android-async-http
-Lcom/madhouse/android,no,no,no
+Lcom/madhouse/android,no,,
 Lcom/madhouse/android/ads,Madhouse Inc Ads,Advertisement,http://www.madhouse.cn/
-Lcom/magook,no,no,no
+Lcom/magook,no,,
 Lcom/magtab,Magtab,Development Aid,https://www.magtab.com/
 Lcom/mashape/relocation,Mashape Relocation API,Development Aid,
 Lcom/maximono,Maximono,Social Network,http://maximono.com
-Lcom/meitu/android/trivialdrivesample,no,no,no
-Lcom/melnykov,no,no,no
+Lcom/meitu/android/trivialdrivesample,no,,
+Lcom/melnykov,no,,
 Lcom/melnykov/fab,FloatingActionButton,GUI Component,https://github.com/makovkastar/FloatingActionButton/
 Lcom/milkmangames/extensions/android/coremobile,Milkman plugins,Development Aid,https://www.milkmanplugins.com
 Lcom/millennialmedia,millennialmedia,Advertisement,http://www.millennialmedia.com/
 Lcom/mindprod/ledatastream,LEDataStream,Development Aid,http://mindprod.com/products1.html
-Lcom/mob,no,no,no
+Lcom/mob,no,,
 Lcom/mob/commons,mob share,Social Network,mob.com
 Lcom/mob/tools,Mob Tools,Development Aid,http://www.mob.com/
 Lcom/mobcent,MobCent,Social Network,http://www.baike.com/wiki/%E6%91%A9%E8%AE%AF%E7%A7%91%E6%8A%80
-Lcom/mobclick,no,no,no
+Lcom/mobclick,no,,
 Lcom/mobclick/android,Umeng Click Analysis,Mobile Analytics,https://www.umeng.com/
 Lcom/mobeta,Mobeta ListView,GUI Component,https://github.com/bauerca/drag-sort-listview
 Lcom/mobfox,mobfox,Development Aid,http://www.mobfox.com/
-Lcom/mobisage,no,no,no
+Lcom/mobisage,no,,
 Lcom/mobisage/android,Mobisage(adSage),Advertisement,http://www.adsage.com/
 Lcom/mongodb,mongoDB,Development Aid,http://mongodb.github.io/mongo-java-driver/2.13/getting-started/quick-tour/
 Lcom/mopub,MoPub,Advertisement,http://www.mopub.com
-Lcom/my/target/core,no,no,no
-Lcom/my/target/core/ui,no,no,no
-Lcom/my/target/core/ui/views,no,no,no
+Lcom/my/target/core,no,,
+Lcom/my/target/core/ui,no,,
+Lcom/my/target/core/ui/views,no,,
 Lcom/myappengine,myappengine,Game Engine,https://appengine.google.com/
-Lcom/myshare,no,no,no
+Lcom/myshare,no,,
 Lcom/myshare/dynamic,Mob Share Dynamic,Social Network,http://mob.com
-Lcom/naef,no,no,no
-Lcom/naef,no,no,no
+Lcom/naef,no,,
+Lcom/naef,no,,
 Lcom/naef/jnlua,jnlua,Development Aid,Java Lua
-Lcom/nd,no,no,no
+Lcom/nd,no,,
 Lcom/nd/dianjin,Dianjin Advertisement,Advertisement,http://www.devstore.cn/service/serviceDetail/428.html
-Lcom/neatplug,no,no,no
+Lcom/neatplug,no,,
 Lcom/neatplug/u3d/plugins,NeatPlug Unity3d Plugins,Development Aid,https://neatplug.com/
+Lcom/nerd/TapdaqUnityPlugin,TapDaq Unity Plugin,Utility,https://github.com/tapdaq/unity-plugin
+Lcom/netease,no,,
+Lcom/netease/nim,Netease IM SDK,Utility,https://github.com/netease-im/NIM_Android_SDK
+Lcom/netease/ntespm,no,,
 Lcom/newrelic,newrelic,Development Aid,https://newrelic.com/
 Lcom/ngpinc/,ngpinc:National Guard Products,Mobile Analytics,http://www.ngpinc.com/
 Lcom/nhaarman/listviewanimations,ListViewAnimations,Development Aid,https://github.com/nhaarman/ListViewAnimations
 Lcom/nineoldandroids,Nine Old Androids,Development Aid,https://github.com/JakeWharton/NineOldAndroids
-Lcom/nokia,no,no,no
-Lcom/nokia/payment,no,no,no
+Lcom/nokia,no,,
+Lcom/nokia/payment,no,,
 Lcom/nokia/payment/iap,Nokia In-App Payment,Payment,http://developer.nokia.com/?p=932370&s=e0f3a2d5a412162fe5a577cfb660a309
 Lcom/nostra13,Nostra13 Image Loading,Development Aid,https://github.com/nostra13/Android-Universal-Image-Loader
 Lcom/nuance,Nuance Speech Kit Library,Development Aid,https://nuance.com/
@@ -389,32 +403,33 @@ Lcom/polites,GestureImageView polites.com,GUI Component,https://polites.com
 Lcom/pollfish,Pollfish,Development Aid,https://www.pollfish.com/
 Lcom/prime31,prime[31],Development Aid,https://prime31.com
 Lcom/purplebrain/adbuddiz,AdBuddiz,Advertisement,https://www.adbuddiz.com
-Lcom/qihoo,no,no,no
-Lcom/qihoo/gamecenter,no,no,no
+Lcom/qihoo,no,,
+Lcom/qihoo/gamecenter,no,,
 Lcom/qihoo/gamecenter/sdk,Qihoo 360 Gamecenter,Social Network,http://wan.360.cn/
 Lcom/qihoo/psdk,Qihoo push,Development Aid,http://dev.360.cn/
 Lcom/qihoo/stat,Qihoo Stat,Development Aid,http://dev.360.cn/
-Lcom/qihoopp,no,no,no
+Lcom/qihoopp,no,,
 Lcom/qihoopp/framework,QihooPP Framework,Development Framework,http://dev.360.cn
 Lcom/qihoopp/qcoinpay,Qihoo 360 Qcoinpay,Payment,https://pay.360.cn/index/mobile
-Lcom/qmoney,no,no,no
+Lcom/qmoney,no,,
 Lcom/qmoney/ui,Qmoney,Payment,
 Lcom/qoppa,Qoppa Software,Development Aid,https://www.qoppa.com/
 Lcom/qwapi,qwapi,Development Aid,
 Lcom/radiusnetworks,Radius Networks,Development Aid,http://www.radiusnetworks.com
-Lcom/readystatesoftware,no,no,no
+Lcom/readystatesoftware,no,,
 Lcom/readystatesoftware/sqliteasset,Android SQLiteAssetHelper,Utility,https://github.com/jgilfelt/android-sqlite-asset-helper
-Lcom/renn,no,no,no
+Lcom/renn,no,,
 Lcom/renn/rennsdk,renren sdk,Development Aid,http://open.renren.com/wiki/SDK2/androidsdk
 Lcom/revmob,Revmob,Advertisement,https://www.revmobmobileadnetwork.com/
 Lcom/samsung/spen,Samsung Spen,GUI Component,https://developer.samsung.com/galaxy
 Lcom/scoreloop,Scoreloop Game,Game Engine,
-Lcom/sec,no,no,no
-Lcom/sec/android,no,no,no
+Lcom/sec,no,,
+Lcom/sec/android,no,,
 Lcom/sec/android/iap,Samsung In-App Purchase,Payment,http://developer.samsung.com/iap
-Lcom/shengliwang,no,no,no
-Lcom/shengliwang/CarLogo,no,no,no
-Lcom/sina,no,no,no
+Lcom/shengliwang,no,,
+Lcom/shengliwang/CarLogo,no,,
+Lcom/sina,no,,
+Lcom/sina/a,no,,
 Lcom/sina/sso,Sina SSO,Social Network,http://open.weibo.com/
 Lcom/sina/weibo,Weibo,Social Network,http://weibo.com/
 Lcom/skplanet,skplanet,Development Aid,http://www.skplanet.com
@@ -422,7 +437,7 @@ Lcom/slidingmenu,SlidingMenu,GUI Component,https://github.com/jfeinstein10/Slidi
 Lcom/smaato,Smaato,Advertisement,https://www.smaato.com/
 Lcom/spoledge,Spoledge AAC Decoder,Development Aid,https://code.google.com/p/aacdecoder-android/
 Lcom/sponsorpay,Fyber(SponsorPay),Advertisement,http://www.sponsorpay.com
-Lcom/squareup,no,no,no
+Lcom/squareup,no,,
 Lcom/squareup/okhttp,OkHttp,Development Aid,https://github.com/square/okhttp
 Lcom/squareup/otto,otto,Development Aid,http://square.github.io/otto/
 Lcom/squareup/picasso,picasso,Development Aid,https://github.com/square/picasso
@@ -433,19 +448,21 @@ Lcom/squareup/timessquare,timessquare,Development Aid,https://github.com/square/
 Lcom/startapp,StartApp,Advertisement,http://www.startapp.com/
 Lcom/stericson/RootTools,Stericson RootTools,Development Aid,https://github.com/Stericson/RootTools
 Lcom/subsplash,subsplash,Development Aid,http://www.subsplash.com/
-Lcom/sun,no,no,no
+Lcom/sun,no,,
 Lcom/sun/activation,JavaBeans(TM) Activation Framework,Development Aid,http://java.sun.com/javase/technologies/desktop/javabeans/jaf/index.jsp
 Lcom/sun/mail,Sun Mail.jar,Development Aid,
 Lcom/supersonic/adapters/supersonicads,Supersonic Ads,Advertisement,https://www.supersonic.com/
 Lcom/supersonic/mediationsdk,Supersonic MediationSDK(Abandoned),Development Aid,https://github.com/SupersonicAds/android-mediation-sdk
-Lcom/supersonicads,no,no,no
+Lcom/supersonicads,no,,
 Lcom/supersonicads/sdk,Supersonic: Mobile Advertising,Advertisement,https://www.supersonic.com/
-Lcom/taobao,no,no,no
+Lcom/taobao,no,,
 Lcom/taobao/accs,Taobao ACCS,Development Aid,https://open.taobao.com/
+Lcom/tapdaq/sdk,TapDaq Android SDK,Development Framework,https://github.com/tapdaq/tapdaq-android-sdk
+Lcom/tapdaq/tapdaqunityads,TapDaq Unity Plugin Ads,Advertisement,
 Lcom/tapit,Tapit,Development Aid,Tapit NFC
 Lcom/tapjoy,Tapjoy,Advertisement,https://home.tapjoy.com/
-Lcom/tencent,no,no,no
-Lcom/tencent/android,no,no,no
+Lcom/tencent,no,,
+Lcom/tencent/android,no,,
 Lcom/tencent/android/tpush,Tencent Tpush (Xinge),Development Aid,http://xg.qq.com/
 Lcom/tencent/bugly,Bugly,Mobile Analytics,https://bugly.qq.com/
 Lcom/tencent/common,Tencent Login,Social Network,http://wiki.open.qq.com/wiki/mobile/Android_SDK
@@ -472,102 +489,104 @@ Lcom/tencent/weibo,Tencent Weibo,Social Network,http://t.qq.com
 Lcom/tencent/weiyun,Tencent Weiyun,Mobile Analytics,https://www.weiyun.com
 Lcom/tencent/wpa,Tencent WPA,Development Aid,http://wiki.open.qq.com/wiki/mobile/API
 Lcom/tencent/wxop,tencent weixin Open(Share),Social Network,https://open.weixin.qq.com/
-Lcom/tendcloud,no,no,no
+Lcom/tendcloud,no,,
 Lcom/tendcloud/tenddata,TendDaTa,Mobile Analytics,https://www.talkingdata.com/products.jsp
 Lcom/thirdparty,Thirdparty,Development Aid,http://thirdparty.com/
 Lcom/threatmetrix,ThreatMetrix,Digital Identity,https://www.threatmetrix.com/
-Lcom/turbomanage,no,no,no
+Lcom/turbomanage,no,,
 Lcom/turbomanage/httpclient,basic-http-client,Development Aid,https://github.com/turbomanage/basic-http-client
-Lcom/umeng,no,no,no
+Lcom/umeng,no,,
 Lcom/umeng/analytics,Umeng Analytics,Mobile Analytics,https://www.umeng.com/analytics
 Lcom/umeng/api,Umeng API,Development Aid,http://dev.umeng.com
 Lcom/umeng/common,Umeng Common,Development Aid,http://dev.umeng.com/
 Lcom/umeng/fb,Umeng feedback,Mobile Analytics,http://dev.umeng.com/feedback
 Lcom/umeng/message,Umeng Message Push,Development Aid,http://dev.umeng.com/push/android/sdk-download
 Lcom/umeng/newxp,Umeng newxp,Development Aid,http://www.umeng.com/
-Lcom/umeng/newxp/view,no,no,no
+Lcom/umeng/newxp/view,no,,
 Lcom/umeng/socialize,Umeng Socialize,Social Network,http://dev.umeng.com/social/android/operation
 Lcom/umeng/socom,Umeng social component,Social Network,http://mobile.umeng.com/social
 Lcom/umeng/update,Umeng Update,Development Aid,https://www.umeng.com/component_update
 Lcom/umeng/xp,Umeng XP,Development Aid,http://dev.umeng.com/
-Lcom/unionpay,no,no,no
-Lcom/unionpay/mobile,no,no,no
+Lcom/unionpay,no,,
+Lcom/unionpay/mobile,no,,
 Lcom/unionpay/mobile/android,Unionpay,Payment,http://mobile.unionpay.com/
-Lcom/unionpay/sdk,no,no,no
+Lcom/unionpay/sdk,no,,
 Lcom/unionpay/tsmservice,Unionpay TSM(Trusted Service Management),Payment,https://www.95516.com/static/union/pages/index/index.html
 Lcom/unity3d,Unity3D,Game Engine,https://unity3d.com/
 Lcom/unity3d/ads,Unity3d Ads,Advertisement,https://unity3d.com/cn/services/ads
 Lcom/urbanairship,urbanairship,Mobile Analytics,https://www.urbanairship.com/
 Lcom/uservoice/uservoicesdk,UserVoice Android SDK,Social Network,https://github.com/uservoice/uservoice-android-sdk
-Lcom/ut,no,no,no
+Lcom/ut,no,,
 Lcom/ut/mini,ut mini push sdk,Development Aid,
-Lcom/uzmap,no,no,no
-Lcom/uzmap/pkg,no,no,no
-Lcom/uzmap/pkg/uzkit,no,no,no
+Lcom/uzmap,no,,
+Lcom/uzmap/pkg,no,,
+Lcom/uzmap/pkg/uzkit,no,,
 Lcom/uzmap/pkg/uzkit/fineHttp,fine HTTP,Development Aid,http://docs.apicloud.com/superwebview/Android/com/uzmap/pkg/uzkit/package-summary.html
 Lcom/vercoop,Vercoop,Development Aid,http://www.vercoop.com/
 Lcom/verizon,Verizon,Development Aid,https://www.verizon.com/
 Lcom/viewpagerindicator,Android Viewpagerindicator Widget,Development Aid,https://github.com/JakeWharton/ViewPagerIndicator
-Lcom/vividsolutions,no,no,no
+Lcom/vividsolutions,no,,
 Lcom/vividsolutions/jts,JTS Topology Suite,Development Framework,http://sourceforge.net/projects/jts-topo-suite
-Lcom/vjianke,no,no,no
+Lcom/vjianke,no,,
 Lcom/vjianke/pulltorefresh,pulltorefresh,GUI Component,
-Lcom/vl,no,no,no
+Lcom/vl,no,,
 Lcom/vl/pulltorefresh,pulltorefresh,GUI Component,
 Lcom/vpon,Vpon,Advertisement,http://www.vpon.com/
 Lcom/vungle,Vungle,Advertisement,https://vungle.com
 Lcom/wm/pulltorefresh,pulltorefresh,GUI Component,
-Lcom/xiaomi,no,no,no
-Lcom/xiaomi/mipush,no,no,no
+Lcom/xiaomi,no,,
+Lcom/xiaomi/mipush,no,,
 Lcom/xiaomi/mipush/sdk,miaomi mipush,Development Aid,https://dev.mi.com/console/appservice/push.html
 Lcom/xiaomi/push,Xiaomi Push,Development Aid,https://dev.mi.com/console/appservice/push.html
 Lcom/xiaomi/smack,Xiaomi Smack,Development Aid,
 Lcom/xiaomi/xmpush,Xiaomi XMpush,Development Aid,https://dev.mi.com/doc/p=533/index.html
-Lcom/xw,no,no,no
-Lcom/yandex,no,no,no
+Lcom/xw,no,,
+Lcom/yandex,no,,
 Lcom/yandex/mobile/ads,Yandex Ad,Advertisement,https://www.yandex.com/
 Lcom/yixia,Yixia,Development Aid,http://www.yixia.com/
-Lcz,no,no,no
-Lcz/msebera,no,no,no
-Lcz/msebera/android,no,no,no
+Lcz,no,,
+Lcz/msebera,no,,
+Lcz/msebera/android,no,,
 Lcz/msebera/android/httpclient,HttpClient Android repackage buildscript,Development Aid,https://github.com/smarek/httpclient-android
 Ldagger,Dagger,Development Aid,http://square.github.io/dagger/
-Lde,no,no,no
-Lde/greenrobot,no,no,no
+Lde,no,,
+Lde/greenrobot,no,,
 Lde/greenrobot/dao,GreenDao,Development Aid,https://github.com/greenrobot/greenDAO
 Lde/greenrobot/event,EventBus,Development Aid,https://github.com/greenrobot/EventBus
 Lde/keyboardsurfer,Keyboard Surfer,GUI Component,https://github.com/keyboardsurfer
 Lflexjson,FlexJson Library,Development Aid,http://flexjson.sourceforge.net/
-Lfr,no,no,no
+Lfr,no,,
 Lfr/castorfle,castorfle Smooth Progress Bar,GUI Component,https://github.com/castorflex/SmoothProgressBar
-Lgnu,no,no,no
+Lgnu,no,,
 Lgnu/commonlisp,GNU Common Lisp,Development Aid,https://www.gnu.org/s/gcl/
 Lgnu/ecmascript,ECMAScript,Development Aid,https://www.gnu.org/s/kawa/api/gnu/ecmascript/package-frame.html
 Lgnu/kawa,GNU KAWA,Development Aid,https://www.gnu.org/software/kawa/Building-for-Android.html
 Lgnu/mapping,GNU Mapping,Development Aid,https://www.gnu.org/s/kawa/api/gnu/mapping/package-summary.html
 Lgnu/xml,GNU XML,Development Aid,https://www.gnu.org/s/kawa/api/gnu/xml/package-summary.html
 Lgreendroid,GreenDroid,GUI Component,https://github.com/cyrilmottier/GreenDroid
-Lhirondelle,no,no,no
+Lhirondelle,no,,
 Lhirondelle/date4j,DATE4J,Development Aid,http://www.date4j.net/
-Linfo,no,no,no
+Lim,no,,
+Lim/quar,AutoLayout for Android,Development Aid,https://mvnrepository.com/artifact/im.quar
+Linfo,no,,
 Linfo/guardianproject/bouncycastle,GuardianProject Bouncy Castle,Development Aid,
-Lio,no,no,no
+Lio,no,,
 Lio/dcloud,Dcloud,Development Aid,http://dcloud.io/doc.html
-Lio/fabric,no,no,no
-Lio/fabric/sdk,no,no,no
+Lio/fabric,no,,
+Lio/fabric/sdk,no,,
 Lio/fabric/sdk/android,Fabric,Development Aid,https://get.fabric.io/
-Lit,no,no,no
-Lit/gmariotti,no,no,no
+Lit,no,,
+Lit/gmariotti,no,,
 Lit/gmariotti/cardslib,Card Library,Utility,https://github.com/gabrielemariotti/cardslib
-Lit/sauronsoftware,no,no,no
+Lit/sauronsoftware,no,,
 Lit/sauronsoftware/ftp4j,ftp4j,Development Aid,http://www.sauronsoftware.it/projects/ftp4j/
-Ljavax,no,no,no
+Ljavax,no,,
 Ljavax/activation,JavaBeans Activation Framework (JAF),Utility,http://www.oracle.com/technetwork/java/javase/jaf-135115.html
 Ljavax/annotation,JavaX Annotation API,Utility,
 Ljavax/jmdns,JavaX jmDNS library,Utility,https://github.com/jmdns/jmdns
 Ljavax/mail,JavaMail API,Utility,http://www.oracle.com/technetwork/java/javamail/index.html
 Ljavax/servlet,JavaX Servlet API,Utility,https://www.jcp.org/en/jsr/detail?id=369
-Ljavax/ws,no,no,no
+Ljavax/ws,no,,
 Ljavax/ws/rs,JavaX WebServices RESTful Resources,Utility,https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html
 Ljcifs,JCIFS,Development Aid,http://jcifs.samba.org/
 Ljsr166y,JSR-166y Java,Development Aid,http://g.oswego.edu/dl/concurrency-interest/
@@ -575,28 +594,31 @@ Ljunit,Junit,Development Aid,http://junit.org/junit4/
 Ljxl,Java Excel API,Utility,http://jexcelapi.sourceforge.net/
 Lkankan/wheel,Kankan Wheel Android scroller,GUI Component,https://github.com/chemalarrea/Android-wheel/blob/master/wheel-demo/src/kankan/wheel/demo/DateActivity.java
 Lkawa,Kawa for Android,Development Aid,https://www.gnu.org/software/kawa/Building-for-Android.html
-Ll,no,no,no
-Lm,no,no,no
-Lm/framework,no,no,no
-Lme,no,no,no
+Ll,no,,
+Lm,no,,
+Lm/framework,no,,
+Lme,no,,
+Lme/apla,no,,
+Lme/apla/cordova,Application preferences plugin for Cordova 3+,Development Framework,https://github.com/apla/me.apla.cordova.app-preferences
 Lme/kiip,KIIP Mobile Ads,Advertisement,https://www.kiip.me/
-Lme/zhanghai,no,no,no
-Lme/zhanghai/android,no,no,no
+Lme/zhanghai,no,,
+Lme/zhanghai/android,no,,
 Lme/zhanghai/android/materialprogressbar,MaterialProgressBar,Development Aid,https://github.com/DreaminginCodeZH/MaterialProgressBar
-Lmicrosoft,no,no,no
+Lmicrosoft,no,,
 Lmicrosoft/mappoint,Microsoft MapPoint,Map/LBS,https://www.microsoft.com/mappoint/
-Lmm,no,no,no
+Lmm,no,,
 Lmm/purchasesdk,China Mobile PurchaseSDK,Payment,
-Lmobisocial,no,no,no
-Lmobisocial/omlet,no,no,no
+Lmobisocial,no,,
+Lmobisocial/omlet,no,,
 Lmobisocial/omlib,Omlet SDK,Social Network,https://sdk.omlet.me/en/docs.html
-Lmono,no,no,no
+Lmono,,,no
 Lmono/android,Mono for Android,Development Aid,http://www.mono-project.com/
-Lname,no,no,no
-Lname/rkmlpv,no,no,no
-Lname/rkmlpv/jjhrjt,no,no,no
-Lname/rkmlpv/jjhrjt/ktphvh,no,no,no
-Lnet,no,no,no
+Lmy,no,,
+Lname,no,,
+Lname/rkmlpv,no,,
+Lname/rkmlpv/jjhrjt,no,,
+Lname/rkmlpv/jjhrjt/ktphvh,no,,
+Lnet,no,,
 Lnet/authorize,Authorize.NET,Development Aid,http://www.authorize.net/
 Lnet/hockeyapp/android,HockeyApp,Mobile Analytics,https://www.hockeyapp.net/
 Lnet/lingala/zip4j,Zip4j,Development Aid,http://www.lingala.net/zip4j/
@@ -604,27 +626,27 @@ Lnet/minidev/json,json smart,Development Aid,https://github.com/netplex/json-sma
 Lnet/simonvt/menudrawer,MenuDrawer,Development Aid,https://github.com/SimonVT/android-menudrawer
 Lnet/sourceforge/pinyin4j,Pinyin4j,Development Aid,http://pinyin4j.sourceforge.net/
 Lnet/sourceforge/zbar,SourceForge ZBar,Development Aid,http://zbar.sourceforge.net/
-Lnet/tsz,no,no,no
+Lnet/tsz,no,,
 Lnet/tsz/afinal,Afinal,Advertisement,https://github.com/yangfuhai/afinal/tree/master/src/net/tsz/afinal
 Lnet/youmi,Youmi Ads,Advertisement,http://www.youmi.net/
-Lnl,no,no,no
-Lnl/siegmann,no,no,no
+Lnl,no,,
+Lnl/siegmann,no,,
 Lnl/siegmann/epublib,EPublib,Development Aid,http://www.siegmann.nl/epublib
-Loauth,no,no,no
+Loauth,no,,
 Loauth/signpost,Signpost Oauth,Development Aid,https://code.google.com/p/oauth-signpost/
 Lokhttp3,OKHttp3.0,Development Aid,https://github.com/square/okhttp
 Lokio,OkHttp okio Framework,Development Aid,https://github.com/square/okio
 Lopentk,The Open Toolkit Library,Development Aid,http://www.opentk.com/
-Lorg,no,no,no
+Lorg,no,,
 Lorg/achartengine,AChartEngine,Development Aid,http://www.achartengine.org/
 Lorg/acra,ACRA (Application Crash Reports for Android),Development Aid,https://github.com/ACRA/acra
-Lorg/anddev,no,no,no
+Lorg/anddev,no,,
 Lorg/anddev/andengine,Andengine Game Engine,Game Engine,http://www.andengine.org/
 Lorg/andengine,Andengine Game Engine,Game Engine,http://www.andengine.org/
-Lorg/android,no,no,no
+Lorg/android,no,,
 Lorg/android/agoo,Umeng U-push (Old version called agoo),Development Aid,http://dev.umeng.com/push/android/integration
 Lorg/androidannotations,AndroidAnnotations API,Development Aid,https://github.com/excilys/androidannotations
-Lorg/apache,no,no,no
+Lorg/apache,no,,
 Lorg/apache/commons,Apache Common,Development Aid,https://commons.apache.org/
 Lorg/apache/cordova,Apache Cordova,Development Aid,https://cordova.apache.org/
 Lorg/apache/harmony,Apache Harmony,Development Aid,https://harmony.apache.org/
@@ -635,20 +657,20 @@ Lorg/apache/tools/ant,Apache Ant Core,Development Aid,http://ant.apache.org/
 Lorg/appcelerator,Appcelerator,Development Aid,http://www.appcelerator.org/
 Lorg/aspectj,AspectJ,Development Aid,https://eclipse.org/aspectj/
 Lorg/bouncycastle,Bouncy Castle,Development Aid,http://www.bouncycastle.org/java.html
-Lorg/ccil,no,no,no
-Lorg/ccil/cowan,no,no,no
+Lorg/ccil,no,,
+Lorg/ccil/cowan,no,,
 Lorg/ccil/cowan/tagsoup,TagSoup,Utility,https://github.com/orbeon/tagsoup
 Lorg/cocos2d,cocos2D,Game Engine,http://www.cocos2d-x.org/
 Lorg/cocos2dx,cocos2DX,Game Engine,http://www.cocos2d-x.org/
-Lorg/codehaus,no,no,no
+Lorg/codehaus,no,,
 Lorg/codehaus/jackson,Jackson Json-processor,Utility,https://github.com/codehaus/jackson
 Lorg/dom4j,Dom4j,Development Aid,http://dom4j.sourceforge.net/
-Lorg/ebookdroid,no,no,no
-Lorg/ebookdroid/ui,no,no,no
-Lorg/ebookdroid/ui/library,no,no,no
+Lorg/ebookdroid,no,,
+Lorg/ebookdroid/ui,no,,
+Lorg/ebookdroid/ui/library,no,,
 Lorg/ebookdroid/ui/library/tasks,EBookDroid,Development Aid,https://github.com/mortenpi/ebookdroid/
 Lorg/fmod,Fmod,Game Engine,https://www.fmod.org/
-Lorg/geometerplus,no,no,no
+Lorg/geometerplus,no,,
 Lorg/geometerplus/zlibrary,Zlibrary(FBReader PDF Reader),Development Aid,
 Lorg/hamcrest,hamcrest,Development Aid,http://hamcrest.org/
 Lorg/htmlcleaner,htmlCleaner,Development Aid,http://htmlcleaner.sourceforge.net
@@ -660,7 +682,7 @@ Lorg/jaxen,Jaxen,Development Aid,http://jaxen.org/
 Lorg/jdeferred,Java jdeferred Library,Development Aid,http://jdeferred.org/
 Lorg/jdom,JDOM V1,Development Aid,http://www.jdom.org/
 Lorg/jdom2,JDOM2,Development Aid,https://github.com/hunterhacker/jdom/wiki/JDOM2-A-Primer
-Lorg/jivesoftware,no,no,no
+Lorg/jivesoftware,no,,
 Lorg/jivesoftware/smack,Smack,Payment,https://mvnrepository.com/artifact/jivesoftware/smack
 Lorg/jivesoftware/smackx,Smack Extensions,Development Aid,https://mvnrepository.com/artifact/jivesoftware/smackx
 Lorg/joda/time,Joda Time,Development Aid,http://www.joda.org/joda-time/
@@ -673,14 +695,15 @@ Lorg/ksoap2,ksoap2,Development Aid,http://ksoap2.sourceforge.net/
 Lorg/kxml2,Kxml2,Development Aid,http://www.kxml.org/
 Lorg/lobobrowser,Lobobrowser,Development Aid,https://github.com/lobobrowser/LoboBrowser
 Lorg/mapsforge,Mapsforge API,Map/LBS,https://github.com/DonTomika/mapsforge
-Lorg/metalev,no,no,no
+Lorg/metalev,no,,
 Lorg/metalev/multitouch,Metalev Multi Touch,GUI Component,https://code.google.com/p/android-multitouch-controller/
 Lorg/mozilla/intl/chardet,Mozilla Charset Detector,Utility,
 Lorg/mozilla/javascript,Mozilla Rhino,Development Aid,https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino
 Lorg/mozilla/universalchardet,Mozilla Universal Detector,Utility,https://github.com/ctt-gob-es/clienteafirma-external
+Lorg/msgpack,Messagepack,Utility,http://msgpack.org
 Lorg/nexage,Millennial Media,Advertisement,http://www.nexage.com
 Lorg/nexage/sourcekit/mraid,Nexage SourceKit-MRAID(part of MillennialMedia),Advertisement,https://github.com/nexage/sourcekit-mraid-android
-Lorg/ocpsoft,no,no,no
+Lorg/ocpsoft,no,,
 Lorg/ocpsoft/prettytime,PrettyTime,Development Aid,https://github.com/ocpsoft/prettytime
 Lorg/openudid,OpenUDID Salama Generator,Development Aid,https://github.com/vieux/OpenUDID
 Lorg/osmdroid,OpenStreetMap-Tools,Map/LBS,https://github.com/osmdroid/osmdroid
@@ -691,46 +714,49 @@ Lorg/spongycastle,Spongy Castle,Development Aid,http://rtyley.github.io/spongyca
 Lorg/springframework,Spring Framework,Development Aid,https://projects.spring.io/spring-framework/
 Lorg/tukaani/xz,XZ For Java,Development Aid,http://tukaani.org/xz/java.html
 Lorg/vudroid,Vudroid PDF Reader,Development Aid,
-Lorg/xbill,no,no,no
+Lorg/xbill,no,,
 Lorg/xbill/DNS,Dnsjava,Development Aid,http://www.dnsjava.org/
+Lorg/xinhua/analytics,Xinhua Analytics,Mobile Analytics,
 Lorg/xmlpull,XML Pull,Development Aid,http://www.xmlpull.org/
 Lorg/yaml/snakeyaml,SnakeYAML,Development Aid,https://bitbucket.org/asomov/snakeyaml
-Lorg/zywx,no,no,no
+Lorg/zywx,no,,
 Lorg/zywx/wbpalmstar,Zywx Wbpalmstar APP Framework,Development Framework,
 Lpagerslidingtabstrip,PagerSlidingTabStrip UI Framework,GUI Component,https://github.com/astuetz/PagerSlidingTabStrip
 Lpdftron,Pdftron PDF Widget,Development Aid,https://www.pdftron.com/
 Lpl/polidea,Polidea,Development Aid,https://www.polidea.com/
-Lpts,no,no,no
+Lpts,no,,
 Lpts/PhoneGap,PhoneGap,Development Framework,http://phonegap.com/
-Lrajawali,no,no,no
+Lrajawali,no,,
 Lrajawali/wallpaper,rajawali WallPapper,Development Aid,https://github.com/Rajawali/RajawaliWallpaperTemplate
 Lretrofit,retrofit RESTful Library,Development Aid,https://square.github.io/retrofit/
 Lroboguice,Roboguice,Development Aid,https://github.com/roboguice/roboguice
-Lrx,no,no,no
+Lrx,no,,
 Lrx/internal,RxJava Retrofit,Development Aid,https://github.com/square/retrofit
-Lsafiap,no,no,no
-Lsafiap/framework,no,no,no
-Lsdk,no,no,no
-Lsdk/download,no,no,no
-Lshared_presage,no,no,no
-Lshared_presage/com,no,no,no
-Lti,no,no,no
+Lsafiap,no,,
+Lsafiap/framework,no,,
+Lsdk,no,,
+Lsdk/download,no,,
+Lshared_presage,no,,
+Lshared_presage/com,no,,
+Lti,no,,
 Lti/imagefactory,Titanium Image Factory,Development Aid,https://github.com/appcelerator-modules/ti.imagefactory
 Lti/map,Ti Map,Map/LBS,https://github.com/appcelerator-modules/ti.map
-Lti/modules,no,no,no
+Lti/modules,no,,
 Lti/modules/titanium,Titanium-Modules,Development Aid,
-Ltv,no,no,no
-Ltv/rhmjpj,no,no,no
-Ltv/rhmjpj/jrhrjt,no,no,no
-Ltv/rhmjpj/jrhrjt/ksptvg,no,no,no
+Ltv,no,,
+Ltv/rhmjpj,no,,
+Ltv/rhmjpj/jrhrjt,no,,
+Ltv/rhmjpj/jrhrjt/ksptvg,no,,
 Ltwitter4j,Twitter,Social Network,http://twitter4j.org/
-Lu,no,no,no
+Lu,no,,
 Lu/aly,Umeng Analysis,Mobile Analytics,https://www.umeng.com/
-Luk,no,no,no
-Luk/co,no,no,no
-Luk/co/senab,no,no,no
+Luk,no,,
+Luk/co,no,,
+Luk/co/senab,no,,
 Luk/co/senab/actionbarpulltorefresh,actionbarpulltorefresh,GUI Component,https://github.com/chrisbanes/ActionBar-PullToRefresh
-Lv2,no,no,no
-Lv2/com,no,no,no
+Lv2,no,,
+Lv2/com,no,,
 Lv2/com/playhaven,PlayHaven Mobile Ads,Advertisement,http://www.playhaven.com/
 Lxamarin,Xamarin,Development Aid,https://xamarin.com/
+Lzfee,no,,
+Lzfee/sdk,ZFEE SDK,Utility,

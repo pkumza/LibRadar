@@ -117,7 +117,7 @@ class Tree(object):
             self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
         else:
             self.feature = dict()
-            with open("Data/IntermediateData/lite_dataset_10.csv", 'r') as file_rules:
+            with open(LITE_DATASET_10, 'r') as file_rules:
                 csv_rules_reader = csv.reader(file_rules, delimiter=',', quotechar='|')
                 for row in csv_rules_reader:
                     self.feature[row[0]] = row[1:5]

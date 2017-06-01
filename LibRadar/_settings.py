@@ -36,10 +36,6 @@ CLEAN_WORKSPACE = 0
 """
     Database use db 0 as default
 """
-DB_HOST = 'redis.pkuos.org'
-DB_PORT = 6379
-DB_ID = 2
-
 
 DB_HOST = 'localhost'
 DB_PORT = 6379
@@ -82,6 +78,7 @@ if not os.path.exists(SCRIPT_PATH + '/Data'):
     os.mkdir(SCRIPT_PATH + '/Data')
 FILE_LOGGING = SCRIPT_PATH + '/Data/logging.conf'
 FILE_RULE = SCRIPT_PATH + '/Data/IntermediateData/tag_rules.csv'
+LITE_DATASET_10 = SCRIPT_PATH + '/Data/IntermediateData/lite_dataset_10.csv'
 
 """
     Logs

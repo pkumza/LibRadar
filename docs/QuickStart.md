@@ -11,7 +11,13 @@
    ```
 
 2. Download Feature File
- - Download file from [Data for LibRadar](https://github.com/pkumza/Data_for_LibRadar/blob/master/lite_dataset_10.csv), then move it into LibRadar/LibRadar/Data/IntermediateData directory.
+
+  Download lite_datasetfile, then move it into LibRadar/LibRadar/Data/IntermediateData directory.
+
+  [Mirror 1 Github](https://github.com/pkumza/Data_for_LibRadar/blob/master/lite_dataset_10.csv)
+
+  [Mirror 2 Aliyun](http://lxwiki.oss-cn-beijing.aliyuncs.com/lite_dataset_10.csv)
+
 3. Use LibRadar to detect libraries.
 
   ```bash
