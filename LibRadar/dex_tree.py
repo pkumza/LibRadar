@@ -20,12 +20,13 @@
 #   This script is used to implement the tree node and tree structure.
 
 
-
-
 from _settings import *
+from collections import Counter
 import hashlib
 import csv
 import redis
+import zlib
+import rputil
 
 
 # tag_rules
@@ -62,23 +63,27 @@ class TreeNode(object):
         self.match = list()
         self.permissions = set()
         self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
+        self.api_id_list = []
 
-    def insert(self, package_name, weight, sha256, permission_list):
+    def insert(self, package_name, weight, sha256, permission_list, api_id_list):
         # no matter how deep the package is, add permissions here.
         for permission in permission_list:
             self.permissions.add(permission)
+        # no matter how deep the package is, add api_id_list
+        # self.api_id_list = self.api_id_list + api_id_list
         current_depth = 0 if self.pn == "" else self.pn.count('/') + 1
         target_depth = package_name.count('/') + 1
         if current_depth == target_depth:
             self.sha256 = sha256
+            self.api_id_list = api_id_list
             return "F: %s" % package_name
         target_package_name = '/'.join(package_name.split('/')[:current_depth + 1])
         if target_package_name in self.children:
             self.children[target_package_name].weight += weight
-            return self.children[target_package_name].insert(package_name, weight, sha256, permission_list)
+            return self.children[target_package_name].insert(package_name, weight, sha256, permission_list, api_id_list)
         else:
             self.children[target_package_name] = TreeNode(n_weight=weight, n_pn=target_package_name, n_parent=self)
-            return self.children[target_package_name].insert(package_name, weight, sha256, permission_list)
+            return self.children[target_package_name].insert(package_name, weight, sha256, permission_list, api_id_list)
 
     def brand(self, package_name, standard_package):
         current_depth = 0 if self.pn == "" else self.pn.count('/') + 1
@@ -108,22 +113,15 @@ class Tree(object):
     """
     Tree
     """
-    def __init__(self, lite=True):
-        self.lite = lite
+    def __init__(self):
         self.root = TreeNode()
         self.db = None
         self.feature = None
-        if not self.lite:
-            self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
-        else:
-            self.feature = dict()
-            with open(LITE_DATASET_10, 'r') as file_rules:
-                csv_rules_reader = csv.reader(file_rules, delimiter=',', quotechar='|')
-                for row in csv_rules_reader:
-                    self.feature[row[0]] = row[1:5]
+        self.db = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID, password=DB_PSWD)
+        self.db_rep = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID_REP, password=DB_PSWD)
 
-    def insert(self, package_name, weight, sha256, permission_list):
-        self.root.insert(package_name, weight, sha256, permission_list)
+    def insert(self, package_name, weight, sha256, permission_list, api_id_list):
+        self.root.insert(package_name, weight, sha256, permission_list, api_id_list)
 
     def brand(self, package_name, standard_package):
         return self.root.brand(package_name, standard_package)
@@ -138,6 +136,17 @@ class Tree(object):
         else:
             for child_pn in node.children:
                 self._pre_order_res(node.children[child_pn], visit, res)
+
+    def pre_order_res_ret(self, visit, res, ret):
+        self._pre_order_res_ret(node=self.root, visit=visit, res=res, ret=ret)
+
+    def _pre_order_res_ret(self, node, visit, res, ret):
+        retu = visit(node, res, ret)
+        if retu < 0:
+            return
+        else:
+            for child_pn in node.children:
+                self._pre_order_res_ret(node.children[child_pn], visit, res, ret)
 
     def pre_order(self, visit):
         self._pre_order(self.root, visit)
@@ -183,17 +192,12 @@ class Tree(object):
 
     def _match(self, node):
         a, c, u = None, None, None
-        if not self.lite:
-            pipe = self.db.pipeline()
-            pipe.hget(name=DB_UN_OB_PN, key=node.sha256)
-            pipe.hget(name=DB_FEATURE_CNT, key=node.sha256)
-            pipe.hget(name=DB_UN_OB_CNT, key=node.sha256)
-            pipe_res = pipe.execute()
-            a, c, u = pipe_res
-        else:
-            if node.sha256 in self.feature:
-                acu_cur = self.feature[node.sha256]
-                a, c, u = acu_cur[3], acu_cur[0], acu_cur[2]
+        pipe = self.db.pipeline()
+        pipe.hget(name=DB_UN_OB_PN, key=node.sha256)
+        pipe.hget(name=DB_FEATURE_CNT, key=node.sha256)
+        pipe.hget(name=DB_UN_OB_CNT, key=node.sha256)
+        pipe_res = pipe.execute()
+        a, c, u = pipe_res
 
         # if could not find this package in database, search its children.
         if a is None:
@@ -308,17 +312,13 @@ class Tree(object):
         a, c, u = None, None, None
         if len(node.match) != 0:
             return -1
-        if not self.lite:
-            pipe = self.db.pipeline()
-            pipe.hget(name=DB_UN_OB_PN, key=node.sha256)
-            pipe.hget(name=DB_FEATURE_CNT, key=node.sha256)
-            pipe.hget(name=DB_UN_OB_CNT, key=node.sha256)
-            pipe_res = pipe.execute()
-            a, c, u = pipe_res
-        else:
-            if node.sha256 in self.feature:
-                acu_cur = self.feature[node.sha256]
-                a, c, u = acu_cur[3], acu_cur[0], acu_cur[2]
+        pipe = self.db.pipeline()
+        pipe.hget(name=DB_UN_OB_PN, key=node.sha256)
+        pipe.hget(name=DB_FEATURE_CNT, key=node.sha256)
+        pipe.hget(name=DB_UN_OB_CNT, key=node.sha256)
+        pipe_res = pipe.execute()
+        a, c, u = pipe_res
+
 
         if a is None:
             return 1
@@ -387,3 +387,25 @@ class Tree(object):
     def get_lib(self, res):
         self.pre_order_res(visit=self._get_lib, res=res)
 
+    @staticmethod
+    def _get_repackage_main(node, res, ret):
+        if node.pn in res:
+            return -1
+        if len(node.children) == 0:
+            ret.extend(node.api_id_list)
+            ret += node.api_id_list
+        return 0
+
+    def get_repackage_main(self, res, hex_sha256):
+        # res is a list of libraries. Result.
+        pn_list = list()
+        for item in res:
+            pn_list.append(item["Package"])
+        ret = list()
+        self.pre_order_res_ret(visit=self._get_repackage_main, res=pn_list, ret=ret)
+        ret_length = len(ret)
+        kvd = dict(Counter(ret))
+        str = rputil.Util.dict2str(kvd)
+        zstr = zlib.compress(str,1)
+        self.db_rep.hset(name="apk_feature", key=hex_sha256, value=zstr)
+        self.db_rep.zadd("apk_weight", ret_length, hex_sha256 )

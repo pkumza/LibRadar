@@ -19,6 +19,21 @@
 from _settings import *
 
 class Util(object):
+    """
+    Format of String Storage:
+
+    {1:2}
+    |--------|--------|--------|---------|
+    |00000000|00000001|00000000|000000010|
+    |--------|--------|--------|---------|
+
+
+    {2:3,4:128}
+    |--------|--------|--------|---------|--------|--------|--------|---------|
+    |00000000|00000010|00000000|000000011|00000000|00000100|00000000|100000000|
+    |--------|--------|--------|---------|--------|--------|--------|---------|
+
+    """
     @staticmethod
     def dict2str(kvd):
         """
@@ -70,3 +85,49 @@ class Util(object):
             value_int = i3 * 256 + i4
             kvd[key_int] = value_int
         return kvd
+
+    @staticmethod
+    def get_key(feature_str, offset):
+        """
+
+        :param feature_str:
+        :param offset:
+        :return:
+        """
+        return ord(feature_str[offset]) * 256 + ord(feature_str[offset + 1])
+
+    @staticmethod
+    def get_value(feature_str, offset):
+        return ord(feature_str[offset + 2]) * 256 + ord(feature_str[offset + 3])
+
+    @staticmethod
+    def comp_str(str1, str2):
+        assert len(str1) % 4 == 0 and len(str2) % 4 == 0, "Feature_str length is not 4X"
+        feature_length1, feature_length2 = len(str1), len(str2)
+        cur1, cur2 = 0, 0
+        diff = 0
+        sum1, sum2 = 0, 0
+        while cur1 < feature_length1 or cur2 < feature_length2:
+            if cur1 == feature_length1 or Util.get_key(str2, cur2) < Util.get_key(str1, cur1):
+                v2 = Util.get_value(str2, cur2)
+                sum2 += v2
+                diff += v2
+                cur2 += 4
+                continue
+            if cur2 == feature_length2 or Util.get_key(str2, cur2) > Util.get_key(str1, cur1):
+                v1 = Util.get_value(str1, cur1)
+                sum1 += v1
+                diff += v1
+                cur1 += 4
+                continue
+            if Util.get_key(str2, cur2) == Util.get_key(str1, cur1):
+                v1 = Util.get_value(str1, cur1)
+                v2 = Util.get_value(str2, cur2)
+                diff += abs(v1 - v2)
+                sum1 += v1
+                sum2 += v2
+                cur1 += 4
+                cur2 += 4
+                continue
+            assert False, "Not reachable."
+        return float(diff) / (sum1 + sum2)

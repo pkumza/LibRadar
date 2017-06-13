@@ -40,6 +40,7 @@ CLEAN_WORKSPACE = 0
 DB_HOST = 'localhost'
 DB_PORT = 6379
 DB_ID = 2
+DB_ID_REP = 1
 # if you don't have Password, delete DB_PSWD
 DB_PSWD = ''
 

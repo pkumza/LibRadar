@@ -27,12 +27,13 @@ import dex_parser
 import hashlib
 import zipfile
 import json
+from collections import Counter
 
 class LibRadar(object):
     """
     LibRadar
     """
-    def __init__(self, apk_path, lite=True):
+    def __init__(self, apk_path):
         """
         Init LibRadar instance with apk_path as a basestring.
         Create a Tree for every LibRadar instance. The tree describe the architecture of the apk. Every package is a
@@ -40,7 +41,7 @@ class LibRadar(object):
         :param apk_path: basestring
         """
         self.apk_path = apk_path
-        self.tree = dex_tree.Tree(lite=lite)
+        self.tree = dex_tree.Tree()
         self.dex_name = ""
         # Instance of Dex Object in dex_parser.
         self.dex = None
@@ -50,6 +51,7 @@ class LibRadar(object):
         """
         self.k_api_v_permission = dict()
         with open(SCRIPT_PATH + "/Data/IntermediateData/strict_api.csv", 'r') as api_and_permission:
+            api_id = 0
             for line in api_and_permission:
                 api, permission_with_colon = line.split(",")
                 permissions = permission_with_colon[:-2].split(":")
@@ -58,7 +60,8 @@ class LibRadar(object):
                 for permission in permissions:
                     if permission != "":
                         permission_list.append(permission)
-                self.k_api_v_permission[api] = permission_list
+                self.k_api_v_permission[api] = (permission_list, api_id)
+                api_id += 1
         """
         invoke_file = open(SCRIPT_PATH +"/Data/IntermediateData/invokeFormat.txt", 'r')
         self.invokes = set()
@@ -125,7 +128,7 @@ class LibRadar(object):
             if 0x6e <= op_code <= 0x72:
                 if decoded_instruction.getApi in self.k_api_v_permission:
                     api_list.append(decoded_instruction.getApi)
-                    for permission in self.k_api_v_permission[decoded_instruction.getApi]:
+                    for permission in self.k_api_v_permission[decoded_instruction.getApi][0]:
                         permission_list.add(permission)
         return
 
@@ -154,7 +157,12 @@ class LibRadar(object):
             class_sha256.update(api)
         if not IGNORE_ZERO_API_FILES or len(api_list) != 0:
             pass
-        return len(api_list), class_sha256.hexdigest(), class_sha256.hexdigest(), sorted(list(permission_list))
+        # api_id_list
+        api_id_list = []
+        for api in api_list:
+            api_id_list.append(self.k_api_v_permission[api][1])
+        return len(api_list), class_sha256.hexdigest(), class_sha256.hexdigest(), sorted(list(permission_list)),\
+               api_id_list
 
     def extract_dex(self):
         # Log Start
@@ -166,7 +174,8 @@ class LibRadar(object):
         # Create a Dex object
         self.dex = dex_parser.DexFile(self.dex_name)
         for dex_class_def_obj in self.dex.dexClassDefList:
-            weight, raw_sha256, hex_sha256, permission_list = self.extract_class(dex_class_def_obj=dex_class_def_obj)
+            weight, raw_sha256, hex_sha256, permission_list, api_id_list = \
+                self.extract_class(dex_class_def_obj=dex_class_def_obj)
             class_name = self.dex.getDexTypeId(dex_class_def_obj.classIdx)
             """
             I got many \x01 here before the class name.
@@ -180,7 +189,8 @@ class LibRadar(object):
                 class_name = class_name[l_index:]
             if IGNORE_ZERO_API_FILES and weight == 0:
                 continue
-            self.tree.insert(package_name=class_name, weight=weight, sha256=raw_sha256, permission_list=permission_list)
+            self.tree.insert(package_name=class_name, weight=weight, sha256=raw_sha256,
+                             permission_list=permission_list, api_id_list=api_id_list)
         return 0
 
     def analyse(self):
@@ -206,8 +216,9 @@ class LibRadar(object):
         self.tree.get_lib(res)
         # Step 6: traverse the tree, find potential libraries that has not been tagged.
         self.tree.find_untagged(res)
+        # Step 7: repackage feature store.
+        self.tree.get_repackage_main(res, self.hex_sha256)
         return res
-
 
 
 if __name__ == '__main__':
@@ -217,6 +228,6 @@ if __name__ == '__main__':
         print("    $ python libradar.py example.apk")
         exit(1)
     apk_path = sys.argv[1]
-    lrd = LibRadar(apk_path, lite=True)
+    lrd = LibRadar(apk_path)
     res = lrd.compare()
     print(json.dumps(res, indent=4, sort_keys=True))
