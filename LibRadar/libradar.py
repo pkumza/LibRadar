@@ -217,8 +217,8 @@ class LibRadar(object):
         # Step 6: traverse the tree, find potential libraries that has not been tagged.
         self.tree.find_untagged(res)
         # Step 7: repackage feature store.
-        self.tree.get_repackage_main(res, self.hex_sha256)
-        return res
+        rep_list = self.tree.get_repackage_main(res, self.hex_sha256)
+        return res, rep_list
 
 
 if __name__ == '__main__':
@@ -229,5 +229,5 @@ if __name__ == '__main__':
         exit(1)
     apk_path = sys.argv[1]
     lrd = LibRadar(apk_path)
-    res = lrd.compare()
-    print(json.dumps(res, indent=4, sort_keys=True))
+    res, rep_list = lrd.compare()
+    print(json.dumps({"Libraries": res, "Repackage Candidates": rep_list}, indent=4, sort_keys=True))
