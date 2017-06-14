@@ -18,6 +18,7 @@ Landroid/opengl,OpenGL,Development Aid,http://developer.android.com/reference/an
 Landroid/support,no,,
 Landroid/support/a,no,,
 Landroid/support/a/a,no,,
+Landroid/support/constraint,Android Support constraint,Development Aid,https://developer.android.com/reference/android/support/constraint/package-summary.html
 Landroid/support/design,Android Support Design,Development Aid,https://developer.android.com/reference/android/support/design/package-summary.html
 Landroid/support/multidex,Multidex,Development Aid,https://developer.android.com/studio/build/multidex.html
 Landroid/support/v13,Android Support v13,Development Aid,https://developer.android.com/reference/android/support/v13/app/package-summary.html
@@ -92,7 +93,7 @@ Lcom/actionbarsherlock,ActionBarSherlock,Development Aid,http://actionbarsherloc
 Lcom/activeandroid,ActiveAndroid,Development Aid,https://github.com/pardom/ActiveAndroid
 Lcom/adfonic,Adfonic Mobile Ads,Advertisement,http://www.adfonic.com
 Lcom/adjust,no,,
-Lcom/adjust/sdk,adjust,Mobile Analytics,https://www.adjust.com/
+Lcom/adjust/sdk,Adjust SDK,Mobile Analytics,https://www.adjust.com/
 Lcom/admob,Google Admob,Advertisement,https://www.google.com/admob/
 Lcom/adobe,no,,
 Lcom/adobe/air,Adobe Air,Development Aid,http://www.adobe.com/cn/devnet/air/air_for_android.html
@@ -232,7 +233,10 @@ Lcom/duoku/platform,duoku(Baidu Mobile Game Platform),Social Network,http://www.
 Lcom/e,no,,
 Lcom/e/a,no,,
 Lcom/easemob/,Huanxin,Development Aid,http://www.easemob.com/
-Lcom/esotericsoftware,Esoteric Software 2D,Development Aid,https://github.com/EsotericSoftware
+Lcom/esotericsoftware/kryo,Kryo,Development Aid,https://github.com/EsotericSoftware/kryo
+Lcom/esotericsoftware/minlog,Minlog,Development Aid,https://github.com/EsotericSoftware/minlog
+Lcom/esotericsoftware/spine,Spine,Development Aid,https://github.com/EsotericSoftware/spine
+Lcom/esotericsoftware/tablelayout,TableLayout,Development Aid,https://github.com/EsotericSoftware/tablelayout
 Lcom/espian/showcaseview,Espian ShowcaseView,GUI Component,https://github.com/arianvp/ShowcaseView
 Lcom/everyplay,Everyplay,Game Engine,https://everyplay.com/
 Lcom/external,no,,
@@ -633,7 +637,7 @@ Lnl,no,,
 Lnl/siegmann,no,,
 Lnl/siegmann/epublib,EPublib,Development Aid,http://www.siegmann.nl/epublib
 Loauth,no,,
-Loauth/signpost,Signpost Oauth,Development Aid,https://code.google.com/p/oauth-signpost/
+Loauth/signpost,Signpost Oauth,Development Aid,https://github.com/mttkay/signpost
 Lokhttp3,OKHttp3.0,Development Aid,https://github.com/square/okhttp
 Lokio,OkHttp okio Framework,Development Aid,https://github.com/square/okio
 Lopentk,The Open Toolkit Library,Development Aid,http://www.opentk.com/
@@ -654,6 +658,9 @@ Lorg/apache/http,Apache Http,Development Aid,https://hc.apache.org/
 Lorg/apache/james,Apache James Mail Enterprise Serve,Development Aid,http://james.apache.org
 Lorg/apache/log4j,Apache Log4j,Development Aid,http://logging.apache.org/log4j/2.x/
 Lorg/apache/tools/ant,Apache Ant Core,Development Aid,http://ant.apache.org/
+Lorg/apache/tools/mail,Apache ANT (Mail),Development Aid,https://ant.apache.org/
+Lorg/apache/tools/tar,Apache ANT (Tar),Development Aid,https://ant.apache.org/
+Lorg/apache/tools/zip,Apache ANT (Zip),Development Aid,https://ant.apache.org/
 Lorg/appcelerator,Appcelerator,Development Aid,http://www.appcelerator.org/
 Lorg/aspectj,AspectJ,Development Aid,https://eclipse.org/aspectj/
 Lorg/bouncycastle,Bouncy Castle,Development Aid,http://www.bouncycastle.org/java.html
@@ -686,7 +693,7 @@ Lorg/jivesoftware,no,,
 Lorg/jivesoftware/smack,Smack,Payment,https://mvnrepository.com/artifact/jivesoftware/smack
 Lorg/jivesoftware/smackx,Smack Extensions,Development Aid,https://mvnrepository.com/artifact/jivesoftware/smackx
 Lorg/joda/time,Joda Time,Development Aid,http://www.joda.org/joda-time/
-Lorg/json,Json org,Development Aid,http://www.json.org/
+Lorg/json/simple,Json org,Development Aid,https://github.com/fangyidong/json-simple
 Lorg/jsoup,Jsoup,Development Aid,http://jsoup.org/
 Lorg/junit,jUnit Java Unit Test,Development Aid,http://junit.org/
 Lorg/kde/necessitas/ministro/,Ministro Qt shared libraries,Development Aid,http://community.kde.org/Necessitas
@@ -718,6 +725,7 @@ Lorg/xbill,no,,
 Lorg/xbill/DNS,Dnsjava,Development Aid,http://www.dnsjava.org/
 Lorg/xinhua/analytics,Xinhua Analytics,Mobile Analytics,
 Lorg/xmlpull,XML Pull,Development Aid,http://www.xmlpull.org/
+Lorg/xutils,xUtils,Development Aid,https://github.com/wyouflf/xUtils
 Lorg/yaml/snakeyaml,SnakeYAML,Development Aid,https://bitbucket.org/asomov/snakeyaml
 Lorg/zywx,no,,
 Lorg/zywx/wbpalmstar,Zywx Wbpalmstar APP Framework,Development Framework,
@@ -747,7 +755,7 @@ Ltv,no,,
 Ltv/rhmjpj,no,,
 Ltv/rhmjpj/jrhrjt,no,,
 Ltv/rhmjpj/jrhrjt/ksptvg,no,,
-Ltwitter4j,Twitter,Social Network,http://twitter4j.org/
+Ltwitter4j,Twitter 4j,Social Network,http://twitter4j.org/
 Lu,no,,
 Lu/aly,Umeng Analysis,Mobile Analytics,https://www.umeng.com/
 Luk,no,,
