@@ -1,5 +1,6 @@
 LibRadar/Data/RawData
 log*
+LibRadar/Data/Meta
 LibRadar/Data/Decompiled
 LibRadar/Data/IntermediateData
 *.DS_Store

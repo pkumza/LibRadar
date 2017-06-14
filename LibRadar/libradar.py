@@ -27,6 +27,7 @@ import dex_parser
 import hashlib
 import zipfile
 import json
+import redis
 from collections import Counter
 
 class LibRadar(object):
@@ -68,6 +69,7 @@ class LibRadar(object):
         for line in invoke_file:
             self.invokes.add(line[:-1])
         """
+        self.db_rep = redis.StrictRedis(host=DB_HOST, port=DB_PORT, db=DB_ID_REP, password=DB_PSWD)
 
     def __del__(self):
         # Delete dex file
@@ -82,14 +84,31 @@ class LibRadar(object):
             raise AssertionError
         # If it is a apk file
         if len(self.apk_path) <= 4 or self.apk_path[-4:] != ".apk":
-            logger.error("%s is not a apk file.")
+            logger.error("%s is not an apk file.")
+            raise AssertionError
+        if not zipfile.is_zipfile(self.apk_path):
+            logger.error("%s is not a zip file.")
             raise AssertionError
         # Get SHA256
         self.hex_sha256 = self.get_sha256()
+        self.hex_md5 = self.get_md5()
         # Unzip
         zf = zipfile.ZipFile(self.apk_path, mode='r')
         # Transfer the unzipped dex file name to self.dex_name
         self.dex_name = zf.extract("classes.dex", SCRIPT_PATH + "/Data/Decompiled/%s" % self.hex_sha256)
+        certificate = ""
+        if 'META-INF/CERT.RSA' in zf.namelist():
+            self.meta_inf = zf.extract("META-INF/CERT.RSA", SCRIPT_PATH + "/Data/Meta/%s" % self.hex_sha256)
+            key_string = os.popen("keytool -printcert -file " + SCRIPT_PATH + "/Data/Meta/%s/META-INF/CERT.RSA" % self.hex_sha256)
+        elif 'META-INF/CERT.DSA' in zf.namelist():
+            self.meta_inf = zf.extract("META-INF/CERT.DSA", SCRIPT_PATH + "/Data/Meta/%s" % self.hex_sha256)
+            key_string = os.popen("keytool -printcert -file " + SCRIPT_PATH + "/Data/Meta/%s/META-INF/CERT.DSA" % self.hex_sha256)
+        else:
+            key_string = "None"
+        for line in key_string:
+            if 'SHA256' in line:
+                certificate = line.strip()
+        self.db_rep.hset("apk_key", self.hex_sha256, certificate)
         return self.dex_name
 
     def get_sha256(self):
@@ -105,8 +124,24 @@ class LibRadar(object):
             file_sha256.update(block)
         f.close()
         file_sha256_value = file_sha256.hexdigest()
-        logger.debug("APK %s's MD5 is %s" % (self.apk_path, file_sha256_value))
+        logger.debug("APK %s's SHA256 is %s" % (self.apk_path, file_sha256_value))
         return file_sha256_value
+
+    def get_md5(self):
+        if not os.path.isfile(self.apk_path):
+            logger.critical("file path %s is not a file" % self.apk_path)
+            raise AssertionError
+        file_md5 = hashlib.md5()
+        f = file(self.apk_path, 'rb')
+        while True:
+            block = f.read(4096)
+            if not block:
+                break
+            file_md5.update(block)
+        f.close()
+        file_md5_value = file_md5.hexdigest()
+        logger.debug("APK %s's MD5 is %s" % (self.apk_path, file_md5_value))
+        return file_md5_value
 
     def get_api_list(self, dex_method, api_list, permission_list):
         if dex_method.dexCode is None:

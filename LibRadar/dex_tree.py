@@ -398,9 +398,6 @@ class Tree(object):
 
     def get_repackage_main(self, res, hex_sha256):
         # res is a list of libraries. Result.
-        exist_hexsha256 = self.db_rep.zscore("apk_weight", hex_sha256)
-        if exist_hexsha256 is not None:
-            return "Same in DB"
         pn_list = list()
         for item in res:
             pn_list.append(item["Package"])
@@ -414,7 +411,11 @@ class Tree(object):
         zrange_score_max = int(ret_length * 1.11111)
         rep_candidates = self.db_rep.zrangebyscore("apk_weight", zrange_score_min, zrange_score_max)
         rep_list = list()
+        my_key = self.db_rep.hget(name="apk_key", key=hex_sha256)
         for rep_candidate in rep_candidates:
+            apk_key = self.db_rep.hget(name="apk_key", key=rep_candidate)
+            if my_key == apk_key:
+                continue
             zfeature = self.db_rep.hget(name="apk_feature", key=rep_candidate)
             feature = zlib.decompress(zfeature)
             similarity = rputil.Util.comp_str(feature, str)
@@ -422,4 +423,8 @@ class Tree(object):
                 rep_list.append({"SHA256": rep_candidate, "Similarity": similarity})
         self.db_rep.hset(name="apk_feature", key=hex_sha256, value=zstr)
         self.db_rep.zadd("apk_weight", ret_length, hex_sha256)
+        #exist_hexsha256 = self.db_rep.zscore("apk_weight", hex_sha256)
+        #if exist_hexsha256 is None:
+        #    self.db_rep.hset(name="apk_feature", key=hex_sha256, value=zstr)
+        #    self.db_rep.zadd("apk_weight", ret_length, hex_sha256)
         return rep_list
