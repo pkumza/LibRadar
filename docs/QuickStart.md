@@ -67,13 +67,14 @@
    find data file.
 
 4. Download LibRadarData.rdb and run redis-server
-  https://github.com/pkumza/LibRadar/blob/dataset_2/tool/dataset-0410-19k.rdb.tar.gz?raw=true
+  [Dropbox Link](https://www.dropbox.com/s/w31gig6msdo3cdy/dump-20170515-shrink.rdb.tar.gz?dl=0)
 
   ```bash
-  $ wget https://github.com/pkumza/LibRadar/blob/dataset_2/tool/dataset-0410-19k.rdb.tar.gz?raw=true
-  $ cd LibRadar
-  $ vi tool/redis.conf.
-  (find "dir /Users/marchon/Projects/Databases" and change it into your LibRadarData.rdb path.)
+  $ vi LibRadar/tool/redis.conf.
+  (
+    find "dir /Users/marchon/Projects/Databases" and change it into your rdb path.
+    find "dbfilename" and change it into your rdb filename.
+  )
 
   $ redis-server tool/redis.conf
   ```
