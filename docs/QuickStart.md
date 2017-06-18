@@ -79,51 +79,20 @@
   $ redis-server tool/redis.conf
   ```
 
-5. Change libradar.py
-
-  Change the code in main function
-
-  ```
-  lrd = LibRadar(apk_path, lite=True)
-  ```
-
-  into
-
-  ```
-  lrd = LibRadar(apk_path, lite=False)
-  ```
-
-6. Use LibRadar to detect libraries.
+5. Use LibRadar to detect libraries.
 
   ```bash
-  $ python LibRadar/libradar.py someapp.apk
+  $ python libradar.py someapp.apk
   ```
 
 # Example (Version 2.1.1)
 
 ```bash
-$ python LibRadar/libradar.py /Users/marchon/Downloads/ArticleNews.apk
+$ python LibRadar/LibRadar/libradar.py happy.apk
 [
     {
-        "Library": "Android Support",
-        "Package": "Landroid/support",
-        "Permission": [
-            "android.permission.BACKUP",
-            "android.permission.BLUETOOTH_ADMIN",
-            "android.permission.DUMP",
-            "android.permission.INTERACT_ACROSS_USERS",
-            "android.permission.INTERACT_ACROSS_USERS_FULL",
-            "android.permission.INTERNET",
-            "android.permission.WAKE_LOCK"
-        ],
-        "Popularity": "18",
-        "Match Ratio": "4/3260",
-        "Standard Package": "Landroid/support",
-        "Type": "Development Aid",
-        "Website": "https://developer.android.com/reference/android/package-summary.html"
-    },
-    {
         "Library": "Android Support v4",
+        "Match Ratio": "6777/6777",
         "Package": "Landroid/support/v4",
         "Permission": [
             "android.permission.BACKUP",
@@ -132,106 +101,160 @@ $ python LibRadar/libradar.py /Users/marchon/Downloads/ArticleNews.apk
             "android.permission.INTERACT_ACROSS_USERS",
             "android.permission.INTERACT_ACROSS_USERS_FULL",
             "android.permission.INTERNET",
-            "android.permission.WAKE_LOCK"
+            "android.permission.WAKE_LOCK",
+            "android.permission.WRITE_SECURE_SETTINGS"
         ],
-        "Popularity": "18",
-        "Match Ratio": "4/2700",
+        "Popularity": 1610,
         "Standard Package": "Landroid/support/v4",
         "Type": "Development Aid",
         "Website": "http://developer.android.com/reference/android/support/v4/app/package-summary.html"
     },
     {
-        "Library": "Google Mobile Services",
-        "Package": "Lcom/google/android/gms",
+        "Library": "Android Support v7",
+        "Match Ratio": "3111/3111",
+        "Package": "Landroid/support/v7",
         "Permission": [
             "android.permission.DUMP",
             "android.permission.INTERACT_ACROSS_USERS",
-            "android.permission.INTERACT_ACROSS_USERS_FULL"
-        ],
-        "Popularity": "15",
-        "Match Ratio": "17/227",
-        "Standard Package": "Lcom/google/android/gms",
-        "Type": "Development Aid",
-        "Website": "https://developers.google.com/android/reference/com/google/android/gms/package-summary"
-    },
-    {
-        "Library": "ZXing ('Zebra Crossing')",
-        "Package": "Lcom/google/zxing",
-        "Permission": [],
-        "Popularity": 3,
-        "Match Ratio": "3/3",
-        "Standard Package": "Lcom/google/zxing",
-        "Type": "Development Aid",
-        "Website": "https://github.com/zxing/zxing"
-    },
-    {
-        "Library": "Tencent Login",
-        "Package": "Lcom/tencent/tauth",
-        "Permission": [
-            "android.permission.DUMP",
-            "android.permission.INTERACT_ACROSS_USERS",
-            "android.permission.INTERACT_ACROSS_USERS_FULL"
+            "android.permission.INTERACT_ACROSS_USERS_FULL",
+            "android.permission.INTERNET",
+            "android.permission.MANAGE_APP_TOKENS"
         ],
         "Popularity": 2,
-        "Match Ratio": "20/20",
-        "Standard Package": "Lcom/tencent/tauth",
-        "Type": "Social Network",
-        "Website": "http://wiki.open.qq.com/wiki/mobile/Android_SDK"
+        "Standard Package": "Landroid/support/v7",
+        "Type": "Development Aid",
+        "Website": "https://developer.android.com/reference/android/support/v7/app/package-summary.html"
     },
     {
-        "Library": "Tencent Login",
-        "Package": "Lcom/tencent/tauth",
-        "Permission": [
-            "android.permission.DUMP",
-            "android.permission.INTERACT_ACROSS_USERS",
-            "android.permission.INTERACT_ACROSS_USERS_FULL"
-        ],
-        "Popularity": "2",
-        "Match Ratio": "20/20",
-        "Standard Package": "Lcom/tencent/t",
-        "Type": "Social Network",
-        "Website": "http://t.qq.com"
-    },
-    {
-        "Library": "Tencent Login",
-        "Package": "Lcom/tencent/connect",
-        "Permission": [
-            "android.permission.DUMP",
-            "android.permission.INTERACT_ACROSS_USERS",
-            "android.permission.INTERACT_ACROSS_USERS_FULL"
-        ],
-        "Popularity": 1,
-        "Match Ratio": "53/53",
-        "Standard Package": "Lcom/tencent/connect",
-        "Type": "Social Network",
-        "Website": "https://connect.qq.com"
-    },
-    {
-        "Library": "Tencent Login",
-        "Package": "Lcom/tencent/open",
-        "Permission": [
-            "android.permission.DUMP"
-        ],
-        "Popularity": "6",
-        "Match Ratio": "4/100",
-        "Standard Package": "Lcom/tencent/open",
-        "Type": "Social Network",
-        "Website": "http://wiki.open.qq.com/wiki/mobile/Android_SDK"
-    },
-    {
-        "Library": "Weibo",
-        "Package": "Lcom/sina/weibo",
+        "Library": "Bolts Base Library",
+        "Match Ratio": "325/325",
+        "Package": "Lbolts",
         "Permission": [
             "android.permission.DUMP",
             "android.permission.INTERACT_ACROSS_USERS",
             "android.permission.INTERACT_ACROSS_USERS_FULL",
             "android.permission.INTERNET"
         ],
-        "Popularity": "1",
-        "Match Ratio": "25/323",
-        "Standard Package": "Lcom/sina/weibo",
+        "Popularity": 3378,
+        "Standard Package": "Lbolts",
+        "Type": "Development Aid",
+        "Website": "https://github.com/BoltsFramework/Bolts-Android"
+    },
+    {
+        "Library": "Amazon AWS",
+        "Match Ratio": "3673/3673",
+        "Package": "Lcom/amazonaws",
+        "Permission": [
+            "android.permission.DUMP"
+        ],
+        "Popularity": 3,
+        "Standard Package": "Lcom/amazonaws",
+        "Type": "Development Aid",
+        "Website": "http://mvnrepository.com/artifact/com.amazonaws"
+    },
+    {
+        "Library": "Google Mobile Services",
+        "Match Ratio": "26342/26344",
+        "Package": "Lcom/google/android/gms",
+        "Permission": [
+            "android.permission.BACKUP",
+            "android.permission.BLUETOOTH_ADMIN",
+            "android.permission.DUMP",
+            "android.permission.INTERACT_ACROSS_USERS",
+            "android.permission.INTERACT_ACROSS_USERS_FULL",
+            "android.permission.INTERNET",
+            "android.permission.WAKE_LOCK",
+            "android.permission.WRITE_SECURE_SETTINGS"
+        ],
+        "Popularity": "8619",
+        "Standard Package": "Lcom/google/android/gms",
+        "Type": "Development Aid",
+        "Website": "https://developers.google.com/android/reference/com/google/android/gms/package-summary"
+    },
+    {
+        "Library": "Google Gson",
+        "Match Ratio": "390/390",
+        "Package": "Lcom/google/gson",
+        "Permission": [],
+        "Popularity": 7366,
+        "Standard Package": "Lcom/google/gson",
+        "Type": "Development Aid",
+        "Website": "https://github.com/google/gson"
+    },
+    {
+        "Library": "Google Ads",
+        "Match Ratio": "47/47",
+        "Package": "Lcom/google/ads",
+        "Permission": [
+            "android.permission.DUMP"
+        ],
+        "Popularity": 23586,
+        "Standard Package": "Lcom/google/ads",
+        "Type": "Advertisement",
+        "Website": "https://www.google.com/ads/"
+    },
+    {
+        "Library": "Firebase",
+        "Match Ratio": "554/554",
+        "Package": "Lcom/google/firebase",
+        "Permission": [
+            "android.permission.DUMP",
+            "android.permission.INTERACT_ACROSS_USERS",
+            "android.permission.INTERACT_ACROSS_USERS_FULL",
+            "android.permission.WRITE_SECURE_SETTINGS"
+        ],
+        "Popularity": 14,
+        "Standard Package": "Lcom/google/firebase",
+        "Type": "Development Aid",
+        "Website": "http://firebase.com"
+    },
+    {
+        "Library": "Facebook",
+        "Match Ratio": "3758/3758",
+        "Package": "Lcom/facebook",
+        "Permission": [
+            "android.permission.DUMP",
+            "android.permission.INTERACT_ACROSS_USERS",
+            "android.permission.INTERACT_ACROSS_USERS_FULL",
+            "android.permission.INTERNET"
+        ],
+        "Popularity": 54,
+        "Standard Package": "Lcom/facebook",
         "Type": "Social Network",
-        "Website": "http://weibo.com/"
+        "Website": "https://developers.facebook.com"
+    },
+    {
+        "Library": "Google Play",
+        "Match Ratio": "119/119",
+        "Package": "Lcom/android/vending",
+        "Permission": [
+            "android.permission.DUMP"
+        ],
+        "Popularity": 44625,
+        "Standard Package": "Lcom/android/vending",
+        "Type": "App Market",
+        "Website": "https://play.google.com"
+    },
+    {
+        "Library": "Unknown",
+        "Package": "Landroid/support/graphics",
+        "Popularity": 1525,
+        "Standard Package": "Landroid/support/graphics",
+        "Weight": 299
+    },
+    {
+        "Library": "Unknown",
+        "Package": "Landroid/support/customtabs",
+        "Popularity": 1805,
+        "Standard Package": "Landroid/support/customtabs",
+        "Weight": 221
+    },
+    {
+        "Library": "Unknown",
+        "Package": "Lcom/adcolony",
+        "Popularity": 221,
+        "Standard Package": "Lcom/adcolony",
+        "Weight": 3602
     }
 ]
 
