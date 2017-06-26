@@ -106,9 +106,10 @@ class LibRadar(object):
         else:
             key_string = "None"
         for line in key_string:
-            if 'SHA256' in line:
+            if 'SHA256:' in line:
                 certificate = line.strip()
-        self.db_rep.hset("apk_key", self.hex_sha256, certificate)
+                if len(certificate) == 103:
+                    self.db_rep.hset("apk_key", self.hex_sha256, certificate)
         return self.dex_name
 
     def get_sha256(self):
