@@ -17,6 +17,7 @@
 # Utility for repackage detection use
 
 from _settings import *
+import sys
 
 class Util(object):
     """
