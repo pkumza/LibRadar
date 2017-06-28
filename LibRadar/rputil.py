@@ -94,6 +94,8 @@ class Util(object):
         :param offset:
         :return:
         """
+        if len(feature_str) <= offset:
+            return sys.maxint
         return ord(feature_str[offset]) * 256 + ord(feature_str[offset + 1])
 
     @staticmethod
