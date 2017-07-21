@@ -91,6 +91,7 @@ Lcom/ace,no,,
 Lcom/ace/universalimageloader,Universal Image Loader,Development Aid,https://github.com/nostra13/Android-Universal-Image-Loader
 Lcom/actionbarsherlock,ActionBarSherlock,Development Aid,http://actionbarsherlock.com/
 Lcom/activeandroid,ActiveAndroid,Development Aid,https://github.com/pardom/ActiveAndroid
+Lcom/adcolony,AdColony,Advertisement,https://github.com/AdColony/
 Lcom/adfonic,Adfonic Mobile Ads,Advertisement,http://www.adfonic.com
 Lcom/adjust,no,,
 Lcom/adjust/sdk,Adjust SDK,Mobile Analytics,https://www.adjust.com/
@@ -128,6 +129,7 @@ Lcom/amazon/inapp,Amazon In-App Purchasing,Payment,https://developer.amazon.com/
 Lcom/amazon/insights,Amazon Analytics,Mobile Analytics,https://developer.amazon.com/public/apis/manage/analytics/docs/analytics-for-android-fire-os
 Lcom/amazonaws,Amazon AWS,Development Aid,http://mvnrepository.com/artifact/com.amazonaws
 Lcom/android,no,,
+Lcom/android/dx,Dexmaker,Utility,https://github.com/linkedin/dexmaker
 Lcom/android/vending,Google Play,App Market,https://play.google.com
 Lcom/android/volley,Volley HTTP library,Development Aid,https://developer.android.com/training/volley/index.html
 Lcom/androidplot,Androidplot,Development Aid,http://androidplot.com/
@@ -678,7 +680,8 @@ Lorg/ebookdroid/ui/library,no,,
 Lorg/ebookdroid/ui/library/tasks,EBookDroid,Development Aid,https://github.com/mortenpi/ebookdroid/
 Lorg/fmod,Fmod,Game Engine,https://www.fmod.org/
 Lorg/geometerplus,no,,
-Lorg/geometerplus/zlibrary,Zlibrary(FBReader PDF Reader),Development Aid,
+Lorg/geometerplus/fbreader,FBReader,Development Aid,https://github.com/geometer/FBReaderJ
+Lorg/geometerplus/zlibrary,Zlibrary(FBReader PDF Reader),Development Aid,https://github.com/geometer/FBReaderJ
 Lorg/hamcrest,hamcrest,Development Aid,http://hamcrest.org/
 Lorg/htmlcleaner,htmlCleaner,Development Aid,http://htmlcleaner.sourceforge.net
 Lorg/ice4j,A Java implementation of the ICE protocol,Development Aid,https://github.com/jitsi/ice4j
