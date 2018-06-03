@@ -67,7 +67,9 @@
    find data file.
 
 4. Download LibRadarData.rdb and run redis-server
-  [Dropbox Link](https://www.dropbox.com/s/w31gig6msdo3cdy/dump-20170515-shrink.rdb.tar.gz?dl=0)
+
+  - [~Dropbox Link old~](https://www.dropbox.com/s/w31gig6msdo3cdy/dump-20170515-shrink.rdb.tar.gz?dl=0)
+  - [Dropbox Link](https://www.dropbox.com/s/ljtzw74twt8xgy6/d.tar.gz?dl=0)
 
   ```bash
   $ vi LibRadar/tool/redis.conf.
