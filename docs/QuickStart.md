@@ -16,7 +16,6 @@
 
   [Mirror 1 Github](https://github.com/pkumza/Data_for_LibRadar/blob/master/lite_dataset_10.csv)
 
-  [Mirror 2 Aliyun CN](http://lxwiki.oss-cn-beijing.aliyuncs.com/lite_dataset_10.csv)
 
 3. Use LibRadar to detect libraries.
 
